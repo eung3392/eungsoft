@@ -93,7 +93,7 @@ function applyTranslations() {
   document.documentElement.lang = currentLang;
   
   // Update toggle button text
-  const langToggleText = document.querySelector('#lang-toggle span');
+  const langToggleText = document.querySelector('#lang-toggle span[data-i18n]');
   if (langToggleText && dict["nav.lang"]) {
       langToggleText.textContent = dict["nav.lang"];
   }
