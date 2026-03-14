@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,18 +13,24 @@
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
     }
+
     @media (max-width: 768px) {
-      .detail-grid { grid-template-columns: 1fr; }
+      .detail-grid {
+        grid-template-columns: 1fr;
+      }
     }
+
     .video-container {
       position: relative;
-      padding-bottom: 56.25%; /* 16:9 */
+      padding-bottom: 56.25%;
+      /* 16:9 */
       height: 0;
       overflow: hidden;
       border-radius: var(--radius);
       background: #000;
       margin-bottom: 1.5rem;
     }
+
     .video-container iframe {
       position: absolute;
       top: 0;
@@ -32,6 +39,7 @@
       height: 100%;
       border: 0;
     }
+
     .tag {
       display: inline-block;
       background: var(--border-color);
@@ -44,6 +52,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Navigation -->
@@ -53,7 +62,7 @@
         <span class="material-symbols-rounded">rocket_launch</span>
         EUNG SOFT
       </a>
-      
+
       <div class="nav-links">
         <a href="/" data-i18n="nav.intro">Intro</a>
         <a href="rokid/" data-i18n="nav.rokid">Rokid App</a>
@@ -78,8 +87,15 @@
     <div class="container" id="content-area">
       <div style="text-align: center; padding: 4rem;">
         <!-- Loading spinner placeholder -->
-        <span class="material-symbols-rounded" style="font-size: 3rem; animation: spin 1s linear infinite;">autorenew</span>
-        <style>@keyframes spin { 100% { transform: rotate(360deg); } }</style>
+        <span class="material-symbols-rounded"
+          style="font-size: 3rem; animation: spin 1s linear infinite;">autorenew</span>
+        <style>
+          @keyframes spin {
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        </style>
       </div>
     </div>
   </main>
@@ -88,9 +104,12 @@
   <footer>
     <div class="container footer-content">
       <div class="footer-links">
-        <a href="https://www.youtube.com/@eungsmusic" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://blog.naver.com/73s" aria-label="Blog" target="_blank"><span class="material-symbols-rounded">article</span></a>
-        <a href="https://github.com/eung3392/eungsoft" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.youtube.com/@eungsmusic" aria-label="YouTube" target="_blank"><i
+            class="fa-brands fa-youtube"></i></a>
+        <a href="https://blog.naver.com/73s" aria-label="Blog" target="_blank"><span
+            class="material-symbols-rounded">article</span></a>
+        <a href="https://github.com/eung3392/eungsoft" aria-label="GitHub" target="_blank"><i
+            class="fa-brands fa-github"></i></a>
       </div>
       <p class="footer-text">
         &copy; 2025 EUNG SOFT. <span data-i18n="footer.rights"></span>
@@ -109,7 +128,7 @@
     });
 
     document.addEventListener('languageChanged', () => {
-      if(currentAppInfo) {
+      if (currentAppInfo) {
         renderDetails(currentAppInfo, urlParams.get('app'), urlParams.get('type'));
       }
     });
@@ -125,11 +144,11 @@
       }
 
       const jsonUrl = `download/${appType}/${appName}/info.json`;
-      
+
       try {
         currentAppInfo = await window.fetchJSON(jsonUrl);
-        if(!currentAppInfo) throw new Error("Could not load info.json");
-        
+        if (!currentAppInfo) throw new Error("Could not load info.json");
+
         renderDetails(currentAppInfo, appName, appType);
       } catch (err) {
         contentArea.innerHTML = `<h2 style="text-align: center;">App Not Found</h2>`;
@@ -139,9 +158,10 @@
     function renderDetails(info, appName, appType) {
       const lang = window.getLang();
       const contentArea = document.getElementById('content-area');
-      
+
       const title = info.title[lang] || info.title['ko'];
       const desc = info.description[lang] || info.description['ko'];
+      const control = info.control[lang] || info.control['ko'];
       const tags = info.tags[lang] || info.tags['ko'] || [];
       const backUrl = appType.toLowerCase() === 'android' ? 'android/' : 'rokid/';
 
@@ -167,7 +187,7 @@
           </div>
         `;
       }
-      
+
       // Download Setup (Unified to .zip)
       const ext = '.zip';
       const isStoreLink = info.storeUrl && info.storeUrl.trim() !== "";
@@ -205,8 +225,7 @@
             <!-- Metadata -->
             <div style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.95rem;">
                <span style="display: flex; align-items: center; gap: 0.3rem;"><span class="material-symbols-rounded" style="font-size:1.2rem;">new_releases</span> v${info.version}</span>
-               <span style="display: flex; align-items: center; gap: 0.3rem;"><span class="material-symbols-rounded" style="font-size:1.2rem;">event</span> ${info.releaseDate}</span>
-               <span style="display: flex; align-items: center; gap: 0.3rem;"><span class="material-symbols-rounded" style="font-size:1.2rem;">download</span> ${info.downloadCount}</span>
+               <span style="display: flex; align-items: center; gap: 0.3rem;"><span class="material-symbols-rounded" style="font-size:1.2rem;">event</span> ${info.releaseDate}</span>               
             </div>
             
             <div style="margin-bottom: 1.5rem;">${tagsHtml}</div>
@@ -214,6 +233,9 @@
             <h3 style="margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Description</h3>
             <p style="white-space: pre-line; margin-bottom: 2rem; color: var(--text-muted); line-height: 1.8;">${desc}</p>
             
+            <h3 style="margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Control</h3>
+            <p style="white-space: pre-line; margin-bottom: 2rem; color: var(--text-muted); line-height: 1.8;">${control}</p>
+
             <!-- Download Button -->
             <a href="${dlHref}" ${dlTarget} ${dlAttr} onclick="if(window.gtag) { gtag('event', 'app_download', {'app_name': '${appName}', 'app_type': '${appType}'}); }" class="btn dl-btn" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
               <span class="material-symbols-rounded">${dlIcon}</span>
@@ -228,19 +250,20 @@
 
       // Animations
       if (window.gsap) {
-        gsap.fromTo('.fade-elem', 
+        gsap.fromTo('.fade-elem',
           { opacity: 0, y: 20 },
           { opacity: 1, y: 0, duration: 0.6, stagger: 0.1, ease: "power2.out" }
         );
 
         // Bouncy hover for download
         const dlBtn = document.querySelector('.dl-btn');
-        if(dlBtn) {
-           dlBtn.addEventListener('mouseenter', () => gsap.to(dlBtn, { scale: 1.03, duration: 0.3, ease: "back.out(2)" }));
-           dlBtn.addEventListener('mouseleave', () => gsap.to(dlBtn, { scale: 1, duration: 0.3, ease: "power2.out" }));
+        if (dlBtn) {
+          dlBtn.addEventListener('mouseenter', () => gsap.to(dlBtn, { scale: 1.03, duration: 0.3, ease: "back.out(2)" }));
+          dlBtn.addEventListener('mouseleave', () => gsap.to(dlBtn, { scale: 1, duration: 0.3, ease: "power2.out" }));
         }
       }
     }
   </script>
 </body>
+
 </html>

@@ -1,0 +1,35 @@
+{
+  "title": {
+    "ko": "eung Table Clock",
+    "en": "eung Table Clock"
+  },
+  "version": "2.1.0",
+  "releaseDate": "2024-11-15",
+  "shortDescription": {
+    "ko": "안드로이드 기본 샘플 앱",
+    "en": "Basic Android Sample App"
+  },
+  "description": {
+    "ko": "이 앱은 EUNG SOFT에서 제공하는 샘플 안드로이드 애플리케이션입니다. 안드로이드 기기에서 다양한 기능을 테스트해 볼 수 있습니다.",
+    "en": "This is a sample Android application provided by EUNG SOFT. You can test various features on Android devices."
+  },
+  "control": {
+    "ko": "이 앱의 사용 방법입니다. 안드로이드 기기에서 다양한 기능을 테스트해 볼 수 있습니다.",
+    "en": "This is a sample Android application provided by EUNG SOFT. You can test various features on Android devices."
+  },
+  "youtubeUrl": "",
+  "downloadCount": 85,
+  "storeUrl": "https://play.google.com/store/apps/details?id=com.eungsoft.sample",
+  "tags": {
+    "ko": [
+      "샘플",
+      "안드로이드",
+      "테스트"
+    ],
+    "en": [
+      "Sample",
+      "Android",
+      "Test"
+    ]
+  }
+}
