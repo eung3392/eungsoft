@@ -19,7 +19,8 @@ const translations = {
     "about.site.desc": "EUNG SOFT의 공식 홈페이지입니다. 개발 중인 앱들의 정보를 확인하고 다운로드 할 수 있습니다.",
     "about.dev": "개발자 소개",
     "about.dev.desc": "주로 안드로이드, AR 글래스 연동 앱 및 다양한 사이드 프로젝트를 진행합니다.",
-    "error.fetch": "데이터를 불러오는 데 실패했습니다."
+    "error.fetch": "데이터를 불러오는 데 실패했습니다.",
+    "books.subtitle": "글 쓰는 것을 좋아해서, 틈틈이 책을 출간하였습니다. 제가 쓴 IT 서적과 에세이, 소설 등을 소개합니다."
   },
   en: {
     "nav.intro": "Intro",
@@ -40,7 +41,8 @@ const translations = {
     "about.site.desc": "The official EUNG SOFT homepage. Check out information about our apps and download them directly.",
     "about.dev": "About Developer",
     "about.dev.desc": "Specializing in Android, AR glasses integration, and various side projects.",
-    "error.fetch": "Failed to fetch data."
+    "error.fetch": "Failed to fetch data.",
+    "books.subtitle": "Since I enjoy writing, I publish books in my spare time. Here are the IT books, essays, and novels I have written."
   }
 };
 
