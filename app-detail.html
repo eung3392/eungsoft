@@ -168,8 +168,8 @@
         `;
       }
       
-      // Download Setup
-      const ext = appType.toLowerCase() === 'android' ? '.apk' : '.zip';
+      // Download Setup (Unified to .zip)
+      const ext = '.zip';
       const isStoreLink = info.storeUrl && info.storeUrl.trim() !== "";
       const dlHref = isStoreLink ? info.storeUrl : `download/${appType}/${appName}/${appName}${ext}`;
       const dlTarget = isStoreLink ? 'target="_blank"' : '';
