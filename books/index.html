@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="../assets/css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
+
 <body>
 
   <!-- Navigation -->
@@ -16,7 +18,7 @@
         <span class="material-symbols-rounded">rocket_launch</span>
         EUNG SOFT
       </a>
-      
+
       <div class="nav-links">
         <a href="../" data-i18n="nav.intro">Intro</a>
         <a href="../rokid/" data-i18n="nav.rokid">Rokid App</a>
@@ -39,64 +41,27 @@
   <!-- Main Content -->
   <main>
     <div class="container">
-      
+
       <section style="margin-bottom: 3rem; text-align: center;">
-        <h1 style="font-size: 2.5rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;" class="fade-elem">
-          <span class="material-symbols-rounded" style="color: var(--accent-color); font-size: inherit;">menu_book</span>
+        <h1 style="font-size: 2.5rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;"
+          class="fade-elem">
+          <span class="material-symbols-rounded"
+            style="color: var(--accent-color); font-size: inherit;">menu_book</span>
           Books
         </h1>
-        <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto;" class="fade-elem" data-i18n="books.subtitle"></p>
+        <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto;" class="fade-elem"
+          data-i18n="books.subtitle"></p>
       </section>
 
       <!-- Grid -->
       <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
-        
-        <!-- Book 1 -->
-        <div class="card book-card" style="flex-direction: row; gap: 1.5rem; padding: 1.5rem; align-items: flex-start; opacity: 0;">
-          <div style="width: 120px; flex-shrink: 0; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow);">
-             <img src="https://placehold.co/300x420/f9fafb/333333?text=Book+Cover" style="width: 100%; height: auto; display: block;">
-          </div>
-          <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-            <div>
-              <h3 style="margin-bottom: 0.2rem; font-size: 1.2rem;">AR/VR 앱 개발 입문</h3>
-              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
-                A출판사 <span style="margin: 0 0.5rem;">|</span> 2024.05.20
-              </p>
-              <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 1rem;" data-i18n="books.desc1">
-                로키드 글래스를 비롯한 다양한 AR 디바이스를 위한 실전 앱 개발 가이드입니다.
-              </p>
-            </div>
-            <a href="#" target="_blank" class="btn btn-outline" style="width: fit-content; font-size: 0.9rem; padding: 0.4rem 1rem;">
-              네이버 쇼핑에서 구매하기 <span class="material-symbols-rounded" style="font-size: 1rem;">arrow_forward</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Book 2 -->
-        <div class="card book-card" style="flex-direction: row; gap: 1.5rem; padding: 1.5rem; align-items: flex-start; opacity: 0;">
-          <div style="width: 120px; flex-shrink: 0; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow);">
-             <img src="https://placehold.co/300x420/f9fafb/333333?text=Book+2" style="width: 100%; height: auto; display: block;">
-          </div>
-          <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-            <div>
-              <h3 style="margin-bottom: 0.2rem; font-size: 1.2rem;">안드로이드 실전 잡학사전</h3>
-              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
-                B출판사 <span style="margin: 0 0.5rem;">|</span> 2023.11.10
-              </p>
-              <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 1rem;" data-i18n="books.desc2">
-                초보자를 벗어난 중급 개발자들을 위한 안드로이드 최적화 및 디버깅 노하우를 담았습니다.
-              </p>
-            </div>
-            <a href="#" target="_blank" class="btn btn-outline" style="width: fit-content; font-size: 0.9rem; padding: 0.4rem 1rem;">
-              네이버 쇼핑에서 구매하기 <span class="material-symbols-rounded" style="font-size: 1rem;">arrow_forward</span>
-            </a>
-          </div>
-        </div>
 
         <!-- Book 3 -->
-        <div class="card book-card" style="flex-direction: row; gap: 1.5rem; padding: 1.5rem; align-items: flex-start; opacity: 0;">
+        <div class="card book-card"
+          style="flex-direction: row; gap: 1.5rem; padding: 1.5rem; align-items: flex-start; opacity: 0;">
           <div style="width: 120px; flex-shrink: 0; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow);">
-             <img src="https://image.yes24.com/goods/4483843/xl" style="width: 100%; height: auto; display: block;" alt="Book Cover">
+            <img src="https://image.yes24.com/goods/4483843/xl" style="width: 100%; height: auto; display: block;"
+              alt="Book Cover">
           </div>
           <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
             <div>
@@ -104,20 +69,25 @@
               <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
                 위키북스 <span style="margin: 0 0.5rem;">|</span> 2011.01.14
               </p>
-              <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 1rem;" data-i18n="books.desc3">
-                플래시는 그동안 웹과 모바일 분야에서 사용자에게 다양한 경험들을 제공해 왔습니다. 그만큼 플래시라는 도구는 디자이너, 웹 콘텐츠 개발자, 플래시 개발자들에게 전혀 낯설지 않은 저작 도구로 자리매김했습니다. 그리고 이제 어도비의 'AIR for Android'를 통해 다이내믹하고 다양한 경험을 제공하는 안드로이드 앱을 훨씬 빠르고 손쉽게 제작할 수 있습니다.
+              <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 1rem;"
+                data-i18n="books.desc3">
+                플래시는 그동안 웹과 모바일 분야에서 사용자에게 다양한 경험들을 제공해 왔습니다. 그만큼 플래시라는 도구는 디자이너, 웹 콘텐츠 개발자, 플래시 개발자들에게 전혀 낯설지 않은 저작 도구로
+                자리매김했습니다. 그리고 이제 어도비의 'AIR for Android'를 통해 다이내믹하고 다양한 경험을 제공하는 안드로이드 앱을 훨씬 빠르고 손쉽게 제작할 수 있습니다.
               </p>
             </div>
-            <a href="https://www.yes24.com/product/goods/4483843" target="_blank" class="btn btn-outline" style="width: fit-content; font-size: 0.9rem; padding: 0.4rem 1rem;">
+            <a href="https://www.yes24.com/product/goods/4483843" target="_blank" class="btn btn-outline"
+              style="width: fit-content; font-size: 0.9rem; padding: 0.4rem 1rem;">
               YES24에서 구매하기 <span class="material-symbols-rounded" style="font-size: 1rem;">arrow_forward</span>
             </a>
           </div>
         </div>
 
         <!-- Book 4 -->
-        <div class="card book-card" style="flex-direction: row; gap: 1.5rem; padding: 1.5rem; align-items: flex-start; opacity: 0;">
+        <div class="card book-card"
+          style="flex-direction: row; gap: 1.5rem; padding: 1.5rem; align-items: flex-start; opacity: 0;">
           <div style="width: 120px; flex-shrink: 0; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow);">
-             <img src="https://shopping-phinf.pstatic.net/main_3372346/33723465621.20240313071106.jpg" style="width: 100%; height: auto; display: block;" alt="Book Cover">
+            <img src="https://shopping-phinf.pstatic.net/main_3372346/33723465621.20240313071106.jpg"
+              style="width: 100%; height: auto; display: block;" alt="Book Cover">
           </div>
           <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
             <div>
@@ -125,20 +95,25 @@
               <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
                 부크크(bookk) <span style="margin: 0 0.5rem;">|</span> 2022.07.13
               </p>
-              <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 1rem;" data-i18n="books.desc4">
-                이 책에서는 프로그래머란 직업을 가진 한 개인의 이야기를 기술하고 있다. 그렇다고 프로그래밍에 대한 기술적인 내용을 적은 책은 아니다. 그저 저자가 일상을 겪으며 느끼고 상상하고 고민했던 소소한 이야기들로 읽기 쉽게 구성되어 있다. 지하철로 출퇴근하는 평범한 직장인의 삶 속에서도 이야기가 있고 깨달음이 있으며 애틋함이 존재하지 않을까?
+              <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 1rem;"
+                data-i18n="books.desc4">
+                이 책에서는 프로그래머란 직업을 가진 한 개인의 이야기를 기술하고 있다. 그렇다고 프로그래밍에 대한 기술적인 내용을 적은 책은 아니다. 그저 저자가 일상을 겪으며 느끼고 상상하고 고민했던
+                소소한 이야기들로 읽기 쉽게 구성되어 있다. 지하철로 출퇴근하는 평범한 직장인의 삶 속에서도 이야기가 있고 깨달음이 있으며 애틋함이 존재하지 않을까?
               </p>
             </div>
-            <a href="https://search.shopping.naver.com/book/catalog/33723465621" target="_blank" class="btn btn-outline" style="width: fit-content; font-size: 0.9rem; padding: 0.4rem 1rem;">
+            <a href="https://search.shopping.naver.com/book/catalog/33723465621" target="_blank" class="btn btn-outline"
+              style="width: fit-content; font-size: 0.9rem; padding: 0.4rem 1rem;">
               네이버 쇼핑에서 구매하기 <span class="material-symbols-rounded" style="font-size: 1rem;">arrow_forward</span>
             </a>
           </div>
         </div>
 
         <!-- Book 5 -->
-        <div class="card book-card" style="flex-direction: row; gap: 1.5rem; padding: 1.5rem; align-items: flex-start; opacity: 0;">
+        <div class="card book-card"
+          style="flex-direction: row; gap: 1.5rem; padding: 1.5rem; align-items: flex-start; opacity: 0;">
           <div style="width: 120px; flex-shrink: 0; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow);">
-             <img src="https://image.yes24.com/goods/112344656/xl" style="width: 100%; height: auto; display: block;" alt="Book Cover">
+            <img src="https://image.yes24.com/goods/112344656/xl" style="width: 100%; height: auto; display: block;"
+              alt="Book Cover">
           </div>
           <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
             <div>
@@ -146,11 +121,37 @@
               <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
                 BOOKK(부크크) <span style="margin: 0 0.5rem;">|</span> 2022.08.30
               </p>
-              <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 1rem;" data-i18n="books.desc5">
-                이 책은 처음 시작하는 분들을 위한 입문서라기보다는 기본 지식이 있는 상태에서 포트폴리오를 만들거나, 업무를 진행하는 분들을 위한 코드 참고 서적이다. 일을 하다 보면 특정 문법이 생각이 나지 않는 경우가 있는데 그럴 때 참고했으면 해서 정리한 책이기도 하다. 그래서 최대한 책을 작게 만들었다. 설명도 많이 없는 편이다. 간결한 샘플 코드 위주로 정리된 책이 필요하신 분이라면 좋을 듯하다. 이 책에서는 기본적으로 Javascript 문법을 다루면서 ES6 문법을 비교해서 볼 수 있도록 구성하였다. Vue.js의 2, 3 버전은 장을 따로 분리하였고 3 버전에서 옵션 API 와 컴포지션 API 방식의 코드를 비교해서 작성하였다. 이 책이 Vue.js 와 프론트엔드 개발에 관심을 가지는 분들께 도움이 되었으면 좋겠다.
+              <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 1rem;"
+                data-i18n="books.desc5">
+                이 책은 처음 시작하는 분들을 위한 입문서라기보다는 기본 지식이 있는 상태에서 포트폴리오를 만들거나, 업무를 진행하는 분들을 위한 코드 참고 서적이다. 일을 하다 보면 특정 문법이 생각이
+                나지 않는 경우가 있는데 그럴 때 참고했으면 해서 정리한 책이기도 하다. 그래서 최대한 책을 작게 만들었다. 설명도 많이 없는 편이다. 간결한 샘플 코드 위주로 정리된 책이 필요하신
+                분이라면 좋을 듯하다. 이 책에서는 기본적으로 Javascript 문법을 다루면서 ES6 문법을 비교해서 볼 수 있도록 구성하였다. Vue.js의 2, 3 버전은 장을 따로 분리하였고 3
+                버전에서 옵션 API 와 컴포지션 API 방식의 코드를 비교해서 작성하였다. 이 책이 Vue.js 와 프론트엔드 개발에 관심을 가지는 분들께 도움이 되었으면 좋겠다.
               </p>
             </div>
-            <a href="https://www.yes24.com/Product/Goods/112344656" target="_blank" class="btn btn-outline" style="width: fit-content; font-size: 0.9rem; padding: 0.4rem 1rem;">
+            <a href="https://www.yes24.com/Product/Goods/112344656" target="_blank" class="btn btn-outline"
+              style="width: fit-content; font-size: 0.9rem; padding: 0.4rem 1rem;">
+              YES24에서 구매하기 <span class="material-symbols-rounded" style="font-size: 1rem;">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Book 6 -->
+        <div class="card book-card" style="flex-direction: row; gap: 1.5rem; padding: 1.5rem; align-items: flex-start; opacity: 0;">
+          <div style="width: 120px; flex-shrink: 0; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow);">
+             <img src="https://image.yes24.com/goods/112905806/xl" style="width: 100%; height: auto; display: block;" alt="Book Cover">
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+            <div>
+              <h3 style="margin-bottom: 0.2rem; font-size: 1.2rem;">프론트엔드 개발을 위한 SVELTE 핸드북</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                BOOKK(부크크) <span style="margin: 0 0.5rem;">|</span> 2022.09.05
+              </p>
+              <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 1rem;" data-i18n="books.desc6">
+                이 책은 처음 시작하는 분들을 위한 입문서라기보다는 기본 지식이 있는 상태에서 포트폴리오를 만들거나, 업무를 진행하는 분들을 위한 코드 참고 서적이다. 일을 하다 보면 특정 문법이 생각이 나지 않는 경우가 있는데 그럴 때 참고했으면 해서 정리한 책이기도 하다. 그래서 설명도 간단하게 작성하고 코드 위주로 책을 작게 만들었다. 간결한 샘플 코드 위주로 정리된 작은 책이 필요하신 분이라면 도움이 될 듯하다. 어쩌면 학원 같은 곳에서 교재로 써도 괜찮겠다는 생각도 든다. 이 책이 Svelte 와 프론트엔드 개발에 관심을 가지는 분들께 도움이 되었으면 좋겠다.
+              </p>
+            </div>
+            <a href="https://www.yes24.com/Product/Goods/112905806" target="_blank" class="btn btn-outline" style="width: fit-content; font-size: 0.9rem; padding: 0.4rem 1rem;">
               YES24에서 구매하기 <span class="material-symbols-rounded" style="font-size: 1rem;">arrow_forward</span>
             </a>
           </div>
@@ -165,9 +166,12 @@
   <footer>
     <div class="container footer-content">
       <div class="footer-links">
-        <a href="https://www.youtube.com/@eungsmusic" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://blog.naver.com/73s" aria-label="Blog" target="_blank"><span class="material-symbols-rounded">article</span></a>
-        <a href="https://github.com/eung3392/eungsoft" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.youtube.com/@eungsmusic" aria-label="YouTube" target="_blank"><i
+            class="fa-brands fa-youtube"></i></a>
+        <a href="https://blog.naver.com/73s" aria-label="Blog" target="_blank"><span
+            class="material-symbols-rounded">article</span></a>
+        <a href="https://github.com/eung3392/eungsoft" aria-label="GitHub" target="_blank"><i
+            class="fa-brands fa-github"></i></a>
       </div>
       <p class="footer-text">
         &copy; 2025 EUNG SOFT. <span data-i18n="footer.rights"></span>
@@ -180,32 +184,34 @@
     // Add translations for books
     document.addEventListener('appReady', () => {
       // Inject translations manually since we didn't put them in main.js
-      if(window.t) {
-         // This approach extends the existing global object instead of fully overwriting
-         translations['ko']['books.desc1'] = "로키드 글래스를 비롯한 다양한 AR 디바이스를 위한 실전 앱 개발 가이드입니다.";
-         translations['en']['books.desc1'] = "A practical app development guide for various AR devices including Rokid Glasses.";
-         translations['ko']['books.desc2'] = "초보자를 벗어난 중급 개발자들을 위한 안드로이드 최적화 및 디버깅 노하우를 담았습니다.";
-         translations['en']['books.desc2'] = "Contains Android optimization and debugging know-how for intermediate developers who have moved beyond the beginner stage.";
-         translations['ko']['books.desc3'] = "플래시는 그동안 웹과 모바일 분야에서 사용자에게 다양한 경험들을 제공해 왔습니다. 그만큼 플래시라는 도구는 디자이너, 웹 콘텐츠 개발자, 플래시 개발자들에게 전혀 낯설지 않은 저작 도구로 자리매김했습니다. 그리고 이제 어도비의 'AIR for Android'를 통해 다이내믹하고 다양한 경험을 제공하는 안드로이드 앱을 훨씬 빠르고 손쉽게 제작할 수 있습니다.";
-         translations['en']['books.desc3'] = "Flash has long provided various user experiences in web and mobile fields. Adobe's 'AIR for Android' now easily allows for the creation of dynamic Android apps.";
-         translations['ko']['books.desc4'] = "이 책에서는 프로그래머란 직업을 가진 한 개인의 이야기를 기술하고 있다. 그렇다고 프로그래밍에 대한 기술적인 내용을 적은 책은 아니다. 그저 저자가 일상을 겪으며 느끼고 상상하고 고민했던 소소한 이야기들로 읽기 쉽게 구성되어 있다. 지하철로 출퇴근하는 평범한 직장인의 삶 속에서도 이야기가 있고 깨달음이 있으며 애틋함이 존재하지 않을까?";
-         translations['en']['books.desc4'] = "This book tells the story of an individual in the programmer profession. However, it is not a book packed with technical programming details. Rather, it consists of small, easy-to-read stories about the author's daily experiences, imaginations, and thoughts. Isn't there story, realization, and fondness even in the life of an ordinary office worker commuting by subway?";
-         translations['ko']['books.desc5'] = "이 책은 처음 시작하는 분들을 위한 입문서라기보다는 기본 지식이 있는 상태에서 포트폴리오를 만들거나, 업무를 진행하는 분들을 위한 코드 참고 서적이다. 일을 하다 보면 특정 문법이 생각이 나지 않는 경우가 있는데 그럴 때 참고했으면 해서 정리한 책이기도 하다. 그래서 최대한 책을 작게 만들었다. 설명도 많이 없는 편이다. 간결한 샘플 코드 위주로 정리된 책이 필요하신 분이라면 좋을 듯하다. 이 책에서는 기본적으로 Javascript 문법을 다루면서 ES6 문법을 비교해서 볼 수 있도록 구성하였다. Vue.js의 2, 3 버전은 장을 따로 분리하였고 3 버전에서 옵션 API 와 컴포지션 API 방식의 코드를 비교해서 작성하였다. 이 책이 Vue.js 와 프론트엔드 개발에 관심을 가지는 분들께 도움이 되었으면 좋겠다.";
-         translations['en']['books.desc5'] = "This book is not so much an introductory book for beginners, but rather a code reference book for those who are building a portfolio or working with basic knowledge. It is also a book compiled in the hope that it will be helpful when you can't remember a specific syntax while working. So the book was made as small as possible. There are not many explanations either. It would be good for those who need a book organized mainly around concise sample codes. This book basically covers Javascript syntax while allowing comparison with ES6 syntax. Versions 2 and 3 of Vue.js are separated into different chapters, and the code for the Options API and Composition API in version 3 are written for comparison. I hope this book will be helpful to those interested in Vue.js and frontend development.";
-         applyTranslations();
+      if (window.t) {
+        // This approach extends the existing global object instead of fully overwriting
+        translations['ko']['books.desc1'] = "로키드 글래스를 비롯한 다양한 AR 디바이스를 위한 실전 앱 개발 가이드입니다.";
+        translations['en']['books.desc1'] = "A practical app development guide for various AR devices including Rokid Glasses.";
+        translations['ko']['books.desc2'] = "초보자를 벗어난 중급 개발자들을 위한 안드로이드 최적화 및 디버깅 노하우를 담았습니다.";
+        translations['en']['books.desc2'] = "Contains Android optimization and debugging know-how for intermediate developers who have moved beyond the beginner stage.";
+        translations['ko']['books.desc3'] = "플래시는 그동안 웹과 모바일 분야에서 사용자에게 다양한 경험들을 제공해 왔습니다. 그만큼 플래시라는 도구는 디자이너, 웹 콘텐츠 개발자, 플래시 개발자들에게 전혀 낯설지 않은 저작 도구로 자리매김했습니다. 그리고 이제 어도비의 'AIR for Android'를 통해 다이내믹하고 다양한 경험을 제공하는 안드로이드 앱을 훨씬 빠르고 손쉽게 제작할 수 있습니다.";
+        translations['en']['books.desc3'] = "Flash has long provided various user experiences in web and mobile fields. Adobe's 'AIR for Android' now easily allows for the creation of dynamic Android apps.";
+        translations['ko']['books.desc4'] = "이 책에서는 프로그래머란 직업을 가진 한 개인의 이야기를 기술하고 있다. 그렇다고 프로그래밍에 대한 기술적인 내용을 적은 책은 아니다. 그저 저자가 일상을 겪으며 느끼고 상상하고 고민했던 소소한 이야기들로 읽기 쉽게 구성되어 있다. 지하철로 출퇴근하는 평범한 직장인의 삶 속에서도 이야기가 있고 깨달음이 있으며 애틋함이 존재하지 않을까?";
+        translations['en']['books.desc4'] = "This book tells the story of an individual in the programmer profession. However, it is not a book packed with technical programming details. Rather, it consists of small, easy-to-read stories about the author's daily experiences, imaginations, and thoughts. Isn't there story, realization, and fondness even in the life of an ordinary office worker commuting by subway?";
+        translations['ko']['books.desc5'] = "이 책은 처음 시작하는 분들을 위한 입문서라기보다는 기본 지식이 있는 상태에서 포트폴리오를 만들거나, 업무를 진행하는 분들을 위한 코드 참고 서적이다. 일을 하다 보면 특정 문법이 생각이 나지 않는 경우가 있는데 그럴 때 참고했으면 해서 정리한 책이기도 하다. 그래서 최대한 책을 작게 만들었다. 설명도 많이 없는 편이다. 간결한 샘플 코드 위주로 정리된 책이 필요하신 분이라면 좋을 듯하다. 이 책에서는 기본적으로 Javascript 문법을 다루면서 ES6 문법을 비교해서 볼 수 있도록 구성하였다. Vue.js의 2, 3 버전은 장을 따로 분리하였고 3 버전에서 옵션 API 와 컴포지션 API 방식의 코드를 비교해서 작성하였다. 이 책이 Vue.js 와 프론트엔드 개발에 관심을 가지는 분들께 도움이 되었으면 좋겠다.";
+        translations['en']['books.desc5'] = "This book is not so much an introductory book for beginners, but rather a code reference book for those who are building a portfolio or working with basic knowledge. It is also a book compiled in the hope that it will be helpful when you can't remember a specific syntax while working. So the book was made as small as possible. There are not many explanations either. It would be good for those who need a book organized mainly around concise sample codes. This book basically covers Javascript syntax while allowing comparison with ES6 syntax. Versions 2 and 3 of Vue.js are separated into different chapters, and the code for the Options API and Composition API in version 3 are written for comparison. I hope this book will be helpful to those interested in Vue.js and frontend development.";
+        translations['ko']['books.desc6'] = "이 책은 처음 시작하는 분들을 위한 입문서라기보다는 기본 지식이 있는 상태에서 포트폴리오를 만들거나, 업무를 진행하는 분들을 위한 코드 참고 서적이다. 일을 하다 보면 특정 문법이 생각이 나지 않는 경우가 있는데 그럴 때 참고했으면 해서 정리한 책이기도 하다. 그래서 설명도 간단하게 작성하고 코드 위주로 책을 작게 만들었다. 간결한 샘플 코드 위주로 정리된 작은 책이 필요하신 분이라면 도움이 될 듯하다. 어쩌면 학원 같은 곳에서 교재로 써도 괜찮겠다는 생각도 든다. 이 책이 Svelte 와 프론트엔드 개발에 관심을 가지는 분들께 도움이 되었으면 좋겠다.";
+        translations['en']['books.desc6'] = "This book is not an introductory book for beginners, but rather a code reference book for those who are building a portfolio or working with basic knowledge. It is also a book compiled in the hope that it will be helpful when you can't remember a specific syntax while working. So I kept the explanations simple and made the book small, focusing mainly on the code. It would be helpful for those who need a small book organized around concise sample codes. Maybe it would also be good to use it as a textbook in a place like an academy. I hope this book will be helpful to those interested in Svelte and frontend development.";
+        applyTranslations();
       }
 
-      if(window.gsap) {
-        gsap.fromTo('.fade-elem', 
+      if (window.gsap) {
+        gsap.fromTo('.fade-elem',
           { opacity: 0, y: -20 },
           { opacity: 1, y: 0, duration: 0.6, stagger: 0.1, ease: "power2.out" }
         );
 
-        gsap.fromTo('.book-card', 
+        gsap.fromTo('.book-card',
           { opacity: 0, scale: 0.95, y: 30 },
           { opacity: 1, scale: 1, y: 0, duration: 0.8, stagger: 0.15, ease: "back.out(1.2)" }
         );
-        
+
         // Custom bounce on book cards
         document.querySelectorAll('.book-card').forEach(card => {
           card.addEventListener('mouseenter', () => gsap.to(card, { y: -5, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)", duration: 0.3, ease: "index.out" }));
@@ -215,4 +221,5 @@
     });
   </script>
 </body>
+
 </html>
