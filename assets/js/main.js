@@ -9,7 +9,7 @@ const translations = {
     "footer.rights": "모든 권리 보유.",
     "hero.title": "EUNG SOFT",
     "hero.subtitle": "사용자의 니즈를 생각하는 실용적인 소프트웨어를 만듭니다. 광고가 없습니다. 무료입니다. EUNG SOFT는 창작을 좋아하는 개발자의 개인 창작 공간입니다. 다소 미흡하더라도 저의 창작물을 여러 사람과 공유하고 싶은 마음입니다. 관심과 응원 부탁드립니다.",
-    "hero.desc": "로키드 글래스 최적화 앱, 안드로이드 유틸리티, 그리고 IT 전문 서적을 제공합니다.",
+    "hero.desc": "로키드 글래스 최적화 앱, 안드로이드 유틸리티, 그리고 개인 서적을 소개합니다.",
     "btn.download": "다운로드",
     "btn.details": "자세히 보기",
     "app.version": "버전",
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLanguage();
   initNavbar();
   initGSAPEffects();
-  
+
   // Custom event so page-specific scripts know when core is ready
   document.dispatchEvent(new Event('appReady'));
 });
@@ -65,7 +65,7 @@ function initLanguage() {
       currentLang = currentLang === 'ko' ? 'en' : 'ko';
       localStorage.setItem('eungsoft_lang', currentLang);
       applyTranslations();
-      
+
       // Dispatch event to re-render dynamic content (like app listings)
       document.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang: currentLang } }));
     });
@@ -76,7 +76,7 @@ function initLanguage() {
 function applyTranslations() {
   const elements = document.querySelectorAll('[data-i18n]');
   const dict = translations[currentLang];
-  
+
   elements.forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (dict[key]) {
@@ -91,11 +91,11 @@ function applyTranslations() {
 
   // Update HTML lang attribute
   document.documentElement.lang = currentLang;
-  
+
   // Update toggle button text
   const langToggleText = document.querySelector('#lang-toggle span[data-i18n]');
   if (langToggleText && dict["nav.lang"]) {
-      langToggleText.textContent = dict["nav.lang"];
+    langToggleText.textContent = dict["nav.lang"];
   }
 }
 
@@ -108,7 +108,7 @@ window.t = (key) => translations[currentLang][key] || key;
 function initNavbar() {
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
-  
+
   if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
       const isExpanded = navLinks.classList.toggle('active');
@@ -116,7 +116,7 @@ function initNavbar() {
       if (icon) {
         icon.textContent = isExpanded ? 'close' : 'menu';
       }
-      
+
       // Animate dropdown with GSAP if available
       if (window.gsap && isExpanded) {
         gsap.fromTo(navLinks, { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' });
@@ -130,9 +130,9 @@ function initNavbar() {
   links.forEach(link => {
     const href = link.getAttribute('href');
     if (href !== '/' && path.includes(href.replace('../', '').replace('./', ''))) {
-        link.classList.add('active');
+      link.classList.add('active');
     } else if (path === '/' && href === '/') {
-        link.classList.add('active');
+      link.classList.add('active');
     }
   });
 }
@@ -142,11 +142,11 @@ function initGSAPEffects() {
   if (!window.gsap) return;
 
   // Basic Page Load Animation
-  gsap.from('main', { 
-    opacity: 0, 
-    y: 20, 
-    duration: 0.6, 
-    ease: 'power3.out' 
+  gsap.from('main', {
+    opacity: 0,
+    y: 20,
+    duration: 0.6,
+    ease: 'power3.out'
   });
 }
 
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.head.appendChild(gaScript);
 
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   window.gtag = gtag; // Make globally accessible
   gtag('js', new Date());
   gtag('config', 'G-LTS18DSNY0');
