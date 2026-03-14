@@ -1,0 +1,288 @@
+EUNG SOFT 홈페이지 스토리보드 (SB) v2.0 
+©  2025 EUNG SOFT ·  eung.pe.kr      1 / 8 
+ 
+ 
+ 
+EUNG SOFT 
+홈페이지 스토리보드 (SB) 
+Version 2.0 
+eung.pe.kr 
+ 
+ 
+ 
+ 
+ 
+ 
+1. 프로젝트 개요 
+ 
+항목 내용 
+사이트명 EUNG SOFT 
+도메인 eung.pe.kr 
+개발 도구 Google Antigravity 
+소스 관리 GitHub 연동 
+호스팅 Netlify (GitHub 연동 자동 배포) 
+반응형 모바일 / PC 레이아웃 분리 대응 
+다국어 한국어 / English 전환 지원 
+ 
+ 
+2. 폴더 구조 
+2-1. GitHub 저장소 (사이트 루트) 
+eung.pe.kr/  (GitHub 저장소 루트) 
+│ 
+---PAGE---
+EUNG SOFT 홈페이지 스토리보드 (SB) v2.0 
+©  2025 EUNG SOFT ·  eung.pe.kr      2 / 8 
+├── index.html                  ← Intro 
+├── rokid/ 
+│   └── index.html              ← RokidGlasses App 목록 
+├── android/ 
+│   └── index.html              ← Android App 목록 
+├── books/ 
+│   └── index.html              ← Books (정적) 
+├── app-detail.html             ← 앱 상세 페이지 (공용) 
+│ 
+├── assets/ 
+│   ├── css/ 
+│   ├── js/ 
+│   └── images/ 
+│ 
+└── download/                   ← 앱 데이터 루트 (사이트 내부) 
+    ├── RokidGlasses/ 
+    │   ├── apps-list.json      ← 앱 목록 인덱스 
+    │   └── EKConnectHUD/ 
+    │       ├── EKConnectHUD_v1.0.zip 
+    │       ├── screenshot1.jpg 
+    │       ├── screenshot2.jpg 
+    │       └── info.json 
+    └── Android/ 
+        ├── apps-list.json      ← 앱 목록 인덱스 
+        └── SampleApp/ 
+            ├── SampleApp.apk 
+            ├── screenshot1.jpg 
+            └── info.json 
+ 
+2-2. Netlify 배포 흐름 
+Google Antigravity에서 편집 
+        ↓ 
+   GitHub push 
+        ↓ 
+  Netlify 자동 감지 
+        ↓ 
+  eung.pe.kr 배포 완료 
+ 
+ 
+3. 데이터 파일 스펙 
+3-1. info.json 
+각 앱 폴더에 위치하며 앱 목록 및 상세 페이지 렌더링에 사용됩니다. 
+{ 
+  "title": { 
+    "ko": "EKConnectHUD", 
+    "en": "EKConnectHUD" 
+  }, 
+  "version": "1.0.0", 
+  "releaseDate": "2025-03-01", 
+  "shortDescription": { 
+    "ko": "로키드 글래스용 HUD 연결 앱", 
+    "en": "HUD connection app for Rokid Glasses" 
+  }, 
+  "description": { 
+---PAGE---
+EUNG SOFT 홈페이지 스토리보드 (SB) v2.0 
+©  2025 EUNG SOFT ·  eung.pe.kr      3 / 8 
+    "ko": "앱 상세 페이지에 표시될 긴 설명 (한국어)...", 
+    "en": "Full description shown on the app detail page (English)..." 
+  }, 
+  "youtubeUrl": "https://www.youtube.com/watch?v=xxxxx", 
+  "downloadCount": 0, 
+  "tags": { 
+    "ko": ["HUD", "로키드", "연결"], 
+    "en": ["HUD", "Rokid", "Connect"] 
+  } 
+} 
+ 
+3-2. apps-list.json 
+각 카테고리(RokidGlasses, Android) 루트에 위치하며, 앱 폴더 목록을 관리합니다. 
+{ 
+  "apps": ["EKConnectHUD", "AnotherApp"] 
+} 
+ 
+ 
+4. 다국어 (i18n) 설계 
+4-1. 전환 UI 
+• 네비게이션 바 우측 상단에 상시 노출 
+• 🌐 한국어 / English 형태의 토글 버튼 
+• 선택값은 localStorage 에 저장 → 재방문 시 유지 
+ 
+4-2. 적용 범위 
+구분 다국어 적용 방법 
+공통 UI (메뉴, 버튼 등) JS 언어 객체에 ko/en 정의 
+정적 페이지 텍스트 (Intro, Books) HTML data-i18n 속성 + JS 치환 
+동적 데이터 (앱 설명 등) info.json 내 ko/en 필드 분기 
+ 
+4-3. 구현 예시 
+<!-- HTML --> 
+<span data-i18n="nav.intro">Intro</span> 
+ 
+// JS 언어 객체 
+const i18n = { 
+  ko: { "nav.intro": "소개" }, 
+  en: { "nav.intro": "Intro" } 
+} 
+---PAGE---
+EUNG SOFT 홈페이지 스토리보드 (SB) v2.0 
+©  2025 EUNG SOFT ·  eung.pe.kr      4 / 8 
+ 
+ 
+5. 공통 레이아웃 
+5-1. 네비게이션 바 
+항목 내용 
+로고 EUNG SOFT (클릭 시 Intro로 이동) 
+메뉴 Intro / RokidGlasses App / Android App / Books 
+언어 전환 🌐 한국어 / English 토글 (우측 상단) 
+PC 상단 고정 가로 네비게이션 
+모바일 햄버거 메뉴 → 드로어 or 드롭다운 + 언어 토글 
+ 
+5-2. 푸터 
+• 저작권 표기: ©  EUNG SOFT 
+• 이메일 주소 
+• 유튜브 채널 링크 
+• 블로그 링크 
+ 
+ 
+6. 페이지별 상세 구성 
+6-1. Intro  (index.html) 
+목적: 사이트 및 개발자 소개, 외부 링크 안내 
+ 
+섹션 내용 
+Hero 사이트 이름, 슬로건, 한 줄 소개 
+About Site 이 사이트에서 제공하는 것 (앱 다운로드, 서적 안내 등) 
+About Developer 개발자 소개 (프로필 이미지, 자기소개 텍스트) 
+Contact 이메일 주소 표시 
+---PAGE---
+EUNG SOFT 홈페이지 스토리보드 (SB) v2.0 
+©  2025 EUNG SOFT ·  eung.pe.kr      5 / 8 
+섹션 내용 
+Links 유튜브 채널 링크, 블로그 링크 (버튼 or 아이콘 카드) 
+ 
+• PC 레이아웃: 2 단 컬럼 (About Site + About Developer 나란히) 
+• 모바일 레이아웃: 1 단 세로 스택 
+ 
+ 
+6-2. RokidGlasses App  (rokid/index.html) 
+목적: 로키드 글래스용 앱 목록 표시 및 상세 페이지 진입 
+데이터 소스: /download/RokidGlasses/apps-list.json → 각 앱의 info.json fetch 
+ 
+섹션 내용 
+페이지 헤더 "RokidGlasses App" 타이틀 + 간단한 설명 
+앱 목록 카드 앱별 카드 UI (아래 참조) 
+ 
+앱 카드 구성 요소 
+┌──────────────────────────────┐ 
+│  [대표 이미지 screenshot1]    │ 
+│  앱 이름 (title)             │ 
+│  짧은 설명 (shortDescription) │ 
+│  버전 v1.0.0  |  다운로드 N회 │ 
+│       [자세히 보기]           │ 
+└──────────────────────────────┘ 
+ 
+• PC: 3 열 그리드 
+• 모바일: 1 열 리스트 
+ 
+ 
+6-3. Android App  (android/index.html) 
+구성은 6-2와 동일. 데이터 소스만 /download/Android/ 기준. 파일 형식은 .apk. 
+ 
+ 
+6-4. 앱 상세 페이지  (app-detail.html) 
+URL 파라미터: ?app=EKConnectHUD&type=rokid 
+---PAGE---
+EUNG SOFT 홈페이지 스토리보드 (SB) v2.0 
+©  2025 EUNG SOFT ·  eung.pe.kr      6 / 8 
+목적: 특정 앱의 상세 정보, 스크린샷, 다운로드 제공 
+ 
+섹션 내용 
+헤더 앱 이름 + 버전 + 릴리즈일 
+유튜브 iframe embed (youtubeUrl이 있을 경우만 표시) 
+스크린샷 갤러리 폴더 내 이미지 슬라이더 
+앱 설명 info.json description (언어 분기) 
+다운로드 버튼 zip / apk 직접 링크 
+뒤로가기 목록 페이지 복귀 버튼 
+ 
+• PC: 좌(유튜브+갤러리) / 우(설명+다운로드) 2 단 
+• 모바일: 1 단 순서대로 
+ 
+ 
+6-5. Books  (books/index.html) 
+정적 페이지. 책 정보는 HTML에 직접 작성. 
+ 
+섹션 내용 
+페이지 헤더 "Books" 타이틀 
+서적 카드 (반복) 책 표지, 제목, 출판사, 출판일, 소개, 네이버 쇼핑 구매 링크 
+ 
+서적 카드 구성 
+┌────────────────────────────────────┐ 
+│  [책 표지 이미지]                   │ 
+│  책 제목                           │ 
+│  출판사 | 출판일                    │ 
+│  책 소개 (2~3줄)                   │ 
+│  [네이버 쇼핑에서 구매하기 →]       │ 
+└────────────────────────────────────┘ 
+ 
+• PC: 2 열 그리드 
+• 모바일: 1 열 리스트 
+• 다국어: 책 제목, 소개 텍스트 모두 data-i18n 속성으로 처리 
+ 
+---PAGE---
+EUNG SOFT 홈페이지 스토리보드 (SB) v2.0 
+©  2025 EUNG SOFT ·  eung.pe.kr      7 / 8 
+ 
+7. 기술 구현 포인트 
+7-1. 폴더 스캔 방식 
+Netlify는 정적 호스팅이므로 서버사이드 디렉토리 스캔이 불가합니다. apps-list.json 방식을 
+사용합니다. 
+ 
+항목 내용 
+방법 apps-list.json에 앱 폴더명 목록을 수동 관리 
+장점 단순하고 안정적. 정적 호스팅 환경에 적합 
+단점 앱 추가 시 apps-list.json 1개 수정 필요 
+동작 방식 JS가 apps-list.json fetch → 앱 목록 확보 → 각 info.json fetch 
+ 
+ 
+7-2. 반응형 브레이크포인트 
+구분 기준 레이아웃 
+PC 768px 초과 3열 그리드, 상단 고정 네비 
+모바일 768px 이하 1열 리스트, 햄버거 메뉴 
+ 
+ 
+7-3. 다운로드 카운트 처리 
+옵션 방법 특징 
+옵션 1 Google Analytics 이벤트 다운로드 클릭 추적 (비표시) 
+옵션 2  배포 시 직접 업데이트 
+옵션 3 외부 카운터 API 연동 실시간 집계 가능 (예: countapi.xyz) 
+ 
+ 
+8. 운영자 앱 추가 플로우 
+---PAGE---
+EUNG SOFT 홈페이지 스토리보드 (SB) v2.0 
+©  2025 EUNG SOFT ·  eung.pe.kr      8 / 8 
+새 앱 추가 시 아래 순서로 진행합니다. 
+ 
+1. download/RokidGlasses/[앱명]/ 폴더 생성 
+2. info.json 작성 (ko/en 모두 작성) 
+3. screenshot1.jpg, screenshot2.jpg ... 업로드 
+4. 압축파일 (.zip) 업로드 
+5. download/RokidGlasses/apps-list.json 에 앱명 추가 
+6. GitHub push → Netlify 자동 배포 완료 
+ 
+ 
+9. 디자인 방향 
+항목 방향 
+톤 심플하고 기술적인 느낌 https://antigravity.google/ 사이트 처럼 하얀 배
+경에 심플하고 세련된 아이콘과 기술적인 애니메이션 사용 
+컬러 포인트 컬러 1개 (흰색/검은색 계열)  
+폰트 Noto Sans KR (한/영 모두 대응) 
+아이콘 Font Awesome or Material Icons 
+애니메이션 물리효과와 살아 있는 것 같은 통통 튀는 느낌.  
+ 
+ 
+이 스토리보드를 기준으로 실제 코드 작업을 진행합니다. 

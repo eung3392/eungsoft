@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Details - EUNG SOFT</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    .detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    @media (max-width: 768px) {
+      .detail-grid { grid-template-columns: 1fr; }
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: #000;
+      margin-bottom: 1.5rem;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .tag {
+      display: inline-block;
+      background: var(--border-color);
+      color: var(--text-color);
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="logo">
+        <span class="material-symbols-rounded">rocket_launch</span>
+        EUNG SOFT
+      </a>
+      
+      <div class="nav-links">
+        <a href="/" data-i18n="nav.intro">Intro</a>
+        <a href="rokid/" data-i18n="nav.rokid">Rokid App</a>
+        <a href="android/" data-i18n="nav.android">Android App</a>
+        <a href="books/" data-i18n="nav.books">Books</a>
+      </div>
+
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button id="lang-toggle" class="lang-toggle">
+          <span class="material-symbols-rounded" style="font-size: 1.2rem;">language</span>
+          <span data-i18n="nav.lang">English</span>
+        </button>
+        <button class="hamburger" aria-label="Menu">
+          <span class="material-symbols-rounded">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container" id="content-area">
+      <div style="text-align: center; padding: 4rem;">
+        <!-- Loading spinner placeholder -->
+        <span class="material-symbols-rounded" style="font-size: 3rem; animation: spin 1s linear infinite;">autorenew</span>
+        <style>@keyframes spin { 100% { transform: rotate(360deg); } }</style>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Blog"><span class="material-symbols-rounded">article</span></a>
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <p class="footer-text">
+        &copy; 2025 EUNG SOFT. <span data-i18n="footer.rights"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    let currentAppInfo = null;
+    let urlParams = null;
+
+    document.addEventListener('appReady', () => {
+      urlParams = new URLSearchParams(window.location.search);
+      loadAppDetails();
+    });
+
+    document.addEventListener('languageChanged', () => {
+      if(currentAppInfo) {
+        renderDetails(currentAppInfo, urlParams.get('app'), urlParams.get('type'));
+      }
+    });
+
+    async function loadAppDetails() {
+      const appType = urlParams.get('type');
+      const appName = urlParams.get('app');
+      const contentArea = document.getElementById('content-area');
+
+      if (!appName || !appType) {
+        contentArea.innerHTML = `<h2 style="text-align: center;">Invalid App Parameters</h2>`;
+        return;
+      }
+
+      const jsonUrl = `download/${appType}/${appName}/info.json`;
+      
+      try {
+        currentAppInfo = await window.fetchJSON(jsonUrl);
+        if(!currentAppInfo) throw new Error("Could not load info.json");
+        
+        renderDetails(currentAppInfo, appName, appType);
+      } catch (err) {
+        contentArea.innerHTML = `<h2 style="text-align: center;">App Not Found</h2>`;
+      }
+    }
+
+    function renderDetails(info, appName, appType) {
+      const lang = window.getLang();
+      const contentArea = document.getElementById('content-area');
+      
+      const title = info.title[lang] || info.title['ko'];
+      const desc = info.description[lang] || info.description['ko'];
+      const tags = info.tags[lang] || info.tags['ko'] || [];
+      const backUrl = appType.toLowerCase() === 'android' ? 'android/' : 'rokid/';
+
+      // Create tags HTML
+      let tagsHtml = '';
+      tags.forEach(tag => {
+        tagsHtml += `<span class="tag">#${tag}</span>`;
+      });
+
+      // Video HTML
+      let videoHtml = '';
+      if (info.youtubeUrl) {
+        videoHtml = `
+          <div class="video-container fade-elem">
+            <iframe src="${info.youtubeUrl}" allowfullscreen></iframe>
+          </div>
+        `;
+      } else {
+        // Fallback Gallery using placehold.it
+        videoHtml = `
+          <div style="border-radius: var(--radius); overflow: hidden; margin-bottom: 1.5rem; background: #e5e7eb; aspect-ratio: 16/9;" class="fade-elem">
+             <img src="https://placehold.co/800x450/f0f0f0/666666?text=${appName}+Screen+1" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        `;
+      }
+      
+      // Extension prediction (zip for Rokid, apk for Android)
+      const ext = appType.toLowerCase() === 'android' ? '.apk' : '.zip';
+
+      const html = `
+        <!-- Title & Back Button -->
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;" class="fade-elem">
+          <a href="${backUrl}" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--text-muted); font-weight: 500;">
+            <span class="material-symbols-rounded">arrow_back</span>
+            Back to List
+          </a>
+        </div>
+        
+        <div class="detail-grid">
+          <!-- Left Col (Media) -->
+          <div>
+            ${videoHtml}
+            <div style="display: flex; gap: 0.5rem;" class="fade-elem">
+               <img src="https://placehold.co/400x225/f0f0f0/666666?text=Screen+1" style="width: 33%; border-radius: 8px;">
+               <img src="https://placehold.co/400x225/f0f0f0/666666?text=Screen+2" style="width: 33%; border-radius: 8px;">
+            </div>
+          </div>
+          
+          <!-- Right Col (Info) -->
+          <div class="card fade-elem" style="border: none; box-shadow: none; background: transparent; padding: 0;">
+            <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 1rem;">
+              ${title}
+            </h1>
+            
+            <!-- Metadata -->
+            <div style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.95rem;">
+               <span style="display: flex; align-items: center; gap: 0.3rem;"><span class="material-symbols-rounded" style="font-size:1.2rem;">new_releases</span> v${info.version}</span>
+               <span style="display: flex; align-items: center; gap: 0.3rem;"><span class="material-symbols-rounded" style="font-size:1.2rem;">event</span> ${info.releaseDate}</span>
+               <span style="display: flex; align-items: center; gap: 0.3rem;"><span class="material-symbols-rounded" style="font-size:1.2rem;">download</span> ${info.downloadCount}</span>
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">${tagsHtml}</div>
+            
+            <h3 style="margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Description</h3>
+            <p style="white-space: pre-line; margin-bottom: 2rem; color: var(--text-muted); line-height: 1.8;">${desc}</p>
+            
+            <!-- Download Button -->
+            <a href="download/${appType}/${appName}/${appName}${ext}" onclick="if(window.gtag) { gtag('event', 'app_download', {'app_name': '${appName}', 'app_type': '${appType}'}); }" class="btn dl-btn" download style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+              <span class="material-symbols-rounded">download</span>
+              ${window.t('btn.download')} ${appName}${ext}
+            </a>
+          </div>
+        </div>
+      `;
+
+      contentArea.innerHTML = html;
+      document.title = `${title} - EUNG SOFT`;
+
+      // Animations
+      if (window.gsap) {
+        gsap.fromTo('.fade-elem', 
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 0.6, stagger: 0.1, ease: "power2.out" }
+        );
+
+        // Bouncy hover for download
+        const dlBtn = document.querySelector('.dl-btn');
+        if(dlBtn) {
+           dlBtn.addEventListener('mouseenter', () => gsap.to(dlBtn, { scale: 1.03, duration: 0.3, ease: "back.out(2)" }));
+           dlBtn.addEventListener('mouseleave', () => gsap.to(dlBtn, { scale: 1, duration: 0.3, ease: "power2.out" }));
+        }
+      }
+    }
+  </script>
+</body>
+</html>

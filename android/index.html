@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Android Apps - EUNG SOFT</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../" class="logo">
+        <span class="material-symbols-rounded">rocket_launch</span>
+        EUNG SOFT
+      </a>
+      
+      <div class="nav-links">
+        <a href="../" data-i18n="nav.intro">Intro</a>
+        <a href="../rokid/" data-i18n="nav.rokid">Rokid App</a>
+        <a href="./" data-i18n="nav.android" class="active">Android App</a>
+        <a href="../books/" data-i18n="nav.books">Books</a>
+      </div>
+
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button id="lang-toggle" class="lang-toggle">
+          <span class="material-symbols-rounded" style="font-size: 1.2rem;">language</span>
+          <span data-i18n="nav.lang">English</span>
+        </button>
+        <button class="hamburger" aria-label="Menu">
+          <span class="material-symbols-rounded">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      
+      <section style="margin-bottom: 3rem; text-align: center;">
+        <h1 style="font-size: 2.5rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+          <span class="material-symbols-rounded" style="color: var(--accent-color); font-size: inherit;">android</span>
+          Android Apps
+        </h1>
+        <p style="color: var(--text-muted); font-size: 1.1rem;">안드로이드 스마트폰을 위한 유틸리티 애플리케이션입니다.</p>
+      </section>
+
+      <!-- App Grid -->
+      <div class="grid" id="app-grid">
+        <!-- Skeleton -->
+        <div class="card skeleton-card">
+          <div class="skeleton" style="height: 180px; width: 100%; margin-bottom: 1rem;"></div>
+          <div class="skeleton" style="height: 24px; width: 60%; margin-bottom: 0.5rem;"></div>
+          <div class="skeleton" style="height: 16px; width: 90%; margin-bottom: 0.5rem;"></div>
+          <div class="skeleton" style="height: 16px; width: 40%; margin-bottom: 1.5rem;"></div>
+          <div class="skeleton" style="height: 40px; width: 100%; border-radius: 20px;"></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Blog"><span class="material-symbols-rounded">article</span></a>
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <p class="footer-text">
+        &copy; 2025 EUNG SOFT. <span data-i18n="footer.rights"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script>
+    document.addEventListener('appReady', () => {
+      loadApps();
+    });
+
+    document.addEventListener('languageChanged', () => {
+      renderApps();
+    });
+
+    let appDataCache = [];
+
+    async function loadApps() {
+      const grid = document.getElementById('app-grid');
+      
+      try {
+        const listData = await window.fetchJSON('../download/Android/apps-list.json');
+        if (!listData || !listData.apps) throw new Error("Invalid list format");
+        grid.innerHTML = '';
+        
+        const promises = listData.apps.map(appName => 
+          window.fetchJSON(`../download/Android/${appName}/info.json`)
+            .then(info => ({ appName, info }))
+        );
+
+        appDataCache = await Promise.all(promises);
+        renderApps();
+        
+      } catch (err) {
+        console.error("Failed loading apps:", err);
+        grid.innerHTML = `<p style="text-align: center; grid-column: 1/-1;">${window.t('error.fetch')}</p>`;
+      }
+    }
+
+    function renderApps() {
+      const grid = document.getElementById('app-grid');
+      const lang = window.getLang();
+      
+      let html = '';
+      appDataCache.forEach(data => {
+        if(!data.info) return;
+        
+        const info = data.info;
+        const title = info.title[lang] || info.title['ko'];
+        const shortDesc = info.shortDescription[lang] || info.shortDescription['ko'];
+        const imgUrl = `https://placehold.co/600x400/f0f0f0/666666?text=${data.appName}`;
+
+        html += `
+          <div class="card app-card" style="opacity: 0;">
+            <div style="height: 180px; width: 100%; border-radius: 8px; overflow: hidden; margin-bottom: 1rem; background: #e5e7eb;">
+              <img src="${imgUrl}" alt="${title}" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3 style="margin-bottom: 0.25rem;">${title}</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.75rem; min-height: 2.7rem;">${shortDesc}</p>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); padding-top: 0.75rem; margin-top: auto; margin-bottom: 1rem;">
+               <span style="font-size: 0.85rem; font-weight: 500;"><span class="material-symbols-rounded" style="font-size:1rem;">tag</span> v${info.version}</span>
+               <span style="font-size: 0.85rem; color: var(--text-muted);"><span class="material-symbols-rounded" style="font-size:1rem;">download</span> ${info.downloadCount}</span>
+            </div>
+            
+            <!-- Link to generic detail page with app and type parameters -->
+            <a href="../app-detail.html?app=${data.appName}&type=Android" class="btn" style="width: 100%;">
+              <span class="material-symbols-rounded" style="font-size: 1.2rem;">arrow_forward</span>
+              ${window.t('btn.details')}
+            </a>
+          </div>
+        `;
+      });
+      
+      grid.innerHTML = html;
+
+      if(window.gsap) {
+        gsap.fromTo('.app-card', 
+          { opacity: 0, y: 30 },
+          { opacity: 1, y: 0, duration: 0.6, stagger: 0.1, ease: "back.out(1.5)" }
+        );
+      }
+    }
+  </script>
+</body>
+</html>

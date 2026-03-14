@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books - EUNG SOFT</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../" class="logo">
+        <span class="material-symbols-rounded">rocket_launch</span>
+        EUNG SOFT
+      </a>
+      
+      <div class="nav-links">
+        <a href="../" data-i18n="nav.intro">Intro</a>
+        <a href="../rokid/" data-i18n="nav.rokid">Rokid App</a>
+        <a href="../android/" data-i18n="nav.android">Android App</a>
+        <a href="./" data-i18n="nav.books" class="active">Books</a>
+      </div>
+
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button id="lang-toggle" class="lang-toggle">
+          <span class="material-symbols-rounded" style="font-size: 1.2rem;">language</span>
+          <span data-i18n="nav.lang">English</span>
+        </button>
+        <button class="hamburger" aria-label="Menu">
+          <span class="material-symbols-rounded">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      
+      <section style="margin-bottom: 3rem; text-align: center;">
+        <h1 style="font-size: 2.5rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;" class="fade-elem">
+          <span class="material-symbols-rounded" style="color: var(--accent-color); font-size: inherit;">menu_book</span>
+          Books
+        </h1>
+        <p style="color: var(--text-muted); font-size: 1.1rem;" class="fade-elem">출간된 IT 전문 서적 목록입니다.</p>
+      </section>
+
+      <!-- Grid -->
+      <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+        
+        <!-- Book 1 -->
+        <div class="card book-card" style="flex-direction: row; gap: 1.5rem; padding: 1.5rem; align-items: flex-start; opacity: 0;">
+          <div style="width: 120px; flex-shrink: 0; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow);">
+             <img src="https://placehold.co/300x420/f9fafb/333333?text=Book+Cover" style="width: 100%; height: auto; display: block;">
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+            <div>
+              <h3 style="margin-bottom: 0.2rem; font-size: 1.2rem;">AR/VR 앱 개발 입문</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                A출판사 <span style="margin: 0 0.5rem;">|</span> 2024.05.20
+              </p>
+              <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 1rem;" data-i18n="books.desc1">
+                로키드 글래스를 비롯한 다양한 AR 디바이스를 위한 실전 앱 개발 가이드입니다.
+              </p>
+            </div>
+            <a href="#" target="_blank" class="btn btn-outline" style="width: fit-content; font-size: 0.9rem; padding: 0.4rem 1rem;">
+              네이버 쇼핑에서 구매하기 <span class="material-symbols-rounded" style="font-size: 1rem;">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="card book-card" style="flex-direction: row; gap: 1.5rem; padding: 1.5rem; align-items: flex-start; opacity: 0;">
+          <div style="width: 120px; flex-shrink: 0; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow);">
+             <img src="https://placehold.co/300x420/f9fafb/333333?text=Book+2" style="width: 100%; height: auto; display: block;">
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+            <div>
+              <h3 style="margin-bottom: 0.2rem; font-size: 1.2rem;">안드로이드 실전 잡학사전</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                B출판사 <span style="margin: 0 0.5rem;">|</span> 2023.11.10
+              </p>
+              <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 1rem;" data-i18n="books.desc2">
+                초보자를 벗어난 중급 개발자들을 위한 안드로이드 최적화 및 디버깅 노하우를 담았습니다.
+              </p>
+            </div>
+            <a href="#" target="_blank" class="btn btn-outline" style="width: fit-content; font-size: 0.9rem; padding: 0.4rem 1rem;">
+              네이버 쇼핑에서 구매하기 <span class="material-symbols-rounded" style="font-size: 1rem;">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Blog"><span class="material-symbols-rounded">article</span></a>
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <p class="footer-text">
+        &copy; 2025 EUNG SOFT. <span data-i18n="footer.rights"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script>
+    // Add translations for books
+    document.addEventListener('appReady', () => {
+      // Inject translations manually since we didn't put them in main.js
+      if(window.t) {
+         // This approach extends the existing global object instead of fully overwriting
+         translations['ko']['books.desc1'] = "로키드 글래스를 비롯한 다양한 AR 디바이스를 위한 실전 앱 개발 가이드입니다.";
+         translations['en']['books.desc1'] = "A practical app development guide for various AR devices including Rokid Glasses.";
+         translations['ko']['books.desc2'] = "초보자를 벗어난 중급 개발자들을 위한 안드로이드 최적화 및 디버깅 노하우를 담았습니다.";
+         translations['en']['books.desc2'] = "Contains Android optimization and debugging know-how for intermediate developers who have moved beyond the beginner stage.";
+         applyTranslations();
+      }
+
+      if(window.gsap) {
+        gsap.fromTo('.fade-elem', 
+          { opacity: 0, y: -20 },
+          { opacity: 1, y: 0, duration: 0.6, stagger: 0.1, ease: "power2.out" }
+        );
+
+        gsap.fromTo('.book-card', 
+          { opacity: 0, scale: 0.95, y: 30 },
+          { opacity: 1, scale: 1, y: 0, duration: 0.8, stagger: 0.15, ease: "back.out(1.2)" }
+        );
+        
+        // Custom bounce on book cards
+        document.querySelectorAll('.book-card').forEach(card => {
+          card.addEventListener('mouseenter', () => gsap.to(card, { y: -5, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)", duration: 0.3, ease: "index.out" }));
+          card.addEventListener('mouseleave', () => gsap.to(card, { y: 0, boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)", duration: 0.3, ease: "power2.out" }));
+        });
+      }
+    });
+  </script>
+</body>
+</html>

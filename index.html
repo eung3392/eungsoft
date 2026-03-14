@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EUNG SOFT</title>
+  <meta name="description" content="EUNG SOFT Official Homepage">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- GSAP Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="logo">
+        <span class="material-symbols-rounded">rocket_launch</span>
+        EUNG SOFT
+      </a>
+      
+      <div class="nav-links">
+        <a href="/" data-i18n="nav.intro">Intro</a>
+        <a href="rokid/" data-i18n="nav.rokid">Rokid App</a>
+        <a href="android/" data-i18n="nav.android">Android App</a>
+        <a href="books/" data-i18n="nav.books">Books</a>
+      </div>
+
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button id="lang-toggle" class="lang-toggle">
+          <span class="material-symbols-rounded" style="font-size: 1.2rem;">language</span>
+          <span data-i18n="nav.lang">English</span>
+        </button>
+        <button class="hamburger" aria-label="Menu">
+          <span class="material-symbols-rounded">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      
+      <!-- Hero Section -->
+      <section class="hero-section" style="text-align: center; padding: 4rem 0;">
+        <div class="hero-icon" style="font-size: 4rem; color: var(--accent-color); margin-bottom: 1rem;">
+          <span class="material-symbols-rounded" style="font-size: inherit;">code_blocks</span>
+        </div>
+        <h1 data-i18n="hero.title" style="font-size: 3rem; margin-bottom: 1rem;">EUNG SOFT</h1>
+        <h2 data-i18n="hero.subtitle" style="font-size: 1.5rem; color: var(--text-muted); font-weight: 500; margin-bottom: 2rem;"></h2>
+        <p data-i18n="hero.desc" style="max-width: 600px; margin: 0 auto; color: var(--text-muted);"></p>
+      </section>
+
+      <!-- Split Layout for About Site & About Dev -->
+      <div class="grid" style="margin-top: 2rem;">
+        
+        <!-- About Site -->
+        <section class="card about-card">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <span class="material-symbols-rounded" style="color: var(--accent-color);">info</span>
+            <h3 data-i18n="about.site" style="margin: 0;"></h3>
+          </div>
+          <p data-i18n="about.site.desc" style="color: var(--text-muted); flex: 1;"></p>
+          <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+            <a href="rokid/" class="btn">
+              <span class="material-symbols-rounded" style="font-size: 1.2rem;">smart_display</span>
+              Rokid Apps
+            </a>
+            <a href="android/" class="btn btn-outline">
+              <span class="material-symbols-rounded" style="font-size: 1.2rem;">android</span>
+              Android Apps
+            </a>
+          </div>
+        </section>
+
+        <!-- About Developer -->
+        <section class="card dev-card">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <span class="material-symbols-rounded" style="color: var(--accent-color);">person</span>
+            <h3 data-i18n="about.dev" style="margin: 0;"></h3>
+          </div>
+          <!-- Profile mock -->
+          <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+            <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--border-color); display: flex; align-items: center; justify-content: center;">
+              <span class="material-symbols-rounded" style="font-size: 2rem; color: var(--text-muted);">account_circle</span>
+            </div>
+            <div>
+              <p style="font-weight: 700;">Eung</p>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">eung.pe.kr</p>
+            </div>
+          </div>
+          <p data-i18n="about.dev.desc" style="color: var(--text-muted); margin-bottom: 1.5rem; flex: 1;"></p>
+          
+          <div style="display: flex; gap: 0.5rem; align-items: center; color: var(--text-muted);">
+            <span class="material-symbols-rounded" style="font-size: 1.2rem;">mail</span>
+            <span>contact@eung.pe.kr</span> <!-- Replace with actual if needed -->
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Blog"><span class="material-symbols-rounded">article</span></a>
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <p class="footer-text">
+        &copy; 2025 EUNG SOFT. <span data-i18n="footer.rights"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Page specific GSAP animations
+    document.addEventListener('appReady', () => {
+      if(window.gsap) {
+        // Hero Icon bounce
+        gsap.to('.hero-icon', { 
+          y: -15, 
+          duration: 1, 
+          yoyo: true, 
+          repeat: -1, 
+          ease: "power1.inOut" 
+        });
+
+        // Cards stagger in
+        gsap.from('.card', {
+          opacity: 0,
+          y: 30,
+          duration: 0.8,
+          stagger: 0.2,
+          ease: "back.out(1.7)",
+          delay: 0.3
+        });
+        
+        // Setup hover physical effects (bouncy) for buttons and cards
+        const hoverElements = document.querySelectorAll('.card, .btn');
+        hoverElements.forEach(el => {
+          el.addEventListener('mouseenter', () => {
+            gsap.to(el, { scale: 1.02, duration: 0.3, ease: "back.out(2)" });
+          });
+          el.addEventListener('mouseleave', () => {
+            gsap.to(el, { scale: 1, duration: 0.3, ease: "power2.out" });
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
