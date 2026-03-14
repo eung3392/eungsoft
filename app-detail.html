@@ -168,8 +168,14 @@
         `;
       }
       
-      // Extension prediction (zip for Rokid, apk for Android)
+      // Download Setup
       const ext = appType.toLowerCase() === 'android' ? '.apk' : '.zip';
+      const isStoreLink = info.storeUrl && info.storeUrl.trim() !== "";
+      const dlHref = isStoreLink ? info.storeUrl : `download/${appType}/${appName}/${appName}${ext}`;
+      const dlTarget = isStoreLink ? 'target="_blank"' : '';
+      const dlAttr = isStoreLink ? '' : 'download';
+      const dlText = isStoreLink ? (lang === 'ko' ? '스토어에서 다운로드' : 'Download from Store') : `${window.t('btn.download')} ${appName}${ext}`;
+      const dlIcon = isStoreLink ? 'open_in_new' : 'download';
 
       const html = `
         <!-- Title & Back Button -->
@@ -209,9 +215,9 @@
             <p style="white-space: pre-line; margin-bottom: 2rem; color: var(--text-muted); line-height: 1.8;">${desc}</p>
             
             <!-- Download Button -->
-            <a href="download/${appType}/${appName}/${appName}${ext}" onclick="if(window.gtag) { gtag('event', 'app_download', {'app_name': '${appName}', 'app_type': '${appType}'}); }" class="btn dl-btn" download style="width: 100%; padding: 1rem; font-size: 1.1rem;">
-              <span class="material-symbols-rounded">download</span>
-              ${window.t('btn.download')} ${appName}${ext}
+            <a href="${dlHref}" ${dlTarget} ${dlAttr} onclick="if(window.gtag) { gtag('event', 'app_download', {'app_name': '${appName}', 'app_type': '${appType}'}); }" class="btn dl-btn" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+              <span class="material-symbols-rounded">${dlIcon}</span>
+              ${dlText}
             </a>
           </div>
         </div>

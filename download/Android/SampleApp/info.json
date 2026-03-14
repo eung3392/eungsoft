@@ -15,6 +15,7 @@
   },
   "youtubeUrl": "",
   "downloadCount": 85,
+  "storeUrl": "https://play.google.com/store/apps/details?id=com.eungsoft.sample",
   "tags": {
     "ko": ["샘플", "안드로이드", "테스트"],
     "en": ["Sample", "Android", "Test"]
