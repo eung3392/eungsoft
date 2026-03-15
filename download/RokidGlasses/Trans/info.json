@@ -1,0 +1,34 @@
+{
+  "title": {
+    "ko": "텍스트 번역",
+    "en": "Text Translate (English-korean)"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-03-12",
+  "shortDescription": {
+    "ko": "오프라인 기반의 영어-한국어 텍스트 번역 애플리케이션입니다",
+    "en": "Offline English-Korean text translation application."
+  },
+  "description": {
+    "ko": "EK번역은 Rokid Glasses 사용자를 위한 전용 영어-한국어 번역 애플리케이션입니다. Google ML Kit를 활용하여 안정적인 번역 성능을 제공하며, 스마트 글래스 환경에 최적화된 UX를 갖추고 있습니다. 다운받은 압축파일의 비밀번호는 eung.pe.kr 입니다.",
+    "en": "EK Trans is a dedicated English-Korean translation application for Rokid Glasses users. It provides stable translation performance using Google ML Kit and features a UX optimized for the smart glasses environment. The password for the downloaded compressed file is eung.pe.kr."
+  },
+  "control": {
+    "ko": "앱을 실행하기 전에 와이파이를 활성화 하고 인터넷에 연결합니다. 앱 초기 실행 시 영어-한국어 번역을 위한 모델을 다운로드해야 하는데 약 30Mbyte 정도입니다. 최초 다운로드 시에만 Wi-Fi 연결이 필요합니다. 번역 모델을 다운 받은 이후에는 네트워크 연결 없이 온디바이스에서 번역이 이루어집니다.상단의 사각형 바운더리에 영문 텍스트가 오도록 합니다. 안경 우측 다리를 터치하면 스캔중.. 이라는 문구와 함께 문자 인식 및 번역이 이루어집니다.",
+    "en": "Before running the app, enable Wi-Fi and connect to the internet. When you first run the app, you need to download a model for English-Korean translation, which is about 30Mbyte. Wi-Fi connection is only required for the initial download. After downloading the translation model, the translation is performed on-device without a network connection. Align the English text within the rectangular boundary at the top. Touch the right temple of the glasses to scan... and the text will be recognized and translated."
+  },
+  "youtubeUrl": "",
+  "youtubeType": "1",
+  "download": "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKTrans.7z",
+  "images": [
+    "scr1.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "번역"
+    ],
+    "en": [
+      "Translate"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": {
+    "ko": "로키드 커넥트 HUD 폰용",
+    "en": "Rokid Connect HUD for Phone"
+  },
+  "version": "1.1.0",
+  "releaseDate": "2026-03-04",
+  "shortDescription": {
+    "ko": "네비게이션 HUD 폰용 App, 티맵, 네이버맵",
+    "en": "Navigation HUD App for Phone (korean ver)"
+  },
+  "description": {
+    "ko": "스마트폰의 네비게이션을 안경에 HUD로 표시하기 위해 안경과 연결하는 앱입니다. 이 앱은 모바일폰에 설치합니다. 이 앱을 사용하기 위해서는 HUD 안경용 App을 설치해서 함께 사용해야 합니다. 제 블로그에 더 자세한 내용이 있습니다.",
+    "en": "This app displays navigation from your smartphone as a HUD on your glasses. Install this app on your mobile phone. To use this app, you must install and use the HUD phone app together. There are more details on my blog."
+  },
+  "control": {
+    "ko": "앱에서 Connect 를 선택하고, 미러링 버튼을 누릅니다. 레이아웃, 설정, 미러링 영역에서 상세한 설정이 가능합니다.",
+    "en": "Select Connect in the phone app, and press the Mirroring button. Detailed settings are available in the Layout, Settings, and Mirroring areas."
+  },
+  "youtubeUrl": "https://www.youtube.com/embed/_2tB-Kn8ZxQ",
+  "youtubeType": "1",
+  "download": "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/RokidConnect_v1.1.apk",
+  "images": [
+    "scr1.jpg",
+    "scr2.jpg",
+    "scr3.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "HUD",
+      "네비게이션"
+    ],
+    "en": [
+      "HUD",
+      "Navigation"
+    ]
+  }
+}

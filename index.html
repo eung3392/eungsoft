@@ -1,5 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
   <!-- GSAP Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
+
 <body>
 
   <!-- Navigation -->
@@ -18,7 +20,7 @@
         <span class="material-symbols-rounded">rocket_launch</span>
         EUNG SOFT
       </a>
-      
+
       <div class="nav-links">
         <a href="/" data-i18n="nav.intro">Intro</a>
         <a href="rokid/" data-i18n="nav.rokid">Rokid App</a>
@@ -41,20 +43,21 @@
   <!-- Main Content -->
   <main>
     <div class="container">
-      
+
       <!-- Hero Section -->
       <section class="hero-section" style="text-align: center; padding: 4rem 0;">
         <div class="hero-icon" style="font-size: 4rem; color: var(--accent-color); margin-bottom: 1rem;">
           <span class="material-symbols-rounded" style="font-size: inherit;">code_blocks</span>
         </div>
         <h1 data-i18n="hero.title" style="font-size: 3rem; margin-bottom: 1rem;">EUNG SOFT</h1>
-        <h2 data-i18n="hero.subtitle" style="font-size: 1.5rem; color: var(--text-muted); font-weight: 500; margin-bottom: 2rem;"></h2>
+        <h2 data-i18n="hero.subtitle"
+          style="font-size: 1.5rem; color: var(--text-muted); font-weight: 500; margin-bottom: 2rem;"></h2>
         <p data-i18n="hero.desc" style="max-width: 600px; margin: 0 auto; color: var(--text-muted);"></p>
       </section>
 
       <!-- Split Layout for About Site & About Dev -->
       <div class="grid" style="margin-top: 2rem;">
-        
+
         <!-- About Site -->
         <section class="card about-card">
           <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
@@ -82,8 +85,11 @@
           </div>
           <!-- Profile mock -->
           <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--border-color); display: flex; align-items: center; justify-content: center;">
-              <span class="material-symbols-rounded" style="font-size: 2rem; color: var(--text-muted);">account_circle</span>
+            <div
+              style="width: 60px; height: 60px; border-radius: 50%; background: var(--border-color); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+              <img src="https://yt3.googleusercontent.com/Bujk1YLapJPc6px1XxaNNBQ4MImOPYkK421ub5hNBJif71RWrgOddHoe-OtFpCfL3J8m1HBfUDk=s160-c-k-c0x00ffffff-no-rj" 
+                   alt="Eung Profile" 
+                   style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div>
               <p style="font-weight: 700;">Eung</p>
@@ -91,13 +97,31 @@
             </div>
           </div>
           <p data-i18n="about.dev.desc" style="color: var(--text-muted); margin-bottom: 1.5rem; flex: 1;"></p>
-          
+
           <div style="display: flex; gap: 0.5rem; align-items: center; color: var(--text-muted);">
             <span class="material-symbols-rounded" style="font-size: 1.2rem;">mail</span>
             <span>kime28202@gmail.com</span>
           </div>
         </section>
-
+        <!-- 주요링크 -->
+        <section class="card link-card">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <span class="material-symbols-rounded" style="color: var(--accent-color);">rss_feed</span>
+            <h3 data-i18n="about.link" style="margin: 0;"></h3>
+          </div>
+          <ul class="linkstyle">
+            <li><a href="https://www.youtube.com/@eungsmusic" target="_blank">YouTube Channel Eungs's Music
+                <img
+                  src="https://yt3.googleusercontent.com/lvkDHnLUKjwQA8ravLbM0YROaczooSxXS6IQ2tTUgYb4naENi2Rnu9KNxclPIs3za4X4XnupXQ=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj">
+              </a></li>
+            <li><a href="https://blog.naver.com/73s" target="_blank">Blog EUNG SOFT (kor)
+                <img src="/assets/images/eung_blog.jpg">
+              </a></li>
+            <li><a href="https://github.com/eung3392/eungsoft/releases" target="_blank">GitHub Releases
+                <img src="/assets/images/git_release.jpg">
+              </a></li>
+          </ul>
+        </section>
       </div>
     </div>
   </main>
@@ -106,9 +130,12 @@
   <footer>
     <div class="container footer-content">
       <div class="footer-links">
-        <a href="https://www.youtube.com/@eungsmusic" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://blog.naver.com/73s" aria-label="Blog" target="_blank"><span class="material-symbols-rounded">article</span></a>
-        <a href="https://github.com/eung3392/eungsoft" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.youtube.com/@eungsmusic" aria-label="YouTube" target="_blank"><i
+            class="fa-brands fa-youtube"></i></a>
+        <a href="https://blog.naver.com/73s" aria-label="Blog" target="_blank"><span
+            class="material-symbols-rounded">article</span></a>
+        <a href="https://github.com/eung3392/eungsoft" aria-label="GitHub" target="_blank"><i
+            class="fa-brands fa-github"></i></a>
       </div>
       <p class="footer-text">
         &copy; 2025 EUNG SOFT. <span data-i18n="footer.rights"></span>
@@ -120,14 +147,14 @@
   <script>
     // Page specific GSAP animations
     document.addEventListener('appReady', () => {
-      if(window.gsap) {
+      if (window.gsap) {
         // Hero Icon bounce
-        gsap.to('.hero-icon', { 
-          y: -15, 
-          duration: 1, 
-          yoyo: true, 
-          repeat: -1, 
-          ease: "power1.inOut" 
+        gsap.to('.hero-icon', {
+          y: -15,
+          duration: 1,
+          yoyo: true,
+          repeat: -1,
+          ease: "power1.inOut"
         });
 
         // Cards stagger in
@@ -139,7 +166,7 @@
           ease: "back.out(1.7)",
           delay: 0.3
         });
-        
+
         // Setup hover physical effects (bouncy) for buttons and cards
         const hoverElements = document.querySelectorAll('.card, .btn');
         hoverElements.forEach(el => {
@@ -154,5 +181,5 @@
     });
   </script>
 </body>
-</html>
 
+</html>

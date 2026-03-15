@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -45,14 +45,19 @@
           <span class="material-symbols-rounded" style="color: var(--accent-color); font-size: inherit;">smart_display</span>
           RokidGlasses Apps
         </h1>
-        <p style="color: var(--text-muted); font-size: 1.1rem;">로키드 글래스를 위한 전용 애플리케이션 모음입니다.</p>
+        <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem;">로키드 글래스를 위한 전용 애플리케이션 모음입니다.</p>
+        
+        <!-- Tag Filter -->
+        <div id="tag-filter" style="display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem;" class="fade-elem">
+          <!-- Tags will be injected here -->
+        </div>
       </section>
 
       <!-- App Grid -->
       <div class="grid" id="app-grid">
         <!-- Skeleton loading template -->
         <div class="card skeleton-card">
-          <div class="skeleton" style="height: 180px; width: 100%; margin-bottom: 1rem;"></div>
+          <div class="skeleton" style="aspect-ratio: 9/16; width: 100%; margin-bottom: 1rem;"></div>
           <div class="skeleton" style="height: 24px; width: 60%; margin-bottom: 0.5rem;"></div>
           <div class="skeleton" style="height: 16px; width: 90%; margin-bottom: 0.5rem;"></div>
           <div class="skeleton" style="height: 16px; width: 40%; margin-bottom: 1.5rem;"></div>
@@ -107,6 +112,7 @@
         );
 
         appDataCache = await Promise.all(promises);
+        renderTags();
         renderApps();
         
       } catch (err) {
@@ -115,33 +121,94 @@
       }
     }
 
+    let activeTag = 'All';
+
+    function renderTags() {
+      const tagFilter = document.getElementById('tag-filter');
+      const lang = window.getLang();
+      const allTags = new Set();
+      
+      appDataCache.forEach(data => {
+        if (!data.info || !data.info.tags) return;
+        const tags = data.info.tags[lang] || data.info.tags['ko'] || [];
+        tags.forEach(t => allTags.add(t));
+      });
+
+      let html = `<button class="tag-btn ${activeTag === 'All' ? 'active' : ''}" onclick="filterByTag('All')">All</button>`;
+      allTags.forEach(tag => {
+        html += `<button class="tag-btn ${activeTag === tag ? 'active' : ''}" onclick="filterByTag('${tag}')">#${tag}</button>`;
+      });
+      
+      tagFilter.innerHTML = html;
+      
+      if (!document.getElementById('tag-styles')) {
+        const style = document.createElement('style');
+        style.id = 'tag-styles';
+        style.innerHTML = `
+          .tag-btn {
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            transition: all 0.2s;
+          }
+          .tag-btn:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+          }
+          .tag-btn.active {
+            background: var(--accent-color);
+            color: var(--bg-color);
+            border-color: var(--accent-color);
+          }
+        `;
+        document.head.appendChild(style);
+      }
+    }
+
+    function filterByTag(tag) {
+      activeTag = tag;
+      renderTags();
+      renderApps();
+    }
+
     function renderApps() {
       const grid = document.getElementById('app-grid');
       const lang = window.getLang();
       
       let html = '';
-      appDataCache.forEach(data => {
+      const filteredApps = activeTag === 'All' 
+        ? appDataCache 
+        : appDataCache.filter(data => {
+            if (!data.info || !data.info.tags) return false;
+            const tags = data.info.tags[lang] || data.info.tags['ko'] || [];
+            return tags.includes(activeTag);
+          });
+
+      filteredApps.forEach(data => {
         if(!data.info) return; // Skip failed fetches
         
         const info = data.info;
         const title = info.title[lang] || info.title['ko'];
         const shortDesc = info.shortDescription[lang] || info.shortDescription['ko'];
         
-        // Use a placeholder image if screenhot1.jpg doesn't exist yet
-        // In reality, this would point to `../download/RokidGlasses/${data.appName}/screenshot1.jpg`
-        const imgUrl = `https://placehold.co/600x400/f0f0f0/666666?text=${data.appName}`;
+        const representativeImg = (info.images && info.images.length > 0) 
+          ? (info.images[0].startsWith('http') ? info.images[0] : `../download/RokidGlasses/${data.appName}/${info.images[0]}`)
+          : `https://placehold.co/450x800/f0f0f0/666666?text=${data.appName}`;
 
         html += `
           <div class="card app-card" style="opacity: 0;">
-            <div style="height: 180px; width: 100%; border-radius: 8px; overflow: hidden; margin-bottom: 1rem; background: #e5e7eb;">
-              <img src="${imgUrl}" alt="${title}" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="aspect-ratio: 9 / 16; width: 100%; border-radius: 8px; overflow: hidden; margin-bottom: 1rem; background: #e5e7eb;">
+              <img src="${representativeImg}" alt="${title}" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <h3 style="margin-bottom: 0.25rem;">${title}</h3>
             <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.75rem; min-height: 2.7rem;">${shortDesc}</p>
             
             <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); padding-top: 0.75rem; margin-top: auto; margin-bottom: 1rem;">
                <span style="font-size: 0.85rem; font-weight: 500;"><span class="material-symbols-rounded" style="font-size:1rem;">tag</span> v${info.version}</span>
-               <span style="font-size: 0.85rem; color: var(--text-muted);"><span class="material-symbols-rounded" style="font-size:1rem;">download</span> ${info.downloadCount}</span>
             </div>
             
             <a href="../app-detail.html?app=${data.appName}&type=RokidGlasses" class="btn" style="width: 100%;">

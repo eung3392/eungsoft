@@ -1,0 +1,37 @@
+{
+  "title": {
+    "ko": "EK Zoom",
+    "en": "EK Zoom"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-03-12",
+  "shortDescription": {
+    "ko": "카메라를 확대해서 보는 돋보기, 망원경 컨셉의 어플입니다.",
+    "en": "Offline English-Korean text translation application."
+  },
+  "description": {
+    "ko": "전체 화면 프리뷰: 군더더기 없는 레이아웃으로 카메라 화면을 전체 화면으로 꽉 차게 보여줍니다. 2. 순환식 배율 조정: 터치 하나로 1.0x → 2.0x → 3.0x → 4.0x 순으로 배율을 간편하게 전환할 수 있습니다. 3. 화질 최적화: 줌 활용 시 발생할 수 있는 화질 저하를 최소화하기 위해 하드웨어 샤픈 필터(Edge Mode High Quality)와 노이즈 감소 로직이 적용되었습니다. 4.중앙 정렬: 배율이 확대되어도 화면의 중심이 틀어지지 않도록 자동으로 중앙 정렬을 유지합니다. 다운받은 압축파일의 비밀번호는 eung.pe.kr 입니다.",
+    "en": "Full Screen Preview: Displays the camera screen in a clean, full-screen layout. 2. Cyclical Magnification Adjustment: Easily switch magnification levels with a single touch: 1.0x → 2.0x → 3.0x → 4.0x. 3. Image Quality Optimization: Hardware sharpening (Edge Mode High Quality) and noise reduction logic are applied to minimize image quality degradation during zoom. 4. Center Alignment: Maintains automatic center alignment so the screen stays centered even when magnified. The password for the downloaded compressed file is eung.pe.kr."
+  },
+  "control": {
+    "ko": "안경 다리를 터치하면 배율이 바뀝니다.",
+    "en": "Touch the temple of the glasses to change the magnification."
+  },
+  "youtubeUrl": "",
+  "youtubeType": "1",
+  "download": "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/MyZoom.7z",
+  "images": [
+    "scr1.jpg",
+    "scr2.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "Zoom",
+      "카메라"
+    ],
+    "en": [
+      "Zoom",
+      "Camera"
+    ]
+  }
+}

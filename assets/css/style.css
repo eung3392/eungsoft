@@ -45,7 +45,10 @@ a {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 700;
   color: var(--accent-color);
   margin-bottom: 0.5rem;
@@ -243,7 +246,7 @@ footer {
   border-color: var(--accent-color);
   box-shadow: var(--shadow-hover);
   /* The GSAP scale will be handled via JS, but providing a fallback here */
-  transform: translateY(-4px); 
+  transform: translateY(-4px);
 }
 
 /* Loading Skeleton */
@@ -256,14 +259,20 @@ footer {
 }
 
 @keyframes skeletonLoading {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* Hide desktop links */
+    display: none;
+    /* Hide desktop links */
     flex-direction: column;
     position: absolute;
     top: var(--nav-height);
@@ -286,4 +295,18 @@ footer {
   .grid {
     grid-template-columns: 1fr;
   }
+}
+
+.linkstyle {
+  margin-left: 10px
+}
+
+.linkstyle li {
+  margin-top: 10px
+}
+
+.linkstyle li a img {
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 5px
 }

@@ -1,0 +1,40 @@
+{
+  "title": {
+    "ko": "Persona",
+    "en": "Persona"
+  },
+  "version": "0.9.1",
+  "releaseDate": "2026-03-10",
+  "shortDescription": {
+    "ko": "데이터와 전통 원전으로 해석하는 관상과 손금",
+    "en": "Face reading and palm reading based on data and traditional sources."
+  },
+  "description": {
+    "ko": "살다 보면 누구나 한 번쯤 자신의 성향이나 타고난 기질에 대해 궁금해하곤 합니다. **'PERSONA(페르소나)'**는 이러한 호기심을 기술적인 방식으로 풀어내고자 기획된 로키드 글래스 앱입니다.  손금 분석: 단순히 선을 보는 것에 그치지 않고, 손바닥의 가로세로 비율(Aspect Ratio), 손가락 간의 길이 비교, 언덕(Mounts)의 발달 정도를 수치화하여 분석합니다. • 관상 분석: 얼굴의 전체적인 조화와 주요 특징들을 규칙 엔진(Rule Engine)을 통해 분석하여 현대적인 관점에서 재해석합니다. 한국어뿐만 아니라 영어, 일본어, 중국어 등 4개 국어를 지원합니다. 다운받은 압축파일의 비밀번호는 eung.pe.kr 입니다.",
+    "en": "Everyone wonders about their personality or innate disposition at least once in their lives. **'PERSONA'** is a Rokid Glasses app designed to explore these curiosities through a technical approach. Palm Reading: Goes beyond simply looking at lines, analyzing the palm's aspect ratio, finger length comparison, and the development of mounts quantitatively. Face Reading: Analyzes the overall harmony and key features of the face through a rule engine, reinterpreting them from a modern perspective. Supports 4 languages including Korean, English, Japanese, and Chinese. The password for the downloaded compressed file is eung.pe.kr."
+  },
+  "control": {
+    "ko": "초기 화면에서 로키드 글래스의 터치 영역을 좌우로 스와이프하여 설정 항목을 이동합니다. 설정할 항목에 포커스를 주고, 터치하여 관상과 손금 모드 변경, 자동 저장 기능 설정, 언어 설정을 합니다. 화면의 동그란 영상 영역에 얼굴이나 손을 비치면 인식이 되었을 때에 해당하는 그래프나 손모양을 볼 수 있습니다. 이때 터치를 하면 결과를 볼 수 있는 상세 화면으로 이동합니다. 자동 저장 기능이 설정 되어 있다면 상세 화면으로 이동하며 해당 내용이 갤러리에 저장됩니다. 상세 화면에서 스와이프를 통해 스크롤 하며 정보를 읽을 수 있습니다. 상세 화면에서 더블 터치를 하면 다시 카메라 화면으로 돌아옵니다.",
+    "en": "Swipe the touch area of the Rokid Glasses left or right on the initial screen to move to the settings. Focus on the item you want to set and touch it to change between face reading and palm reading modes, set the auto-save function, and set the language. If you place your face or hand in the circular video area on the screen, you can see the corresponding graph or hand shape when it is recognized. Touching it at this time will take you to the detailed screen where you can see the results. If the auto-save function is set, you will move to the detailed screen and the content will be saved in the gallery. You can scroll through the information by swiping on the detailed screen. Double-tapping on the detailed screen will return you to the camera screen."
+  },
+  "youtubeUrl": "https://www.youtube.com/embed/OzI-Vvj1GOE",
+  "youtubeType": "1",
+  "download": "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/Persona_v0.91.7z",
+  "images": [
+    "scr1.jpg",
+    "scr2.jpg",
+    "scr3.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "관상",
+      "손금",
+      "카메라"
+    ],
+    "en": [
+      "Face Reading",
+      "Palm Reading",
+      "Camera"
+    ]
+  }
+}

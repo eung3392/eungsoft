@@ -11,7 +11,7 @@
     .detail-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      gap: 4rem;
     }
 
     @media (max-width: 768px) {
@@ -22,13 +22,11 @@
 
     .video-container {
       position: relative;
-      padding-bottom: 56.25%;
-      /* 16:9 */
-      height: 0;
+      width: 100%;
+      margin: 0 auto 1.5rem auto;
       overflow: hidden;
       border-radius: var(--radius);
       background: #000;
-      margin-bottom: 1.5rem;
     }
 
     .video-container iframe {
@@ -171,30 +169,61 @@
         tagsHtml += `<span class="tag">#${tag}</span>`;
       });
 
-      // Video HTML
+      // Video or Representative Image HTML
       let videoHtml = '';
+      const representativeImg = (info.images && info.images.length > 0)
+        ? (info.images[0].startsWith('http') ? info.images[0] : `download/${appType}/${appName}/${info.images[0]}`)
+        : `https://placehold.co/450x800/f0f0f0/666666?text=${appName}`;
+
       if (info.youtubeUrl) {
+        const isVertical = info.youtubeType === "1";
+        const videoStyle = isVertical
+          ? 'aspect-ratio: 9/16; max-width: 450px;'
+          : 'aspect-ratio: 16/9; max-width: 100%;';
+
         videoHtml = `
-          <div class="video-container fade-elem">
+          <div class="video-container fade-elem" style="${videoStyle}">
             <iframe src="${info.youtubeUrl}" allowfullscreen></iframe>
           </div>
         `;
       } else {
-        // Fallback Gallery using placehold.it
         videoHtml = `
-          <div style="border-radius: var(--radius); overflow: hidden; margin-bottom: 1.5rem; background: #e5e7eb; aspect-ratio: 16/9;" class="fade-elem">
-             <img src="https://placehold.co/800x450/f0f0f0/666666?text=${appName}+Screen+1" style="width: 100%; height: 100%; object-fit: cover;">
+          <div style="border-radius: var(--radius); overflow: hidden; margin-bottom: 1.5rem; background: #e5e7eb; aspect-ratio: 9/16;" class="fade-elem">
+             <img src="${representativeImg}" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
         `;
       }
 
-      // Download Setup (Unified to .zip)
-      const ext = '.zip';
+      // Gallery Images HTML
+      let galleryHtml = '';
+      if (info.images && info.images.length > 0) {
+        galleryHtml = '<div style="display: flex; gap: 0.5rem; flex-wrap: wrap;" class="fade-elem">';
+        info.images.forEach(imgName => {
+          const imgSrc = imgName.startsWith('http') ? imgName : `download/${appType}/${appName}/${imgName}`;
+          galleryHtml += `
+            <img src="${imgSrc}" 
+                 style="width: 32%; aspect-ratio: 9/16; border-radius: 8px; object-fit: cover; cursor: pointer;"
+                 onclick="window.open(this.src, '_blank')">
+          `;
+        });
+        galleryHtml += '</div>';
+      }
+
+      // Download Setup
+      const dlHref = info.download || '#';
       const isStoreLink = info.storeUrl && info.storeUrl.trim() !== "";
-      const dlHref = isStoreLink ? info.storeUrl : `download/${appType}/${appName}/${appName}${ext}`;
-      const dlTarget = isStoreLink ? 'target="_blank"' : '';
+      const dlTarget = isStoreLink || info.download?.startsWith('http') ? 'target="_blank"' : '';
       const dlAttr = isStoreLink ? '' : 'download';
-      const dlText = isStoreLink ? (lang === 'ko' ? '스토어에서 다운로드' : 'Download from Store') : `${window.t('btn.download')} ${appName}${ext}`;
+      
+      // Extract filename from download URL
+      let filename = '';
+      if (info.download) {
+        filename = info.download.substring(info.download.lastIndexOf('/') + 1);
+      }
+      
+      const dlText = isStoreLink 
+        ? (lang === 'ko' ? '스토어에서 다운로드' : 'Download from Store') 
+        : `${window.t('btn.download')} ${filename}`;
       const dlIcon = isStoreLink ? 'open_in_new' : 'download';
 
       const html = `
@@ -210,10 +239,7 @@
           <!-- Left Col (Media) -->
           <div>
             ${videoHtml}
-            <div style="display: flex; gap: 0.5rem;" class="fade-elem">
-               <img src="https://placehold.co/400x225/f0f0f0/666666?text=Screen+1" style="width: 33%; border-radius: 8px;">
-               <img src="https://placehold.co/400x225/f0f0f0/666666?text=Screen+2" style="width: 33%; border-radius: 8px;">
-            </div>
+            ${galleryHtml}
           </div>
           
           <!-- Right Col (Info) -->
@@ -223,10 +249,20 @@
             </h1>
             
             <!-- Metadata -->
-            <div style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.95rem;">
+            <div style="display: flex; gap: 1.5rem; align-items: center; margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.95rem;">
                <span style="display: flex; align-items: center; gap: 0.3rem;"><span class="material-symbols-rounded" style="font-size:1.2rem;">new_releases</span> v${info.version}</span>
-               <span style="display: flex; align-items: center; gap: 0.3rem;"><span class="material-symbols-rounded" style="font-size:1.2rem;">event</span> ${info.releaseDate}</span>               
+               <span style="display: flex; align-items: center; gap: 0.3rem;"><span class="material-symbols-rounded" style="font-size:1.2rem;">event</span> ${info.releaseDate}</span>
+               
+               <button onclick="copyToClipboard(this)" 
+                       style="background: none; border: none; color: var(--text-muted); cursor: pointer; display: flex; align-items: center; padding: 4px; border-radius: 4px; transition: background 0.2s;" 
+                       title="Copy URL" 
+                       onmouseover="this.style.background='var(--border-color)';" 
+                       onmouseout="this.style.background='none';">
+                 <span class="material-symbols-rounded" style="font-size:1.2rem;">content_copy</span>
+               </button>
             </div>
+
+
             
             <div style="margin-bottom: 1.5rem;">${tagsHtml}</div>
             
@@ -262,6 +298,22 @@
           dlBtn.addEventListener('mouseleave', () => gsap.to(dlBtn, { scale: 1, duration: 0.3, ease: "power2.out" }));
         }
       }
+    }
+    function copyToClipboard(btn) {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url).then(() => {
+        const icon = btn.querySelector('.material-symbols-rounded');
+        const originalIcon = icon.textContent;
+        icon.textContent = 'check';
+        btn.style.color = '#10b981';
+
+        setTimeout(() => {
+          icon.textContent = originalIcon;
+          btn.style.color = 'var(--text-muted)';
+        }, 2000);
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+      });
     }
   </script>
 </body>
