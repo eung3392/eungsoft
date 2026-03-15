@@ -1,0 +1,14 @@
+# 의존성 패키지 폴더 (용량이 크고 재설치가 가능하므로 제외)
+node_modules/
+
+# 환경 변수 설정 파일 (보안상 공유 금지)
+.env
+.env.local
+
+# 빌드 결과물
+dist/
+build/
+
+# 운영체제 생성 파일
+.DS_Store
+Thumbs.db

@@ -1,1 +1,0 @@
-const fs = require("fs"); const data = JSON.parse(fs.readFileSync("data.json", "utf8")); const catalog = data.props.pageProps.bookCatalog || data.props.pageProps; console.log("TITLE:", catalog.title); console.log("PUB:", catalog.publisher); console.log("DESC:", catalog.description); console.log("DATE:", catalog.publishDay); console.log("IMG:", catalog.thumbnailUrl);
