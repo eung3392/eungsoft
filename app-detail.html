@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5296436259826994"
-     crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
   <style>
     .detail-grid {
       display: grid;
@@ -217,15 +217,15 @@
       const isStoreLink = info.storeUrl && info.storeUrl.trim() !== "";
       const dlTarget = isStoreLink || info.download?.startsWith('http') ? 'target="_blank"' : '';
       const dlAttr = isStoreLink ? '' : 'download';
-      
+
       // Extract filename from download URL
       let filename = '';
       if (info.download) {
         filename = info.download.substring(info.download.lastIndexOf('/') + 1);
       }
-      
-      const dlText = isStoreLink 
-        ? (lang === 'ko' ? '스토어에서 다운로드' : 'Download from Store') 
+
+      const dlText = isStoreLink
+        ? (lang === 'ko' ? '스토어에서 다운로드' : 'Download from Store')
         : `${window.t('btn.download')} ${filename}`;
       const dlIcon = isStoreLink ? 'open_in_new' : 'download';
 
@@ -327,30 +327,54 @@
       });
     }
 
-    async function getDownloadCount(keyword) {
+    // JSONP Callback function
+    window.onDownloadCountReceived = function (data) {
+      const countEl = document.getElementById('download-count-value');
+      if (countEl) {
+        // data가 객체일 수도 있고 단순 값일 수도 있으므로 처리
+        const count = typeof data === 'object' ? (data.count || 0) : data;
+        countEl.textContent = count;
+      }
+      // 사용한 스크립트 태그 삭제
+      const oldScript = document.getElementById('jsonp-count-script');
+      if (oldScript) oldScript.remove();
+    };
+
+    function getDownloadCount(keyword) {
+      console.log('Attempting to fetch download count for:', keyword);
       const countEl = document.getElementById('download-count-value');
       if (!countEl) return;
-      
-      try {
-        const response = await fetch(`http://m.73s.woobi.co.kr/count.php?keyword=${keyword}`);
-        if (response.ok) {
-          const text = await response.text();
-          countEl.textContent = text.trim();
-        } else {
-          countEl.textContent = '0';
-        }
-      } catch (err) {
-        console.error('Failed to fetch download count:', err);
+
+      const oldScript = document.getElementById('jsonp-count-script');
+      if (oldScript) oldScript.remove();
+
+      const script = document.createElement('script');
+      script.id = 'jsonp-count-script';
+
+      // Woobi 서버가 HTTPS를 지원하지 않을 수 있으므로 다시 http로 시도해봅니다.
+      // 실제 서비스가 HTTPS라면 Mixed Content 에러가 발생할 수 있습니다.
+      const encodedKeyword = encodeURIComponent(keyword);
+      const apiUrl = `http://m.73s.woobi.co.kr/count.php?keyword=${encodedKeyword}&callback=onDownloadCountReceived&t=${new Date().getTime()}`;
+      console.log('JSONP URL:', apiUrl);
+
+      script.src = apiUrl;
+
+      script.onerror = (e) => {
+        console.error('JSONP request failed for URL:', apiUrl, e);
         countEl.textContent = '0';
-      }
+      };
+
+      document.body.appendChild(script);
     }
 
     async function incDownloadCount(keyword) {
+      console.log('Attempting to increment count for:', keyword);
       try {
-        // Just call the increment URL, we don't necessarily need to wait for the response to start the download
-        fetch(`http://m.73s.woobi.co.kr/count.php?keyword=${keyword}&mode=inc`, { mode: 'no-cors' });
+        const encodedKeyword = encodeURIComponent(keyword);
+        const img = new Image();
+        img.src = `http://m.73s.woobi.co.kr/count.php?keyword=${encodedKeyword}&mode=inc&t=${new Date().getTime()}`;
       } catch (err) {
-        console.error('Failed to increment download count:', err);
+        console.error('Increment call failed:', err);
       }
     }
   </script>
