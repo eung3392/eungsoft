@@ -327,54 +327,35 @@
       });
     }
 
-    // JSONP Callback function
-    window.onDownloadCountReceived = function (data) {
-      const countEl = document.getElementById('download-count-value');
-      if (countEl) {
-        // data가 객체일 수도 있고 단순 값일 수도 있으므로 처리
-        const count = typeof data === 'object' ? (data.count || 0) : data;
-        countEl.textContent = count;
-      }
-      // 사용한 스크립트 태그 삭제
-      const oldScript = document.getElementById('jsonp-count-script');
-      if (oldScript) oldScript.remove();
-    };
-
-    function getDownloadCount(keyword) {
-      console.log('Attempting to fetch download count for:', keyword);
+    async function getDownloadCount(keyword) {
+      console.log('Fetching download count for:', keyword);
       const countEl = document.getElementById('download-count-value');
       if (!countEl) return;
-
-      const oldScript = document.getElementById('jsonp-count-script');
-      if (oldScript) oldScript.remove();
-
-      const script = document.createElement('script');
-      script.id = 'jsonp-count-script';
-
-      // Woobi 서버가 HTTPS를 지원하지 않을 수 있으므로 다시 http로 시도해봅니다.
-      // 실제 서비스가 HTTPS라면 Mixed Content 에러가 발생할 수 있습니다.
-      const encodedKeyword = encodeURIComponent(keyword);
-      const apiUrl = `http://m.73s.woobi.co.kr/count.php?keyword=${encodedKeyword}&callback=onDownloadCountReceived&t=${new Date().getTime()}`;
-      console.log('JSONP URL:', apiUrl);
-
-      script.src = apiUrl;
-
-      script.onerror = (e) => {
-        console.error('JSONP request failed for URL:', apiUrl, e);
+      
+      try {
+        // Netlify 프록시 주소 사용 (/proxy-count/ -> http://m.73s.woobi.co.kr/)
+        const response = await fetch(`/proxy-count/count.php?keyword=${encodeURIComponent(keyword)}&t=${new Date().getTime()}`);
+        if (response.ok) {
+          const text = await response.text();
+          // 결과에 JSONP 함수명이 섞여있을 수 있으므로 숫자만 추출
+          const count = text.match(/\d+/) ? text.match(/\d+/)[0] : '0';
+          countEl.textContent = count;
+        } else {
+          countEl.textContent = '0';
+        }
+      } catch (err) {
+        console.error('Failed to fetch download count via proxy:', err);
         countEl.textContent = '0';
-      };
-
-      document.body.appendChild(script);
+      }
     }
 
     async function incDownloadCount(keyword) {
-      console.log('Attempting to increment count for:', keyword);
+      console.log('Incrementing download count for:', keyword);
       try {
-        const encodedKeyword = encodeURIComponent(keyword);
-        const img = new Image();
-        img.src = `http://m.73s.woobi.co.kr/count.php?keyword=${encodedKeyword}&mode=inc&t=${new Date().getTime()}`;
+        // Increment도 프록시 사용
+        fetch(`/proxy-count/count.php?keyword=${encodeURIComponent(keyword)}&mode=inc&t=${new Date().getTime()}`);
       } catch (err) {
-        console.error('Increment call failed:', err);
+        console.error('Failed to increment download count:', err);
       }
     }
   </script>
