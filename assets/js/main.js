@@ -7,6 +7,8 @@ const translations = {
     "nav.books": "서적",
     "nav.story": "Dev Story",
     "nav.lang": "English",
+    "footer.privacy": "개인정보 처리방침",
+    "footer.terms": "이용약관",
     "footer.rights": "모든 권리 보유.",
     "hero.title": "CODE, BOOKS & LIFE",
     "hero.subtitle": "사용자의 니즈를 생각하는 실용적인 소프트웨어를 만듭니다. 광고가 없습니다. 무료입니다. EUNG SOFT는 창작을 좋아하는 개발자의 개인 창작 공간입니다. 다소 미흡하더라도 저의 창작물을 여러 사람과 공유하고 싶은 마음입니다. 관심과 응원 부탁드립니다.",
@@ -31,6 +33,8 @@ const translations = {
     "nav.books": "Books",
     "nav.story": "Dev Story",
     "nav.lang": "한국어",
+    "footer.privacy": "Privacy Policy",
+    "footer.terms": "Terms of Service",
     "footer.rights": "All rights reserved.",
     "hero.title": "CODE, BOOKS & LIFE",
     "hero.subtitle": "Building practical software focused on user needs. Ad-free. Free of charge. EUNG SOFT is a personal creative space for a developer who loves creating. Although it may be somewhat lacking, I want to share my creations with many people. Your interest and support are greatly appreciated.",
@@ -55,13 +59,34 @@ let currentLang = localStorage.getItem('eungsoft_lang') || 'ko';
 
 // Initialize App
 document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
   initLanguage();
   initNavbar();
   initGSAPEffects();
+  initCommonUI();
 
   // Custom event so page-specific scripts know when core is ready
   document.dispatchEvent(new Event('appReady'));
 });
+
+// Theme Handling
+let currentTheme = localStorage.getItem('eungsoft_theme') || 'light';
+
+function initTheme() {
+  document.documentElement.setAttribute('data-theme', currentTheme);
+}
+
+function toggleTheme() {
+  currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  localStorage.setItem('eungsoft_theme', currentTheme);
+  
+  // Update theme toggle icon
+  const themeIcon = document.querySelector('.theme-toggle .material-symbols-rounded');
+  if (themeIcon) {
+    themeIcon.textContent = currentTheme === 'light' ? 'dark_mode' : 'light_mode';
+  }
+}
 
 // Language Handling
 function initLanguage() {
@@ -153,6 +178,36 @@ function initGSAPEffects() {
     y: 20,
     duration: 0.6,
     ease: 'power3.out'
+  });
+}
+
+// Common UI Elements (TOP button, theme toggle injection)
+function initCommonUI() {
+  // 1. Inject Theme Toggle in Navbar
+  const navActions = document.querySelector('.nav-container div[style*="display: flex"]');
+  if (navActions) {
+    const themeBtn = document.createElement('button');
+    themeBtn.className = 'theme-toggle';
+    themeBtn.setAttribute('aria-label', 'Toggle Theme');
+    themeBtn.innerHTML = `<span class="material-symbols-rounded">${currentTheme === 'light' ? 'dark_mode' : 'light_mode'}</span>`;
+    themeBtn.onclick = toggleTheme;
+    navActions.prepend(themeBtn);
+  }
+
+  // 2. Inject TOP Button
+  const topBtn = document.createElement('button');
+  topBtn.className = 'top-btn';
+  topBtn.innerHTML = '<span class="material-symbols-rounded">arrow_upward</span>';
+  topBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.body.appendChild(topBtn);
+
+  // 3. Scroll tracking for TOP button
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      topBtn.classList.add('visible');
+    } else {
+      topBtn.classList.remove('visible');
+    }
   });
 }
 

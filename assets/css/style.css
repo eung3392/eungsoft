@@ -18,6 +18,16 @@
   --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+[data-theme='dark'] {
+  --bg-color: #0f172a;
+  --text-color: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent-color: #38bdf8;
+  --border-color: #1e293b;
+  --card-bg: #1e293b;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -309,4 +319,54 @@ footer {
   margin-top: 5px;
   width: 100%;
   border-radius: 5px
+}
+
+/* TOP Button */
+.top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  color: var(--bg-color);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-hover);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  transform: translateY(20px);
+}
+
+.top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.top-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Theme Toggle styles in navbar */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.theme-toggle:hover {
+  background: var(--border-color);
 }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Not Found - EUNG SOFT</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;
+            text-align: center;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            color: var(--accent-color);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .error-message {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <span class="material-symbols-rounded">rocket_launch</span>
+                EUNG SOFT
+            </a>
+            <div class="nav-links">
+                <a href="/" data-i18n="nav.intro">Intro</a>
+                <a href="/story/" data-i18n="nav.story">Dev Story</a>
+                <a href="/rokid/" data-i18n="nav.rokid">Rokid App</a>
+                <a href="/android/" data-i18n="nav.android">Android App</a>
+                <a href="/books/" data-i18n="nav.books">Books</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container error-container">
+            <div class="error-code">404</div>
+            <div class="error-message">페이지를 찾을 수 없습니다.</div>
+            <p style="margin-bottom: 2rem;">검색하신 주소가 잘못되었거나 삭제되었습니다.</p>
+            <a href="/" class="btn">
+                <span class="material-symbols-rounded">home</span>
+                홈으로 돌아가기
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="footer-text">&copy; 2025 EUNG SOFT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.gsap) {
+                gsap.from('.error-code', { opacity: 0, y: -50, duration: 1, ease: 'bounce.out' });
+                gsap.from('.error-message, p, .btn', { opacity: 0, y: 30, stagger: 0.2, duration: 0.8, delay: 0.5 });
+            }
+        });
+    </script>
+</body>
+
+</html>
