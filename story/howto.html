@@ -1,0 +1,119 @@
+<div class="story-content">
+    <header style="margin-bottom: 2.5rem;">
+        <h2 style="display: flex; align-items: center; gap: 0.5rem; font-size: 2rem;">
+            <span class="material-symbols-rounded"
+                style="font-size: 2.5rem; color: var(--accent-color);">install_desktop</span>
+            로키드 글래스에 어플(APK) 설치하기 가이드
+        </h2>
+        <p style="font-size: 1.1rem; color: var(--text-muted); margin-top: 1rem;">
+            로키드 글래스(Rokid Glasses)를 더욱 스마트하게 활용하기 위한 앱 설치 방법을 정리했습니다.
+        </p>
+    </header>
+
+    <section style="margin-bottom: 3rem;">
+        <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-symbols-rounded">cable</span> 1. 데이터 케이블 준비
+        </h3>
+        <p>
+            앱 설치를 위해서는 안정적인 데이터 전송 환경이 필수입니다. 정품 케이블이나 호환성이 검증된 데이터 케이블을 사용하는 것이 가장 좋습니다.
+        </p>
+        <div
+            style="margin: 1.5rem 0; padding: 1.5rem; background: var(--card-bg); border-radius: var(--radius); border-left: 4px solid var(--accent-color);">
+            <p><strong>💡 구매 팁:</strong> 타오바오 등에서 '로키드 데이터 케이블'로 검색하면 다양한 제품을 찾을 수 있습니다.</p>
+            <a href="https://e.tb.cn/h.iatmIouyjQBCtK2?tk=c21RUJStnK5" target="_blank" class="btn btn-outline"
+                style="margin-top: 1rem;">
+                <span class="material-symbols-rounded">shopping_cart</span> 타오바오 구매 링크 확인
+            </a>
+        </div>
+    </section>
+
+    <section style="margin-bottom: 3rem;">
+        <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-symbols-rounded">terminal</span> 2. ADB를 이용한 설치 방법
+        </h3>
+        <p>
+            안드로이드 앱(APK)은 <strong>ADB (Android Debug Bridge)</strong>라는 툴을 사용하여 설치할 수 있습니다.
+        </p>
+
+        <div style="margin-top: 1.5rem;">
+            <h4 style="margin-bottom: 0.8rem;">설정 및 실행 순서</h4>
+            <ol style="padding-left: 1.5rem; display: grid; gap: 0.8rem;">
+                <li>로키드 글래스의 설정에서 <strong>개발자 모드</strong>를 활성화하고 <strong>ADB 허용</strong>으로 변경합니다.</li>
+                <li>PC의 콘솔(터미널)에서 아래 명령어를 입력하여 설치를 진행합니다.
+                    <div
+                        style="background: #1e1e1e; color: #d4d4d4; padding: 1rem; border-radius: 8px; margin-top: 0.5rem; font-family: monospace;">
+                        adb install "C:\path\your_app.apk"
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-top: 2rem;">
+            <a href="https://m.blog.naver.com/dydgk0423/223313712941" target="_blank" class="card"
+                style="padding: 1rem; text-decoration: none;">
+                <h5 style="margin-bottom: 0.5rem;">[참고 블로그 1]</h5>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">ADB 활용 APK 파일 쉽게 설치하는 방법</p>
+            </a>
+            <a href="https://m.blog.naver.com/planet56725/223991165626" target="_blank" class="card"
+                style="padding: 1rem; text-decoration: none;">
+                <h5 style="margin-bottom: 0.5rem;">[참고 블로그 2]</h5>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">ADB Shell 사용법 및 가이드</p>
+            </a>
+        </div>
+    </section>
+
+    <section style="margin-bottom: 3rem;">
+        <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-symbols-rounded">stars</span> 추천 필수 프로그램
+        </h3>
+
+        <div style="display: grid; gap: 1.5rem;">
+            <div class="card" style="padding: 1.5rem;">
+                <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+                    <span class="material-symbols-rounded"
+                        style="color: var(--accent-color);">settings_input_component</span> Rokid Manager
+                </h4>
+                <p>로키드 글래스의 각종 설정 및 와이파이 활성화 등에 필수적인 유틸리티입니다.</p>
+                <div style="margin-top: 1rem; display: flex; gap: 1rem; align-items: center;">
+                    <a href="https://mega.nz/file/WEx1XZoS#C699gtsXTaCIb0df6lM4KvjFUgHl1yx488Q" target="_blank"
+                        class="btn">
+                        <span class="material-symbols-rounded">download</span> 다운로드 (MEGA)
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" style="padding: 1.5rem;">
+                <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+                    <span class="material-symbols-rounded" style="color: var(--accent-color);">shopping_basket</span>
+                    APKPure
+                </h4>
+                <p>로키드용 마켓 앱입니다. 설치 후에는 PC 연결 없이도 직접 앱 검색과 설치가 가능해집니다.</p>
+                <a href="https://youtube.com/@apkpure6707" target="_blank" class="btn btn-outline"
+                    style="margin-top: 1rem;">
+                    <span class="material-symbols-rounded">video_library</span> 관련 영상 확인
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-bottom: 3rem; padding: 2rem; background: var(--card-bg); border-radius: var(--radius);">
+        <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-symbols-rounded">recommend</span> 추가 추천 앱
+        </h3>
+        <ul style="list-style: none; display: grid; gap: 1rem;">
+            <li style="display: flex; align-items: flex-start; gap: 0.8rem;">
+                <span class="material-symbols-rounded" style="color: var(--accent-color);">keyboard</span>
+                <div>
+                    <strong>GBoard:</strong> 구글 가상 키보드입니다. 한글 입력 및 편리한 타이핑을 위해 필수입니다.
+                </div>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.8rem;">
+                <span class="material-symbols-rounded" style="color: var(--accent-color);">folder</span>
+                <div>
+                    <strong>파일 탐색기:</strong> 파일 관리를 위한 앱입니다. Solid Explorer나 ES 탐색기 등 취향에 맞는 것을 추천합니다.
+                </div>
+            </li>
+        </ul>
+    </section>
+</div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,8 +39,6 @@
     .story-list {
       display: flex;
       flex-direction: column;
-      max-height: 600px;
-      overflow-y: auto;
     }
 
     .story-item {
@@ -66,9 +65,10 @@
       color: white;
       border-left: 4px solid var(--accent-color);
     }
-    
-    .story-item.active h4, .story-item.active span {
-        color: white;
+
+    .story-item.active h4,
+    .story-item.active span {
+      color: white;
     }
 
     .story-item h4 {
@@ -84,62 +84,65 @@
     }
 
     .story-detail-card {
-       min-height: 600px;
-       padding: 3rem;
+      min-height: 600px;
+      padding: 3rem;
     }
 
     @media (max-width: 768px) {
-        .story-detail-card {
-            padding: 1.5rem;
-        }
+      .story-detail-card {
+        padding: 1.5rem;
+      }
     }
 
     .story-content {
-       line-height: 1.8;
-       font-size: 1.1rem;
+      line-height: 1.8;
+      font-size: 1.1rem;
     }
 
     .story-content h2 {
       margin-bottom: 1.5rem;
       font-size: 1.8rem;
     }
-    
+
     .story-content p {
-        margin-bottom: 1.2rem;
+      margin-bottom: 1.2rem;
     }
-    
+
     .story-content ul {
-        margin-bottom: 1.5rem;
-        padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
     }
-    
+
     .story-content li {
-        margin-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
     }
 
     .empty-state {
-        text-align: center;
-        color: var(--text-muted);
-        padding: 5rem 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+      text-align: center;
+      color: var(--text-muted);
+      padding: 5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
     }
-    
+
     /* Scrollbar styling */
     .story-list::-webkit-scrollbar {
-        width: 6px;
+      width: 6px;
     }
+
     .story-list::-webkit-scrollbar-track {
-        background: transparent;
+      background: transparent;
     }
+
     .story-list::-webkit-scrollbar-thumb {
-        background: var(--border-color);
-        border-radius: 10px;
+      background: var(--border-color);
+      border-radius: 10px;
     }
   </style>
 </head>
+
 <body>
   <!-- Navigation -->
   <nav class="navbar">
@@ -171,10 +174,12 @@
     <div class="container">
       <section style="margin-bottom: 3rem; text-align: center;">
         <h1 style="font-size: 2.5rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-          <span class="material-symbols-rounded" style="color: var(--accent-color); font-size: inherit;">history_edu</span>
+          <span class="material-symbols-rounded"
+            style="color: var(--accent-color); font-size: inherit;">history_edu</span>
           Dev Story
         </h1>
-        <p style="color: var(--text-muted); font-size: 1.1rem;" data-i18n="story.subtitle">개발 과정의 기록과 소소한 이야기들을 나눕니다.</p>
+        <p style="color: var(--text-muted); font-size: 1.1rem;" data-i18n="story.subtitle">개발 과정의 기록과 소소한 이야기들을 나눕니다.
+        </p>
       </section>
 
       <div class="story-container">
@@ -186,8 +191,14 @@
           </div>
           <div class="story-list" id="story-list">
             <!-- Skeleton items -->
-            <div class="story-item"><div class="skeleton" style="height: 20px; width: 80%;"></div><div class="skeleton" style="height: 14px; width: 40%; margin-top: 5px;"></div></div>
-            <div class="story-item"><div class="skeleton" style="height: 20px; width: 70%;"></div><div class="skeleton" style="height: 14px; width: 30%; margin-top: 5px;"></div></div>
+            <div class="story-item">
+              <div class="skeleton" style="height: 20px; width: 80%;"></div>
+              <div class="skeleton" style="height: 14px; width: 40%; margin-top: 5px;"></div>
+            </div>
+            <div class="story-item">
+              <div class="skeleton" style="height: 20px; width: 70%;"></div>
+              <div class="skeleton" style="height: 14px; width: 30%; margin-top: 5px;"></div>
+            </div>
           </div>
         </div>
 
@@ -205,9 +216,12 @@
   <footer>
     <div class="container footer-content">
       <div class="footer-links">
-        <a href="https://www.youtube.com/@eungsmusic" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://blog.naver.com/73s" aria-label="Blog" target="_blank"><span class="material-symbols-rounded">article</span></a>
-        <a href="https://github.com/eung3392/eungsoft" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.youtube.com/@eungsmusic" aria-label="YouTube" target="_blank"><i
+            class="fa-brands fa-youtube"></i></a>
+        <a href="https://blog.naver.com/73s" aria-label="Blog" target="_blank"><span
+            class="material-symbols-rounded">article</span></a>
+        <a href="https://github.com/eung3392/eungsoft" aria-label="GitHub" target="_blank"><i
+            class="fa-brands fa-github"></i></a>
       </div>
       <p class="footer-text">
         &copy; 2025 EUNG SOFT. <span data-i18n="footer.rights"></span>
@@ -219,9 +233,9 @@
   <script>
     // Add translation for the subtitle
     if (translations) {
-        translations['ko']['story.subtitle'] = "개발 과정의 기록과 소소한 이야기들을 나눕니다.";
-        translations['en']['story.subtitle'] = "Sharing records and stories from the development process.";
-        applyTranslations();
+      translations['ko']['story.subtitle'] = "개발 과정의 기록과 소소한 이야기들을 나눕니다.";
+      translations['en']['story.subtitle'] = "Sharing records and stories from the development process.";
+      applyTranslations();
     }
 
     document.addEventListener('appReady', () => {
@@ -250,9 +264,9 @@
             selectStory(story, item);
           }
         });
-        
-        if(window.gsap) {
-            gsap.from('.story-item', { opacity: 0, x: -20, stagger: 0.05, duration: 0.4, ease: "power2.out" });
+
+        if (window.gsap) {
+          gsap.from('.story-item', { opacity: 0.3, x: -20, stagger: 0.05, duration: 0.4, ease: "power2.out" });
         }
 
       } catch (err) {
@@ -262,7 +276,7 @@
 
     async function selectStory(story, element) {
       const contentArea = document.getElementById('story-content');
-      
+
       // UI State
       document.querySelectorAll('.story-item').forEach(el => el.classList.remove('active'));
       element.classList.add('active');
@@ -271,22 +285,22 @@
         const response = await fetch(story.file);
         if (!response.ok) throw new Error("Failed");
         const html = await response.text();
-        
+
         // Use GSAP for smooth transition if available
-        if(window.gsap) {
-            gsap.to(contentArea, { 
-                opacity: 0, 
-                y: 10, 
-                duration: 0.2, 
-                onComplete: () => {
-                    contentArea.innerHTML = html;
-                    gsap.to(contentArea, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" });
-                }
-            });
+        if (window.gsap) {
+          gsap.to(contentArea, {
+            opacity: 0,
+            y: 10,
+            duration: 0.2,
+            onComplete: () => {
+              contentArea.innerHTML = html;
+              gsap.to(contentArea, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" });
+            }
+          });
         } else {
-            contentArea.innerHTML = html;
+          contentArea.innerHTML = html;
         }
-        
+
       } catch (err) {
         contentArea.innerHTML = `
           <div class="empty-state">
@@ -298,4 +312,5 @@
     }
   </script>
 </body>
+
 </html>

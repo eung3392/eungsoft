@@ -1,0 +1,100 @@
+<div class="story-content">
+    <header style="margin-bottom: 2.5rem;">
+        <h2 style="display: flex; align-items: center; gap: 0.5rem; font-size: 2rem;">
+            <span class="material-symbols-rounded" style="font-size: 2.5rem; color: var(--accent-color);">find_in_page</span>
+            EK Find Price: 카메라만 갖다 대면 가격비교가 짠!
+        </h2>
+        <div style="margin-top: 1.5rem;">
+            <a href="https://youtube.com/shorts/U1XVRwjkvPk?si=14-H2sjoYiwFui30" target="_blank" class="btn">
+                <span class="material-symbols-rounded">play_circle</span> 시연 영상 (Shorts) 보기
+            </a>
+        </div>
+    </header>
+
+    <section style="margin-bottom: 3rem;">
+        <p style="font-size: 1.1rem; line-height: 1.8;">
+            마트에서 상품을 보다가 "이거 인터넷에서 얼마지?" 하고 궁금했던 적 있으시죠? 
+            <strong>EK Find Price</strong>는 일일이 타이핑할 필요 없이, 카메라로 제품명만 비추면 바로 최저가를 검색해 주는 앱입니다. 
+            스마트 글래스를 활용해 눈앞의 상품 정보를 손쉽게 확인해 보세요.
+        </p>
+        <div style="margin-top: 1rem; padding: 1rem; background: var(--card-bg); border-radius: var(--radius); font-size: 0.95rem; color: var(--text-muted);">
+            <p>※ 네이버 쇼핑 API를 연동하여 실시간 검색을 지원하며, 하루 약 25,000회의 검색 제한이 있습니다.</p>
+        </div>
+    </section>
+
+    <section style="margin-bottom: 4rem;">
+        <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-symbols-rounded">auto_awesome</span> 주요 기능 소개
+        </h3>
+        <div style="display: grid; gap: 1.5rem;">
+            <div style="display: flex; gap: 1rem;">
+                <span class="material-symbols-rounded" style="color: var(--accent-color);">document_scanner</span>
+                <div>
+                    <strong>AI 텍스트 인식 (OCR):</strong> Google ML Kit을 사용하여 카메라에 비친 상품명을 실시간으로 인식합니다. 한글과 영문 모두 정확하게 지원합니다.
+                </div>
+            </div>
+            <div style="display: flex; gap: 1rem;">
+                <span class="material-symbols-rounded" style="color: var(--accent-color);">filter_center_focus</span>
+                <div>
+                    <strong>스마트 바운더리 스캔:</strong> 화면 중앙의 사각형 가이드 안에 들어온 텍스트만 집중적으로 추출하여 인식률과 정확도를 높였습니다.
+                </div>
+            </div>
+            <div style="display: flex; gap: 1rem;">
+                <span class="material-symbols-rounded" style="color: var(--accent-color);">touch_app</span>
+                <div>
+                    <strong>키워드 선택 시스템:</strong> 인식된 여러 텍스트 중 검색하려는 상품명을 직접 선택할 수 있어 오검색을 방지합니다.
+                </div>
+            </div>
+            <div style="display: flex; gap: 1rem;">
+                <span class="material-symbols-rounded" style="color: var(--accent-color);">shopping_cart</span>
+                <div>
+                    <strong>실시간 가격 검색:</strong> 네이버 쇼핑 API를 연동하여 실시간 최저가와 판매처 정보를 즉시 리포트합니다.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-bottom: 4rem;">
+        <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-symbols-rounded">potted_plant</span> 핵심 기술 스택
+        </h3>
+        <div class="card" style="padding: 1.5rem;">
+            <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; font-size: 0.95rem;">
+                <li><strong>Language:</strong> Kotlin</li>
+                <li><strong>Camera:</strong> Android CameraX</li>
+                <li><strong>AI/OCR:</strong> Google ML Kit</li>
+                <li><strong>Network:</strong> OkHttp3 & Retrofit</li>
+                <li><strong>Image:</strong> Glide (Thumbnail Rendering)</li>
+                <li><strong>Async:</strong> Coroutines</li>
+            </ul>
+        </div>
+    </section>
+
+    <section style="margin-bottom: 4rem;">
+        <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-symbols-rounded">visibility</span> 사용자 경험 (UX) 포인트
+        </h3>
+        <p style="margin-bottom: 1.5rem; color: var(--text-muted);">Rokid Glass 및 스마트폰 환경 모두 최적화되어 있습니다.</p>
+        <div style="display: grid; gap: 1rem;">
+            <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem; border: 1px solid var(--border-color); border-radius: var(--radius);">
+                <div style="width: 30px; height: 30px; border-radius: 50%; background: var(--accent-color); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">1</div>
+                <div><strong>스캔:</strong> 앱을 켜고 제품명을 사각형 프레임 안에 맞춥니다.</div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem; border: 1px solid var(--border-color); border-radius: var(--radius);">
+                <div style="width: 30px; height: 30px; border-radius: 50%; background: var(--accent-color); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">2</div>
+                <div><strong>선택:</strong> 인식된 텍스트 중 원하는 상품명을 터치(또는 글래스 템플 터치)합니다.</div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem; border: 1px solid var(--border-color); border-radius: var(--radius);">
+                <div style="width: 30px; height: 30px; border-radius: 50%; background: var(--accent-color); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">3</div>
+                <div><strong>확인:</strong> 네이버 쇼핑 검색 결과에서 최저가를 확인합니다!</div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="margin-top: 2rem; padding: 2rem; border-top: 1px solid var(--border-color); text-align: center;">
+        <p style="font-style: italic; color: var(--text-muted);">
+            "어떻게 하면 정보를 더 쉽고 빠르게 얻을 수 있을까?라는 고민에서 시작된 프로젝트입니다. 
+            눈에 보이는 것을 바로 데이터로 연결하는 기술을 지금 경험해 보세요!"
+        </p>
+    </footer>
+</div>
