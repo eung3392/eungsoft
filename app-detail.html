@@ -123,10 +123,17 @@
         <a href="terms.html" data-i18n="footer.terms" style="text-decoration: underline;">이용약관</a>
       </div>
       <p class="footer-text">
-        &copy; 2025 EUNG SOFT. <span data-i18n="footer.rights"></span>
+        &copy; 2025 EUNG SOFT. <span data-i18n="footer.rights">모든 권리 보유.</span>
       </p>
     </div>
   </footer>
+
+  <noscript>
+    <div style="padding: 2rem; text-align: center; background: #fff; color: #000;">
+      <h1>App Details - EUNG SOFT</h1>
+      <p>애플리케이션 상세 정보 페이지입니다. 정보를 불러오려면 브라우저의 자바스크립트를 활성화해주세요.</p>
+    </div>
+  </noscript>
 
   <script src="assets/js/main.js"></script>
   <script>
@@ -150,7 +157,7 @@
       const contentArea = document.getElementById('content-area');
 
       if (!appName || !appType) {
-        contentArea.innerHTML = `<h2 style="text-align: center;">Invalid App Parameters</h2>`;
+        contentArea.innerHTML = `<div style="text-align: center; padding: 4rem;"><h2>EUNG SOFT Apps</h2><p>애플리케이션 목록에서 관심있는 앱을 선택해주세요.</p><a href="/" class="btn" style="margin-top: 2rem;">홈으로 돌아가기</a></div>`;
         return;
       }
 
