@@ -263,6 +263,11 @@
                        onmouseout="this.style.background='none';">
                  <span class="material-symbols-rounded" style="font-size:1.2rem;">content_copy</span>
                </button>
+
+               <span id="download-count-container" style="display: flex; align-items: center; gap: 0.3rem; color: var(--text-muted); font-size: 0.95rem;">
+                 <span class="material-symbols-rounded" style="font-size:1.2rem;">download</span>
+                 <span id="download-count-value">...</span>
+               </span>
             </div>
 
 
@@ -276,7 +281,7 @@
             <p style="white-space: pre-line; margin-bottom: 2rem; color: var(--text-muted); line-height: 1.8;">${control}</p>
 
             <!-- Download Button -->
-            <a href="${dlHref}" ${dlTarget} ${dlAttr} onclick="if(window.gtag) { gtag('event', 'app_download', {'app_name': '${appName}', 'app_type': '${appType}'}); }" class="btn dl-btn" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+            <a href="${dlHref}" ${dlTarget} ${dlAttr} onclick="incDownloadCount('${appName}'); if(window.gtag) { gtag('event', 'app_download', {'app_name': '${appName}', 'app_type': '${appType}'}); }" class="btn dl-btn" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
               <span class="material-symbols-rounded">${dlIcon}</span>
               ${dlText}
             </a>
@@ -286,6 +291,9 @@
 
       contentArea.innerHTML = html;
       document.title = `${title} - EUNG SOFT`;
+
+      // Fetch and display download count
+      getDownloadCount(appName);
 
       // Animations
       if (window.gsap) {
@@ -317,6 +325,33 @@
       }).catch(err => {
         console.error('Failed to copy: ', err);
       });
+    }
+
+    async function getDownloadCount(keyword) {
+      const countEl = document.getElementById('download-count-value');
+      if (!countEl) return;
+      
+      try {
+        const response = await fetch(`http://m.73s.woobi.co.kr/count.php?keyword=${keyword}`);
+        if (response.ok) {
+          const text = await response.text();
+          countEl.textContent = text.trim();
+        } else {
+          countEl.textContent = '0';
+        }
+      } catch (err) {
+        console.error('Failed to fetch download count:', err);
+        countEl.textContent = '0';
+      }
+    }
+
+    async function incDownloadCount(keyword) {
+      try {
+        // Just call the increment URL, we don't necessarily need to wait for the response to start the download
+        fetch(`http://m.73s.woobi.co.kr/count.php?keyword=${keyword}&mode=inc`, { mode: 'no-cors' });
+      } catch (err) {
+        console.error('Failed to increment download count:', err);
+      }
     }
   </script>
 </body>
