@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Story - EUNG SOFT</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    .story-container {
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+      align-items: start;
+    }
+
+    @media (max-width: 992px) {
+      .story-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .story-list-card {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .story-list-header {
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      background: var(--card-bg);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .story-list {
+      display: flex;
+      flex-direction: column;
+      max-height: 600px;
+      overflow-y: auto;
+    }
+
+    .story-item {
+      padding: 1.25rem 1.5rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .story-item:last-child {
+      border-bottom: none;
+    }
+
+    .story-item:hover {
+      background: var(--card-bg);
+      padding-left: 1.75rem;
+    }
+
+    .story-item.active {
+      background: var(--accent-color);
+      color: white;
+      border-left: 4px solid var(--accent-color);
+    }
+    
+    .story-item.active h4, .story-item.active span {
+        color: white;
+    }
+
+    .story-item h4 {
+      margin: 0;
+      font-size: 1.05rem;
+      line-height: 1.4;
+      transition: color 0.2s;
+    }
+
+    .story-item span {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .story-detail-card {
+       min-height: 600px;
+       padding: 3rem;
+    }
+
+    @media (max-width: 768px) {
+        .story-detail-card {
+            padding: 1.5rem;
+        }
+    }
+
+    .story-content {
+       line-height: 1.8;
+       font-size: 1.1rem;
+    }
+
+    .story-content h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+    
+    .story-content p {
+        margin-bottom: 1.2rem;
+    }
+    
+    .story-content ul {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    
+    .story-content li {
+        margin-bottom: 0.5rem;
+    }
+
+    .empty-state {
+        text-align: center;
+        color: var(--text-muted);
+        padding: 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    /* Scrollbar styling */
+    .story-list::-webkit-scrollbar {
+        width: 6px;
+    }
+    .story-list::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .story-list::-webkit-scrollbar-thumb {
+        background: var(--border-color);
+        border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../" class="logo">
+        <span class="material-symbols-rounded">rocket_launch</span>
+        EUNG SOFT
+      </a>
+      <div class="nav-links">
+        <a href="../" data-i18n="nav.intro">Intro</a>
+        <a href="./" data-i18n="nav.story" class="active">Dev Story</a>
+        <a href="../rokid/" data-i18n="nav.rokid">Rokid App</a>
+        <a href="../android/" data-i18n="nav.android">Android App</a>
+        <a href="../books/" data-i18n="nav.books">Books</a>
+      </div>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button id="lang-toggle" class="lang-toggle">
+          <span class="material-symbols-rounded" style="font-size: 1.2rem;">language</span>
+          <span data-i18n="nav.lang">English</span>
+        </button>
+        <button class="hamburger" aria-label="Menu">
+          <span class="material-symbols-rounded">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <section style="margin-bottom: 3rem; text-align: center;">
+        <h1 style="font-size: 2.5rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+          <span class="material-symbols-rounded" style="color: var(--accent-color); font-size: inherit;">history_edu</span>
+          Dev Story
+        </h1>
+        <p style="color: var(--text-muted); font-size: 1.1rem;" data-i18n="story.subtitle">개발 과정의 기록과 소소한 이야기들을 나눕니다.</p>
+      </section>
+
+      <div class="story-container">
+        <!-- List -->
+        <div class="card story-list-card">
+          <div class="story-list-header">
+            <span class="material-symbols-rounded">list_alt</span>
+            <span style="font-weight: 700;">Story List</span>
+          </div>
+          <div class="story-list" id="story-list">
+            <!-- Skeleton items -->
+            <div class="story-item"><div class="skeleton" style="height: 20px; width: 80%;"></div><div class="skeleton" style="height: 14px; width: 40%; margin-top: 5px;"></div></div>
+            <div class="story-item"><div class="skeleton" style="height: 20px; width: 70%;"></div><div class="skeleton" style="height: 14px; width: 30%; margin-top: 5px;"></div></div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="card story-detail-card" id="story-content">
+          <div class="empty-state">
+            <span class="material-symbols-rounded" style="font-size: 4rem; opacity: 0.2;">drafts</span>
+            <p>이야기를 불러오는 중입니다...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="https://www.youtube.com/@eungsmusic" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://blog.naver.com/73s" aria-label="Blog" target="_blank"><span class="material-symbols-rounded">article</span></a>
+        <a href="https://github.com/eung3392/eungsoft" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <p class="footer-text">
+        &copy; 2025 EUNG SOFT. <span data-i18n="footer.rights"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script>
+    // Add translation for the subtitle
+    if (translations) {
+        translations['ko']['story.subtitle'] = "개발 과정의 기록과 소소한 이야기들을 나눕니다.";
+        translations['en']['story.subtitle'] = "Sharing records and stories from the development process.";
+        applyTranslations();
+    }
+
+    document.addEventListener('appReady', () => {
+      loadStories();
+    });
+
+    async function loadStories() {
+      const listContainer = document.getElementById('story-list');
+      try {
+        const data = await window.fetchJSON('info.json');
+        if (!data || !data.stories) throw new Error("Invalid format");
+
+        listContainer.innerHTML = '';
+        data.stories.forEach((story, index) => {
+          const item = document.createElement('div');
+          item.className = 'story-item';
+          item.innerHTML = `
+            <h4>${story.title}</h4>
+            <span><span class="material-symbols-rounded" style="font-size:0.9rem;">calendar_today</span> ${story.date}</span>
+          `;
+          item.onclick = () => selectStory(story, item);
+          listContainer.appendChild(item);
+
+          // Select first story by default
+          if (index === 0) {
+            selectStory(story, item);
+          }
+        });
+        
+        if(window.gsap) {
+            gsap.from('.story-item', { opacity: 0, x: -20, stagger: 0.05, duration: 0.4, ease: "power2.out" });
+        }
+
+      } catch (err) {
+        listContainer.innerHTML = `<p style="padding: 2rem; color: var(--text-muted); text-align: center;">${window.t('error.fetch')}</p>`;
+      }
+    }
+
+    async function selectStory(story, element) {
+      const contentArea = document.getElementById('story-content');
+      
+      // UI State
+      document.querySelectorAll('.story-item').forEach(el => el.classList.remove('active'));
+      element.classList.add('active');
+
+      try {
+        const response = await fetch(story.file);
+        if (!response.ok) throw new Error("Failed");
+        const html = await response.text();
+        
+        // Use GSAP for smooth transition if available
+        if(window.gsap) {
+            gsap.to(contentArea, { 
+                opacity: 0, 
+                y: 10, 
+                duration: 0.2, 
+                onComplete: () => {
+                    contentArea.innerHTML = html;
+                    gsap.to(contentArea, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" });
+                }
+            });
+        } else {
+            contentArea.innerHTML = html;
+        }
+        
+      } catch (err) {
+        contentArea.innerHTML = `
+          <div class="empty-state">
+            <span class="material-symbols-rounded" style="font-size: 4rem; color: #ef4444;">error</span>
+            <p>내용을 불러오지 못했습니다.</p>
+          </div>
+        `;
+      }
+    }
+  </script>
+</body>
+</html>
