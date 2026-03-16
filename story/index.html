@@ -208,9 +208,49 @@
 
         <!-- Content -->
         <div class="card story-detail-card" id="story-content">
-          <div class="empty-state">
-            <span class="material-symbols-rounded" style="font-size: 4rem; opacity: 0.2;">drafts</span>
-            <p>이야기를 불러오는 중입니다...</p>
+          <!-- Default content (Persona Story) for SEO and initial load -->
+          <div class="story-content">
+            <header style="margin-bottom: 2.5rem;">
+              <h2 style="display: flex; align-items: center; gap: 0.5rem; font-size: 2rem;">
+                <span class="material-symbols-rounded" style="font-size: 2.5rem; color: var(--accent-color);">psychology</span>
+                [PERSONA] : 데이터와 전통 원전으로 해석하는 관상과 손금
+              </h2>
+              <p style="font-size: 1.15rem; color: var(--text-muted); margin-top: 1rem;">
+                로키드 글래스(Rokid Glasses)의 가능성을 확장하는 새로운 앱, <strong>PERSONA</strong>를 소개합니다.
+              </p>
+            </header>
+
+            <section style="margin-bottom: 3rem;">
+              <p>
+                PERSONA는 방대한 데이터와 전통 관상/손금 원전을 기반으로 사용자의 외형적 특징을 분석하여 성격과 운세를 해석해 주는 혁신적인 애플리케이션입니다. 
+                단순한 재미를 넘어, 전통적인 지혜와 현대적인 데이터 분석 기술을 결합하고자 노력했습니다.
+              </p>
+            </section>
+
+            <section style="margin-bottom: 4rem;">
+              <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span class="material-symbols-rounded">featured_play_list</span> 주요 특징
+              </h3>
+              
+              <div style="display: grid; gap: 2rem;">
+                <div>
+                  <h4 style="display: flex; align-items: center; gap: 0.4rem;">
+                    <span class="material-symbols-rounded" style="color: var(--accent-color);">menu_book</span>
+                    1. 고전 원전에 충실한 해석
+                  </h4>
+                  <p>단순히 흥미 위주의 결과를 보여주는 대신, PERSONA는 손금학의 권위자인 <strong>키로(Cheiro)</strong>의 원전 해석 방식을 따릅니다. 앱 내부의 PalmReadingAnalyzer는 키로가 정의한 손의 형태, 손가락의 비율, 그리고 주요 선(생명선, 두뇌선, 감정선 등)의 특징을 분석하여 결과값을 도출합니다.</p>
+                </div>
+
+                <div>
+                  <h4 style="display: flex; align-items: center; gap: 0.4rem;">
+                    <span class="material-symbols-rounded" style="color: var(--accent-color);">query_stats</span>
+                    2. 정밀한 이미지 분석 기술
+                  </h4>
+                  <p>이 앱의 핵심은 사용자의 손과 얼굴을 인식하는 정밀도에 있습니다. Google의 <strong>MediaPipe</strong> 라이브러리를 활용하여 손마디의 위치, 손바닥의 넓이, 얼굴의 주요 지표(Landmarks)를 실시간으로 추적합니다.</p>
+                </div>
+              </div>
+            </section>
+            <p style="text-align:center; color:var(--text-muted); font-size:0.9rem;">(상세 내용은 자바스크립트 로딩 후 확인 가능합니다)</p>
           </div>
         </div>
       </div>
@@ -238,9 +278,30 @@
   </footer>
 
   <noscript>
-    <div style="padding: 2rem; text-align: center; background: #fff; color: #000;">
+    <div style="padding: 2rem; max-width: 800px; margin: 0 auto; background: #fff; color: #000; line-height: 1.6;">
       <h1>Dev Story - EUNG SOFT</h1>
-      <p>개발 과정의 에피소드들과 소소한 기록을 확인하실 수 있습니다. 브라우저에서 스크립트를 허용해주세요.</p>
+      <p>개발자 Eung의 개발 소식과 깊이 있는 이야기를 전합니다.</p>
+      
+      <hr>
+      
+      <h2>[대표 이야기] PERSONA : 데이터와 전통 원전으로 해석하는 관상과 손금</h2>
+      <p>PERSONA는 방대한 데이터와 전통 관상/손금 원전을 기반으로 사용자의 외형적 특징을 분석하여 성격과 운세를 해석해 주는 혁신적인 애플리케이션입니다. 단순한 재미를 넘어, 전통적인 지혜와 현대적인 데이터 분석 기술을 결합하고자 노력했습니다.</p>
+      
+      <h3>주요 특징</h3>
+      <ul>
+        <li><strong>고전 원전 해석:</strong> 손금학의 권위자 키로(Cheiro)의 원전 해석 방식을 따릅니다.</li>
+        <li><strong>이미지 분석 기술:</strong> Google MediaPipe를 활용해 손과 얼굴을 실시간 분석합니다.</li>
+        <li><strong>다국어 지원:</strong> 한국어, 영어, 일본어, 중국어 4개 국어를 지원합니다.</li>
+        <li><strong>자동 저장:</strong> 분석 결과를 갤러리에 저장하여 Hi Rokid 앱으로 연동 가능합니다.</li>
+      </ul>
+
+      <p>본 페이지의 전체 내용을 확인하시려면 브라우저의 자바스크립트 설정을 활성화해 주시기 바랍니다.</p>
+      
+      <nav>
+        <a href="../index.html">홈으로 가기</a> | 
+        <a href="../android/index.html">안드로이드 앱 목록</a> | 
+        <a href="../rokid/index.html">로키드 앱 목록</a>
+      </nav>
     </div>
   </noscript>
 
