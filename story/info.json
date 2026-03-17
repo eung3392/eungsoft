@@ -1,6 +1,11 @@
 {
   "stories": [
     {
+      "title": "EKHome Home launcher",
+      "date": "2026-03-17",
+      "file": "EKHome.html"
+    },
+    {
       "title": "[PERSONA] : 데이터와 전통 원전으로 해석하는 관상과 손금",
       "date": "2026-03-10",
       "file": "persona.html"

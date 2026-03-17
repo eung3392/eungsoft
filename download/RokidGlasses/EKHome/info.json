@@ -1,0 +1,38 @@
+{
+    "title": {
+        "ko": "EKHome",
+        "en": "EKHome"
+    },
+    "version": "1.0.0",
+    "releaseDate": "2026-03-17",
+    "shortDescription": {
+        "ko": "나만의 홈 런처 앱을 사용하세요",
+        "en": "Use your own home launcher app."
+    },
+    "description": {
+        "ko": "로키드 글래스를 처음 접하면 수많은 앱을 설치하게 됩니다. 하지만 정작 자주 쓰는 앱은 5~6개 내외임에도 불구하고, 기본 시스템 UI에서는 원하는 앱을 찾기 위해 여러 번의 조작이 필요했습니다. 특히 시스템 홈 화면을 변경할 수 없다는 제약은 더욱 큰 불편함으로 다가왔습니다. EKHome은 이러한 답답함을 해결하기 위해 \"사용은 터치로, 설정은 마우스로\"라는 원칙 아래 기획되었습니다. 가장 필요한 기능만 남기고 나머지는 과감히 걷어낸, 진정한 미니멀리즘 런처입니다.",
+        "en": "When you first encounter Rokid Glasses, you will install numerous apps. However, even though you only use about 5 to 6 apps frequently, you need to perform multiple operations to find the app you want in the basic system UI. In particular, the restriction that the system home screen cannot be changed was a greater inconvenience. EKHome was planned under the principle of \"Use with touch, set with mouse\" to solve this frustration. It is a true minimalist launcher that removes everything else and leaves only the most necessary functions."
+    },
+    "control": {
+        "ko": "앱을 실행하면 하단의 앱 바에 나가기 아이콘과 앱 서랍 아이콘만 존재합니다. 앱 서랍을 터치하여 자주 쓰는 앱을 즐겨찾기 하세요. 즐겨찾기 와 위젯을 설정할 때에는 블루투스 마우스를 연결해야 합니다. 우측 상단의 톱니바퀴 아이콘을 클릭하여 원하는 위젯을 활성화 하세요. 위젯을 터치하거나 드래그하여 설정하거나 위치를 변경할 수 있습니다.",
+        "en": "When you run the app, only the exit icon and app drawer icon exist in the app bar at the bottom. Touch the app drawer to favorite the apps you use frequently. You must connect a Bluetooth mouse to set favorites and widgets. Click the gear icon in the upper right corner to activate the desired widget. You can touch or drag the widget to set it or change its position."
+    },
+    "youtubeUrl": "https://www.youtube.com/embed/xMqShntBlKs",
+    "youtubeType": "1",
+    "download": "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKHome_v1.0.0.apk",
+    "images": [
+        "scr1.jpg",
+        "scr2.jpg",
+        "scr3.jpg"
+    ],
+    "tags": {
+        "ko": [
+            "홈",
+            "런처"
+        ],
+        "en": [
+            "Home",
+            "Launcher"
+        ]
+    }
+}

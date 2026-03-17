@@ -1,0 +1,37 @@
+{
+    "title": {
+        "ko": "이미지 리사이즈",
+        "en": "Image Resize"
+    },
+    "version": "1.0.0",
+    "releaseDate": "2026-03-17",
+    "shortDescription": {
+        "ko": "이미지의 가로,세로를 원하는 픽셀 크기로 저장",
+        "en": "Resize image to desired pixel size"
+    },
+    "description": {
+        "ko": "가끔 특정 사이트에서 가로,세로 정해진 픽셀의 크기로 이미지를 올려야 할 때가 있습니다. 그럴 때 이 앱을 사용하면 간편하게 원하는 픽셀 사이즈로 리사이즈가 가능합니다.",
+        "en": "Sometimes you need to upload an image with a specific width and height in pixels to a certain site. With this app, you can easily resize the image to your desired pixel size."
+    },
+    "control": {
+        "ko": "이미지를 불러오고, 사이즈를 조정하고, 저장하면 끝입니다.",
+        "en": "Load the image, adjust the size, and save it. That's it."
+    },
+    "youtubeUrl": "",
+    "youtubeType": "1",
+    "download": "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/ImageResize-V1.0.0.apk",
+    "images": [
+        "scr1.jpg",
+        "scr2.jpg"
+    ],
+    "tags": {
+        "ko": [
+            "편집",
+            "리사이즈"
+        ],
+        "en": [
+            "Edit",
+            "Resize"
+        ]
+    }
+}
