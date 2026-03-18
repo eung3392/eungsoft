@@ -19,7 +19,9 @@
   },
   "youtubeUrl": "",
   "youtubeType": "1",
-  "download": "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKTrans.7z",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKTrans.7z"
+  ],
   "images": [
     "scr1.jpg"
   ],

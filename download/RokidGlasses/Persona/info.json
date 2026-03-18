@@ -19,7 +19,9 @@
   },
   "youtubeUrl": "https://www.youtube.com/embed/OzI-Vvj1GOE",
   "youtubeType": "1",
-  "download": "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/Persona_v0.91.7z",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/Persona_v0.91.7z"
+  ],
   "images": [
     "scr1.jpg",
     "scr2.jpg",

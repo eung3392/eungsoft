@@ -19,7 +19,9 @@
   },
   "youtubeUrl": "https://www.youtube.com/embed/U1XVRwjkvPk",
   "youtubeType": "1",
-  "download": "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKFindPrice.zip",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKFindPrice.zip"
+  ],
   "images": [
     "scr1.jpg",
     "scr2.jpg",

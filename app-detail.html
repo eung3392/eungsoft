@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>App Details - EUNG SOFT</title>
-  
+
   <meta property="og:type" content="website">
   <meta property="og:title" content="App Details - EUNG SOFT">
   <meta property="og:image" content="https://eung.pe.kr/assets/images/logo.png">
@@ -132,9 +132,9 @@
     <div style="padding: 2rem; max-width: 800px; margin: 0 auto; background: #fff; color: #000; line-height: 1.6;">
       <h1>Application Details - EUNG SOFT</h1>
       <p>EUNG SOFT에서 개발한 다양한 애플리케이션의 상세 정보를 제공합니다.</p>
-      
+
       <hr>
-      
+
       <h2>주요 개발 앱 소개</h2>
       <div style="margin-bottom: 2rem;">
         <h3>[Rokid Glasses] Persona (페르소나)</h3>
@@ -152,13 +152,13 @@
       </div>
 
       <hr>
-      
+
       <p>실제 앱의 상세한 스펙, 버전 정보, 스크린샷 및 다운로드 링크를 확인하시려면 브라우저의 자바스크립트를 활성화해 주시기 바랍니다.</p>
-      
+
       <nav>
-        <a href="index.html">홈으로 가기</a> | 
-        <a href="android/index.html">안드로이드 앱 목록</a> | 
-        <a href="rokid/index.html">로키드 앱 목록</a> | 
+        <a href="index.html">홈으로 가기</a> |
+        <a href="android/index.html">안드로이드 앱 목록</a> |
+        <a href="rokid/index.html">로키드 앱 목록</a> |
         <a href="books/index.html">서적 목록</a>
       </nav>
     </div>
@@ -258,22 +258,7 @@
         galleryHtml += '</div>';
       }
 
-      // Download Setup
-      const dlHref = info.download || '#';
-      const isStoreLink = info.storeUrl && info.storeUrl.trim() !== "";
-      const dlTarget = isStoreLink || info.download?.startsWith('http') ? 'target="_blank"' : '';
-      const dlAttr = isStoreLink ? '' : 'download';
 
-      // Extract filename from download URL
-      let filename = '';
-      if (info.download) {
-        filename = info.download.substring(info.download.lastIndexOf('/') + 1);
-      }
-
-      const dlText = isStoreLink
-        ? (lang === 'ko' ? '스토어에서 다운로드' : 'Download from Store')
-        : `${window.t('btn.download')} ${filename}`;
-      const dlIcon = isStoreLink ? 'open_in_new' : 'download';
 
       const html = `
         <!-- Title & Back Button -->
@@ -326,11 +311,59 @@
             <h3 style="margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Control</h3>
             <p style="white-space: pre-line; margin-bottom: 2rem; color: var(--text-muted); line-height: 1.8;">${control}</p>
 
-            <!-- Download Button -->
-            <a href="${dlHref}" ${dlTarget} ${dlAttr} onclick="incDownloadCount('${appName}'); if(window.gtag) { gtag('event', 'app_download', {'app_name': '${appName}', 'app_type': '${appType}'}); }" class="btn dl-btn" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
-              <span class="material-symbols-rounded">${dlIcon}</span>
-              ${dlText}
-            </a>
+            <!-- Updated Section -->
+            ${info.updated && Array.isArray(info.updated) && info.updated.length > 0 ? `
+              <h3 style="margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">What's New</h3>
+              <div style="margin-bottom: 2rem; color: var(--text-muted); line-height: 1.8;">
+                ${info.updated.map(item => `
+                  <div style="margin-bottom: 1rem; padding: 1rem; background: var(--border-color); border-radius: 8px; opacity: 0.9;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                       <strong style="color: var(--primary-color);">v${item.version}</strong>
+                       <small style="font-size: 0.85rem; opacity: 0.8;">${item.releaseDate}</small>
+                    </div>
+                    <p style="white-space: pre-line; margin: 0; font-size: 0.95rem;">${item[lang] || item['ko']}</p>
+                  </div>
+                `).join('')}
+              </div>
+            ` : ''}
+
+            <!-- Download Buttons -->
+            <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+              ${(() => {
+          const downloadList = Array.isArray(info.download) ? info.download : (info.download ? [info.download] : []);
+          const isStoreLink = info.storeUrl && info.storeUrl.trim() !== "";
+
+          return downloadList.map((dlUrl, index) => {
+            const dlTarget = isStoreLink || dlUrl.startsWith('http') ? 'target="_blank"' : '';
+            const dlAttr = isStoreLink ? '' : 'download';
+
+            let filename = dlUrl.substring(dlUrl.lastIndexOf('/') + 1);
+            if (!filename || filename === dlUrl) filename = 'Download';
+
+            const dlText = index === 0
+              ? (isStoreLink ? (lang === 'ko' ? '스토어에서 다운로드' : 'Download from Store') : `${window.t('btn.download')} ${filename}`)
+              : `${filename} (Old Version)`;
+
+            const dlIcon = index === 0 ? (isStoreLink ? 'open_in_new' : 'download') : 'history';
+
+            if (index === 0) {
+              return `
+                      <a href="${dlUrl}" ${dlTarget} ${dlAttr} onclick="incDownloadCount('${appName}'); if(window.gtag) { gtag('event', 'app_download', {'app_name': '${appName}', 'version': 'latest'}); }" class="btn dl-btn" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+                        <span class="material-symbols-rounded">${dlIcon}</span>
+                        ${dlText}
+                      </a>
+                    `;
+            } else {
+              return `
+                      <a href="${dlUrl}" ${dlTarget} ${dlAttr} onclick="incDownloadCount('${appName}'); if(window.gtag) { gtag('event', 'app_download', {'app_name': '${appName}', 'version': 'old'}); }" class="btn" style="width: 100%; padding: 0.7rem; font-size: 0.9rem; background: transparent; border: 1px solid var(--border-color); color: var(--text-muted); justify-content: center; gap: 0.5rem;">
+                        <span class="material-symbols-rounded" style="font-size: 1.2rem;">${dlIcon}</span>
+                        ${dlText}
+                      </a>
+                    `;
+            }
+          }).join('');
+        })()}
+            </div>
           </div>
         </div>
       `;
@@ -377,7 +410,7 @@
       console.log('Fetching download count for:', keyword);
       const countEl = document.getElementById('download-count-value');
       if (!countEl) return;
-      
+
       try {
         // Netlify 프록시 주소 사용 (/proxy-count/ -> http://m.73s.woobi.co.kr/)
         const response = await fetch(`/proxy-count/count.php?keyword=${encodeURIComponent(keyword)}&t=${new Date().getTime()}`);

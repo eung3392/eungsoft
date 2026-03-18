@@ -19,7 +19,18 @@
     },
     "youtubeUrl": "https://www.youtube.com/embed/xMqShntBlKs",
     "youtubeType": "1",
-    "download": "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKHome_v1.0.0.apk",
+    "updated": [
+        {
+            "version": "1.1.0",
+            "releaseDate": "2026-03-18",
+            "ko": "밝기조절, 음량조절, 번역, 프롬프트, 네비게이션과 같은 시스템 앱의 바로가기가 추가되었습니다. 음량 조절의 경우는 직접 구현하였습니다. 음량 조절 후 가만히 있으면 3초후 창이 닫힙니다. 다만 시스템 앱을 종료하면 시스템 홈으로 돌아가는 문제는 존재합니다.",
+            "en": "Shortcuts for system apps have been added. Brightness control, volume control, translation, prompt, navigation. The volume control is implemented directly. If you leave it alone after adjusting the volume, the window will close in 3 seconds. However, the issue of returning to the system home when the system app is closed still exists."
+        }
+    ],
+    "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKHome_v1.1.0.apk",
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKHome_v1.0.0.apk"
+    ],
     "images": [
         "scr1.jpg",
         "scr2.jpg",

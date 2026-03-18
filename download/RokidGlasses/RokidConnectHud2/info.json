@@ -19,7 +19,9 @@
   },
   "youtubeUrl": "https://www.youtube.com/embed/_2tB-Kn8ZxQ",
   "youtubeType": "1",
-  "download": "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/RokidGlassesHUD.apk",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/RokidGlassesHUD.apk"
+  ],
   "images": [
     "scr1.jpg",
     "scr2.jpg"

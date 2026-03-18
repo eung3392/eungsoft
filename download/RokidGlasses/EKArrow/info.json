@@ -19,7 +19,9 @@
   },
   "youtubeUrl": "https://www.youtube.com/embed/_gT42bst52A",
   "youtubeType": "1",
-  "download": "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKArrow.apk",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKArrow.apk"
+  ],
   "images": [
     "scr1.jpg",
     "scr2.jpg"

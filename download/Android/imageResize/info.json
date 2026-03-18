@@ -19,7 +19,9 @@
     },
     "youtubeUrl": "",
     "youtubeType": "1",
-    "download": "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/ImageResize-V1.0.0.apk",
+    "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/ImageResize-V1.0.0.apk"
+    ],
     "images": [
         "scr1.jpg",
         "scr2.jpg"

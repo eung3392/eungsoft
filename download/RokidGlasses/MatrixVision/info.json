@@ -19,7 +19,9 @@
   },
   "youtubeUrl": "https://www.youtube.com/embed/K_v9EOyFYM8",
   "youtubeType": "1",
-  "download": "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/MatrixVision-v1.0.apk",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/MatrixVision-v1.0.apk"
+  ],
   "images": [
     "scr1.jpg",
     "scr2.jpg"
