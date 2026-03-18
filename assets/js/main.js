@@ -11,7 +11,7 @@ const translations = {
     "footer.terms": "이용약관",
     "footer.rights": "모든 권리 보유.",
     "hero.title": "CODE, BOOKS & LIFE",
-    "hero.subtitle": "사용자의 니즈를 생각하는 실용적인 소프트웨어를 만듭니다. 광고가 없습니다. 무료입니다. EUNG SOFT는 창작을 좋아하는 개발자의 개인 창작 공간입니다. 다소 미흡하더라도 저의 창작물을 여러 사람과 공유하고 싶은 마음입니다. 관심과 응원 부탁드립니다.",
+    "hero.subtitle": "사용자의 니즈를 생각하는 실용적인 소프트웨어를 만듭니다. 광고가 없는 앱을 만들고 있습니다. EUNG SOFT는 창작을 좋아하는 개발자의 개인 창작 공간입니다. 다소 미흡하더라도 저의 창작물을 여러 사람과 공유하고 싶은 마음입니다. 관심과 응원 부탁드립니다.",
     "hero.desc": "로키드 글래스 최적화 앱, 안드로이드 유틸리티, 그리고 제가 쓴 개인 서적을 소개합니다.",
     "btn.download": "다운로드",
     "btn.details": "자세히 보기",
@@ -37,7 +37,7 @@ const translations = {
     "footer.terms": "Terms of Service",
     "footer.rights": "All rights reserved.",
     "hero.title": "CODE, BOOKS & LIFE",
-    "hero.subtitle": "Building practical software focused on user needs. Ad-free. Free of charge. EUNG SOFT is a personal creative space for a developer who loves creating. Although it may be somewhat lacking, I want to share my creations with many people. Your interest and support are greatly appreciated.",
+    "hero.subtitle": "Building practical software focused on user needs. Ad-free. EUNG SOFT is a personal creative space for a developer who loves creating. Although it may be somewhat lacking, I want to share my creations with many people. Your interest and support are greatly appreciated.",
     "hero.desc": "Providing optimized apps for Rokid Glasses, Android utilities, and personal books i wrote.",
     "btn.download": "Download",
     "btn.details": "View Details",
@@ -80,7 +80,7 @@ function toggleTheme() {
   currentTheme = currentTheme === 'light' ? 'dark' : 'light';
   document.documentElement.setAttribute('data-theme', currentTheme);
   localStorage.setItem('eungsoft_theme', currentTheme);
-  
+
   // Update theme toggle icon
   const themeIcon = document.querySelector('.theme-toggle .material-symbols-rounded');
   if (themeIcon) {
