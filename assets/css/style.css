@@ -259,6 +259,33 @@ footer {
   transform: translateY(-4px);
 }
 
+/* Starfield Canvas */
+#starfield-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.05) 0%, rgba(56, 189, 248, 0.05) 100%);
+  margin-bottom: 2rem;
+  transition: background 0.5s ease;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+[data-theme='dark'] .hero-section {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 1) 100%);
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
+}
+
 /* Loading Skeleton */
 .skeleton {
   background: #f0f0f0;

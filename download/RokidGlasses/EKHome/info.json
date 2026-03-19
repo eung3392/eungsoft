@@ -3,8 +3,8 @@
         "ko": "EKHome",
         "en": "EKHome"
     },
-    "version": "1.1.0",
-    "releaseDate": "2026-03-18",
+    "version": "1.2.0",
+    "releaseDate": "2026-03-17",
     "shortDescription": {
         "ko": "나만의 홈 런처 앱을 사용하세요",
         "en": "Use your own home launcher app."
@@ -21,6 +21,12 @@
     "youtubeType": "1",
     "updated": [
         {
+            "version": "1.2.0",
+            "releaseDate": "2026-03-19",
+            "ko": "앱바에 와이파이 설정 버튼 추가, 나가기 버튼 삭제, 설정 버튼 열고 닫기 기능 추가",
+            "en": "Add wifi settings button to app bar, remove exit button, add function to open and close settings button."
+        },
+        {
             "version": "1.1.0",
             "releaseDate": "2026-03-18",
             "ko": "밝기조절, 음량조절, 번역, 프롬프트, 네비게이션과 같은 시스템 앱의 바로가기가 추가되었습니다. 음량 조절의 경우는 직접 구현하였습니다. 음량 조절 후 가만히 있으면 3초후 창이 닫힙니다. 다만 시스템 앱을 종료하면 시스템 홈으로 돌아가는 문제는 존재합니다.",
@@ -28,6 +34,7 @@
         }
     ],
     "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKHome_v1.2.0.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKHome_v1.1.0.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKHome_v1.0.0.apk"
     ],

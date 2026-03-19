@@ -68,7 +68,8 @@
     <div class="container">
 
       <!-- Hero Section -->
-      <section class="hero-section" style="text-align: center; padding: 4rem 0;">
+      <section class="hero-section">
+        <canvas id="starfield-canvas"></canvas>
         <div class="hero-icon" style="font-size: 4rem; color: var(--accent-color); margin-bottom: 1rem;">
           <span class="material-symbols-rounded" style="font-size: inherit;">code_blocks</span>
         </div>
@@ -210,6 +211,7 @@
   </noscript>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/starfield.js"></script>
   <script>
     // Page specific GSAP animations
     document.addEventListener('appReady', () => {
