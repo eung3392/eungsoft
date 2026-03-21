@@ -306,10 +306,10 @@
             <div style="margin-bottom: 1.5rem;">${tagsHtml}</div>
             
             <h3 style="margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Description</h3>
-            <p style="white-space: pre-line; margin-bottom: 2rem; color: var(--text-muted); line-height: 1.8;">${desc}</p>
+            <div style="white-space: pre-line; margin-bottom: 2rem; color: var(--text-muted); line-height: 1.8;">${desc}</div>
             
             <h3 style="margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Control</h3>
-            <p style="white-space: pre-line; margin-bottom: 2rem; color: var(--text-muted); line-height: 1.8;">${control}</p>
+            <div style="white-space: pre-line; margin-bottom: 2rem; color: var(--text-muted); line-height: 1.8;">${control}</div>
 
             <!-- Updated Section -->
             ${info.updated && Array.isArray(info.updated) && info.updated.length > 0 ? `
@@ -321,7 +321,7 @@
                        <strong style="color: var(--primary-color);">v${item.version}</strong>
                        <small style="font-size: 0.85rem; opacity: 0.8;">${item.releaseDate}</small>
                     </div>
-                    <p style="white-space: pre-line; margin: 0; font-size: 0.95rem;">${item[lang] || item['ko']}</p>
+                    <div style="white-space: pre-line; margin: 0; font-size: 0.95rem;">${item[lang] || item['ko']}</div>
                   </div>
                 `).join('')}
               </div>

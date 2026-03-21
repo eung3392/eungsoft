@@ -10,12 +10,12 @@
     "en": "Navigation HUD App for Glasses (korean ver)"
   },
   "description": {
-    "ko": "스마트폰의 네비게이션을 안경에 HUD로 표시해주는 앱입니다. 이 앱은 안경에 설치합니다. 이 앱을 사용하기 위해서는 HUD 폰용 App을 설치해서 함께 사용해야 합니다. 제 블로그에 더 자세한 내용이 있습니다.",
-    "en": "This app displays navigation from your smartphone as a HUD on your glasses. Install this app on your glasses. To use this app, you must install and use the HUD phone app together. There are more details on my blog."
+    "ko": "스마트폰의 네비게이션(티맵, 네이버맵 등) 화면을 <b>로키드 글래스에 HUD 형태로 표시</b>해 주는 안경 전용 앱입니다.<br>이 앱은 <b>로키드 글래스 본체</b>에 설치하며, 원활한 사용을 위해 스마트폰 전용 보조 앱인 <b>HUD 폰용 앱</b>을 함께 설치해야 합니다.",
+    "en": "A dedicated app for Rokid Glasses that renders your smartphone's navigation (TMap, Naver Map) as a <b>HUD</b>.<br>Install this version on your <b>Rokid Glasses</b>. It must be paired with the <b>Phone-side HUD app</b> for full functionality."
   },
   "control": {
-    "ko": "폰 앱에서 Connect 를 선택하고, 안경에서 우측 다리를 터치하면 블루투스 목록이 나타납니다. 이때 해당 폰을 선택하면 연결이 됩니다. ",
-    "en": "Select Connect in the phone app, and touch the right temple of the glasses to display the Bluetooth list. Select the phone to connect."
+    "ko": "<ol style='padding-left: 20px;'><li><b>블루투스 목록:</b> 안경 우측 다리를 터치하여 <b>블루투스 기기 목록</b>을 활성화합니다.</li><li><b>연결 확인:</b> 폰의 HUD 앱이 'Connect' 상태인 상태에서 해당 폰을 선택하여 연결합니다.</li><li><b>HUD 표시:</b> 연결 직후 폰의 네비게이션 화면이 HUD로 나타납니다.</li></ol>",
+    "en": "<ol style='padding-left: 20px;'><li><b>Bluetooth List:</b> Touch the right temple of the glasses to display the <b>BT device list</b>.</li><li><b>Connect:</b> Ensure the Phone HUD app is in 'Connect' mode, then select your phone to pair.</li><li><b>HUD View:</b> The navigation data will immediately appear as a HUD display.</li></ol>"
   },
   "youtubeUrl": "https://www.youtube.com/embed/_2tB-Kn8ZxQ",
   "youtubeType": "1",

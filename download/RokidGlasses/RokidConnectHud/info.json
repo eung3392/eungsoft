@@ -10,12 +10,12 @@
     "en": "Navigation HUD App for Phone (korean ver)"
   },
   "description": {
-    "ko": "스마트폰의 네비게이션을 안경에 HUD로 표시하기 위해 안경과 연결하는 앱입니다. 이 앱은 모바일폰에 설치합니다. 이 앱을 사용하기 위해서는 HUD 안경용 App을 설치해서 함께 사용해야 합니다. 제 블로그에 더 자세한 내용이 있습니다.",
-    "en": "This app displays navigation from your smartphone as a HUD on your glasses. Install this app on your mobile phone. To use this app, you must install and use the HUD phone app together. There are more details on my blog."
+    "ko": "스마트폰의 네비게이션(티맵, 네이버맵 등) 화면을 <b>로키드 글래스에 HUD 형태로 표시</b>해 주는 연동 앱입니다.<br>이 앱은 <b>모바일 스마트폰</b>에 설치하며, 원활한 사용을 위해 보조 앱인 <b>안경용 HUD 앱</b>을 함께 설치해야 합니다.",
+    "en": "A companion app that mirrors your smartphone's navigation (TMap, Naver Map) as a <b>HUD on your Rokid Glasses</b>.<br>Install this version on your <b>Android phone</b>. It must be paired with the <b>Glasses-side HUD app</b> for full functionality."
   },
   "control": {
-    "ko": "앱에서 Connect 를 선택하고, 미러링 버튼을 누릅니다. 레이아웃, 설정, 미러링 영역에서 상세한 설정이 가능합니다.",
-    "en": "Select Connect in the phone app, and press the Mirroring button. Detailed settings are available in the Layout, Settings, and Mirroring areas."
+    "ko": "<ol style='padding-left: 20px;'><li><b>연결하기:</b> 앱에서 <b>'Connect'</b>를 선택합니다.</li><li><b>미러링 시작:</b> 중앙의 <b>'Mirroring'</b> 버튼을 누릅니다.</li><li><b>커스텀 설정:</b> 레이아웃, 미러링 영역, 불투명도 등 상세 설정을 조절할 수 있습니다.</li></ol>",
+    "en": "<ol style='padding-left: 20px;'><li><b>Connect:</b> Select <b>'Connect'</b> in the phone app menu.</li><li><b>Start Mirroring:</b> Press the large <b>'Mirroring'</b> button.</li><li><b>Preferences:</b> Adjust layouts, mirroring areas, and opacity in the settings.</li></ol>"
   },
   "youtubeUrl": "https://www.youtube.com/embed/_2tB-Kn8ZxQ",
   "youtubeType": "1",

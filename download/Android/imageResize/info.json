@@ -10,12 +10,12 @@
         "en": "Resize image to desired pixel size"
     },
     "description": {
-        "ko": "가끔 특정 사이트에서 가로,세로 정해진 픽셀의 크기로 이미지를 올려야 할 때가 있습니다. 그럴 때 이 앱을 사용하면 간편하게 원하는 픽셀 사이즈로 리사이즈가 가능합니다.",
-        "en": "Sometimes you need to upload an image with a specific width and height in pixels to a certain site. With this app, you can easily resize the image to your desired pixel size."
+        "ko": "한 번의 조작으로 이미지를 <b>원하는 가로/세로 픽셀 크기</b>로 간편하게 조절할 수 있는 리사이즈 도구입니다.",
+        "en": "A handy tool that allows you to <b>easily resize images to your desired pixel dimensions</b> with a single operation."
     },
     "control": {
-        "ko": "이미지를 불러오고, 사이즈를 조정하고, 저장하면 끝입니다.",
-        "en": "Load the image, adjust the size, and save it. That's it."
+        "ko": "<ol style='padding-left: 20px;'><li><b>이미지 불러오기:</b> 리사이즈할 이미지를 선택합니다.</li><li><b>사이즈 입력:</b> 원하는 가로, 세로 픽셀 값을 입력합니다.</li><li><b>저장하기:</b> 리사이즈된 이미지를 기기에 저장합니다.</li></ol>",
+        "en": "<ol style='padding-left: 20px;'><li><b>Load Image:</b> Select the image to resize.</li><li><b>Set Dimensions:</b> Enter the desired width and height values in pixels.</li><li><b>Save:</b> Save the resized image to your device.</li></ol>"
     },
     "youtubeUrl": "",
     "youtubeType": "1",

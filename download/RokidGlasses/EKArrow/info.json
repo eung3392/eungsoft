@@ -10,12 +10,12 @@
     "en": "Mini Archery Game"
   },
   "description": {
-    "ko": "원버튼 활쏘기 게임입니다. 다양한 양궁 표적을 맞추세요. EK Arrow는 1인칭 시점(First-Person Perspective)에서 전방에 나타나는 과녁을 맞히는 아케이드 양궁 게임입니다. 세로형 레이아웃으로 설계되어 한 손으로도 충분히 즐길 수 있으며, 특히 스마트 글래스인 로키드 글래스(Rokid Glass) 환경에서도 완벽하게 동작하도록 최적화되었습니다.",
-    "en": "This app is a one-button archery game. Hit various archery targets. EK Arrow is an arcade archery game where you shoot targets that appear in front of you from a first-person perspective. Designed with a vertical layout, it can be enjoyed with one hand and is optimized to work perfectly in the environment of smart glasses, Rokid Glass."
+    "ko": "<b>EK Arrow</b>는 1인칭 시점(First-Person Perspective)에서 과녁을 맞히는 <b>아케이드 원버튼 양궁 게임</b>입니다.<br>세로형 레이아웃으로 설계되어 스마트폰 한 손 조작은 물론, <b>로키드 글래스(Rokid Glass)</b> 환경에 최적화되어 있습니다.",
+    "en": "<b>EK Arrow</b> is a first-person <b>one-button arcade archery game</b> where you aim for the bullseye.<br>Its vertical layout is perfect for one-handed play and it is <b>fully optimized for Rokid Glass</b> smart glasses."
   },
   "control": {
-    "ko": "터치하면 활을 쏩니다. 복잡한 조작은 필요 없습니다. 오직 '타이밍'만이 중요합니다.",
-    "en": "Touch the screen to shoot an arrow. No complicated controls are needed. Only 'timing' is important."
+    "ko": "조작은 매우 간단합니다!<br>• <b>터치 또는 버튼:</b> 활을 쏩니다.<br>• 복잡한 조작 없이 오직 <b>'타이밍'</b>만으로 과녁을 명중시키세요.",
+    "en": "Controls are dead simple!<br>• <b>Touch or Button Click:</b> Shoot an arrow.<br>• No complex inputs needed; everything comes down to <b>'timing'</b>."
   },
   "youtubeUrl": "https://www.youtube.com/embed/_gT42bst52A",
   "youtubeType": "1",

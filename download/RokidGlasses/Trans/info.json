@@ -10,12 +10,12 @@
     "en": "Offline English-Korean text translation application."
   },
   "description": {
-    "ko": "EK번역은 Rokid Glasses 사용자를 위한 전용 영어-한국어 번역 애플리케이션입니다. Google ML Kit를 활용하여 안정적인 번역 성능을 제공하며, 스마트 글래스 환경에 최적화된 UX를 갖추고 있습니다. 다운받은 압축파일의 비밀번호는 eung.pe.kr 입니다.",
-    "en": "EK Trans is a dedicated English-Korean translation application for Rokid Glasses users. It provides stable translation performance using Google ML Kit and features a UX optimized for the smart glasses environment. The password for the downloaded compressed file is eung.pe.kr."
+    "ko": "<b>EK Trans</b>는 로키드 글래스 사용자를 위한 전용 <b>영어-한국어 오프라인 번역</b> 애플리케이션입니다.<br>Google ML Kit를 기반으로 하여 초기 모델 다운로드 후에는 <b>인터넷 연결 없이도</b> 빠르고 안정적인 번역 성능을 제공합니다.<br><br><p style='color:#777;'>※ 다운로드 파일 비밀번호: <b>eung.pe.kr</b></p>",
+    "en": "<b>EK Trans</b> is a dedicated <b>offline English-Korean translation</b> app for Rokid Glasses.<br>Powered by Google ML Kit, it allows for fast and stable translation <b>without an active internet connection</b> after the initial model download.<br><br><p style='color:#777;'>※ Download password: <b>eung.pe.kr</b></p>"
   },
   "control": {
-    "ko": "앱을 실행하기 전에 와이파이를 활성화 하고 인터넷에 연결합니다. 앱 초기 실행 시 영어-한국어 번역을 위한 모델을 다운로드해야 하는데 약 30Mbyte 정도입니다. 최초 다운로드 시에만 Wi-Fi 연결이 필요합니다. 번역 모델을 다운 받은 이후에는 네트워크 연결 없이 온디바이스에서 번역이 이루어집니다.상단의 사각형 바운더리에 영문 텍스트가 오도록 합니다. 안경 우측 다리를 터치하면 스캔중.. 이라는 문구와 함께 문자 인식 및 번역이 이루어집니다.",
-    "en": "Before running the app, enable Wi-Fi and connect to the internet. When you first run the app, you need to download a model for English-Korean translation, which is about 30Mbyte. Wi-Fi connection is only required for the initial download. After downloading the translation model, the translation is performed on-device without a network connection. Align the English text within the rectangular boundary at the top. Touch the right temple of the glasses to scan... and the text will be recognized and translated."
+    "ko": "<ul style='padding-left: 20px;'><li><b>초기 설정:</b> 최초 실행 시 <b>Wi-Fi</b>에 연결하여 번역 모델(약 30MB)을 다운로드하세요.</li><li><b>모델 다운로드 후:</b> 이후에는 오프라인 상태에서도 자유롭게 사용 가능합니다.</li><li><b>번역 방법:</b> 상단 사각형 영역에 영문 텍스트를 맞추고 안경 우측 다리를 터치하면 번역 결과가 나타납니다.</li></ul>",
+    "en": "<ul style='padding-left: 20px;'><li><b>Initial Setup:</b> Connect to <b>Wi-Fi</b> on the first run to download the 30MB translation model.</li><li><b>Offline Use:</b> Once the model is cached, no cellular or Wi-Fi data is needed for translation.</li><li><b>How to Translate:</b> Align English text within the top frame and touch the right temple of the glasses to scan.</li></ul>"
   },
   "youtubeUrl": "",
   "youtubeType": "1",

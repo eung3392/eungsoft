@@ -10,12 +10,12 @@
     "en": "Take a picture with the camera and search for the price on Naver."
   },
   "description": {
-    "ko": "무엇을 만들어 볼까 하다가. 가격 검색 프로그램을 만들어 보았습니다. HUD 다음 버전이네요. 물건을 손에 들고 상품을 스캔한 다음 스캔한 결과물 목록에서 상품명을 선택하면 네이버 쇼핑에서 가격을 검색 합니다. 검색 횟수에 제한이 있습니다. 하루에 25,000회 라는 제한이 있지만, 사용자가 많지 않을 것 같아서.. ^^",
-    "en": "I was wondering what to make, so I made a price search program. This is the next version after HUD. Hold the product in your hand, scan the product, and then select the product name from the list of scanned results to search for the price on Naver Shopping. There is a limit to the number of searches. There is a limit of 25,000 times per day, but I don't think there will be many users.. ^^"
+    "ko": "상품명을 카메라로 스캔하여 <b>네이버 쇼핑</b>에서 최저가를 검색해 주는 가격 비교 유틸리티입니다.<br>상품을 카메라 프레임에 맞추고 버튼을 누르면 인공지능(OCR)을 통해 텍스트를 인식하고, 인식된 상품명으로 쇼핑 검색 결과를 보여줍니다.",
+    "en": "A price comparison utility that scans product names with the camera and searches for the <b>lowest price on Naver Shopping</b>.<br>By aligning the product name within the camera frame, the app uses AI (OCR) to recognize text and displays search results from Naver Shopping."
   },
   "control": {
-    "ko": "스캔: 앱을 켜고 제품명을 사각형 프레임 안에 맞춥니다. 선택: 인식된 텍스트 목록 중 원하는 상품명을 터치(또는 엔터)합니다. 확인: 네이버 쇼핑 검색 결과에서 이미지와 가격을 확인하고 최저가를 찾습니다!",
-    "en": "Scan: Turn on the app and align the product name within the rectangular frame. Select: Touch (or press Enter) the desired product name from the list of recognized texts. Confirm: Check the images and prices in the Naver Shopping search results and find the lowest price!"
+    "ko": "<ul style='padding-left: 20px;'><li><b>스캔:</b> 제품명을 사각형 프레임 안에 맞춥니다.</li><li><b>선택:</b> 인식된 텍스트 목록 중 원하는 상품명을 터치(또는 엔터)합니다.</li><li><b>확인:</b> 네이버 쇼핑 검색 결과에서 이미지와 가격을 확인하고 최저가를 찾습니다!</li></ul>",
+    "en": "<ul style='padding-left: 20px;'><li><b>Scan:</b> Align the product name within the rectangular frame of the app.</li><li><b>Select:</b> Touch or press Enter on the desired product name from the list of recognized text.</li><li><b>Confirm:</b> Browse the Naver Shopping search results to find the best deal!</li></ul>"
   },
   "youtubeUrl": "https://www.youtube.com/embed/U1XVRwjkvPk",
   "youtubeType": "1",

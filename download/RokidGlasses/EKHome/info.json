@@ -10,12 +10,12 @@
         "en": "Use your own home launcher app."
     },
     "description": {
-        "ko": "로키드 글래스를 처음 접하면 수많은 앱을 설치하게 됩니다. 하지만 정작 자주 쓰는 앱은 5~6개 내외임에도 불구하고, 기본 시스템 UI에서는 원하는 앱을 찾기 위해 여러 번의 조작이 필요했습니다. 특히 시스템 홈 화면을 변경할 수 없다는 제약은 더욱 큰 불편함으로 다가왔습니다. EKHome은 이러한 답답함을 해결하기 위해 \"사용은 터치로, 설정은 마우스로\"라는 원칙 아래 기획되었습니다. 가장 필요한 기능만 남기고 나머지는 과감히 걷어낸, 진정한 미니멀리즘 런처입니다.",
-        "en": "When you first encounter Rokid Glasses, you will install numerous apps. However, even though you only use about 5 to 6 apps frequently, you need to perform multiple operations to find the app you want in the basic system UI. In particular, the restriction that the system home screen cannot be changed was a greater inconvenience. EKHome was planned under the principle of \"Use with touch, set with mouse\" to solve this frustration. It is a true minimalist launcher that removes everything else and leaves only the most necessary functions."
+        "ko": "로키드 글래스를 위한 <b>미니멀리즘 런처 앱</b>입니다.<br>기본 시스템 UI의 복잡함을 걷어내고, 자주 사용하는 앱 5~6개를 가장 쉽고 빠르게 실행할 수 있도록 설계되었습니다. <b>\"사용은 터치로, 설정은 마우스로\"</b>라는 원칙 아래 최적의 사용자 경험을 제공합니다.",
+        "en": "A <b>minimalist launcher app</b> designed for Rokid Glasses.<br>Stripping away the complexity of the default system UI, it focuses on providing the fastest access to your 5-6 most-used apps. Built on the principle of <b>\"Use with touch, set with mouse.\"</b>"
     },
     "control": {
-        "ko": "앱을 실행하면 하단의 앱 바에 나가기 아이콘과 앱 서랍 아이콘만 존재합니다. 앱 서랍을 터치하여 자주 쓰는 앱을 즐겨찾기 하세요. 즐겨찾기 와 위젯을 설정할 때에는 블루투스 마우스를 연결해야 합니다. 우측 상단의 톱니바퀴 아이콘을 클릭하여 원하는 위젯을 활성화 하세요. 위젯을 터치하거나 드래그하여 설정하거나 위치를 변경할 수 있습니다.",
-        "en": "When you run the app, only the exit icon and app drawer icon exist in the app bar at the bottom. Touch the app drawer to favorite the apps you use frequently. You must connect a Bluetooth mouse to set favorites and widgets. Click the gear icon in the upper right corner to activate the desired widget. You can touch or drag the widget to set it or change its position."
+        "ko": "<ul style='padding-left: 20px;'><li><b>즐겨찾기:</b> 앱 서랍 아이콘을 터치하여 자주 쓰는 앱을 등록하세요.</li><li><b>설정 모드:</b> 블루투스 마우스를 연결하여 즐겨찾기와 위젯을 세부 편집할 수 있습니다.</li><li><b>위젯 관리:</b> 우측 상단 톱니바퀴 아이콘을 클릭해 원하는 위젯을 활성화하고 드래그하여 위치를 조정하세요.</li></ul>",
+        "en": "<ul style='padding-left: 20px;'><li><b>Favorites:</b> Touch the app drawer icon to add your frequently used apps.</li><li><b>Setup Mode:</b> Connect a Bluetooth mouse to detailedly edit favorites and widgets.</li><li><b>Widget Management:</b> Click the gear icon at the top right to activate widgets and drag them to your preferred positions.</li></ul>"
     },
     "youtubeUrl": "https://www.youtube.com/embed/xMqShntBlKs",
     "youtubeType": "1",

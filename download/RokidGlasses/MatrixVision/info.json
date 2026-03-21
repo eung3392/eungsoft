@@ -10,12 +10,12 @@
     "en": "See the world through Matrix."
   },
   "description": {
-    "ko": "무엇을 할까 하다가 이런 아이디어가 떠올랐습니다. 안경을 쓰고 보는 세상이 매트릭스 같은 세상이라면? 이란 상상이었습니다. 카메라로 촬영을 하고, 그 촬영한 영상의 오브젝트에 실루엣만 보이면 그런 느낌이지 않을까 싶었구요. 그 영상을 저장하는 기능까지 추가해보았습니다.",
-    "en": "What should I do? Then this idea came to mind. What if the world you see through glasses was like the world in The Matrix? That was my imagination. I thought it would feel like that if I filmed with the camera and only saw silhouettes of objects in the filmed video. I even added a feature to save the video."
+    "ko": "<b>매트릭스(Matrix)</b> 영화 속 세상처럼 카메라 영상을 실시간으로 변환하여 보여주는 독특한 카메라 앱입니다.<br>사물의 실루엣만을 추출하여 디지털 데이터처럼 표현하며, 눈앞의 광경을 매트릭스 스타일의 영상으로 녹화하고 저장할 수 있습니다.",
+    "en": "A unique camera app that transforms your world into a scene from <b>The Matrix</b> in real time.<br>By extracting object silhouettes, it visualizes the world as digital code and allows you to record these stylized views."
   },
   "control": {
-    "ko": "앱을 실행하고 안경의 우측을 터치하면 보고 있는 매트릭스 영상을 캡쳐하고, 한 번 더 터치하면 촬영 종료 및 파일 저장을 합니다. 저장된 파일은 로키드 글래스 기본앱의 동기화를 통해 가져올 수 있습니다.",
-    "en": "Run the app and touch the right side of the glasses to capture the matrix video you are watching, and touch it again to end the recording and save the file. The saved file can be retrieved through the synchronization of the Rokid Glasses default app."
+    "ko": "<ul style='padding-left: 20px;'><li><b>촬영 시작:</b> 앱 실행 후 안경의 우측을 터치(또는 엔터)하면 녹화가 시작됩니다.</li><li><b>촬영 종료:</b> 다시 한번 터치하면 촬영이 종료되고 파일이 저장됩니다.</li><li><b>파일 확인:</b> 저장된 영상은 시스템 갤러리나 기본 앱 동기화를 통해 확인할 수 있습니다.</li></ul>",
+    "en": "<ul style='padding-left: 20px;'><li><b>Start Recording:</b> Touch the right side of the glasses (or press Enter) to begin capturing.</li><li><b>End Recording:</b> Touch again to stop and save the matrix-styled video file.</li><li><b>Check Files:</b> View your saved videos in the system gallery or via the default app sync.</li></ul>"
   },
   "youtubeUrl": "https://www.youtube.com/embed/K_v9EOyFYM8",
   "youtubeType": "1",

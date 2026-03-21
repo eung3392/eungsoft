@@ -10,12 +10,12 @@
         "en": "Table Clock, Calendar"
     },
     "description": {
-        "ko": "광고 배너가 없는 깔끔한 탁상시계 앱입니다.",
-        "en": "This is a simple table clock app without ads."
+        "ko": "<b>광고 배너가 없는</b> 깔끔하고 미니멀한 탁상시계 앱입니다.",
+        "en": "A clean and minimalist <b>table clock app without any ad banners</b>."
     },
     "control": {
-        "ko": "앱의 시간을 클릭하면 표시 방식이 변경됩니다. 달력을 클릭하면 앱의 테마가 4가지로 변경됩니다. 달력의 월 부분을 클릭하면 언어가 영어 또는 한국어로 변경됩니다.",
-        "en": "Clicking the time in the app changes the display method. Clicking the calendar changes the theme of the app to 4 types. Clicking the month part of the calendar changes the language to English or Korean."
+        "ko": "<ul style='padding-left: 20px;'><li><b>시간 클릭:</b> 시간 표시 방식이 변경됩니다.</li><li><b>달력 클릭:</b> 앱의 테마(4가지)가 변경됩니다.</li><li><b>달력의 '월' 클릭:</b> 표시 언어(영어/한국어)가 변경됩니다.</li></ul>",
+        "en": "<ul style='padding-left: 20px;'><li><b>Click Time:</b> Changes the time display format.</li><li><b>Click Calendar:</b> Cycles through 4 different app themes.</li><li><b>Click 'Month':</b> Toggles the display language between English and Korean.</li></ul>"
     },
     "youtubeUrl": "https://www.youtube.com/embed/gLOKSUxvS5w",
     "youtubeType": "0",
