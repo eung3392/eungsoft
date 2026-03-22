@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gemini Client</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0f12;
+    --surface: #141720;
+    --surface2: #1c2030;
+    --border: #252a3a;
+    --accent: #4f8ef7;
+    --accent2: #7c5cfc;
+    --text: #d8dce8;
+    --text-muted: #5a6180;
+    --text-dim: #8890a8;
+    --success: #3ecf7a;
+    --warning: #f5a623;
+    --error: #f05656;
+    --user-bubble: #1a2340;
+    --ai-bubble: #141a28;
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── Header ── */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    flex-shrink: 0;
+    gap: 12px;
+  }
+
+  .logo {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+  .logo span { color: var(--text-muted); font-weight: 300; }
+
+  .header-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  /* Model selector */
+  .model-select {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    padding: 7px 12px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .model-select:focus { border-color: var(--accent); }
+  .model-select option { background: var(--surface2); }
+
+  /* API Key area */
+  .key-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .key-status {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .key-status.ok  { background: rgba(62,207,122,.15); color: var(--success); }
+  .key-status.no  { background: rgba(240,86,86,.12);  color: var(--error);   }
+
+  .btn-sm {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .btn-sm:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ── API Key Modal ── */
+  .modal-overlay {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,.7);
+    backdrop-filter: blur(4px);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 100;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  .modal-overlay.show { opacity: 1; pointer-events: all; }
+
+  .modal {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    width: 460px;
+    max-width: 90vw;
+    transform: translateY(-10px);
+    transition: transform 0.2s;
+  }
+  .modal-overlay.show .modal { transform: translateY(0); }
+
+  .modal h2 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .modal p {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .modal p a { color: var(--accent); text-decoration: none; }
+  .modal p a:hover { text-decoration: underline; }
+
+  .modal input {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    padding: 12px 14px;
+    outline: none;
+    margin-bottom: 16px;
+    transition: border-color 0.2s;
+  }
+  .modal input:focus { border-color: var(--accent); }
+
+  .modal-btns { display: flex; gap: 10px; justify-content: flex-end; }
+
+  .btn-primary {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: var(--radius-sm);
+    border: none;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.1s;
+  }
+  .btn-primary:hover  { opacity: .9; }
+  .btn-primary:active { transform: scale(.97); }
+
+  .btn-cancel {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    padding: 10px 18px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  .btn-cancel:hover { border-color: var(--text-dim); }
+
+  /* ── Chat area ── */
+  #chat {
+    flex: 1;
+    overflow-y: auto;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    scroll-behavior: smooth;
+  }
+  #chat::-webkit-scrollbar { width: 5px; }
+  #chat::-webkit-scrollbar-track { background: transparent; }
+  #chat::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+
+  .empty-state {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--text-muted);
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.7;
+  }
+  .empty-state .icon {
+    font-size: 40px;
+    opacity: .4;
+    margin-bottom: 4px;
+  }
+
+  /* Message bubbles */
+  .msg { display: flex; gap: 12px; animation: fadeUp .25s ease; }
+  .msg.user { flex-direction: row-reverse; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .avatar {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .msg.user .avatar  { background: linear-gradient(135deg, var(--accent), var(--accent2)); }
+  .msg.ai   .avatar  { background: var(--surface2); border: 1px solid var(--border); }
+
+  .bubble {
+    max-width: 72%;
+    padding: 14px 18px;
+    border-radius: var(--radius);
+    font-size: 14px;
+    line-height: 1.75;
+    position: relative;
+  }
+  .msg.user .bubble {
+    background: var(--user-bubble);
+    border: 1px solid rgba(79,142,247,.2);
+    border-top-right-radius: 4px;
+    color: var(--text);
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  .msg.ai .bubble {
+    background: var(--ai-bubble);
+    border: 1px solid var(--border);
+    border-top-left-radius: 4px;
+    color: var(--text);
+    word-break: break-word;
+  }
+
+  /* Markdown-like rendering */
+  .bubble code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    background: rgba(255,255,255,.06);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #a8d8ff;
+  }
+  .bubble pre {
+    background: rgba(0,0,0,.4);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    margin: 10px 0;
+    overflow-x: auto;
+    position: relative;
+  }
+  .bubble pre code {
+    background: none; padding: 0;
+    font-size: 12.5px; color: #c8e6ff;
+    display: block; line-height: 1.6;
+  }
+  .bubble pre .copy-btn {
+    position: absolute; top: 8px; right: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 3px 8px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  .bubble pre .copy-btn:hover { color: var(--success); }
+
+  .bubble strong { color: #e8eaf6; }
+  .bubble em     { color: var(--text-dim); font-style: italic; }
+  .bubble h1, .bubble h2, .bubble h3 {
+    font-family: 'JetBrains Mono', monospace;
+    margin: 12px 0 6px;
+    color: var(--accent);
+  }
+  .bubble h1 { font-size: 16px; }
+  .bubble h2 { font-size: 14px; }
+  .bubble h3 { font-size: 13px; }
+  .bubble ul, .bubble ol { padding-left: 20px; margin: 6px 0; }
+  .bubble li { margin: 3px 0; }
+  .bubble hr { border: none; border-top: 1px solid var(--border); margin: 10px 0; }
+  .bubble a  { color: var(--accent); }
+  .bubble blockquote {
+    border-left: 3px solid var(--accent2);
+    padding-left: 12px;
+    color: var(--text-dim);
+    margin: 8px 0;
+  }
+  .bubble p  { margin: 6px 0; }
+  .bubble p:first-child { margin-top: 0; }
+  .bubble p:last-child  { margin-bottom: 0; }
+
+  /* Thinking indicator */
+  .thinking {
+    display: flex; align-items: center; gap: 6px;
+    color: var(--text-muted); font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .dots { display: flex; gap: 4px; }
+  .dots span {
+    width: 5px; height: 5px;
+    background: var(--accent);
+    border-radius: 50%;
+    animation: blink 1.2s infinite;
+  }
+  .dots span:nth-child(2) { animation-delay: .2s; }
+  .dots span:nth-child(3) { animation-delay: .4s; }
+  @keyframes blink {
+    0%,80%,100% { opacity:.2; transform:scale(.8); }
+    40%          { opacity:1;  transform:scale(1); }
+  }
+
+  /* ── Input bar ── */
+  .input-bar {
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+    padding: 16px 24px;
+    flex-shrink: 0;
+  }
+
+  .input-wrap {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 10px 12px 10px 16px;
+    transition: border-color 0.2s;
+  }
+  .input-wrap:focus-within { border-color: var(--accent); }
+
+  #prompt {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    resize: none;
+    max-height: 200px;
+    min-height: 24px;
+  }
+  #prompt::placeholder { color: var(--text-muted); }
+
+  #sendBtn {
+    width: 38px; height: 38px;
+    border-radius: var(--radius-sm);
+    border: none;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: opacity 0.2s, transform 0.1s;
+    align-self: flex-end;
+  }
+  #sendBtn:hover  { opacity: .85; }
+  #sendBtn:active { transform: scale(.93); }
+  #sendBtn:disabled { opacity: .35; cursor: not-allowed; }
+
+  .input-hint {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 8px;
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Clear button */
+  #clearBtn {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<!-- ── Header ── -->
+<header>
+  <div class="logo">gemini<span>/client</span></div>
+  <div class="header-controls">
+    <select class="model-select" id="modelSelect">
+      <option value="gemini-2.0-flash">⚡ gemini-2.0-flash (빠름)</option>
+      <option value="gemini-2.0-flash-lite">⚡ gemini-2.0-flash-lite (초경량)</option>
+      <option value="gemini-1.5-pro">🧠 gemini-1.5-pro</option>
+      <option value="gemini-2.5-pro-preview-03-25">🧠 gemini-2.5-pro (최신)</option>
+    </select>
+    <div class="key-area">
+      <span class="key-status no" id="keyStatus">🔑 키 없음</span>
+      <button class="btn-sm" id="keyBtn">API 키 설정</button>
+      <button class="btn-sm" id="clearBtn" onclick="clearChat()">대화 초기화</button>
+    </div>
+  </div>
+</header>
+
+<!-- ── API Key Modal ── -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <h2>🔑 Gemini API Key</h2>
+    <p>
+      Google AI Studio에서 발급한 API 키를 입력하세요.<br>
+      키는 <strong>쿠키에 저장</strong>되어 다음 방문 시에도 유지됩니다.<br>
+      <a href="https://aistudio.google.com/app/apikey" target="_blank">→ API 키 발급하기</a>
+    </p>
+    <input type="password" id="keyInput" placeholder="AIza..." autocomplete="off" />
+    <div class="modal-btns">
+      <button class="btn-cancel" id="modalCancel">취소</button>
+      <button class="btn-primary" id="modalSave">저장</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Chat ── -->
+<div id="chat">
+  <div class="empty-state" id="emptyState">
+    <div class="icon">✦</div>
+    <div>
+      API 키를 설정하고 질문을 입력하세요.<br>
+      코드 분석, 번역, 요약, 아이디어 등 무엇이든 물어보세요.
+    </div>
+  </div>
+</div>
+
+<!-- ── Input ── -->
+<div class="input-bar">
+  <div class="input-wrap">
+    <textarea id="prompt" rows="1" placeholder="질문을 입력하세요… (Shift+Enter로 줄바꿈, Enter로 전송)"></textarea>
+    <button id="sendBtn" title="전송 (Enter)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="22" y1="2" x2="11" y2="13"></line>
+        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+      </svg>
+    </button>
+  </div>
+  <div class="input-hint">Enter 전송 · Shift+Enter 줄바꿈</div>
+</div>
+
+<script>
+// ── Cookie helpers ──
+const setCookie = (name, value, days = 365) => {
+  const d = new Date();
+  d.setTime(d.getTime() + days * 86400000);
+  document.cookie = `${name}=${encodeURIComponent(value)};expires=${d.toUTCString()};path=/;SameSite=Strict`;
+};
+const getCookie = name => {
+  const m = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+  return m ? decodeURIComponent(m[1]) : '';
+};
+
+// ── State ──
+let apiKey = getCookie('gemini_api_key') || '';
+let messages = [];    // {role, content}[]
+let isLoading = false;
+
+// ── DOM refs ──
+const chat       = document.getElementById('chat');
+const emptyState = document.getElementById('emptyState');
+const prompt     = document.getElementById('prompt');
+const sendBtn    = document.getElementById('sendBtn');
+const keyBtn     = document.getElementById('keyBtn');
+const keyStatus  = document.getElementById('keyStatus');
+const keyInput   = document.getElementById('keyInput');
+const modalOverlay = document.getElementById('modalOverlay');
+const modalSave  = document.getElementById('modalSave');
+const modalCancel= document.getElementById('modalCancel');
+const modelSelect= document.getElementById('modelSelect');
+const clearBtn   = document.getElementById('clearBtn');
+
+// ── Init ──
+updateKeyStatus();
+if (apiKey) keyInput.value = apiKey;
+
+function updateKeyStatus() {
+  if (apiKey) {
+    keyStatus.textContent = '🔑 키 설정됨';
+    keyStatus.className = 'key-status ok';
+    clearBtn.style.display = '';
+  } else {
+    keyStatus.textContent = '🔑 키 없음';
+    keyStatus.className = 'key-status no';
+    clearBtn.style.display = 'none';
+  }
+}
+
+// ── Modal ──
+keyBtn.onclick = () => { modalOverlay.classList.add('show'); keyInput.focus(); };
+modalCancel.onclick = () => modalOverlay.classList.remove('show');
+modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) modalOverlay.classList.remove('show'); });
+modalSave.onclick = saveKey;
+keyInput.addEventListener('keydown', e => { if (e.key === 'Enter') saveKey(); });
+
+function saveKey() {
+  const v = keyInput.value.trim();
+  if (!v) return;
+  apiKey = v;
+  setCookie('gemini_api_key', v);
+  updateKeyStatus();
+  modalOverlay.classList.remove('show');
+}
+
+// ── Textarea auto-resize ──
+prompt.addEventListener('input', () => {
+  prompt.style.height = 'auto';
+  prompt.style.height = Math.min(prompt.scrollHeight, 200) + 'px';
+});
+prompt.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); }
+});
+sendBtn.onclick = send;
+
+// ── Clear ──
+function clearChat() {
+  messages = [];
+  chat.innerHTML = '';
+  const es = document.createElement('div');
+  es.className = 'empty-state';
+  es.id = 'emptyState';
+  es.innerHTML = '<div class="icon">✦</div><div>API 키를 설정하고 질문을 입력하세요.<br>코드 분석, 번역, 요약, 아이디어 등 무엇이든 물어보세요.</div>';
+  chat.appendChild(es);
+}
+
+// ── Send ──
+async function send() {
+  const text = prompt.value.trim();
+  if (!text || isLoading) return;
+  if (!apiKey) { modalOverlay.classList.add('show'); return; }
+
+  // Remove empty state
+  const es = document.getElementById('emptyState');
+  if (es) es.remove();
+
+  // Add user message
+  messages.push({ role: 'user', parts: [{ text }] });
+  appendMsg('user', text);
+  prompt.value = '';
+  prompt.style.height = 'auto';
+  isLoading = true;
+  sendBtn.disabled = true;
+
+  // Thinking indicator
+  const thinkingEl = appendThinking();
+
+  try {
+    const model = modelSelect.value;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ contents: messages })
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      const errMsg = data?.error?.message || `HTTP ${res.status}`;
+      throw new Error(errMsg);
+    }
+
+    const reply = data?.candidates?.[0]?.content?.parts?.[0]?.text || '(응답 없음)';
+    messages.push({ role: 'model', parts: [{ text: reply }] });
+    thinkingEl.remove();
+    appendMsg('ai', reply);
+
+  } catch (err) {
+    thinkingEl.remove();
+    appendError(err.message);
+  } finally {
+    isLoading = false;
+    sendBtn.disabled = false;
+    prompt.focus();
+  }
+}
+
+// ── Append helpers ──
+function appendMsg(role, text) {
+  const div = document.createElement('div');
+  div.className = `msg ${role}`;
+
+  const avatar = document.createElement('div');
+  avatar.className = 'avatar';
+  avatar.textContent = role === 'user' ? '👤' : '✦';
+
+  const bubble = document.createElement('div');
+  bubble.className = 'bubble';
+  bubble.innerHTML = role === 'ai' ? renderMarkdown(text) : escapeHtml(text);
+
+  // Copy buttons for code blocks
+  if (role === 'ai') {
+    bubble.querySelectorAll('pre').forEach(pre => {
+      const btn = document.createElement('button');
+      btn.className = 'copy-btn';
+      btn.textContent = 'copy';
+      btn.onclick = () => {
+        const code = pre.querySelector('code')?.innerText || pre.innerText;
+        navigator.clipboard.writeText(code).then(() => {
+          btn.textContent = 'copied!';
+          setTimeout(() => btn.textContent = 'copy', 2000);
+        });
+      };
+      pre.appendChild(btn);
+    });
+  }
+
+  div.appendChild(avatar);
+  div.appendChild(bubble);
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+  return div;
+}
+
+function appendThinking() {
+  const div = document.createElement('div');
+  div.className = 'msg ai';
+  div.innerHTML = `
+    <div class="avatar">✦</div>
+    <div class="bubble thinking">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <span style="font-size:12px;color:var(--text-muted)">생각 중...</span>
+    </div>`;
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+  return div;
+}
+
+function appendError(msg) {
+  const div = document.createElement('div');
+  div.className = 'msg ai';
+  div.innerHTML = `
+    <div class="avatar" style="background:rgba(240,86,86,.15);border:1px solid var(--error)">⚠</div>
+    <div class="bubble" style="border-color:rgba(240,86,86,.3);background:rgba(240,86,86,.05);color:var(--error)">
+      오류: ${escapeHtml(msg)}
+    </div>`;
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+// ── Markdown renderer (lightweight) ──
+function renderMarkdown(text) {
+  let html = escapeHtml(text);
+
+  // Code blocks
+  html = html.replace(/```(\w*)\n?([\s\S]*?)```/g, (_, lang, code) =>
+    `<pre><code class="lang-${lang}">${code.trim()}</code></pre>`
+  );
+  // Inline code
+  html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+  // Headers
+  html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
+  html = html.replace(/^## (.+)$/gm,  '<h2>$1</h2>');
+  html = html.replace(/^# (.+)$/gm,   '<h1>$1</h1>');
+  // Bold / Italic
+  html = html.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
+  html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+  // Blockquote
+  html = html.replace(/^&gt; (.+)$/gm, '<blockquote>$1</blockquote>');
+  // HR
+  html = html.replace(/^---$/gm, '<hr>');
+  // Unordered list
+  html = html.replace(/^\s*[-*] (.+)$/gm, '<li>$1</li>');
+  html = html.replace(/(<li>.*<\/li>(\n|$))+/g, m => `<ul>${m}</ul>`);
+  // Ordered list
+  html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+  // Links
+  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+  // Paragraphs (double newline)
+  html = html.split('\n\n').map(p => {
+    if (p.startsWith('<h') || p.startsWith('<ul') || p.startsWith('<pre') || p.startsWith('<blockquote') || p.startsWith('<hr')) return p;
+    return `<p>${p.replace(/\n/g, '<br>')}</p>`;
+  }).join('\n');
+
+  return html;
+}
+
+function escapeHtml(t) {
+  return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── Auto open modal if no key ──
+if (!apiKey) {
+  setTimeout(() => modalOverlay.classList.add('show'), 400);
+}
+</script>
+</body>
+</html>
