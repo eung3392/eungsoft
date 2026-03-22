@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Install | EUNG SOFT</title>
+  <meta name="description" content="USB 케이블과 브라우저만으로 안드로이드 기기에 APK를 설치하세요. 별도 프로그램 불필요.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5296436259826994"
+    crossorigin="anonymous"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XKHMFL8RFW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XKHMFL8RFW');
+  </script>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+    .page-container {
+      max-width: 800px;
+      margin: 70px auto 0 auto;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .page-header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .status-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    #status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #666;
+      flex-shrink: 0;
+      transition: background 0.3s;
+    }
+
+    #status-dot.active {
+      background: #4ade80;
+      box-shadow: 0 0 8px #4ade8088;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        opacity: 0.5;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0.5;
+      }
+    }
+
+    .action-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .progress-container {
+      height: 8px;
+      background: var(--border-color);
+      border-radius: 99px;
+      overflow: hidden;
+      margin-top: 1.5rem;
+      display: none;
+    }
+
+    #progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent-color), #a78bfa);
+      border-radius: 99px;
+      transition: width 0.3s ease;
+    }
+
+    #log-area {
+      margin-top: 1.5rem;
+      background: #0a0a0f;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1rem;
+      font-family: 'Fira Code', 'Consolas', monospace;
+      font-size: 0.82rem;
+      max-height: 200px;
+      overflow-y: auto;
+      display: none;
+    }
+
+    .log-entry {
+      margin-bottom: 0.25rem;
+    }
+
+    .log-info {
+      color: #38bdf8;
+    }
+
+    .log-success {
+      color: #4ade80;
+    }
+
+    .log-error {
+      color: #f87171;
+    }
+
+    /* Hide select btn initially */
+    #select-apk-btn {
+      display: none;
+    }
+
+    #browser-warning {
+      display: none;
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      display: none;
+      align-items: center;
+      gap: 1rem;
+      color: #f87171;
+    }
+
+    .guide-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .guide-list li {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+    }
+
+    .guide-list .material-symbols-rounded {
+      font-size: 1.2rem;
+      margin-top: 0.15rem;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../" class="logo">
+        <img src="../assets/images/logo.png" alt="EUNG SOFT Logo"
+          style="width: 32px; height: 32px; border-radius: 6px;">
+        EUNG SOFT
+      </a>
+
+      <div class="nav-links">
+        <a href="../" data-i18n="nav.intro">Intro</a>
+        <a href="../web-install/" data-i18n="nav.web_install">Web Install</a>
+        <a href="../story/" data-i18n="nav.story">Dev Story</a>
+        <a href="../rokid/" data-i18n="nav.rokid">Rokid App</a>
+        <a href="../android/" data-i18n="nav.android">Android App</a>
+        <a href="./" data-i18n="nav.books" class="active">Books</a>
+      </div>
+
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button id="lang-toggle" class="lang-toggle">
+          <span class="material-symbols-rounded" style="font-size: 1.2rem;">language</span>
+          <span data-i18n="nav.lang">English</span>
+        </button>
+        <button class="hamburger" aria-label="Menu">
+          <span class="material-symbols-rounded">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-container">
+    <div class="page-header fade-elem">
+      <h1 data-i18n="webinstall.title">
+        <span class="material-symbols-rounded" style="font-size: 3rem; color: var(--accent-color);">usb</span>
+        Web Install (APK)
+      </h1>
+      <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 0.5rem;" data-i18n="webinstall.subtitle">별도의 프로그램 설치 없이, 브라우저에서 바로 APK를 장치에
+        설치합니다.</p>
+
+      <div id="download-count-container"
+        style="display: flex; align-items: center; justify-content: center; gap: 0.3rem; color: var(--text-muted); font-size: 0.95rem; margin-top: 1rem;">
+        <span class="material-symbols-rounded" style="font-size:1.2rem;">install_mobile</span>
+        <span data-i18n="webinstall.count">Web Install Count</span>: <span id="download-count-value">...</span>
+      </div>
+    </div>
+
+    <!-- Browser Warning -->
+    <div id="browser-warning"
+      style="display:none; background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); border-radius:12px; padding:1rem 1.25rem; margin-bottom:1rem; align-items:center; gap:1rem; color:#f87171;">
+      <span class="material-symbols-rounded" style="font-size: 2rem;">warning</span>
+      <div>
+        <p><strong data-i18n="webinstall.browser_warning_title">브라우저 제한 안내</strong></p>
+        <p style="font-size: 0.9rem; margin-top: 0.2rem;" data-i18n="webinstall.browser_warning_desc">WebUSB API는 Chrome, Edge, Opera 등 Chromium 기반 브라우저에서만
+          작동합니다. Safari나 Firefox에서는 이 기능을 이용할 수 없습니다.</p>
+      </div>
+    </div>
+
+    <!-- 연결 & 설치 카드 -->
+    <div class="card fade-elem">
+      <div class="status-row">
+        <div id="status-dot"></div>
+        <span id="status-text" data-i18n="webinstall.status_not_connected">기기 연결 안 됨</span>
+      </div>
+
+      <div class="action-group">
+        <button id="connect-btn" class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1.1rem;">
+          <span class="material-symbols-rounded">usb</span>
+          <span data-i18n="webinstall.btn_connect">기기 연결하기</span>
+        </button>
+
+        <input type="file" id="apk-file-input" accept=".apk" style="display: none;">
+        <button id="select-apk-btn" class="btn btn-outline"
+          style="padding: 1rem 2rem; font-size: 1.1rem; border-color: var(--accent-color); color: var(--accent-color);">
+          <span class="material-symbols-rounded">publish</span>
+          <span data-i18n="webinstall.btn_select_apk">APK 파일 선택 및 설치</span>
+        </button>
+      </div>
+
+      <div class="progress-container" id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+      <p id="progress-text" style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem; display: none;">
+      </p>
+
+      <div id="log-area"></div>
+    </div>
+
+    <!-- 사용법 카드 -->
+    <div class="card fade-elem">
+      <h4
+        style="font-size: 1rem; font-weight: 600; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+        <span class="material-symbols-rounded" style="color: var(--accent-color);">menu_book</span>
+        <span data-i18n="webinstall.guide_title">사용법 및 준비사항</span>
+      </h4>
+      <ul class="guide-list">
+        <li>
+          <span class="material-symbols-rounded" style="color: var(--accent-color);">looks_one</span>
+          <span data-i18n="webinstall.guide_1">안드로이드 기기의 <strong>개발자 옵션</strong>에서 <strong>USB 디버깅</strong>을 활성화합니다.</span>
+        </li>
+        <li>
+          <span class="material-symbols-rounded" style="color: var(--accent-color);">looks_two</span>
+          <span data-i18n="webinstall.guide_2">USB 케이블로 기기와 PC를 연결합니다. (데이터 통신 가능 케이블 필수)</span>
+        </li>
+        <li>
+          <span class="material-symbols-rounded" style="color: var(--accent-color);">looks_3</span>
+          <span data-i18n="webinstall.guide_3"><strong>"기기 연결하기"</strong> 버튼을 클릭하고, 브라우저 팝업에서 기기를 선택합니다.</span>
+        </li>
+        <li>
+          <span class="material-symbols-rounded" style="color: var(--accent-color);">looks_4</span>
+          <span data-i18n="webinstall.guide_4">기기 화면에 <strong>"USB 디버깅을 허용하시겠습니까?"</strong> 팝업이 뜨면 <strong>허용</strong>을 누릅니다.</span>
+        </li>
+        <li>
+          <span class="material-symbols-rounded" style="color: var(--accent-color);">looks_5</span>
+          <span data-i18n="webinstall.guide_5">연결 성공 후 <strong>APK 파일 선택 및 설치</strong> 버튼으로 원하는 APK를 선택합니다.</span>
+        </li>
+      </ul>
+
+      <!-- 점검 사항 -->
+      <h4
+        style="font-size: 1rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+        <span class="material-symbols-rounded" style="color: #f59e0b;">fact_check</span>
+        <span data-i18n="webinstall.troubleshoot_title">점검 사항 (문제가 발생할 경우)</span>
+      </h4>
+      <ul
+        style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1rem; font-size: 0.95rem; line-height: 1.6;">
+        <li style="display: flex; gap: 0.75rem;">
+          <span class="material-symbols-rounded"
+            style="font-size: 1.2rem; color: #10b981; margin-top: 0.2rem;">check_circle</span>
+          <span data-i18n="webinstall.troubleshoot_1"><strong>브라우저 확인</strong>: Chrome(크롬)이나 Edge(엣지)를 사용 중이신가요? (Safari, Firefox는 지원 안 함)</span>
+        </li>
+        <li style="display: flex; gap: 0.75rem;">
+          <span class="material-symbols-rounded"
+            style="font-size: 1.2rem; color: #10b981; margin-top: 0.2rem;">check_circle</span>
+          <span data-i18n="webinstall.troubleshoot_2"><strong>USB 디버깅</strong>: 기기(안드로이드/로키드 등) 설정에서 USB 디버깅이 켜져 있나요?</span>
+        </li>
+        <li style="display: flex; gap: 0.75rem;">
+          <span class="material-symbols-rounded"
+            style="font-size: 1.2rem; color: #10b981; margin-top: 0.2rem;">check_circle</span>
+          <span data-i18n="webinstall.troubleshoot_3"><strong>케이블 연결</strong>: 기기가 PC와 USB로 직접 연결되어 있나요? (충전 전용 케이블이 아닌 데이터 통신용 필수)</span>
+        </li>
+        <li style="display: flex; gap: 0.75rem;">
+          <span class="material-symbols-rounded"
+            style="font-size: 1.2rem; color: #f59e0b; margin-top: 0.2rem;">warning</span>
+          <span data-i18n="webinstall.troubleshoot_4"><strong>ADB 서버 충돌</strong>: 터미널에서 <code>adb kill-server</code>를 실행한 후 다시 연결하세요. (ADB 서버와 WebUSB는 동시 사용
+            불가)</span>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="https://www.youtube.com/@eungsmusic" aria-label="YouTube" target="_blank"><i
+            class="fa-brands fa-youtube"></i></a>
+        <a href="https://blog.naver.com/73s" aria-label="Blog" target="_blank"><span
+            class="material-symbols-rounded">article</span></a>
+        <a href="https://github.com/eung3392/eungsoft" aria-label="GitHub" target="_blank"><i
+            class="fa-brands fa-github"></i></a>
+      </div>
+      <div style="margin: 0.5rem 0; display: flex; gap: 1rem; justify-content: center; font-size: 0.9rem;">
+        <a href="../privacy.html" data-i18n="footer.privacy" style="text-decoration: underline;">개인정보 처리방침</a>
+        <a href="../terms.html" data-i18n="footer.terms" style="text-decoration: underline;">이용약관</a>
+      </div>
+      <p data-i18n="footer.copyright" style="font-size: 0.85rem; color: var(--text-muted);">© 2025 EUNG SOFT. All rights
+        reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script type="module">
+    // ─── ya-webadb 0.0.19 ─────────────────────────────────────────────────────
+    // 연결은 0.0.19 방식 (안정적으로 작동 확인됨)
+    // 파일 전송은 subprocess stdin → sync.write() hang 버그 완전 우회
+    import { Adb } from 'https://cdn.jsdelivr.net/npm/@yume-chan/adb@0.0.19/+esm';
+    import { AdbWebUsbBackendManager } from 'https://cdn.jsdelivr.net/npm/@yume-chan/adb-backend-webusb@0.0.19/+esm';
+    import AdbWebCredentialStore from 'https://cdn.jsdelivr.net/npm/@yume-chan/adb-credential-web@0.0.19/+esm';
+    // ──────────────────────────────────────────────────────────────────────────
+
+    const credentialStore = new AdbWebCredentialStore('eungsoft-web-adb');
+    let adb = null;
+
+    const connectBtn = document.getElementById('connect-btn');
+    const selectApkBtn = document.getElementById('select-apk-btn');
+    const apkInput = document.getElementById('apk-file-input');
+    const statusDot = document.getElementById('status-dot');
+    const statusText = document.getElementById('status-text');
+    const progressContainer = document.getElementById('progress-container');
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
+    const logArea = document.getElementById('log-area');
+
+    document.addEventListener('appReady', () => {
+      checkBrowser();
+      getDownloadCount('web-install');
+      if (window.gsap) {
+        gsap.fromTo('.fade-elem', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, stagger: 0.1 });
+      }
+    });
+
+    function checkBrowser() {
+      const warning = document.getElementById('browser-warning');
+      if (!navigator.usb) {
+        warning.style.display = 'flex';
+        connectBtn.disabled = true;
+        connectBtn.style.opacity = '0.5';
+        log(window.t('webinstall.not_supported'), 'error');
+      }
+    }
+
+    function log(msg, type = 'info') {
+      logArea.style.display = 'block';
+      const entry = document.createElement('div');
+      entry.className = `log-entry log-${type}`;
+      entry.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
+      logArea.appendChild(entry);
+      logArea.scrollTop = logArea.scrollHeight;
+    }
+
+    // ─── 기기 연결 (0.0.19 — 안정적으로 작동 확인됨) ─────────────────────────
+    connectBtn.addEventListener('click', async () => {
+      try {
+        log(window.t('webinstall.log_select_device'));
+
+        const backend = await AdbWebUsbBackendManager.BROWSER.requestDevice();
+        if (!backend) return;
+
+        log(window.t('webinstall.log_device_selected').replace('{serial}', backend.serial));
+
+        const connection = await backend.connect();
+        adb = await Adb.authenticate(connection, credentialStore);
+
+        updateStatus(true, window.t('webinstall.status_connected').replace('{serial}', backend.serial));
+        log(window.t('webinstall.log_auth_success').replace('{serial}', backend.serial), 'success');
+        connectBtn.style.display = 'none';
+        selectApkBtn.style.display = 'flex';
+
+      } catch (err) {
+        console.error(err);
+        log(window.t('webinstall.log_auth_failed').replace('{error}', err.message), 'error');
+        updateStatus(false, window.t('webinstall.status_error'));
+      }
+    });
+
+    selectApkBtn.addEventListener('click', () => apkInput.click());
+
+    // ─── APK 파일 전송 및 설치 ────────────────────────────────────────────────
+    apkInput.addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file || !adb) return;
+
+      try {
+        selectApkBtn.disabled = true;
+        selectApkBtn.style.opacity = '0.5';
+        log(window.t('webinstall.log_install_start').replace('{name}', file.name));
+
+        incDownloadCount('web-install');
+        if (window.gtag) {
+          gtag('event', 'web_install_click', {
+            event_category: 'Engagement',
+            event_label: file.name,
+            keyword: 'web-install',
+          });
+        }
+
+        progressContainer.style.display = 'block';
+        progressText.style.display = 'block';
+        updateProgress(0, window.t('webinstall.progress_preparing'));
+
+        const remotePath = `/data/local/tmp/${file.name.replace(/\s+/g, '_')}`;
+        log(`[1] remotePath: ${remotePath}`);
+
+        // subprocess 동작 여부 먼저 확인 (echo 테스트)
+        const testResult = await adb.subprocess.spawnAndWait('echo adb_ok');
+
+        const arrayBuffer = await file.arrayBuffer();
+        const bytes = new Uint8Array(arrayBuffer);
+
+        // ya-webadb 0.0.19 Consumable 듀얼 모드:
+        // - tryConsume(fn): 콜백 있을 때 → fn(data) 호출 후 결과 반환 (ShellV2 인코더용)
+        // - consume() / tryConsume(): 인자 없을 때 → data 직접 반환 (소켓 레이어용)
+        function consumable(data) {
+          return {
+            value: data,
+            tryConsume(fn) { return typeof fn === 'function' ? fn(data) : data; },
+            consume(fn)    { return typeof fn === 'function' ? fn(data) : data; }
+          };
+        }
+
+        const proc = await adb.subprocess.spawn(`cat > "${remotePath}"`);
+        const writer = proc.stdin.getWriter();
+        log(window.t('webinstall.log_transferring'));
+
+        const CHUNK = 4096; // 4KB
+        for (let i = 0; i < bytes.length; i += CHUNK) {
+          const chunk = bytes.subarray(i, Math.min(i + CHUNK, bytes.length));
+          await writer.write(consumable(chunk));   // Consumable로 래핑!
+          const pct = Math.round(((i + chunk.length) / bytes.length) * 100);
+          updateProgress(pct * 0.8, `${window.t('webinstall.log_transferring')} ${pct}%`);
+        }
+        log(window.t('webinstall.log_transfer_done'), 'success');
+        await writer.close();
+        // 1. cat 프로세스가 파일 쓰기를 완료할 시간 확보
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        // 2. 기기 파일 시스템 버퍼 플러시
+        await adb.subprocess.spawnAndWait('sync');
+        log('파일 전송 완료.', 'success');
+
+        // 3. 파일 크기 검증 (손상 여부 확인)
+        const sizeCheck = await adb.subprocess.spawnAndWait(`wc -c < '${remotePath}'`);
+        const deviceSize = parseInt(sizeCheck.stdout?.trim() || '0');
+        if (deviceSize !== bytes.length) {
+          throw new Error(`Size mismatch: ${deviceSize} / ${bytes.length}`);
+        }
+
+        // ── 2단계: pm install ────────────────────────────────────────────────
+        updateProgress(85, window.t('webinstall.progress_installing'));
+        log(window.t('webinstall.log_installing'));
+
+        const result = await adb.subprocess.spawnAndWait(
+          `pm install -r '${remotePath}'`
+        );
+        const output = (result.stdout || '') + (result.stderr || '');
+        if (output.trim()) log(`Output: ${output.trim()}`);
+
+        // ── 3단계: 임시 파일 삭제 ────────────────────────────────────────────
+        updateProgress(100, '정리 중...');
+        await adb.subprocess.spawnAndWait(`rm '${remotePath}'`).catch(() => { });
+
+        if (output.toLowerCase().includes('success') || result.exitCode === 0) {
+          log(window.t('webinstall.log_success'), 'success');
+          updateProgress(100, 'Done');
+          alert(window.t('webinstall.alert_done'));
+        } else {
+          log(window.t('webinstall.log_failed'), 'error');
+          alert(window.t('webinstall.alert_error'));
+        }
+
+      } catch (err) {
+        log(`Error: ${err.message}`, 'error');
+        console.error(err);
+      } finally {
+        selectApkBtn.disabled = false;
+        selectApkBtn.style.opacity = '1';
+        apkInput.value = '';
+      }
+    });
+
+    // 언어 변경 이벤트 리스너 추가
+    document.addEventListener('languageChanged', () => {
+      // 연결되지 않은 상태라면 상태 텍스트 강제 갱신
+      if (!adb) {
+        statusText.textContent = window.t('webinstall.status_not_connected');
+      }
+    });
+
+    function updateStatus(connected, text) {
+      statusText.textContent = text;
+      if (connected) {
+        statusDot.classList.add('active');
+        statusText.style.color = 'var(--text-color)';
+      } else {
+        statusDot.classList.remove('active');
+        statusText.style.color = 'var(--text-muted)';
+      }
+    }
+
+    function updateProgress(percent, text) {
+      progressBar.style.width = `${percent}%`;
+      progressText.textContent = text;
+    }
+
+    // ─── 다운로드 카운트 ──────────────────────────────────────────────────────
+    async function getDownloadCount(keyword) {
+      const countEl = document.getElementById('download-count-value');
+      if (!countEl) return;
+      try {
+        const res = await fetch(`/proxy-count/count.php?keyword=${encodeURIComponent(keyword)}&t=${Date.now()}`);
+        if (res.ok) {
+          const text = await res.text();
+          const count = text.match(/\d+/) ? text.match(/\d+/)[0] : '0';
+          countEl.textContent = count;
+        }
+      } catch (err) { console.error('Count fetch error:', err); }
+    }
+
+    async function incDownloadCount(keyword) {
+      try {
+        fetch(`/proxy-count/count.php?keyword=${encodeURIComponent(keyword)}&mode=inc&t=${Date.now()}`);
+      } catch (err) { console.error('Count inc error:', err); }
+    }
+  </script>
+</body>
+
+</html>
