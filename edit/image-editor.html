@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layer Editor</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap');
+
+    :root {
+      --bg: #f5f4f2;
+      --surface: #ffffff;
+      --surface2: #f0eeec;
+      --surface3: #e8e5e1;
+      --border: #ddd9d4;
+      --border2: #ccc8c2;
+      --text0: #1a1917;
+      --text1: #6b6760;
+      --text2: #aaa8a4;
+      --accent: #2563eb;
+      --accent-bg: #eff4ff;
+      --accent-bd: #bfcffd;
+      --danger: #dc2626;
+      --danger-bg: #fef2f2;
+      --panel-w: 232px;
+      --toolbar-h: 40px;
+      --status-h: 22px;
+      --left-w: 40px;
+      --radius: 5px;
+      --shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text0);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      font-size: 12px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* TOOLBAR */
+    #toolbar {
+      height: var(--toolbar-h);
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      gap: 2px;
+      flex-shrink: 0;
+      user-select: none;
+    }
+
+    .brand {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text1);
+      letter-spacing: 0.03em;
+      padding: 0 8px;
+      white-space: nowrap;
+    }
+
+    .tb-sep {
+      width: 1px;
+      height: 16px;
+      background: var(--border);
+      margin: 0 4px;
+      flex-shrink: 0;
+    }
+
+    .tb-btn {
+      height: 26px;
+      padding: 0 9px;
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      color: var(--text1);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11.5px;
+      cursor: pointer;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: background 0.1s, border-color 0.1s, color 0.1s;
+    }
+
+    .tb-btn:hover {
+      background: var(--surface2);
+      color: var(--text0);
+      border-color: var(--border);
+    }
+
+    .tb-btn.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .tb-btn.primary:hover {
+      background: #1d4ed8;
+      border-color: #1d4ed8;
+    }
+
+    .tb-btn svg {
+      width: 13px;
+      height: 13px;
+      flex-shrink: 0;
+    }
+
+    .spacer {
+      flex: 1;
+    }
+
+    #canvas-info {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      color: var(--text2);
+      padding: 0 6px;
+    }
+
+    /* LAYOUT */
+    #main {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+    }
+
+    /* LEFT TOOLS */
+    #left-panel {
+      width: var(--left-w);
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 6px 0;
+      gap: 1px;
+      flex-shrink: 0;
+    }
+
+    .tool-group-sep {
+      width: 20px;
+      height: 1px;
+      background: var(--border);
+      margin: 3px 0;
+    }
+
+    .tool-btn {
+      width: 28px;
+      height: 28px;
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      color: var(--text1);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.1s;
+      position: relative;
+    }
+
+    .tool-btn:hover {
+      background: var(--surface2);
+      color: var(--text0);
+    }
+
+    .tool-btn.active {
+      background: var(--accent-bg);
+      border-color: var(--accent-bd);
+      color: var(--accent);
+    }
+
+    .tool-btn svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .tool-tip {
+      position: absolute;
+      left: 36px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--text0);
+      color: #fff;
+      border-radius: 4px;
+      padding: 3px 8px;
+      font-size: 10px;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.15s;
+      z-index: 200;
+    }
+
+    .tool-tip::before {
+      content: '';
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 4px solid transparent;
+      border-right-color: var(--text0);
+    }
+
+    .tool-btn:hover .tool-tip {
+      opacity: 1;
+    }
+
+    /* CANVAS AREA */
+    #canvas-area {
+      flex: 1;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: auto;
+      position: relative;
+    }
+
+    #canvas-wrap {
+      position: relative;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.10), 0 0 0 1px var(--border2);
+      border-radius: 2px;
+    }
+
+    #main-canvas {
+      display: block;
+      cursor: default;
+      background-image:
+        linear-gradient(45deg, #e8e5e0 25%, transparent 25%),
+        linear-gradient(-45deg, #e8e5e0 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #e8e5e0 75%),
+        linear-gradient(-45deg, transparent 75%, #e8e5e0 75%);
+      background-size: 12px 12px;
+      background-position: 0 0, 0 6px, 6px -6px, -6px 0;
+      background-color: #f0ede8;
+    }
+
+    #zoom-pill {
+      position: absolute;
+      bottom: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      color: var(--text1);
+      pointer-events: none;
+      box-shadow: var(--shadow);
+    }
+
+    /* RIGHT PANEL */
+    #right-panel {
+      width: var(--panel-w);
+      background: var(--surface);
+      border-left: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .panel-block {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .panel-label {
+      height: 28px;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      gap: 6px;
+      font-size: 10px;
+      font-weight: 500;
+      color: var(--text2);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .panel-label svg {
+      width: 11px;
+      height: 11px;
+    }
+
+    /* Canvas size */
+    #size-row {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 0 10px 8px;
+    }
+
+    .dim-input {
+      width: 52px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text0);
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      padding: 3px 6px;
+      outline: none;
+      text-align: center;
+      transition: border-color 0.1s;
+    }
+
+    .dim-input:focus {
+      border-color: var(--accent);
+      background: #fff;
+    }
+
+    .dim-x {
+      color: var(--text2);
+      font-size: 10px;
+    }
+
+    .apply-btn {
+      flex: 1;
+      height: 24px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text1);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 10px;
+      cursor: pointer;
+      transition: all 0.1s;
+    }
+
+    .apply-btn:hover {
+      background: var(--surface3);
+      color: var(--text0);
+      border-color: var(--border2);
+    }
+
+    /* Props */
+    #props-body {
+      padding: 6px 10px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .prop-row {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .prop-label {
+      font-size: 10px;
+      color: var(--text1);
+      width: 44px;
+      flex-shrink: 0;
+    }
+
+    .prop-slider {
+      flex: 1;
+      -webkit-appearance: none;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--surface3);
+      outline: none;
+      cursor: pointer;
+    }
+
+    .prop-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 1px var(--accent-bd);
+      cursor: pointer;
+    }
+
+    .prop-value {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      color: var(--text1);
+      width: 28px;
+      text-align: right;
+    }
+
+    .prop-select {
+      flex: 1;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text0);
+      font-size: 10px;
+      padding: 3px 5px;
+      outline: none;
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .prop-select:focus {
+      border-color: var(--accent);
+    }
+
+    .prop-color {
+      width: 24px;
+      height: 18px;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 0;
+      background: none;
+      cursor: pointer;
+    }
+
+    .prop-check {
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    /* Transform */
+    #transform-body {
+      padding: 6px 10px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .tf-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+    }
+
+    .tf-field {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .tf-label {
+      font-size: 9px;
+      color: var(--text2);
+      font-family: 'DM Mono', monospace;
+    }
+
+    .tf-input {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text0);
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      padding: 3px 6px;
+      outline: none;
+      width: 100%;
+      transition: border-color 0.1s;
+    }
+
+    .tf-input:focus {
+      border-color: var(--accent);
+      background: #fff;
+    }
+
+    .flip-row {
+      display: flex;
+      gap: 4px;
+    }
+
+    .flip-btn {
+      flex: 1;
+      height: 22px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text1);
+      font-size: 10px;
+      cursor: pointer;
+      transition: all 0.1s;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .flip-btn:hover {
+      background: var(--surface3);
+      color: var(--text0);
+      border-color: var(--border2);
+    }
+
+    /* Layer panel */
+    #layer-bar {
+      display: flex;
+      align-items: center;
+      padding: 4px 6px;
+      gap: 3px;
+      background: var(--surface);
+    }
+
+    .lyr-btn {
+      height: 24px;
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      color: var(--text1);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      font-size: 10px;
+      padding: 0 7px;
+      transition: all 0.1s;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .lyr-btn:hover {
+      background: var(--surface2);
+      color: var(--text0);
+      border-color: var(--border);
+    }
+
+    .lyr-btn.del:hover {
+      background: var(--danger-bg);
+      color: var(--danger);
+      border-color: #fca5a5;
+    }
+
+    .lyr-btn svg {
+      width: 11px;
+      height: 11px;
+    }
+
+    .lyr-spacer {
+      flex: 1;
+    }
+
+    #layer-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 3px;
+      background: var(--surface2);
+    }
+
+    #layer-list::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    #layer-list::-webkit-scrollbar-thumb {
+      background: var(--border2);
+      border-radius: 2px;
+    }
+
+    .layer-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 6px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      border: 1px solid transparent;
+      margin-bottom: 1px;
+      transition: all 0.1s;
+      background: var(--surface);
+      user-select: none;
+    }
+
+    .layer-item:hover {
+      border-color: var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .layer-item.active {
+      border-color: var(--accent-bd);
+      background: var(--accent-bg);
+      box-shadow: 0 0 0 1px var(--accent-bd);
+    }
+
+    .layer-item.drag-over {
+      border-color: var(--accent);
+      background: var(--accent-bg);
+    }
+
+    .layer-thumb {
+      width: 30px;
+      height: 30px;
+      border-radius: 3px;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+      overflow: hidden;
+      background-image: linear-gradient(45deg, #ddd 25%, transparent 25%), linear-gradient(-45deg, #ddd 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #ddd 75%), linear-gradient(-45deg, transparent 75%, #ddd 75%);
+      background-size: 6px 6px;
+      background-position: 0 0, 0 3px, 3px -3px, -3px 0;
+      background-color: #eee;
+    }
+
+    .layer-thumb canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .layer-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .layer-name {
+      font-size: 11px;
+      color: var(--text0);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.3;
+    }
+
+    .layer-name[contenteditable="true"] {
+      background: #fff;
+      border-radius: 2px;
+      padding: 0 3px;
+      outline: 1px solid var(--accent);
+    }
+
+    .layer-sub {
+      font-size: 9px;
+      color: var(--text2);
+      font-family: 'DM Mono', monospace;
+      margin-top: 1px;
+    }
+
+    .vis-btn {
+      width: 18px;
+      height: 18px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: var(--text2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      flex-shrink: 0;
+      transition: color 0.1s;
+    }
+
+    .vis-btn:hover {
+      color: var(--text0);
+    }
+
+    .vis-btn.off {
+      color: var(--border2);
+    }
+
+    .vis-btn svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    /* Status */
+    #statusbar {
+      height: var(--status-h);
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+
+    .st {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px;
+      color: var(--text2);
+    }
+
+    .st b {
+      color: var(--text1);
+      font-weight: 400;
+    }
+
+    .st-r {
+      margin-left: auto;
+    }
+
+    /* Drop overlay */
+    #drop-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(37, 99, 235, 0.05);
+      border: 2px dashed var(--accent);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 900;
+      pointer-events: none;
+      flex-direction: column;
+      gap: 10px;
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    #drop-overlay.on {
+      display: flex;
+    }
+
+    #drop-overlay svg {
+      width: 40px;
+      height: 40px;
+      opacity: 0.4;
+    }
+
+    /* Context menu */
+    #ctx-menu {
+      position: fixed;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 3px;
+      z-index: 500;
+      display: none;
+      min-width: 150px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.04);
+    }
+
+    #ctx-menu.on {
+      display: block;
+    }
+
+    .ctx-item {
+      padding: 5px 9px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 11px;
+      color: var(--text0);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.08s;
+    }
+
+    .ctx-item:hover {
+      background: var(--surface2);
+    }
+
+    .ctx-item.danger:hover {
+      background: var(--danger-bg);
+      color: var(--danger);
+    }
+
+    .ctx-sep {
+      height: 1px;
+      background: var(--border);
+      margin: 2px 0;
+    }
+
+    .ctx-item svg {
+      width: 12px;
+      height: 12px;
+      color: var(--text1);
+    }
+
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 2px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="drop-overlay">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" />
+    </svg>
+    Drop image to add as new layer
+  </div>
+
+  <div id="ctx-menu">
+    <div class="ctx-item" id="ctx-dup">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="9" y="9" width="13" height="13" rx="2" />
+        <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+      </svg>Duplicate
+    </div>
+    <div class="ctx-item" id="ctx-merge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 6h16M4 12h16M4 18h7" />
+      </svg>Merge Down
+    </div>
+    <div class="ctx-item" id="ctx-flatten">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>Flatten All
+    </div>
+    <div class="ctx-sep"></div>
+    <div class="ctx-item danger" id="ctx-del">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="3 6 5 6 21 6" />
+        <path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6" />
+      </svg>Delete Layer
+    </div>
+  </div>
+
+  <div id="toolbar">
+    <span class="brand">EUNG LAYER EDIT</span>
+    <div class="tb-sep"></div>
+    <button class="tb-btn" id="btn-new">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="3" width="18" height="18" rx="2" />
+        <path d="M12 8v8M8 12h8" />
+      </svg>New
+    </button>
+    <button class="tb-btn primary" id="btn-add-img">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="3" width="18" height="18" rx="2" />
+        <circle cx="8.5" cy="8.5" r="1.5" />
+        <polyline points="21 15 16 10 5 21" />
+      </svg>Add Image
+    </button>
+    <button class="tb-btn" id="btn-add-text">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="4 7 4 4 20 4 20 7" />
+        <line x1="9" y1="20" x2="15" y2="20" />
+        <line x1="12" y1="4" x2="12" y2="20" />
+      </svg>Text
+    </button>
+    <div class="tb-sep"></div>
+    <button class="tb-btn" id="btn-undo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 7v6h6" />
+        <path d="M21 17a9 9 0 00-9-9 9 9 0 00-6 2.3L3 13" />
+      </svg>Undo
+    </button>
+    <button class="tb-btn" id="btn-redo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 7v6h-6" />
+        <path d="M3 17a9 9 0 019-9 9 9 0 016 2.3L21 13" />
+      </svg>Redo
+    </button>
+    <div class="spacer"></div>
+    <span id="canvas-info">800 × 600</span>
+    <div class="tb-sep"></div>
+    <button class="tb-btn" id="btn-export">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
+      </svg>Export PNG
+    </button>
+  </div>
+
+  <div id="main">
+    <div id="left-panel">
+      <button class="tool-btn active" data-tool="select">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 3l14 9-7 1-4 7z" />
+        </svg>
+        <span class="tool-tip">Select (V)</span>
+      </button>
+      <button class="tool-btn" data-tool="move">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="5 9 2 12 5 15" />
+          <polyline points="9 5 12 2 15 5" />
+          <polyline points="15 19 12 22 9 19" />
+          <polyline points="19 9 22 12 19 15" />
+          <line x1="2" y1="12" x2="22" y2="12" />
+          <line x1="12" y1="2" x2="12" y2="22" />
+        </svg>
+        <span class="tool-tip">Move (M)</span>
+      </button>
+      <div class="tool-group-sep"></div>
+      <button class="tool-btn" data-tool="rect">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="2" />
+        </svg>
+        <span class="tool-tip">Rectangle</span>
+      </button>
+      <button class="tool-btn" data-tool="ellipse">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <ellipse cx="12" cy="12" rx="10" ry="7" />
+        </svg>
+        <span class="tool-tip">Ellipse</span>
+      </button>
+      <button class="tool-btn" data-tool="arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="19" y1="12" x2="5" y2="12" />
+          <polyline points="12 19 19 12 12 5" />
+        </svg>
+        <span class="tool-tip">Arrow</span>
+      </button>
+      <button class="tool-btn" data-tool="callout">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+        </svg>
+        <span class="tool-tip">Bubble</span>
+      </button>
+      <button class="tool-btn" data-tool="star">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+        </svg>
+        <span class="tool-tip">Star</span>
+      </button>
+      <button class="tool-btn" data-tool="crop">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2v14a2 2 0 002 2h14M18 22V8a2 2 0 00-2-2H2" />
+        </svg>
+        <span class="tool-tip">Crop (C)</span>
+      </button>
+      <div class="tool-group-sep"></div>
+      <button class="tool-btn" data-tool="zoom-in">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          <line x1="11" y1="8" x2="11" y2="14" />
+          <line x1="8" y1="11" x2="14" y2="11" />
+        </svg>
+        <span class="tool-tip">Zoom In (+)</span>
+      </button>
+      <button class="tool-btn" data-tool="zoom-out">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          <line x1="8" y1="11" x2="14" y2="11" />
+        </svg>
+        <span class="tool-tip">Zoom Out (−)</span>
+      </button>
+    </div>
+
+    <div id="canvas-area">
+      <div id="canvas-wrap">
+        <canvas id="main-canvas"></canvas>
+      </div>
+      <div id="zoom-pill">100%</div>
+    </div>
+
+    <div id="right-panel">
+      <div class="panel-block">
+        <div class="panel-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+          </svg>Canvas
+        </div>
+        <div id="size-row">
+          <input type="number" class="dim-input" id="cw" value="800" min="1" max="4096">
+          <span class="dim-x">×</span>
+          <input type="number" class="dim-input" id="ch" value="600" min="1" max="4096">
+          <button class="apply-btn" id="btn-apply-size">Apply</button>
+        </div>
+      </div>
+
+      <div class="panel-block">
+        <div class="panel-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+          </svg>Properties
+        </div>
+        <div id="props-body">
+          <div class="prop-row">
+            <span class="prop-label">Opacity</span>
+            <input type="range" class="prop-slider" id="sl-opacity" min="0" max="100" value="100">
+            <span class="prop-value" id="val-opacity">100%</span>
+          </div>
+          <div class="prop-row">
+            <span class="prop-label">Blend</span>
+            <select class="prop-select" id="sel-blend">
+              <option value="source-over">Normal</option>
+              <option value="multiply">Multiply</option>
+              <option value="screen">Screen</option>
+              <option value="overlay">Overlay</option>
+              <option value="darken">Darken</option>
+              <option value="lighten">Lighten</option>
+              <option value="color-dodge">Color Dodge</option>
+              <option value="color-burn">Color Burn</option>
+              <option value="hard-light">Hard Light</option>
+              <option value="soft-light">Soft Light</option>
+              <option value="difference">Difference</option>
+              <option value="exclusion">Exclusion</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Text Properties -->
+        <div id="text-props-body" class="panel-block hidden">
+          <div class="panel-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="4 7 4 4 20 4 20 7" />
+              <line x1="9" y1="20" x2="15" y2="20" />
+              <line x1="12" y1="4" x2="12" y2="20" />
+            </svg>Text
+          </div>
+          <div style="padding: 6px 10px 8px; display: flex; flex-direction: column; gap: 6px;">
+            <div class="prop-row">
+              <span class="prop-label">Color</span>
+              <input type="color" class="prop-color" id="text-color">
+            </div>
+            <div class="prop-row">
+              <span class="prop-label">Size</span>
+              <input type="number" class="tf-input" id="text-size" style="width: 60px;">
+            </div>
+            <div class="prop-row">
+              <span class="prop-label">Font</span>
+              <select class="prop-select" id="text-font">
+                <option value="sans-serif">Sans-serif</option>
+                <option value="serif">Serif</option>
+                <option value="monospace">Monospace</option>
+                <option value="'DM Sans', sans-serif">DM Sans</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shape Properties -->
+        <div id="shape-props-body" class="panel-block hidden">
+          <div class="panel-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+            </svg>Shape
+          </div>
+          <div style="padding: 6px 10px 8px; display: flex; flex-direction: column; gap: 6px;">
+            <div class="prop-row">
+              <span class="prop-label">Fill</span>
+              <input type="color" class="prop-color" id="shape-fill">
+              <label style="font-size: 10px; color: var(--text1); margin-left: auto;">
+                <input type="checkbox" id="shape-fill-trans" class="prop-check">Trans
+              </label>
+            </div>
+            <div class="prop-row">
+              <span class="prop-label">Stroke</span>
+              <input type="color" class="prop-color" id="shape-stroke">
+              <input type="number" class="tf-input" id="shape-stroke-w" style="width: 44px; margin-left: auto;" min="0"
+                value="0">
+            </div>
+          </div>
+        </div>
+
+        <!-- Image Properties -->
+        <div id="img-props-body" class="panel-block hidden">
+          <div class="panel-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg>Image
+          </div>
+          <div style="padding: 6px 10px 8px; display: flex; flex-direction: column; gap: 6px;">
+            <button class="flip-btn" id="btn-crop-mode"
+              style="height: 28px; background: var(--accent); color: #fff; border-color: var(--accent);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                style="width:12px; height:12px; margin-right:4px;">
+                <path d="M6 2v14a2 2 0 002 2h14M18 22V8a2 2 0 00-2-2H2" />
+              </svg>Crop Selection
+            </button>
+            <div id="crop-confirm-btns" class="hidden" style="display:flex; gap:4px;">
+              <button class="flip-btn" id="btn-crop-ok"
+                style="background:var(--accent); color:#fff; border-color:var(--accent);">OK</button>
+              <button class="flip-btn" id="btn-crop-cancel">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-block">
+        <div class="panel-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 3l14 9-7 1-4 7z" />
+          </svg>Transform
+        </div>
+        <div id="transform-body">
+          <div class="tf-grid">
+            <div class="tf-field"><span class="tf-label">X</span><input type="number" class="tf-input" id="tf-x"
+                value="0"></div>
+            <div class="tf-field"><span class="tf-label">Y</span><input type="number" class="tf-input" id="tf-y"
+                value="0"></div>
+            <div class="tf-field"><span class="tf-label">W</span><input type="number" class="tf-input" id="tf-w"
+                value="800"></div>
+            <div class="tf-field"><span class="tf-label">H</span><input type="number" class="tf-input" id="tf-h"
+                value="600"></div>
+          </div>
+          <div class="prop-row">
+            <span class="prop-label">Rotate</span>
+            <input type="range" class="prop-slider" id="sl-rot" min="-180" max="180" value="0">
+            <span class="prop-value" id="val-rot">0°</span>
+          </div>
+          <div class="flip-row">
+            <button class="flip-btn" id="btn-fh">↔ Flip H</button>
+            <button class="flip-btn" id="btn-fv">↕ Flip V</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shadow Properties -->
+      <div class="panel-block" id="shadow-props-body">
+        <div class="panel-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5l10-5l-10-5z" />
+            <path d="M2 17l10 5l10-5" />
+            <path d="M2 12l10 5l10-5" />
+          </svg>Drop Shadow
+          <input type="checkbox" id="sh-enabled" class="prop-check" style="margin-left:auto;">
+        </div>
+        <div style="padding: 6px 10px 8px; display: flex; flex-direction: column; gap: 6px;">
+          <div class="prop-row">
+            <span class="prop-label">Color</span>
+            <input type="color" class="prop-color" id="sh-color" value="#000000">
+            <span class="prop-label" style="width:auto; margin-left:auto;">Blur</span>
+            <input type="number" class="tf-input" id="sh-blur" style="width: 44px;" value="10">
+          </div>
+          <div class="tf-grid">
+            <div class="tf-field"><span class="tf-label">Offset X</span><input type="number" class="tf-input" id="sh-x"
+                value="5"></div>
+            <div class="tf-field"><span class="tf-label">Offset Y</span><input type="number" class="tf-input" id="sh-y"
+                value="5"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-label" style="border-top:1px solid var(--border);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="12 2 2 7 12 12 22 7 12 2" />
+          <polyline points="2 17 12 22 22 17" />
+          <polyline points="2 12 12 17 22 12" />
+        </svg>Layers
+      </div>
+      <div id="layer-bar">
+        <button class="lyr-btn" id="btn-lay-add">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>Add
+        </button>
+        <button class="lyr-btn" id="btn-lay-up">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15" />
+          </svg>
+        </button>
+        <button class="lyr-btn" id="btn-lay-dn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+        <span class="lyr-spacer"></span>
+        <button class="lyr-btn del" id="btn-lay-del">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="3 6 5 6 21 6" />
+            <path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6" />
+          </svg>
+        </button>
+      </div>
+      <div id="layer-list"></div>
+    </div>
+  </div>
+
+  <div id="statusbar">
+    <span class="st">Cursor <b id="st-pos">—</b></span>
+    <span class="st">Layer <b id="st-layer">—</b></span>
+    <span class="st">Size <b id="st-size">—</b></span>
+    <span class="st st-r">Zoom <b id="st-zoom">100%</b></span>
+  </div>
+
+  <input type="file" id="file-input" accept="image/*" multiple style="display:none">
+
+  <script>
+    const canvas = document.getElementById('main-canvas');
+    const ctx = canvas.getContext('2d');
+
+    let W = 800, H = 600, zoom = 1;
+    let layers = [], activeIdx = -1, layerCnt = 0;
+    let history = [], histIdx = -1;
+    let tool = 'select';
+    let dragging = false, resizing = false, cropping = false;
+    let dragOff = { x: 0, y: 0 }, dragStart = { x: 0, y: 0 };
+    let cropRect = null;
+    let resizeHandle = null, resizeBase = null;
+
+    // ── canvas init ───────────────────────────────────────
+    function initCanvas(w, h) {
+      W = w; H = h;
+      canvas.width = w; canvas.height = h;
+      applyZoom();
+      document.getElementById('canvas-info').textContent = `${w} × ${h}`;
+      document.getElementById('cw').value = w;
+      document.getElementById('ch').value = h;
+      render();
+    }
+    function applyZoom() {
+      const wrap = document.getElementById('canvas-wrap');
+      wrap.style.width = W * zoom + 'px';
+      wrap.style.height = H * zoom + 'px';
+      canvas.style.width = W * zoom + 'px';
+      canvas.style.height = H * zoom + 'px';
+    }
+    function setZoom(z) {
+      zoom = Math.max(0.08, Math.min(10, Math.round(z * 100) / 100));
+      applyZoom();
+      const pct = Math.round(zoom * 100) + '%';
+      document.getElementById('zoom-pill').textContent = pct;
+      document.getElementById('st-zoom').textContent = pct;
+    }
+
+    // ── layer factory ─────────────────────────────────────
+    function mkLayer(name, type) {
+      const oc = document.createElement('canvas');
+      oc.width = W; oc.height = H;
+      return {
+        id: ++layerCnt,
+        name: name || `Layer ${layerCnt}`,
+        type: type || 'blank',
+        visible: true, opacity: 1, blend: 'source-over',
+        x: 0, y: 0, w: W, h: H,
+        rotation: 0, flipH: false, flipV: false,
+        oc,
+        img: null,
+        text: '', fontSize: 32, fontFamily: 'sans-serif', fontWeight: 'bold', textColor: '#1a1917',
+        shapeType: 'rect', fillColor: '#2563eb', fillTransparent: false, strokeColor: '#000000', strokeWidth: 0,
+        shadowEnabled: false, shadowColor: '#000000', shadowBlur: 10, shadowX: 5, shadowY: 5,
+        locked: false,
+      };
+    }
+
+    function addBlank() {
+      const l = mkLayer(); layers.unshift(l); activeIdx = 0;
+      refresh(); render(); syncProps(); saveHist();
+    }
+
+    function addImageLayer(imgEl, name) {
+      const l = mkLayer(name || ('Image ' + (layerCnt + 1)), 'image');
+      l.img = imgEl;
+      const s = Math.min(W / imgEl.naturalWidth, H / imgEl.naturalHeight, 1);
+      l.w = Math.round(imgEl.naturalWidth * s);
+      l.h = Math.round(imgEl.naturalHeight * s);
+      l.x = Math.round((W - l.w) / 2);
+      l.y = Math.round((H - l.h) / 2);
+      l.oc.width = l.w; l.oc.height = l.h;
+      l.oc.getContext('2d').drawImage(imgEl, 0, 0, l.w, l.h);
+      layers.unshift(l); activeIdx = 0;
+      refresh(); render(); syncProps(); saveHist();
+    }
+
+    // ── render ────────────────────────────────────────────
+    function render() {
+      ctx.clearRect(0, 0, W, H);
+      for (let i = layers.length - 1; i >= 0; i--) {
+        const l = layers[i];
+        if (!l.visible) continue;
+        ctx.save();
+        ctx.globalAlpha = l.opacity;
+        ctx.globalCompositeOperation = l.blend;
+        if (l.shadowEnabled) {
+          ctx.shadowColor = l.shadowColor;
+          ctx.shadowBlur = l.shadowBlur;
+          ctx.shadowOffsetX = l.shadowX;
+          ctx.shadowOffsetY = l.shadowY;
+        }
+        xform(ctx, l);
+        drawL(ctx, l);
+        ctx.restore();
+        if (i === activeIdx) drawSel(l);
+      }
+      if (tool === 'crop' && cropRect) {
+        drawCropRect();
+      }
+      thumbs();
+      syncTF();
+    }
+    
+    function drawCropRect() {
+      ctx.save();
+      ctx.strokeStyle = '#fff'; ctx.lineWidth = 1/zoom;
+      ctx.setLineDash([4/zoom, 4/zoom]);
+      ctx.strokeRect(cropRect.x, cropRect.y, cropRect.w, cropRect.h);
+      ctx.strokeStyle = '#000'; ctx.setLineDash([]);
+      ctx.strokeRect(cropRect.x - 1/zoom, cropRect.y - 1/zoom, cropRect.w + 2/zoom, cropRect.h + 2/zoom);
+      ctx.fillStyle = 'rgba(0,0,0,0.3)';
+      // Darken outside
+      ctx.beginPath();
+      ctx.rect(0, 0, W, H);
+      ctx.rect(cropRect.x, cropRect.y, cropRect.w, cropRect.h);
+      ctx.fill('evenodd');
+      ctx.restore();
+    }
+
+    function xform(c, l) {
+      const cx = l.x + l.w / 2, cy = l.y + l.h / 2;
+      c.translate(cx, cy);
+      if (l.rotation) c.rotate(l.rotation * Math.PI / 180);
+      c.scale(l.flipH ? -1 : 1, l.flipV ? -1 : 1);
+      c.translate(-l.w / 2, -l.h / 2);
+    }
+
+    function drawL(c, l) {
+      if (l.type === 'image' && l.img) {
+        c.drawImage(l.oc, 0, 0, l.w, l.h);
+      } else if (l.type === 'text' && l.text) {
+        c.font = `${l.fontWeight} ${l.fontSize}px ${l.fontFamily}`;
+        c.fillStyle = l.textColor;
+        c.textBaseline = 'hanging';
+        c.fillText(l.text, 0, 0);
+      } else if (l.type === 'shape') {
+        if (!l.fillTransparent) {
+          c.fillStyle = l.fillColor;
+        }
+        if (l.strokeWidth > 0) {
+          c.strokeStyle = l.strokeColor;
+          c.lineWidth = l.strokeWidth;
+        }
+
+        if (l.shapeType === 'ellipse') {
+          c.beginPath();
+          c.ellipse(l.w / 2, l.h / 2, l.w / 2, l.h / 2, 0, 0, Math.PI * 2);
+          if (!l.fillTransparent) c.fill();
+          if (l.strokeWidth > 0) c.stroke();
+        } else if (l.shapeType === 'arrow') {
+          // Solid block arrow
+          const h = l.h, w = l.w;
+          c.beginPath();
+          c.moveTo(0, h * 0.3);
+          c.lineTo(w * 0.6, h * 0.3);
+          c.lineTo(w * 0.6, 0);
+          c.lineTo(w, h * 0.5);
+          c.lineTo(w * 0.6, h);
+          c.lineTo(w * 0.6, h * 0.7);
+          c.lineTo(0, h * 0.7);
+          c.closePath();
+          if (!l.fillTransparent) c.fill();
+          if (l.strokeWidth > 0) c.stroke();
+        } else if (l.shapeType === 'star') {
+          const innerRad = Math.min(l.w, l.h) * 0.2;
+          const outerRad = Math.min(l.w, l.h) * 0.5;
+          const cx = l.w / 2, cy = l.h / 2;
+          c.beginPath();
+          for (let i = 0; i < 10; i++) {
+            const r = (i % 2 === 0) ? outerRad : innerRad;
+            const a = (Math.PI / 5) * i - Math.PI / 2;
+            c.lineTo(cx + Math.cos(a) * r, cy + Math.sin(a) * r);
+          }
+          c.closePath();
+          if (!l.fillTransparent) c.fill();
+          if (l.strokeWidth > 0) c.stroke();
+        } else if (l.shapeType === 'callout') {
+          const r = 10, w = l.w, h = l.h * 0.8;
+          c.beginPath();
+          c.moveTo(r, 0);
+          c.lineTo(w - r, 0);
+          c.quadraticCurveTo(w, 0, w, r);
+          c.lineTo(w, h - r);
+          c.quadraticCurveTo(w, h, w - r, h);
+          c.lineTo(w * 0.3, h);
+          c.lineTo(w * 0.15, l.h);
+          c.lineTo(w * 0.15, h);
+          c.lineTo(r, h);
+          c.quadraticCurveTo(0, h, 0, h - r);
+          c.lineTo(0, r);
+          c.quadraticCurveTo(0, 0, r, 0);
+          c.closePath();
+          if (!l.fillTransparent) c.fill();
+          if (l.strokeWidth > 0) c.stroke();
+        } else {
+          if (!l.fillTransparent) c.fillRect(0, 0, l.w, l.h);
+          if (l.strokeWidth > 0) {
+            c.strokeRect(l.strokeWidth / 2, l.strokeWidth / 2, l.w - l.strokeWidth, l.h - l.strokeWidth);
+          }
+        }
+      }
+    }
+
+    function drawSel(l) {
+      ctx.save();
+      ctx.strokeStyle = '#2563eb'; ctx.lineWidth = 1 / zoom;
+      ctx.setLineDash([4 / zoom, 3 / zoom]);
+      xform(ctx, l);
+      ctx.strokeRect(-0.5 / zoom, -0.5 / zoom, l.w + 1 / zoom, l.h + 1 / zoom);
+      ctx.setLineDash([]);
+      const hs = 5 / zoom;
+      [[0, 0], [l.w, 0], [0, l.h], [l.w, l.h]].forEach(([hx, hy]) => {
+        ctx.fillStyle = '#fff'; ctx.fillRect(hx - hs, hy - hs, hs * 2, hs * 2);
+        ctx.strokeStyle = '#2563eb'; ctx.lineWidth = 1 / zoom; ctx.strokeRect(hx - hs, hy - hs, hs * 2, hs * 2);
+      });
+      ctx.restore();
+    }
+
+    function thumbs() {
+      layers.forEach(l => {
+        const el = document.querySelector('[data-id="' + l.id + '"] canvas');
+        if (!el) return;
+        el.width = 30; el.height = 30;
+        const c = el.getContext('2d');
+        c.clearRect(0, 0, 30, 30);
+        const s = Math.min(30 / Math.max(l.w, 1), 30 / Math.max(l.h, 1));
+        c.save(); c.translate((30 - l.w * s) / 2, (30 - l.h * s) / 2); c.scale(s, s); drawL(c, l); c.restore();
+      });
+    }
+
+    // ── layer list ────────────────────────────────────────
+    function refresh() {
+      const list = document.getElementById('layer-list');
+      list.innerHTML = '';
+      layers.forEach((l, i) => {
+        const item = document.createElement('div');
+        item.className = 'layer-item' + (i === activeIdx ? ' active' : '');
+        item.dataset.id = l.id;
+        item.draggable = true;
+
+        const td = document.createElement('div');
+        td.className = 'layer-thumb';
+        const tc = document.createElement('canvas');
+        tc.width = 30; tc.height = 30;
+        td.appendChild(tc);
+
+        const info = document.createElement('div');
+        info.className = 'layer-info';
+
+        const nm = document.createElement('div');
+        nm.className = 'layer-name';
+        nm.textContent = l.name;
+        nm.addEventListener('dblclick', e => {
+          e.stopPropagation();
+          nm.contentEditable = 'true'; nm.focus();
+          document.execCommand('selectAll', false, null);
+        });
+        nm.addEventListener('blur', () => {
+          nm.contentEditable = 'false';
+          l.name = nm.textContent.trim() || l.name;
+        });
+        nm.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); nm.blur(); } });
+
+        const sub = document.createElement('div');
+        sub.className = 'layer-sub';
+        sub.textContent = l.type + ' · ' + l.w + '×' + l.h;
+
+        info.append(nm, sub);
+
+        const vis = document.createElement('button');
+        vis.className = 'vis-btn' + (l.visible ? '' : ' off');
+        vis.innerHTML = l.visible
+          ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>'
+          : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>';
+        vis.addEventListener('click', e => {
+          e.stopPropagation(); l.visible = !l.visible; refresh(); render();
+        });
+
+        const lock = document.createElement('button');
+        lock.className = 'vis-btn' + (l.locked ? ' active' : '');
+        lock.innerHTML = l.locked
+          ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>'
+          : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 019.9-1"/></svg>';
+        lock.addEventListener('click', e => {
+          e.stopPropagation(); l.locked = !l.locked; refresh(); render();
+        });
+
+        item.append(td, info, lock, vis);
+        item.addEventListener('click', () => { activeIdx = i; refresh(); render(); syncProps(); });
+        item.addEventListener('contextmenu', e => { e.preventDefault(); activeIdx = i; refresh(); showCtx(e.clientX, e.clientY); });
+        item.addEventListener('dragstart', e => e.dataTransfer.setData('text/plain', i));
+        item.addEventListener('dragover', e => { e.preventDefault(); item.classList.add('drag-over'); });
+        item.addEventListener('dragleave', () => item.classList.remove('drag-over'));
+        item.addEventListener('drop', e => {
+          e.preventDefault(); item.classList.remove('drag-over');
+          const from = +e.dataTransfer.getData('text/plain');
+          if (from === i) return;
+          const [mv] = layers.splice(from, 1);
+          layers.splice(i, 0, mv);
+          activeIdx = i; refresh(); render(); saveHist();
+        });
+        list.appendChild(item);
+      });
+      document.getElementById('st-layer').textContent = activeIdx >= 0 ? (layers[activeIdx]?.name || '—') : '—';
+      thumbs();
+    }
+
+    // ── context menu ──────────────────────────────────────
+    function showCtx(x, y) {
+      const m = document.getElementById('ctx-menu');
+      m.style.left = x + 'px'; m.style.top = y + 'px'; m.classList.add('on');
+    }
+    document.addEventListener('click', () => document.getElementById('ctx-menu').classList.remove('on'));
+
+    document.getElementById('ctx-dup').onclick = () => {
+      if (activeIdx < 0) return;
+      const s = layers[activeIdx];
+      const oc = document.createElement('canvas');
+      oc.width = s.oc.width; oc.height = s.oc.height;
+      oc.getContext('2d').drawImage(s.oc, 0, 0);
+      const c = Object.assign({}, s, { id: ++layerCnt, name: s.name + ' copy', oc, x: s.x + 10, y: s.y + 10 });
+      layers.splice(activeIdx, 0, c);
+      refresh(); render(); saveHist();
+    };
+    document.getElementById('ctx-merge').onclick = () => {
+      if (activeIdx < 0 || activeIdx >= layers.length - 1) return;
+      const top = layers[activeIdx], bot = layers[activeIdx + 1];
+      const oc = document.createElement('canvas'); oc.width = W; oc.height = H;
+      const mc = oc.getContext('2d');
+      mc.save(); mc.globalAlpha = bot.opacity; mc.globalCompositeOperation = bot.blend;
+      mc.drawImage(bot.oc, bot.x, bot.y, bot.w, bot.h); mc.restore();
+      mc.save(); mc.globalAlpha = top.opacity; mc.globalCompositeOperation = top.blend;
+      mc.drawImage(top.oc, top.x, top.y, top.w, top.h); mc.restore();
+      const m = mkLayer('Merged', 'image');
+      m.oc = oc; m.w = W; m.h = H; m.x = 0; m.y = 0; m.img = { naturalWidth: W, naturalHeight: H };
+      layers.splice(activeIdx, 2, m);
+      refresh(); render(); saveHist();
+    };
+    document.getElementById('ctx-flatten').onclick = flattenAll;
+    document.getElementById('ctx-del').onclick = delActive;
+
+    // ── props ─────────────────────────────────────────────
+    function syncProps() {
+      const l = layers[activeIdx]; if (!l) return;
+      document.getElementById('sl-opacity').value = Math.round(l.opacity * 100);
+      document.getElementById('val-opacity').textContent = Math.round(l.opacity * 100) + '%';
+      document.getElementById('sel-blend').value = l.blend;
+
+      // Show/hide type-specific panels
+      document.getElementById('text-props-body').classList.toggle('hidden', l.type !== 'text');
+      document.getElementById('shape-props-body').classList.toggle('hidden', l.type !== 'shape');
+      document.getElementById('img-props-body').classList.toggle('hidden', l.type !== 'image');
+
+      if (l.type === 'text') {
+        document.getElementById('text-color').value = l.textColor;
+        document.getElementById('text-size').value = l.fontSize;
+        document.getElementById('text-font').value = l.fontFamily;
+      } else if (l.type === 'shape') {
+        document.getElementById('shape-fill').value = l.fillColor;
+        document.getElementById('shape-fill-trans').checked = !!l.fillTransparent;
+        document.getElementById('shape-stroke').value = l.strokeColor;
+        document.getElementById('shape-stroke-w').value = l.strokeWidth;
+      }
+      
+      // Shadow
+      document.getElementById('sh-enabled').checked = !!l.shadowEnabled;
+      document.getElementById('sh-color').value = l.shadowColor || '#000000';
+      document.getElementById('sh-blur').value = l.shadowBlur || 0;
+      document.getElementById('sh-x').value = l.shadowX || 0;
+      document.getElementById('sh-y').value = l.shadowY || 0;
+    }
+    function syncTF() {
+      const l = layers[activeIdx]; if (!l) return;
+      document.getElementById('tf-x').value = Math.round(l.x);
+      document.getElementById('tf-y').value = Math.round(l.y);
+      document.getElementById('tf-w').value = Math.round(l.w);
+      document.getElementById('tf-h').value = Math.round(l.h);
+      document.getElementById('sl-rot').value = l.rotation || 0;
+      document.getElementById('val-rot').textContent = (l.rotation || 0) + '°';
+      document.getElementById('st-size').textContent = Math.round(l.w) + ' × ' + Math.round(l.h);
+    }
+
+    // ── mouse ─────────────────────────────────────────────
+    function cpos(e) {
+      const r = canvas.getBoundingClientRect();
+      return { x: (e.clientX - r.left) / zoom, y: (e.clientY - r.top) / zoom };
+    }
+    function hitL(p) {
+      for (let i = 0; i < layers.length; i++) {
+        const l = layers[i]; if (!l.visible || l.locked) continue;
+        if (p.x >= l.x && p.x <= l.x + l.w && p.y >= l.y && p.y <= l.y + l.h) return i;
+      }
+      return -1;
+    }
+    function hitH(p) {
+      if (activeIdx < 0 || layers[activeIdx].locked) return null;
+      const l = layers[activeIdx], hs = 8 / zoom;
+      const pts = { nw: [l.x, l.y], ne: [l.x + l.w, l.y], sw: [l.x, l.y + l.h], se: [l.x + l.w, l.y + l.h] };
+      for (const [k, [hx, hy]] of Object.entries(pts))
+        if (Math.abs(p.x - hx) < hs && Math.abs(p.y - hy) < hs) return k;
+      return null;
+    }
+
+    canvas.addEventListener('mousedown', e => {
+      if (e.button !== 0) return;
+      const p = cpos(e);
+      if (tool === 'zoom-in') { setZoom(zoom * 1.25); return; }
+      if (tool === 'zoom-out') { setZoom(zoom / 1.25); return; }
+      if (tool === 'crop') {
+        cropping = true;
+        dragStart = p;
+        cropRect = { x: p.x, y: p.y, w: 0, h: 0 };
+        return;
+      }
+      const h = hitH(p);
+      if (h) {
+        if (layers[activeIdx].locked) return;
+        resizing = true; resizeHandle = h;
+        const l = layers[activeIdx]; resizeBase = Object.assign({}, l); dragStart = p; return;
+      }
+      const hit = hitL(p);
+      if (hit >= 0) {
+        activeIdx = hit; refresh(); syncProps(); dragging = true;
+        dragOff = { x: p.x - layers[activeIdx].x, y: p.y - layers[activeIdx].y };
+      }
+      render();
+    });
+    canvas.addEventListener('mousemove', e => {
+      const p = cpos(e);
+      document.getElementById('st-pos').textContent = Math.round(p.x) + ', ' + Math.round(p.y);
+      if (cropping) {
+        cropRect.x = Math.min(p.x, dragStart.x);
+        cropRect.y = Math.min(p.y, dragStart.y);
+        cropRect.w = Math.abs(p.x - dragStart.x);
+        cropRect.h = Math.abs(p.y - dragStart.y);
+        render(); return;
+      }
+      if (resizing && activeIdx >= 0) {
+        const l = layers[activeIdx], b = resizeBase, dx = p.x - dragStart.x, dy = p.y - dragStart.y;
+        if (resizeHandle === 'se') { l.w = Math.max(4, b.w + dx); l.h = Math.max(4, b.h + dy); }
+        else if (resizeHandle === 'nw') { l.x = b.x + dx; l.y = b.y + dy; l.w = Math.max(4, b.w - dx); l.h = Math.max(4, b.h - dy); }
+        else if (resizeHandle === 'ne') { l.y = b.y + dy; l.w = Math.max(4, b.w + dx); l.h = Math.max(4, b.h - dy); }
+        else if (resizeHandle === 'sw') { l.x = b.x + dx; l.w = Math.max(4, b.w - dx); l.h = Math.max(4, b.h + dy); }
+        if (l.type === 'image' && l.img) {
+          l.oc.width = Math.max(1, Math.round(l.w)); l.oc.height = Math.max(1, Math.round(l.h));
+          l.oc.getContext('2d').drawImage(l.img, 0, 0, l.oc.width, l.oc.height);
+        }
+        render(); return;
+      }
+      if (dragging && activeIdx >= 0) {
+        layers[activeIdx].x = p.x - dragOff.x; layers[activeIdx].y = p.y - dragOff.y; render();
+      }
+    });
+    canvas.addEventListener('mouseup', () => {
+      if (cropping) {
+        if (cropRect && cropRect.w < 5 && cropRect.h < 5) {
+          cropRect = null;
+        } else {
+          document.getElementById('crop-confirm-btns').classList.remove('hidden');
+          document.getElementById('btn-crop-mode').classList.add('hidden');
+        }
+        cropping = false;
+        render();
+      }
+      if (dragging || resizing) { saveHist(); refresh(); }
+      dragging = resizing = false; resizeHandle = resizeBase = null;
+    });
+    canvas.addEventListener('mouseleave', () => document.getElementById('st-pos').textContent = '—');
+    canvas.addEventListener('contextmenu', e => {
+      e.preventDefault();
+      const hit = hitL(cpos(e));
+      if (hit >= 0) { activeIdx = hit; refresh(); render(); showCtx(e.clientX, e.clientY); }
+    });
+    canvas.addEventListener('wheel', e => { e.preventDefault(); setZoom(zoom * (e.deltaY < 0 ? 1.1 : 0.9)); }, { passive: false });
+
+    // ── buttons ───────────────────────────────────────────
+    document.getElementById('btn-new').onclick = () => {
+      if (!confirm('Start new canvas? Current work will be cleared.')) return;
+      layers = []; activeIdx = -1; initCanvas(W, H); refresh(); saveHist();
+    };
+    document.getElementById('btn-apply-size').onclick = () => {
+      const w = +document.getElementById('cw').value, h = +document.getElementById('ch').value;
+      if (w > 0 && h > 0 && w <= 4096 && h <= 4096) initCanvas(w, h);
+    };
+    document.getElementById('btn-add-img').onclick = () => document.getElementById('file-input').click();
+    document.getElementById('btn-add-text').onclick = () => {
+      const t = prompt('Enter text:'); if (!t) return;
+      const l = mkLayer('Text layer', 'text');
+      l.text = t; l.w = 320; l.h = 56; l.x = Math.round((W - 320) / 2); l.y = Math.round((H - 56) / 2);
+      layers.unshift(l); activeIdx = 0; refresh(); render(); syncProps(); saveHist();
+    };
+    document.getElementById('btn-undo').onclick = undo;
+    document.getElementById('btn-redo').onclick = redo;
+    document.getElementById('btn-export').onclick = exportPNG;
+    document.getElementById('btn-lay-add').onclick = addBlank;
+    document.getElementById('btn-lay-del').onclick = delActive;
+    document.getElementById('btn-lay-up').onclick = () => {
+      if (activeIdx <= 0) return;
+      [layers[activeIdx], layers[activeIdx - 1]] = [layers[activeIdx - 1], layers[activeIdx]];
+      activeIdx--; refresh(); render(); saveHist();
+    };
+    document.getElementById('btn-lay-dn').onclick = () => {
+      if (activeIdx < 0 || activeIdx >= layers.length - 1) return;
+      [layers[activeIdx], layers[activeIdx + 1]] = [layers[activeIdx + 1], layers[activeIdx]];
+      activeIdx++; refresh(); render(); saveHist();
+    };
+
+    document.getElementById('sl-opacity').addEventListener('input', e => {
+      if (activeIdx < 0) return;
+      layers[activeIdx].opacity = e.target.value / 100;
+      document.getElementById('val-opacity').textContent = e.target.value + '%'; render();
+    });
+    document.getElementById('sl-opacity').addEventListener('change', saveHist);
+    document.getElementById('sel-blend').addEventListener('change', e => {
+      if (activeIdx < 0) return; layers[activeIdx].blend = e.target.value; render(); saveHist();
+    });
+    document.getElementById('sl-rot').addEventListener('input', e => {
+      if (activeIdx < 0) return; layers[activeIdx].rotation = +e.target.value;
+      document.getElementById('val-rot').textContent = e.target.value + '°'; render();
+    });
+    document.getElementById('sl-rot').addEventListener('change', saveHist);
+    document.getElementById('btn-fh').onclick = () => { if (activeIdx < 0) return; layers[activeIdx].flipH = !layers[activeIdx].flipH; render(); saveHist(); };
+    document.getElementById('btn-fv').onclick = () => { if (activeIdx < 0) return; layers[activeIdx].flipV = !layers[activeIdx].flipV; render(); saveHist(); };
+
+    // Text prop events
+    document.getElementById('text-color').oninput = e => { if (activeIdx < 0) return; layers[activeIdx].textColor = e.target.value; render(); };
+    document.getElementById('text-color').onchange = saveHist;
+    document.getElementById('text-size').oninput = e => { if (activeIdx < 0) return; layers[activeIdx].fontSize = +e.target.value; render(); };
+    document.getElementById('text-size').onchange = saveHist;
+    document.getElementById('text-font').onchange = e => { if (activeIdx < 0) return; layers[activeIdx].fontFamily = e.target.value; render(); saveHist(); };
+
+    // Shape prop events
+    document.getElementById('shape-fill').oninput = e => { if (activeIdx < 0) return; layers[activeIdx].fillColor = e.target.value; render(); };
+    document.getElementById('shape-fill').onchange = saveHist;
+    document.getElementById('shape-fill-trans').onchange = e => { if (activeIdx < 0) return; layers[activeIdx].fillTransparent = e.target.checked; render(); saveHist(); };
+    document.getElementById('shape-stroke').oninput = e => { if (activeIdx < 0) return; layers[activeIdx].strokeColor = e.target.value; render(); };
+    document.getElementById('shape-stroke').onchange = saveHist;
+    document.getElementById('shape-stroke-w').oninput = e => { if (activeIdx < 0) return; layers[activeIdx].strokeWidth = +e.target.value; render(); };
+    document.getElementById('shape-stroke-w').onchange = saveHist;
+
+    // Shadow prop events
+    document.getElementById('sh-enabled').onchange = e => { if (activeIdx < 0) return; layers[activeIdx].shadowEnabled = e.target.checked; render(); saveHist(); };
+    document.getElementById('sh-color').oninput = e => { if (activeIdx < 0) return; layers[activeIdx].shadowColor = e.target.value; render(); };
+    document.getElementById('sh-color').onchange = saveHist;
+    document.getElementById('sh-blur').oninput = e => { if (activeIdx < 0) return; layers[activeIdx].shadowBlur = +e.target.value; render(); };
+    document.getElementById('sh-blur').onchange = saveHist;
+    document.getElementById('sh-x').oninput = e => { if (activeIdx < 0) return; layers[activeIdx].shadowX = +e.target.value; render(); };
+    document.getElementById('sh-x').onchange = saveHist;
+    document.getElementById('sh-y').oninput = e => { if (activeIdx < 0) return; layers[activeIdx].shadowY = +e.target.value; render(); };
+    document.getElementById('sh-y').onchange = saveHist;
+
+    ['tf-x', 'tf-y', 'tf-w', 'tf-h'].forEach(id => {
+      document.getElementById(id).addEventListener('change', e => {
+        if (activeIdx < 0) return;
+        const l = layers[activeIdx], v = +e.target.value;
+        if (id === 'tf-x') l.x = v; else if (id === 'tf-y') l.y = v;
+        else if (id === 'tf-w') {
+          l.w = Math.max(1, v);
+          if (l.type === 'image' && l.img) { l.oc.width = l.w; l.oc.height = l.h; l.oc.getContext('2d').drawImage(l.img, 0, 0, l.w, l.h); }
+        } else if (id === 'tf-h') {
+          l.h = Math.max(1, v);
+          if (l.type === 'image' && l.img) { l.oc.width = l.w; l.oc.height = l.h; l.oc.getContext('2d').drawImage(l.img, 0, 0, l.w, l.h); }
+        }
+        render(); saveHist();
+      });
+    });
+
+      document.querySelectorAll('[data-tool]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const t = btn.dataset.tool;
+        if (t === 'zoom-in') { setZoom(zoom * 1.25); return; }
+        if (t === 'zoom-out') { setZoom(zoom / 1.25); return; }
+        if (['rect', 'ellipse', 'arrow', 'callout', 'star'].includes(t)) { addShape(t); return; }
+        if (t === 'crop') {
+          if (activeIdx < 0 || layers[activeIdx].type !== 'image') {
+            alert('Select an image layer to crop.'); return;
+          }
+        }
+        tool = t;
+        if (t !== 'crop') exitCrop();
+        document.querySelectorAll('[data-tool]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        canvas.style.cursor = t === 'move' ? 'move' : (t === 'crop' ? 'crosshair' : 'default');
+      });
+    });
+
+    document.getElementById('btn-crop-mode').onclick = () => {
+      if (activeIdx < 0 || layers[activeIdx].type !== 'image') return;
+      tool = 'crop';
+      setAT('[data-tool="crop"]');
+      canvas.style.cursor = 'crosshair';
+    };
+    document.getElementById('btn-crop-ok').onclick = () => {
+      performCrop();
+      exitCrop();
+    };
+    document.getElementById('btn-crop-cancel').onclick = exitCrop;
+
+    function exitCrop() {
+      cropRect = null;
+      document.getElementById('crop-confirm-btns').classList.add('hidden');
+      document.getElementById('btn-crop-mode').classList.remove('hidden');
+      if (tool === 'crop') {
+        tool = 'select';
+        setAT('[data-tool="select"]');
+        canvas.style.cursor = 'default';
+      }
+      render();
+    }
+
+    function performCrop() {
+      const l = layers[activeIdx];
+      if (!l || l.type !== 'image' || !cropRect) return;
+
+      // 1. Map screen cropRect to layer local coordinates
+      // For simplicity, we assume the layer is not rotated for the crop calculation 
+      // or we crop the visible area in its current orientation.
+      // Accurate localized crop would require inverse transformation.
+      
+      // Let's do a simple axis-aligned intersection for now
+      const nx = Math.max(l.x, cropRect.x);
+      const ny = Math.max(l.y, cropRect.y);
+      const nw = Math.min(l.x + l.w, cropRect.x + cropRect.w) - nx;
+      const nh = Math.min(l.y + l.h, cropRect.y + cropRect.h) - ny;
+
+      if (nw <= 0 || nh <= 0) return;
+
+      const offX = nx - l.x;
+      const offY = ny - l.y;
+
+      const nc = document.createElement('canvas');
+      nc.width = nw; nc.height = nh;
+      const nctx = nc.getContext('2d');
+      
+      // We draw the original oc (un-rotated data) onto the new canvas
+      // But wait, l.oc might be different size if it was already transformed.
+      // In this editor, l.oc stores the image at its current l.w, l.h
+      nctx.drawImage(l.oc, offX, offY, nw, nh, 0, 0, nw, nh);
+
+      l.oc = nc;
+      l.x = nx; l.y = ny; l.w = nw; l.h = nh;
+      
+      // If it's an image layer, we should probably update the "original" if feasible,
+      // but here we just update the 'oc' which is used for rendering.
+      
+      saveHist(); refresh(); render();
+      tool = 'select'; setAT('[data-tool="select"]');
+    }
+
+    function addShape(type) {
+      let name = 'Shape';
+      if (type === 'rect') name = 'Rectangle';
+      else if (type === 'ellipse') name = 'Ellipse';
+      else if (type === 'arrow') name = 'Arrow';
+      else if (type === 'callout') name = 'Speech Bubble';
+      else if (type === 'star') name = 'Star';
+
+      const l = mkLayer(name, 'shape');
+      l.shapeType = type; 
+      l.w = 160; 
+      l.h = (type === 'ellipse' || type === 'star') ? 120 : (type === 'callout' ? 140 : 100);
+      l.x = Math.round((W - l.w) / 2); l.y = Math.round((H - l.h) / 2);
+      layers.unshift(l); activeIdx = 0; refresh(); render(); syncProps(); saveHist();
+    }
+
+    // ── file / drop ───────────────────────────────────────
+    document.getElementById('file-input').addEventListener('change', e => {
+      [...e.target.files].forEach(loadFile); e.target.value = '';
+    });
+    function loadFile(file) {
+      const url = URL.createObjectURL(file);
+      const img = new Image();
+      img.onload = () => { img.name = file.name.replace(/\.[^.]+$/, ''); addImageLayer(img); URL.revokeObjectURL(url); };
+      img.src = url;
+    }
+    window.addEventListener('dragover', e => { e.preventDefault(); document.getElementById('drop-overlay').classList.add('on'); });
+    window.addEventListener('dragleave', e => { if (!e.relatedTarget) document.getElementById('drop-overlay').classList.remove('on'); });
+    window.addEventListener('drop', e => {
+      e.preventDefault(); document.getElementById('drop-overlay').classList.remove('on');
+      [...e.dataTransfer.files].filter(f => f.type.startsWith('image/')).forEach(loadFile);
+    });
+
+    // ── keyboard ──────────────────────────────────────────
+    document.addEventListener('keydown', e => {
+      if (e.target.tagName === 'INPUT' || e.target.contentEditable === 'true') return;
+      if (e.key === 'v' || e.key === 'V') { tool = 'select'; setAT('[data-tool="select"]'); }
+      if (e.key === 'm' || e.key === 'M') { tool = 'move'; setAT('[data-tool="move"]'); }
+      if (e.key === 'c' || e.key === 'C') { tool = 'crop'; setAT('[data-tool="crop"]'); }
+      if (e.key === 'a' || e.key === 'A') { addShape('arrow'); }
+      if (e.key === 'b' || e.key === 'B') { addShape('callout'); }
+      if (e.key === 's' || e.key === 'S') { addShape('star'); }
+      if (e.key === '+' || e.key === '=') setZoom(zoom * 1.25);
+      if (e.key === '-') setZoom(zoom / 1.25);
+      if (e.key === '0') setZoom(1);
+      if ((e.ctrlKey || e.metaKey) && e.key === 'z') { e.preventDefault(); undo(); }
+      if ((e.ctrlKey || e.metaKey) && (e.key === 'y' || (e.shiftKey && e.key === 'z'))) { e.preventDefault(); redo(); }
+      if ((e.key === 'Delete' || e.key === 'Backspace') && activeIdx >= 0) delActive();
+      if (activeIdx >= 0 && ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(e.key)) {
+        if (layers[activeIdx].locked) return;
+        e.preventDefault();
+        const l = layers[activeIdx], s = e.shiftKey ? 10 : 1;
+        if (e.key === 'ArrowLeft') l.x -= s; if (e.key === 'ArrowRight') l.x += s;
+        if (e.key === 'ArrowUp') l.y -= s; if (e.key === 'ArrowDown') l.y += s;
+        render(); syncTF();
+      }
+    });
+    function setAT(sel) {
+      document.querySelectorAll('[data-tool]').forEach(b => b.classList.remove('active'));
+      document.querySelector(sel)?.classList.add('active');
+    }
+
+    // ── helpers ───────────────────────────────────────────
+    function delActive() {
+      if (activeIdx < 0 || !layers.length || layers[activeIdx].locked) return;
+      layers.splice(activeIdx, 1); activeIdx = Math.min(activeIdx, layers.length - 1);
+      refresh(); render(); saveHist();
+    }
+    function flattenAll() {
+      const ec = document.createElement('canvas'); ec.width = W; ec.height = H;
+      const ec2 = ec.getContext('2d');
+      for (let i = layers.length - 1; i >= 0; i--) {
+        const l = layers[i]; if (!l.visible) continue;
+        ec2.save(); ec2.globalAlpha = l.opacity; ec2.globalCompositeOperation = l.blend;
+        xform(ec2, l); drawL(ec2, l); ec2.restore();
+      }
+      const m = mkLayer('Flattened', 'image');
+      m.oc = ec; m.w = W; m.h = H; m.x = 0; m.y = 0; m.img = { naturalWidth: W, naturalHeight: H };
+      layers = [m]; activeIdx = 0; refresh(); render(); saveHist();
+    }
+    function exportPNG() {
+      const ec = document.createElement('canvas'); ec.width = W; ec.height = H;
+      const ec2 = ec.getContext('2d');
+      for (let i = layers.length - 1; i >= 0; i--) {
+        const l = layers[i]; if (!l.visible) continue;
+        ec2.save(); ec2.globalAlpha = l.opacity; ec2.globalCompositeOperation = l.blend;
+        xform(ec2, l); drawL(ec2, l); ec2.restore();
+      }
+      const a = document.createElement('a'); a.download = 'export.png'; a.href = ec.toDataURL('image/png'); a.click();
+    }
+
+    // ── history ───────────────────────────────────────────
+    function saveHist() {
+      const snap = JSON.stringify(layers.map(l => ({
+        id: l.id, name: l.name, type: l.type, visible: l.visible,
+        opacity: l.opacity, blend: l.blend, x: l.x, y: l.y, w: l.w, h: l.h,
+        rotation: l.rotation, flipH: l.flipH, flipV: l.flipV,
+        text: l.text, fontSize: l.fontSize, fontFamily: l.fontFamily, textColor: l.textColor,
+        shapeType: l.shapeType, fillColor: l.fillColor, fillTransparent: l.fillTransparent,
+        strokeColor: l.strokeColor, strokeWidth: l.strokeWidth,
+        shadowEnabled: l.shadowEnabled, shadowColor: l.shadowColor, shadowBlur: l.shadowBlur,
+        shadowX: l.shadowX, shadowY: l.shadowY,
+        locked: l.locked
+      })));
+      history = history.slice(0, histIdx + 1); history.push(snap);
+      if (history.length > 60) history.shift();
+      histIdx = history.length - 1;
+    }
+    function undo() { if (histIdx > 0) { histIdx--; render(); } }
+    function redo() { if (histIdx < history.length - 1) { histIdx++; render(); } }
+
+    // ── boot ──────────────────────────────────────────────
+    initCanvas(800, 600);
+    addBlank();
+    refresh();
+    syncProps();
+    saveHist();
+  </script>
+</body>
+
+</html>
