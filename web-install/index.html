@@ -210,7 +210,7 @@
         <a href="../story/" data-i18n="nav.story">Dev Story</a>
         <a href="../rokid/" data-i18n="nav.rokid">Rokid App</a>
         <a href="../android/" data-i18n="nav.android">Android App</a>
-        <a href="./" data-i18n="nav.books" class="active">Books</a>
+        <a href="../books/" data-i18n="nav.books" class="active">Books</a>
       </div>
 
       <div style="display: flex; gap: 1rem; align-items: center;">
@@ -231,7 +231,8 @@
         <span class="material-symbols-rounded" style="font-size: 3rem; color: var(--accent-color);">usb</span>
         Web Install (APK)
       </h1>
-      <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 0.5rem;" data-i18n="webinstall.subtitle">별도의 프로그램 설치 없이, 브라우저에서 바로 APK를 장치에
+      <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 0.5rem;" data-i18n="webinstall.subtitle">별도의
+        프로그램 설치 없이, 브라우저에서 바로 APK를 장치에
         설치합니다.</p>
 
       <div id="download-count-container"
@@ -247,7 +248,8 @@
       <span class="material-symbols-rounded" style="font-size: 2rem;">warning</span>
       <div>
         <p><strong data-i18n="webinstall.browser_warning_title">브라우저 제한 안내</strong></p>
-        <p style="font-size: 0.9rem; margin-top: 0.2rem;" data-i18n="webinstall.browser_warning_desc">WebUSB API는 Chrome, Edge, Opera 등 Chromium 기반 브라우저에서만
+        <p style="font-size: 0.9rem; margin-top: 0.2rem;" data-i18n="webinstall.browser_warning_desc">WebUSB API는
+          Chrome, Edge, Opera 등 Chromium 기반 브라우저에서만
           작동합니다. Safari나 Firefox에서는 이 기능을 이용할 수 없습니다.</p>
       </div>
     </div>
@@ -292,7 +294,8 @@
       <ul class="guide-list">
         <li>
           <span class="material-symbols-rounded" style="color: var(--accent-color);">looks_one</span>
-          <span data-i18n="webinstall.guide_1">안드로이드 기기의 <strong>개발자 옵션</strong>에서 <strong>USB 디버깅</strong>을 활성화합니다.</span>
+          <span data-i18n="webinstall.guide_1">안드로이드 기기의 <strong>개발자 옵션</strong>에서 <strong>USB 디버깅</strong>을
+            활성화합니다.</span>
         </li>
         <li>
           <span class="material-symbols-rounded" style="color: var(--accent-color);">looks_two</span>
@@ -304,7 +307,8 @@
         </li>
         <li>
           <span class="material-symbols-rounded" style="color: var(--accent-color);">looks_4</span>
-          <span data-i18n="webinstall.guide_4">기기 화면에 <strong>"USB 디버깅을 허용하시겠습니까?"</strong> 팝업이 뜨면 <strong>허용</strong>을 누릅니다.</span>
+          <span data-i18n="webinstall.guide_4">기기 화면에 <strong>"USB 디버깅을 허용하시겠습니까?"</strong> 팝업이 뜨면 <strong>허용</strong>을
+            누릅니다.</span>
         </li>
         <li>
           <span class="material-symbols-rounded" style="color: var(--accent-color);">looks_5</span>
@@ -323,22 +327,26 @@
         <li style="display: flex; gap: 0.75rem;">
           <span class="material-symbols-rounded"
             style="font-size: 1.2rem; color: #10b981; margin-top: 0.2rem;">check_circle</span>
-          <span data-i18n="webinstall.troubleshoot_1"><strong>브라우저 확인</strong>: Chrome(크롬)이나 Edge(엣지)를 사용 중이신가요? (Safari, Firefox는 지원 안 함)</span>
+          <span data-i18n="webinstall.troubleshoot_1"><strong>브라우저 확인</strong>: Chrome(크롬)이나 Edge(엣지)를 사용 중이신가요?
+            (Safari, Firefox는 지원 안 함)</span>
         </li>
         <li style="display: flex; gap: 0.75rem;">
           <span class="material-symbols-rounded"
             style="font-size: 1.2rem; color: #10b981; margin-top: 0.2rem;">check_circle</span>
-          <span data-i18n="webinstall.troubleshoot_2"><strong>USB 디버깅</strong>: 기기(안드로이드/로키드 등) 설정에서 USB 디버깅이 켜져 있나요?</span>
+          <span data-i18n="webinstall.troubleshoot_2"><strong>USB 디버깅</strong>: 기기(안드로이드/로키드 등) 설정에서 USB 디버깅이 켜져
+            있나요?</span>
         </li>
         <li style="display: flex; gap: 0.75rem;">
           <span class="material-symbols-rounded"
             style="font-size: 1.2rem; color: #10b981; margin-top: 0.2rem;">check_circle</span>
-          <span data-i18n="webinstall.troubleshoot_3"><strong>케이블 연결</strong>: 기기가 PC와 USB로 직접 연결되어 있나요? (충전 전용 케이블이 아닌 데이터 통신용 필수)</span>
+          <span data-i18n="webinstall.troubleshoot_3"><strong>케이블 연결</strong>: 기기가 PC와 USB로 직접 연결되어 있나요? (충전 전용 케이블이 아닌
+            데이터 통신용 필수)</span>
         </li>
         <li style="display: flex; gap: 0.75rem;">
           <span class="material-symbols-rounded"
             style="font-size: 1.2rem; color: #f59e0b; margin-top: 0.2rem;">warning</span>
-          <span data-i18n="webinstall.troubleshoot_4"><strong>ADB 서버 충돌</strong>: 터미널에서 <code>adb kill-server</code>를 실행한 후 다시 연결하세요. (ADB 서버와 WebUSB는 동시 사용
+          <span data-i18n="webinstall.troubleshoot_4"><strong>ADB 서버 충돌</strong>: 터미널에서 <code>adb kill-server</code>를
+            실행한 후 다시 연결하세요. (ADB 서버와 WebUSB는 동시 사용
             불가)</span>
         </li>
       </ul>
@@ -481,7 +489,7 @@
           return {
             value: data,
             tryConsume(fn) { return typeof fn === 'function' ? fn(data) : data; },
-            consume(fn)    { return typeof fn === 'function' ? fn(data) : data; }
+            consume(fn) { return typeof fn === 'function' ? fn(data) : data; }
           };
         }
 
