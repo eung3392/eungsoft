@@ -330,8 +330,9 @@
         data.stories.forEach((story, index) => {
           const item = document.createElement('div');
           item.className = 'story-item';
+          const title = (window.getLang() === 'en' && story.title_en) ? story.title_en : story.title;
           item.innerHTML = `
-            <h4>${story.title}</h4>
+            <h4>${title}</h4>
             <span><span class="material-symbols-rounded" style="font-size:0.9rem;">calendar_today</span> ${story.date}</span>
           `;
           item.onclick = () => selectStory(story, item);
@@ -372,11 +373,13 @@
             duration: 0.2,
             onComplete: () => {
               contentArea.innerHTML = html;
+              if (window.applyTranslations) window.applyTranslations();
               gsap.to(contentArea, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" });
             }
           });
         } else {
           contentArea.innerHTML = html;
+          if (window.applyTranslations) window.applyTranslations();
         }
 
       } catch (err) {
@@ -388,6 +391,11 @@
         `;
       }
     }
+
+    // 언어 변경 시 목록 재부팅
+    document.addEventListener('languageChanged', () => {
+      loadStories();
+    });
   </script>
 </body>
 

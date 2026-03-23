@@ -62,7 +62,19 @@ const translations = {
     "webinstall.log_success": "설치 성공!",
     "webinstall.log_failed": "설치 실패.",
     "webinstall.alert_done": "설치가 성공적으로 완료되었습니다. 🎉",
-    "webinstall.alert_error": "설치 중 오류가 발생했습니다."
+    "webinstall.alert_error": "설치 중 오류가 발생했습니다.",
+    "webinstall.btn_photo_list": "사진 목록",
+    "webinstall.btn_photo_get": "사진 가져오기 (최대 50)",
+    "story.webinstall.title": "별도 프로그램 없이 브라우저에서 바로! Web Install 기능 구현기",
+    "story.webinstall.intro": "안녕하세요! EUNG SOFT입니다. 그동안 안드로이드 기기나 로키드 글래스에 APK를 설치할 때마다 별도의 프로그램을 설치하거나 복잡한 ADB 명령어를 입력해야 하는 번거로움이 있었습니다.",
+    "story.webinstall.desc": "이러한 불편함을 해결하기 위해, WebUSB API와 WebADB 기술을 활용하여 브라우저에서 직접 기기를 제어할 수 있는 Web Install 메뉴를 새롭게 런칭하게 되었습니다.",
+    "story.webinstall.features": "주요 특징 및 기능",
+    "story.webinstall.f1": "무설치 환경: 크롬(Chrome)이나 엣지(Edge) 브라우저만 있다면, 별도의 전용 프로그램 없이 즉시 이용 가능합니다.",
+    "story.webinstall.f2": "간편한 APK 설치: 연결된 기기에 APK 파일을 선택하는 것만으로 자동으로 전송 및 설치가 완료됩니다.",
+    "story.webinstall.f3": "미디어 관리 (Photo/Video): 기기의 DCIM 폴더에 있는 최신 사진과 MP4 동영상 파일(최대 50개)을 날짜순으로 확인하고, 원하는 파일만 골라 내 컴퓨터로 바로 다운로드할 수 있는 편리한 기능을 추가했습니다.",
+    "story.webinstall.f4": "실시간 진행 알림: 파일 전송 및 설치 과정을 로그 영역과 프로그레스 바를 통해 실시간으로 확인할 수 있습니다.",
+    "story.webinstall.closing1": "이번 Web Install 기능 개발을 통해 로키드 글래스 사용자분들과 안드로이드 개발자분들이 좀 더 쾌적한 환경에서 작업하실 수 있기를 바랍니다.",
+    "story.webinstall.closing2": "앞으로도 더욱 유용한 기능을 꾸준히 업데이트해 나가겠습니다. 감사합니다!"
   },
   en: {
     "nav.intro": "Intro",
@@ -126,7 +138,19 @@ const translations = {
     "webinstall.log_success": "Installation Successful!",
     "webinstall.log_failed": "Installation failed.",
     "webinstall.alert_done": "Installation completed successfully. 🎉",
-    "webinstall.alert_error": "An error occurred during installation."
+    "webinstall.alert_error": "An error occurred during installation.",
+    "webinstall.btn_photo_list": "Photo List",
+    "webinstall.btn_photo_get": "Get Photos (Max 50)",
+    "story.webinstall.title": "No extra software needed! Web Install Feature Launch",
+    "story.webinstall.intro": "Hello from EUNG SOFT! Previously, installing APKs on Android devices or Rokid Glasses required separate software or complex ADB commands, which was quite a hassle.",
+    "story.webinstall.desc": "To solve this, we launched the new Web Install menu using WebUSB API and WebADB, allowing direct device control right from your browser.",
+    "story.webinstall.features": "Key Features & Highlights",
+    "story.webinstall.f1": "Zero Installation: Access immediately via Chrome or Edge without any dedicated software.",
+    "story.webinstall.f2": "Easy APK Installation: Simply select an APK file and it will be transferred and installed automatically.",
+    "story.webinstall.f3": "Media Management (Photo/Video): Check the latest 50 photos/videos in the DCIM folder and download them directly to your PC.",
+    "story.webinstall.f4": "Real-time Progress: Monitor transfer and installation status in real-time through the logs and progress bar.",
+    "story.webinstall.closing1": "We hope this new feature provides a more seamless experience for Rokid Glasses users and Android developers.",
+    "story.webinstall.closing2": "We will continue to improve. Thank you!"
   }
 };
 
