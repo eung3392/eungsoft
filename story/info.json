@@ -1,6 +1,12 @@
 {
   "stories": [
     {
+      "title": "스마트 글래스에서 즐기는 편안한 독서, EKReader 출시",
+      "title_en": "Comfortable reading on Smart Glasses, EKReader Launch",
+      "date": "2026-03-23",
+      "file": "ekreader.html"
+    },
+    {
       "title": "별도 프로그램 없이 브라우저에서 바로! Web Install 기능 구현기",
       "title_en": "No extra software needed! Web Install Feature Launch",
       "date": "2026-03-23",

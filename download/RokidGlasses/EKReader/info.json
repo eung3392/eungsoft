@@ -1,0 +1,41 @@
+{
+    "title": {
+        "ko": "EKReader",
+        "en": "EKReader"
+    },
+    "version": "1.0.0",
+    "releaseDate": "2026-03-23",
+    "shortDescription": {
+        "ko": "깔끔하고 직관적인 Rokid Glasses 전용 E-book 리더기",
+        "en": "Clean and intuitive E-book reader app for Rokid Glasses."
+    },
+    "description": {
+        "ko": "EKReader는 TXT 및 EPUB 파일을 지원하는 깔끔하고 직관적인 e-북 리더 애플리케이션입니다.<br><br><b>주요 화면 구성</b><br>• <b>메인 화면:</b> 기기 내의 도서 목록을 리스트 형태로 보여주며, 파일 형식(TXT, EPUB)을 아이콘으로 구분합니다.<br>• <b>리더 화면:</b> 상단에는 책 제목이 표시되고, 중앙의 넓은 영역에서 내용을 읽을 수 있습니다. 하단에는 현재 독서 진행률(%)과 프로그레스 바가 표시됩니다.<br><br><b>핵심 특징</b><br>• <b>시각적 편안함:</b> 투명한 배경에 최적화된 대비율을 적용하였습니다.<br>• <b>간결한 UI:</b> 복잡한 버튼을 최소화하고, 필요한 기능(이동, 폰트)에 집중할 수 있도록 설계하였습니다.<br>• <b>조작 최적화:</b>Rokid Glasses 의 환경에 맞게 스와이핑과 터치만으로 조작합니다.<br>• <b>화면 저장:</b>읽고 있는 내용중에 저장하고 싶은 화면이 있으면 스크린샷을 저장할 수 있습니다.",
+        "en": "EKReader is a clean and intuitive e-book reader application supporting TXT and EPUB files.<br><br><b>Key Screen Layout</b><br>• <b>Main Screen:</b> Shows the list of books on the device in a card format, distinguishing file types (TXT, EPUB) with icons.<br>• <b>Reader Screen:</b> The book title is displayed at the top, and contents can be read in the wide central area. The current reading progress (%) and a progress bar are displayed at the bottom.<br><br><b>Core Features</b><br>• <b>Visual Comfort:</b> Applies an optimized contrast ratio on a black background for eye comfort during long reading sessions.<br>• <b>Simple UI:</b> Minimizes complex buttons and focuses on essential functions (navigation, font size).<br>• <b>Operation Optimization:</b> Rokid Glasses environment optimized for swiping and touch operation."
+    },
+    "control": {
+        "ko": "<ul style='padding-left: 20px;'><li><b>메뉴 열기:</b> 리더 화면에서 터치하면 메인 메뉴(이동, 글자 크기, 뒤로가기)를 호출할 수 있습니다.</li><li><b>페이지/위치 이동 (Jump):</b><br>◦ 'Jump to' 다이얼로그에서 터치 스와이프로 5% 단위로 위치를 조절한 후, 터치하면 즉시 해당 위치로 이동합니다.</li><li><b>글자 크기 조절:</b> 폰트 사이즈 다이얼로그에서 Small, Normal, Large, X-Large 중 원하는 크기를 선택할 수 있습니다.</li><li><b>진행률 확인:</b> 화면 하단에 실시간으로 현재 읽고 있는 위치(%)와 프로그레스 바가 표시됩니다.</li><li><b>파일 전송(Web Install):</b> txt, epub 와 같은 도서 자료는 사이트의 Web Install 메뉴에서 로키드 글래스를 연결한 후에 EKReader 전용 파일 올리기 버튼을 이용해서 쉽게 전송할 수 있습니다.</li></ul>",
+        "en": "<ul style='padding-left: 20px;'><li><b>Open Menu:</b> Call the main menu touchs on the reader screen.</li><li><b>Jump to Page/Location:</b><br>◦ Adjust location by 5% increments using swipe in the 'Jump to' dialog, then touchs.</li><li><b>Font Size:</b> Select desired size from Small, Normal, Large, X-Large in the font size dialog.</li><li><b>Check Progress:</b> Real-time current location (%) and progress bar are displayed at the bottom.</li><li><b>File Transfer (Web Install):</b> Materials such as txt and epub can be transferred easily using the file upload button dedicated to EKReader after connecting the smart glasses from the Web Install menu on the site.</li></ul>"
+    },
+    "youtubeUrl": "",
+    "youtubeType": "1",
+    "download": [
+        ""
+    ],
+    "images": [
+        "scr1.jpg",
+        "scr2.jpg"
+    ],
+    "tags": {
+        "ko": [
+            "이북",
+            "E-Book",
+            "뷰어"
+        ],
+        "en": [
+            "ebook",
+            "txt",
+            "epub"
+        ]
+    }
+}

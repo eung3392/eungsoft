@@ -414,18 +414,15 @@
       if (!countEl) return;
 
       try {
-        // Netlify 프록시 주소 사용 (/proxy-count/ -> http://m.73s.woobi.co.kr/)
-        const response = await fetch(`/proxy-count/count.php?keyword=${encodeURIComponent(keyword)}&t=${new Date().getTime()}`);
+        const response = await fetch(`/api/track-stats?action=get&name=${encodeURIComponent(keyword)}`);
         if (response.ok) {
-          const text = await response.text();
-          // 결과에 JSONP 함수명이 섞여있을 수 있으므로 숫자만 추출
-          const count = text.match(/\d+/) ? text.match(/\d+/)[0] : '0';
-          countEl.textContent = count;
+          const data = await response.json();
+          countEl.textContent = data.count || '0';
         } else {
           countEl.textContent = '0';
         }
       } catch (err) {
-        console.error('Failed to fetch download count via proxy:', err);
+        console.error('Failed to fetch download count from Neon:', err);
         countEl.textContent = '0';
       }
     }
@@ -433,8 +430,7 @@
     async function incDownloadCount(keyword) {
       console.log('Incrementing download count for:', keyword);
       try {
-        // Increment도 프록시 사용
-        fetch(`/proxy-count/count.php?keyword=${encodeURIComponent(keyword)}&mode=inc&t=${new Date().getTime()}`);
+        fetch(`/api/track-stats?action=inc&name=${encodeURIComponent(keyword)}`);
       } catch (err) {
         console.error('Failed to increment download count:', err);
       }
