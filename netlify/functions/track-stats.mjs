@@ -2,7 +2,7 @@ import { neon } from '@neondatabase/serverless';
 
 export default async (req, context) => {
   try {
-    const dbUrl = process.env.DATABASE_URL || process.env.NEON_DATABASE_URL;
+    const dbUrl = process.env.NETLIFY_DATABASE_URL || process.env.DATABASE_URL || process.env.NEON_DATABASE_URL;
     if (!dbUrl) {
       return new Response(JSON.stringify({ error: "데이터베이스 연결 URL을 찾을 수 없습니다." }), { status: 500 });
     }
