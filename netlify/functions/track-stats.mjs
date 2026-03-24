@@ -32,6 +32,14 @@ export default async (req, context) => {
       return new Response(JSON.stringify({ success: true, count: result[0].count }), {
         status: 200, headers: { "Content-Type": "application/json" }
       });
+    } else if (action === 'all') {
+      const result = await sql`
+        SELECT event_name, count FROM stats_counter
+        ORDER BY count DESC
+      `;
+      return new Response(JSON.stringify({ success: true, data: result }), {
+        status: 200, headers: { "Content-Type": "application/json" }
+      });
     } else {
       // action === 'get'
       const result = await sql`
