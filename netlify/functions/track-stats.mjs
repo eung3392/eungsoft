@@ -13,9 +13,18 @@ export default async (req, context) => {
     await sql`
       CREATE TABLE IF NOT EXISTS stats_counter (
         event_name VARCHAR(100) PRIMARY KEY,
-        count INTEGER DEFAULT 0
+        count INTEGER DEFAULT 0,
+        created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+        updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
       )
     `;
+
+    try {
+      await sql`ALTER TABLE stats_counter ADD COLUMN IF NOT EXISTS created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP`;
+      await sql`ALTER TABLE stats_counter ADD COLUMN IF NOT EXISTS updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP`;
+    } catch (e) {
+      // Ignore errors if columns already exist or altering fails
+    }
 
     const url = new URL(req.url);
     const action = url.searchParams.get('action'); // 'get' or 'inc'
@@ -26,15 +35,17 @@ export default async (req, context) => {
         INSERT INTO stats_counter (event_name, count)
         VALUES (${name}, 1)
         ON CONFLICT (event_name)
-        DO UPDATE SET count = stats_counter.count + 1
-        RETURNING count
+        DO UPDATE SET 
+          count = stats_counter.count + 1,
+          updated_at = CURRENT_TIMESTAMP
+        RETURNING count, updated_at
       `;
-      return new Response(JSON.stringify({ success: true, count: result[0].count }), {
+      return new Response(JSON.stringify({ success: true, count: result[0].count, updated_at: result[0].updated_at }), {
         status: 200, headers: { "Content-Type": "application/json" }
       });
     } else if (action === 'all') {
       const result = await sql`
-        SELECT event_name, count FROM stats_counter
+        SELECT event_name, count, created_at, updated_at FROM stats_counter
         ORDER BY count DESC
       `;
       return new Response(JSON.stringify({ success: true, data: result }), {
@@ -43,11 +54,12 @@ export default async (req, context) => {
     } else {
       // action === 'get'
       const result = await sql`
-        SELECT count FROM stats_counter
+        SELECT count, updated_at FROM stats_counter
         WHERE event_name = ${name}
       `;
       const count = result.length > 0 ? result[0].count : 0;
-      return new Response(JSON.stringify({ success: true, count }), {
+      const updated_at = result.length > 0 ? result[0].updated_at : null;
+      return new Response(JSON.stringify({ success: true, count, updated_at }), {
         status: 200, headers: { "Content-Type": "application/json" }
       });
     }

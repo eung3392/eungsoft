@@ -160,13 +160,35 @@
     </div>
 
     <div id="dashboard" class="dashboard-grid" style="display: none;">
-      <!-- Chart Area -->
-      <div class="card">
-        <h2>
-          <span class="material-symbols-rounded">bar_chart</span>
-          Distribution Analysis
-        </h2>
-        <canvas id="statsChart"></canvas>
+      <!-- Left Column -->
+      <div style="display: flex; flex-direction: column; gap: 2rem;">
+        <!-- Chart Area -->
+        <div class="card">
+          <h2>
+            <span class="material-symbols-rounded">bar_chart</span>
+            Distribution Analysis
+          </h2>
+          <canvas id="statsChart"></canvas>
+        </div>
+
+        <!-- Recent Area -->
+        <div class="card">
+          <h2>
+            <span class="material-symbols-rounded">history</span>
+            최근 업데이트 (최대 20개)
+          </h2>
+          <table>
+            <thead>
+              <tr>
+                <th>이름 (Keyword)</th>
+                <th style="text-align: right;">업데이트 일시</th>
+              </tr>
+            </thead>
+            <tbody id="recent-body">
+              <!-- Data will be inserted here -->
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <!-- Table Area -->
@@ -200,6 +222,7 @@
           document.getElementById('loader').style.display = 'none';
           document.getElementById('dashboard').style.display = 'grid';
           renderDashboard(result.data);
+          renderRecent(result.data);
         } else {
           showError('데이터를 불러오는데 실패했습니다: ' + result.error);
         }
@@ -278,6 +301,32 @@
             }
           }
         }
+      });
+    }
+
+    function renderRecent(data) {
+      const tbody = document.getElementById('recent-body');
+      if (!tbody) return;
+      
+      const sortedData = [...data].sort((a, b) => new Date(b.updated_at || 0) - new Date(a.updated_at || 0));
+      
+      sortedData.slice(0, 20).forEach(item => {
+        const tr = document.createElement('tr');
+        
+        let dateStr = '-';
+        if (item.updated_at) {
+          const dt = new Date(item.updated_at);
+          dateStr = dt.toLocaleString('ko-KR', { 
+            year: 'numeric', month: '2-digit', day: '2-digit', 
+            hour: '2-digit', minute: '2-digit', second: '2-digit' 
+          });
+        }
+        
+        tr.innerHTML = `
+          <td>${item.event_name}</td>
+          <td style="text-align: right; color: var(--text-muted); font-size: 0.9rem;">${dateStr}</td>
+        `;
+        tbody.appendChild(tr);
       });
     }
   </script>
