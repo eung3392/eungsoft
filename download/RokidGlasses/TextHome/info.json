@@ -1,0 +1,43 @@
+{
+    "title": {
+        "ko": "TextHome",
+        "en": "TextHome"
+    },
+    "version": "1.0.0",
+    "releaseDate": "2026-03-30",
+    "shortDescription": {
+        "ko": "Text 위주의 심플한 홈 런처 앱",
+        "en": "Text-based simple home launcher app."
+    },
+    "description": {
+        "ko": "로키드 글래스를 위한 <b>미니멀리즘 런처 앱</b>입니다.<br>기본 시스템 UI의 복잡함을 걷어내고, 최근 사용한 앱을 가장 쉽고 빠르게 실행할 수 있도록 설계되었습니다. 기본 터치를 통해 위젯을 바탕화면에 추가할수 있습니다.<b>\"사용은 터치로, 위젯의 상세 설정은 마우스로\"</b>라는 원칙 아래 최적의 사용자 경험을 제공합니다.",
+        "en": "A <b>minimalist launcher app</b> designed for Rokid Glasses.<br>Stripping away the complexity of the default system UI, it focuses on providing the fastest access to your most-used apps. You can add widgets to the home screen with basic touch. Built on the principle of <b>\"Use with touch, set with mouse.\"</b>"
+    },
+    "control": {
+        "ko": "<ul style='padding-left: 20px;'><li><b>즐겨찾기:</b> 최근 사용한 앱이 자동으로 즐겨찾기에 등록됩니다.</li><li><b>설정 모드:</b> 위젯을 보이거나 안보이게 하는 건 메뉴에서 설정이 가능합니다. 블루투스 마우스를 연결하여 위젯을 세부 편집할 수 있습니다.</li><li><b>위젯 관리:</b> 위젯을 드래그하여 위치를 조정하세요.</li></ul>",
+        "en": "<ul style='padding-left: 20px;'><li><b>Favorites:</b> Recently used apps are automatically added to favorites.</li><li><b>Setup Mode:</b> Connect a Bluetooth mouse to detailedly edit favorites and widgets.</li><li><b>Widget Management:</b> Drag widgets to adjust their positions.</li></ul>"
+    },
+    "youtubeUrl": "https://www.youtube.com/embed/Tj_MFsTgbjw",
+    "youtubeType": "1",
+    "updated": [],
+    "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TextHome_v1.0.0.apk"
+    ],
+    "images": [
+        "scr1.jpg",
+        "scr2.jpg",
+        "scr3.jpg",
+        "scr4.jpg",
+        "scr5.jpg"
+    ],
+    "tags": {
+        "ko": [
+            "홈",
+            "런처"
+        ],
+        "en": [
+            "Home",
+            "Launcher"
+        ]
+    }
+}
