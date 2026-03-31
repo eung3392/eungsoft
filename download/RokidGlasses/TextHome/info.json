@@ -19,8 +19,16 @@
     },
     "youtubeUrl": "https://www.youtube.com/embed/Tj_MFsTgbjw",
     "youtubeType": "1",
-    "updated": [],
+    "updated": [
+        {
+            "version": "1.1.0",
+            "releaseDate": "2026-03-19",
+            "ko": "더블 터치시에 서브 메뉴 닫기 추가, 배경 이미지 설정 기능 추가 : 배경 이미지를 설정할 수 있습니다. web install 메뉴에서 로키드 글래스를 연결한 후에 TextHome 배경 이미지 업로드 버튼으로 이미지를 업로드 할 수 있습니다. 배경 이미지의 사이즈는 398 x 480 에 jpg 형식 입니다.",
+            "en": "Add double tap to close sub menu, add background image setting function: You can set the background image. After connecting the Rokid Glasses in the web install menu, you can upload the image with the TextHome background image upload button. The size of the background image is 398 x 480 in jpg format."
+        }
+    ],
     "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TextHome_v1.1.0.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TextHome_v1.0.0.apk"
     ],
     "images": [

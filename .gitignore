@@ -21,4 +21,5 @@ Thumbs.db
 _agents/
 _agent/
 *.tmp
-tmp/
+tmp/
+*.mjs
