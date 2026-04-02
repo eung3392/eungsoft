@@ -1,0 +1,40 @@
+{
+    "title": {
+        "ko": "EK Word Up",
+        "en": "EK Word Up"
+    },
+    "version": "1.0.0",
+    "releaseDate": "2026-04-02",
+    "shortDescription": {
+        "ko": "고개만 까딱! Hands-Free Rokid Glasses 전용 단어장 입니다.",
+        "en": "Just nod your head! Hands-Free Rokid Glasses dedicated vocabulary book."
+    },
+    "description": {
+        "ko": "학습용 단어장 프로그램입니다. <br>기본적으로 세계수도, 영단어 500 이 들어있습니다. <br><br><b>1. 고개만 까딱! '모션 제어' 학습 (Hands-Free) 🤚🚫</b><br>스마트폰 화면을 터치할 필요가 없습니다. AR 글래스를 착용하고 고개를 오른쪽으로 살짝 기울이면 다음 카드로, 왼쪽으로 기울이면 이전 카드로 넘어갑니다. 정답 확인부터 다음 단어 이동까지 오직 모션으로 제어하세요!<br><br><b>2. 무궁무진한 확장성! '나만의 JSON 단어장' 📂</b><br>메모장으로 만든 JSON 파일만 넣으면 나만의 암기장이 완성됩니다. 다운로드의 샘플 파일을 참고하세요.  토익, 공무원 시험, 자격증 공부까지 무엇이든 가능합니다. <br><b style='color:red;'>Web Install 메뉴에서 안경과 연결한 후에 'EK Word Up' 버튼으로 데이터 JSON 파일을 전송하세요.</b><br><br><b>3. 똑똑한 학습 이어가기 (Smart Save) 📍</b><br>공부하다가 앱을 꺼도 걱정 마세요. 마지막으로 내가 어디까지 외웠는지 앱이 기억하고 있습니다. 다음에 실행할 때 이어서 바로 학습을 시작할 수 있습니다.<br><br><b>4. 암기 효과 극대화! '셔플 모드' 🔀</b><br>셔플 모드를 켜면 단어 순서가 무작위로 섞여 진짜 실력을 테스트할 수 있습니다.",
+        "en": "It's a learning vocabulary program. <br>It basically contains 500 English words for Korean, the world capital. <br><br><b>1. Just nod your head! 'Motion Control' Learning (Hands-Free) 🤚🚫</b><br>No need to touch your smartphone screen. Put on the AR glasses and tilt your head slightly to the right for the next card, or to the left for the previous card. Control everything from checking answers to moving to the next word using only your motion!<br><br><b>2. Infinite Expandability! 'My Own JSON Vocabulary Book' 📂</b><br>Just add a JSON file created with a notepad or VS Code, and your own memorization book is complete. TOEIC, civil service exams, certification studies—anything is possible. <br>Connect your glasses via the 'Web Install' menu and transfer the data JSON file using the 'EK Word Up' button.<br><br><b>3. Smart Learning Continuity (Smart Save) 📍</b><br>Don't worry if you turn off the app while studying. The app remembers how far you've memorized. You can resume studying right where you left off next time, without breaking your flow.<br><br><b>4. Maximize Memorization Effect! 'Shuffle Mode' 🔀</b><br>Turn on Shuffle Mode to mix up the word order randomly and test your real skills!"
+    },
+    "control": {
+        "ko": "<b>• 데이터 선택:</b> 'Select' 버튼을 눌러 학습할 단어장을 고릅니다. 리스트에서 내장 데이타 직접 올린 외부 파일을 모두 확인할 수 있습니다.  <br><b>Random</b> : 'Random' 스위치를 켜면 단어 순서가 무작위로 섞입니다. (꺼져 있을 경우 이전 학습 위치부터 시작). <br><b>Start</b> : 'Start' 버튼을 눌러 카드 화면으로 진입합니다",
+        "en": "<b>• Data Selection:</b> Press the 'Select' button to choose the vocabulary set to study. You can check all internal data and externally uploaded files in the list. <br><b>Random</b> : Turn on the 'Random' switch to shuffle the word order (if off, it resumes from the last learning position). <br><b>Start</b> : Press the 'Start' button to enter the card screen."
+    },
+    "youtubeUrl": "",
+    "youtubeType": "1",
+    "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKWordUp_v1.0.0.apk",
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/sample_capitals.json"
+    ],
+    "images": [
+        "scr1.jpg",
+        "scr2.jpg"
+    ],
+    "tags": {
+        "ko": [
+            "단어장",
+            "학습"
+        ],
+        "en": [
+            "vocabulary",
+            "learning"
+        ]
+    }
+}
