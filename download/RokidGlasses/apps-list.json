@@ -1,5 +1,6 @@
 {
   "apps": [
+    "ekpilot",
     "EKWordUp",
     "TextHome",
     "EKReader",
