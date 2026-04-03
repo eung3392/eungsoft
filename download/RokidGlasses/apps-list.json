@@ -1,5 +1,7 @@
 {
   "apps": [
+    "EKWordUp",
+    "TextHome",
     "EKReader",
     "EKLiveCam",
     "EKHome",
@@ -10,7 +12,6 @@
     "zoom",
     "EKArrow",
     "EKFind",
-    "MatrixVision",
-    "TextHome"
+    "MatrixVision"
   ]
 }
