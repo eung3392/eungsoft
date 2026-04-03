@@ -17,7 +17,7 @@
         "ko": "• 상하 기동 (Pitch): 고개를 위/아래로 기울여 고도를 높이거나 낮춥니다.\n• 좌우 기울기 (Roll): 고개를 좌우로 기울여 방향을 전환(Yaw)합니다. \n•터치로 목표물을 맞추세요.",
         "en": "• Pitch: Tilt your head up/down to change altitude.\n• Roll: Tilt your head left/right to turn. \n•Touch to shoot targets."
     },
-    "youtubeUrl": "",
+    "youtubeUrl": "https://www.youtube.com/embed/J4tCsptHdSs",
     "youtubeType": "1",
     "download": [
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKPilot_v0.6.0.apk"
