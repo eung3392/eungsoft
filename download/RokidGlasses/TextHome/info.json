@@ -6,8 +6,8 @@
     "version": "1.1.0",
     "releaseDate": "2026-03-30",
     "shortDescription": {
-        "ko": "Text 위주의 심플한 홈 런처 앱",
-        "en": "Text-based simple home launcher app."
+        "ko": "Text 위주의 심플한 홈 런처 앱,배경화면, 시계, 날씨, 배터리, 텍스트 위젯을 지원합니다.",
+        "en": "Text-based simple home launcher app, supports widgets, background images, clock, weather, battery, text widgets."
     },
     "description": {
         "ko": "로키드 글래스를 위한 <b>미니멀리즘 런처 앱</b>입니다.<br>기본 시스템 UI의 복잡함을 걷어내고, 최근 사용한 앱을 가장 쉽고 빠르게 실행할 수 있도록 설계되었습니다. 기본 터치를 통해 위젯을 바탕화면에 추가할수 있습니다.<b>\"사용은 터치로, 위젯의 상세 설정은 마우스로\"</b>라는 원칙 아래 최적의 사용자 경험을 제공합니다.",
