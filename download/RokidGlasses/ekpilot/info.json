@@ -10,12 +10,12 @@
         "en": "EK Pilot is an aerial mission game based on a 3D flight engine. Control by tilting your head."
     },
     "description": {
-        "ko": "EK Pilot은 3D 비행 엔진을 기반으로 한 공중 미션 게임입니다. 플레이어는 전투기 조종사가 되어 하늘을 누비며, 곳곳에 떠다니는 목표물을 격파해야 합니다.",
-        "en": "EK Pilot is an aerial mission game based on a 3D flight engine. Players take on the role of a fighter pilot, soaring through the skies and shooting down floating targets."
+        "ko": "EK Pilot은 3D 비행 엔진을 기반으로 한 공중 미션 게임입니다. 플레이어는 전투기 조종사가 되어 하늘을 누비며, 5분 이내에 곳곳에 떠다니는 목표물을 격파해야 합니다.",
+        "en": "EK Pilot is an aerial mission game based on a 3D flight engine. Players take on the role of a fighter pilot, soaring through the skies and shooting down floating targets within 5 minutes."
     },
     "control": {
-        "ko": "• 상하 기동 (Pitch): 고개를 위/아래로 기울여 고도를 높이거나 낮춥니다.\n• 좌우 기울기 (Roll): 고개를 좌우로 기울여 방향을 전환(Yaw)합니다. \n•터치로 목표물을 맞추세요.",
-        "en": "• Pitch: Tilt your head up/down to change altitude.\n• Roll: Tilt your head left/right to turn. \n•Touch to shoot targets."
+        "ko": "• 상하 기동 (Pitch): 고개를 위/아래로 기울여 고도를 높이거나 낮춥니다.\n• 좌우 기울기 (Roll): 고개를 좌우로 기울여 방향을 전환(Yaw)합니다. \n •터치로 목표물을 맞추세요.\n •터치 스와이프로 비행 속도를 변경하세요.",
+        "en": "• Pitch: Tilt your head up/down to change altitude.\n• Roll: Tilt your head left/right to turn. \n•Touch to shoot targets.\n•Touch swipe to change flight speed."
     },
     "youtubeUrl": "https://www.youtube.com/embed/J4tCsptHdSs",
     "youtubeType": "1",
