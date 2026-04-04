@@ -3,7 +3,7 @@
         "ko": "EK Pilot",
         "en": "EK Pilot"
     },
-    "version": "0.6.0",
+    "version": "0.8.0",
     "releaseDate": "2026-04-04",
     "shortDescription": {
         "ko": "EK Pilot은 3D 비행 엔진을 기반으로 한 공중 미션 게임입니다. 고개를 기울이며 조종하세요.",
@@ -19,7 +19,16 @@
     },
     "youtubeUrl": "https://www.youtube.com/embed/J4tCsptHdSs",
     "youtubeType": "1",
+    "updated": [
+        {
+            "version": "0.8.0",
+            "releaseDate": "2026-04-04",
+            "ko": "UI 수정, 게임 밸런스 조정, 미션 추가",
+            "en": "UI modification, game balance adjustment, mission addition"
+        }
+    ],
     "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKPilot_v0.8.0.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKPilot_v0.6.0.apk"
     ],
     "images": [

@@ -8,6 +8,7 @@ node_modules/
 # 빌드 결과물
 dist/
 build/
+netlify/
 
 # 운영체제 생성 파일
 .DS_Store
@@ -23,3 +24,6 @@ _agent/
 *.tmp
 tmp/
 *.mjs
+*.bat   
+*.ps1
+*.md
