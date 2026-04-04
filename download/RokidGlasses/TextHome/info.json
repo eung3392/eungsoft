@@ -5,6 +5,11 @@
     },
     "version": "1.1.0",
     "releaseDate": "2026-03-30",
+    "community_yn": "Y",
+    "community_title": {
+        "ko": "여러분이 만든 배경화면 이미지를 공유하세요.",
+        "en": "Share your background images."
+    },
     "shortDescription": {
         "ko": "Text 위주의 심플한 홈 런처 앱, 배경화면, 시계, 날씨, 배터리, 텍스트 위젯을 지원합니다.",
         "en": "Text-based simple home launcher app, supports widgets, background images, clock, weather, battery, text widgets."
