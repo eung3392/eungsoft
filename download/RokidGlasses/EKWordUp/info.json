@@ -5,9 +5,14 @@
     },
     "version": "1.0.0",
     "releaseDate": "2026-04-02",
+    "community_yn": "Y",
+    "community_title": {
+        "ko": "여러분의 단어장을 공유하세요.",
+        "en": "Share your vocabulary."
+    },
     "shortDescription": {
-        "ko": "고개만 까딱! Hands-Free Rokid Glasses 전용 단어장 입니다.",
-        "en": "Just nod your head! Hands-Free Rokid Glasses dedicated vocabulary book."
+        "ko": "고개만 까딱! Hands-Free Rokid Glasses 전용 단어장 입니다. 좋은 자료를 함께 공유해요.",
+        "en": "Just nod your head! Hands-Free Rokid Glasses dedicated vocabulary book. Let's share good resources."
     },
     "description": {
         "ko": "학습용 단어장 프로그램입니다. <br>기본적으로 세계수도, 영단어 500 이 들어있습니다. <br><br><b>1. 고개만 까딱! '모션 제어' 학습 (Hands-Free) 🤚🚫</b><br>스마트폰 화면을 터치할 필요가 없습니다. AR 글래스를 착용하고 고개를 오른쪽으로 살짝 기울이면 다음 카드로, 왼쪽으로 기울이면 이전 카드로 넘어갑니다. 정답 확인부터 다음 단어 이동까지 오직 모션으로 제어하세요!<br><br><b>2. 무궁무진한 확장성! '나만의 JSON 단어장' 📂</b><br>메모장으로 만든 JSON 파일만 넣으면 나만의 암기장이 완성됩니다. 다운로드의 샘플 파일을 참고하세요.  토익, 공무원 시험, 자격증 공부까지 무엇이든 가능합니다. <br><b style='color:red;'>Web Install 메뉴에서 안경과 연결한 후에 'EK Word Up' 버튼으로 데이터 JSON 파일을 전송하세요.</b><br><br><b>3. 똑똑한 학습 이어가기 (Smart Save) 📍</b><br>공부하다가 앱을 꺼도 걱정 마세요. 마지막으로 내가 어디까지 외웠는지 앱이 기억하고 있습니다. 다음에 실행할 때 이어서 바로 학습을 시작할 수 있습니다.<br><br><b>4. 암기 효과 극대화! '셔플 모드' 🔀</b><br>셔플 모드를 켜면 단어 순서가 무작위로 섞여 진짜 실력을 테스트할 수 있습니다.",
