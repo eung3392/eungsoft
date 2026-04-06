@@ -3,7 +3,7 @@
     "ko": "EK Find Price",
     "en": "EK Find Price (korean)"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "releaseDate": "2026-03-15",
   "shortDescription": {
     "ko": "카메라로 사진을 찍고, 네이버에서 가격을 검색합니다.",
