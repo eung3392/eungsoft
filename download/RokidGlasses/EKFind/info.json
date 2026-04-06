@@ -19,7 +19,16 @@
   },
   "youtubeUrl": "https://www.youtube.com/embed/U1XVRwjkvPk",
   "youtubeType": "1",
+  "updated": [
+    {
+      "version": "1.1.0",
+      "releaseDate": "2026-04-06",
+      "ko": "와이파이 연결이 되어야 앱이 동작합니다. 초기에 와이파이 연결이 안되어 있으면 연결을 시도합니다.",
+      "en": "The app works only when Wi-Fi is connected. If Wi-Fi is not connected initially, it will try to connect."
+    }
+  ],
   "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKFindPrice_v1.1.0.apk",
     "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKFindPrice.zip"
   ],
   "images": [
