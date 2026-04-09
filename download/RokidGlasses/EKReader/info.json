@@ -3,7 +3,7 @@
         "ko": "EKReader",
         "en": "EKReader"
     },
-    "version": "1.2.0",
+    "version": "1.2.1",
     "releaseDate": "2026-03-24",
     "shortDescription": {
         "ko": "깔끔하고 직관적인 Rokid Glasses 전용 E-book 리더기",
@@ -21,6 +21,12 @@
     "youtubeType": "1",
     "updated": [
         {
+            "version": "1.2.1",
+            "releaseDate": "2026-04-09",
+            "ko": "설정 메뉴에서의 버그를 수정하였습니다.",
+            "en": "Fixed a bug in the settings menu."
+        },
+        {
             "version": "1.2.0",
             "releaseDate": "2026-04-08",
             "ko": "이 버전은 문서에서 불필요한 공백을 지운 버전입니다.",
@@ -34,6 +40,7 @@
         }
     ],
     "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.2.1.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.2.0.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.1.0.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.0.0.apk"
