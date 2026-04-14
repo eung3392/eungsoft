@@ -1,0 +1,36 @@
+{
+    "title": {
+        "ko": "Dcim Server",
+        "en": "Dcim Server"
+    },
+    "version": "1.0.0",
+    "releaseDate": "2026-04-14",
+    "shortDescription": {
+        "ko": "로키드 글래스에서 갤러리를 웹서버로 서비스합니다.",
+        "en": ""
+    },
+    "description": {
+        "ko": "<b>Dcim Server</b>는 <b>로키드 글래스(Rokid Glass)</b>에서 갤러리를 웹서버로 서비스합니다. 케이블을 연결하지 않고 로키드 글래스에서 찍은 사진이나 영상을 웹브라우저로 탐색하고 다운 받을 수 있습니다.",
+        "en": "<b>Dcim Server</b> is a <b>Rokid Glass</b> app that serves the gallery as a web server. You can browse and download photos and videos taken with Rokid Glass through a web browser without connecting a cable."
+    },
+    "control": {
+        "ko": "앱을 실행시킨 후 와이파이를 연결하세요. 동일한 와이파이에 있는 웹브라우져로 접속하세요.",
+        "en": "After running the app, connect to Wi-Fi. Access it with a web browser on the same Wi-Fi."
+    },
+    "youtubeUrl": "",
+    "youtubeType": "1",
+    "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/DcimServer_v1.0.0.apk"
+    ],
+    "images": [
+        "scr.png"
+    ],
+    "tags": {
+        "ko": [
+            "Server"
+        ],
+        "en": [
+            "Server"
+        ]
+    }
+}
