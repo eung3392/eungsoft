@@ -1,6 +1,12 @@
 {
     "news": [
         {
+            "title": "YourVoice",
+            "url": "https://eung.pe.kr/app-detail.html?app=YourVoice&type=RokidGlasses",
+            "ko": "음성을 인식하여 화면에 실시간 자막으로 띄워주는 앱입니다.",
+            "en": "It is an app that recognizes voice and displays it as real-time subtitles on the screen."
+        },
+        {
             "title": "EKReader",
             "url": "https://eung.pe.kr/app-detail.html?app=EKReader&type=RokidGlasses",
             "ko": "Hands Free 기능 추가, 좌우로 고개를 까닥여서 페이지를 넘기는 기능이 추가되었습니다.",

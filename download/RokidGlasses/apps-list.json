@@ -1,5 +1,6 @@
 {
   "apps": [
+    "YourVoice",
     "DcimWebServer",
     "ekpilot",
     "EKWordUp",

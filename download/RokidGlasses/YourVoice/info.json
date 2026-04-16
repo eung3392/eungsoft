@@ -1,0 +1,41 @@
+{
+  "title": {
+    "ko": "너의 목소리가 보여",
+    "en": "Your Voice"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-04-16",
+  "shortDescription": {
+    "ko": "음성인식 텍스트 출력",
+    "en": "Voice Recognition Text Output"
+  },
+  "description": {
+    "ko": "<b>목소리를 자막으로 전해드립니다.</b><br><br>'너의 목소리가 보여'는 난청인 또는 먼거리, 시끄러운 환경에서 대화가 필요한 분들을 위한 <b>실시간 음성 인식 자막 전송 솔루션</b>입니다.<br>스마트폰의 마이크로 인식된 상대방의 목소리를 즉시 텍스트로 변환하여, 블루투스로 연결된 스마트 글래스(Rokid 등)나 다른 스마트 기기 화면에 실시간 자막으로 띄워줍니다.<br>핸드폰이 마이크 역할을 합니다. 예를 들어 핸드폰을 강사의 테이블에 올려 놓고, 멀리서 수업을 들을 때에 안경에 강사의 목소리가 자막으로 보입니다. 블루투스의 전송이 가능한 거리만큼 동작합니다.<br><br><b>✨ 주요 기능</b><br>• <b>실시간 음성 인식 (STT):</b> 고성능 한국어 음성 인식 엔진을 통해 실시간으로 자막을 생성합니다.<br>• <b>블루투스 자막 전송:</b> 스마트폰에서 인식된 자막을 스마트 글래스로 전송하여 안경 너머로 대화 내용을 확인할 수 있습니다.<br>• <b>스마트 글래스 최적화:</b> Rokid 등 주요 AR 글래스 기기를 자동 감지하며, 안경 환경에 최적화된 UI/UX를 제공합니다.<br>• <b>단독 실행 모드:</b> 별도의 기기 연결 없이 스마트폰 하나만으로도 실시간 자막기능을 사용할 수 있습니다.<br>• <b>사용자 맞춤 설정:</b> 자막의 글자 크기(10~100sp)와 표시 위치(상/중/하)를 자유롭게 조절할 수 있습니다.<br>• <b>백그라운드 유지:</b> 화면이 꺼진 상태에서도 음성 인식이 중단되지 않도록 최적화되어 있습니다.",
+    "en": "<b>Experience your voice as subtitles.</b><br><br>'Your Voice' is a <b>real-time voice recognition subtitle transmission solution</b> for the hearing impaired or those who need conversation in long-distance or noisy environments.<br>It instantly converts the voice recognized through the smartphone microphone into text and displays it as real-time subtitles on a Bluetooth-connected smart glass (such as Rokid) or other smart device screens.<br>The phone acts as a microphone. For example, by placing the phone on an instructor's table, you can see the instructor's voice as subtitles in your glasses even when listening to a lecture from afar. It operates within the distance where Bluetooth transmission is possible.<br><br><b>✨ Key Features</b><br>• <b>Real-time Speech Recognition (STT):</b> Generates subtitles in real-time through a high-performance speech recognition engine.<br>• <b>Bluetooth Subtitle Transmission:</b> Transfers recognized subtitles from the smartphone to smart glasses, allowing you to check conversation content through the lenses.<br>• <b>Smart Glass Optimization:</b> Automatically detects major AR glass devices such as Rokid and provides an optimized UI/UX for the glass environment.<br>• <b>Standalone Mode:</b> Allows using the real-time subtitle function with just a smartphone without a separate device connection.<br>• <b>Custom User Settings:</b> Freely adjust subtitle font size (10~100sp) and display position (Top/Middle/Bottom).<br>• <b>Background Maintenance:</b> Optimized to ensure voice recognition continues even when the screen is turned off."
+  },
+  "control": {
+    "ko": "본 앱은 <b>송신용 기기(스마트폰)</b>와 <b>수신용 기기(스마트 글래스)</b> 두 대를 연결하여 사용합니다. 양쪽에 앱을 설치해 주세요.<br><br><b>1. 준비하기</b><br>• 사용할 두 기기에서 앱을 실행하고 필요한 권한(마이크, 블루투스, 배터리 최적화 제외 등)을 모두 허용해 주세요.<br>• 두 기기가 블루투스로 미리 페어링되어 있어야 합니다.<br><br><b>2. 수신측 설정 (자막을 볼 사람 - 스마트 글래스 등)</b><br>• 메인 화면에서 <b>[수신 (Text)]</b> 버튼을 클릭합니다.<br>• '데이터 대기 중...' 상태가 되면 송신측의 연결을 기다립니다.<br><br><b>3. 송신측 설정 (말을 할 사람 - 스마트폰)</b><br>• 메인 화면에서 <b>[전송 (마이크)]</b> 버튼을 클릭합니다.<br>• 장치 목록에서 미리 페어링된 <b>수신 기기(Glasses 등)</b>를 선택합니다.<br>• 연결이 완료되면 '말씀해 주세요'라는 문구가 뜹니다.<br><br><b>4. 대화 시작</b><br>• 송신자가 스마트폰 마이크에 대고 말을 하면, 수신자의 화면에 실시간으로 자막이 표시됩니다.<br>• <b>설정(톱니바퀴 아이콘)</b>에서 자막 크기와 위치를 수신자의 시야에 맞게 조정할 수 있습니다.<br><br><b>5. 단독 실행 (기기가 하나일 때)</b><br>• 상대방의 말을 내 폰에서 바로 확인하고 싶다면, <b>[전송 (마이크)] -> [단독 실행]</b>을 선택하여 사용하세요.<br><br><b>⚠️ 원활한 사용을 위한 팁</b><br>• <b>마이크 권한:</b> 정확한 인식을 위해 마이크 권한 허용이 필수입니다.<br>• <b>배터리 최적화:</b> 대화 중 앱이 종료되지 않도록 '배터리 최적화 제외' 설정을 권장합니다.<br>• <b>환경:</b> 시끄러운 곳보다는 화자의 목소리가 잘 들리는 거리에서 사용 시 인식률이 가장 높습니다.",
+    "en": "This app connects two devices: a <b>transmitting device (smartphone)</b> and a <b>receiving device (smart glass)</b>. Please install the app on both.<br><br><b>1. Getting Ready</b><br>• Run the app on both devices and allow all necessary permissions (microphone, Bluetooth, battery optimization exclusion, etc.).<br>• Both devices must be pre-paired via Bluetooth.<br><br><b>2. Receiver Setup (The person who will see the subtitles - Smart Glass, etc.)</b><br>• Click the <b>[Receive (Text)]</b> button on the main screen.<br>• Once the status becomes 'Waiting for data...', wait for the transmitter to connect.<br><br><b>3. Transmitter Setup (The person who will speak - Smartphone)</b><br>• Click the <b>[Send (Mic)]</b> button on the main screen.<br>• Select the pre-paired <b>receiving device (Glasses, etc.)</b> from the device list.<br>• When the connection is complete, the prompt 'Please speak' will appear.<br><br><b>4. Start Conversation</b><br>• When the transmitter speaks into the smartphone microphone, subtitles will be displayed on the receiver's screen in real-time.<br>• In <b>Settings (gear icon)</b>, you can adjust the subtitle size and position to fit the receiver's field of vision.<br><br><b>5. Standalone Execution (When there is only one device)</b><br>• If you want to check the other person's speech directly on your phone, select <b>[Send (Mic)] -> [Standalone Mode]</b>.<br><br><b>⚠️ Tips for Smooth Usage</b><br>• <b>Microphone Permission:</b> Microphone permission is essential for accurate recognition.<br>• <b>Battery Optimization:</b> We recommend setting 'Exclude from battery optimization' to prevent the app from closing during conversations.<br>• <b>Environment:</b> Recognition rate is highest when used at a distance where the speaker's voice is clearly heard, rather than in very noisy places."
+  },
+  "youtubeUrl": "",
+  "youtubeType": "1",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/YourVoice_v1.0.0.apk"
+  ],
+  "images": [
+    "scr1.jpg",
+    "scr2.jpg",
+    "scr3.jpg",
+    "scr4.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "유틸",
+      "음성인식"
+    ],
+    "en": [
+      "Utility",
+      "Voice Recognition"
+    ]
+  }
+}
