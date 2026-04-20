@@ -3,7 +3,7 @@
     "ko": "로키드 커넥트 HUD 폰용",
     "en": "Rokid Connect HUD for Phone"
   },
-  "version": "1.1.0",
+  "version": "1.2.0",
   "releaseDate": "2026-03-04",
   "shortDescription": {
     "ko": "네비게이션 HUD 폰용 App, 티맵, 네이버맵",
@@ -19,7 +19,16 @@
   },
   "youtubeUrl": "https://www.youtube.com/embed/_2tB-Kn8ZxQ",
   "youtubeType": "1",
+  "updated": [
+    {
+      "version": "1.2.0",
+      "releaseDate": "2026-04-20",
+      "ko": "화면 크기 설정에서 Full Size 가 추가되었습니다. 폰의 전체화면 미러링을 지원합니다.",
+      "en": "Full Size option added to screen size settings. Supports full-screen mirroring of the phone."
+    }
+  ],
   "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/RokidConnect_F_v1.2.apk",
     "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/RokidConnect_v1.1.apk"
   ],
   "images": [

@@ -3,11 +3,11 @@
     "ko": "로키드 커넥트 HUD 안경용",
     "en": "Rokid Connect HUD for Glasses"
   },
-  "version": "1.0.0",
+  "version": "1.2.0",
   "releaseDate": "2026-03-02",
   "shortDescription": {
     "ko": "네비게이션 HUD 안경용 App, 티맵, 네이버맵",
-    "en": "Navigation HUD App for Glasses (korean ver)"
+    "en": "Navigation HUD App for Glasses"
   },
   "description": {
     "ko": "스마트폰의 네비게이션(티맵, 네이버맵 등) 화면을 <b>로키드 글래스에 HUD 형태로 표시</b>해 주는 안경 전용 앱입니다.<br>이 앱은 <b>로키드 글래스 본체</b>에 설치하며, 원활한 사용을 위해 스마트폰 전용 보조 앱인 <b>HUD 폰용 앱</b>을 함께 설치해야 합니다.",
@@ -19,7 +19,16 @@
   },
   "youtubeUrl": "https://www.youtube.com/embed/_2tB-Kn8ZxQ",
   "youtubeType": "1",
+  "updated": [
+    {
+      "version": "1.2.0",
+      "releaseDate": "2026-04-20",
+      "ko": "화면 크기 설정에서 Full Size 가 추가되었습니다. 폰의 전체화면 미러링을 지원합니다.",
+      "en": "Full Size option added to screen size settings. Supports full-screen mirroring of the phone."
+    }
+  ],
   "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/RokidGlassesHUD_F_v1.1.0.apk",
     "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/RokidGlassesHUD.apk"
   ],
   "images": [
