@@ -1,22 +1,16 @@
 {
     "news": [
         {
+            "title": "EKReader",
+            "url": "https://eung.pe.kr/app-detail.html?app=EKReader&type=RokidGlasses",
+            "ko": "목록 탐색이 개선되었습니다. 정렬, 제스쳐 스크롤 기능 추가",
+            "en": "List navigation has been improved. Added sort and gesture scroll features."
+        },
+        {
             "title": "Rokid Connect",
             "url": "https://eung.pe.kr/app-detail.html?app=RokidConnectHud&type=RokidGlasses",
             "ko": "로키드 커넥트 HUD 전체화면 미러링 지원",
             "en": "Rokid Connect HUD full screen mirroring support"
-        },
-        {
-            "title": "Rokid Connect",
-            "url": "https://eung.pe.kr/app-detail.html?app=RokidConnectHud2&type=RokidGlasses",
-            "ko": "로키드 커넥트 HUD 전체화면 미러링 지원",
-            "en": "Rokid Connect HUD full screen mirroring support"
-        },
-        {
-            "title": "EKReader",
-            "url": "https://eung.pe.kr/app-detail.html?app=EKReader&type=RokidGlasses",
-            "ko": "Hands Free 기능 추가, 좌우로 고개를 까닥여서 페이지를 넘기는 기능이 추가되었습니다.",
-            "en": "Hands Free feature added, you can turn pages by nodding your head left or right."
         }
     ]
 }
