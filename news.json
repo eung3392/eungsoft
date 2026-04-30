@@ -1,6 +1,12 @@
 {
     "news": [
         {
+            "title": "DeW Browser",
+            "url": "https://eung.pe.kr/app-detail.html?app=EKWeb&type=RokidGlasses",
+            "ko": "Rokid Glasses용 브라우저, DeW Browser 출시",
+            "en": "DeW Browser, a browser for Rokid Glasses, launched."
+        },
+        {
             "title": "EKReader",
             "url": "https://eung.pe.kr/app-detail.html?app=EKReader&type=RokidGlasses",
             "ko": "목록 탐색이 개선되었습니다. 정렬, 제스쳐 스크롤 기능 추가",
