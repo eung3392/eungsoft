@@ -19,8 +19,16 @@
     },
     "youtubeUrl": "",
     "youtubeType": "1",
-    "updated": [],
+    "updated": [
+        {
+            "version": "1.0.1",
+            "releaseDate": "2026-05-11",
+            "ko": "버그 수정, webview rendering issue",
+            "en": "bug fix, webview rendering issue"
+        }
+    ],
     "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/DewBroswer_v1.0.1.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/DewBroswer_v1.0.0.apk"
     ],
     "images": [
