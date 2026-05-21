@@ -1,22 +1,22 @@
 {
     "news": [
         {
+            "title": "web app QR Generator",
+            "url": "https://eung.pe.kr//webapp/qr-generator.html",
+            "ko": "web app QR 코드 생성기를 추가하였습니다.",
+            "en": "web app QR Generator has been added."
+        },
+        {
+            "title": "web app emoge to png converter",
+            "url": "https://eung.pe.kr//webapp/emoji_to_png_converter.html",
+            "ko": "web app 이모지에서 PNG로 변환기를 추가하였습니다.",
+            "en": "web app Emoji to PNG Converter has been added."
+        },
+        {
             "title": "Dew Browser",
             "url": "https://eung.pe.kr/app-detail.html?app=EKWeb&type=RokidGlasses",
             "ko": "Rokid Glasses용 브라우저, Dew Browser v1.0.1",
             "en": "Dew Browser, a browser for Rokid Glasses, launched. v1.0.1"
-        },
-        {
-            "title": "EKReader",
-            "url": "https://eung.pe.kr/app-detail.html?app=EKReader&type=RokidGlasses",
-            "ko": "목록 탐색이 개선되었습니다. 정렬, 제스쳐 스크롤 기능 추가",
-            "en": "List navigation has been improved. Added sort and gesture scroll features."
-        },
-        {
-            "title": "Rokid Connect",
-            "url": "https://eung.pe.kr/app-detail.html?app=RokidConnectHud&type=RokidGlasses",
-            "ko": "로키드 커넥트 HUD 전체화면 미러링 지원",
-            "en": "Rokid Connect HUD full screen mirroring support"
         }
     ]
 }
