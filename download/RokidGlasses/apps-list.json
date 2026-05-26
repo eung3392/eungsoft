@@ -1,5 +1,6 @@
 {
   "apps": [
+    "EKTimer",
     "EKWeb",
     "YourVoice",
     "DcimWebServer",

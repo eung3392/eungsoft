@@ -1,0 +1,37 @@
+{
+    "title": {
+        "ko": "EK Timer",
+        "en": "EK Timer"
+    },
+    "version": "1.0.0",
+    "releaseDate": "2026-05-26",
+    "shortDescription": {
+        "ko": "심플한 로키드 글래스용 타이머",
+        "en": "Simple timer for Rokid Glasses"
+    },
+    "description": {
+        "ko": "EK Timer는 간단하고 직관적인 타이머 앱입니다.",
+        "en": "EK Timer is a simple and intuitive timer app."
+    },
+    "control": {
+        "ko": "<h3>주요 기능 및 조작 방법</h3><p><b>1. 시간 설정</b></p><ul style='padding-left: 20px;'><li><b>분(Minutes) 추가:</b> 분 버튼을 누르면 시간이 1분씩 증가합니다 (최대 99분).</li><li><b>초(Seconds) 추가:</b> 초 버튼을 누르면 시간이 10초씩 증가합니다. (초과 시 분으로 자동 환산)</li><li><b>참고:</b> 타이머가 동작 중일 때는 시간을 변경할 수 없습니다.</li></ul><br><p><b>2. 타이머 제어</b></p><ul style='padding-left: 20px;'><li><b>시작/정지 (Start/Stop):</b> 설정된 시간 상태에서 시작 버튼을 누르면 카운트다운이 시작됩니다. 동작 중일 때 누르면 일시 정지됩니다.</li><li><b>리셋 (Reset):</b> 타이머를 초기화(00:00)하고 정지합니다.</li></ul><br><p><b>3. 종료 알림</b></p><ul style='padding-left: 20px;'><li>설정된 시간이 0이 되면 자동으로 카운트다운이 종료되며, <b>알림음(Beep)</b>과 함께 진동이 발생합니다.</li></ul><br><p><b>4. 조작 방식</b></p><ul style='padding-left: 20px;'><li><b>터치:</b> 화면상의 각 버튼을 직접 눌러 조작할 수 있습니다.</li><li><b>스와이프:</b> 각 버튼의 포커스를 이동합니다.</li></ul>",
+        "en": "<h3>Key Features and Operation</h3><p><b>1. Time Setting</b></p><ul style='padding-left: 20px;'><li><b>Add Minutes:</b> Press the Minute button to increase the time by 1 minute (up to 99 minutes).</li><li><b>Add Seconds:</b> Press the Second button to increase the time by 10 seconds. (Automatically converted to minutes if it exceeds 60 seconds)</li><li><b>Note:</b> You cannot change the time while the timer is running.</li></ul><br><p><b>2. Timer Control</b></p><ul style='padding-left: 20px;'><li><b>Start/Stop:</b> Press the Start button when time is set to begin the countdown. Press it while running to pause the timer.</li><li><b>Reset:</b> Resets the timer to 00:00 and stops it.</li></ul><br><p><b>3. End Alert</b></p><ul style='padding-left: 20px;'><li>When the set time reaches 0, the countdown ends automatically, accompanied by a <b>beep sound</b> and vibration.</li></ul><br><p><b>4. Control Methods</b></p><ul style='padding-left: 20px;'><li><b>Touch:</b> Tap each button on the screen directly to control the timer.</li><li><b>Swipe:</b> Swipe to move the focus between buttons.</li></ul>"
+    },
+    "youtubeUrl": "https://www.youtube.com/embed/TfvbHfA-2EE",
+    "youtubeType": "1",
+    "updated": [],
+    "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKTimer_v1.0.0.apk"
+    ],
+    "images": [
+        "scr1.jpg"
+    ],
+    "tags": {
+        "ko": [
+            "타이머"
+        ],
+        "en": [
+            "Timer"
+        ]
+    }
+}

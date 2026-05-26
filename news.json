@@ -1,6 +1,12 @@
 {
     "news": [
         {
+            "title": "EK Timer",
+            "url": "https://eung.pe.kr/app-detail.html?app=EKTimer&type=RokidGlasses",
+            "ko": "Rokid Glasses용 타이머, EK Timer v1.0.0",
+            "en": "EK Timer, a timer for Rokid Glasses, launched. v1.0.0"
+        },
+        {
             "title": "web app QR Generator",
             "url": "https://eung.pe.kr//webapp/qr-generator.html",
             "ko": "web app QR 코드 생성기를 추가하였습니다.",
