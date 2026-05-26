@@ -1,22 +1,16 @@
 {
     "news": [
         {
+            "title": "EK Remover",
+            "url": "https://eung.pe.kr/app-detail.html?app=EKRemover&type=RokidGlasses",
+            "ko": "Rokid Glasses용 앱 제거기, EK Remover v1.0.0",
+            "en": "EK Remover, a app uninstaller for Rokid Glasses, launched. v1.0.0"
+        },
+        {
             "title": "EK Timer",
             "url": "https://eung.pe.kr/app-detail.html?app=EKTimer&type=RokidGlasses",
             "ko": "Rokid Glasses용 타이머, EK Timer v1.0.0",
             "en": "EK Timer, a timer for Rokid Glasses, launched. v1.0.0"
-        },
-        {
-            "title": "web app QR Generator",
-            "url": "https://eung.pe.kr//webapp/qr-generator.html",
-            "ko": "web app QR 코드 생성기를 추가하였습니다.",
-            "en": "web app QR Generator has been added."
-        },
-        {
-            "title": "web app emoge to png converter",
-            "url": "https://eung.pe.kr//webapp/emoji_to_png_converter.html",
-            "ko": "web app 이모지에서 PNG로 변환기를 추가하였습니다.",
-            "en": "web app Emoji to PNG Converter has been added."
         },
         {
             "title": "Dew Browser",

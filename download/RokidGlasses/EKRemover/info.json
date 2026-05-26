@@ -1,0 +1,37 @@
+{
+    "title": {
+        "ko": "EK Remover",
+        "en": "EK Remover"
+    },
+    "version": "1.0.0",
+    "releaseDate": "2026-05-27",
+    "shortDescription": {
+        "ko": "앱 삭제 프로그램",
+        "en": "app uninstall program"
+    },
+    "description": {
+        "ko": "EK Remover는 간단하고 직관적인 앱 삭제 프로그램입니다.",
+        "en": "EK Remover is a simple and intuitive app uninstall program."
+    },
+    "control": {
+        "ko": "<h3>주요 기능 및 조작 방법</h3><p><b>설치된 앱 목록을 탐색하고 선택해서 삭제합니다.",
+        "en": "<h3>Key Features and Operation</h3><p><b>Navigate the installed apps and uninstall by selecting them."
+    },
+    "youtubeUrl": "https://www.youtube.com/embed/c0bKzjhKJVA",
+    "youtubeType": "1",
+    "updated": [],
+    "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKRemover_v1.0.0.apk"
+    ],
+    "images": [
+        "scr1.jpg"
+    ],
+    "tags": {
+        "ko": [
+            "프로그램제거"
+        ],
+        "en": [
+            "App uninstaller"
+        ]
+    }
+}
