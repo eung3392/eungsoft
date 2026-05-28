@@ -1,0 +1,34 @@
+{
+    "game": [
+        {
+            "title": "DOOM Meta Glasses Edition",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/92dce30f-e408-4ff1-870f-604103294498.png",
+            "desc": "Doom is the first-person shooter that started it all.",
+            "maker": "Timur Abdrakhimov",
+            "url": "https://timur.cool/doom"
+        },
+        {
+            "title": "Chess",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/d9e68bbb-54df-4656-aa25-63894580457b.webp",
+            "desc": "Full-color chess vs a three-level AI with all standard rules",
+            "maker": "Kevin Good",
+            "url": "https://chess-glasses.onrender.com/"
+        },
+        {
+            "title": "Block Stack",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/15ca506a-6b9d-49e0-a870-eb78b1f0e313.png",
+            "desc": "Tetris-style game for Meta Ray-Ban Display",
+            "maker": "Ikkou.jp",
+            "url": "https://ikkou.jp/MRBD/apps/block-stack/"
+        }
+    ],
+    "app": [
+        {
+            "title": "New York Times RSS",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/e8b31260-2829-4ba8-bcf7-7daf74fc4ae9.png",
+            "desc": "Read News NYT RSS Feed",
+            "maker": "kid2010",
+            "url": "https://glassesexp.v.ki/news/"
+        }
+    ]
+}
