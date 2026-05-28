@@ -20,6 +20,34 @@
             "desc": "Tetris-style game for Meta Ray-Ban Display",
             "maker": "Ikkou.jp",
             "url": "https://ikkou.jp/MRBD/apps/block-stack/"
+        },
+        {
+            "title": "Breakout",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/b31e4730-066f-4250-afed-45e7f1f4b4b6.png",
+            "desc": "Classic arcade. No monitor required.",
+            "maker": "Ikkou.jp",
+            "url": "https://ikkou.jp/MRBD/apps/breakout/"
+        },
+        {
+            "title": "Arrow Beats",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/209a4b00-4698-4d13-81f9-13342e1f4398.webp",
+            "desc": "Rhythm Game for Meta Ray-Ban Display",
+            "maker": "Treeview",
+            "url": "https://arrowbeats.treeview.studio/"
+        },
+        {
+            "title": "Poker",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/3cb13f13-9366-4d0c-9386-0590df8e050b.webp",
+            "desc": "Played entirely on-glasses with Neural Band controls.",
+            "maker": "Kevin Good",
+            "url": "https://displayholdem.onrender.com/"
+        },
+        {
+            "title": "Dino Run",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/0493fbb9-c975-445f-9450-9a972da6ff70.webp",
+            "desc": "The classic T-Rex Dino game on chrome",
+            "maker": "Shiv Bagavathy",
+            "url": "https://dino-game-rouge.vercel.app/"
         }
     ],
     "app": [
@@ -29,6 +57,27 @@
             "desc": "Read News NYT RSS Feed",
             "maker": "kid2010",
             "url": "https://glassesexp.v.ki/news/"
+        },
+        {
+            "title": "Alpha Tab",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/c2cdde08-e8c5-4d15-8d72-54b69cefe02e.png",
+            "desc": "Learn how to play on Guitar with Glasses",
+            "maker": "ArgusTab",
+            "url": "https://argustab.awfullynice.app/"
+        },
+        {
+            "title": "Holocard of Games",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/db3673ae-d3a3-421a-9628-2e980a9e3c98.webp",
+            "desc": "Browse Flat2VR games as holographic card",
+            "maker": "Jasmine Uniza",
+            "url": "https://flat2vr-holocards.pages.dev/"
+        },
+        {
+            "title": "Dino Run",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/0493fbb9-c975-445f-9450-9a972da6ff70.webp",
+            "desc": "The classic T-Rex Dino game on chrome",
+            "maker": "Shiv Bagavathy",
+            "url": "https://dino-game-rouge.vercel.app/"
         }
     ]
 }
