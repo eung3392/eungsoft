@@ -9,42 +9,42 @@
         },
         {
             "title": "Game Boy",
-            "icon": "https://herald.ascents.gg/a/boy/icon.svg",
+            "icon": "https://eung.pe.kr/assets/meta/gamboy.jpg",
             "desc": "Play classic Game Boy games on your Meta Ray-Ban Display!",
             "maker": "Ascent",
             "url": "https://herald.ascents.gg/a/boy/"
         },
         {
             "title": "NES",
-            "icon": "https://herald.ascents.gg/a/nes/icon.svg",
+            "icon": "https://eung.pe.kr/assets/meta/nes.jpg",
             "desc": "Play classic NES games on your Meta Ray-Ban Display!",
             "maker": "Ascent",
             "url": "https://herald.ascents.gg/a/nes/"
         },
         {
             "title": "SNES",
-            "icon": "https://herald.ascents.gg/a/snes/icon.svg",
+            "icon": "https://eung.pe.kr/assets/meta/snes.jpg",
             "desc": "Play classic SNES games on your Meta Ray-Ban Display!",
             "maker": "Ascent",
             "url": "https://herald.ascents.gg/a/snes/"
         },
         {
             "title": "Genesis",
-            "icon": "https://herald.ascents.gg/a/genesis/icon.svg",
+            "icon": "https://eung.pe.kr/assets/meta/genesis.jpg",
             "desc": "Play classic Genesis games on your Meta Ray-Ban Display!",
             "maker": "Ascent",
             "url": "https://herald.ascents.gg/a/genesis/"
         },
         {
             "title": "TurboGrafx-16",
-            "icon": "https://herald.ascents.gg/a/tg16/icon.svg",
+            "icon": "https://eung.pe.kr/assets/meta/tg.jpg",
             "desc": "Play classic TurboGrafx-16 games on your Meta Ray-Ban Display!",
             "maker": "Ascent",
             "url": "https://herald.ascents.gg/a/tg16/"
         },
         {
             "title": "Atari 2600",
-            "icon": "https://herald.ascents.gg/a/atari2600/icon.svg",
+            "icon": "https://eung.pe.kr/assets/meta/atari.jpg",
             "desc": "Play classic Atari 2600 games on your Meta Ray-Ban Display!",
             "maker": "Ascent",
             "url": "https://herald.ascents.gg/a/atari2600/"
@@ -137,7 +137,7 @@
     "app": [
         {
             "title": "Herald for YouTube",
-            "icon": "https://herald.ascents.gg/a/youtube/icon.svg",
+            "icon": "https://eung.pe.kr/assets/meta/youtube.jpg",
             "desc": "YouTube for the Display",
             "maker": "Ascent",
             "url": "https://herald.ascents.gg/a/youtube/"
@@ -150,29 +150,29 @@
             "url": "https://glassesexp.v.ki/news/"
         },
         {
-            "title": "Reddit",
-            "icon": "https://herald.ascents.gg/a/reddit/icon.svg",
+            "title": "Herald for Reddit",
+            "icon": "https://eung.pe.kr/assets/meta/tittok.jpg",
             "desc": "Reddit for the Display",
             "maker": "Ascent",
             "url": "https://herald.ascents.gg/a/reddit/"
         },
         {
-            "title": "Discord",
-            "icon": "https://herald.ascents.gg/a/discord/icon.svg",
+            "title": "Herald for Discord",
+            "icon": "https://eung.pe.kr/assets/meta/youtube.jpg",
             "desc": "Discord for the Display",
             "maker": "Ascent",
             "url": "https://herald.ascents.gg/a/discord/"
         },
         {
-            "title": "TikTok",
-            "icon": "https://herald.ascents.gg/a/tiktok/icon.svg",
+            "title": "Herald for TikTok",
+            "icon": "https://eung.pe.kr/assets/meta/youtube.jpg",
             "desc": "TikTok for the Display",
             "maker": "Ascent",
             "url": "https://herald.ascents.gg/a/tiktok/"
         },
         {
             "title": "Tools",
-            "icon": "https://herald.ascents.gg/a/tools/icon.svg",
+            "icon": "https://eung.pe.kr/assets/meta/youtube.jpg",
             "desc": "Tools for the Display",
             "maker": "Ascent",
             "url": "https://herald.ascents.gg/a/tools/"
