@@ -1,6 +1,12 @@
 {
     "news": [
         {
+            "title": "EK Meta",
+            "url": "https://eung.pe.kr/app-detail.html?app=EKMeta&type=RokidGlasses",
+            "ko": "Meta 글래스용 앱을 로키드에서! v1.0.0",
+            "en": "Meta glasses apps on Rokid! v1.0.0"
+        },
+        {
             "title": "EK Remover",
             "url": "https://eung.pe.kr/app-detail.html?app=EKRemover&type=RokidGlasses",
             "ko": "Rokid Glasses용 앱 제거기, EK Remover v1.0.0",

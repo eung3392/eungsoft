@@ -1,0 +1,39 @@
+{
+    "title": {
+        "ko": "EK Meta Player",
+        "en": "EK Meta Player"
+    },
+    "version": "1.0.0",
+    "releaseDate": "2026-05-29",
+    "shortDescription": {
+        "ko": "메타 디스플레이용으로 개발된 웹 앱을 Rokid Glasses에서 실행합니다.",
+        "en": "EK Meta Player is a App player for Meta Ray-Ban."
+    },
+    "description": {
+        "ko": "<b>EK Meta Player</b>는 Meta 디스플레이용으로 개발된 게임, 앱 등을 <b>Rokid Glasses</b>에서 실행할 수 있도록 도와주는 프로그램입니다.<br><br><b>[주요 기능]</b><br>• 기본적인 프로그램 목록 제공<br>• 사용자가 원하는 프로그램을 자유롭게 추가 및 관리",
+        "en": "<b>EK Meta Player</b> is a utility that helps you run games and apps developed for Meta display on <b>Rokid Glasses</b>.<br><br><b>[Key Features]</b><br>• Provides a basic, built-in program list<br>• Allows users to easily add and manage custom apps"
+    },
+    "control": {
+        "ko": "<h3>권장 사항 및 조작 방법</h3><p><b>1. 장치 연결</b><br>원활한 입력을 위해 <b>블루투스 키보드</b>와 같은 외부 장치를 연결하여 사용하는 것을 적극 권장합니다.</p><br><p><b>2. 앱 추가</b><br><b>QR 코드 스캔</b>을 통해서 새로운 앱을 간편하게 추가할 수 있습니다.</p><br><p><b>3. QR 코드 생성기</b><br>QR 코드가 필요한 경우에는 아래 링크의 생성기를 이용해 보세요.<br><a href='https://eung.pe.kr/webapp/qr-generator.html' target='_blank' style='color: #38bdf8; font-weight: bold; text-decoration: underline;'>QR코드 생성기 바로가기 &rarr;</a></p>",
+        "en": "<h3>Recommendations & Operations</h3><p><b>1. Device Connection</b><br>We highly recommend connecting external devices such as a <b>Bluetooth keyboard</b> for easier navigation.</p><br><p><b>2. Add Apps</b><br>You can quickly add custom apps by scanning a <b>QR code</b>.</p><br><p><b>3. QR Code Generator</b><br>If you need to generate a QR code, please use our online tool below:<br><a href='https://eung.pe.kr/webapp/qr-generator.html' target='_blank' style='color: #38bdf8; font-weight: bold; text-decoration: underline;'>Go to QR Code Generator &rarr;</a></p>"
+    },
+    "youtubeUrl": "https://www.youtube.com/embed/-EpusAZpA8s",
+    "youtubeType": "1",
+    "updated": [],
+    "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EK_Meta_v1.0.0.apk"
+    ],
+    "images": [
+        "scr1.jpg",
+        "scr2.jpg",
+        "scr3.jpg"
+    ],
+    "tags": {
+        "ko": [
+            "Meta"
+        ],
+        "en": [
+            "Meta"
+        ]
+    }
+}
