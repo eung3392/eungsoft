@@ -8,6 +8,48 @@
             "url": "https://timur.cool/doom"
         },
         {
+            "title": "Game Boy",
+            "icon": "https://herald.ascents.gg/a/boy/icon.svg",
+            "desc": "Play classic Game Boy games on your Meta Ray-Ban Display!",
+            "maker": "Ascent",
+            "url": "https://herald.ascents.gg/a/boy/"
+        },
+        {
+            "title": "NES",
+            "icon": "https://herald.ascents.gg/a/nes/icon.svg",
+            "desc": "Play classic NES games on your Meta Ray-Ban Display!",
+            "maker": "Ascent",
+            "url": "https://herald.ascents.gg/a/nes/"
+        },
+        {
+            "title": "SNES",
+            "icon": "https://herald.ascents.gg/a/snes/icon.svg",
+            "desc": "Play classic SNES games on your Meta Ray-Ban Display!",
+            "maker": "Ascent",
+            "url": "https://herald.ascents.gg/a/snes/"
+        },
+        {
+            "title": "Genesis",
+            "icon": "https://herald.ascents.gg/a/genesis/icon.svg",
+            "desc": "Play classic Genesis games on your Meta Ray-Ban Display!",
+            "maker": "Ascent",
+            "url": "https://herald.ascents.gg/a/genesis/"
+        },
+        {
+            "title": "TurboGrafx-16",
+            "icon": "https://herald.ascents.gg/a/tg16/icon.svg",
+            "desc": "Play classic TurboGrafx-16 games on your Meta Ray-Ban Display!",
+            "maker": "Ascent",
+            "url": "https://herald.ascents.gg/a/tg16/"
+        },
+        {
+            "title": "Atari 2600",
+            "icon": "https://herald.ascents.gg/a/atari2600/icon.svg",
+            "desc": "Play classic Atari 2600 games on your Meta Ray-Ban Display!",
+            "maker": "Ascent",
+            "url": "https://herald.ascents.gg/a/atari2600/"
+        },
+        {
             "title": "Chess",
             "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/d9e68bbb-54df-4656-aa25-63894580457b.webp",
             "desc": "Full-color chess vs a three-level AI with all standard rules",
@@ -48,15 +90,92 @@
             "desc": "The classic T-Rex Dino game on chrome",
             "maker": "Shiv Bagavathy",
             "url": "https://dino-game-rouge.vercel.app/"
+        },
+        {
+            "title": "TicTacToe",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/a68fcc86-f891-4e4f-aeef-24c38e0e3798.webp",
+            "desc": "Connect all 3 to win, Simple and Fun",
+            "maker": "Sean_Chen",
+            "url": "https://tictactoe-14i.pages.dev/"
+        },
+        {
+            "title": "Light Up (Akira)",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/6d7d0b5f-1b12-4d67-82de-f9b3b6452ea9.webp",
+            "desc": "Light up tiles puzzle game",
+            "maker": "bv49",
+            "url": "https://bv49.github.io/light-up-web-app/"
+        },
+        {
+            "title": "DameCar",
+            "icon": "https://www.damamme.com/damacar/logo.png",
+            "desc": "Dodge the obstacles!",
+            "maker": "Eric Damamme",
+            "url": "https://www.damamme.com/damacar/index.html"
+        },
+        {
+            "title": "DameVaders",
+            "icon": "https://www.damamme.com/damavaders/logo.png",
+            "desc": "Defend the galaxy!",
+            "maker": "Eric Damamme",
+            "url": "https://www.damamme.com/damavaders/index.html"
+        },
+        {
+            "title": "Brass Wings",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/c7db044f-cc52-4cf3-845e-ccb790bee382.webp",
+            "desc": "Tiny steampunk flight game - Webapp",
+            "maker": "https://carloscrespomacaya.com/",
+            "url": "https://brasswings-webapp.pages.dev/play?src=landing"
+        },
+        {
+            "title": "MicroCiv",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/947ca182-6a32-4cd5-9f15-d7ead768415f.webp",
+            "desc": "Pinch & explore a 4X civ on your face.",
+            "maker": "Kevin Good",
+            "url": "https://microciv.onrender.com/"
         }
     ],
     "app": [
+        {
+            "title": "Herald for YouTube",
+            "icon": "https://herald.ascents.gg/a/youtube/icon.svg",
+            "desc": "YouTube for the Display",
+            "maker": "Ascent",
+            "url": "https://herald.ascents.gg/a/youtube/"
+        },
         {
             "title": "New York Times RSS",
             "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/e8b31260-2829-4ba8-bcf7-7daf74fc4ae9.png",
             "desc": "Read News NYT RSS Feed",
             "maker": "kid2010",
             "url": "https://glassesexp.v.ki/news/"
+        },
+        {
+            "title": "Reddit",
+            "icon": "https://herald.ascents.gg/a/reddit/icon.svg",
+            "desc": "Reddit for the Display",
+            "maker": "Ascent",
+            "url": "https://herald.ascents.gg/a/reddit/"
+        },
+        {
+            "title": "Discord",
+            "icon": "https://herald.ascents.gg/a/discord/icon.svg",
+            "desc": "Discord for the Display",
+            "maker": "Ascent",
+            "url": "https://herald.ascents.gg/a/discord/"
+        },
+        {
+            "title": "TikTok",
+            "icon": "https://herald.ascents.gg/a/tiktok/icon.svg",
+            "desc": "TikTok for the Display",
+            "maker": "Ascent",
+            "url": "https://herald.ascents.gg/a/tiktok/"
+        },
+        {
+            "title": "Tools",
+            "icon": "https://herald.ascents.gg/a/tools/icon.svg",
+            "desc": "Tools for the Display",
+            "maker": "Ascent",
+            "url": "https://herald.ascents.gg/a/tools/"
         },
         {
             "title": "Alpha Tab",
@@ -73,11 +192,18 @@
             "url": "https://flat2vr-holocards.pages.dev/"
         },
         {
-            "title": "Dino Run",
-            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/0493fbb9-c975-445f-9450-9a972da6ff70.webp",
-            "desc": "The classic T-Rex Dino game on chrome",
-            "maker": "Shiv Bagavathy",
-            "url": "https://dino-game-rouge.vercel.app/"
+            "title": "DamamMap",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/09b1706a-e262-4f66-aa03-4deff45eabe6.webp",
+            "desc": "GPS foot, bike or car",
+            "maker": "Eric Damamme",
+            "url": "https://www.damamme.com/damammap/index.html"
+        },
+        {
+            "title": "DamamMath",
+            "icon": "https://timurbucket.ams3.digitaloceanspaces.com/icons/e82cfe5a-0a0a-481d-a2ac-5509e8e75c1b.webp",
+            "desc": "Calculator, math",
+            "maker": "Eric Damamme",
+            "url": "https://www.damamme.com/damammath/index.html"
         }
     ]
 }
