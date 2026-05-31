@@ -3,7 +3,7 @@
         "ko": "Dew Browser",
         "en": "Dew Browser"
     },
-    "version": "1.0.1",
+    "version": "1.1.1",
     "releaseDate": "2026-04-27",
     "shortDescription": {
         "ko": "깔끔하고 직관적인 Rokid Glasses 전용 웹 브라우저",
@@ -21,6 +21,12 @@
     "youtubeType": "1",
     "updated": [
         {
+            "version": "1.1.1",
+            "releaseDate": "2026-06-01",
+            "ko": "폰마우스 연결 없이 사용할 수 있게 하였습니다. 폰마우스 연결시 취소를 누르고 설정에서 폰마우스 설정을 해제하면 블루투스 마우스 또는 키보드를 통해 사용이 가능합니다.",
+            "en": "Now you can use the browser without connecting to the phone mouse. If you cancel the phone mouse connection and disable the phone mouse setting in the settings, you can use it via a Bluetooth mouse or keyboard."
+        },
+        {
             "version": "1.0.1",
             "releaseDate": "2026-05-11",
             "ko": "버그 수정, webview rendering issue",
@@ -28,6 +34,7 @@
         }
     ],
     "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/DewBroswer_v1.1.1.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/DewBroswer_v1.0.1.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/DewBroswer_v1.0.0.apk"
     ],

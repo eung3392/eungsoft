@@ -7,22 +7,10 @@
             "en": "Meta glasses apps on Rokid! v1.0.0"
         },
         {
-            "title": "EK Remover",
-            "url": "https://eung.pe.kr/app-detail.html?app=EKRemover&type=RokidGlasses",
-            "ko": "Rokid Glasses용 앱 제거기, EK Remover v1.0.0",
-            "en": "EK Remover, a app uninstaller for Rokid Glasses, launched. v1.0.0"
-        },
-        {
-            "title": "EK Timer",
-            "url": "https://eung.pe.kr/app-detail.html?app=EKTimer&type=RokidGlasses",
-            "ko": "Rokid Glasses용 타이머, EK Timer v1.0.0",
-            "en": "EK Timer, a timer for Rokid Glasses, launched. v1.0.0"
-        },
-        {
             "title": "Dew Browser",
             "url": "https://eung.pe.kr/app-detail.html?app=EKWeb&type=RokidGlasses",
-            "ko": "Rokid Glasses용 브라우저, Dew Browser v1.0.1",
-            "en": "Dew Browser, a browser for Rokid Glasses, launched. v1.0.1"
+            "ko": "Rokid Glasses용 브라우저, Dew Browser v1.1.1",
+            "en": "Dew Browser, a browser for Rokid Glasses, launched. v1.1.1"
         }
     ]
 }
