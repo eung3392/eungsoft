@@ -23,8 +23,8 @@
         {
             "version": "1.1.1",
             "releaseDate": "2026-06-01",
-            "ko": "폰마우스 연결 없이 사용할 수 있게 하였습니다. 폰마우스 연결시 취소를 누르고 설정에서 폰마우스 설정을 해제하면 블루투스 마우스 또는 키보드를 통해 사용이 가능합니다.",
-            "en": "Now you can use the browser without connecting to the phone mouse. If you cancel the phone mouse connection and disable the phone mouse setting in the settings, you can use it via a Bluetooth mouse or keyboard."
+            "ko": "폰마우스 연결 없이 사용할 수 있게 하였습니다. 폰마우스 연결시 취소를 누르고 설정에서 폰마우스 설정을 해제하면 블루투스 마우스 또는 키보드를 통해 사용이 가능합니다. <br> 참고로, 폰 연결을 안하면 AI 요약 기능, 이미지 다운로드, URL 전송 등의 기능은 사용할 수 없습니다.",
+            "en": "Now you can use the browser without connecting to the phone mouse. If you cancel the phone mouse connection and disable the phone mouse setting in the settings, you can use it via a Bluetooth mouse or keyboard. <br> By the way, if you don't connect your phone, you can't use features like AI summary, image download, and URL transfer."
         },
         {
             "version": "1.0.1",
