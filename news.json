@@ -11,6 +11,12 @@
             "url": "https://eung.pe.kr/app-detail.html?app=EKWeb&type=RokidGlasses",
             "ko": "Rokid Glasses용 브라우저, Dew Browser v1.1.1",
             "en": "Dew Browser, a browser for Rokid Glasses, launched. v1.1.1"
+        },
+        {
+            "title": "Notify Forward",
+            "url": "https://eung.pe.kr/app-detail.html?app=notifyForward&type=Android",
+            "ko": "LTE 스마트워치를 위한 알림 전달 앱, Notify Forward v1.0.0",
+            "en": "Notify Forward, an app for forwarding notifications to LTE smartwatches, launched. v1.0.0"
         }
     ]
 }

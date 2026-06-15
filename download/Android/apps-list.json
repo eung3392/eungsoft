@@ -1,5 +1,6 @@
 {
   "apps": [
+    "notifyForward",
     "EKBookScan",
     "eungTableClock",
     "imageResize"

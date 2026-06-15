@@ -1,0 +1,36 @@
+{
+    "title": {
+        "ko": "알림 전달",
+        "en": "Notify Forward"
+    },
+    "version": "1.0.0",
+    "releaseDate": "2026-06-15",
+    "shortDescription": {
+        "ko": "전화, 문자, 카카오톡 알림 메시지를 문자로 전달",
+        "en": "Forward notification messages for phone calls, SMS, and KakaoTalk via text message."
+    },
+    "description": {
+        "ko": "<b>알림 전달</b>은 전화, 문자, 카카오톡과 같은 앱의 알림을 지정된 번호의 <b>문자 메시지</b>로 자동 전달해 주는 유용한 앱입니다. 중요한 알림을 놓치지 않고 실시간으로 받아보세요.<br><b>이 앱을 만든 이유는</b> 유심칩이 지원되는 LTE 스마트 워치를 구입하게 되었는데, 핸드폰이 멀리 떨어진 환경에서도 전화,문자,카카오톡의 알림을 받고 싶어서 개인적으로 사용하려고 만들었습니다. 문자로 내용을 전달하기 때문에 문자 어플에 기록이 남으며, 문자 메시지 요금이 발생합니다. (저는 문자 무제한 요금제라 부담없이 사용중입니다.)",
+        "en": "Notify Forward is a useful app that automatically forwards notification messages from apps such as phone calls, SMS, and KakaoTalk as text messages to a specified number. Never miss an important notification and receive it in real-time.<br><b>The reason I created this app is</b> because I purchased an LTE smartwatch that supports a SIM card, and I wanted to receive notifications for phone calls, SMS, and KakaoTalk even when my phone was far away. Because the content is delivered via text message, a record remains in the messaging app and SMS charges are incurred. (I am using it without any burden because I have an unlimited text messaging plan.)"
+    },
+    "control": {
+        "ko": "<ol style='padding-left: 20px;'><li><b>알림 접근 권한을 설정합니다.</li><li><b>전달 받을 전화번호를 입력합니다.</b></li></ol>",
+        "en": "<ol style='padding-left: 20px;'><li><b>Set Notification Access Permission.</li><li><b>Enter the phone number to receive notifications.</b></li></ol>"
+    },
+    "youtubeUrl": "",
+    "youtubeType": "1",
+    "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/NotifyForward_v1.0.0.apk"
+    ],
+    "images": [
+        "scr1.jpg"
+    ],
+    "tags": {
+        "ko": [
+            "알림"
+        ],
+        "en": [
+            "Notify"
+        ]
+    }
+}
