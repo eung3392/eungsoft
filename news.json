@@ -1,22 +1,10 @@
 {
     "news": [
         {
-            "title": "EK Meta",
-            "url": "https://eung.pe.kr/app-detail.html?app=EKMeta&type=RokidGlasses",
-            "ko": "Meta 글래스용 앱을 로키드에서! v1.0.0",
-            "en": "Meta glasses apps on Rokid! v1.0.0"
-        },
-        {
-            "title": "Dew Browser",
-            "url": "https://eung.pe.kr/app-detail.html?app=EKWeb&type=RokidGlasses",
-            "ko": "Rokid Glasses용 브라우저, Dew Browser v1.1.1",
-            "en": "Dew Browser, a browser for Rokid Glasses, launched. v1.1.1"
-        },
-        {
-            "title": "Notify Forward",
-            "url": "https://eung.pe.kr/app-detail.html?app=notifyForward&type=Android",
-            "ko": "LTE 스마트워치를 위한 알림 전달 앱, Notify Forward v1.0.0",
-            "en": "Notify Forward, an app for forwarding notifications to LTE smartwatches, launched. v1.0.0"
+            "title": "문제풀이",
+            "url": "https://blog.naver.com/73s/224324211751",
+            "ko": "유튜버 테크몽 님의 문제풀이 앱에 대하여",
+            "en": "About Youtube channel Techmon's exam solver"
         }
     ]
 }
