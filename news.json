@@ -1,6 +1,12 @@
 {
     "news": [
         {
+            "title": "펜과의 대화",
+            "url": "https://eung.pe.kr/app-detail.html?app=TalkWithPen&type=RokidGlasses",
+            "ko": "로키드 글래스용 펜과의 대화 v1.0.0",
+            "en": "Rokid Glasses' Talk with Pen v1.0.0"
+        },
+        {
             "title": "문제풀이",
             "url": "https://blog.naver.com/73s/224324211751",
             "ko": "유튜버 테크몽 님의 문제풀이 앱에 대하여",
