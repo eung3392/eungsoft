@@ -13,6 +13,18 @@
             "en": "Rokid Glasses' Gemini Text Translation v1.0.0"
         },
         {
+            "title": "AI Web Editor",
+            "url": "https://eung.pe.kr/pub_ai/index.html",
+            "ko": "AI 기반의 웹 에디터, 무제한 바이브 코딩",
+            "en": "AI-based web editor, unlimited vibe coding"
+        },
+        {
+            "title": "Subtitle generator",
+            "url": "https://eung.pe.kr/webapp/auto-subtitle.html",
+            "ko": "AI 기반의 동영상 자막 생성기",
+            "en": "AI-based video subtitle generator"
+        },
+        {
             "title": "문제풀이",
             "url": "https://blog.naver.com/73s/224324211751",
             "ko": "유튜버 테크몽 님의 문제풀이 앱에 대하여",
