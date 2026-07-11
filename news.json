@@ -1,16 +1,10 @@
 {
     "news": [
         {
-            "title": "펜과의 대화",
-            "url": "https://eung.pe.kr/app-detail.html?app=TalkWithPen&type=RokidGlasses",
-            "ko": "로키드 글래스용 펜과의 대화 v1.0.0",
-            "en": "Rokid Glasses' Talk with Pen v1.0.0"
-        },
-        {
-            "title": "Gemini 텍스트 번역",
-            "url": "https://eung.pe.kr/app-detail.html?app=TransG&type=RokidGlasses",
-            "ko": "로키드 글래스용 Gemini 텍스트 번역 v1.0.0",
-            "en": "Rokid Glasses' Gemini Text Translation v1.0.0"
+            "title": "AI 에디터",
+            "url": "https://eung.pe.kr/webapp/ai-editor",
+            "ko": "글쓰기를 도와줄 AI 에디터",
+            "en": "AI Editor to help with writing"
         },
         {
             "title": "Subtitle generator",
