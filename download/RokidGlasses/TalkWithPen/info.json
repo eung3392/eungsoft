@@ -23,8 +23,8 @@
         {
             "version": "1.1.0",
             "releaseDate": "2026-07-22",
-            "ko": "Gemini Model 최신 버전 업데이트",
-            "en": "Gemini Model latest version update"
+            "ko": "Gemini Model 최신 버전 업데이트, gemini-3.5-flash-lite (lite), gemini-3.6-flash (latest), gemini-3.1-pro (high-resolution/slow)",
+            "en": "Gemini Model latest version update, gemini-3.5-flash-lite (lite), gemini-3.6-flash (latest), gemini-3.1-pro (high-resolution/slow)"
         }
     ],
     "download": [
