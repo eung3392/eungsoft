@@ -3,7 +3,7 @@
         "ko": "펜과의 대화",
         "en": "Talk with Pen"
     },
-    "version": "1.0.0",
+    "version": "1.1.0",
     "releaseDate": "2026-06-24",
     "shortDescription": {
         "ko": "펜으로 질문을 작성하고 Gemini 답변을 받으세요.",
@@ -19,7 +19,16 @@
     },
     "youtubeUrl": "https://www.youtube.com/embed/auPHeD_o5wI",
     "youtubeType": "1",
+    "updated": [
+        {
+            "version": "1.1.0",
+            "releaseDate": "2026-07-22",
+            "ko": "Gemini Model 최신 버전 업데이트",
+            "en": "Gemini Model latest version update"
+        }
+    ],
     "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TalkWidhPen_v1.1.0.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TalkWidhPen_v1.0.0.apk"
     ],
     "images": [

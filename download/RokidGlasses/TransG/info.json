@@ -3,7 +3,7 @@
         "ko": "Gemini 텍스트 번역",
         "en": "Gemini Text Translate"
     },
-    "version": "1.0.1",
+    "version": "1.2.0",
     "releaseDate": "2026-06-23",
     "shortDescription": {
         "ko": "Gemini 기반의 온라인 텍스트 번역 애플리케이션입니다",
@@ -19,6 +19,12 @@
     },
     "updated": [
         {
+            "version": "1.2.0",
+            "releaseDate": "2026-07-22",
+            "ko": "Gemini Model 최신 버전 업데이트",
+            "en": "Gemini Model latest version update"
+        },
+        {
             "version": "1.0.1",
             "releaseDate": "2026-06-24",
             "ko": "번역 결과가 모두 시스템 언어로 표현되도록 수정",
@@ -28,6 +34,7 @@
     "youtubeUrl": "https://www.youtube.com/embed/MucO4pWov7s",
     "youtubeType": "1",
     "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TransG_v1.2.0.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TransG_v1.0.1.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TransG_v1.0.0.apk"
     ],
