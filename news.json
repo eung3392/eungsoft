@@ -9,14 +9,14 @@
         {
             "title": "Gemini 텍스트 번역",
             "url": "https://eung.pe.kr/app-detail.html?app=TransG&type=RokidGlasses",
-            "ko": "로키드 글래스용 Gemini 텍스트 번역 v1.0.0",
-            "en": "Rokid Glasses' Gemini Text Translation v1.0.0"
+            "ko": "로키드 글래스용 Gemini 텍스트 번역 v1.2.0",
+            "en": "Rokid Glasses' Gemini Text Translation v1.2.0"
         },
         {
-            "title": "Subtitle generator",
-            "url": "https://eung.pe.kr/webapp/auto-subtitle.html",
-            "ko": "AI 기반의 동영상 자막 생성기",
-            "en": "AI-based video subtitle generator"
+            "title": "AI 에디터",
+            "url": "https://eung.pe.kr/webapp/ai-editor",
+            "ko": "글쓰기를 도와줄 AI 에디터",
+            "en": "AI Editor to help with writing"
         }
     ]
 }
