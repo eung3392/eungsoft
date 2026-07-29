@@ -1,5 +1,6 @@
 {
   "apps": [
+    "EKSimpleHome",
     "notifyForward",
     "EKBookScan",
     "eungTableClock",
