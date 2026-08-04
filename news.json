@@ -1,10 +1,10 @@
 {
     "news": [
         {
-            "title": "펜과의 대화",
-            "url": "https://eung.pe.kr/app-detail.html?app=TalkWithPen&type=RokidGlasses",
-            "ko": "로키드 글래스용 펜과의 대화 v1.1.0",
-            "en": "Rokid Glasses' Talk with Pen v1.1.0"
+            "title": "EK Reader",
+            "url": "https://eung.pe.kr/app-detail.html?app=EKReader&type=RokidGlasses",
+            "ko": "Hi Rokid App 을 이용한 도서 전송 기능 추가 v1.5.0",
+            "en": "Add file upload feature via Hi Rokid App v1.5.0"
         },
         {
             "title": "Gemini 텍스트 번역",

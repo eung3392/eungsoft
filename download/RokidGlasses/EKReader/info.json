@@ -3,7 +3,7 @@
         "ko": "EKReader",
         "en": "EKReader"
     },
-    "version": "1.4.0",
+    "version": "1.5.0",
     "releaseDate": "2026-03-24",
     "shortDescription": {
         "ko": "깔끔하고 직관적인 Rokid Glasses 전용 E-book 리더기",
@@ -20,6 +20,12 @@
     "youtubeUrl": "",
     "youtubeType": "1",
     "updated": [
+        {
+            "version": "1.5.0",
+            "releaseDate": "2026-08-04",
+            "ko": "Hi Rokid App 의 도구상자 - 안경앱 관리 - 상단의 폴더 아이콘 - 안경으로 파일 올리기 기능을 이용해서 도서를 올릴 수 있도록 추가하였습니다.",
+            "en": "Add file upload feature via Hi Rokid App's Toolbox - Manage Glass Apps - Folder icon at the top - Upload file to glasses."
+        },
         {
             "version": "1.4.0",
             "releaseDate": "2026-04-24",
@@ -52,6 +58,7 @@
         }
     ],
     "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.5.0.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.4.0.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.3.0.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.2.1.apk",
