@@ -19,7 +19,16 @@
     },
     "youtubeUrl": "https://www.youtube.com/embed/1am2LBCuH-Q",
     "youtubeType": "1",
+    "updated": [
+        {
+            "version": "1.1.0",
+            "releaseDate": "2026-08-07",
+            "ko": "채널 이동시 버그 수정",
+            "en": "Fix bug when switching channels"
+        }
+    ],
     "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKWorldRadio_v1.1.0.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKWorldRadio_v1.0.0.apk"
     ],
     "images": [
