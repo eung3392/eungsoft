@@ -1,16 +1,16 @@
 {
     "news": [
         {
+            "title": "EK 월드 라디오",
+            "url": "https://eung.pe.kr/app-detail.html?app=EKWorldRadio&type=RokidGlasses",
+            "ko": "전 세계 라디오 채널 추가 v1.0.0",
+            "en": "Add global radio stations v1.0.0"
+        },
+        {
             "title": "EK Reader",
             "url": "https://eung.pe.kr/app-detail.html?app=EKReader&type=RokidGlasses",
             "ko": "Hi Rokid App 을 이용한 도서 전송 기능 추가 v1.5.0",
             "en": "Add file upload feature via Hi Rokid App v1.5.0"
-        },
-        {
-            "title": "Gemini 텍스트 번역",
-            "url": "https://eung.pe.kr/app-detail.html?app=TransG&type=RokidGlasses",
-            "ko": "로키드 글래스용 Gemini 텍스트 번역 v1.2.0",
-            "en": "Rokid Glasses' Gemini Text Translation v1.2.0"
         },
         {
             "title": "AI 에디터",
