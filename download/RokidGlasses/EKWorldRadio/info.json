@@ -23,8 +23,8 @@
         {
             "version": "2.0.0",
             "releaseDate": "2026-08-09",
-            "ko": "즐겨찾기 기능 추가, 볼륨 조절 추가 : Hi Rokid 앱의 터치패드 기능을 이용해서 즐겨찾기를 추가하고, 볼륨을 조절할 수 있습니다.",
-            "en": "Add favorite feature, volume control : You can add favorites and adjust the volume using the touchpad feature of the Hi Rokid app."
+            "ko": "지도를 클릭해서 채널 이동, 즐겨찾기 기능 추가, 볼륨 조절 추가 : Hi Rokid 앱의 터치패드 기능을 이용해서 즐겨찾기를 추가하고, 볼륨을 조절할 수 있습니다.",
+            "en": "Click on the map to change channels, add favorite feature, volume control : You can add favorites and adjust the volume using the touchpad feature of the Hi Rokid app."
         },
         {
             "version": "1.1.0",
