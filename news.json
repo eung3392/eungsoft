@@ -1,22 +1,22 @@
 {
     "news": [
         {
-            "title": "EK 월드 라디오",
-            "url": "https://eung.pe.kr/app-detail.html?app=EKWorldRadio&type=RokidGlasses",
-            "ko": "즐겨찾기, 볼륨조절, 기능 업데이트 v2.0.0",
-            "en": "Add favorites, volume control, feature updates v2.0.0"
-        },
-        {
-            "title": "EK Reader",
-            "url": "https://eung.pe.kr/app-detail.html?app=EKReader&type=RokidGlasses",
-            "ko": "Hi Rokid App 을 이용한 도서 전송 기능 추가 v1.5.0",
-            "en": "Add file upload feature via Hi Rokid App v1.5.0"
-        },
-        {
             "title": "AI 에디터",
             "url": "https://eung.pe.kr/webapp/ai-editor",
-            "ko": "글쓰기를 도와줄 AI 에디터",
-            "en": "AI Editor to help with writing"
+            "ko": "기능 업데이트 : 사진, 표, 코드블럭, 템플릿 등 기능 추가",
+            "en": "Add image, table, code block, template, etc"
+        },
+        {
+            "title": "그래픽",
+            "url": "https://eung.pe.kr/webapp/batch-image-editor",
+            "ko": "이미지 일괄 편집",
+            "en": "Batch image editor"
+        },
+        {
+            "title": "Image To HTML",
+            "url": "https://eung.pe.kr/webapp/image-to-html",
+            "ko": "이미지를 HTML로 퍼블리싱 마크업",
+            "en": "Publish images as HTML markup"
         }
     ]
 }
