@@ -1,22 +1,16 @@
 {
     "news": [
         {
+            "title": "EKPodcast",
+            "url": "https://eung.pe.kr/app-detail.html?app=EKPodcast&type=RokidGlasses",
+            "ko": "Rokid Glasses 전용 팟캐스트 플레이어 출시",
+            "en": "Rokid Glasses Exclusive Podcast Player Released"
+        },
+        {
             "title": "EK 월드 라디오",
             "url": "https://eung.pe.kr/app-detail.html?app=EKWorldRadio&type=RokidGlasses",
             "ko": "즐겨찾기, 볼륨조절, 기능 업데이트 v2.0.0",
             "en": "Add favorites, volume control, feature updates v2.0.0"
-        },
-        {
-            "title": "EK Reader",
-            "url": "https://eung.pe.kr/app-detail.html?app=EKReader&type=RokidGlasses",
-            "ko": "Hi Rokid App 을 이용한 도서 전송 기능 추가 v1.5.0",
-            "en": "Add file upload feature via Hi Rokid App v1.5.0"
-        },
-        {
-            "title": "AI 에디터",
-            "url": "https://eung.pe.kr/webapp/ai-editor",
-            "ko": "글쓰기를 도와줄 AI 에디터",
-            "en": "AI Editor to help with writing"
         }
     ]
 }

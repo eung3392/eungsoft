@@ -1,0 +1,38 @@
+{
+    "title": {
+        "ko": "EK PodCast",
+        "en": "EK PodCast"
+    },
+    "version": "1.0.0",
+    "releaseDate": "2026-08-29",
+    "shortDescription": {
+        "ko": "깔끔하고 직관적인 Rokid Glasses 전용 PodCast 플레이어",
+        "en": "Clean and intuitive PodCast player app for Rokid Glasses."
+    },
+    "description": {
+        "ko": "EK Podcast는 Rokid Glasses 전용 팟캐스트 플레이어 애플리케이션입니다.<br><br><b>주요 기능 및 특징</b><br>• <b>다양한 카테고리:</b> 뉴스, 코미디, 비즈니스, 기술, 교육, 건강 & 피트니스, 트루크라임, 키즈 & 가족 등 다양한 주제의 팟캐스트 채널을 손쉽게 탐색할 수 있습니다.<br>• <b>이어듣기 지원:</b> 최근 청취했던 에피소드와 재생 위치를 기억하여 앱 재실행 시 메인 상단 카드에서 즉시 이어서 청취할 수 있습니다.<br>• <b>직관적인 플레이어:</b> 앨범 커버, 에피소드 제목, 실시간 프로그레스 바, 10초 전/후 탐색 컨트롤을 제공합니다.<br>• <b>스마트글래스 최적화 UI:</b> Rokid Glasses 환경에 맞춘 직관적인 카드형 레이아웃과 높은 가독성의 시각 디자인을 적용하였습니다.",
+        "en": "EK Podcast is a podcast player application designed specifically for Rokid Glasses.<br><br><b>Key Features</b><br>• <b>Diverse Categories:</b> Easily browse podcasts across various topics including News, Comedy, Business, Technology, Education, Health & Fitness, True Crime, and Kids & Family.<br>• <b>Resume Playback:</b> Remembers your last listened episode and position so you can resume listening instantly from the top card on main screen.<br>• <b>Intuitive Player:</b> Displays album cover, episode title, real-time progress bar, 10-second seek buttons.<br>• <b>Smart Glasses UI Optimization:</b> Features a high-contrast, clean card UI tailored for Rokid Glasses."
+    },
+    "control": {
+        "ko": "<ul style='padding-left: 20px;'><li><b>목록 탐색 & 선택:</b> 안경 우측 다리를 스와이프하여 카테고리 및 에피소드 목록을 탐색하고, 터치하여 선택 및 재생합니다.</li><li><b>재생 / 일시정지:</b> 플레이어 화면 하단의 재생/일시정지 버튼을 터치하여 오디오 재생 상태를 전환합니다.</li><li><b>10초 전/후 이동:</b> 하단의 탐색 버튼(↺ / ↻)을 터치하거나 제스처를 통해 10초 단위로 구절을 건너뜁니다.</li><li><b>이어듣기:</b> 메인 화면 최상단의 '이어듣기' 영역을 터치하여 직전에 듣던 에피소드를 이어서 감상합니다.</li></ul>",
+        "en": "<ul style='padding-left: 20px;'><li><b>Browse & Select:</b> Swipe on the right temple of the glasses to navigate categories and episode lists, then touch to select and play.</li><li><b>Play / Pause:</b> Touch the central play/pause button on the player screen to control audio playback.</li><li><b>10s Seek (Forward/Backward):</b> Touch the rewind (↺) or fast-forward (↻) buttons to skip 10 seconds.</li><li><b>Resume Playback:</b> Touch the 'Resume Playback' card at the top of the main menu to immediately continue listening to your previous episode.</li></ul>"
+    },
+    "youtubeUrl": "https://www.youtube.com/embed/VTIzVZUVNaE",
+    "youtubeType": "1",
+    "updated": [],
+    "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EK_Podcast_v1.0.0.apk"
+    ],
+    "images": [
+        "scr1.jpg",
+        "scr2.jpg"
+    ],
+    "tags": {
+        "ko": [
+            "팟캐스트"
+        ],
+        "en": [
+            "podcast"
+        ]
+    }
+}
