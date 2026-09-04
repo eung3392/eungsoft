@@ -1,16 +1,22 @@
 {
     "news": [
         {
-            "title": "AI 에디터",
-            "url": "https://eung.pe.kr/webapp/ai-editor",
-            "ko": "기능 업데이트 : 사진, 표, 코드블럭, 템플릿 등 기능 추가",
-            "en": "Add image, table, code block, template, etc"
+            "title": "EKPodcast",
+            "url": "https://eung.pe.kr/app-detail.html?app=EKPodcast&type=RokidGlasses",
+            "ko": "Rokid Glasses 전용 팟캐스트 플레이어 출시",
+            "en": "Rokid Glasses Exclusive Podcast Player Released"
         },
         {
             "title": "그래픽",
-            "url": "https://eung.pe.kr/webapp/image-slice",
-            "ko": "이미지 분할하기",
-            "en": "Image slice"
+            "url": "https://eung.pe.kr/webapp/batch-image-editor",
+            "ko": "이미지 일괄 편집",
+            "en": "Batch image editor"
+        },
+        {
+            "title": "Image To HTML",
+            "url": "https://eung.pe.kr/webapp/image-to-html",
+            "ko": "이미지를 HTML로 퍼블리싱 마크업",
+            "en": "Publish images as HTML markup"
         }
     ]
 }
