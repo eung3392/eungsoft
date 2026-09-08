@@ -3,7 +3,7 @@
         "ko": "EK PodCast",
         "en": "EK PodCast"
     },
-    "version": "1.0.0",
+    "version": "1.1.0",
     "releaseDate": "2026-08-29",
     "shortDescription": {
         "ko": "깔끔하고 직관적인 Rokid Glasses 전용 PodCast 플레이어",
@@ -19,8 +19,16 @@
     },
     "youtubeUrl": "https://www.youtube.com/embed/VTIzVZUVNaE",
     "youtubeType": "1",
-    "updated": [],
+    "updated": [
+        {
+            "version": "1.1.0",
+            "releaseDate": "2026-09-08",
+            "ko": "방송이 안되던 채널 문제 수정",
+            "en": "Fixed an issue where some channels were not broadcasting."
+        }
+    ],
     "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EK_Podcast_v1.1.0.apk",
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EK_Podcast_v1.0.0.apk"
     ],
     "images": [
