@@ -1,6 +1,12 @@
 {
     "news": [
         {
+            "title": "스마트 테이프 계산기",
+            "url": "https://eung.pe.kr/webapp/calculator",
+            "ko": "스마트 테이프 계산기 v1.0.0 업데이트",
+            "en": "Smart Tape Calculator v1.0.0 Update"
+        },
+        {
             "title": "압축 해제기",
             "url": "https://eung.pe.kr/webapp/archive-extractor",
             "ko": "ZIP, 7z, rar 파일 압축 해제",
