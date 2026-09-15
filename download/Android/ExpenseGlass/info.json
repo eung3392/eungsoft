@@ -1,0 +1,39 @@
+{
+    "title": {
+        "ko": "지출 유리병",
+        "en": "Expense Glass"
+    },
+    "version": "1.0.0",
+    "releaseDate": "2026-09-15",
+    "shortDescription": {
+        "ko": "한눈에 파악하는 이달의 지출현황",
+        "en": "Income and Expense Status at a Glance"
+    },
+    "description": {
+        "ko": "<b>지출유리병(가계부 GLASS)</b>은 한 달 생활비(목표 예산)를 기준으로, 네모난 유리병 안에 지출 내역이 조약돌 모양의 블록으로 바닥부터 차곡차곡 쌓이는 시각적인 가계부 앱입니다.<br>단순한 텍스트나 원형 차트 대신, 예산 대비 지출 현황을 <b>'유리병이 채워지는 정도'</b>로 직관적이고 귀엽게 파악할 수 있습니다. Jetpack Compose Canvas로 구현된 부드럽고 둥글둥글한 UI와 카드사·은행 결제 알림을 백그라운드에서 감지해 자동으로 등록해 주는 스마트한 기능으로 일상 지출 관리를 더욱 편리하게 도와줍니다.",
+        "en": "<b>ExpenseGlass</b> is an intuitive visual expense tracker where spending stacks up like pebble blocks from the bottom of a glass jar based on your monthly budget.<br>Instead of plain text or typical pie charts, you can visually gauge your budget usage through the <b>filling level of the jar</b>. Featuring a cute, rounded UI crafted with Jetpack Compose Canvas and an automatic expense tracker that listens to card and bank notifications in the background, managing your expenses has never been easier."
+    },
+    "control": {
+        "ko": "[앱 초기 설정]<br>• ⚙️ 설정 열기: 메인 화면 우측 상단의 톱니바퀴 아이콘을 누릅니다.<br>• 💰 생활비 총액 설정: 한 달 목표 예산을 입력합니다 (기본값: 1,000,000원).<br>• 🔔 알림 접근 권한: 자동 가계부 기능을 사용하려면 '알림 접근 권한 설정 열기'를 눌러 시스템 설정에서 권한을 반드시 허용해 주세요.<br><br>[자동 가계부 (키워드 등록)]<br>• 🏷️ 규칙 추가: 주로 사용하는 카드사/은행명(예: 국민카드, 신한은행) 또는 결제 키워드를 등록합니다.<br>• 📂 카테고리 매핑: 해당 키워드가 감지될 때 분류할 카테고리(식비, 교통비, 쇼핑 등)를 지정하여 저장합니다.<br>• ✨ 자동 반영: 결제 푸시 알림이 수신되면 금액을 자동으로 파싱하여 유리병에 블록으로 쌓입니다.<br><br>[수동 입력 및 내역 관리]<br>• ➕ 지출 직접 추가: 메인 화면 우측 하단의 [+] 플로팅 버튼을 눌러 금액, 내역, 카테고리, 날짜를 직접 입력할 수 있습니다.<br>• 🔍 블록 상세/수정/삭제: 유리병 속 지출 블록을 터치하면 상세 다이얼로그가 열리며 내역 수정 및 삭제가 가능합니다.<br>• 📅 월별 조회: 상단 네비게이션 버튼을 통해 이전/다음 달 지출 내역을 간편하게 조회할 수 있습니다.<br><br>[참고 사항]<br>• 예산(100%)을 초과하는 지출은 유리병 높이를 벗어나 잘려 표시될 수 있습니다.<br>• 카드사별 특이한 알림 문구 포맷은 정규식 파싱 규칙에 따라 인식이 상이할 수 있습니다.",
+        "en": "[Initial App Setup]<br>• ⚙️ Open Settings: Tap the gear icon in the top right corner of the main screen.<br>• 💰 Set Budget: Enter your monthly target budget (Default: 1,000,000 KRW).<br>• 🔔 Notification Access: To use the automatic tracking feature, open 'Notification Access Settings' and grant permission in the system settings.<br><br>[Automatic Logging (Keyword Registration)]<br>• 🏷️ Add Rules: Register frequently used card companies/banks (e.g., KB Card, Shinhan Bank) or transaction keywords.<br>• 📂 Category Mapping: Map the keyword to a category (Food, Transport, Shopping, etc.) and save.<br>• ✨ Auto-Tracking: When payment notifications arrive, the amount is automatically parsed and added as a block in the jar.<br><br>[Manual Entry & Management]<br>• ➕ Manual Entry: Tap the [+] floating action button at the bottom right to enter amount, note, category, and date.<br>• 🔍 View/Edit/Delete: Tap any expense block inside the jar to open the detail dialog, edit information, or delete records.<br>• 📅 Monthly Navigation: Browse previous and next month's spending history using the top navigation.<br><br>[Notes]<br>• Spending that exceeds the budget (100%) may extend beyond the top of the glass jar.<br>• Notification format variations across financial institutions may affect parsing accuracy."
+    },
+    "youtubeUrl": "",
+    "youtubeType": "1",
+    "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/ExpenseGlass_v1.0.0.apk"
+    ],
+    "images": [
+        "scr1.jpg",
+        "scr2.jpg"
+    ],
+    "tags": {
+        "ko": [
+            "가계부",
+            "지출관리"
+        ],
+        "en": [
+            "Expense",
+            "Management"
+        ]
+    }
+}

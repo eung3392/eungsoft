@@ -13,10 +13,10 @@
             "en": "ZIP, 7z, rar file extraction"
         },
         {
-            "title": "그래픽",
-            "url": "https://eung.pe.kr/webapp/image-slice",
-            "ko": "이미지 분할하기",
-            "en": "Image slice"
+            "title": "지출 유리병",
+            "url": "https://eung.pe.kr/app-detail.html?app=ExpenseGlass&type=Android",
+            "ko": "이달의 지출현황을 한눈에",
+            "en": "Expense Status at a Glance"
         },
         {
             "title": "EKPodcast",
