@@ -23,8 +23,8 @@
     "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/MyZoom.7z"
   ],
   "images": [
-    "scr1.jpg",
-    "scr2.jpg"
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/zoom/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/zoom/scr2.jpg"
   ],
   "tags": {
     "ko": [

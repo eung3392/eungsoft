@@ -39,10 +39,10 @@
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TransG_v1.0.0.apk"
     ],
     "images": [
-        "scr1.jpg",
-        "scr2.jpg",
-        "scr3.jpg",
-        "scr4.jpg"
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TransG/scr1.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TransG/scr2.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TransG/scr3.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TransG/scr4.jpg"
     ],
     "tags": {
         "ko": [

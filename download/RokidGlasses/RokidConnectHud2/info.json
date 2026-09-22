@@ -32,8 +32,8 @@
     "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/RokidGlassesHUD.apk"
   ],
   "images": [
-    "scr1.jpg",
-    "scr2.jpg"
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/RokidConnectHud2/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/RokidConnectHud2/scr2.jpg"
   ],
   "tags": {
     "ko": [

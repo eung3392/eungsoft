@@ -44,11 +44,11 @@
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TextHome_v1.0.0.apk"
     ],
     "images": [
-        "scr1.jpg",
-        "scr2.jpg",
-        "scr3.jpg",
-        "scr4.jpg",
-        "scr5.jpg"
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TextHome/scr1.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TextHome/scr2.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TextHome/scr3.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TextHome/scr4.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TextHome/scr5.jpg"
     ],
     "tags": {
         "ko": [

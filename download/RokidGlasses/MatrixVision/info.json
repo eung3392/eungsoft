@@ -23,8 +23,8 @@
     "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/MatrixVision-v1.0.apk"
   ],
   "images": [
-    "scr1.jpg",
-    "scr2.jpg"
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/MatrixVision/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/MatrixVision/scr2.jpg"
   ],
   "tags": {
     "ko": [

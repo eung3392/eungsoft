@@ -32,9 +32,9 @@
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKPilot_v0.6.0.apk"
     ],
     "images": [
-        "https://raw.githubusercontent.com/eung3392/eungsoft/refs/heads/main/download/RokidGlasses/ekpilot/v080.jpg",
-        "scr1.jpg",
-        "scr2.jpg"
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/ekpilot/v080.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/ekpilot/scr1.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/ekpilot/scr2.jpg"
     ],
     "tags": {
         "ko": [

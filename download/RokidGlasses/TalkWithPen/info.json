@@ -32,9 +32,9 @@
         "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TalkWidhPen_v1.0.0.apk"
     ],
     "images": [
-        "icon.png",
-        "scr2.jpg",
-        "scr3.jpg"
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TalkWithPen/icon.png",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TalkWithPen/scr2.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TalkWithPen/scr3.jpg"
     ],
     "tags": {
         "ko": [

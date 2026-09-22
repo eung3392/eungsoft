@@ -23,8 +23,8 @@
         "https://github.com/eung3392/eungsoft/releases/download/AndroidApp/eungTableClock.apk"
     ],
     "images": [
-        "scr2.jpg",
-        "scr1.jpg"
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/eungTableClock/scr2.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/eungTableClock/scr1.jpg"
     ],
     "tags": {
         "ko": [
