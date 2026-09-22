@@ -1,0 +1,38 @@
+{
+    "title": {
+        "ko": "테이프 계산기",
+        "en": "TapeCalc"
+    },
+    "version": "1.0.0",
+    "releaseDate": "2026-09-21",
+    "shortDescription": {
+        "ko": "계산과정을 기록하고 수정하는 계산기",
+        "en": "Calculation Process at a Glance"
+    },
+    "description": {
+        "ko": "<b>테이프 계산기(TapeCalc)</b>는 계산 과정이 마치 종이 테이프에 기록되듯 차례대로 나열되어 전체 계산 흐름을 한눈에 파악할 수 있는 스마트 계산기 앱입니다.<br><br><b>[주요 특징]</b><br>• 📜 <b>테이프 방식의 기록</b>: 모든 계산 과정이 종이 테이프처럼 순서대로 나열되어 전체 계산 흐름을 한눈에 쉽게 파악할 수 있습니다.<br>• 🔄 <b>실시간 수정 및 자동 재계산</b>: 이미 입력한 이전 줄의 숫자나 연산자를 직접 터치하여 수정하면, 이후 연산과 최종 합계가 즉시 자동으로 재계산됩니다.<br>• 🇰🇷 <b>한국어 단위 포맷 지원</b>: 큰 숫자도 한눈에 알아보기 쉽도록 숫자뿐만 아니라 한국어 단위(예: 만, 천 등)로 직관적인 포맷팅을 제공합니다.<br>• 💾 <b>기록 저장 및 관리</b>: 현재 작업 중인 시트뿐만 아니라 최근 10개의 계산 기록을 안전하게 저장하고 언제든 다시 불러올 수 있습니다.<br>• 🔊 <b>사운드 설정</b>: 사용자 취향에 맞춰 키패드 터치음 등 소리 설정을 자유롭게 켜고 끌 수 있습니다.",
+        "en": "<b>TapeCalc</b> is an intuitive tape-style calculator app that logs your calculation history sequentially like a paper tape roll, allowing you to review the entire flow at a glance.<br><br><b>[Key Features]</b><br>• 📜 <b>Tape-Style History</b>: Calculation steps are organized chronologically like a physical paper tape, making it easy to track your math history.<br>• 🔄 <b>Real-Time Editing & Recalculation</b>: Simply tap any previously entered number or operator to edit it, and the running total updates automatically in real time.<br>• 🇰🇷 <b>Korean Unit Formatting</b>: Displays numbers with Korean numerical units (e.g., Man, Eok) for effortless reading of large amounts.<br>• 💾 <b>History Saving & Management</b>: Keeps your active sheet and stores up to 10 recent calculation records to reload anytime.<br>• 🔊 <b>Sound Settings</b>: Customize tactile keypad sound effects to suit your preference."
+    },
+    "control": {
+        "ko": "[기본 조작법]<br>• 🔢 숫자 및 연산자 입력: 화면 하단의 키패드를 사용하여 일반 계산기처럼 숫자와 연산자를 입력합니다. 입력된 내용은 상단 테이프에 한 줄씩 차례대로 추가됩니다.<br>• ✏️ 이전 기록 수정: 테이프 리스트에 표시된 지난 줄의 숫자나 연산자를 직접 터치하여 수정 모드로 진입합니다. 값을 변경하면 전체 합계가 실시간으로 자동 갱신됩니다.<br>• 📊 합계 확인: 테이프 하단에 항상 현재까지의 총합계(Running Total)가 실시간으로 표시됩니다.<br><br>[기록 관리 및 설정]<br>• 📁 기록 관리: 별도의 기록 시트(History Sheet)를 통해 이전에 수행했던 계산 목록을 확인하거나 다시 불러와 관리할 수 있습니다.<br>• ⚙️ 설정: 소리 설정 등 앱의 동작 방식을 필요에 따라 조정할 수 있습니다.",
+        "en": "[Basic Operations]<br>• 🔢 Enter Numbers & Operators: Use the bottom keypad to input numbers and operators just like a regular calculator. Each entry is added line-by-line onto the tape above.<br>• ✏️ Edit Previous Records: Tap any previous number or operator in the tape list to enter edit mode. Modifying a value immediately recalculates the running total in real time.<br>• 📊 Check Totals: The running total up to the current line is always displayed at the bottom of the tape.<br><br>[History & Settings]<br>• 📁 History Management: Open the History Sheet to browse, restore, and manage previous calculation logs.<br>• ⚙️ Settings: Adjust app behavior such as keypad sounds to suit your preference."
+    },
+    "youtubeUrl": "",
+    "youtubeType": "1",
+    "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TapeCalc.apk"
+    ],
+    "images": [
+        "scr2.jpg",
+        "scr1.jpg",
+        "scr3.jpg"
+    ],
+    "tags": {
+        "ko": [
+            "계산기"
+        ],
+        "en": [
+            "Calculator"
+        ]
+    }
+}

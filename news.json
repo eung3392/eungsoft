@@ -1,7 +1,13 @@
 {
     "news": [
         {
-            "title": "스마트 테이프 계산기",
+            "title": "APP 테이프 계산기",
+            "url": "https://eung.pe.kr/app-detail.html?app=TapeCalc&type=Android",
+            "ko": "스마트 테이프 계산기",
+            "en": "Smart Tape Calculator"
+        },
+        {
+            "title": "WEB 스마트 테이프 계산기",
             "url": "https://eung.pe.kr/webapp/calculator",
             "ko": "스마트 테이프 계산기 v1.0.0 업데이트",
             "en": "Smart Tape Calculator v1.0.0 Update"
