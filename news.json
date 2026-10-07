@@ -1,34 +1,19 @@
 {
     "news": [
         {
-            "title": "APP 테이프 계산기",
-            "url": "https://eung.pe.kr/app-detail.html?app=TapeCalc&type=Android",
-            "ko": "스마트 테이프 계산기",
-            "en": "Smart Tape Calculator"
-        },
-        {
-            "title": "WEB 스마트 테이프 계산기",
-            "url": "https://eung.pe.kr/webapp/calculator",
-            "ko": "스마트 테이프 계산기 v1.0.0 업데이트",
-            "en": "Smart Tape Calculator v1.0.0 Update"
-        },
-        {
-            "title": "압축 해제기",
-            "url": "https://eung.pe.kr/webapp/archive-extractor",
-            "ko": "ZIP, 7z, rar 파일 압축 해제",
-            "en": "ZIP, 7z, rar file extraction"
-        },
-        {
-            "title": "지출 유리병",
-            "url": "https://eung.pe.kr/app-detail.html?app=ExpenseGlass&type=Android",
-            "ko": "이달의 지출현황을 한눈에",
-            "en": "Expense Status at a Glance"
-        },
-        {
-            "title": "EKPodcast",
-            "url": "https://eung.pe.kr/app-detail.html?app=EKPodcast&type=RokidGlasses",
-            "ko": "Rokid Glasses 전용 팟캐스트 플레이어 v1.1.0 업데이트",
-            "en": "Rokid Glasses Exclusive Podcast Player v1.1.0 Update"
+            "title": "Site update",
+            "url": "https://eung.pe.kr/",
+            "ko": "다국어를 지원하도록 홈페이지를 업데이트했습니다.",
+            "en": "Update for supporting multiple languages",
+            "ja": "多言語対応のためにホームページを更新しました。",
+            "zh": "已更新网站以支持多语言。",
+            "es": "Se ha actualizado el sitio web para admitir múltiples idiomas.",
+            "de": "Die Website wurde aktualisiert, um mehrere Sprachen zu unterstützen.",
+            "fr": "Mise à jour du site web pour prendre en charge plusieurs langues.",
+            "vi": "Đã cập nhật trang web để hỗ trợ đa ngôn ngữ.",
+            "th": "อัปเดตเว็บไซต์เพื่อรองรับหลายภาษาแล้ว",
+            "id": "Situs web telah diperbarui untuk mendukung berbagai bahasa.",
+            "ru": "Сайт обновлен для поддержки нескольких языков."
         }
     ]
 }
