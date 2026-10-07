@@ -1,37 +1,109 @@
 {
-    "title": {
-        "ko": "EK Remover",
-        "en": "EK Remover"
-    },
-    "version": "1.0.0",
-    "releaseDate": "2026-05-27",
-    "shortDescription": {
-        "ko": "앱 삭제 프로그램",
-        "en": "app uninstall program"
-    },
-    "description": {
-        "ko": "EK Remover는 간단하고 직관적인 앱 삭제 프로그램입니다.",
-        "en": "EK Remover is a simple and intuitive app uninstall program."
-    },
-    "control": {
-        "ko": "<h3>주요 기능 및 조작 방법</h3><p><b>설치된 앱 목록을 탐색하고 선택해서 삭제합니다.",
-        "en": "<h3>Key Features and Operation</h3><p><b>Navigate the installed apps and uninstall by selecting them."
-    },
-    "youtubeUrl": "https://www.youtube.com/embed/c0bKzjhKJVA",
-    "youtubeType": "1",
-    "updated": [],
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKRemover_v1.0.0.apk"
+  "title": {
+    "ko": "EK Remover",
+    "en": "EK Remover",
+    "ja": "EK Remover",
+    "zh": "EK 卸载管家 (EK Remover)",
+    "es": "EK Remover",
+    "de": "EK Remover",
+    "fr": "EK Remover",
+    "vi": "EK Remover (Trình Gỡ Ứng Dụng)",
+    "th": "EK Remover (ถอนการติดตั้งแอป)",
+    "id": "EK Remover",
+    "ru": "EK Remover (Удаление Приложений)"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-05-27",
+  "shortDescription": {
+    "ko": "앱 삭제 프로그램",
+    "en": "app uninstall program",
+    "ja": "簡単・直感的なRokid Glasses専用アプリ削除・アンインストールツール",
+    "zh": "清爽直观的Rokid Glasses应用卸载管理工具",
+    "es": "Herramienta simple para desinstalar aplicaciones en Rokid Glasses",
+    "de": "Einfaches Tool zum Deinstallieren von Apps auf Rokid Glasses",
+    "fr": "Outil simple et intuitif de désinstallation d'applications pour Rokid Glasses",
+    "vi": "Công cụ gỡ cài đặt ứng dụng đơn giản và trực quan cho kính Rokid Glasses",
+    "th": "เครื่องมือถอนการติดตั้งแอปพลิเคชันที่ใช้งานง่ายสำหรับ Rokid Glasses",
+    "id": "Program pencopot pemasangan aplikasi yang sederhana dan intuitif untuk Rokid Glasses",
+    "ru": "Простая и удобная утилита для удаления приложений на Rokid Glasses"
+  },
+  "description": {
+    "ko": "EK Remover는 간단하고 직관적인 앱 삭제 프로그램입니다.",
+    "en": "EK Remover is a simple and intuitive app uninstall program.",
+    "ja": "EK Removerは、Rokid Glassesにインストールされたアプリをすばやく確認し、不要になったアプリを選択して安全にアンインストールできる軽量ツールです。",
+    "zh": "EK Remover是一款极简实用的Rokid Glasses应用卸载工具。无需连接电脑ADB命令，在眼镜端即可一键浏览并卸载不再需要的应用程序。",
+    "es": "EK Remover es una herramienta intuitiva que te permite explorar la lista de aplicaciones instaladas en tus gafas Rokid Glasses y desinstalarlas de forma rápida y sencilla.",
+    "de": "EK Remover ist ein übersichtliches Dienstprogramm zum Durchsuchen und einfachen Deinstallieren installierter Apps direkt auf den Rokid Glasses.",
+    "fr": "EK Remover est une application simple et intuitive permettant de parcourir la liste des applications installées sur vos lunettes Rokid Glasses et de les désinstaller facilement.",
+    "vi": "EK Remover là công cụ gọn nhẹ giúp bạn xem danh sách các ứng dụng đã cài trên kính Rokid Glasses và dễ dàng gỡ bỏ những ứng dụng không còn dùng.",
+    "th": "EK Remover เป็นโปรแกรมถอนการติดตั้งแอปที่เรียบง่าย ช่วยให้คุณค้นหาและเลือกถอนการติดตั้งแอปพลิเคชันบน Rokid Glasses ได้อย่างสะดวกสบาย",
+    "id": "EK Remover adalah alat yang simpel untuk menelusuri daftar aplikasi terpasang di Rokid Glasses dan menghapus aplikasi yang tidak diperlukan lagi.",
+    "ru": "EK Remover — удобный инструмент для просмотра списка установленных приложений на очках Rokid Glasses и их быстрого удаления без подключения к компьютеру."
+  },
+  "control": {
+    "ko": "<h3>주요 기능 및 조작 방법</h3><p><b>설치된 앱 목록을 탐색하고 선택해서 삭제합니다.",
+    "en": "<h3>Key Features and Operation</h3><p><b>Navigate the installed apps and uninstall by selecting them.",
+    "ja": "<h3>主な機能と操作方法</h3><p>インストールされているアプリ一覧を探索し、削除したいアプリを選択してアンインストールを実行します。</p>",
+    "zh": "<h3>主要功能与操作方法</h3><p>浏览眼镜中已安装的所有应用程序列表，选中目标应用即可安全快捷地执行卸载操作。</p>",
+    "es": "<h3>Operación</h3><p>Explora la lista de aplicaciones instaladas y selecciona la que deseas desinstalar para eliminarla.",
+    "de": "<h3>Bedienung</h3><p>Durchsuchen Sie die Liste der installierten Apps und wählen Sie eine App aus, um sie zu deinstallieren.",
+    "fr": "<h3>Utilisation</h3><p>Parcourez la liste des applications installées et sélectionnez celle que vous souhaitez supprimer pour la désinstaller.",
+    "vi": "<h3>Hướng dẫn sử dụng</h3><p>Duyệt qua danh sách các ứng dụng đã cài đặt và chọn ứng dụng bạn muốn gỡ cài đặt.",
+    "th": "<h3>วิธีใช้งาน</h3><p>เลื่อนดูรายการแอปพลิเคชันที่ติดตั้งไว้ แล้วเลือกแอปที่ต้องการเพื่อทำการถอนการติดตั้ง",
+    "id": "<h3>Pengoperasian</h3><p>Telusuri daftar aplikasi yang terpasang dan pilih aplikasi yang ingin dicopot pemasangannya.",
+    "ru": "<h3>Инструкция</h3><p>Просматривайте список установленных программ и выбирайте ненужные для быстрого удаления."
+  },
+  "youtubeUrl": "https://www.youtube.com/embed/c0bKzjhKJVA",
+  "youtubeType": "1",
+  "updated": [],
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKRemover_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKRemover/scr1.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "프로그램제거"
     ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKRemover/scr1.jpg"
+    "en": [
+      "App uninstaller"
     ],
-    "tags": {
-        "ko": [
-            "프로그램제거"
-        ],
-        "en": [
-            "App uninstaller"
-        ]
-    }
+    "ja": [
+      "アプリ削除",
+      "管理"
+    ],
+    "zh": [
+      "应用卸载",
+      "应用管理"
+    ],
+    "es": [
+      "Desinstalador",
+      "Gestión"
+    ],
+    "de": [
+      "Deinstallieren",
+      "AppVerwaltung"
+    ],
+    "fr": [
+      "Désinstalleur",
+      "Gestion"
+    ],
+    "vi": [
+      "GỡỨngDụng",
+      "QuảnLý"
+    ],
+    "th": [
+      "ถอนการติดตั้ง",
+      "จัดการแอป"
+    ],
+    "id": [
+      "CopotAplikasi",
+      "Manajemen"
+    ],
+    "ru": [
+      "УдалениеПриложений",
+      "Утилиты"
+    ]
+  }
 }

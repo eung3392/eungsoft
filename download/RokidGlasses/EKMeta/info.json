@@ -1,39 +1,111 @@
 {
-    "title": {
-        "ko": "EK Meta Player",
-        "en": "EK Meta Player"
-    },
-    "version": "1.0.0",
-    "releaseDate": "2026-05-29",
-    "shortDescription": {
-        "ko": "메타 디스플레이용으로 개발된 웹 앱을 Rokid Glasses에서 실행합니다.",
-        "en": "EK Meta Player is a App player for Meta Ray-Ban."
-    },
-    "description": {
-        "ko": "<b>EK Meta Player</b>는 Meta 디스플레이용으로 개발된 게임, 앱 등을 <b>Rokid Glasses</b>에서 실행할 수 있도록 도와주는 프로그램입니다.<br><br><b>[주요 기능]</b><br>• 기본적인 프로그램 목록 제공<br>• 사용자가 원하는 프로그램을 자유롭게 추가 및 관리",
-        "en": "<b>EK Meta Player</b> is a utility that helps you run games and apps developed for Meta display on <b>Rokid Glasses</b>.<br><br><b>[Key Features]</b><br>• Provides a basic, built-in program list<br>• Allows users to easily add and manage custom apps"
-    },
-    "control": {
-        "ko": "<h3>권장 사항 및 조작 방법</h3><p><b>1. 장치 연결</b><br>원활한 입력을 위해 <b>블루투스 키보드</b>와 같은 외부 장치를 연결하여 사용하는 것을 적극 권장합니다.</p><br><p><b>2. 앱 추가</b><br><b>QR 코드 스캔</b>을 통해서 새로운 앱을 간편하게 추가할 수 있습니다.</p><br><p><b>3. QR 코드 생성기</b><br>QR 코드가 필요한 경우에는 아래 링크의 생성기를 이용해 보세요.<br><a href='https://eung.pe.kr/webapp/qr-generator.html' target='_blank' style='color: #38bdf8; font-weight: bold; text-decoration: underline;'>QR코드 생성기 바로가기 &rarr;</a></p>",
-        "en": "<h3>Recommendations & Operations</h3><p><b>1. Device Connection</b><br>We highly recommend connecting external devices such as a <b>Bluetooth keyboard</b> for easier navigation.</p><br><p><b>2. Add Apps</b><br>You can quickly add custom apps by scanning a <b>QR code</b>.</p><br><p><b>3. QR Code Generator</b><br>If you need to generate a QR code, please use our online tool below:<br><a href='https://eung.pe.kr/webapp/qr-generator.html' target='_blank' style='color: #38bdf8; font-weight: bold; text-decoration: underline;'>Go to QR Code Generator &rarr;</a></p>"
-    },
-    "youtubeUrl": "https://www.youtube.com/embed/-EpusAZpA8s",
-    "youtubeType": "1",
-    "updated": [],
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EK_Meta_v1.0.0.apk"
+  "title": {
+    "ko": "EK Meta Player",
+    "en": "EK Meta Player",
+    "ja": "EK Meta Player",
+    "zh": "EK Meta 播放器 (EK Meta Player)",
+    "es": "EK Meta Player",
+    "de": "EK Meta Player",
+    "fr": "EK Meta Player",
+    "vi": "EK Meta Player",
+    "th": "EK Meta Player",
+    "id": "EK Meta Player",
+    "ru": "EK Meta Player"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-05-29",
+  "shortDescription": {
+    "ko": "메타 디스플레이용으로 개발된 웹 앱을 Rokid Glasses에서 실행합니다.",
+    "en": "EK Meta Player is a App player for Meta Ray-Ban.",
+    "ja": "Metaディスプレイ用に開発されたWebアプリ・ゲームをRokid Glassesで実行",
+    "zh": "在Rokid Glasses上无缝运行专为Meta显示器开发的Web应用与游戏",
+    "es": "Ejecuta aplicaciones y juegos desarrollados para Meta en tus Rokid Glasses",
+    "de": "Führt für Meta-Displays entwickelte Web-Apps und Spiele auf Rokid Glasses aus",
+    "fr": "Exécutez des applications et jeux conçus pour Meta sur vos lunettes Rokid Glasses",
+    "vi": "Chạy các ứng dụng và trò chơi phát triển cho màn hình Meta trên kính Rokid Glasses",
+    "th": "รันเว็บแอปและเกมที่พัฒนาสำหรับจอ Meta บนแว่นตา Rokid Glasses",
+    "id": "Menjalankan aplikasi web dan game yang dikembangkan untuk layar Meta di Rokid Glasses",
+    "ru": "Запуск веб-приложений и игр, созданных для дисплеев Meta, на очках Rokid Glasses"
+  },
+  "description": {
+    "ko": "<b>EK Meta Player</b>는 Meta 디스플레이용으로 개발된 게임, 앱 등을 <b>Rokid Glasses</b>에서 실행할 수 있도록 도와주는 프로그램입니다.<br><br><b>[주요 기능]</b><br>• 기본적인 프로그램 목록 제공<br>• 사용자가 원하는 프로그램을 자유롭게 추가 및 관리",
+    "en": "<b>EK Meta Player</b> is a utility that helps you run games and apps developed for Meta display on <b>Rokid Glasses</b>.<br><br><b>[Key Features]</b><br>• Provides a basic, built-in program list<br>• Allows users to easily add and manage custom apps",
+    "ja": "<b>EK Meta Player</b>は、Meta Ray-BanなどのMetaディスプレイ用に開発されたWebアプリやゲームを<b>Rokid Glasses</b>上でスムーズに実行できるようにするユーティリティです。<br><br><b>[主な機能]</b><br>• 基本内蔵プログラムリストの提供<br>• ユーザーが好みのWebアプリを自由に追加・管理可能",
+    "zh": "<b>EK Meta Player</b>是一款帮助您在<b>Rokid Glasses</b>上流畅运行原本为Meta智能眼镜/显示器开发的Web应用与趣味游戏的适配启动器。<br><br><b>[核心亮点]</b><br>• 内置精选Meta生态Web应用列表<br>• 支持扫码自由添加与管理自定义第三方Web应用",
+    "es": "<b>EK Meta Player</b> es una utilidad que te ayuda a ejecutar juegos y aplicaciones desarrolladas para pantallas Meta en tus gafas <b>Rokid Glasses</b>.<br><br><b>[Características]</b><br>• Lista de programas integrada<br>• Añade y gestiona tus propias aplicaciones web fácilmente",
+    "de": "<b>EK Meta Player</b> ist ein Tool, mit dem Sie für Meta-Displays entwickelte Apps und Spiele direkt auf den <b>Rokid Glasses</b> ausführen können.<br><br><b>[Hauptfunktionen]</b><br>• Integrierte Programmliste<br>• Beliebige eigene Web-Apps hinzufügen und verwalten",
+    "fr": "<b>EK Meta Player</b> est un lecteur permettant d'exécuter sur <b>Rokid Glasses</b> des applications et des jeux conçus à l'origine pour les écrans Meta.<br><br><b>[Points forts]</b><br>• Liste intégrée d'applications Meta<br>• Ajout et gestion faciles d'applications personnalisées",
+    "vi": "<b>EK Meta Player</b> là tiện ích giúp bạn chạy các trò chơi và ứng dụng phát triển cho màn hình Meta ngay trên <b>Rokid Glasses</b>.<br><br><b>[Tính năng chính]</b><br>• Cung cấp danh sách chương trình có sẵn<br>• Tự do thêm và quản lý các ứng dụng tùy chọn",
+    "th": "<b>EK Meta Player</b> เป็นโปรแกรมที่ช่วยให้คุณสามารถรันเกมและแอปที่พัฒนาขึ้นสำหรับจอแสดงผล Meta บน <b>Rokid Glasses</b> ได้อย่างราบรื่น<br><br><b>[คุณสมบัติหลัก]</b><br>• รายการโปรแกรมในตัวพื้นฐาน<br>• เพิ่มและจัดการแอปพลิเคชันที่กำหนดเองได้อย่างอิสระ",
+    "id": "<b>EK Meta Player</b> adalah utilitas yang membantu Anda menjalankan game dan aplikasi yang dikembangkan untuk layar Meta di <b>Rokid Glasses</b>.<br><br><b>[Fitur Utama]</b><br>• Menyediakan daftar program bawaan<br>• Menambah dan mengelola aplikasi khusus secara bebas",
+    "ru": "<b>EK Meta Player</b> позволяет запускать веб-приложения и игры, разработанные для дисплеев Meta, на ваших умных очках <b>Rokid Glasses</b>.<br><br><b>[Возможности]</b><br>• Встроенный каталог популярных веб-программ<br>• Простое добавление и запуск собственных веб-приложений"
+  },
+  "control": {
+    "ko": "<h3>권장 사항 및 조작 방법</h3><p><b>1. 장치 연결</b><br>원활한 입력을 위해 <b>블루투스 키보드</b>와 같은 외부 장치를 연결하여 사용하는 것을 적극 권장합니다.</p><br><p><b>2. 앱 추가</b><br><b>QR 코드 스캔</b>을 통해서 새로운 앱을 간편하게 추가할 수 있습니다.</p><br><p><b>3. QR 코드 생성기</b><br>QR 코드가 필요한 경우에는 아래 링크의 생성기를 이용해 보세요.<br><a href='https://eung.pe.kr/webapp/qr-generator.html' target='_blank' style='color: #38bdf8; font-weight: bold; text-decoration: underline;'>QR코드 생성기 바로가기 &rarr;</a></p>",
+    "en": "<h3>Recommendations & Operations</h3><p><b>1. Device Connection</b><br>We highly recommend connecting external devices such as a <b>Bluetooth keyboard</b> for easier navigation.</p><br><p><b>2. Add Apps</b><br>You can quickly add custom apps by scanning a <b>QR code</b>.</p><br><p><b>3. QR Code Generator</b><br>If you need to generate a QR code, please use our online tool below:<br><a href='https://eung.pe.kr/webapp/qr-generator.html' target='_blank' style='color: #38bdf8; font-weight: bold; text-decoration: underline;'>Go to QR Code Generator &rarr;</a></p>",
+    "ja": "<h3>推奨事項と操作方法</h3><p><b>1. 機器接続:</b> スムーズな入力操作のため、<b>Bluetoothキーボード</b>などの外部機器との接続を強く推奨します。</p><p><b>2. アプリ追加:</b> <b>QRコードスキャン</b>を通じて新しいアプリを簡単に追加できます。</p><p><b>3. QRコードジェネレーター:</b> QRコードが必要な場合は、下記のジェネレーターをご利用ください。<br><a href='https://eung.pe.kr/webapp/qr-generator.html' target='_blank' style='color: #38bdf8; font-weight: bold; text-decoration: underline;'>QRコード作成ツールへ移動 &rarr;</a></p>",
+    "zh": "<h3>使用建议与操作流程</h3><p><b>1. 外设连接:</b> 为获得最流畅的输入与游戏体验，强烈建议连接<b>蓝牙键盘</b>等外设配合使用。</p><p><b>2. 新增应用:</b> 支持通过<b>扫描QR二维码</b>快速将任意Web应用添加至书签列表。</p><p><b>3. 二维码生成器:</b> 若需生成应用链接二维码，可访问配套在线工具：<br><a href='https://eung.pe.kr/webapp/qr-generator.html' target='_blank' style='color: #38bdf8; font-weight: bold; text-decoration: underline;'>前往QR二维码生成器 &rarr;</a></p>",
+    "es": "<h3>Recomendaciones y uso</h3><p><b>1. Conexión:</b> Recomendamos conectar un <b>teclado Bluetooth</b> para facilitar la entrada de datos.</p><p><b>2. Añadir apps:</b> Añade aplicaciones escaneando un <b>código QR</b>.</p><p><b>3. Generador QR:</b> Usa nuestra herramienta online:<br><a href='https://eung.pe.kr/webapp/qr-generator.html' target='_blank' style='color: #38bdf8; font-weight: bold; text-decoration: underline;'>Ir al generador de QR &rarr;</a></p>",
+    "de": "<h3>Bedienungshinweise</h3><p><b>1. Geräte verbinden:</b> Anschluss einer <b>Bluetooth-Tastatur</b> dringend empfohlen.</p><p><b>2. Apps hinzufügen:</b> Neue Apps einfach per <b>QR-Code-Scan</b> importieren.</p><p><b>3. QR-Generator:</b> Online-Tool zur QR-Erstellung nutzen:<br><a href='https://eung.pe.kr/webapp/qr-generator.html' target='_blank' style='color: #38bdf8; font-weight: bold; text-decoration: underline;'>Zum QR-Code Generator &rarr;</a></p>",
+    "fr": "<h3>Recommandations et usage</h3><p><b>1. Connexion:</b> L'utilisation d'un <b>clavier Bluetooth</b> externe est fortement recommandée.</p><p><b>2. Ajouter une app:</b> Importez de nouvelles applications en scannant un <b>QR code</b>.</p><p><b>3. Générateur de QR:</b> Utilisez notre outil en ligne :<br><a href='https://eung.pe.kr/webapp/qr-generator.html' target='_blank' style='color: #38bdf8; font-weight: bold; text-decoration: underline;'>Accéder au générateur QR &rarr;</a></p>",
+    "vi": "<h3>Khuyến nghị và thao tác</h3><p><b>1. Kết nối:</b> Khuyên dùng cùng <b>bàn phím Bluetooth</b> để điều khiển thuận tiện nhất.</p><p><b>2. Thêm ứng dụng:</b> Quét <b>mã QR</b> để thêm các ứng dụng mới một cách nhanh chóng.</p><p><b>3. Tạo mã QR:</b> Sử dụng công cụ tạo mã QR trực tuyến:<br><a href='https://eung.pe.kr/webapp/qr-generator.html' target='_blank' style='color: #38bdf8; font-weight: bold; text-decoration: underline;'>Đến Trình tạo mã QR &rarr;</a></p>",
+    "th": "<h3>คำแนะนำและวิธีใช้งาน</h3><p><b>1. เชื่อมต่ออุปกรณ์:</b> แนะนำให้เชื่อมต่อ<b>คีย์บอร์ดบลูทูธ</b>เพื่อการควบคุมที่สะดวกราบรื่น</p><p><b>2. เพิ่มแอป:</b> เพิ่มแอปใหม่ได้อย่างง่ายดายด้วยการ<b>สแกน QR Code</b></p><p><b>3. ตัวสร้าง QR Code:</b> หากต้องการสร้างรหัส QR สามารถใช้งานเครื่องมือออนไลน์ของเรา:<br><a href='https://eung.pe.kr/webapp/qr-generator.html' target='_blank' style='color: #38bdf8; font-weight: bold; text-decoration: underline;'>ไปยังหน้าสร้าง QR Code &rarr;</a></p>",
+    "id": "<h3>Rekomendasi dan Pengoperasian</h3><p><b>1. Koneksi:</b> Sangat disarankan menghubungkan <b>keyboard Bluetooth</b> untuk navigasi yang lancar.</p><p><b>2. Tambah Aplikasi:</b> Tambahkan aplikasi baru dengan memindai <b>kode QR</b>.</p><p><b>3. Generator QR:</b> Gunakan generator QR online kami:<br><a href='https://eung.pe.kr/webapp/qr-generator.html' target='_blank' style='color: #38bdf8; font-weight: bold; text-decoration: underline;'>Buka Generator Kode QR &rarr;</a></p>",
+    "ru": "<h3>Рекомендации и управление</h3><p><b>1. Подключение:</b> Настоятельно рекомендуем подключить <b>Bluetooth-клавиатуру</b> для удобного ввода.</p><p><b>2. Добавление приложений:</b> Добавляйте веб-приложения простым сканированием <b>QR-кода</b>.</p><p><b>3. Генератор QR-кодов:</b> Создавайте QR-коды для ссылок на странице:<br><a href='https://eung.pe.kr/webapp/qr-generator.html' target='_blank' style='color: #38bdf8; font-weight: bold; text-decoration: underline;'>Открыть генератор QR-кодов &rarr;</a></p>"
+  },
+  "youtubeUrl": "https://www.youtube.com/embed/-EpusAZpA8s",
+  "youtubeType": "1",
+  "updated": [],
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EK_Meta_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKMeta/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKMeta/scr2.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKMeta/scr3.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "Meta"
     ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKMeta/scr1.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKMeta/scr2.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKMeta/scr3.jpg"
+    "en": [
+      "Meta"
     ],
-    "tags": {
-        "ko": [
-            "Meta"
-        ],
-        "en": [
-            "Meta"
-        ]
-    }
+    "ja": [
+      "Meta",
+      "Webアプリ"
+    ],
+    "zh": [
+      "Meta",
+      "Web应用"
+    ],
+    "es": [
+      "Meta",
+      "WebApp"
+    ],
+    "de": [
+      "Meta",
+      "WebApp"
+    ],
+    "fr": [
+      "Meta",
+      "WebApp"
+    ],
+    "vi": [
+      "Meta",
+      "ỨngDụngWeb"
+    ],
+    "th": [
+      "Meta",
+      "เว็บแอป"
+    ],
+    "id": [
+      "Meta",
+      "AplikasiWeb"
+    ],
+    "ru": [
+      "Meta",
+      "ВебПриложения"
+    ]
+  }
 }

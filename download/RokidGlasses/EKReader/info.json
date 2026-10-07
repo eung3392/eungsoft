@@ -1,88 +1,223 @@
 {
-    "title": {
-        "ko": "EKReader",
-        "en": "EKReader"
+  "title": {
+    "ko": "EKReader",
+    "en": "EKReader",
+    "ja": "EKReader",
+    "zh": "EKReader 电子书阅读器",
+    "es": "EKReader",
+    "de": "EKReader",
+    "fr": "EKReader",
+    "vi": "EKReader",
+    "th": "EKReader",
+    "id": "EKReader",
+    "ru": "EKReader"
+  },
+  "version": "1.5.0",
+  "releaseDate": "2026-03-24",
+  "shortDescription": {
+    "ko": "깔끔하고 직관적인 Rokid Glasses 전용 E-book 리더기",
+    "en": "Clean and intuitive E-book reader app for Rokid Glasses.",
+    "ja": "すっきりと直感的なRokid Glasses専用E-book電子書籍リーダー",
+    "zh": "专为Rokid Glasses打造的清爽直观TXT与EPUB电子书阅读器",
+    "es": "Lector de libros electrónicos limpio e intuitivo para Rokid Glasses",
+    "de": "Kompakter und intuitiver E-Book-Reader für Rokid Glasses",
+    "fr": "Lecteur d'e-books épuré et intuitif pour lunettes Rokid Glasses",
+    "vi": "Ứng dụng đọc sách điện tử E-book gọn gàng và trực quan dành riêng cho Rokid Glasses",
+    "th": "แอปพลิเคชันอ่าน E-book ที่เรียบง่ายและใช้งานสะดวกสำหรับ Rokid Glasses",
+    "id": "Pembaca E-book yang bersih dan intuitif khusus untuk Rokid Glasses",
+    "ru": "Удобная и лаконичная читалка электронных книг для очков Rokid Glasses"
+  },
+  "description": {
+    "ko": "EKReader는 TXT 및 EPUB 파일을 지원하는 깔끔하고 직관적인 e-북 리더 애플리케이션입니다.<br><br><b>주요 화면 구성</b><br>• <b>메인 화면:</b> 기기 내의 도서 목록을 리스트 형태로 보여주며, 파일 형식(TXT, EPUB)을 아이콘으로 구분합니다.<br>• <b>리더 화면:</b> 상단에는 책 제목이 표시되고, 중앙의 넓은 영역에서 내용을 읽을 수 있습니다. 하단에는 현재 독서 진행률(%)과 프로그레스 바가 표시됩니다.<br><br><b>핵심 특징</b><br>• <b>시각적 편안함:</b> 투명한 배경에 최적화된 대비율을 적용하였습니다.<br>• <b>간결한 UI:</b> 복잡한 버튼을 최소화하고, 필요한 기능(이동, 폰트)에 집중할 수 있도록 설계하였습니다.<br>• <b>조작 최적화:</b>Rokid Glasses 의 환경에 맞게 스와이핑과 터치만으로 조작합니다.<br>• <b>화면 저장:</b>읽고 있는 내용중에 저장하고 싶은 화면이 있으면 스크린샷을 저장할 수 있습니다.",
+    "en": "EKReader is a clean and intuitive e-book reader application supporting TXT and EPUB files.<br><br><b>Key Screen Layout</b><br>• <b>Main Screen:</b> Shows the list of books on the device in a card format, distinguishing file types (TXT, EPUB) with icons.<br>• <b>Reader Screen:</b> The book title is displayed at the top, and contents can be read in the wide central area. The current reading progress (%) and a progress bar are displayed at the bottom.<br><br><b>Core Features</b><br>• <b>Visual Comfort:</b> Applies an optimized contrast ratio on a black background for eye comfort during long reading sessions.<br>• <b>Simple UI:</b> Minimizes complex buttons and focuses on essential functions (navigation, font size).<br>• <b>Operation Optimization:</b> Rokid Glasses environment optimized for swiping and touch operation.",
+    "ja": "EKReaderはTXTおよびEPUBファイルに対応した、すっきりとして直感的なe-bookリーダーアプリです。<br><br><b>主な画面構成</b><br>• <b>メイン画面:</b> 端末内の本をリスト表示し、ファイル形式(TXT, EPUB)をアイコンで分かりやすく分類。<br>• <b>リーダー画面:</b> 上部に本のタイトル、中央に広々とした読書エリア、下部に進捗率(%)とプログレスバーを表示。<br><br><b>核心特徴</b><br>• <b>目に優しい視認性:</b> 最適なコントラスト比で長時間の読書でも疲れにくい設計。<br>• <b>洗練されたUI:</b> 複雑なボタンを排除し、読書・移動・フォント調整に特化。<br>• <b>操作の最適化:</b> スワイプとタッチだけで直感的にコントロール。<br>• <b>スクリーンショット保存:</b> 読書中にお気に入りのページを画像として保存可能。",
+    "zh": "EKReader是一款完美支持TXT及EPUB格式文件的清爽直观电子书阅读器。<br><br><b>主要界面布局</b><br>• <b>书库主页:</b> 卡片式展示机内图书，图标清晰区分TXT与EPUB格式。<br>• <b>阅读界面:</b> 顶部显示书名，中央开阔区舒适阅览，底部实时显示阅读进度(%)与进度条。<br><br><b>核心亮点</b><br>• <b>视觉舒适:</b> 针对AR眼镜优化对比度，长时间阅读眼睛不易疲劳。<br>• <b>极简交互:</b> 精简多余按钮，专注阅读本身、进度跳转与字号缩放。<br>• <b>操控优化:</b> 深度适配眼镜镜腿滑动与触控手势。<br>• <b>画质保存:</b> 阅读精彩片段时可一键保存高清屏幕截图。",
+    "es": "EKReader es una aplicación de lectura de libros electrónicos limpia e intuitiva que admite archivos TXT y EPUB.<br><br><b>Distribución de pantalla</b><br>• <b>Pantalla principal:</b> Lista de libros en formato tarjeta, distinguiendo tipos de archivo (TXT, EPUB).<br>• <b>Pantalla de lectura:</b> Título arriba, amplia zona de texto al centro y porcentaje de progreso abajo.<br><br><b>Características principales</b><br>• <b>Comodidad visual:</b> Contraste optimizado para no cansar la vista en lecturas prolongadas.<br>• <b>Interfaz limpia:</b> Sin botones innecesarios, enfocada en lectura, navegación y tipografía.<br>• <b>Optimizado para gafas:</b> Controles por deslizamiento y toque.<br>• <b>Capturas de pantalla:</b> Guarda capturas de tus fragmentos preferidos.",
+    "de": "EKReader ist eine übersichtliche und intuitive E-Book-Reader-App mit Unterstützung für TXT- und EPUB-Dateien.<br><br><b>Bildschirmaufbau</b><br>• <b>Hauptansicht:</b> Buchliste mit Icons zur Unterscheidung von TXT- und EPUB-Dateien.<br>• <b>Leseansicht:</b> Buchtitel oben, großer Textbereich in der Mitte und Lesefortschritt (%) unten.<br><br><b>Kernmerkmale</b><br>• <b>Augenschonend:</b> Optimiertes Kontrastverhältnis für ermüdungsfreies Lesen.<br>• <b>Schlanke Benutzeroberfläche:</b> Konzentration auf das Wesentliche (Navigation, Schriftgröße).<br>• <b>Perfekte Bedienung:</b> Vollständig für Wisch- und Tippgesten auf der Datenbrille optimiert.<br>• <b>Screenshot-Funktion:</b> Seiten als Bild abspeichern.",
+    "fr": "EKReader est une application de lecture d'e-books épurée et intuitive prenant en charge les fichiers TXT et EPUB.<br><br><b>Structure de l'interface</b><br>• <b>Écran principal:</b> Liste des livres avec icônes distinctes pour TXT et EPUB.<br>• <b>Écran de lecture:</b> Titre en haut, grand espace de lecture au centre et progression (%) en bas.<br><br><b>Caractéristiques clés</b><br>• <b>Confort visuel:</b> Ratio de contraste optimisé pour éviter la fatigue oculaire.<br>• <b>Interface minimaliste:</b> Réduction des boutons inutiles pour se concentrer sur la lecture.<br>• <b>Adaptation aux lunettes:</b> Prise en charge fluide des gestes tactiles.<br>• <b>Capture d'écran:</b> Possibilité d'enregistrer des captures de vos passages préférés.",
+    "vi": "EKReader là ứng dụng đọc sách điện tử trực quan hỗ trợ định dạng TXT và EPUB.<br><br><b>Bố cục màn hình chính</b><br>• <b>Màn hình chính:</b> Danh sách sách trên thiết bị, phân biệt rõ biểu tượng TXT và EPUB.<br>• <b>Màn hình đọc:</b> Tên sách ở trên cùng, không gian đọc rộng rãi ở giữa và thanh tiến độ (%) ở dưới cùng.<br><br><b>Điểm nổi bật</b><br>• <b>Thoải mái cho mắt:</b> Tỷ lệ tương phản tối ưu giúp đọc sách lâu không mỏi mắt.<br>• <b>Giao diện gọn gàng:</b> Tập trung vào đọc nội dung, nhảy trang và kích thước phông chữ.<br>• <b>Tối ưu hóa thao tác:</b> Điều khiển mượt mà bằng vuốt và chạm trên kính.<br>• <b>Lưu ảnh chụp:</b> Dễ dàng chụp và lưu lại những đoạn sách hay.",
+    "th": "EKReader เป็นแอปอ่าน E-book ที่เรียบง่ายและใช้งานสะดวก รองรับไฟล์ TXT และ EPUB<br><br><b>โครงสร้างหน้าจอ</b><br>• <b>หน้าหลัก:</b> แสดงรายการหนังสือในเครื่อง แยกประเภทไฟล์ TXT และ EPUB ด้วยไอคอน<br>• <b>หน้าอ่านหนังสือ:</b> แสดงชื่อเรื่องด้านบน พื้นที่อ่านกว้างขวางตรงกลาง และแถบความคืบหน้า (%) ด้านล่าง<br><br><b>จุดเด่นสำคัญ</b><br>• <b>สบายตา:</b> อัตราส่วนคอนทราสต์ที่เหมาะสม ไม่เมื่อยล้าสายตาเมื่ออ่านเป็นเวลานาน<br>• <b>UI มินิมอล:</b> ตัดปุ่มที่ไม่จำเป็นออก เน้นการอ่าน ปรับขนาดตัวอักษร และข้ามหน้า<br>• <b>ควบคุมง่าย:</b> ใช้งานด้วยการปัดและแตะบนแว่นตาอย่างราบรื่น<br>• <b>บันทึกภาพหน้าจอ:</b> บันทึกภาพหน้าที่ประทับใจเก็บไว้ได้ทันที",
+    "id": "EKReader adalah aplikasi pembaca e-book yang bersih dan intuitif yang mendukung file TXT dan EPUB.<br><br><b>Tata Letak Layar</b><br>• <b>Layar Utama:</b> Menampilkan daftar buku dengan ikon pembeda TXT dan EPUB.<br>• <b>Layar Pembaca:</b> Judul buku di bagian atas, area baca luas di tengah, dan bilah progres (%) di bagian bawah.<br><br><b>Fitur Unggulan</b><br>• <b>Kenyamanan Visual:</b> Rasio kontras yang dioptimalkan agar mata tidak cepat lelah.<br>• <b>UI Bersih:</b> Meminimalkan tombol rumit dan fokus pada membaca serta ukuran font.<br>• <b>Optimasi Kontrol:</b> Dioperasikan dengan nyaman lewat usapan dan sentuhan.<br>• <b>Tangkapan Layar:</b> Simpan tangkapan layar dari halaman yang sedang dibaca.",
+    "ru": "EKReader — лаконичное и удобное приложение для чтения электронных книг в форматах TXT и EPUB.<br><br><b>Интерфейс</b><br>• <b>Главный экран:</b> Список книг с понятными значками форматов TXT и EPUB.<br>• <b>Экран чтения:</b> Название книги вверху, удобный текст по центру и прогресс чтения (%) внизу.<br><br><b>Преимущества</b><br>• <b>Комфорт для глаз:</b> Специально подобранная контрастность для долгого чтения без усталости.<br>• <b>Минималистичный дизайн:</b> Фокус на тексте, удобном переходе по главам и настройке шрифта.<br>• <b>Управление жестами:</b> Оптимизировано под свайпы и касания дужки очков.<br>• <b>Скриншоты:</b> Возможность сохранять снимки понравившихся страниц."
+  },
+  "control": {
+    "ko": "<ul style='padding-left: 20px;'><li><b>메뉴 열기:</b> 리더 화면에서 터치하면 메인 메뉴(이동, 글자 크기, 뒤로가기)를 호출할 수 있습니다.</li><li><b>페이지/위치 이동 (Jump):</b><br>◦ 'Jump to' 다이얼로그에서 터치 스와이프로 5% 단위로 위치를 조절한 후, 터치하면 즉시 해당 위치로 이동합니다.</li><li><b>글자 크기 조절:</b> 폰트 사이즈 다이얼로그에서 Small, Normal, Large, X-Large 중 원하는 크기를 선택할 수 있습니다.</li><li><b>진행률 확인:</b> 화면 하단에 실시간으로 현재 읽고 있는 위치(%)와 프로그레스 바가 표시됩니다.</li><li><b>파일 전송(Web Install):</b> txt, epub 와 같은 도서 자료는 사이트의 Web Install 메뉴에서 로키드 글래스를 연결한 후에 EKReader 전용 파일 올리기 버튼을 이용해서 쉽게 전송할 수 있습니다. <b> Hi Rokid 로키드 기본 앱을 통해서도 도서를 업로드할 수 있습니다. 도구상자 - 안경앱 관리 - 상단의 폴더 아이콘 - 안경으로 파일 업로드</li></ul>",
+    "en": "<ul style='padding-left: 20px;'><li><b>Open Menu:</b> Call the main menu touchs on the reader screen.</li><li><b>Jump to Page/Location:</b><br>◦ Adjust location by 5% increments using swipe in the 'Jump to' dialog, then touchs.</li><li><b>Font Size:</b> Select desired size from Small, Normal, Large, X-Large in the font size dialog.</li><li><b>Check Progress:</b> Real-time current location (%) and progress bar are displayed at the bottom.</li><li><b>File Transfer (Web Install):</b> Materials such as txt and epub can be transferred easily using the file upload button dedicated to EKReader after connecting the smart glasses from the Web Install menu on the site. <b> Hi Rokid app also allows you to upload books. Toolbox - Manage Glass Apps - Folder Icon at the Top - Upload File to Glasses.</li></ul>",
+    "ja": "<ul style='padding-left: 20px;'><li><b>メニュー表示:</b> リーダー画面をタップするとメインメニュー（移動、文字サイズ、戻る）が表示されます。</li><li><b>ページ移動 (Jump):</b><br>◦ 'Jump to'でスワイプして5%単位で位置を調整し、タップで即座に移動。</li><li><b>文字サイズ調整:</b> Small, Normal, Large, X-Largeから選択可能。</li><li><b>進捗確認:</b> 画面下部に現在の位置(%)とプログレスバーを常時表示。</li><li><b>ファイル転送:</b> Web InstallメニューからEKReader専用アップロード機能、またはHi Rokidアプリ経由で手軽に本を転送できます。</li></ul>",
+    "zh": "<ul style='padding-left: 20px;'><li><b>打开菜单:</b> 阅读界面轻触镜腿呼出主菜单（跳转、字号、返回）。</li><li><b>进度跳转:</b><br>◦ 在'Jump to'弹窗中滑动调节（每次5%），轻触立即跳转至指定位置。</li><li><b>字号调节:</b> 支持在 Small, Normal, Large, X-Large 间自由切换。</li><li><b>进度查看:</b> 底部实时显示当前阅读百分比(%)与进度条。</li><li><b>图书传输:</b> 可在官网Web Install菜单中连接眼镜一键上传TXT/EPUB，亦可通过Hi Rokid官方App文件管理传输。</li></ul>",
+    "es": "<ul style='padding-left: 20px;'><li><b>Abrir menú:</b> Toca la pantalla de lectura para abrir el menú (saltar, tamaño de letra, volver).</li><li><b>Saltar a posición:</b> Desliza en saltos del 5% y toca para confirmar.</li><li><b>Tamaño de fuente:</b> Elige entre Small, Normal, Large o X-Large.</li><li><b>Progreso:</b> Muestra la posición actual (%) y la barra en la parte inferior.</li><li><b>Transferir libros:</b> Transfiere archivos TXT/EPUB mediante el menú Web Install o la app Hi Rokid.</li></ul>",
+    "de": "<ul style='padding-left: 20px;'><li><b>Menü aufrufen:</b> Leseansicht antippen für das Hauptmenü (Springen, Schriftgröße, Zurück).</li><li><b>Position springen:</b> Im 'Jump to'-Menü per Wischgeste in 5%-Schritten springen.</li><li><b>Schriftgröße:</b> Wählen Sie zwischen Small, Normal, Large und X-Large.</li><li><b>Lesefortschritt:</b> Live-Anzeige von Prozentwert und Fortschrittsbalken unten.</li><li><b>Buchübertragung:</b> TXT/EPUB-Dateien über das Web Install Menü der Website oder die Hi Rokid App auf die Brille laden.</li></ul>",
+    "fr": "<ul style='padding-left: 20px;'><li><b>Ouvrir le menu:</b> Touchez l'écran pour afficher le menu (sauter, taille de police, retour).</li><li><b>Accéder à une page:</b> Faites défiler par paliers de 5% et touchez pour valider.</li><li><b>Taille de texte:</b> Choisissez entre Small, Normal, Large et X-Large.</li><li><b>Progression:</b> Pourcentage (%) et barre de progression visibles en bas de l'écran.</li><li><b>Transfert de fichiers:</b> Transférez vos livres TXT/EPUB via le menu Web Install ou l'application Hi Rokid.</li></ul>",
+    "vi": "<ul style='padding-left: 20px;'><li><b>Mở menu:</b> Chạm vào màn hình đọc để mở menu (chuyển trang, cỡ chữ, quay lại).</li><li><b>Nhảy trang:</b> Vuốt theo từng nấc 5% trong bảng 'Jump to' và chạm để nhảy đến vị trí đó.</li><li><b>Cỡ chữ:</b> Chọn giữa Small, Normal, Large, X-Large.</li><li><b>Tiến độ:</b> Thanh tiến trình và tỷ lệ phần trăm (%) hiển thị ở cạnh dưới.</li><li><b>Truyền sách:</b> Tải sách TXT/EPUB lên kính dễ dàng qua menu Web Install trên web hoặc app Hi Rokid.</li></ul>",
+    "th": "<ul style='padding-left: 20px;'><li><b>เปิดเมนู:</b> แตะหน้าจอขณะอ่านเพื่อเรียกเมนูหลัก (ข้ามหน้า, ขนาดตัวอักษร, ย้อนกลับ)</li><li><b>ข้ามตำแหน่ง:</b> ปัดปรับตำแหน่งทีละ 5% ในกล่อง 'Jump to' แล้วแตะเพื่อข้ามไปทันที</li><li><b>ขนาดตัวอักษร:</b> เลือกได้ระหว่าง Small, Normal, Large, X-Large</li><li><b>ตรวจสอบความคืบหน้า:</b> แสดงเปอร์เซ็นต์ (%) และแถบความคืบหน้าด้านล่าง</li><li><b>โอนถ่ายไฟล์:</b> ส่งไฟล์ TXT/EPUB ขึ้นแว่นตาได้สะดวกผ่านเมนู Web Install บนเว็บไซต์ หรือผ่านแอป Hi Rokid</li></ul>",
+    "id": "<ul style='padding-left: 20px;'><li><b>Buka Menu:</b> Sentuh layar untuk membuka menu utama (lompat, ukuran font, kembali).</li><li><b>Lompat Posisi:</b> Usap dalam kelipatan 5% pada dialog 'Jump to' lalu ketuk untuk berpindah.</li><li><b>Ukuran Font:</b> Pilih antara Small, Normal, Large, X-Large.</li><li><b>Progres:</b> Persentase membaca (%) dan bilah progres ditampilkan di bagian bawah.</li><li><b>Transfer File:</b> Kirim buku TXT/EPUB dengan mudah melalui menu Web Install situs atau aplikasi Hi Rokid.</li></ul>",
+    "ru": "<ul style='padding-left: 20px;'><li><b>Меню:</b> Коснитесь экрана чтения для вызова меню (переход, размер шрифта, назад).</li><li><b>Переход:</b> В диалоге 'Jump to' свайпайте с шагом 5% и коснитесь для подтверждения.</li><li><b>Размер шрифта:</b> Выбирайте Small, Normal, Large или X-Large.</li><li><b>Прогресс:</b> Процент прочитанного и полоса прогресса видны внизу.</li><li><b>Загрузка книг:</b> Загружайте файлы TXT и EPUB через раздел Web Install на сайте или через приложение Hi Rokid.</li></ul>"
+  },
+  "youtubeUrl": "",
+  "youtubeType": "1",
+  "updated": [
+    {
+      "version": "1.5.0",
+      "releaseDate": "2026-08-04",
+      "ko": "Hi Rokid App 의 도구상자 - 안경앱 관리 - 상단의 폴더 아이콘 - 안경으로 파일 올리기 기능을 이용해서 도서를 올릴 수 있도록 추가하였습니다.",
+      "en": "Add file upload feature via Hi Rokid App's Toolbox - Manage Glass Apps - Folder icon at the top - Upload file to glasses.",
+      "ja": "Hi Rokidアプリのツールボックス - メガネアプリ管理 - 上部フォルダアイコン - ファイル送信機能を利用して本をアップロードできるように対応しました。",
+      "zh": "新增支持通过Hi Rokid应用「工具箱 - 眼镜应用管理 - 顶部文件夹图标 - 文件上传」向眼镜传输图书文件。",
+      "es": "Añadida función de carga de libros mediante la app Hi Rokid: Caja de herramientas > Gestionar apps > Icono de carpeta.",
+      "de": "Bücherupload über die Hi Rokid App hinzugefügt: Toolbox > Brillen-Apps verwalten > Ordnersymbol oben.",
+      "fr": "Ajout du transfert de livres via l'application Hi Rokid : Boîte à outils > Gestion des apps > Icône de dossier.",
+      "vi": "Thêm tính năng tải sách thông qua ứng dụng Hi Rokid: Hộp công cụ > Quản lý ứng dụng kính > Biểu tượng thư mục.",
+      "th": "เพิ่มการอัปโหลดหนังสือผ่านแอป Hi Rokid: กล่องเครื่องมือ > จัดการแอปแว่นตา > ไอคอนโฟลเดอร์ด้านบน",
+      "id": "Menambahkan fitur unggah buku melalui Aplikasi Hi Rokid: Kotak Alat > Kelola Aplikasi Kacamata > Ikon folder di atas.",
+      "ru": "Добавлена возможность загрузки книг через приложение Hi Rokid: Инструменты > Управление приложениями > Значок папки."
     },
-    "version": "1.5.0",
-    "releaseDate": "2026-03-24",
-    "shortDescription": {
-        "ko": "깔끔하고 직관적인 Rokid Glasses 전용 E-book 리더기",
-        "en": "Clean and intuitive E-book reader app for Rokid Glasses."
+    {
+      "version": "1.4.0",
+      "releaseDate": "2026-04-24",
+      "ko": "목록에서 좌우로 기울여서 탐색하도록 변경하였습니다. 책 읽기 모드에서 시계와 배터리 상태가 추가되었습니다.",
+      "en": "The list navigation has been changed to tilt left and right. Clock and battery status have been added in book reading mode.",
+      "ja": "一覧で頭を左右に傾けてナビゲートできるように変更。読書モードに時計とバッテリー残量表示を追加。",
+      "zh": "改为通过左右倾斜头部浏览图书列表；阅读模式下新增时钟与电量状态显示。",
+      "es": "Navegación en lista inclinando la cabeza a izquierda y derecha. Añadidos reloj y batería al leer.",
+      "de": "Listennavigation durch Neigen des Kopfes nach links/rechts angepasst. Uhrzeit und Akkustand im Lesemodus ergänzt.",
+      "fr": "Navigation dans la liste par inclinaison de la tête. Ajout de l'horloge et de la batterie en mode lecture.",
+      "vi": "Đổi cách duyệt danh sách bằng cách nghiêng đầu sang trái/phải. Thêm đồng hồ và pin trong khi đọc.",
+      "th": "เปลี่ยนการเลื่อนดูรายการโดยเอียงศีรษะซ้าย-ขวา เพิ่มนาฬิกาและสถานะแบตเตอรี่ในโหมดอ่าน",
+      "id": "Navigasi daftar diubah dengan memiringkan kepala ke kiri/kanan. Menambahkan jam dan baterai saat membaca.",
+      "ru": "Навигация в списке наклоном головы влево/вправо. Добавлены часы и уровень заряда батареи при чтении."
     },
-    "description": {
-        "ko": "EKReader는 TXT 및 EPUB 파일을 지원하는 깔끔하고 직관적인 e-북 리더 애플리케이션입니다.<br><br><b>주요 화면 구성</b><br>• <b>메인 화면:</b> 기기 내의 도서 목록을 리스트 형태로 보여주며, 파일 형식(TXT, EPUB)을 아이콘으로 구분합니다.<br>• <b>리더 화면:</b> 상단에는 책 제목이 표시되고, 중앙의 넓은 영역에서 내용을 읽을 수 있습니다. 하단에는 현재 독서 진행률(%)과 프로그레스 바가 표시됩니다.<br><br><b>핵심 특징</b><br>• <b>시각적 편안함:</b> 투명한 배경에 최적화된 대비율을 적용하였습니다.<br>• <b>간결한 UI:</b> 복잡한 버튼을 최소화하고, 필요한 기능(이동, 폰트)에 집중할 수 있도록 설계하였습니다.<br>• <b>조작 최적화:</b>Rokid Glasses 의 환경에 맞게 스와이핑과 터치만으로 조작합니다.<br>• <b>화면 저장:</b>읽고 있는 내용중에 저장하고 싶은 화면이 있으면 스크린샷을 저장할 수 있습니다.",
-        "en": "EKReader is a clean and intuitive e-book reader application supporting TXT and EPUB files.<br><br><b>Key Screen Layout</b><br>• <b>Main Screen:</b> Shows the list of books on the device in a card format, distinguishing file types (TXT, EPUB) with icons.<br>• <b>Reader Screen:</b> The book title is displayed at the top, and contents can be read in the wide central area. The current reading progress (%) and a progress bar are displayed at the bottom.<br><br><b>Core Features</b><br>• <b>Visual Comfort:</b> Applies an optimized contrast ratio on a black background for eye comfort during long reading sessions.<br>• <b>Simple UI:</b> Minimizes complex buttons and focuses on essential functions (navigation, font size).<br>• <b>Operation Optimization:</b> Rokid Glasses environment optimized for swiping and touch operation."
+    {
+      "version": "1.3.0",
+      "releaseDate": "2026-04-22",
+      "ko": "목록 탐색이 개선되었습니다. 정렬순 기능 추가, 상,하로 방향으로 제스쳐 스크롤 기능 추가",
+      "en": "List navigation has been improved. Added sort and gesture scroll features.",
+      "ja": "リスト操作を改善。ソート機能の追加、上下ジェスチャースクロール機能の追加。",
+      "zh": "优化列表交互，新增排序功能及上下滑动手势滚动。",
+      "es": "Mejora en la navegación de listas. Añadida ordenación y desplazamiento gestual arriba/abajo.",
+      "de": "Listen-Navigation verbessert. Sortierung und Auf-/Ab-Gesten-Scrollen hinzugefügt.",
+      "fr": "Amélioration de la liste. Ajout du tri et du défilement gestuel haut/bas.",
+      "vi": "Cải thiện duyệt danh sách. Thêm tính năng sắp xếp và cuộn cử chỉ lên/xuống.",
+      "th": "ปรับปรุงการเลื่อนดูรายการ เพิ่มฟังก์ชันจัดเรียง และการเลื่อนหน้าจอด้วยท่าทางขึ้น-ลง",
+      "id": "Navigasi daftar ditingkatkan. Menambahkan fitur sortir dan gestur gulir atas/bawah.",
+      "ru": "Улучшена навигация по списку. Добавлена сортировка и прокрутка жестами вверх/вниз."
     },
-    "control": {
-        "ko": "<ul style='padding-left: 20px;'><li><b>메뉴 열기:</b> 리더 화면에서 터치하면 메인 메뉴(이동, 글자 크기, 뒤로가기)를 호출할 수 있습니다.</li><li><b>페이지/위치 이동 (Jump):</b><br>◦ 'Jump to' 다이얼로그에서 터치 스와이프로 5% 단위로 위치를 조절한 후, 터치하면 즉시 해당 위치로 이동합니다.</li><li><b>글자 크기 조절:</b> 폰트 사이즈 다이얼로그에서 Small, Normal, Large, X-Large 중 원하는 크기를 선택할 수 있습니다.</li><li><b>진행률 확인:</b> 화면 하단에 실시간으로 현재 읽고 있는 위치(%)와 프로그레스 바가 표시됩니다.</li><li><b>파일 전송(Web Install):</b> txt, epub 와 같은 도서 자료는 사이트의 Web Install 메뉴에서 로키드 글래스를 연결한 후에 EKReader 전용 파일 올리기 버튼을 이용해서 쉽게 전송할 수 있습니다. <b> Hi Rokid 로키드 기본 앱을 통해서도 도서를 업로드할 수 있습니다. 도구상자 - 안경앱 관리 - 상단의 폴더 아이콘 - 안경으로 파일 업로드</li></ul>",
-        "en": "<ul style='padding-left: 20px;'><li><b>Open Menu:</b> Call the main menu touchs on the reader screen.</li><li><b>Jump to Page/Location:</b><br>◦ Adjust location by 5% increments using swipe in the 'Jump to' dialog, then touchs.</li><li><b>Font Size:</b> Select desired size from Small, Normal, Large, X-Large in the font size dialog.</li><li><b>Check Progress:</b> Real-time current location (%) and progress bar are displayed at the bottom.</li><li><b>File Transfer (Web Install):</b> Materials such as txt and epub can be transferred easily using the file upload button dedicated to EKReader after connecting the smart glasses from the Web Install menu on the site. <b> Hi Rokid app also allows you to upload books. Toolbox - Manage Glass Apps - Folder Icon at the Top - Upload File to Glasses.</li></ul>"
+    {
+      "version": "1.2.1",
+      "releaseDate": "2026-04-09",
+      "ko": "설정 메뉴에서의 버그를 수정하였습니다.",
+      "en": "Fixed a bug in the settings menu.",
+      "ja": "設定メニューの軽微なバグを修正しました。",
+      "zh": "修复了设置菜单中的异常Bug。",
+      "es": "Se corrigió un error en el menú de configuración.",
+      "de": "Fehler im Einstellungsmenü behoben.",
+      "fr": "Correction d'un bug dans le menu des paramètres.",
+      "vi": "Đã sửa lỗi trong menu cài đặt.",
+      "th": "แก้ไขข้อผิดพลาดในเมนูการตั้งค่า",
+      "id": "Memperbaiki bug pada menu pengaturan.",
+      "ru": "Исправлена ошибка в меню настроек."
     },
-    "youtubeUrl": "",
-    "youtubeType": "1",
-    "updated": [
-        {
-            "version": "1.5.0",
-            "releaseDate": "2026-08-04",
-            "ko": "Hi Rokid App 의 도구상자 - 안경앱 관리 - 상단의 폴더 아이콘 - 안경으로 파일 올리기 기능을 이용해서 도서를 올릴 수 있도록 추가하였습니다.",
-            "en": "Add file upload feature via Hi Rokid App's Toolbox - Manage Glass Apps - Folder icon at the top - Upload file to glasses."
-        },
-        {
-            "version": "1.4.0",
-            "releaseDate": "2026-04-24",
-            "ko": "목록에서 좌우로 기울여서 탐색하도록 변경하였습니다. 책 읽기 모드에서 시계와 배터리 상태가 추가되었습니다.",
-            "en": "The list navigation has been changed to tilt left and right. Clock and battery status have been added in book reading mode."
-        },
-        {
-            "version": "1.3.0",
-            "releaseDate": "2026-04-22",
-            "ko": "목록 탐색이 개선되었습니다. 정렬순 기능 추가, 상,하로 방향으로 제스쳐 스크롤 기능 추가",
-            "en": "List navigation has been improved. Added sort and gesture scroll features."
-        },
-        {
-            "version": "1.2.1",
-            "releaseDate": "2026-04-09",
-            "ko": "설정 메뉴에서의 버그를 수정하였습니다.",
-            "en": "Fixed a bug in the settings menu."
-        },
-        {
-            "version": "1.2.0",
-            "releaseDate": "2026-04-08",
-            "ko": "이 버전은 문서에서 불필요한 공백을 지운 버전입니다.",
-            "en": "This version is a version that removes unnecessary blank spaces from the document."
-        },
-        {
-            "version": "1.1.0",
-            "releaseDate": "2026-04-07",
-            "ko": "Hands Free 기능 추가, 좌우로 고개를 까닥여서 페이지를 넘길 수 있습니다.",
-            "en": "Hands Free feature added, you can turn pages by nodding your head left or right."
-        }
-    ],
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.5.0.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.4.0.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.3.0.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.2.1.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.2.0.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.1.0.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.0.0.apk"
-    ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKReader/scr1.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKReader/scr2.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKReader/scr3.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKReader/scr4.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKReader/scr5.jpg"
-    ],
-    "tags": {
-        "ko": [
-            "이북",
-            "E-Book",
-            "뷰어"
-        ],
-        "en": [
-            "ebook",
-            "txt",
-            "epub"
-        ]
+    {
+      "version": "1.2.0",
+      "releaseDate": "2026-04-08",
+      "ko": "이 버전은 문서에서 불필요한 공백을 지운 버전입니다.",
+      "en": "This version is a version that removes unnecessary blank spaces from the document.",
+      "ja": "ドキュメント内の不要な空白を削除し、テキスト整形を最適化しました。",
+      "zh": "优化排版，清除了文档中多余的空白字符。",
+      "es": "Eliminados los espacios en blanco innecesarios de los documentos.",
+      "de": "Entfernt überflüssige Leerzeichen aus Dokumenten zur besseren Darstellung.",
+      "fr": "Suppression des espaces inutiles dans les documents.",
+      "vi": "Phiên bản này loại bỏ các khoảng trắng thừa trong tài liệu.",
+      "th": "ลบช่องว่างที่ไม่จำเป็นในเอกสารออกเพื่อการอ่านที่สบายตา",
+      "id": "Versi ini menghapus spasi kosong yang tidak perlu dari dokumen.",
+      "ru": "Удалены лишние пробелы в тексте для улучшения форматирования."
+    },
+    {
+      "version": "1.1.0",
+      "releaseDate": "2026-04-07",
+      "ko": "Hands Free 기능 추가, 좌우로 고개를 까닥여서 페이지를 넘길 수 있습니다.",
+      "en": "Hands Free feature added, you can turn pages by nodding your head left or right.",
+      "ja": "Hands-Free機能を追加。首を左右に傾けるだけでページをめくれます。",
+      "zh": "新增Hands-Free免触控翻页，轻轻左右歪头即可轻松翻页。",
+      "es": "Función Manos Libres añadida: pasa páginas inclinando la cabeza a izquierda o derecha.",
+      "de": "Hands-Free-Funktion hinzugefügt: Seiten durch leichtes Neigen des Kopfes umblättern.",
+      "fr": "Mode mains libres ajouté : tournez les pages en inclinant simplement la tête.",
+      "vi": "Thêm tính năng Rảnh tay: lật trang bằng cách nghiêng nhẹ đầu sang trái hoặc phải.",
+      "th": "เพิ่มฟังก์ชันแฮนด์ฟรี: พลิกหน้าหนังสือได้โดยเพียงแค่เอียงศีรษะไปทางซ้ายหรือขวา",
+      "id": "Menambahkan fitur Hands-Free: membalik halaman cukup dengan memiringkan kepala ke kiri/kanan.",
+      "ru": "Добавлен режим Hands-Free: перелистывание страниц наклоном головы влево или вправо."
     }
+  ],
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.5.0.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.4.0.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.3.0.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.2.1.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.2.0.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.1.0.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKReader_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKReader/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKReader/scr2.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKReader/scr3.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKReader/scr4.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKReader/scr5.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "이북",
+      "E-Book",
+      "뷰어"
+    ],
+    "en": [
+      "ebook",
+      "txt",
+      "epub"
+    ],
+    "ja": [
+      "電子書籍",
+      "E-Book",
+      "ビューア"
+    ],
+    "zh": [
+      "电子书",
+      "EPUB",
+      "阅读器"
+    ],
+    "es": [
+      "LibroElectrónico",
+      "EPUB",
+      "Lector"
+    ],
+    "de": [
+      "EBook",
+      "EPUB",
+      "Leser"
+    ],
+    "fr": [
+      "LivreNumérique",
+      "EPUB",
+      "Lecteur"
+    ],
+    "vi": [
+      "SáchĐiệnTử",
+      "EPUB",
+      "TrìnhĐọc"
+    ],
+    "th": [
+      "อีบุ๊ก",
+      "EPUB",
+      "เครื่องอ่าน"
+    ],
+    "id": [
+      "BukuElektronik",
+      "EPUB",
+      "Pembaca"
+    ],
+    "ru": [
+      "ЭлектроннаяКнига",
+      "EPUB",
+      "Читалка"
+    ]
+  }
 }

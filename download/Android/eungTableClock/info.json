@@ -1,41 +1,122 @@
 {
-    "title": {
-        "ko": "eung Table Clock",
-        "en": "eung Table Clock"
-    },
-    "version": "1.0.0",
-    "releaseDate": "2026-03-15",
-    "shortDescription": {
-        "ko": "탁상시계, 달력",
-        "en": "Table Clock, Calendar"
-    },
-    "description": {
-        "ko": "<b>광고 배너가 없는</b> 깔끔하고 미니멀한 탁상시계 앱입니다.",
-        "en": "A clean and minimalist <b>table clock app without any ad banners</b>."
-    },
-    "control": {
-        "ko": "<ul style='padding-left: 20px;'><li><b>시간 클릭:</b> 시간 표시 방식이 변경됩니다.</li><li><b>달력 클릭:</b> 앱의 테마(4가지)가 변경됩니다.</li><li><b>달력의 '월' 클릭:</b> 표시 언어(영어/한국어)가 변경됩니다.</li></ul>",
-        "en": "<ul style='padding-left: 20px;'><li><b>Click Time:</b> Changes the time display format.</li><li><b>Click Calendar:</b> Cycles through 4 different app themes.</li><li><b>Click 'Month':</b> Toggles the display language between English and Korean.</li></ul>"
-    },
-    "youtubeUrl": "https://www.youtube.com/embed/gLOKSUxvS5w",
-    "youtubeType": "0",
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/AndroidApp/eungTableClock.apk"
+  "title": {
+    "ko": "eung Table Clock",
+    "en": "eung Table Clock",
+    "ja": "eung 置時計",
+    "zh": "eung 台钟",
+    "es": "eung Reloj de Mesa",
+    "de": "eung Tischuhr",
+    "fr": "eung Horloge de Table",
+    "vi": "eung Đồng Hồ Để Bàn",
+    "th": "eung นาฬิกาตั้งโต๊ะ",
+    "id": "eung Jam Meja",
+    "ru": "eung Настольные Часы"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-03-15",
+  "shortDescription": {
+    "ko": "탁상시계, 달력",
+    "en": "Table Clock, Calendar",
+    "ja": "置時計、カレンダー",
+    "zh": "台钟、日历",
+    "es": "Reloj de mesa, calendario",
+    "de": "Tischuhr, Kalender",
+    "fr": "Horloge de table, calendrier",
+    "vi": "Đồng hồ để bàn, lịch",
+    "th": "นาฬิกาตั้งโต๊ะ ปฏิทิน",
+    "id": "Jam meja, kalender",
+    "ru": "Настольные часы, календарь"
+  },
+  "description": {
+    "ko": "<b>광고 배너가 없는</b> 깔끔하고 미니멀한 탁상시계 앱입니다.",
+    "en": "A clean and minimalist <b>table clock app without any ad banners</b>.",
+    "ja": "<b>広告バナーのない</b>すっきりとミニマルな置時計アプリです。",
+    "zh": "一款<b>无广告横幅</b>、简洁小巧的台钟应用。",
+    "es": "Una aplicación de reloj de mesa limpia y minimalista <b>sin banners publicitarios</b>.",
+    "de": "Eine saubere und minimalistische <b>Tischuhr-App ohne Werbebanner</b>.",
+    "fr": "Une application d'horloge de table épurée et minimaliste <b>sans bannières publicitaires</b>.",
+    "vi": "Ứng dụng đồng hồ để bàn gọn gàng, tối giản <b>không có biểu ngữ quảng cáo</b>.",
+    "th": "แอปนาฬิกาตั้งโต๊ะที่สะอาดตาและมินิมอล <b>ไม่มีแบนเนอร์โฆษณา</b>",
+    "id": "Aplikasi jam meja yang bersih dan minimalis <b>tanpa banner iklan</b>.",
+    "ru": "Удобные и минималистичные <b>настольные часы без рекламных баннеров</b>."
+  },
+  "control": {
+    "ko": "<ul style='padding-left: 20px;'><li><b>시간 클릭:</b> 시간 표시 방식이 변경됩니다.</li><li><b>달력 클릭:</b> 앱의 테마(4가지)가 변경됩니다.</li><li><b>달력의 '월' 클릭:</b> 표시 언어(영어/한국어)가 변경됩니다.</li></ul>",
+    "en": "<ul style='padding-left: 20px;'><li><b>Click Time:</b> Changes the time display format.</li><li><b>Click Calendar:</b> Cycles through 4 different app themes.</li><li><b>Click 'Month':</b> Toggles the display language between English and Korean.</li></ul>",
+    "ja": "<ul style='padding-left: 20px;'><li><b>時間をタップ:</b> 時間の表示形式が切り替わります。</li><li><b>カレンダーをタップ:</b> アプリのテーマ(4種類)が切り替わります。</li><li><b>カレンダーの「月」をタップ:</b> 表示言語(英語/韓国語)が切り替わります。</li></ul>",
+    "zh": "<ul style='padding-left: 20px;'><li><b>点击时间:</b> 更改时间显示格式。</li><li><b>点击日历:</b> 切换4种应用主题。</li><li><b>点击日历的“月”:</b> 在英语和韩语之间切换显示语言。</li></ul>",
+    "es": "<ul style='padding-left: 20px;'><li><b>Tocar la hora:</b> Cambia el formato de visualización de la hora.</li><li><b>Tocar el calendario:</b> Alterna entre 4 temas de la aplicación.</li><li><b>Tocar el 'Mes':</b> Cambia el idioma de visualización entre inglés y coreano.</li></ul>",
+    "de": "<ul style='padding-left: 20px;'><li><b>Uhrzeit tippen:</b> Ändert das Zeitanzeigeformat.</li><li><b>Kalender tippen:</b> Wechselt durch 4 App-Designs.</li><li><b>'Monat' tippen:</b> Schaltet die Anzeigesprache zwischen Englisch und Koreanisch um.</li></ul>",
+    "fr": "<ul style='padding-left: 20px;'><li><b>Cliquer sur l'heure:</b> Change le format d'affichage de l'heure.</li><li><b>Cliquer sur le calendrier:</b> Bascule entre 4 thèmes d'application.</li><li><b>Cliquer sur 'Mois':</b> Alterne la langue d'affichage entre l'anglais et le coréen.</li></ul>",
+    "vi": "<ul style='padding-left: 20px;'><li><b>Nhấn vào giờ:</b> Thay đổi định dạng hiển thị thời gian.</li><li><b>Nhấn vào lịch:</b> Chuyển đổi qua 4 chủ đề ứng dụng.</li><li><b>Nhấn vào 'Tháng':</b> Chuyển đổi ngôn ngữ hiển thị giữa tiếng Anh và tiếng Hàn.</li></ul>",
+    "th": "<ul style='padding-left: 20px;'><li><b>แตะเวลา:</b> เปลี่ยนรูปแบบการแสดงผลเวลา</li><li><b>แตะปฏิทิน:</b> สลับธีมแอป 4 แบบ</li><li><b>แตะ 'เดือน':</b> สลับภาษาการแสดงผลระหว่างภาษาอังกฤษและภาษาเกาหลี</li></ul>",
+    "id": "<ul style='padding-left: 20px;'><li><b>Ketuk waktu:</b> Mengubah format tampilan waktu.</li><li><b>Ketuk kalender:</b> Beralih di antara 4 tema aplikasi.</li><li><b>Ketuk 'Bulan':</b> Mengubah bahasa tampilan antara bahasa Inggris dan Korea.</li></ul>",
+    "ru": "<ul style='padding-left: 20px;'><li><b>Нажатие на время:</b> Меняет формат отображения времени.</li><li><b>Нажатие на календарь:</b> Переключает 4 темы оформления.</li><li><b>Нажатие на «Месяц»:</b> Переключает язык между английским и корейским.</li></ul>"
+  },
+  "youtubeUrl": "https://www.youtube.com/embed/gLOKSUxvS5w",
+  "youtubeType": "0",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/AndroidApp/eungTableClock.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/eungTableClock/scr2.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/eungTableClock/scr1.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "탁상시계",
+      "달력",
+      "시계"
     ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/eungTableClock/scr2.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/eungTableClock/scr1.jpg"
+    "en": [
+      "Table Clock",
+      "Calendar",
+      "Clock"
     ],
-    "tags": {
-        "ko": [
-            "탁상시계",
-            "달력",
-            "시계"
-        ],
-        "en": [
-            "Table Clock",
-            "Calendar",
-            "Clock"
-        ]
-    }
+    "ja": [
+      "置時計",
+      "カレンダー",
+      "時計"
+    ],
+    "zh": [
+      "台钟",
+      "日历",
+      "时钟"
+    ],
+    "es": [
+      "RelojDeMesa",
+      "Calendario",
+      "Reloj"
+    ],
+    "de": [
+      "Tischuhr",
+      "Kalender",
+      "Uhr"
+    ],
+    "fr": [
+      "HorlogeDeTable",
+      "Calendrier",
+      "Horloge"
+    ],
+    "vi": [
+      "ĐồngHồĐểBàn",
+      "Lịch",
+      "ĐồngHồ"
+    ],
+    "th": [
+      "นาฬิกาตั้งโต๊ะ",
+      "ปฏิทิน",
+      "นาฬิกา"
+    ],
+    "id": [
+      "JamMeja",
+      "Kalender",
+      "Jam"
+    ],
+    "ru": [
+      "НастольныеЧасы",
+      "Календарь",
+      "Часы"
+    ]
+  }
 }

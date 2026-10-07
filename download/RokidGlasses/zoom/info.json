@@ -1,21 +1,57 @@
 {
   "title": {
     "ko": "EK Zoom",
-    "en": "EK Zoom"
+    "en": "EK Zoom",
+    "ja": "EK Zoom (拡大鏡)",
+    "zh": "EK Zoom 望远放大镜",
+    "es": "EK Zoom",
+    "de": "EK Zoom",
+    "fr": "EK Zoom",
+    "vi": "EK Zoom (Kính Lúp Phóng Đại)",
+    "th": "EK Zoom (แว่นขยายดิจิทัล)",
+    "id": "EK Zoom (Kaca Pembesar)",
+    "ru": "EK Zoom (Цифровая Лупа)"
   },
   "version": "1.0.0",
   "releaseDate": "2026-03-12",
   "shortDescription": {
     "ko": "카메라를 확대해서 보는 돋보기, 망원경 컨셉의 어플입니다.",
-    "en": "Offline English-Korean text translation application."
+    "en": "Offline English-Korean text translation application.",
+    "ja": "カメラ映像を拡大して見る虫眼鏡・望遠鏡コンセプトのアプリです。",
+    "zh": "像放大镜和望远镜一样放大摄像头画面的智能视觉应用。",
+    "es": "Utilidad de cámara que funciona como lupa o telescopio de aumento.",
+    "de": "Kamera-Dienstprogramm, das als Lupe oder Fernglas fungiert.",
+    "fr": "Utilitaire de caméra fonctionnant comme une loupe ou des jumelles grossissantes.",
+    "vi": "Ứng dụng phóng đại hình ảnh máy ảnh như kính lúp hoặc ống nhòm.",
+    "th": "แอปพลิเคชันซูมภาพจากกล้องให้เป็นแว่นขยายหรือกล้องส่องทางไกล",
+    "id": "Utilitas kamera yang berfungsi sebagai kaca pembesar atau teropong pembesaran.",
+    "ru": "Утилита камеры, работающая как цифровая лупа или телескоп."
   },
   "description": {
     "ko": "로키드 글래스의 카메라를 활용하여 <b>돋보기 또는 망원경</b>처럼 사용할 수 있는 배율 확대 앱입니다.<br><br><b>주요 기능</b><br>• <b>전체 화면 프리뷰:</b> 군더더기 없는 레이아웃으로 카메라 화면을 꽉 차게 보여줍니다.<br>• <b>배율 조정:</b> 1.0x → 2.0x → 3.0x → 4.0x 순으로 순환하며 배율을 전환합니다.<br>• <b>화질 최적화:</b> 하드웨어 샤픈 필터(Edge Mode)와 노이즈 감소 로직이 적용되어 선명한 확대 영상을 제공합니다.<br><br><p style='color:#777;'>※ 다운로드 파일 비밀번호: <b>eung.pe.kr</b></p>",
-    "en": "A camera utility for Rokid Glasses that functions as a <b>magnifier or binoculars</b>.<br><br><b>Key Features</b><br>• <b>Full Screen Preview:</b> Clean, distraction-free layout to view the camera feed.<br>• <b>Magnification:</b> Cycle through zoom levels (1.0x → 2.0x → 3.0x → 4.0x) with simple inputs.<br>• <b>Quality Optimization:</b> Uses hardware sharpening filters and noise reduction to provide clear, zoomed-in images.<br><br><p style='color:#777;'>※ Download password: <b>eung.pe.kr</b></p>"
+    "en": "A camera utility for Rokid Glasses that functions as a <b>magnifier or binoculars</b>.<br><br><b>Key Features</b><br>• <b>Full Screen Preview:</b> Clean, distraction-free layout to view the camera feed.<br>• <b>Magnification:</b> Cycle through zoom levels (1.0x → 2.0x → 3.0x → 4.0x) with simple inputs.<br>• <b>Quality Optimization:</b> Uses hardware sharpening filters and noise reduction to provide clear, zoomed-in images.<br><br><p style='color:#777;'>※ Download password: <b>eung.pe.kr</b></p>",
+    "ja": "Rokid Glassesのカメラを活用して<b>虫眼鏡（拡大鏡）や望遠鏡</b>のように使える倍率拡大アプリです。<br><br><b>主な特徴</b><br>• <b>フルスクリーンプレビュー:</b> 余計な要素のないクリーンなレイアウトでカメラ映像を画面いっぱいに表示。<br>• <b>倍率調整:</b> 1.0倍 → 2.0倍 → 3.0倍 → 4.0倍と循環してスムーズに拡大切替。<br>• <b>画質最適化:</b> ハードウェアシャープネス（Edge Mode）とノイズ低減処理で鮮明な拡大映像を実現。<br><br><p style='color:#777;'>※ ダウンロードファイルパスワード: <b>eung.pe.kr</b></p>",
+    "zh": "充分利用Rokid Glasses摄像头，化身为<b>放大镜或望远镜</b>的高清视界辅助应用。<br><br><b>核心特色</b><br>• <b>全屏沉浸预览:</b> 简洁无干扰的全屏视界。<br>• <b>循环变焦调节:</b> 按 1.0x → 2.0x → 3.0x → 4.0x 顺序循环平滑放大。<br>• <b>清晰度画质优化:</b> 搭载硬件锐化滤波(Edge Mode)与降噪算法，带来清晰的局部放大体验。<br><br><p style='color:#777;'>※ 下载压缩包密码: <b>eung.pe.kr</b></p>",
+    "es": "Una utilidad de cámara para Rokid Glasses que funciona como una <b>lupa o binoculares</b>.<br><br><b>Características principales</b><br>• <b>Vista previa a pantalla completa:</b> Diseño limpio y sin distracciones.<br>• <b>Niveles de aumento:</b> Alterna entre 1.0x → 2.0x → 3.0x → 4.0x con controles simples.<br>• <b>Calidad optimizada:</b> Filtros de nitidez por hardware y reducción de ruido para imágenes claras.<br><br><p style='color:#777;'>※ Contraseña de descarga: <b>eung.pe.kr</b></p>",
+    "de": "Ein Kamera-Dienstprogramm für Rokid Glasses, das als <b>Lupe oder Fernglas</b> fungiert.<br><br><b>Hauptfunktionen</b><br>• <b>Vollbild-Vorschau:</b> Klares, ablenkungsfreies Layout.<br>• <b>Vergrößerungsstufen:</b> Wechselt durch 1.0x → 2.0x → 3.0x → 4.0x per einfacher Berührung.<br>• <b>Optimierte Bildqualität:</b> Hardware-Schärfefilter und Rauschunterdrückung für gestochen scharfe Details.<br><br><p style='color:#777;'>※ Download-Passwort: <b>eung.pe.kr</b></p>",
+    "fr": "Un utilitaire de caméra pour Rokid Glasses qui fait office de <b>loupe ou de jumelles</b>.<br><br><b>Points forts</b><br>• <b>Plein écran:</b> Interface épurée pour afficher le flux vidéo en grand.<br>• <b>Grossissement:</b> Alternez les zooms (1.0x → 2.0x → 3.0x → 4.0x) en toute simplicité.<br>• <b>Optimisation de netteté:</b> Filtres matériels et réduction du bruit pour une clarté remarquable.<br><br><p style='color:#777;'>※ Mot de passe de téléchargement: <b>eung.pe.kr</b></p>",
+    "vi": "Tiện ích máy ảnh cho kính Rokid Glasses hoạt động như <b>kính lúp hoặc ống nhòm</b> nhìn xa.<br><br><b>Tính năng chính</b><br>• <b>Toàn màn hình:</b> Giao diện tối giản hiển thị hình ảnh rộng mở.<br>• <b>Độ phóng đại:</b> Chuyển đổi linh hoạt giữa 1.0x → 2.0x → 3.0x → 4.0x.<br>• <b>Tối ưu độ nét:</b> Bộ lọc phần cứng và giảm nhiễu giúp phóng to sắc nét.<br><br><p style='color:#777;'>※ Mật khẩu tệp tải về: <b>eung.pe.kr</b></p>",
+    "th": "ยูทิลิตี้กล้องสำหรับ Rokid Glasses ที่ทำหน้าที่เป็น<b>แว่นขยายหรือกล้องส่องทางไกล</b><br><br><b>คุณสมบัติเด่น</b><br>• <b>แสดงผลเต็มจอ:</b> การจัดวางที่สะอาดตา ปราศจากสิ่งรบกวน<br>• <b>ปรับระดับการซูม:</b> วนระดับการซูม (1.0x → 2.0x → 3.0x → 4.0x) ด้วยการสัมผัสง่ายๆ<br>• <b>ความคมชัดสูง:</b> ใช้ฟิลเตอร์ปรับความคมชัดของฮาร์ดแวร์เพื่อภาพซูมที่ชัดเจน<br><br><p style='color:#777;'>※ รหัสผ่านไฟล์ดาวน์โหลด: <b>eung.pe.kr</b></p>",
+    "id": "Utilitas kamera untuk Rokid Glasses yang berfungsi sebagai <b>kaca pembesar atau teropong</b>.<br><br><b>Fitur Utama</b><br>• <b>Pratinjau Layar Penuh:</b> Tata letak bersih tanpa gangguan.<br>• <b>Tingkat Pembesaran:</b> Berpindah tingkat zoom (1.0x → 2.0x → 3.0x → 4.0x).<br>• <b>Optimasi Gambar:</b> Filter penajaman perangkat keras dan pengurangan noise untuk visual yang tajeam.<br><br><p style='color:#777;'>※ Kata sandi unduhan: <b>eung.pe.kr</b></p>",
+    "ru": "Утилита для камеры Rokid Glasses, превращающая очки в <b>цифровую лупу или бинокль</b>.<br><br><b>Основные функции</b><br>• <b>Полноэкранный вид:</b> Лаконичный интерфейс без отвлекающих деталей.<br>• <b>Уровни зума:</b> Циклическое переключение (1.0x → 2.0x → 3.0x → 4.0x).<br>• <b>Четкое изображение:</b> Аппаратное повышение резкости и подавление шумов для идеальной видимости.<br><br><p style='color:#777;'>※ Пароль к архиву: <b>eung.pe.kr</b></p>"
   },
   "control": {
     "ko": "조작법은 간단합니다!<br>• <b>안경 다리 터치:</b> 터치할 때마다 배율이 한 단계씩 올라갑니다 (최대 4배 후 1배로 로테이션).",
-    "en": "Easy controls!<br>• <b>Touch Temple:</b> Each touch increments the magnification level (cycles up to 4.0x, then back to 1.0x)."
+    "en": "Easy controls!<br>• <b>Touch Temple:</b> Each touch increments the magnification level (cycles up to 4.0x, then back to 1.0x).",
+    "ja": "操作はとても簡単です！<br>• <b>メガネのテンプルをタッチ:</b> タッチするたびに倍率が1段階ずつ上がります（最大4倍の後は1倍に戻ります）。",
+    "zh": "操作非常方便快捷！<br>• <b>触碰镜腿:</b> 每次触碰倍率递增一级（最高可达4.0x，随后循环回1.0x）。",
+    "es": "¡Controles súper fáciles!<br>• <b>Tocar patilla de las gafas:</b> Cada toque aumenta un nivel de aumento (recorre hasta 4.0x y vuelve a 1.0x).",
+    "de": "Ganz einfache Steuerung!<br>• <b>Brillenbügel berühren:</b> Jedes Antippen erhöht die Vergrößerung um eine Stufe (bis zu 4,0x, danach wieder 1,0x).",
+    "fr": "Prise en main très facile !<br>• <b>Toucher la branche:</b> Chaque toucher augmente le niveau de zoom (jusqu'à 4.0x, puis revient à 1.0x).",
+    "vi": "Thao tác cực kỳ đơn giản!<br>• <b>Chạm vào gọng kính:</b> Mỗi lần chạm sẽ tăng độ phóng đại lên một mức (tối đa 4.0x rồi quay lại 1.0x).",
+    "th": "ควบคุมง่ายมาก!<br>• <b>แตะขาแว่น:</b> การแตะแต่ละครั้งจะเพิ่มระดับการขยายหนึ่งขั้น (วนถึง 4.0x แล้วกลับไปที่ 1.0x)",
+    "id": "Kontrol sangat mudah!<br>• <b>Sentuh Gagang Kacamata:</b> Setiap sentuhan menaikkan tingkat pembesaran (hingga 4.0x, lalu kembali ke 1.0x).",
+    "ru": "Управлять очень просто!<br>• <b>Касание дужки:</b> Каждое касание увеличивает масштаб на один шаг (до 4.0x, затем сброс на 1.0x)."
   },
   "youtubeUrl": "",
   "youtubeType": "1",
@@ -34,6 +70,42 @@
     "en": [
       "Zoom",
       "Camera"
+    ],
+    "ja": [
+      "Zoom",
+      "カメラ"
+    ],
+    "zh": [
+      "变焦",
+      "相机"
+    ],
+    "es": [
+      "Zoom",
+      "Cámara"
+    ],
+    "de": [
+      "Zoom",
+      "Kamera"
+    ],
+    "fr": [
+      "Zoom",
+      "Caméra"
+    ],
+    "vi": [
+      "PhóngĐại",
+      "MáyẢnh"
+    ],
+    "th": [
+      "ซูม",
+      "กล้อง"
+    ],
+    "id": [
+      "Zoom",
+      "Kamera"
+    ],
+    "ru": [
+      "Зум",
+      "Камера"
     ]
   }
 }

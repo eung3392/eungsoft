@@ -1,40 +1,121 @@
 {
-    "title": {
-        "ko": "EK Simple Home",
-        "en": "EK Simple Home"
-    },
-    "version": "1.0.0",
-    "releaseDate": "2026-07-27",
-    "shortDescription": {
-        "ko": "노인 사용자를 위한 심플 안드로이드 홈 런처 앱",
-        "en": "Simple Android home launcher app for senior users"
-    },
-    "description": {
-        "ko": "<b>EK Simple Home</b>은 노인 사용자를 위한 심플 안드로이드 홈 런처 앱입니다.<br> 80이 넘은 아버지가 스마트폰 때문에 불편해 하셔서 필요한 기능만 사용할 수 있도록 홈 런처를 만들어 보았습니다. <br>폰 설정의 애플리케이션 - 기본 앱 선택 - 홈 앱 설정에서 EK Simple Home 을 선택합니다.<br><br><b>주요 기능</b><ul><li><b>앱 목록 숨기기:</b> 앱 목록(전체 앱 서랍)을 숨기고, 설정에서 선택한 앱만 홈 화면에 노출합니다.</li><li><b>2열 그리드 표시:</b> 한 줄에 2개씩, 큰 아이콘 + 큰 글씨로 표시합니다.</li><li><b>드래그 앤 드롭:</b> 홈 화면에서 앱 아이콘을 길게 눌러 드래그 앤 드롭으로 순서를 변경할 수 있습니다.</li><li><b>시각적 가독성 최적화:</b> 앱 아이콘 배경을 투명하게 처리하고 가독성을 위해 텍스트 그림자를 추가했습니다.</li><li><b>상단 날짜/시간 표시:</b> 화면 상단 약 20% 영역에 큰 글씨의 날짜/시간을 표시합니다 (1초마다 갱신).</li><li><b>안전한 설정 진입:</b> 시계 영역을 5회 연속(3초 이내) 터치하면 설정 화면에 진입합니다.</li><li><b>설정 화면 기능:</b> 앱 검색 기능으로 원하는 앱을 빠르게 찾고, 체크박스로 홈 화면 노출 앱을 선택/해제할 수 있습니다. 앱 아이콘/이름을 터치하면 해당 앱이 즉시 실행되며, '배경화면 선택' 버튼으로 시스템 배경화면 선택기를 호출합니다.</li><li><b>런처 이탈 방지:</b> 홈 화면에서 뒤로가기 버튼을 무력화하여 의도치 않은 이탈을 방지합니다.</li></ul>",
-        "en": "<b>EK Simple Home</b> is a simple Android home launcher app designed for senior users.<br> Developed for my 80-year-old father who found the standard smartphone interface difficult to use. <br>Set as default home app in Phone Settings > Apps > Default Apps > Home App.<br><br><b>Key Features</b><ul><li><b>Hide App Drawer:</b> Hides the full app drawer and shows only selected apps on the home screen.</li><li><b>2-Column Grid:</b> Displays 2 apps per row with large icons and text for optimal readability.</li><li><b>Drag & Drop:</b> Reorder app icons on the home screen by press-and-drag.</li><li><b>Visual Optimization:</b> Transparent app icon background with text shadow for enhanced readability.</li><li><b>Top Clock & Date:</b> Displays large date and time in the top 20% area (updates every second).</li><li><b>Secure Settings Entry:</b> Tap the clock 5 times consecutively (within 3 seconds) to enter settings.</li><li><b>Settings Features:</b> Search apps, toggle checkboxes to select home apps, launch apps directly, and set wallpaper via system wallpaper picker.</li><li><b>Prevent Accidental Exit:</b> Disables the back button on the home screen to prevent accidental exit.</li></ul>"
-    },
-    "control": {
-        "ko": "<b>사용 방법</b><ol style='padding-left: 20px;'><li><b>초기 실행:</b> 앱 실행 초기에는 선택된 앱이 없으므로 홈 화면이 비어 있습니다.</li><li><b>설정 진입:</b> 상단 시계 영역을 5번 빠르게 연속으로 터치하여 설정 화면으로 이동합니다.</li><li><b>노출 앱 선택:</b> 설정 화면에서 홈 화면에 노출하고 싶은 앱들의 체크박스를 켭니다. (상단 검색창 이용 가능)</li><li><b>홈 화면 확인:</b> 뒤로가기를 눌러 홈 화면으로 돌아오면 선택한 앱이 2열 그리드로 표시됩니다.</li><li><b>배경화면 변경:</b> 설정 화면의 '배경화면 선택' 버튼을 누르면 시스템 배경화면 선택기가 호출됩니다.</li><li><b>순서 변경:</b> 앱 아이콘을 길게 눌러 원하는 위치로 드래그 앤 드롭하세요.</li></ol>",
-        "en": "<b>How to Use</b><ol style='padding-left: 20px;'><li><b>Initial Launch:</b> The home screen starts empty until apps are selected.</li><li><b>Enter Settings:</b> Rapidly tap the top clock section 5 times to open settings.</li><li><b>Select Apps:</b> Check the apps you want to show on the home screen (use the top search bar for quick access).</li><li><b>Home Screen:</b> Press back to return; selected apps will display in a 2-column grid.</li><li><b>Change Wallpaper:</b> Click 'Select Wallpaper' in settings to open the system wallpaper picker.</li><li><b>Reorder Icons:</b> Long-press an icon and drag to your preferred position.</li></ol>"
-    },
-    "youtubeUrl": "",
-    "youtubeType": "1",
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKSimpleHome_v1.0.0.apk"
+  "title": {
+    "ko": "EK Simple Home",
+    "en": "EK Simple Home",
+    "ja": "EK Simple Home",
+    "zh": "EK Simple Home 极简桌面",
+    "es": "EK Simple Home",
+    "de": "EK Simple Home",
+    "fr": "EK Simple Home",
+    "vi": "EK Simple Home",
+    "th": "EK Simple Home",
+    "id": "EK Simple Home",
+    "ru": "EK Simple Home"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-07-27",
+  "shortDescription": {
+    "ko": "노인 사용자를 위한 심플 안드로이드 홈 런처 앱",
+    "en": "Simple Android home launcher app for senior users",
+    "ja": "シニア・高齢者ユーザー向けのシンプルで使いやすいAndroidホームランチャーアプリ",
+    "zh": "专为老年人设计的极简易用Android主屏幕启动器",
+    "es": "Lanzador de pantalla de inicio de Android simple e intuitivo para personas mayores",
+    "de": "Einfacher und benutzerfreundlicher Android-Home-Launcher für Senioren",
+    "fr": "Lanceur d'écran d'accueil Android simple et intuitif conçu pour les seniors",
+    "vi": "Trình khởi chạy màn hình chính Android đơn giản, dễ dùng dành cho người cao tuổi",
+    "th": "แอปตัวเปิดหน้าจอหลัก Android ที่ใช้งานง่ายและสะดวกสบายสำหรับผู้สูงอายุ",
+    "id": "Peluncur layar beranda Android yang sederhana dan mudah digunakan untuk lansia",
+    "ru": "Простой и удобный лаунчер домашнего экрана Android для пожилых пользователей"
+  },
+  "description": {
+    "ko": "<b>EK Simple Home</b>은 노인 사용자를 위한 심플 안드로이드 홈 런처 앱입니다.<br> 80이 넘은 아버지가 스마트폰 때문에 불편해 하셔서 필요한 기능만 사용할 수 있도록 홈 런처를 만들어 보았습니다. <br>폰 설정의 애플리케이션 - 기본 앱 선택 - 홈 앱 설정에서 EK Simple Home 을 선택합니다.<br><br><b>주요 기능</b><ul><li><b>앱 목록 숨기기:</b> 앱 목록(전체 앱 서랍)을 숨기고, 설정에서 선택한 앱만 홈 화면에 노출합니다.</li><li><b>2열 그리드 표시:</b> 한 줄에 2개씩, 큰 아이콘 + 큰 글씨로 표시합니다.</li><li><b>드래그 앤 드롭:</b> 홈 화면에서 앱 아이콘을 길게 눌러 드래그 앤 드롭으로 순서를 변경할 수 있습니다.</li><li><b>시각적 가독성 최적화:</b> 앱 아이콘 배경을 투명하게 처리하고 가독성을 위해 텍스트 그림자를 추가했습니다.</li><li><b>상단 날짜/시간 표시:</b> 화면 상단 약 20% 영역에 큰 글씨의 날짜/시간을 표시합니다 (1초마다 갱신).</li><li><b>안전한 설정 진입:</b> 시계 영역을 5회 연속(3초 이내) 터치하면 설정 화면에 진입합니다.</li><li><b>설정 화면 기능:</b> 앱 검색 기능으로 원하는 앱을 빠르게 찾고, 체크박스로 홈 화면 노출 앱을 선택/해제할 수 있습니다. 앱 아이콘/이름을 터치하면 해당 앱이 즉시 실행되며, '배경화면 선택' 버튼으로 시스템 배경화면 선택기를 호출합니다.</li><li><b>런처 이탈 방지:</b> 홈 화면에서 뒤로가기 버튼을 무력화하여 의도치 않은 이탈을 방지합니다.</li></ul>",
+    "en": "<b>EK Simple Home</b> is a simple Android home launcher app designed for senior users.<br> Developed for my 80-year-old father who found the standard smartphone interface difficult to use. <br>Set as default home app in Phone Settings > Apps > Default Apps > Home App.<br><br><b>Key Features</b><ul><li><b>Hide App Drawer:</b> Hides the full app drawer and shows only selected apps on the home screen.</li><li><b>2-Column Grid:</b> Displays 2 apps per row with large icons and text for optimal readability.</li><li><b>Drag & Drop:</b> Reorder app icons on the home screen by press-and-drag.</li><li><b>Visual Optimization:</b> Transparent app icon background with text shadow for enhanced readability.</li><li><b>Top Clock & Date:</b> Displays large date and time in the top 20% area (updates every second).</li><li><b>Secure Settings Entry:</b> Tap the clock 5 times consecutively (within 3 seconds) to enter settings.</li><li><b>Settings Features:</b> Search apps, toggle checkboxes to select home apps, launch apps directly, and set wallpaper via system wallpaper picker.</li><li><b>Prevent Accidental Exit:</b> Disables the back button on the home screen to prevent accidental exit.</li></ul>",
+    "ja": "<b>EK Simple Home</b>は、シニア層のために作られたシンプルなAndroidホームランチャーアプリです。<br>スマートフォン操作に苦労していた80代の父のために、必要な機能だけを迷わず使えるよう開発しました。<br>端末設定の [アプリ] - [デフォルトのアプリ] - [ホームアプリ] からEK Simple Homeを選択して設定します。<br><br><b>主な特徴</b><ul><li><b>アプリ一覧の非表示:</b> 全体ドロワーを隠し、設定で選んだアプリだけをホームにすっきり配置。</li><li><b>2列グリッド表示:</b> 1行に2個ずつ、大きなアイコンと見やすい特大文字で表示。</li><li><b>ドラッグ＆ドロップ:</b> アイコンを長押しして自由に順番を並べ替え可能。</li><li><b>高い視認性:</b> 透明背景アイコンと文字の影処理で抜群の読みやすさ。</li><li><b>大きな時計・日付:</b> 画面上部に大きな日時を常時表示（毎秒更新）。</li><li><b>誤操作防止の設定画面:</b> 時計部分を素早く5回タップした時だけ設定が開く安全設計。</li><li><b>便利な設定機能:</b> アプリ検索、表示アプリのチェック選択、壁紙の変更などに対応。</li><li><b>誤終了の防止:</b> ホーム画面での戻るボタンを無効化し、不意の終了を防ぎます。</li></ul>",
+    "zh": "<b>EK Simple Home</b>是一款专为老年人打造的极简Android桌面启动器。<br>为了帮助80多岁经常因智能手机繁琐操作而困扰的父亲，专门制作了只保留核心必要功能的精简桌面。<br>可在手机设置中进入 [应用] - [默认应用] - [主屏幕应用] 并选择 EK Simple Home。<br><br><b>主要功能</b><ul><li><b>隐藏冗余应用列表:</b> 隐藏复杂的全部应用抽屉，仅展示设置中勾选的应用。</li><li><b>双列大图标大字体:</b> 每行仅展示2个图标，配以超大字体和图标，清晰易认。</li><li><b>拖拽排列:</b> 长按桌面图标即可随意拖拽调整位置与顺序。</li><li><b>视觉易读性优化:</b> 图标透明底结合文字投影，在各种背景下均清晰可读。</li><li><b>超大日期与时间:</b> 屏幕上方20%区域显示大字体日期与时钟（每秒刷新）。</li><li><b>防误触设置入口:</b> 连续快速点击时钟区域5次（3秒内）方可进入设置，防止误操作。</li><li><b>完善的设置功能:</b> 支持应用搜索、勾选桌面显示、直接启动、系统壁纸切换。</li><li><b>防止误退桌面:</b> 在主页禁用返回键，避免老年人误操作退出启动器。</li></ul>",
+    "es": "<b>EK Simple Home</b> es un lanzador de inicio para Android simple e intuitivo diseñado para personas mayores.<br>Desarrollado para mi padre de 80 años que tenía dificultades con la interfaz compleja de los teléfonos modernos.<br>Establécelo en Ajustes > Aplicaciones > Aplicaciones predeterminadas > Aplicación de inicio.<br><br><b>Características principales</b><ul><li><b>Ocultar cajón de aplicaciones:</b> Muestra únicamente las apps seleccionadas en la pantalla de inicio.</li><li><b>Cuadrícula de 2 columnas:</b> 2 aplicaciones por fila con iconos gigantes y texto grande y claro.</li><li><b>Arrastrar y soltar:</b> Reordena fácilmente los iconos manteniendo presionado y arrastrando.</li><li><b>Optimización visual:</b> Fondo de icono transparente con sombras de texto para máxima legibilidad.</li><li><b>Reloj y fecha grandes:</b> Muestra la hora y la fecha en la parte superior ocupando un 20% de la pantalla.</li><li><b>Acceso seguro a ajustes:</b> Toca el reloj 5 veces seguidas para abrir los ajustes y evitar configuraciones accidentales.</li><li><b>Ajustes completos:</b> Busca aplicaciones, marca casillas para mostrarlas y cambia el fondo de pantalla.</li><li><b>Evitar salida accidental:</b> Desactiva el botón atrás en la pantalla de inicio.</li></ul>",
+    "de": "<b>EK Simple Home</b> ist ein einfacher Android-Home-Launcher für Senioren.<br>Entwickelt für meinen über 80-jährigen Vater, der mit der herkömmlichen Smartphone-Bedienung überfordert war.<br>Als Standard festlegen unter: Einstellungen > Apps > Standard-Apps > Start-App.<br><br><b>Hauptfunktionen</b><ul><li><b>App-Drawer ausblenden:</b> Zeigt nur ausgewählte Apps auf dem Startbildschirm an.</li><li><b>2-Spalten-Raster:</b> 2 Apps pro Zeile mit großen Symbolen und gut lesbarer großer Schrift.</li><li><b>Drag & Drop:</b> Symbole durch langes Drücken und Ziehen flexibel anordnen.</li><li><b>Visuelle Lesbarkeit:</b> Transparenter Symbolhintergrund mit Textschatten für beste Sichtbarkeit.</li><li><b>Große Uhrzeit & Datum:</b> Zeigt Datum und Uhrzeit im oberen Bereich deutlich an.</li><li><b>Sicherer Einstellungszugriff:</b> Schnelles 5-maliges Antippen der Uhr öffnet die Einstellungen (schützt vor Fehlbedienung).</li><li><b>Praktische Einstellungen:</b> App-Suche, App-Auswahl per Checkbox und Hintergrundbild-Auswahl.</li><li><b>Schutz vor versehentlichem Beenden:</b> Deaktiviert die Zurück-Taste auf dem Startbildschirm.</li></ul>",
+    "fr": "<b>EK Simple Home</b> est un lanceur d'écran d'accueil Android simple et épuré conçu pour les personnes âgées.<br>Conçu pour mon père de 80 ans qui trouvait l'interface classique des smartphones difficile à manipuler.<br>À définir comme application d'accueil par défaut dans Paramètres > Applications > Applications par défaut > Écran d'accueil.<br><br><b>Fonctionnalités principales</b><ul><li><b>Masquer le tiroir d'applications:</b> Affiche uniquement les applications sélectionnées.</li><li><b>Grille à 2 colonnes:</b> 2 grandes icônes par ligne avec du texte grand format pour une lecture optimale.</li><li><b>Glisser-déposer:</b> Réorganisez facilement les icônes par appui long.</li><li><b>Lisibilité optimale:</b> Fond d'icône transparent et ombres portées pour une lisibilité parfaite.</li><li><b>Grande horloge et date:</b> Affichage grand format de l'heure et de la date en haut de l'écran.</li><li><b>Accès sécurisé aux réglages:</b> Tapez 5 fois rapidement sur l'horloge pour ouvrir les paramètres sans risque de fausse manipulation.</li><li><b>Options de configuration:</b> Recherche d'applications, sélection par cases à cocher et changement de fond d'écran.</li><li><b>Sécurité anti-sortie:</b> Désactivation du bouton retour sur l'écran principal.</li></ul>",
+    "vi": "<b>EK Simple Home</b> là trình khởi chạy Android đơn giản được thiết kế đặc biệt cho người lớn tuổi.<br>Được phát triển cho người cha hơn 80 tuổi gặp khó khăn khi thao tác trên điện thoại thông minh thông thường.<br>Đặt làm ứng dụng màn hình chính mặc định trong Cài đặt > Ứng dụng > Ứng dụng mặc định > Ứng dụng màn hình chính.<br><br><b>Tính năng chính</b><ul><li><b>Ẩn danh sách ứng dụng phức tạp:</b> Chỉ hiển thị các ứng dụng đã chọn ra ngoài màn hình chính.</li><li><b>Lưới 2 cột:</b> 2 ứng dụng mỗi hàng với biểu tượng và chữ siêu lớn, dễ nhìn.</li><li><b>Kéo và thả:</b> Nhấn giữ và kéo để sắp xếp lại vị trí ứng dụng theo ý muốn.</li><li><b>Tối ưu hóa độ rõ nét:</b> Biểu tượng trong suốt có bóng chữ giúp đọc rõ trên mọi hình nền.</li><li><b>Đồng hồ & ngày tháng lớn:</b> Hiển thị ngày giờ cỡ lớn ở phần trên màn hình (cập nhật từng giây).</li><li><b>Truy cập cài đặt an toàn:</b> Nhấn nhanh 5 lần vào khu vực đồng hồ để mở cài đặt, tránh bấm nhầm.</li><li><b>Cài đặt tiện lợi:</b> Tìm kiếm ứng dụng, chọn bằng hộp kiểm và đổi hình nền hệ thống.</li><li><b>Chống vô tình thoát:</b> Vô hiệu hóa nút quay lại trên màn hình chính để tránh thoát nhầm.</li></ul>",
+    "th": "<b>EK Simple Home</b> เป็นแอปหน้าจอหลัก Android ที่เรียบง่ายออกแบบมาเพื่อผู้สูงอายุโดยเฉพาะ<br>พัฒนาขึ้นเพื่อให้คุณพ่อวัยกว่า 80 ปีที่ประสบปัญหาในการใช้สมาร์ทโฟนสามารถเข้าถึงฟังก์ชันที่จำเป็นได้อย่างง่ายดาย<br>ตั้งเป็นหน้าจอหลักเริ่มต้นได้ที่ การตั้งค่า > แอป > แอปเริ่มต้น > แอปหน้าจอหลัก<br><br><b>คุณสมบัติเด่น</b><ul><li><b>ซ่อนหน้ารวมแอป:</b> แสดงเฉพาะแอปที่เลือกไว้บนหน้าจอหลักเท่านั้น</li><li><b>ตาราง 2 คอลัมน์:</b> แสดง 2 แอปต่อแถวด้วยไอคอนและตัวอักษรขนาดใหญ่พิเศษ</li><li><b>ลากและวาง:</b> กดไอคอนค้างไว้แล้วลากเพื่อจัดลำดับตำแหน่งได้อย่างอิสระ</li><li><b>ปรับแต่งให้อ่านง่าย:</b> ไอคอนโปร่งแสงพร้อมเงาตัวอักษรเพื่อการมองเห็นที่ชัดเจนที่สุด</li><li><b>นาฬิกาและวันที่ขนาดใหญ่:</b> แสดงวันที่และเวลาขนาดใหญ่อย่างเด่นชัดด้านบน</li><li><b>เข้าสู่การตั้งค่าอย่างปลอดภัย:</b> แตะบริเวณนาฬิกาเร็วๆ 5 ครั้งเพื่อเปิดการตั้งค่า ป้องกันการกดผิด</li><li><b>เมนูการตั้งค่าสะดวก:</b> ค้นหาแอป ติ๊กเลือกแอปที่ต้องการแสดง และเปลี่ยนวอลเปเปอร์ได้</li><li><b>ป้องกันการกดออกโดยไม่ตั้งใจ:</b> ปิดการทำงานของปุ่มย้อนกลับบนหน้าจอหลัก</li></ul>",
+    "id": "<b>EK Simple Home</b> adalah peluncur beranda Android sederhana yang dirancang untuk pengguna lanjut usia.<br>Dibuat untuk ayah saya yang berusia 80 tahun dan kesulitan menggunakan antarmuka ponsel pintar standar.<br>Atur sebagai peluncur default di Pengaturan > Aplikasi > Aplikasi Default > Aplikasi Beranda.<br><br><b>Fitur Utama</b><ul><li><b>Sembunyikan Laci Aplikasi:</b> Hanya menampilkan aplikasi pilihan di layar beranda.</li><li><b>Kisi 2 Kolom:</b> 2 aplikasi per baris dengan ikon dan teks berukuran besar agar mudah dibaca.</li><li><b>Tarik & Lepas:</b> Tekan lama ikon dan seret untuk mengatur ulang urutan.</li><li><b>Keterbacaan Optimal:</b> Ikon transparan dengan bayangan teks untuk visibilitas maksimal.</li><li><b>Jam & Tanggal Besar:</b> Menampilkan tanggal dan waktu besar di bagian atas layar.</li><li><b>Akses Pengaturan Aman:</b> Ketuk area jam 5 kali berturut-turut untuk membuka pengaturan agar tidak salah tekan.</li><li><b>Fitur Pengaturan Lengkap:</b> Cari aplikasi, centang aplikasi yang ingin ditampilkan, dan ganti wallpaper.</li><li><b>Cegah Keluar Tanpa Sengaja:</b> Menonaktifkan tombol kembali di layar utama.</li></ul>",
+    "ru": "<b>EK Simple Home</b> — это простой лаунчер для Android, разработанный специально для пожилых людей.<br>Создан для 80-летнего отца, которому было трудно пользоваться стандартным сложным интерфейсом смартфона.<br>Установите в качестве главного экрана по умолчанию: Настройки > Приложения > Приложения по умолчанию > Главный экран.<br><br><b>Основные функции</b><ul><li><b>Скрытие списка приложений:</b> На экране отображаются только выбранные нужные программы.</li><li><b>Сетка из 2 колонок:</b> По 2 приложения в ряд с огромными иконками и крупным текстом.</li><li><b>Перетаскивание (Drag & Drop):</b> Долгое нажатие позволяет легко перемещать и сортировать иконки.</li><li><b>Четкая видимость:</b> Прозрачные иконки с тенью текста для легкого чтения на любом фоне.</li><li><b>Крупные часы и дата:</b> В верхней части экрана всегда отображаются большие дата и время.</li><li><b>Безопасный вход в настройки:</b> Быстрое 5-кратное нажатие на часы открывает настройки, исключая случайные сбои.</li><li><b>Удобные настройки:</b> Поиск приложений, выбор чекбоксами и смена обоев.</li><li><b>Защита от случайного выхода:</b> Блокировка кнопки «Назад» на главном экране.</li></ul>"
+  },
+  "control": {
+    "ko": "<b>사용 방법</b><ol style='padding-left: 20px;'><li><b>초기 실행:</b> 앱 실행 초기에는 선택된 앱이 없으므로 홈 화면이 비어 있습니다.</li><li><b>설정 진입:</b> 상단 시계 영역을 5번 빠르게 연속으로 터치하여 설정 화면으로 이동합니다.</li><li><b>노출 앱 선택:</b> 설정 화면에서 홈 화면에 노출하고 싶은 앱들의 체크박스를 켭니다. (상단 검색창 이용 가능)</li><li><b>홈 화면 확인:</b> 뒤로가기를 눌러 홈 화면으로 돌아오면 선택한 앱이 2열 그리드로 표시됩니다.</li><li><b>배경화면 변경:</b> 설정 화면의 '배경화면 선택' 버튼을 누르면 시스템 배경화면 선택기가 호출됩니다.</li><li><b>순서 변경:</b> 앱 아이콘을 길게 눌러 원하는 위치로 드래그 앤 드롭하세요.</li></ol>",
+    "en": "<b>How to Use</b><ol style='padding-left: 20px;'><li><b>Initial Launch:</b> The home screen starts empty until apps are selected.</li><li><b>Enter Settings:</b> Rapidly tap the top clock section 5 times to open settings.</li><li><b>Select Apps:</b> Check the apps you want to show on the home screen (use the top search bar for quick access).</li><li><b>Home Screen:</b> Press back to return; selected apps will display in a 2-column grid.</li><li><b>Change Wallpaper:</b> Click 'Select Wallpaper' in settings to open the system wallpaper picker.</li><li><b>Reorder Icons:</b> Long-press an icon and drag to your preferred position.</li></ol>",
+    "ja": "<b>使用方法</b><ol style='padding-left: 20px;'><li><b>初期起動:</b> 初回起動時はアプリが選択されていないため画面は空になっています。</li><li><b>設定を開く:</b> 上部の時計エリアを素早く5回連続でタップして設定画面を開きます。</li><li><b>表示アプリの選択:</b> ホーム画面に表示したいアプリのチェックボックスをオンにします。</li><li><b>ホームの確認:</b> 戻るボタンでホームに戻ると、選んだアプリが2列で並びます。</li><li><b>壁紙の変更:</b> 設定の「壁紙選択」ボタンから壁紙を変更できます。</li><li><b>順序の変更:</b> アプリアイコンを長押ししてドラッグ＆ドロップで並べ替えます。</li></ol>",
+    "zh": "<b>使用方法</b><ol style='padding-left: 20px;'><li><b>首次启动:</b> 初始状态未选择应用，桌面为空白。</li><li><b>进入设置:</b> 快速连续点击上方时钟区域5次进入设置页面。</li><li><b>选择展示应用:</b> 在设置列表中勾选想要在主屏展示的应用（可使用上方搜索栏）。</li><li><b>返回桌面:</b> 按返回键回到主屏，所选应用将以双列大图标展示。</li><li><b>更换壁纸:</b> 点击设置中的“选择壁纸”调用系统壁纸选择器。</li><li><b>调整顺序:</b> 长按应用图标并拖拽至目标位置即可。</li></ol>",
+    "es": "<b>Modo de uso</b><ol style='padding-left: 20px;'><li><b>Inicio inicial:</b> La pantalla empieza vacía hasta seleccionar aplicaciones.</li><li><b>Abrir ajustes:</b> Toca rápidamente el reloj superior 5 veces para abrir la configuración.</li><li><b>Seleccionar apps:</b> Marca las aplicaciones que deseas mostrar en la pantalla principal.</li><li><b>Pantalla de inicio:</b> Pulsa atrás para ver las aplicaciones seleccionadas en 2 columnas.</li><li><b>Cambiar fondo:</b> Usa el botón 'Seleccionar fondo de pantalla' en ajustes.</li><li><b>Reordenar:</b> Mantén presionado un icono y arrástralo a la posición deseada.</li></ol>",
+    "de": "<b>Bedienung</b><ol style='padding-left: 20px;'><li><b>Erster Start:</b> Der Startbildschirm ist anfangs leer, bis Apps ausgewählt werden.</li><li><b>Einstellungen öffnen:</b> Tippen Sie 5-mal schnell hintereinander auf den oberen Uhrenbereich.</li><li><b>Apps auswählen:</b> Aktivieren Sie die Kontrollkästchen der gewünschten Apps in den Einstellungen.</li><li><b>Startbildschirm:</b> Zurückkehren – die ausgewählten Apps erscheinen in einem 2-Spalten-Raster.</li><li><b>Hintergrundbild ändern:</b> Klicken Sie in den Einstellungen auf 'Hintergrundbild auswählen'.</li><li><b>Reihenfolge ändern:</b> Halten Sie ein App-Symbol gedrückt und ziehen Sie es an die gewünschte Position.</li></ol>",
+    "fr": "<b>Mode d'emploi</b><ol style='padding-left: 20px;'><li><b>Premier lancement:</b> L'écran d'accueil est vide au début jusqu'à ce que des applications soient sélectionnées.</li><li><b>Ouvrir les paramètres:</b> Tapez 5 fois rapidement sur l'horloge supérieure.</li><li><b>Sélectionner les applications:</b> Cochez les applications que vous souhaitez afficher.</li><li><b>Écran d'accueil:</b> Appuyez sur retour; vos applications s'affichent sur 2 colonnes.</li><li><b>Changer de fond d'écran:</b> Cliquez sur 'Choisir un fond d'écran' dans les réglages.</li><li><b>Réorganiser:</b> Appuyez longuement sur une icône et faites-la glisser.</li></ol>",
+    "vi": "<b>Cách sử dụng</b><ol style='padding-left: 20px;'><li><b>Khởi chạy ban đầu:</b> Màn hình chính bắt đầu trống cho đến khi các ứng dụng được chọn.</li><li><b>Vào cài đặt:</b> Nhấn liên tục 5 lần vào vùng đồng hồ phía trên để mở cài đặt.</li><li><b>Chọn ứng dụng hiển thị:</b> Đánh dấu vào các ứng dụng bạn muốn hiển thị trên màn hình chính.</li><li><b>Kiểm tra màn hình chính:</b> Nhấn nút quay lại để xem các ứng dụng được xếp thành 2 cột.</li><li><b>Thay đổi hình nền:</b> Nhấn 'Chọn hình nền' trong cài đặt để đổi hình nền hệ thống.</li><li><b>Sắp xếp lại:</b> Nhấn giữ vào biểu tượng và kéo thả đến vị trí mong muốn.</li></ol>",
+    "th": "<b>วิธีใช้งาน</b><ol style='padding-left: 20px;'><li><b>เปิดใช้งานครั้งแรก:</b> หน้าจอหลักจะว่างเปล่าจนกว่าจะมีการเลือกแอป</li><li><b>เข้าสู่การตั้งค่า:</b> แตะส่วนนาฬิกาด้านบนเร็วๆ 5 ครั้งเพื่อเปิดหน้าการตั้งค่า</li><li><b>เลือกแอปที่ต้องการแสดง:</b> ติ๊กเครื่องหมายถูกที่แอปที่ต้องการให้แสดงบนหน้าจอหลัก</li><li><b>ตรวจสอบหน้าจอหลัก:</b> กดย้อนกลับเพื่อดูแอปที่เลือกแสดงในตาราง 2 คอลัมน์</li><li><b>เปลี่ยนวอลเปเปอร์:</b> กดปุ่ม 'เลือกวอลเปเปอร์' ในหน้าการตั้งค่า</li><li><b>เปลี่ยนลำดับ:</b> กดไอคอนค้างไว้แล้วลากไปวางในตำแหน่งที่ต้องการ</li></ol>",
+    "id": "<b>Cara Penggunaan</b><ol style='padding-left: 20px;'><li><b>Peluncuran Awal:</b> Layar beranda kosong sampai aplikasi dipilih.</li><li><b>Buka Pengaturan:</b> Ketuk bagian jam atas 5 kali dengan cepat untuk membuka pengaturan.</li><li><b>Pilih Aplikasi:</b> Centang aplikasi yang ingin ditampilkan di layar utama.</li><li><b>Layar Beranda:</b> Tekan kembali; aplikasi yang dipilih akan ditampilkan dalam kisi 2 kolom.</li><li><b>Ganti Wallpaper:</b> Klik tombol 'Pilih Wallpaper' di pengaturan.</li><li><b>Ubah Urutan:</b> Tekan lama ikon aplikasi dan seret ke posisi yang diinginkan.</li></ol>",
+    "ru": "<b>Инструкция по использованию</b><ol style='padding-left: 20px;'><li><b>Первый запуск:</b> Экран изначально пуст, пока вы не выберете приложения.</li><li><b>Вход в настройки:</b> Быстро коснитесь области часов наверху 5 раз подряд.</li><li><b>Выбор приложений:</b> Отметьте галочками приложения, которые должны быть на главном экране.</li><li><b>Главный экран:</b> Нажмите «Назад», выбранные приложения отобразятся в 2 колонки.</li><li><b>Смена обоев:</b> Нажмите кнопку «Выбрать обои» в настройках.</li><li><b>Сортировка:</b> Зажмите значок приложения и перетащите на нужное место.</li></ol>"
+  },
+  "youtubeUrl": "",
+  "youtubeType": "1",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKSimpleHome_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/EKSimpleHome/scr.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "런처",
+      "홈화면",
+      "유틸리티"
     ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/EKSimpleHome/scr.jpg"
+    "en": [
+      "Launcher",
+      "Home",
+      "Utility"
     ],
-    "tags": {
-        "ko": [
-            "런처",
-            "홈화면",
-            "유틸리티"
-        ],
-        "en": [
-            "Launcher",
-            "Home",
-            "Utility"
-        ]
-    }
+    "ja": [
+      "ランチャー",
+      "ホーム画面",
+      "ユーティリティ"
+    ],
+    "zh": [
+      "启动器",
+      "主屏幕",
+      "实用工具"
+    ],
+    "es": [
+      "Lanzador",
+      "Inicio",
+      "Utilidad"
+    ],
+    "de": [
+      "Launcher",
+      "Startbildschirm",
+      "Dienstprogramm"
+    ],
+    "fr": [
+      "Lanceur",
+      "Accueil",
+      "Utilitaire"
+    ],
+    "vi": [
+      "KhởiChạy",
+      "MànHìnhChính",
+      "TiệnÍch"
+    ],
+    "th": [
+      "ลันเชอร์",
+      "หน้าจอหลัก",
+      "ยูทิลิตี้"
+    ],
+    "id": [
+      "Peluncur",
+      "Beranda",
+      "Utilitas"
+    ],
+    "ru": [
+      "Лаунчер",
+      "ГлавныйЭкран",
+      "Утилиты"
+    ]
+  }
 }

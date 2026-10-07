@@ -1,55 +1,154 @@
 {
-    "title": {
-        "ko": "Gemini 텍스트 번역",
-        "en": "Gemini Text Translate"
+  "title": {
+    "ko": "Gemini 텍스트 번역",
+    "en": "Gemini Text Translate",
+    "ja": "Gemini テキスト翻訳 (TransG)",
+    "zh": "Gemini 实时视觉翻译 (TransG)",
+    "es": "Gemini Text Translate (TransG)",
+    "de": "Gemini Textübersetzer (TransG)",
+    "fr": "Traducteur de Texte Gemini (TransG)",
+    "vi": "Gemini Dịch Văn Bản (TransG)",
+    "th": "Gemini แปลข้อความ (TransG)",
+    "id": "Gemini Penerjemah Teks (TransG)",
+    "ru": "Gemini Переводчик Текста (TransG)"
+  },
+  "version": "1.2.0",
+  "releaseDate": "2026-06-23",
+  "shortDescription": {
+    "ko": "Gemini 기반의 온라인 텍스트 번역 애플리케이션입니다",
+    "en": "Gemini based online text translation application.",
+    "ja": "Google Gemini AI 기반의 고성능 온라인 실시간 텍스트 번역",
+    "zh": "基于谷歌Gemini前沿大模型的实时智能眼镜在线文本翻译助手",
+    "es": "Aplicación de traducción de texto en línea con IA Gemini para gafas inteligentes",
+    "de": "Online-Textübersetzungs-App basierend auf modernster Google Gemini KI",
+    "fr": "Assistant de traduction visuelle en ligne propulsé par l'IA Google Gemini",
+    "vi": "Ứng dụng dịch văn bản trực tuyến thời gian thực dựa trên AI Google Gemini",
+    "th": "แอปพลิเคชันแปลข้อความออนไลน์แบบเรียลไทม์ ขับเคลื่อนด้วย Google Gemini AI",
+    "id": "Aplikasi terjemahan teks online bertenaga AI Google Gemini untuk kacamata pintar",
+    "ru": "Онлайн-переводчик текста в реальном времени на базе искусственного интеллекта Google Gemini"
+  },
+  "description": {
+    "ko": "<b>[앱 소개] TransG: 실시간 안경형 번역 도우미</b>\n<i>\"안경을 통해 세상의 모든 언어를 내 언어로\"</i>\n\nTransG는 스마트 글래스와 연동하여 카메라에 비춰지는 텍스트를 실시간으로 인식하고, 즉시 사용자의 언어로 번역해 주는 서비스입니다.\n복잡한 설정 없이, 안경을 쓴 채로 원하는 곳을 바라보고 다리만 터치하세요. 낯선 언어의 벽이 순식간에 허물어집니다.",
+    "en": "<b>[App Intro] TransG: Real-time Smart Glasses Translation Assistant</b>\n<i>\"Translate the world through your glasses in real-time\"</i>\n\nTransG integrates with smart glasses to recognize text in the camera view in real-time and translate it instantly to your preferred language.\nSimply wear the glasses, look at the text, and touch the temple—no complex configuration needed. Break language barriers instantly.",
+    "ja": "<b>[アプリ紹介] TransG: リアルタイムメガネ型AI翻訳アシスタント</b><br><i>「メガネを通して世界のあらゆる言語を私の言葉に」</i><br><br>TransGはスマートグラスのカメラで捉えたテキストをリアルタイム認識し、Google Gemini AIの力で自然な言語に即座に翻訳する次世代翻訳サービスです。<br>メガネをかけたまま文字を見つめ、テンプルをタップするだけ。言葉の壁が一瞬で消え去ります。",
+    "zh": "<b>[应用简介] TransG: 智能眼镜实时视觉翻译伴侣</b><br><i>“透过一副眼镜，将全世界的语言化作你的母语”</i><br><br>TransG深度融合智能眼镜摄像头与Google Gemini大模型，实时捕获视野中的外文并瞬间翻译为熟悉的母语。<br>告别繁杂操作，佩戴眼镜注视目标文字，轻触镜腿即可破除语言藩篱。",
+    "es": "<b>[Introducción] TransG: Asistente de traducción en tiempo real para gafas inteligentes</b><br><i>'Traduce cualquier idioma del mundo a través de tus gafas'</i><br><br>TransG se integra con las gafas inteligentes para reconocer texto ante la cámara y traducirlo de inmediato con la potencia de Google Gemini AI.<br>Solo mira el texto y toca la patilla de las gafas: las barreras lingüísticas desaparecen al instante.",
+    "de": "<b>[App-Vorstellung] TransG: Ihr Live-Übersetzungsassistent auf Datenbrillen</b><br><i>'Sehen und verstehen Sie jede Sprache der Welt durch Ihre Brille'</i><br><br>TransG nutzt Google Gemini KI, um Texte vor Ihrer Kamera in Sekundenschnelle präzise in Ihre Sprache zu übersetzen.<br>Einfach Text fokussieren und den Brillenbügel berühren – keine komplizierten Menüs.",
+    "fr": "<b>[Présentation] TransG : Assistant de traduction visuelle en temps réel</b><br><i>'Traduisez le monde entier à travers vos lunettes'</i><br><br>TransG utilise la puissance de Google Gemini AI pour reconnaître et traduire instantanément tout texte capté par la caméra des lunettes.<br>Regardez un panneau ou un menu et touchez simplement la branche des lunettes.",
+    "vi": "<b>[Giới thiệu] TransG: Trợ lý dịch thuật thời gian thực trên kính thông minh</b><br><i>'Dịch mọi ngôn ngữ trên thế giới thành tiếng mẹ đẻ qua lăng kính của bạn'</i><br><br>TransG kết hợp với kính thông minh để nhận dạng văn bản trong khung hình camera và dịch ngay lập tức bằng AI Google Gemini.<br>Chỉ cần nhìn vào văn bản và chạm nhẹ vào gọng kính, rào cản ngôn ngữ sẽ biến mất ngay lập tức.",
+    "th": "<b>[แนะนำแอป] TransG: ผู้ช่วยแปลภาษาอัจฉริยะบนแว่นตาแบบเรียลไทม์</b><br><i>'แปลทุกภาษาในโลกให้เป็นภาษาของคุณผ่านแว่นตาอัจฉริยะ'</i><br><br>TransG เชื่อมต่อกับแว่นตาอัจฉริยะเพื่อตรวจจับข้อความในกล้องและแปลเป็นภาษาที่คุณเข้าใจได้ทันทีด้วยขุมพลังของ Google Gemini AI<br>เพียงสวมแว่นตา มองไปที่ข้อความแล้วแตะที่ขาแว่น ทลายกำแพงภาษาได้ในชั่วพริบตา",
+    "id": "<b>[Pengenalan] TransG: Asisten Penerjemah Waktu Nyata untuk Kacamata Pintar</b><br><i>'Terjemahkan semua bahasa di dunia melalui kacamata Anda'</i><br><br>TransG terhubung dengan kacamata pintar untuk mengenali teks di kamera dan langsung menerjemahkannya menggunakan kecerdasan AI Google Gemini.<br>Cukup lihat teks dan sentuh gagang kacamata untuk memahami bahasa apa pun seketika.",
+    "ru": "<b>[О приложении] TransG: ИИ-переводчик в реальном времени для умных очков</b><br><i>«Весь мир говорит на вашем языке через стекла очков»</i><br><br>TransG считывает текст камерой очков и мгновенно переводит его с помощью мощного искусственного интеллекта Google Gemini.<br>Просто посмотрите на вывеску или меню и коснитесь дужки очков — языковой барьер исчезает за секунду."
+  },
+  "control": {
+    "ko": "<b>[사용 가이드] 처음 시작하기 (QR 설정)</b>\n앱을 처음 사용하시거나 새로운 API 키를 설정해야 할 때, 아래 순서대로 따라 해 보세요.\n\n<b>1단계: API 키 준비하기 (두뇌 만들기)</b>\n앱이 번역 기능을 수행하려면 'Google AI'라는 똑똑한 번역 도구의 허락이 필요합니다.\n1. Google AI Studio에 접속하여 구글 계정으로 로그인합니다.\n2. 화면에서 'Get API key' 버튼을 찾아 누릅니다.\n3. <b>'Create API key'</b>를 눌러 키를 생성하고, 생성된 긴 영문/숫자 조합의 키를 <b>[복사]</b>합니다.\n\n<b>2단계: 나만의 QR 코드 만들기</b>\n복사한 API 키를 앱에 알려주기 위해 고유한 QR 코드를 만듭니다.\n1. 상단에 web app 메뉴의 QR 코드 생성기로 이동합니다.\n2. URL 입력란에 방금 복사한 API 키를 붙여넣기 합니다.\n3. 'QR 코드 생성' 버튼을 누르면 나만의 QR 코드가 화면에 나타납니다.\n\n<b>3단계: 앱에 등록하기</b>\n1. 안경에서 텍스트 번역 앱을 실행합니다.\n2. 앱의 QR 인식 화면이 나오면, 방금 만든 QR 코드를 카메라로 비춰줍니다.\n3. 인식이 완료되면 설정이 끝납니다!\n\n<b>4단계: 실전! 번역하기</b>\n1. 번역이 필요한 글자(메뉴판, 표지판, 서류 등)를 안경 카메라 영역 안에 들어오게 비춥니다.\n2. 안경의 다리 부분을 살짝 <b>[터치]</b>하세요.\n3. 잠시 기다리면 안경 화면을 통해 자연스럽게 번역된 텍스트를 확인하실 수 있습니다.\n\n<b>💡 Tip: 만약 번역이 안 된다면?</b>\n• 텍스트가 너무 멀거나 흐릿하게 보이지 않는지 확인해 보세요.\n• 인터넷 연결 상태를 확인해 주세요.",
+    "en": "<b>[User Guide] Getting Started (QR Code Setup)</b>\nFollow the steps below when using the app for the first time or setting up a new API key.\n\n<b>Step 1: Prepare API Key (Setting up the Brain)</b>\nThe app requires permission from Google's intelligent translation tool, 'Google AI', to translate text.\n1. Visit Google AI Studio and sign in with your Google account.\n2. Find and click the 'Get API key' button.\n3. Click <b>'Create API key'</b> to generate your key, then <b>[Copy]</b> the long alphanumeric key.\n\n<b>Step 2: Generate Your QR Code</b>\nCreate a unique QR code to share the copied API key with the app.\n1. Visit Web App Menu On top of Page and QR code generator\n2. Paste the copied API key into the URL input field.\n3. Click 'Generate QR Code' to display your custom QR code.\n\n<b>Step 3: Register in the App</b>\n1. Launch the Text Translate app on your glasses.\n2. Point the camera at your newly created QR code when the QR scanner screen appears.\n3. Once scanned, the setup is complete!\n\n<b>Step 4: Start Translating!</b>\n1. Position the target text (menus, signs, documents, etc.) within the glasses' camera frame.\n2. Gently <b>[Touch]</b> the temple of the glasses.\n3. Wait a moment, and the natural translation will appear on the glasses display.\n\n<b>💡 Tip: If translation fails</b>\n• Make sure the text in the image is not too far or blurry.\n• Check your internet connection.",
+    "ja": "<b>[スタートガイド] QRコードで簡単API設定</b><br><br><b>1. APIキーの準備:</b> Google AI Studioで「Create API key」を作成してコピーします。<br><b>2. QRコード生成:</b> 上部Webアプリの「QRコード生成器」でコピーしたAPIキーを入力しQRを作成します。<br><b>3. アプリに登録:</b> メガネでアプリを起動し、作成したQRコードをカメラで読み取ります。<br><b>4. 翻訳実行:</b> 翻訳したい文字（メニューや看板）をカメラに収め、メガネのテンプルを軽くタップします。",
+    "zh": "<b>[使用指南] 快速上手与QR配置</b><br><br><b>第一步: 准备API Key:</b> 访问 Google AI Studio 登录并创建免费的 Gemini API Key，将其复制。<br><b>第二步: 生成个性化QR码:</b> 进入本站顶部 Web App 菜单下的二维码生成器，粘贴密钥并生成二维码。<br><b>第三步: 录入眼镜:</b> 佩戴眼镜启动翻译应用，对准电脑屏幕扫描刚才生成的二维码完成配对。<br><b>第四步: 实测翻译:</b> 注视外文菜单、路标或文件，轻触镜腿，数秒内即可在眼前看到自然流畅的中文译文。",
+    "es": "<b>[Guía de uso] Configuración inicial con código QR</b><br><br><b>1. Clave API:</b> Obtén y copia tu clave API gratuita en Google AI Studio.<br><b>2. Generar QR:</b> Pega la clave en el Generador de Códigos QR del menú Web App.<br><b>3. Registrar:</b> Abre la app en las gafas y escanea el código QR en pantalla.<br><b>4. ¡Traduce!:</b> Enfoca el texto deseado (menús, carteles) y toca suavemente la patilla de las gafas.",
+    "de": "<b>[Anleitung] Ersteinrichtung über QR-Code</b><br><br><b>1. API-Schlüssel erstellen:</b> Kostenlosen Schlüssel im Google AI Studio generieren und kopieren.<br><b>2. QR-Code erstellen:</b> Schlüssel im Online-QR-Generator dieser Website einfügen.<br><b>3. In Brille scannen:</b> App starten und den QR-Code mit der Brille scannen.<br><b>4. Übersetzen:</b> Text anvisieren und den Brillenbügel kurz berühren.",
+    "fr": "<b>[Guide utilisateur] Configuration rapide par QR Code</b><br><br><b>1. Clé API:</b> Générez votre clé API sur Google AI Studio et copiez-la.<br><b>2. Création du QR:</b> Collez la clé dans le générateur QR disponible dans le menu Web App.<br><b>3. Enregistrement:</b> Lancez l'application sur les lunettes et scannez le QR code.<br><b>4. Traduction:</b> Visez le texte et touchez la branche des lunettes pour obtenir la traduction.",
+    "vi": "<b>[Hướng dẫn] Bắt đầu với mã QR</b><br><br><b>1. Chuẩn bị khóa API:</b> Tạo và sao chép khóa API miễn phí từ Google AI Studio.<br><b>2. Tạo mã QR:</b> Dán khóa vào Trình tạo mã QR trong menu Web App.<br><b>3. Quét vào kính:</b> Mở ứng dụng trên kính và hướng camera quét mã QR vừa tạo.<br><b>4. Bắt đầu dịch:</b> Đưa văn bản vào tầm nhìn camera và chạm nhẹ vào gọng kính.",
+    "th": "<b>[คู่มือการใช้งาน] เริ่มต้นใช้งานด้วย QR Code</b><br><br><b>ขั้นตอนที่ 1: เตรียม API Key:</b> สร้างและคัดลอกคีย์จาก Google AI Studio<br><b>ขั้นตอนที่ 2: สร้าง QR Code:</b> วาง API Key ในหน้าสร้าง QR Code บนเมนู Web App<br><b>ขั้นตอนที่ 3: ลงทะเบียน:</b> เปิดแอปบนแว่นตาแล้วใช้กล้องสแกน QR Code ที่สร้างขึ้น<br><b>ขั้นตอนที่ 4: เริ่มแปลภาษา:</b> ส่องกล้องไปที่ข้อความแล้วแตะที่ขาแว่นเบาๆ",
+    "id": "<b>[Panduan] Memulai dengan Kode QR</b><br><br><b>1. Siapkan API Key:</b> Dapatkan dan salin kunci API dari Google AI Studio.<br><b>2. Buat QR Code:</b> Tempel kunci di menu pembuat QR Code di situs ini.<br><b>3. Pindai ke Kacamata:</b> Buka aplikasi di kacamata dan arahkan kamera ke kode QR.<br><b>4. Mulai Menerjemahkan:</b> Arahkan kamera ke teks dan sentuh gagang kacamata.",
+    "ru": "<b>[Руководство] Настройка через QR-код</b><br><br><b>1. Получение API-ключа:</b> Создайте и скопируйте ключ на Google AI Studio.<br><b>2. Создание QR-кода:</b> Вставьте ключ в генератор QR на нашем сайте в меню Web App.<br><b>3. Сканирование:</b> Запустите приложение на очках и отсканируйте созданный QR-код.<br><b>4. Перевод:</b> Наведите камеру на текст и коснитесь дужки очков для мгновенного перевода."
+  },
+  "updated": [
+    {
+      "version": "1.2.0",
+      "releaseDate": "2026-07-22",
+      "ko": "Gemini Model 최신 버전 업데이트 gemini-3.5-flash-lite (lite), gemini-3.6-flash (latest), gemini-3.1-pro (high-resolution/slow)",
+      "en": "Gemini Model latest version update gemini-3.5-flash-lite (lite), gemini-3.6-flash (latest), gemini-3.1-pro (high-resolution/slow)",
+      "ja": "Gemini Model最新バージョンに更新: gemini-3.5-flash-lite (lite), gemini-3.6-flash (latest), gemini-3.1-pro (high-resolution)",
+      "zh": "升级至Gemini最新模型: gemini-3.5-flash-lite (轻量版), gemini-3.6-flash (最新版), gemini-3.1-pro (高分辨率/深度分析)",
+      "es": "Actualizado a los últimos modelos Gemini: gemini-3.5-flash-lite, gemini-3.6-flash y gemini-3.1-pro.",
+      "de": "Aktualisiert auf neueste Gemini-Modelle: gemini-3.5-flash-lite, gemini-3.6-flash und gemini-3.1-pro.",
+      "fr": "Mise à jour des modèles Gemini : gemini-3.5-flash-lite, gemini-3.6-flash et gemini-3.1-pro.",
+      "vi": "Cập nhật các mô hình Gemini mới nhất: gemini-3.5-flash-lite, gemini-3.6-flash, gemini-3.1-pro.",
+      "th": "อัปเดตโมเดล Gemini ล่าสุด: gemini-3.5-flash-lite (lite), gemini-3.6-flash (latest), gemini-3.1-pro",
+      "id": "Pembaruan model Gemini terbaru: gemini-3.5-flash-lite, gemini-3.6-flash, gemini-3.1-pro.",
+      "ru": "Обновлены модели Gemini: gemini-3.5-flash-lite, gemini-3.6-flash (последняя), gemini-3.1-pro."
     },
-    "version": "1.2.0",
-    "releaseDate": "2026-06-23",
-    "shortDescription": {
-        "ko": "Gemini 기반의 온라인 텍스트 번역 애플리케이션입니다",
-        "en": "Gemini based online text translation application."
-    },
-    "description": {
-        "ko": "<b>[앱 소개] TransG: 실시간 안경형 번역 도우미</b>\n<i>\"안경을 통해 세상의 모든 언어를 내 언어로\"</i>\n\nTransG는 스마트 글래스와 연동하여 카메라에 비춰지는 텍스트를 실시간으로 인식하고, 즉시 사용자의 언어로 번역해 주는 서비스입니다.\n복잡한 설정 없이, 안경을 쓴 채로 원하는 곳을 바라보고 다리만 터치하세요. 낯선 언어의 벽이 순식간에 허물어집니다.",
-        "en": "<b>[App Intro] TransG: Real-time Smart Glasses Translation Assistant</b>\n<i>\"Translate the world through your glasses in real-time\"</i>\n\nTransG integrates with smart glasses to recognize text in the camera view in real-time and translate it instantly to your preferred language.\nSimply wear the glasses, look at the text, and touch the temple—no complex configuration needed. Break language barriers instantly."
-    },
-    "control": {
-        "ko": "<b>[사용 가이드] 처음 시작하기 (QR 설정)</b>\n앱을 처음 사용하시거나 새로운 API 키를 설정해야 할 때, 아래 순서대로 따라 해 보세요.\n\n<b>1단계: API 키 준비하기 (두뇌 만들기)</b>\n앱이 번역 기능을 수행하려면 'Google AI'라는 똑똑한 번역 도구의 허락이 필요합니다.\n1. Google AI Studio에 접속하여 구글 계정으로 로그인합니다.\n2. 화면에서 'Get API key' 버튼을 찾아 누릅니다.\n3. <b>'Create API key'</b>를 눌러 키를 생성하고, 생성된 긴 영문/숫자 조합의 키를 <b>[복사]</b>합니다.\n\n<b>2단계: 나만의 QR 코드 만들기</b>\n복사한 API 키를 앱에 알려주기 위해 고유한 QR 코드를 만듭니다.\n1. 상단에 web app 메뉴의 QR 코드 생성기로 이동합니다.\n2. URL 입력란에 방금 복사한 API 키를 붙여넣기 합니다.\n3. 'QR 코드 생성' 버튼을 누르면 나만의 QR 코드가 화면에 나타납니다.\n\n<b>3단계: 앱에 등록하기</b>\n1. 안경에서 텍스트 번역 앱을 실행합니다.\n2. 앱의 QR 인식 화면이 나오면, 방금 만든 QR 코드를 카메라로 비춰줍니다.\n3. 인식이 완료되면 설정이 끝납니다!\n\n<b>4단계: 실전! 번역하기</b>\n1. 번역이 필요한 글자(메뉴판, 표지판, 서류 등)를 안경 카메라 영역 안에 들어오게 비춥니다.\n2. 안경의 다리 부분을 살짝 <b>[터치]</b>하세요.\n3. 잠시 기다리면 안경 화면을 통해 자연스럽게 번역된 텍스트를 확인하실 수 있습니다.\n\n<b>💡 Tip: 만약 번역이 안 된다면?</b>\n• 텍스트가 너무 멀거나 흐릿하게 보이지 않는지 확인해 보세요.\n• 인터넷 연결 상태를 확인해 주세요.",
-        "en": "<b>[User Guide] Getting Started (QR Code Setup)</b>\nFollow the steps below when using the app for the first time or setting up a new API key.\n\n<b>Step 1: Prepare API Key (Setting up the Brain)</b>\nThe app requires permission from Google's intelligent translation tool, 'Google AI', to translate text.\n1. Visit Google AI Studio and sign in with your Google account.\n2. Find and click the 'Get API key' button.\n3. Click <b>'Create API key'</b> to generate your key, then <b>[Copy]</b> the long alphanumeric key.\n\n<b>Step 2: Generate Your QR Code</b>\nCreate a unique QR code to share the copied API key with the app.\n1. Visit Web App Menu On top of Page and QR code generator\n2. Paste the copied API key into the URL input field.\n3. Click 'Generate QR Code' to display your custom QR code.\n\n<b>Step 3: Register in the App</b>\n1. Launch the Text Translate app on your glasses.\n2. Point the camera at your newly created QR code when the QR scanner screen appears.\n3. Once scanned, the setup is complete!\n\n<b>Step 4: Start Translating!</b>\n1. Position the target text (menus, signs, documents, etc.) within the glasses' camera frame.\n2. Gently <b>[Touch]</b> the temple of the glasses.\n3. Wait a moment, and the natural translation will appear on the glasses display.\n\n<b>💡 Tip: If translation fails</b>\n• Make sure the text in the image is not too far or blurry.\n• Check your internet connection."
-    },
-    "updated": [
-        {
-            "version": "1.2.0",
-            "releaseDate": "2026-07-22",
-            "ko": "Gemini Model 최신 버전 업데이트 gemini-3.5-flash-lite (lite), gemini-3.6-flash (latest), gemini-3.1-pro (high-resolution/slow)",
-            "en": "Gemini Model latest version update gemini-3.5-flash-lite (lite), gemini-3.6-flash (latest), gemini-3.1-pro (high-resolution/slow)"
-        },
-        {
-            "version": "1.0.1",
-            "releaseDate": "2026-06-24",
-            "ko": "번역 결과가 모두 시스템 언어로 표현되도록 수정",
-            "en": "Fixed to display all translation results in the system language."
-        }
-    ],
-    "youtubeUrl": "https://www.youtube.com/embed/MucO4pWov7s",
-    "youtubeType": "1",
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TransG_v1.2.0.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TransG_v1.0.1.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TransG_v1.0.0.apk"
-    ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TransG/scr1.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TransG/scr2.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TransG/scr3.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TransG/scr4.jpg"
-    ],
-    "tags": {
-        "ko": [
-            "번역"
-        ],
-        "en": [
-            "Translate"
-        ]
+    {
+      "version": "1.0.1",
+      "releaseDate": "2026-06-24",
+      "ko": "번역 결과가 모두 시스템 언어로 표현되도록 수정",
+      "en": "Fixed to display all translation results in the system language.",
+      "ja": "翻訳結果がすべてシステム言語に合わせて表示されるように修正。",
+      "zh": "优化翻译展示逻辑，确保所有译文结果统一遵循系统预设语言。",
+      "es": "Corregido para mostrar todos los resultados de traducción en el idioma del sistema.",
+      "de": "Anzeige aller Übersetzungsergebnisse an die Systemsprache angepasst.",
+      "fr": "Affichage de tous les résultats de traduction dans la langue du système.",
+      "vi": "Sửa để kết quả dịch luôn hiển thị bằng ngôn ngữ hệ thống.",
+      "th": "แก้ไขให้ผลลัพธ์การแปลทั้งหมดแสดงผลตามภาษาของระบบ",
+      "id": "Diperbaiki agar semua hasil terjemahan ditampilkan dalam bahasa sistem.",
+      "ru": "Все результаты перевода теперь отображаются на языке системы."
     }
+  ],
+  "youtubeUrl": "https://www.youtube.com/embed/MucO4pWov7s",
+  "youtubeType": "1",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TransG_v1.2.0.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TransG_v1.0.1.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TransG_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TransG/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TransG/scr2.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TransG/scr3.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TransG/scr4.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "번역"
+    ],
+    "en": [
+      "Translate"
+    ],
+    "ja": [
+      "翻訳",
+      "Gemini",
+      "AI"
+    ],
+    "zh": [
+      "翻译",
+      "Gemini",
+      "AI"
+    ],
+    "es": [
+      "Traducción",
+      "Gemini",
+      "AI"
+    ],
+    "de": [
+      "Übersetzen",
+      "Gemini",
+      "KI"
+    ],
+    "fr": [
+      "Traduction",
+      "Gemini",
+      "IA"
+    ],
+    "vi": [
+      "DịchThuật",
+      "Gemini",
+      "AI"
+    ],
+    "th": [
+      "การแปล",
+      "Gemini",
+      "AI"
+    ],
+    "id": [
+      "Terjemahan",
+      "Gemini",
+      "AI"
+    ],
+    "ru": [
+      "Перевод",
+      "Gemini",
+      "ИИ"
+    ]
+  }
 }

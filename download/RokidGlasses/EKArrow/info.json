@@ -1,21 +1,57 @@
 {
   "title": {
     "ko": "EK Arrow",
-    "en": "EK Arrow"
+    "en": "EK Arrow",
+    "ja": "EK Arrow",
+    "zh": "EK Arrow 弓箭射击",
+    "es": "EK Arrow",
+    "de": "EK Arrow",
+    "fr": "EK Arrow",
+    "vi": "EK Arrow",
+    "th": "EK Arrow",
+    "id": "EK Arrow",
+    "ru": "EK Arrow"
   },
   "version": "1.0.0",
   "releaseDate": "2026-03-05",
   "shortDescription": {
     "ko": "미니 활쏘기 게임",
-    "en": "Mini Archery Game"
+    "en": "Mini Archery Game",
+    "ja": "ミニアーチェリーゲーム",
+    "zh": "迷你射箭小游戏",
+    "es": "Mini juego de tiro con arco",
+    "de": "Mini-Bogenschießspiel",
+    "fr": "Mini jeu de tir à l'arc",
+    "vi": "Trò chơi bắn cung mini",
+    "th": "มินิเกมยิงธนู",
+    "id": "Game panahan mini",
+    "ru": "Мини-игра в стрельбу из лука"
   },
   "description": {
     "ko": "<b>EK Arrow</b>는 1인칭 시점(First-Person Perspective)에서 과녁을 맞히는 <b>아케이드 원버튼 양궁 게임</b>입니다.<br>세로형 레이아웃으로 설계되어 스마트폰 한 손 조작은 물론, <b>로키드 글래스(Rokid Glass)</b> 환경에 최적화되어 있습니다.",
-    "en": "<b>EK Arrow</b> is a first-person <b>one-button arcade archery game</b> where you aim for the bullseye.<br>Its vertical layout is perfect for one-handed play and it is <b>fully optimized for Rokid Glass</b> smart glasses."
+    "en": "<b>EK Arrow</b> is a first-person <b>one-button arcade archery game</b> where you aim for the bullseye.<br>Its vertical layout is perfect for one-handed play and it is <b>fully optimized for Rokid Glass</b> smart glasses.",
+    "ja": "<b>EK Arrow</b>は、一人称視点（First-Person Perspective）で的を射抜く<b>アーケードワンボタン洋弓・アーチェリーゲーム</b>です。<br>縦型レイアウトで設計されており、スマートフォンの片手操作はもちろん、<b>Rokid Glasses（ローキッドグラス）</b>環境に最適化されています。",
+    "zh": "<b>EK Arrow</b>是一款第一人称视角的<b>单键街机射箭游戏</b>。<br>采用竖屏布局设计，不仅支持手机单手操作，还针对<b>Rokid Glasses</b>智能眼镜环境进行了深度优化。",
+    "es": "<b>EK Arrow</b> es un <b>juego arcade de tiro con arco de un solo botón</b> en primera persona donde apuntas a la diana.<br>Su diseño vertical es ideal para jugar con una sola mano y está <b>completamente optimizado para las gafas inteligentes Rokid Glasses</b>.",
+    "de": "<b>EK Arrow</b> ist ein <b>Ein-Knopf-Arcade-Bogenschießspiel</b> aus der Ego-Perspektive.<br>Das vertikale Layout eignet sich perfekt für die Einhandbedienung und ist <b>vollständig für Rokid Glasses</b> optimiert.",
+    "fr": "<b>EK Arrow</b> est un <b>jeu d'arcade de tir à l'arc à bouton unique</b> en vue à la première personne.<br>Sa disposition verticale est idéale pour jouer d'une seule main et est <b>parfaitement optimisée pour les lunettes Rokid Glasses</b>.",
+    "vi": "<b>EK Arrow</b> là <b>trò chơi bắn cung arcade một nút</b> ở góc nhìn thứ nhất, nơi bạn nhắm bắn vào hồng tâm.<br>Thiết kế dạng dọc hoàn hảo cho việc thao tác một tay và <b>được tối ưu hóa hoàn toàn cho kính thông minh Rokid Glasses</b>.",
+    "th": "<b>EK Arrow</b> เป็น<b>เกมยิงธนูอาร์เคดแบบปุ่มเดียว</b>ในมุมมองบุคคลที่หนึ่ง เล็งยิงเข้าเป้าอย่างแม่นยำ<br>ออกแบบในแนวตั้งเพื่อการเล่นด้วยมือเดียว และ<b>ปรับให้เหมาะสมกับแว่นตาอัจฉริยะ Rokid Glasses อย่างสมบูรณ์แบบ</b>",
+    "id": "<b>EK Arrow</b> adalah <b>game panahan arcade satu tombol</b> orang pertama di mana Anda membidik tepat pada sasaran.<br>Tata letak vertikalnya sempurna untuk bermain dengan satu tangan dan <b>dioptimalkan sepenuhnya untuk kacamata pintar Rokid Glasses</b>.",
+    "ru": "<b>EK Arrow</b> — это аркадная <b>игра в стрельбу из лука одной кнопкой</b> от первого лица.<br>Вертикальный интерфейс удобен для управления одной рукой и <b>полностью оптимизирован для умных очков Rokid Glasses</b>."
   },
   "control": {
     "ko": "조작은 매우 간단합니다!<br>• <b>터치 또는 버튼:</b> 활을 쏩니다.<br>• 복잡한 조작 없이 오직 <b>'타이밍'</b>만으로 과녁을 명중시키세요.",
-    "en": "Controls are dead simple!<br>• <b>Touch or Button Click:</b> Shoot an arrow.<br>• No complex inputs needed; everything comes down to <b>'timing'</b>."
+    "en": "Controls are dead simple!<br>• <b>Touch or Button Click:</b> Shoot an arrow.<br>• No complex inputs needed; everything comes down to <b>'timing'</b>.",
+    "ja": "操作はとてもシンプルです！<br>• <b>タップまたはボタン:</b> 矢を放ちます。<br>• 複雑な操作は不要、純粋な<b>「タイミング」</b>だけで的を射抜きましょう！",
+    "zh": "操作极其简单！<br>• <b>触控或按键:</b> 射出弓箭。<br>• 无需复杂输入，一切全凭精准的<b>「时机」</b>！",
+    "es": "¡Los controles son sumamente sencillos!<br>• <b>Tocar o pulsar botón:</b> Dispara una flecha.<br>• Sin controles complejos; todo se reduce a un buen <b>'tiempo'</b>.",
+    "de": "Die Steuerung ist kinderleicht!<br>• <b>Tippen oder Taste:</b> Pfeil abschießen.<br>• Keine komplizierten Aktionen; alles kommt auf das richtige <b>Timing</b> an.",
+    "fr": "Commandes ultra-simples !<br>• <b>Toucher ou cliquer:</b> Tirer une flèche.<br>• Pas d'actions complexes; tout repose sur le bon <b>tempo</b>.",
+    "vi": "Thao tác cực kỳ đơn giản!<br>• <b>Chạm hoặc bấm nút:</b> Bắn tên.<br>• Không cần thao tác phức tạp; tất cả phụ thuộc vào <b>'thời điểm'</b> chính xác.",
+    "th": "การควบคุมง่ายมาก!<br>• <b>แตะหรือกดปุ่ม:</b> ยิงลูกธนู<br>• ไม่มีการควบคุมที่ซับซ้อน ทุกอย่างขึ้นอยู่กับ <b>'จังหวะ'</b> ล้วนๆ",
+    "id": "Kontrol sangat sederhana!<br>• <b>Ketuk atau Tombol:</b> Menembakkan anak panah.<br>• Tidak perlu input rumit; semuanya bergantung pada <b>'waktu'</b> yang tepat.",
+    "ru": "Управление предельно простое!<br>• <b>Касание или кнопка:</b> Выстрел стрелы.<br>• Никаких сложных действий; всё решает правильный <b>тайминг</b>."
   },
   "youtubeUrl": "https://www.youtube.com/embed/_gT42bst52A",
   "youtubeType": "1",
@@ -34,6 +70,42 @@
     "en": [
       "Game",
       "Archery"
+    ],
+    "ja": [
+      "ゲーム",
+      "アーチェリー"
+    ],
+    "zh": [
+      "游戏",
+      "射箭"
+    ],
+    "es": [
+      "Juego",
+      "TiroConArco"
+    ],
+    "de": [
+      "Spiel",
+      "Bogenschießen"
+    ],
+    "fr": [
+      "Jeu",
+      "TirÀL'Arc"
+    ],
+    "vi": [
+      "TròChơi",
+      "BắnCung"
+    ],
+    "th": [
+      "เกม",
+      "ยิงธนู"
+    ],
+    "id": [
+      "Game",
+      "Panahan"
+    ],
+    "ru": [
+      "Игра",
+      "СтрельбаИзЛука"
     ]
   }
 }

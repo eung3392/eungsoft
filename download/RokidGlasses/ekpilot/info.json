@@ -1,47 +1,128 @@
 {
-    "title": {
-        "ko": "EK Pilot",
-        "en": "EK Pilot"
-    },
-    "version": "0.8.0",
-    "releaseDate": "2026-04-04",
-    "shortDescription": {
-        "ko": "EK Pilot은 3D 비행 엔진을 기반으로 한 공중 미션 게임입니다. 고개를 기울이며 조종하세요.",
-        "en": "EK Pilot is an aerial mission game based on a 3D flight engine. Control by tilting your head."
-    },
-    "description": {
-        "ko": "EK Pilot은 3D 비행 엔진을 기반으로 한 공중 미션 게임입니다. 플레이어는 전투기 조종사가 되어 하늘을 누비며, 5분 이내에 곳곳에 떠다니는 목표물을 격파해야 합니다.",
-        "en": "EK Pilot is an aerial mission game based on a 3D flight engine. Players take on the role of a fighter pilot, soaring through the skies and shooting down floating targets within 5 minutes."
-    },
-    "control": {
-        "ko": "• 상하 기동 (Pitch): 고개를 위/아래로 기울여 고도를 높이거나 낮춥니다.\n• 좌우 기울기 (Roll): 고개를 좌우로 기울여 방향을 전환(Yaw)합니다. \n • 터치로 목표물을 맞추세요.\n • 터치 스와이프로 비행 속도를 변경하세요.",
-        "en": "• Pitch: Tilt your head up/down to change altitude.\n• Roll: Tilt your head left/right to turn. \n • Touch to shoot targets.\n • Touch swipe to change flight speed."
-    },
-    "youtubeUrl": "https://www.youtube.com/embed/J4tCsptHdSs",
-    "youtubeType": "1",
-    "updated": [
-        {
-            "version": "0.8.0",
-            "releaseDate": "2026-04-04",
-            "ko": "UI 수정, 게임 밸런스 조정, 미션 추가",
-            "en": "UI modification, game balance adjustment, mission addition"
-        }
-    ],
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKPilot_v0.8.0.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKPilot_v0.6.0.apk"
-    ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/ekpilot/v080.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/ekpilot/scr1.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/ekpilot/scr2.jpg"
-    ],
-    "tags": {
-        "ko": [
-            "게임"
-        ],
-        "en": [
-            "Game"
-        ]
+  "title": {
+    "ko": "EK Pilot",
+    "en": "EK Pilot",
+    "ja": "EK Pilot",
+    "zh": "EK Pilot 空战飞行员",
+    "es": "EK Pilot",
+    "de": "EK Pilot",
+    "fr": "EK Pilot",
+    "vi": "EK Pilot",
+    "th": "EK Pilot",
+    "id": "EK Pilot",
+    "ru": "EK Pilot"
+  },
+  "version": "0.8.0",
+  "releaseDate": "2026-04-04",
+  "shortDescription": {
+    "ko": "EK Pilot은 3D 비행 엔진을 기반으로 한 공중 미션 게임입니다. 고개를 기울이며 조종하세요.",
+    "en": "EK Pilot is an aerial mission game based on a 3D flight engine. Control by tilting your head.",
+    "ja": "3Dフライトエンジンを基盤にした空中ミッションゲーム。頭を傾けて操縦！",
+    "zh": "基于3D飞行引擎的空中任务射击游戏，倾斜头部体感翱翔天际！",
+    "es": "Juego de misiones aéreas con motor de vuelo 3D. Controla inclinando la cabeza.",
+    "de": "Flugmissionsspiel mit 3D-Engine. Steuern Sie das Flugzeug durch Neigen des Kopfes.",
+    "fr": "Jeu de mission aérienne avec moteur 3D. Pilotez en inclinant la tête.",
+    "vi": "Trò chơi nhiệm vụ không chiến với động cơ bay 3D. Điều khiển bằng cách nghiêng đầu.",
+    "th": "เกมภารกิจทางอากาศบนเอนจินการบิน 3D ควบคุมด้วยการเอียงศีรษะ",
+    "id": "Game misi udara dengan mesin penerbangan 3D. Kendalikan dengan memiringkan kepala.",
+    "ru": "Авиасимулятор с 3D-движком и воздушными миссиями. Управляйте наклоном головы."
+  },
+  "description": {
+    "ko": "EK Pilot은 3D 비행 엔진을 기반으로 한 공중 미션 게임입니다. 플레이어는 전투기 조종사가 되어 하늘을 누비며, 5분 이내에 곳곳에 떠다니는 목표물을 격파해야 합니다.",
+    "en": "EK Pilot is an aerial mission game based on a 3D flight engine. Players take on the role of a fighter pilot, soaring through the skies and shooting down floating targets within 5 minutes.",
+    "ja": "EK Pilotは、3Dフライトエンジンをベースにした臨場感あふれる空中ミッションゲームです。プレイヤーは戦闘機のパイロットとなり大空を駆け巡り、5分以内に各地に浮かぶターゲットを撃破しなければなりません。",
+    "zh": "EK Pilot是一款基于真实感3D飞行引擎的空中任务体感游戏。化身战机王牌飞行员翱翔天际，在5分钟倒计时内搜寻并击落漂浮在空中的所有目标敌机与障碍！",
+    "es": "EK Pilot es un juego de misiones aéreas impulsado por un motor de vuelo en 3D. Conviértete en un piloto de combate que surca los cielos para abatir objetivos flotantes antes de que se agoten los 5 minutos.",
+    "de": "EK Pilot ist ein Flugmissionsspiel mit einer 3D-Flugengine. Werden Sie zum Kampfpiloten, gleiten Sie durch die Lüfte und zerstören Sie innerhalb von 5 Minuten alle schwebenden Zielobjekte.",
+    "fr": "EK Pilot est un jeu de combat aérien basé sur un moteur de vol 3D. Incarnez un pilote de chasse fendant les cieux pour abattre toutes les cibles flottantes en moins de 5 minutes.",
+    "vi": "EK Pilot là trò chơi thực hiện nhiệm vụ không chiến dựa trên động cơ mô phỏng bay 3D. Bạn sẽ trở thành phi công chiến đấu lướt qua bầu trời và tiêu diệt các mục tiêu trôi nổi trong vòng 5 phút.",
+    "th": "EK Pilot เป็นเกมภารกิจทางอากาศที่สร้างขึ้นบนเอนจินการบิน 3D ผู้เล่นจะได้รับบทเป็นนักบินรบทะยานขึ้นสู่ท้องฟ้าและทำลายเป้าหมายที่ลอยอยู่ให้สิ้นซากภายในเวลา 5 นาที",
+    "id": "EK Pilot adalah game misi udara berdasarkan mesin penerbangan 3D. Jadilah pilot pesawat tempur yang melintasi langit dan hancurkan target terapung dalam waktu 5 menit.",
+    "ru": "EK Pilot — воздушный симулятор на базе 3D-движка. Станьте пилотом истребителя, бороздите небесные просторы и сбивайте летающие мишени за отведенные 5 минут."
+  },
+  "control": {
+    "ko": "• 상하 기동 (Pitch): 고개를 위/아래로 기울여 고도를 높이거나 낮춥니다.\n• 좌우 기울기 (Roll): 고개를 좌우로 기울여 방향을 전환(Yaw)합니다. \n • 터치로 목표물을 맞추세요.\n • 터치 스와이프로 비행 속도를 변경하세요.",
+    "en": "• Pitch: Tilt your head up/down to change altitude.\n• Roll: Tilt your head left/right to turn. \n • Touch to shoot targets.\n • Touch swipe to change flight speed.",
+    "ja": "• ピッチ (Pitch): 頭を上/下に傾けて高度を上げ下げします。<br>• ロール (Roll): 頭を左/右に傾けて旋回します。<br>• タッチでターゲットを射撃します。<br>• タッチスワイプで飛行速度を変更します。",
+    "zh": "• 俯仰 (Pitch): 抬头/低头控制爬升与俯冲。<br>• 滚转 (Roll): 头部向左/右倾斜以改变航向。<br>• 镜腿轻触: 发射机炮命中目标。<br>• 镜腿滑动: 加速或减速调节飞行速度。",
+    "es": "• Cabeceo (Pitch): Inclina la cabeza hacia arriba/abajo para cambiar de altitud.<br>• Alabeo (Roll): Inclina la cabeza a izquierda/derecha para girar.<br>• Toque: Dispara a los objetivos.<br>• Deslizamiento: Ajusta la velocidad de vuelo.",
+    "de": "• Neigung (Pitch): Kopf nach oben/unten neigen für Steig-/Sinkflug.<br>• Rollen (Roll): Kopf nach links/rechts neigen zum Lenken.<br>• Berühren: Ziele abschießen.<br>• Wischen: Fluggeschwindigkeit anpassen.",
+    "fr": "• Tangage (Pitch): Inclinez la tête vers le haut/bas pour monter ou descendre.<br>• Roulis (Roll): Inclinez la tête à gauche/droite pour tourner.<br>• Toucher: Tirer sur les cibles.<br>• Balayer: Modifier la vitesse de vol.",
+    "vi": "• Độ dốc (Pitch): Nghiêng đầu lên/xuống để nâng hoặc hạ độ cao.<br>• Nghiêng (Roll): Nghiêng đầu sang trái/phải để chuyển hướng bay.<br>• Chạm: Bắn hạ mục tiêu.<br>• Vuốt: Thay đổi tốc độ bay.",
+    "th": "• ชันขึ้น/ก้มลง (Pitch): เอียงศีรษะขึ้น/ลง เพื่อปรับระดับความสูง<br>• เอียงซ้าย/ขวา (Roll): เอียงศีรษะไปทางซ้าย/ขวา เพื่อเลี้ยวทิศทาง<br>• สัมผัส: ยิงทำลายเป้าหมาย<br>• ปัด: ปรับความเร็วในการบิน",
+    "id": "• Pitch: Miringkan kepala ke atas/bawah untuk mengubah ketinggian.<br>• Roll: Miringkan kepala ke kiri/kanan untuk berbelok.<br>• Sentuh: Tembak target.<br>• Usap: Ubah kecepatan penerbangan.",
+    "ru": "• Тангаж (Pitch): Наклон головы вверх/вниз меняет высоту полета.<br>• Крен (Roll): Наклон головы влево/вправо управляет поворотами.<br>• Касание: Стрельба по целям.<br>• Свайп: Регулировка скорости полета."
+  },
+  "youtubeUrl": "https://www.youtube.com/embed/J4tCsptHdSs",
+  "youtubeType": "1",
+  "updated": [
+    {
+      "version": "0.8.0",
+      "releaseDate": "2026-04-04",
+      "ko": "UI 수정, 게임 밸런스 조정, 미션 추가",
+      "en": "UI modification, game balance adjustment, mission addition",
+      "ja": "UIの改修、ゲームバランスの調整、新規ミッションの追加。",
+      "zh": "界面重构优化，游戏平衡性数值调整，追加全新挑战任务。",
+      "es": "Modificaciones en interfaz, ajuste de balance y nuevas misiones.",
+      "de": "UI-Überarbeitung, Balancing-Anpassungen, neue Missionen hinzugefügt.",
+      "fr": "Amélioration de l'interface, rééquilibrage du jeu et nouvelles missions.",
+      "vi": "Sửa đổi giao diện người dùng, điều chỉnh cân bằng trò chơi và thêm nhiệm vụ mới.",
+      "th": "ปรับแต่ง UI ปรับสมดุลเกม และเพิ่มภารกิจใหม่",
+      "id": "Modifikasi UI, penyesuaian keseimbangan game, penambahan misi baru.",
+      "ru": "Обновление интерфейса, балансировка геймплея и новые миссии."
     }
+  ],
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKPilot_v0.8.0.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKPilot_v0.6.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/ekpilot/v080.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/ekpilot/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/ekpilot/scr2.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "게임"
+    ],
+    "en": [
+      "Game"
+    ],
+    "ja": [
+      "ゲーム",
+      "フライト"
+    ],
+    "zh": [
+      "游戏",
+      "飞行"
+    ],
+    "es": [
+      "Juego",
+      "Vuelo"
+    ],
+    "de": [
+      "Spiel",
+      "Flugsimulation"
+    ],
+    "fr": [
+      "Jeu",
+      "Vol"
+    ],
+    "vi": [
+      "TròChơi",
+      "PhiHành"
+    ],
+    "th": [
+      "เกม",
+      "การบิน"
+    ],
+    "id": [
+      "Game",
+      "Penerbangan"
+    ],
+    "ru": [
+      "Игра",
+      "Полеты"
+    ]
+  }
 }

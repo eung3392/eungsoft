@@ -1,45 +1,126 @@
 {
-    "title": {
-        "ko": "EK Word Up",
-        "en": "EK Word Up"
-    },
-    "version": "1.0.0",
-    "releaseDate": "2026-04-02",
-    "community_yn": "Y",
-    "community_title": {
-        "ko": "여러분의 단어장을 공유하세요.",
-        "en": "Share your vocabulary."
-    },
-    "shortDescription": {
-        "ko": "고개만 까딱! Hands-Free Rokid Glasses 전용 단어장 입니다. 좋은 자료를 함께 공유해요.",
-        "en": "Just nod your head! Hands-Free Rokid Glasses dedicated vocabulary book. Let's share good resources."
-    },
-    "description": {
-        "ko": "학습용 단어장 프로그램입니다. <br>기본적으로 세계수도, 영단어 500 이 들어있습니다. <br><br><b>1. 고개만 까딱! '모션 제어' 학습 (Hands-Free) 🤚🚫</b><br>스마트폰 화면을 터치할 필요가 없습니다. AR 글래스를 착용하고 고개를 오른쪽으로 살짝 기울이면 다음 카드로, 왼쪽으로 기울이면 이전 카드로 넘어갑니다. 정답 확인부터 다음 단어 이동까지 오직 모션으로 제어하세요!<br><br><b>2. 무궁무진한 확장성! '나만의 JSON 단어장' 📂</b><br>메모장으로 만든 JSON 파일만 넣으면 나만의 암기장이 완성됩니다. 다운로드의 샘플 파일을 참고하세요.  토익, 공무원 시험, 자격증 공부까지 무엇이든 가능합니다. <br><b style='color:red;'>Web Install 메뉴에서 안경과 연결한 후에 'EK Word Up' 버튼으로 데이터 JSON 파일을 전송하세요.</b><br><br><b>3. 똑똑한 학습 이어가기 (Smart Save) 📍</b><br>공부하다가 앱을 꺼도 걱정 마세요. 마지막으로 내가 어디까지 외웠는지 앱이 기억하고 있습니다. 다음에 실행할 때 이어서 바로 학습을 시작할 수 있습니다.<br><br><b>4. 암기 효과 극대화! '셔플 모드' 🔀</b><br>셔플 모드를 켜면 단어 순서가 무작위로 섞여 진짜 실력을 테스트할 수 있습니다.",
-        "en": "It's a learning vocabulary program. <br>It basically contains 500 English words for Korean, the world capital. <br><br><b>1. Just nod your head! 'Motion Control' Learning (Hands-Free) 🤚🚫</b><br>No need to touch your smartphone screen. Put on the AR glasses and tilt your head slightly to the right for the next card, or to the left for the previous card. Control everything from checking answers to moving to the next word using only your motion!<br><br><b>2. Infinite Expandability! 'My Own JSON Vocabulary Book' 📂</b><br>Just add a JSON file created with a notepad or VS Code, and your own memorization book is complete. TOEIC, civil service exams, certification studies—anything is possible. <br>Connect your glasses via the 'Web Install' menu and transfer the data JSON file using the 'EK Word Up' button.<br><br><b>3. Smart Learning Continuity (Smart Save) 📍</b><br>Don't worry if you turn off the app while studying. The app remembers how far you've memorized. You can resume studying right where you left off next time, without breaking your flow.<br><br><b>4. Maximize Memorization Effect! 'Shuffle Mode' 🔀</b><br>Turn on Shuffle Mode to mix up the word order randomly and test your real skills!"
-    },
-    "control": {
-        "ko": "<b>• 데이터 선택:</b> 'Select' 버튼을 눌러 학습할 단어장을 고릅니다. 리스트에서 내장 데이타 직접 올린 외부 파일을 모두 확인할 수 있습니다.  <br><b>Random</b> : 'Random' 스위치를 켜면 단어 순서가 무작위로 섞입니다. (꺼져 있을 경우 이전 학습 위치부터 시작). <br><b>Start</b> : 'Start' 버튼을 눌러 카드 화면으로 진입합니다",
-        "en": "<b>• Data Selection:</b> Press the 'Select' button to choose the vocabulary set to study. You can check all internal data and externally uploaded files in the list. <br><b>Random</b> : Turn on the 'Random' switch to shuffle the word order (if off, it resumes from the last learning position). <br><b>Start</b> : Press the 'Start' button to enter the card screen."
-    },
-    "youtubeUrl": "",
-    "youtubeType": "1",
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKWordUp_v1.0.0.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/sample_capitals.json"
+  "title": {
+    "ko": "EK Word Up",
+    "en": "EK Word Up",
+    "ja": "EK Word Up",
+    "zh": "EK Word Up 头部体感背词",
+    "es": "EK Word Up",
+    "de": "EK Word Up",
+    "fr": "EK Word Up",
+    "vi": "EK Word Up",
+    "th": "EK Word Up",
+    "id": "EK Word Up",
+    "ru": "EK Word Up"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-04-02",
+  "community_yn": "Y",
+  "community_title": {
+    "ko": "여러분의 단어장을 공유하세요.",
+    "en": "Share your vocabulary.",
+    "ja": "自作の単語帳を共有しましょう。",
+    "zh": "分享你的精选单词本与词库！",
+    "es": "Comparte tus listas y fichas de vocabulario.",
+    "de": "Teilen Sie Ihre Vokabellisten mit der Community.",
+    "fr": "Partagez vos listes de vocabulaire personnalisées.",
+    "vi": "Hãy chia sẻ danh sách từ vựng của bạn với mọi người.",
+    "th": "ร่วมแบ่งปันสมุดคำศัพท์ของคุณ",
+    "id": "Bagikan buku kosakata Anda kepada sesama.",
+    "ru": "Поделитесь своими словарями и наборами карточек."
+  },
+  "shortDescription": {
+    "ko": "고개만 까딱! Hands-Free Rokid Glasses 전용 단어장 입니다. 좋은 자료를 함께 공유해요.",
+    "en": "Just nod your head! Hands-Free Rokid Glasses dedicated vocabulary book. Let's share good resources.",
+    "ja": "首を傾けるだけで進む！ハンズフリーRokid Glasses専用スマート単語帳アプリ",
+    "zh": "只需轻轻歪头！免触控Rokid Glasses专属智能单词卡",
+    "es": "¡Solo asiente o inclina la cabeza! Fichas de vocabulario Manos Libres para Rokid Glasses",
+    "de": "Einfach den Kopf neigen! Hands-Free-Vokabeltrainer für Rokid Glasses",
+    "fr": "Inclinez simplement la tête ! Vocabulaire mains libres exclusif pour Rokid Glasses",
+    "vi": "Chỉ cần nghiêng nhẹ đầu! Sổ từ vựng rảnh tay Hands-Free cho kính Rokid Glasses",
+    "th": "เพียงแค่เอียงศีรษะ! สมุดคำศัพท์แฮนด์ฟรีสำหรับแว่นตา Rokid Glasses",
+    "id": "Cukup miringkan kepala! Buku kosakata Hands-Free khusus Rokid Glasses",
+    "ru": "Управление наклоном головы! Карточки для запоминания слов без рук для Rokid Glasses"
+  },
+  "description": {
+    "ko": "학습용 단어장 프로그램입니다. <br>기본적으로 세계수도, 영단어 500 이 들어있습니다. <br><br><b>1. 고개만 까딱! '모션 제어' 학습 (Hands-Free) 🤚🚫</b><br>스마트폰 화면을 터치할 필요가 없습니다. AR 글래스를 착용하고 고개를 오른쪽으로 살짝 기울이면 다음 카드로, 왼쪽으로 기울이면 이전 카드로 넘어갑니다. 정답 확인부터 다음 단어 이동까지 오직 모션으로 제어하세요!<br><br><b>2. 무궁무진한 확장성! '나만의 JSON 단어장' 📂</b><br>메모장으로 만든 JSON 파일만 넣으면 나만의 암기장이 완성됩니다. 다운로드의 샘플 파일을 참고하세요.  토익, 공무원 시험, 자격증 공부까지 무엇이든 가능합니다. <br><b style='color:red;'>Web Install 메뉴에서 안경과 연결한 후에 'EK Word Up' 버튼으로 데이터 JSON 파일을 전송하세요.</b><br><br><b>3. 똑똑한 학습 이어가기 (Smart Save) 📍</b><br>공부하다가 앱을 꺼도 걱정 마세요. 마지막으로 내가 어디까지 외웠는지 앱이 기억하고 있습니다. 다음에 실행할 때 이어서 바로 학습을 시작할 수 있습니다.<br><br><b>4. 암기 효과 극대화! '셔플 모드' 🔀</b><br>셔플 모드를 켜면 단어 순서가 무작위로 섞여 진짜 실력을 테스트할 수 있습니다.",
+    "en": "It's a learning vocabulary program. <br>It basically contains 500 English words for Korean, the world capital. <br><br><b>1. Just nod your head! 'Motion Control' Learning (Hands-Free) 🤚🚫</b><br>No need to touch your smartphone screen. Put on the AR glasses and tilt your head slightly to the right for the next card, or to the left for the previous card. Control everything from checking answers to moving to the next word using only your motion!<br><br><b>2. Infinite Expandability! 'My Own JSON Vocabulary Book' 📂</b><br>Just add a JSON file created with a notepad or VS Code, and your own memorization book is complete. TOEIC, civil service exams, certification studies—anything is possible. <br>Connect your glasses via the 'Web Install' menu and transfer the data JSON file using the 'EK Word Up' button.<br><br><b>3. Smart Learning Continuity (Smart Save) 📍</b><br>Don't worry if you turn off the app while studying. The app remembers how far you've memorized. You can resume studying right where you left off next time, without breaking your flow.<br><br><b>4. Maximize Memorization Effect! 'Shuffle Mode' 🔀</b><br>Turn on Shuffle Mode to mix up the word order randomly and test your real skills!",
+    "ja": "学習用スマート単語帳プログラムです。<br>基本データとして世界の首都、英単語500語が収録されています。<br><br><b>1. 首を傾けるだけ！モーション学習 (Hands-Free) 🤚🚫</b><br>スマートフォンに触れる必要はありません。ARグラスをかけて頭を右に傾ければ次のカードへ、左に傾ければ前のカードへ。答えの確認から次の単語まで頭の傾きだけで操作できます！<br><br><b>2. 無限の拡張性！自分だけのJSON単語帳 📂</b><br>メモ帳などで作成したJSONファイルを取り込めば、自分専用の暗記帳が完成。TOEICや資格試験など何でも対応可能です。<br><b style='color:red;'>Web Installメニューでメガネと接続後、「EK Word Up」ボタンからJSONデータを送信してください。</b><br><br><b>3. スマートレジューム機能 (Smart Save) 📍</b><br>アプリを閉じても、どこまで暗記したかをアプリが記憶しているため、次回すぐに続きから学習できます。<br><br><b>4. 暗記効果を高めるシャッフルモード 🔀</b><br>単語の順番をランダムに並び替えて実力を試せます。",
+    "zh": "一款高效率的学习背词软件。<br>内置世界首都、精选500核心词汇等丰富词库。<br><br><b>1. 歪头即学！动作体感控制 (Hands-Free) 🤚🚫</b><br>无需触碰屏幕。佩戴AR眼镜向右微侧头部即可切换下一张单词卡，向左侧头回看上一张。从查看答案到切换生词，全凭头部体态感应控制！<br><br><b>2. 无限扩展！制作专属JSON词库 📂</b><br>只需用记事本编辑简单的JSON文件，即可制作专属于你的个性化词库，备战各类考试得心应手。<br><b style='color:red;'>可在Web Install网页中连接眼镜后，点击「EK Word Up」按钮快速上传词库文件。</b><br><br><b>3. 智能记忆续学 (Smart Save) 📍</b><br>学习中断亦无需担心，系统自动记录背词进度，下次打开即刻无缝衔接。<br><br><b>4. 强化记忆！随机乱序模式 🔀</b><br>一键开启随机混排，杜绝死记硬背位置记忆。",
+    "es": "Programa de estudio de vocabulario.<br>Incluye capitales del mundo y 500 palabras en inglés.<br><br><b>1. ¡Solo inclina la cabeza! Control por movimiento (Hands-Free) 🤚🚫</b><br>Sin tocar pantallas. Con las gafas AR, inclina levemente la cabeza a la derecha para la siguiente ficha, o a la izquierda para la anterior.<br><br><b>2. ¡Expansión ilimitada! Crea tu propio vocabulario en JSON 📂</b><br>Carga cualquier archivo JSON creado en el bloc de notas para estudiar cualquier examen o idioma.<br><b style='color:red;'>Conecta tus gafas en Web Install y envía tu archivo JSON con el botón 'EK Word Up'.</b><br><br><b>3. Continuidad inteligente (Smart Save) 📍</b><br>La app recuerda exactamente dónde te quedaste para retomar el estudio de inmediato.<br><br><b>4. Modo aleatorio 🔀</b><br>Mezcla el orden para poner a prueba tu memoria real.",
+    "de": "Ein Vokabeltrainer der nächsten Generation.<br>Enthält Hauptstädte der Welt und 500 wichtige Englisch-Vokabeln.<br><br><b>1. Kopfneigen genügt! Bewegungserkennung (Hands-Free) 🤚🚫</b><br>Kein Smartphone-Touch nötig. Kopf nach rechts neigen zur nächsten Karte, nach links zur vorherigen.<br><br><b>2. Unendliche Erweiterbarkeit mit JSON-Vokabellisten 📂</b><br>Einfach eigene JSON-Dateien erstellen und beliebige Fächer oder Sprachen lernen.<br><b style='color:red;'>Brille im Web Install Menü verbinden und JSON-Datei über 'EK Word Up' übertragen.</b><br><br><b>3. Intelligentes Weiterspeichern (Smart Save) 📍</b><br>Die App merkt sich Ihren Lernfortschritt exakt.<br><br><b>4. Zufallsmodus (Shuffle) 🔀</b><br>Mischt die Vokabeln zufällig für optimalen Lerneffekt.",
+    "fr": "Un programme d'apprentissage du vocabulaire innovant.<br>Contient les capitales du monde et 500 mots d'anglais essentiels.<br><br><b>1. Inclinez la tête ! Apprentissage par mouvement (Hands-Free) 🤚🚫</b><br>Aucun besoin de toucher un écran. Inclinez la tête à droite pour la carte suivante, à gauche pour la précédente.<br><br><b>2. Extensibilité infinie via JSON 📂</b><br>Créez vos propres listes en JSON pour réviser examens et langues étrangères.<br><b style='color:red;'>Connectez vos lunettes sur Web Install et transférez votre fichier JSON via le bouton 'EK Word Up'.</b><br><br><b>3. Reprise intelligente (Smart Save) 📍</b><br>L'application mémorise votre progression pour reprendre là où vous vous étiez arrêté.<br><br><b>4. Mode aléatoire (Shuffle) 🔀</b><br>Mélangez l'ordre des cartes pour tester votre maîtrise.",
+    "vi": "Ứng dụng học từ vựng thông minh.<br>Chứa sẵn dữ liệu thủ đô thế giới và 500 từ vựng tiếng Anh thông dụng.<br><br><b>1. Chỉ cần nghiêng đầu! Điều khiển bằng cử động (Hands-Free) 🤚🚫</b><br>Không cần chạm vào điện thoại. Đeo kính AR và nghiêng đầu nhẹ sang phải để sang thẻ tiếp theo, nghiêng sang trái để quay lại thẻ trước.<br><br><b>2. Mở rộng không giới hạn! Tự tạo bộ từ JSON 📂</b><br>Chỉ cần tạo tệp JSON trên Notepad để học mọi môn thi và chứng chỉ.<br><b style='color:red;'>Kết nối kính trong menu Web Install và gửi tệp JSON qua nút 'EK Word Up'.</b><br><br><b>3. Tiếp tục học thông minh (Smart Save) 📍</b><br>Ứng dụng tự ghi nhớ vị trí học cuối cùng để bạn tiếp tục bất cứ lúc nào.<br><br><b>4. Chế độ đảo từ ngẫu nhiên 🔀</b><br>Trộn thứ tự từ vựng để kiểm tra năng lực ghi nhớ thực sự.",
+    "th": "โปรแกรมสมุดคำศัพท์สำหรับการเรียนรู้<br>บรรจุข้อมูลเมืองหลวงของโลก และคำศัพท์ภาษาอังกฤษ 500 คำ<br><br><b>1. แค่เอียงหัว! ควบคุมด้วยการเคลื่อนไหว (Hands-Free) 🤚🚫</b><br>ไม่ต้องสัมผัสหน้าจอ เพียงสวมแว่น AR แล้วเอียงศีรษะไปทางขวาเล็กน้อยเพื่อไปการ์ดถัดไป เอียงซ้ายเพื่อย้อนกลับ<br><br><b>2. ปรับแต่งได้ไม่จำกัด! สมุดคำศัพท์ JSON ของคุณเอง 📂</b><br>เพียงใส่ไฟล์ JSON ที่สร้างจาก Notepad คุณก็จะได้สมุดคำศัพท์เฉพาะตัวสำหรับเตรียมสอบทุกประเภท<br><b style='color:red;'>เชื่อมต่อแว่นตาในเมนู Web Install แล้วส่งไฟล์ JSON ผ่านปุ่ม 'EK Word Up'</b><br><br><b>3. จำตำแหน่งการเรียนรู้อัตโนมัติ (Smart Save) 📍</b><br>ไม่ต้องกังวลเมื่อปิดแอป ระบบจะจดจำจุดที่คุณเรียนค้างไว้เสมอ<br><br><b>4. โหมดสลับลำดับคำศัพท์ 🔀</b><br>สุ่มคำศัพท์เพื่อทดสอบความจำที่แท้จริง",
+    "id": "Program buku kosakata untuk belajar.<br>Berisi ibu kota dunia dan 500 kosakata bahasa Inggris penting.<br><br><b>1. Cukup miringkan kepala! Kontrol Gerakan (Hands-Free) 🤚🚫</b><br>Tidak perlu menyentuh layar. Kenakan kacamata AR dan miringkan kepala ke kanan untuk kartu berikutnya, ke kiri untuk sebelumnya.<br><br><b>2. Ekspansi Tanpa Batas! Buku Kosakata JSON Sendiri 📂</b><br>Cukup buat file JSON di notepad untuk belajar ujian atau bahasa apa pun.<br><b style='color:red;'>Hubungkan kacamata di menu Web Install dan kirim file JSON dengan tombol 'EK Word Up'.</b><br><br><b>3. Lanjutkan Belajar Otomatis (Smart Save) 📍</b><br>Aplikasi mengingat posisi belajar terakhir Anda saat dibuka kembali.<br><br><b>4. Mode Acak (Shuffle) 🔀</b><br>Acak urutan kata untuk menguji ingatan yang sebenarnya.",
+    "ru": "Инновационная программа для запоминания слов карточками.<br>Содержит столицы мира и 500 базовых английских слов.<br><br><b>1. Наклон головы! Управление движениями (Hands-Free) 🤚🚫</b><br>Без касания экрана: наклон головы вправо открывает следующую карточку, влево — предыдущую.<br><br><b>2. Собственные словари через файлы JSON 📂</b><br>Создавайте списки в блокноте и загружайте в очки для подготовки к любым экзаменам.<br><b style='color:red;'>Подключите очки на странице Web Install и отправьте файл JSON кнопкой 'EK Word Up'.</b><br><br><b>3. Умное продолжение обучения (Smart Save) 📍</b><br>Приложение запоминает последнюю карточку, позволяя сразу продолжить учебу.<br><br><b>4. Случайный порядок (Shuffle) 🔀</b><br>Перемешивание карточек для лучшего закрепления материала."
+  },
+  "control": {
+    "ko": "<b>• 데이터 선택:</b> 'Select' 버튼을 눌러 학습할 단어장을 고릅니다. 리스트에서 내장 데이타 직접 올린 외부 파일을 모두 확인할 수 있습니다.  <br><b>Random</b> : 'Random' 스위치를 켜면 단어 순서가 무작위로 섞입니다. (꺼져 있을 경우 이전 학습 위치부터 시작). <br><b>Start</b> : 'Start' 버튼을 눌러 카드 화면으로 진입합니다",
+    "en": "<b>• Data Selection:</b> Press the 'Select' button to choose the vocabulary set to study. You can check all internal data and externally uploaded files in the list. <br><b>Random</b> : Turn on the 'Random' switch to shuffle the word order (if off, it resumes from the last learning position). <br><b>Start</b> : Press the 'Start' button to enter the card screen.",
+    "ja": "<b>• データ選択:</b> 'Select'ボタンを押して学習する単語帳を選択します（内蔵データおよび転送した外部ファイル）。<br><b>• Random:</b> スイッチをONにすると単語がランダムにシャッフルされます。<br><b>• Start:</b> 'Start'ボタンを押してカード学習画面に進みます。",
+    "zh": "<b>• 选择词库:</b> 点击'Select'按钮选择目标单词集（包含内置词库与用户上传的文件）。<br><b>• Random (随机):</b> 开启'Random'开关可打乱词库次序（关闭时将从上次进度继续）。<br><b>• Start (开始):</b> 点击'Start'进入单词卡学习模式。",
+    "es": "<b>• Selección de datos:</b> Pulsa 'Select' para elegir la lista de vocabulario.<br><b>• Random:</b> Activa el interruptor para mezclar el orden aleatoriamente.<br><b>• Start:</b> Pulsa 'Start' para comenzar con las tarjetas.",
+    "de": "<b>• Vokabelliste wählen:</b> 'Select' drücken, um die Vokabelliste auszuwählen.<br><b>• Random:</b> Schalter aktivieren, um die Reihenfolge zufällig zu mischen.<br><b>• Start:</b> 'Start' drücken, um das Kartentraining zu starten.",
+    "fr": "<b>• Choix des données:</b> Appuyez sur 'Select' pour choisir votre liste de vocabulaire.<br><b>• Random:</b> Activez pour mélanger l'ordre des cartes aléatoirement.<br><b>• Start:</b> Appuyez sur 'Start' pour lancer la session de révision.",
+    "vi": "<b>• Chọn dữ liệu:</b> Nhấn nút 'Select' để chọn bộ từ vựng cần học.<br><b>• Random:</b> Bật công tắc để trộn ngẫu nhiên thứ tự từ vựng.<br><b>• Start:</b> Nhấn 'Start' để bắt đầu học với các thẻ từ.",
+    "th": "<b>• เลือกข้อมูล:</b> กดปุ่ม 'Select' เพื่อเลือกชุดคำศัพท์ที่ต้องการเรียนรู้<br><b>• Random:</b> เปิดสวิตช์ 'Random' เพื่อสุ่มลำดับคำศัพท์<br><b>• Start:</b> กดปุ่ม 'Start' เพื่อเริ่มเข้าสู่หน้าการ์ดคำศัพท์",
+    "id": "<b>• Pilih Data:</b> Tekan tombol 'Select' untuk memilih set kosakata.<br><b>• Random:</b> Nyalakan saklar 'Random' untuk mengacak urutan kata.<br><b>• Start:</b> Tekan 'Start' untuk mulai belajar kartu kata.",
+    "ru": "<b>• Выбор словаря:</b> Нажмите 'Select' для выбора набора слов.<br><b>• Random:</b> Включите тумблер для случайного перемешивания карточек.<br><b>• Start:</b> Нажмите 'Start' для перехода к экрану карточек."
+  },
+  "youtubeUrl": "",
+  "youtubeType": "1",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKWordUp_v1.0.0.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/sample_capitals.json"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKWordUp/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKWordUp/scr2.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "단어장",
+      "학습"
     ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKWordUp/scr1.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKWordUp/scr2.jpg"
+    "en": [
+      "vocabulary",
+      "learning"
     ],
-    "tags": {
-        "ko": [
-            "단어장",
-            "학습"
-        ],
-        "en": [
-            "vocabulary",
-            "learning"
-        ]
-    }
+    "ja": [
+      "単語帳",
+      "学習"
+    ],
+    "zh": [
+      "生词本",
+      "背单词"
+    ],
+    "es": [
+      "Vocabulario",
+      "Aprendizaje"
+    ],
+    "de": [
+      "Vokabeln",
+      "Lernen"
+    ],
+    "fr": [
+      "Vocabulaire",
+      "Apprentissage"
+    ],
+    "vi": [
+      "TừVựng",
+      "HọcTập"
+    ],
+    "th": [
+      "คำศัพท์",
+      "การเรียนรู้"
+    ],
+    "id": [
+      "Kosakata",
+      "Belajar"
+    ],
+    "ru": [
+      "Словарь",
+      "Обучение"
+    ]
+  }
 }

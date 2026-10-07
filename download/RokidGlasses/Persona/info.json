@@ -1,21 +1,57 @@
 {
   "title": {
     "ko": "Persona",
-    "en": "Persona"
+    "en": "Persona",
+    "ja": "Persona (ペルソナ)",
+    "zh": "PERSONA 面相手相分析",
+    "es": "Persona",
+    "de": "Persona",
+    "fr": "Persona",
+    "vi": "Persona (Nhân Tướng Học)",
+    "th": "Persona (ดูลายมือและโหงวเฮ้ง)",
+    "id": "Persona",
+    "ru": "Persona (Физиогномика и Хиромантия)"
   },
   "version": "0.9.1",
   "releaseDate": "2026-03-10",
   "shortDescription": {
     "ko": "데이터와 전통 원전으로 해석하는 관상과 손금",
-    "en": "Face reading and palm reading based on data and traditional sources."
+    "en": "Face reading and palm reading based on data and traditional sources.",
+    "ja": "データと伝統原典で読み解く人相（観相）と手相分析アプリ",
+    "zh": "结合传统典籍与现代数据分析面相与手相的AI应用",
+    "es": "Lectura de rostro y quiromancia basada en datos y fuentes tradicionales",
+    "de": "Gesichts- und Handlesen basierend auf Daten und traditionellen Quellen",
+    "fr": "Morphopsychologie et chiromancie basées sur les données et textes traditionnels",
+    "vi": "Phân tích nhân tướng học khuôn mặt và chỉ tay dựa trên dữ liệu và thư tịch cổ",
+    "th": "วิเคราะห์โหงวเฮ้งและลายมือด้วย AI อิงตามข้อมูลและตำราโบราณ",
+    "id": "Membaca garis tangan dan wajah berdasarkan data dan sumber tradisional",
+    "ru": "Анализ физиогномики и хиромантии на основе данных и классических первоисточников"
   },
   "description": {
     "ko": "<b>PERSONA(페르소나)</b>는 로키드 글래스의 카메라를 통해 얼굴과 손금을 분석하는 인공지능 앱입니다.<br><br><b>주요 기능</b><br>• <b>손금 분석:</b> 손바닥의 비율, 손가락 길이, 언덕(Mounts)의 발달 정도를 수치로 분석합니다.<br>• <b>관상 분석:</b> 얼굴의 조화와 주요 특징을 현대적 관점의 규칙 엔진(Rule Engine)으로 재해석합니다.<br>• <b>다국어 지원:</b> 한국어, 영어, 일본어, 중국어 등 4개 국어를 지원합니다.<br><br><p style='color:#777;'>※ 다운로드 파일 비밀번호: <b>eung.pe.kr</b></p>",
-    "en": "<b>PERSONA</b> is an AI-powered app that analyzes faces and palms using the Rokid Glasses camera.<br><br><b>Key Features</b><br>• <b>Palm Reading:</b> Quantitatively analyzes palm aspect ratios, finger lengths, and mount development.<br>• <b>Face Reading:</b> Reinterprets facial harmony and key features through a modern rule engine.<br>• <b>Multilingual:</b> Supports 4 languages including Korean, English, Japanese, and Chinese.<br><br><p style='color:#777;'>※ Download password: <b>eung.pe.kr</b></p>"
+    "en": "<b>PERSONA</b> is an AI-powered app that analyzes faces and palms using the Rokid Glasses camera.<br><br><b>Key Features</b><br>• <b>Palm Reading:</b> Quantitatively analyzes palm aspect ratios, finger lengths, and mount development.<br>• <b>Face Reading:</b> Reinterprets facial harmony and key features through a modern rule engine.<br>• <b>Multilingual:</b> Supports 4 languages including Korean, English, Japanese, and Chinese.<br><br><p style='color:#777;'>※ Download password: <b>eung.pe.kr</b></p>",
+    "ja": "<b>PERSONA(ペルソナ)</b>は、Rokid Glassesのカメラを通じて顔と手相を分析する人工知能アプリです。<br><br><b>主な機能</b><br>• <b>手相分析:</b> 手のひらの比率、指の長さ、掌丘（丘）の発達度合いを数値化して分析。<br>• <b>観相分析:</b> 顔のバランスや特徴を現代的なルールエンジンで再解釈。<br>• <b>多言語対応:</b> 韓国語、英語、日本語、中国語などに対応。<br><br><p style='color:#777;'>※ ダウンロードパスワード: <b>eung.pe.kr</b></p>",
+    "zh": "<b>PERSONA</b>是一款利用Rokid Glasses摄像头智能分析面相与手相的AI应用。<br><br><b>核心功能</b><br>• <b>手相分析:</b> 量化分析手掌比例、手指长度及各大掌丘饱满程度。<br>• <b>面相分析:</b> 借助现代规则引擎重新诠释五官比例与面部特征。<br>• <b>多语言支持:</b> 支持韩语、英语、日语、中文等多种语言。<br><br><p style='color:#777;'>※ 下载解压密码: <b>eung.pe.kr</b></p>",
+    "es": "<b>PERSONA</b> es una aplicación con IA que analiza rostros y palmas de las manos utilizando la cámara de Rokid Glasses.<br><br><b>Características principales</b><br>• <b>Quiromancia:</b> Analiza cuantitativamente proporciones de la mano, longitud de dedos y montes.<br>• <b>Fisiognomía:</b> Reinterpreta la armonía facial mediante un motor de reglas moderno.<br>• <b>Multilingüe:</b> Compatible con varios idiomas.<br><br><p style='color:#777;'>※ Contraseña de descarga: <b>eung.pe.kr</b></p>",
+    "de": "<b>PERSONA</b> ist eine KI-gestützte App, die Gesichter und Handflächen über die Rokid Glasses Kamera analysiert.<br><br><b>Hauptfunktionen</b><br>• <b>Handlesen:</b> Analysiert Handproportionen, Fingerlängen und Handberge quantitativ.<br>• <b>Gesichtslesen:</b> Reinterpretiert Gesichtsharmonie und Merkmale über eine moderne Regel-Engine.<br>• <b>Mehrsprachig:</b> Unterstützt mehrere Sprachen.<br><br><p style='color:#777;'>※ Download-Passwort: <b>eung.pe.kr</b></p>",
+    "fr": "<b>PERSONA</b> est une application propulsée par l'IA qui analyse les visages et les paumes des mains avec la caméra de Rokid Glasses.<br><br><b>Fonctionnalités clés</b><br>• <b>Chiromancie:</b> Analyse chiffrée des proportions de la paume, de la longueur des doigts et des monts.<br>• <b>Morphopsychologie:</b> Réinterprétation de l'harmonie faciale via un moteur de règles moderne.<br>• <b>Multilingue:</b> Prend en charge plusieurs langues.<br><br><p style='color:#777;'>※ Mot de passe de téléchargement: <b>eung.pe.kr</b></p>",
+    "vi": "<b>PERSONA</b> là ứng dụng AI phân tích khuôn mặt và đường chỉ tay thông qua camera của kính Rokid Glasses.<br><br><b>Tính năng chính</b><br>• <b>Xem chỉ tay:</b> Phân tích tỷ lệ lòng bàn tay, độ dài ngón tay và các gò bàn tay.<br>• <b>Xem tướng mặt:</b> Tái hiện sự hài hòa khuôn mặt và các đặc điểm ngũ quan.<br>• <b>Đa ngôn ngữ:</b> Hỗ trợ nhiều thứ tiếng.<br><br><p style='color:#777;'>※ Mật khẩu tệp tải về: <b>eung.pe.kr</b></p>",
+    "th": "<b>PERSONA</b> เป็นแอปพลิเคชัน AI ที่วิเคราะห์ใบหน้าและลายมือผ่านกล้องของ Rokid Glasses<br><br><b>คุณสมบัติหลัก</b><br>• <b>ดูลายมือ:</b> วิเคราะห์สัดส่วนฝ่ามือ ความยาวนิ้ว และเนินฝ่ามือในเชิงปริมาณ<br>• <b>ดูโหงวเฮ้ง:</b> ตีความความสมดุลของใบหน้าและองค์ประกอบสำคัญด้วยระบบประมวลผลทันสมัย<br>• <b>รองรับหลายภาษา:</b> รองรับหลายภาษาหลัก<br><br><p style='color:#777;'>※ รหัสผ่านไฟล์ดาวน์โหลด: <b>eung.pe.kr</b></p>",
+    "id": "<b>PERSONA</b> adalah aplikasi bertenaga AI yang menganalisis wajah dan telapak tangan menggunakan kamera Rokid Glasses.<br><br><b>Fitur Utama</b><br>• <b>Membaca Telapak Tangan:</b> Menganalisis rasio telapak tangan, panjang jari, dan bukit tangan.<br>• <b>Membaca Wajah:</b> Menafsirkan harmoni wajah dan fitur utama melalui mesin aturan modern.<br>• <b>Multibahasa:</b> Mendukung berbagai bahasa.<br><br><p style='color:#777;'>※ Kata sandi unduhan: <b>eung.pe.kr</b></p>",
+    "ru": "<b>PERSONA</b> — это приложение на базе ИИ для анализа черт лица и ладоней с помощью камеры Rokid Glasses.<br><br><b>Основные возможности</b><br>• <b>Хиромантия:</b> Точный анализ пропорций ладони, длины пальцев и холмов руки.<br>• <b>Физиогномика:</b> Интерпретация пропорций лица с помощью современного алгоритмического движка.<br>• <b>Мультиязычность:</b> Поддержка основных мировых языков.<br><br><p style='color:#777;'>※ Пароль к архиву: <b>eung.pe.kr</b></p>"
   },
   "control": {
     "ko": "<ul style='padding-left: 20px;'><li><b>설정 이동:</b> 글래스 터치 영역을 <b>좌우 스와이프</b>하여 항목을 탐색합니다.</li><li><b>모드 변경:</b> 관상/손금 모드, 자동 저장, 언어 설정을 터치하여 변경합니다.</li><li><b>인식 & 확인:</b> 얼굴이나 손이 원형 영역에 잡히면 그래프가 나타납니다. 이때 터치하면 상세 결과 화면으로 이동합니다.</li><li><b>돌아가기:</b> 상세 화면에서 <b>더블 터치</b>하면 다시 카메라 화면으로 돌아옵니다.</li></ul>",
-    "en": "<ul style='padding-left: 20px;'><li><b>Navigate:</b> <b>Swipe left/right</b> on the glasses' touch area to move between settings.</li><li><b>Change Modes:</b> Tap to switch between face/palm reading, toggle auto-save, or change languages.</li><li><b>Recognize:</b> Position your face or palm in the circular preview. When the graph appears, tap for detailed results.</li><li><b>Return:</b> <b>Double-tap</b> on the details screen to go back to the camera view.</li></ul>"
+    "en": "<ul style='padding-left: 20px;'><li><b>Navigate:</b> <b>Swipe left/right</b> on the glasses' touch area to move between settings.</li><li><b>Change Modes:</b> Tap to switch between face/palm reading, toggle auto-save, or change languages.</li><li><b>Recognize:</b> Position your face or palm in the circular preview. When the graph appears, tap for detailed results.</li><li><b>Return:</b> <b>Double-tap</b> on the details screen to go back to the camera view.</li></ul>",
+    "ja": "<ul style='padding-left: 20px;'><li><b>設定移動:</b> メガネのタッチエリアを<b>左右にスワイプ</b>して項目を探索します。</li><li><b>モード切替:</b> 観相/手相モード、自動保存、言語設定をタップして切り替えます。</li><li><b>認識＆確認:</b> 顔や手が円形フレームに収まるとグラフが表示されます。タップすると詳細結果へ移動します。</li><li><b>戻る:</b> 詳細画面で<b>ダブルタップ</b>するとカメラ画面に戻ります。</li></ul>",
+    "zh": "<ul style='padding-left: 20px;'><li><b>菜单导航:</b> 在镜腿触控区<b>左右滑动</b>切换各项设置。</li><li><b>模式切换:</b> 轻触切换面相/手相模式、自动保存或语言设置。</li><li><b>识别与查看:</b> 面部或手部进入圆形取景框后将显示图表，轻触查看详细解读。</li><li><b>返回:</b> 在详情页<b>双击</b>即可返回相机预览画面。</li></ul>",
+    "es": "<ul style='padding-left: 20px;'><li><b>Navegar:</b> <b>Desliza a izquierda/derecha</b> en el área táctil para moverte entre ajustes.</li><li><b>Cambiar modos:</b> Toca para alternar entre rostro/palma, autoguardado o idioma.</li><li><b>Reconocer:</b> Ubica el rostro o la mano en el círculo; cuando aparezca el gráfico, toca para ver detalles.</li><li><b>Volver:</b> Haz <b>doble toque</b> en la pantalla de detalles para regresar a la cámara.</li></ul>",
+    "de": "<ul style='padding-left: 20px;'><li><b>Navigieren:</b> Auf dem Touch-Bereich der Brille <b>nach links/rechts wischen</b>.</li><li><b>Modus wechseln:</b> Antippen, um zwischen Gesichts-/Handlesen, Autospeichern oder Sprache zu wechseln.</li><li><b>Erkennung:</b> Gesicht oder Hand im Kreis positionieren; Grafik antippen für Detailergebnisse.</li><li><b>Zurück:</b> <b>Doppeltippen</b> auf dem Detailbildschirm kehrt zur Kamera zurück.</li></ul>",
+    "fr": "<ul style='padding-left: 20px;'><li><b>Navigation:</b> <b>Glissez vers la gauche/droite</b> sur la zone tactile des lunettes.</li><li><b>Changer de mode:</b> Touchez pour alterner visage/paume, sauvegarde auto ou langue.</li><li><b>Reconnaissance:</b> Cadrez le visage ou la main dans le cercle, puis touchez pour les détails.</li><li><b>Retour:</b> <b>Double-tapez</b> sur l'écran des détails pour revenir à la caméra.</li></ul>",
+    "vi": "<ul style='padding-left: 20px;'><li><b>Điều hướng:</b> <b>Vuốt sang trái/phải</b> trên vùng cảm ứng để chuyển cài đặt.</li><li><b>Chuyển chế độ:</b> Chạm để đổi chế độ mặt/tay, lưu tự động hoặc đổi ngôn ngữ.</li><li><b>Nhận diện:</b> Đặt mặt hoặc tay vào khung tròn; chạm khi đồ thị xuất hiện để xem chi tiết.</li><li><b>Quay lại:</b> <b>Chạm đúp</b> trên màn hình chi tiết để trở về máy ảnh.</li></ul>",
+    "th": "<ul style='padding-left: 20px;'><li><b>เลื่อนดูเมนู:</b> <b>ปัดซ้าย/ขวา</b> บนบริเวณสัมผัสของแว่นเพื่อเลื่อนดูการตั้งค่า</li><li><b>เปลี่ยนโหมด:</b> แตะเพื่อสลับโหมดใบหน้า/ลายมือ ตั้งค่าบันทึกอัตโนมัติ หรือเปลี่ยนภาษา</li><li><b>ตรวจจับ:</b> จัดใบหน้าหรือฝ่ามือให้อยู่ในกรอบวงกลม แล้วแตะเพื่อดูผลลัพธ์โดยละเอียด</li><li><b>ย้อนกลับ:</b> <b>แตะสองครั้ง</b> ในหน้ารายละเอียดเพื่อกลับสู่หน้าจอกล้อง</li></ul>",
+    "id": "<ul style='padding-left: 20px;'><li><b>Navigasi:</b> <b>Geser ke kiri/kanan</b> pada area sentuh kacamata untuk berpindah pengaturan.</li><li><b>Ganti Mode:</b> Ketuk untuk beralih antara wajah/tangan, simpan otomatis, atau bahasa.</li><li><b>Kenali:</b> Posisikan wajah atau tangan dalam lingkaran; ketuk untuk melihat hasil detail.</li><li><b>Kembali:</b> <b>Ketuk dua kali</b> di layar detail untuk kembali ke kamera.</li></ul>",
+    "ru": "<ul style='padding-left: 20px;'><li><b>Навигация:</b> <b>Свайп влево/вправо</b> по сенсорной панели очков для перемещения по пунктам.</li><li><b>Смена режима:</b> Касание для переключения между лицом/ладонью, автосохранением и языком.</li><li><b>Распознавание:</b> Поместите лицо или руку в круг; при появлении графика коснитесь для подробностей.</li><li><b>Назад:</b> <b>Двойное касание</b> на экране деталей возвращает к камере.</li></ul>"
   },
   "youtubeUrl": "https://www.youtube.com/embed/OzI-Vvj1GOE",
   "youtubeType": "1",
@@ -37,6 +73,51 @@
       "Face Reading",
       "Palm Reading",
       "Camera"
+    ],
+    "ja": [
+      "観相",
+      "手相",
+      "カメラ"
+    ],
+    "zh": [
+      "面相",
+      "手相",
+      "相机"
+    ],
+    "es": [
+      "Fisiognomía",
+      "Quiromancia",
+      "Cámara"
+    ],
+    "de": [
+      "Gesichtslesen",
+      "Handlesen",
+      "Kamera"
+    ],
+    "fr": [
+      "Morphopsychologie",
+      "Chiromancie",
+      "Caméra"
+    ],
+    "vi": [
+      "NhânTướng",
+      "ChỉTay",
+      "MáyẢnh"
+    ],
+    "th": [
+      "โหงวเฮ้ง",
+      "ลายมือ",
+      "กล้อง"
+    ],
+    "id": [
+      "GarisTangan",
+      "MembacaWajah",
+      "Kamera"
+    ],
+    "ru": [
+      "Физиогномика",
+      "Хиромантия",
+      "Камера"
     ]
   }
 }

@@ -1,21 +1,57 @@
 {
   "title": {
     "ko": "로키드 커넥트 HUD 폰용",
-    "en": "Rokid Connect HUD for Phone"
+    "en": "Rokid Connect HUD for Phone",
+    "ja": "Rokid Connect HUD (スマホ用)",
+    "zh": "Rokid Connect HUD 手机端",
+    "es": "Rokid Connect HUD para Móvil",
+    "de": "Rokid Connect HUD für Smartphone",
+    "fr": "Rokid Connect HUD pour Smartphone",
+    "vi": "Rokid Connect HUD Cho Điện Thoại",
+    "th": "Rokid Connect HUD สำหรับสมาร์ทโฟน",
+    "id": "Rokid Connect HUD untuk Ponsel",
+    "ru": "Rokid Connect HUD для Смартфона"
   },
   "version": "1.2.0",
   "releaseDate": "2026-03-04",
   "shortDescription": {
     "ko": "네비게이션 HUD 폰용 App, 티맵, 네이버맵",
-    "en": "Navigation HUD App for Phone (korean ver)"
+    "en": "Navigation HUD App for Phone (korean ver)",
+    "ja": "ナビゲーションHUDスマホ用アプリ",
+    "zh": "导航HUD手机端伴侣应用",
+    "es": "App complementaria HUD de navegación para móvil",
+    "de": "Navigations-HUD-Begleit-App für Smartphones",
+    "fr": "Application mobile HUD pour la navigation",
+    "vi": "Ứng dụng HUD dẫn đường đồng hành cho điện thoại",
+    "th": "แอปคู่หูนำทาง HUD สำหรับสมาร์ทโฟน",
+    "id": "Aplikasi pendamping HUD navigasi untuk ponsel",
+    "ru": "Приложение-компаньон HUD навигации для смартфона"
   },
   "description": {
     "ko": "스마트폰의 네비게이션(티맵, 네이버맵 등) 화면을 <b>로키드 글래스에 HUD 형태로 표시</b>해 주는 연동 앱입니다.<br>이 앱은 <b>모바일 스마트폰</b>에 설치하며, 원활한 사용을 위해 보조 앱인 <b>안경용 HUD 앱</b>을 함께 설치해야 합니다.",
-    "en": "A companion app that mirrors your smartphone's navigation (TMap, Naver Map) as a <b>HUD on your Rokid Glasses</b>.<br>Install this version on your <b>Android phone</b>. It must be paired with the <b>Glasses-side HUD app</b> for full functionality."
+    "en": "A companion app that mirrors your smartphone's navigation (TMap, Naver Map) as a <b>HUD on your Rokid Glasses</b>.<br>Install this version on your <b>Android phone</b>. It must be paired with the <b>Glasses-side HUD app</b> for full functionality.",
+    "ja": "スマートフォンのナビゲーション画面を<b>Rokid GlassesにHUD形式でリアルタイム表示</b>する連携アプリです。<br>このアプリは<b>Androidスマートフォン</b>にインストールし、メガネ側の<b>HUDメガネ用アプリ</b>とペアリングして使用します。",
+    "zh": "将手机导航应用画面以<b>HUD抬头显示形式实时投射至Rokid Glasses</b>的互联应用。<br>本应用需安装在<b>安卓手机</b>上，并与眼镜端专用的<b>HUD眼镜端应用</b>配对协同工作。",
+    "es": "Una aplicación complementaria que proyecta la navegación de tu smartphone como un <b>HUD en tus Rokid Glasses</b>.<br>Instala esta versión en tu <b>teléfono Android</b>. Debe sincronizarse con la app de HUD para gafas para funcionar plenamente.",
+    "de": "Eine Begleit-App, die Ihre Smartphone-Navigation als <b>Head-up-Display (HUD) auf die Rokid Glasses</b> spiegelt.<br>Installieren Sie diese Version auf Ihrem <b>Android-Smartphone</b> in Kombination mit der Brillen-HUD-App.",
+    "fr": "Une application compagnon qui reflète la navigation de votre smartphone sous forme de <b>HUD sur vos lunettes Rokid Glasses</b>.<br>Installez cette version sur votre <b>téléphone Android</b> en association avec l'application HUD côté lunettes.",
+    "vi": "Ứng dụng đồng hành hiển thị màn hình dẫn đường của điện thoại dưới dạng <b>HUD trên kính Rokid Glasses</b>.<br>Cài đặt phiên bản này trên <b>điện thoại Android</b> của bạn và ghép nối với ứng dụng HUD trên kính.",
+    "th": "แอปคู่หูที่สะท้อนหน้าจอแผนที่นำทางจากสมาร์ทโฟนขึ้นเป็น <b>HUD บนแว่นตา Rokid Glasses</b><br>ติดตั้งเวอร์ชันนี้บน<b>สมาร์ทโฟน Android</b> ของคุณ โดยต้องจับคู่กับแอป HUD ฝั่งแว่นตาเพื่อการทำงานที่สมบูรณ์",
+    "id": "Aplikasi pendamping yang mencerminkan navigasi ponsel Anda sebagai <b>HUD di Rokid Glasses</b>.<br>Instal versi ini di <b>ponsel Android</b> Anda. Harus dipasangkan dengan aplikasi HUD sisi kacamata.",
+    "ru": "Приложение-компаньон, выводящее навигацию со смартфона в виде <b>HUD на стекла очков Rokid Glasses</b>.<br>Устанавливается на <b>Android-смартфон</b> и работает в паре с очковой версией приложения HUD."
   },
   "control": {
     "ko": "<ol style='padding-left: 20px;'><li><b>연결하기:</b> 앱에서 <b>'Connect'</b>를 선택합니다.</li><li><b>미러링 시작:</b> 중앙의 <b>'Mirroring'</b> 버튼을 누릅니다.</li><li><b>커스텀 설정:</b> 레이아웃, 미러링 영역, 불투명도 등 상세 설정을 조절할 수 있습니다.</li></ol>",
-    "en": "<ol style='padding-left: 20px;'><li><b>Connect:</b> Select <b>'Connect'</b> in the phone app menu.</li><li><b>Start Mirroring:</b> Press the large <b>'Mirroring'</b> button.</li><li><b>Preferences:</b> Adjust layouts, mirroring areas, and opacity in the settings.</li></ol>"
+    "en": "<ol style='padding-left: 20px;'><li><b>Connect:</b> Select <b>'Connect'</b> in the phone app menu.</li><li><b>Start Mirroring:</b> Press the large <b>'Mirroring'</b> button.</li><li><b>Preferences:</b> Adjust layouts, mirroring areas, and opacity in the settings.</li></ol>",
+    "ja": "<ol style='padding-left: 20px;'><li><b>接続:</b> アプリメニューで<b>「Connect」</b>を選択します。</li><li><b>ミラーリング開始:</b> 中央の<b>「Mirroring」</b>ボタンを押します。</li><li><b>カスタム設定:</b> レイアウト、表示領域、不透明度などを自由に調整できます。</li></ol>",
+    "zh": "<ol style='padding-left: 20px;'><li><b>连接:</b> 在应用中点击<b>「Connect」</b>。</li><li><b>启动镜像:</b> 点击中央的<b>「Mirroring」</b>按钮。</li><li><b>自定义调整:</b> 可在设置中自由调节布局、镜像区域和透明度。</li></ol>",
+    "es": "<ol style='padding-left: 20px;'><li><b>Conectar:</b> Selecciona <b>'Connect'</b> en el menú de la aplicación.</li><li><b>Iniciar duplicado:</b> Pulsa el botón grande <b>'Mirroring'</b>.</li><li><b>Preferencias:</b> Ajusta diseños, áreas de captura y opacidad en los ajustes.</li></ol>",
+    "de": "<ol style='padding-left: 20px;'><li><b>Verbinden:</b> Wählen Sie <b>'Connect'</b> in der App.</li><li><b>Spiegeln starten:</b> Tippen Sie auf die Schaltfläche <b>'Mirroring'</b>.</li><li><b>Einstellungen:</b> Passen Sie Layout, Bildausschnitt und Transparenz an.</li></ol>",
+    "fr": "<ol style='padding-left: 20px;'><li><b>Connexion:</b> Sélectionnez <b>'Connect'</b> dans l'application.</li><li><b>Lancer le miroir:</b> Appuyez sur le bouton central <b>'Mirroring'</b>.</li><li><b>Personnalisation:</b> Ajustez la disposition, la zone de capture et l'opacité.</li></ol>",
+    "vi": "<ol style='padding-left: 20px;'><li><b>Kết nối:</b> Chọn <b>'Connect'</b> trong menu ứng dụng.</li><li><b>Bắt đầu phản chiếu:</b> Nhấn nút <b>'Mirroring'</b> ở giữa.</li><li><b>Tùy chỉnh:</b> Điều chỉnh bố cục, vùng phản chiếu và độ mờ trong cài đặt.</li></ol>",
+    "th": "<ol style='padding-left: 20px;'><li><b>เชื่อมต่อ:</b> เลือก <b>'Connect'</b> ในเมนูของแอป</li><li><b>เริ่มสะท้อนหน้าจอ:</b> กดปุ่ม <b>'Mirroring'</b> ตรงกลาง</li><li><b>ตั้งค่ากำหนดเอง:</b> ปรับแต่งเลย์เอาต์ พื้นที่แสดงผล และความโปร่งแสงได้ตามต้องการ</li></ol>",
+    "id": "<ol style='padding-left: 20px;'><li><b>Hubungkan:</b> Pilih <b>'Connect'</b> di menu aplikasi ponsel.</li><li><b>Mulai Mirroring:</b> Tekan tombol <b>'Mirroring'</b> besar.</li><li><b>Pengaturan:</b> Sesuaikan tata letak, area cermin, dan transparansi.</li></ol>",
+    "ru": "<ol style='padding-left: 20px;'><li><b>Подключение:</b> Выберите <b>«Connect»</b> в меню приложения.</li><li><b>Запуск трансляции:</b> Нажмите центральную кнопку <b>«Mirroring»</b>.</li><li><b>Настройки:</b> Настройте макет, область захвата экрана и прозрачность.</li></ol>"
   },
   "youtubeUrl": "https://www.youtube.com/embed/_2tB-Kn8ZxQ",
   "youtubeType": "1",
@@ -24,7 +60,16 @@
       "version": "1.2.0",
       "releaseDate": "2026-04-20",
       "ko": "화면 크기 설정에서 Full Size 가 추가되었습니다. 폰의 전체화면 미러링을 지원합니다.",
-      "en": "Full Size option added to screen size settings. Supports full-screen mirroring of the phone."
+      "en": "Full Size option added to screen size settings. Supports full-screen mirroring of the phone.",
+      "ja": "画面サイズ設定にFull Sizeが追加されました。スマートフォンの全画面ミラーリングに対応しました。",
+      "zh": "画面尺寸设置中新增Full Size选项，现已支持手机全屏镜像。",
+      "es": "Opción Full Size añadida a los ajustes de tamaño de pantalla. Permite duplicar la pantalla completa del móvil.",
+      "de": "Vollbild-Option (Full Size) zu den Bildschirmeinstellungen hinzugefügt. Unterstützt vollständiges Smartphone-Screen-Mirroring.",
+      "fr": "Option Plein écran (Full Size) ajoutée aux réglages. Prend en charge le miroir plein écran du smartphone.",
+      "vi": "Đã thêm tùy chọn Full Size trong cài đặt kích thước màn hình. Hỗ trợ phản chiếu toàn màn hình điện thoại.",
+      "th": "เพิ่มตัวเลือก Full Size ในการตั้งค่าขนาดหน้าจอ รองรับการสะท้อนหน้าจอสมาร์ทโฟนแบบเต็มจอ",
+      "id": "Opsi Full Size ditambahkan ke pengaturan ukuran layar. Mendukung pencerminan layar penuh ponsel.",
+      "ru": "Добавлена опция Full Size в настройках размера экрана. Поддерживает полноэкранное зеркалирование смартфона."
     }
   ],
   "download": [
@@ -44,6 +89,42 @@
     "en": [
       "HUD",
       "Navigation"
+    ],
+    "ja": [
+      "HUD",
+      "ナビゲーション"
+    ],
+    "zh": [
+      "HUD",
+      "导航"
+    ],
+    "es": [
+      "HUD",
+      "Navegación"
+    ],
+    "de": [
+      "HUD",
+      "Navigation"
+    ],
+    "fr": [
+      "HUD",
+      "Navigation"
+    ],
+    "vi": [
+      "HUD",
+      "DẫnĐường"
+    ],
+    "th": [
+      "HUD",
+      "การนำทาง"
+    ],
+    "id": [
+      "HUD",
+      "Navigasi"
+    ],
+    "ru": [
+      "HUD",
+      "Навигация"
     ]
   }
 }

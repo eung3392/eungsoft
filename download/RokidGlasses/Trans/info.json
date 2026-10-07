@@ -1,21 +1,57 @@
 {
   "title": {
     "ko": "텍스트 번역",
-    "en": "Text Translate (English-korean)"
+    "en": "Text Translate (English-korean)",
+    "ja": "EK テキスト翻訳",
+    "zh": "EK 离线翻译 (EK Trans)",
+    "es": "Traducción de Texto (EK Trans)",
+    "de": "EK Textübersetzer (EK Trans)",
+    "fr": "Traducteur de Texte (EK Trans)",
+    "vi": "EK Dịch Thuật (EK Trans)",
+    "th": "EK แปลข้อความ (EK Trans)",
+    "id": "EK Penerjemah Teks (EK Trans)",
+    "ru": "EK Переводчик Текста (EK Trans)"
   },
   "version": "2.0.0",
   "releaseDate": "2026-04-01",
   "shortDescription": {
     "ko": "오프라인 기반의 영어-한국어 텍스트 번역 애플리케이션입니다",
-    "en": "Offline English-Korean text translation application."
+    "en": "Offline English-Korean text translation application.",
+    "ja": "オフライン対応の英語・多言語テキスト翻訳アプリケーション",
+    "zh": "基于离线运行的英语及多语言智能文本翻译应用",
+    "es": "Aplicación de traducción de texto sin conexión para Rokid Glasses",
+    "de": "Offline-fähige Textübersetzungs-App für Rokid Glasses",
+    "fr": "Application de traduction de texte hors ligne pour lunettes connectées",
+    "vi": "Ứng dụng dịch văn bản ngoại tuyến thông minh dành cho kính Rokid Glasses",
+    "th": "แอปพลิเคชันแปลข้อความออฟไลน์สำหรับแว่นตา Rokid Glasses",
+    "id": "Aplikasi terjemahan teks offline untuk Rokid Glasses",
+    "ru": "Офлайн-приложение для перевода текста для Rokid Glasses"
   },
   "description": {
     "ko": "<b>EK Trans</b>는 로키드 글래스 사용자를 위한 전용 <b>영어-한국어 오프라인 번역</b> 애플리케이션입니다.<br>Google ML Kit를 기반으로 하여 초기 모델 다운로드 후에는 <b>인터넷 연결 없이도</b> 빠르고 안정적인 번역 성능을 제공합니다.<br><br><p style='color:#777;'>※ 다운로드 파일 비밀번호: <b>eung.pe.kr</b></p>",
-    "en": "<b>EK Trans</b> is a dedicated <b>offline English-Korean translation</b> app for Rokid Glasses.<br>Powered by Google ML Kit, it allows for fast and stable translation <b>without an active internet connection</b> after the initial model download.<br><br><p style='color:#777;'>※ Download password: <b>eung.pe.kr</b></p>"
+    "en": "<b>EK Trans</b> is a dedicated <b>offline English-Korean translation</b> app for Rokid Glasses.<br>Powered by Google ML Kit, it allows for fast and stable translation <b>without an active internet connection</b> after the initial model download.<br><br><p style='color:#777;'>※ Download password: <b>eung.pe.kr</b></p>",
+    "ja": "<b>EK Trans</b>は、Rokid Glassesユーザーのための専用<b>オフライン多言語テキスト翻訳</b>アプリケーションです。<br>Google ML Kitをベースにしており、初期モデルのダウンロード後は<b>インターネット接続なしでも</b>高速かつ安定した翻訳機能を提供します。<br><br><p style='color:#777;'>※ ダウンロードファイルパスワード: <b>eung.pe.kr</b></p>",
+    "zh": "<b>EK Trans</b>是专为Rokid Glasses智能眼镜打造的<b>离线文本翻译应用</b>。<br>基于Google ML Kit技术，初次下载语言模型后，即可在<b>无需联网离线环境</b>下享受极速稳定的实时翻译体验。<br><br><p style='color:#777;'>※ 下载压缩包密码: <b>eung.pe.kr</b></p>",
+    "es": "<b>EK Trans</b> es una aplicación dedicada de <b>traducción de texto sin conexión</b> para los usuarios de Rokid Glasses.<br>Desarrollada con Google ML Kit, permite una traducción rápida y estable <b>sin conexión activa a internet</b> tras descargar el modelo inicial.<br><br><p style='color:#777;'>※ Contraseña de descarga: <b>eung.pe.kr</b></p>",
+    "de": "<b>EK Trans</b> ist eine dedizierte <b>Offline-Textübersetzungs-App</b> für Rokid Glasses.<br>Basierend auf Google ML Kit bietet sie nach dem einmaligen Modell-Download eine schnelle Übersetzung <b>völlig ohne Internetverbindung</b>.<br><br><p style='color:#777;'>※ Download-Passwort: <b>eung.pe.kr</b></p>",
+    "fr": "<b>EK Trans</b> est une application de <b>traduction de texte hors ligne</b> dédiée aux lunettes Rokid Glasses.<br>Propulsée par Google ML Kit, elle assure une traduction rapide et stable <b>sans connexion Internet</b> une fois le modèle téléchargé.<br><br><p style='color:#777;'>※ Mot de passe de téléchargement: <b>eung.pe.kr</b></p>",
+    "vi": "<b>EK Trans</b> là ứng dụng <b>dịch văn bản ngoại tuyến</b> chuyên dụng dành cho người dùng kính Rokid Glasses.<br>Dựa trên nền tảng Google ML Kit, sau khi tải về mô hình ban đầu, bạn có thể dịch nhanh chóng và ổn định <b>ngay cả khi không có mạng Internet</b>.<br><br><p style='color:#777;'>※ Mật khẩu tệp tải về: <b>eung.pe.kr</b></p>",
+    "th": "<b>EK Trans</b> เป็นแอปพลิเคชัน<b>แปลข้อความแบบออฟไลน์</b>สำหรับผู้ใช้งานแว่นตา Rokid Glasses โดยเฉพาะ<br>ขับเคลื่อนด้วย Google ML Kit หลังจากดาวน์โหลดโมเดลภาษาในครั้งแรกแล้ว จะสามารถแปลได้อย่างรวดเร็วและแม่นยำ<b>โดยไม่ต้องเชื่อมต่ออินเทอร์เน็ต</b><br><br><p style='color:#777;'>※ รหัสผ่านไฟล์ดาวน์โหลด: <b>eung.pe.kr</b></p>",
+    "id": "<b>EK Trans</b> adalah aplikasi <b>terjemahan teks offline</b> khusus untuk pengguna Rokid Glasses.<br>Didukung oleh Google ML Kit, aplikasi ini memberikan terjemahan cepat dan stabil <b>tanpa koneksi internet</b> setelah mengunduh model awal.<br><br><p style='color:#777;'>※ Kata sandi unduhan: <b>eung.pe.kr</b></p>",
+    "ru": "<b>EK Trans</b> — это специализированное приложение для <b>офлайн-перевода текста</b> на очках Rokid Glasses.<br>Работает на базе Google ML Kit и после первоначальной загрузки языковой модели обеспечивает стабильный и быстрый перевод <b>без подключения к интернету</b>.<br><br><p style='color:#777;'>※ Пароль к архиву: <b>eung.pe.kr</b></p>"
   },
   "control": {
     "ko": "<ul style='padding-left: 20px;'><li><b>초기 설정:</b> 최초 실행 시 <b>Wi-Fi</b>에 연결하여 번역 모델(약 30MB)을 다운로드하세요.</li><li><b>모델 다운로드 후:</b> 이후에는 오프라인 상태에서도 자유롭게 사용 가능합니다.</li><li><b>번역 방법:</b> 상단 사각형 영역에 영문 텍스트를 맞추고 안경 우측 다리를 터치하면 번역 결과가 나타납니다.</li></ul>",
-    "en": "<ul style='padding-left: 20px;'><li><b>Initial Setup:</b> Connect to <b>Wi-Fi</b> on the first run to download the 30MB translation model.</li><li><b>Offline Use:</b> Once the model is cached, no cellular or Wi-Fi data is needed for translation.</li><li><b>How to Translate:</b> Align English text within the top frame and touch the right temple of the glasses to scan.</li></ul>"
+    "en": "<ul style='padding-left: 20px;'><li><b>Initial Setup:</b> Connect to <b>Wi-Fi</b> on the first run to download the 30MB translation model.</li><li><b>Offline Use:</b> Once the model is cached, no cellular or Wi-Fi data is needed for translation.</li><li><b>How to Translate:</b> Align English text within the top frame and touch the right temple of the glasses to scan.</li></ul>",
+    "ja": "<ul style='padding-left: 20px;'><li><b>初期設定:</b> 初回起動時に<b>Wi-Fi</b>に接続し、翻訳モデル（約30MB）をダウンロードしてください。</li><li><b>モデル完了後:</b> 以降は完全オフライン状態でも自由に利用できます。</li><li><b>翻訳手順:</b> 上部の四角いフレームに対象テキストを合わせ、メガネ右テンプルをタッチすると翻訳されます。</li></ul>",
+    "zh": "<ul style='padding-left: 20px;'><li><b>初始设置:</b> 首次使用请连接<b>Wi-Fi</b>下载约30MB的翻译语言模型。</li><li><b>离线使用:</b> 模型下载完毕后，无需网络亦可随时随地随心翻译。</li><li><b>翻译方法:</b> 将文字置于上方取景框内，轻触眼镜右侧镜腿即可扫描并显示译文。</li></ul>",
+    "es": "<ul style='padding-left: 20px;'><li><b>Configuración inicial:</b> Conéctate a <b>Wi-Fi</b> la primera vez para descargar el modelo de 30 MB.</li><li><b>Uso offline:</b> Una vez descargado, no se requiere conexión para traducir.</li><li><b>Cómo traducir:</b> Enfoca el texto en el marco superior y toca la patilla derecha para escanear.</li></ul>",
+    "de": "<ul style='padding-left: 20px;'><li><b>Ersteinrichtung:</b> Beim ersten Start per <b>WLAN</b> das Übersetzungsmodell (ca. 30 MB) herunterladen.</li><li><b>Offline-Nutzung:</b> Nach dem Download funktioniert die Übersetzung völlig ohne Datenverbindung.</li><li><b>Übersetzen:</b> Text im oberen Rahmen ausrichten und die rechte Brillenseite berühren.</li></ul>",
+    "fr": "<ul style='padding-left: 20px;'><li><b>Configuration initiale:</b> Connectez-vous en <b>Wi-Fi</b> au premier lancement pour télécharger le modèle (30 Mo).</li><li><b>Mode hors ligne:</b> Une fois le modèle en cache, aucune donnée n'est requise.</li><li><b>Pour traduire:</b> Cadrez le texte dans le repère supérieur et touchez la branche droite.</li></ul>",
+    "vi": "<ul style='padding-left: 20px;'><li><b>Cài đặt ban đầu:</b> Kết nối <b>Wi-Fi</b> trong lần đầu khởi chạy để tải mô hình dịch (khoảng 30MB).</li><li><b>Dùng ngoại tuyến:</b> Sau khi tải xong, bạn có thể dịch hoàn toàn không cần Internet.</li><li><b>Cách dịch:</b> Đưa văn bản vào khung chữ nhật phía trên và chạm vào gọng kính bên phải.</li></ul>",
+    "th": "<ul style='padding-left: 20px;'><li><b>ตั้งค่าเริ่มต้น:</b> เชื่อมต่อ <b>Wi-Fi</b> ในการเปิดใช้งานครั้งแรกเพื่อดาวน์โหลดโมเดลแปลภาษา (ประมาณ 30MB)</li><li><b>ใช้งานออฟไลน์:</b> เมื่อโหลดเสร็จแล้ว ไม่จำเป็นต้องเชื่อมต่ออินเทอร์เน็ตก็ใช้งานได้</li><li><b>วิธีแปล:</b> วางข้อความภาษาอังกฤษให้อยู่ในกรอบด้านบน แล้วแตะที่ขาแว่นด้านขวาเพื่อสแกน</li></ul>",
+    "id": "<ul style='padding-left: 20px;'><li><b>Pengaturan Awal:</b> Hubungkan ke <b>Wi-Fi</b> pada peluncuran pertama untuk mengunduh model penerjemahan (sekitar 30MB).</li><li><b>Penggunaan Offline:</b> Setelah model tersimpan, terjemahan berfungsi penuh tanpa internet.</li><li><b>Cara Menerjemahkan:</b> Arahkan teks ke dalam bingkai atas dan sentuh gagang kanan kacamata.</li></ul>",
+    "ru": "<ul style='padding-left: 20px;'><li><b>Первый запуск:</b> Подключитесь к <b>Wi-Fi</b> для разовой загрузки языковой модели (около 30 МБ).</li><li><b>Офлайн-работа:</b> После загрузки интернет больше не требуется.</li><li><b>Как переводить:</b> Наведите верхнюю рамку на текст и коснитесь правой дужки очков.</li></ul>"
   },
   "youtubeUrl": "",
   "youtubeType": "1",
@@ -24,7 +60,16 @@
       "version": "2.0.0",
       "releaseDate": "2026-04-01",
       "ko": "중국어, 일본어 번역 기능이 추가되었습니다. 스와이프로 언어를 선택하고, 터치로 번역하세요.",
-      "en": "Chinese, Japanese translation function has been added. Select the language by swiping, and translate by touching."
+      "en": "Chinese, Japanese translation function has been added. Select the language by swiping, and translate by touching.",
+      "ja": "中国語、日本語の翻訳機能が追加されました。スワイプで言語を選択し、タッチで翻訳します。",
+      "zh": "新增中文、日文翻译功能。滑动切换目标语言，触碰即可立即翻译。",
+      "es": "Se añadieron traducciones a chino y japonés. Desliza para seleccionar el idioma y toca para traducir.",
+      "de": "Chinesische und japanische Übersetzungsfunktion hinzugefügt. Durch Wischen Sprache wählen und durch Antippen übersetzen.",
+      "fr": "Fonction de traduction en chinois et en japonais ajoutée. Balayez pour choisir la langue et touchez pour traduire.",
+      "vi": "Đã thêm tính năng dịch tiếng Trung và tiếng Nhật. Vuốt để chọn ngôn ngữ và chạm để dịch.",
+      "th": "เพิ่มฟังก์ชันการแปลภาษาจีนและภาษาญี่ปุ่น ปัดเพื่อเลือกภาษาและแตะเพื่อแปล",
+      "id": "Fungsi terjemahan bahasa Mandarin dan Jepang ditambahkan. Geser untuk memilih bahasa, dan ketuk untuk menerjemahkan.",
+      "ru": "Добавлена функция перевода на китайский и японский языки. Проведите для выбора языка и коснитесь для перевода."
     }
   ],
   "download": [
@@ -40,6 +85,42 @@
     ],
     "en": [
       "Translate"
+    ],
+    "ja": [
+      "翻訳",
+      "辞書"
+    ],
+    "zh": [
+      "翻译",
+      "词典"
+    ],
+    "es": [
+      "Traducción",
+      "Diccionario"
+    ],
+    "de": [
+      "Übersetzen",
+      "Wörterbuch"
+    ],
+    "fr": [
+      "Traduction",
+      "Dictionnaire"
+    ],
+    "vi": [
+      "DịchThuật",
+      "TừĐiển"
+    ],
+    "th": [
+      "การแปล",
+      "พจนานุกรม"
+    ],
+    "id": [
+      "Terjemahan",
+      "Kamus"
+    ],
+    "ru": [
+      "Перевод",
+      "Словарь"
     ]
   }
 }

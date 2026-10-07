@@ -1,57 +1,156 @@
 {
-    "title": {
-        "ko": "Dew Browser",
-        "en": "Dew Browser"
+  "title": {
+    "ko": "Dew Browser",
+    "en": "Dew Browser",
+    "ja": "Dew Browser",
+    "zh": "Dew Browser AR浏览器",
+    "es": "Dew Browser",
+    "de": "Dew Browser",
+    "fr": "Dew Browser",
+    "vi": "Dew Browser",
+    "th": "Dew Browser",
+    "id": "Dew Browser",
+    "ru": "Dew Browser"
+  },
+  "version": "1.1.1",
+  "releaseDate": "2026-04-27",
+  "shortDescription": {
+    "ko": "깔끔하고 직관적인 Rokid Glasses 전용 웹 브라우저",
+    "en": "Clean and intuitive web browser for Rokid Glasses.",
+    "ja": "すっきりと直感的なRokid Glasses専用Webブラウザ",
+    "zh": "专为Rokid Glasses打造的清爽直观AR专属网页浏览器",
+    "es": "Navegador web limpio e intuitivo para Rokid Glasses",
+    "de": "Kompakter und intuitiver Webbrowser für Rokid Glasses",
+    "fr": "Navigateur web épuré et intuitif pour lunettes Rokid Glasses",
+    "vi": "Trình duyệt web trực quan và gọn gàng dành riêng cho Rokid Glasses",
+    "th": "เว็บเบราว์เซอร์ที่เรียบง่ายและใช้งานสะดวกสำหรับ Rokid Glasses",
+    "id": "Browser web yang bersih dan intuitif khusus untuk Rokid Glasses",
+    "ru": "Удобный и лаконичный веб-браузер для очков Rokid Glasses"
+  },
+  "description": {
+    "ko": "<h3>Dew Browser의 주요 특징</h3><p>Dew Browser는 단순한 모바일 브라우저가 아닙니다. Rokid Glasses 환경에 최적화되어 설계되었으며, 다음과 같은 특징을 가지고 있습니다.</p><br><ul style='padding-left: 20px;'><li><b>AI 페이지 요약:</b> 뉴스나 블로그 포스트를 AI(Gemma)가 요약해 줍니다.</li><li><b>스마트폰 마우스 모드:</b> 스마트폰을 터치패드로 활용하여 정밀한 마우스와 키보드 입력 컨트롤이 가능합니다.</li><li><b>AR 전용 인터페이스:</b> 필요한 정보를 한눈에 볼 수 있는 깔끔한 UI를 제공합니다.</li><li><b>제스처 컨트롤:</b> 머리의 움직임(기울기)을 이용해 웹 페이지를 스크롤하는 편리한 기능을 지원합니다.</li></ul><br><h3>참고 사항</h3><ul style='padding-left: 20px;'><li><b>네트워크:</b> 원활한 웹 서핑과 AI 요약 기능을 위해 Wi-Fi 연결이 반드시 필요합니다.</li><li><b>지원 기기:</b> 안드로이드 OS를 사용하는 스마트폰이 필요합니다.</li></ul><br><p>Dew Browser와 함께라면 Rokid Glasses에서 스마트하게 웹을 즐길 수 있습니다. 뉴스 검색과 유튜브 영상을 즐기세요.</p>",
+    "en": "<h3>Key Features of Dew Browser</h3><p>Dew Browser is not just a simple mobile browser. It is optimized for the Rokid Glasses environment and offers the following features:</p><br><ul style='padding-left: 20px;'><li><b>AI Page Summary:</b> AI (Gemma) summarizes news or blog posts for you.</li><li><b>Smartphone Mouse Mode:</b> You can use your smartphone as a touchpad for precise mouse and keyboard control.</li><li><b>Dedicated AR Interface:</b> Provides a clean UI that lets you see necessary information at a glance.</li><li><b>Gesture Control:</b> Supports a convenient feature that scrolls web pages using your head movements (tilts).</li></ul><h3>Notes</h3><ul style='padding-left: 20px;'><li><b>Network:</b> A Wi-Fi connection is required for smooth web surfing and the AI summary feature.</li><li><b>Supported Devices:</b> Requires a smartphone running the Android OS.</li></ul><br><p>With Dew Browser, you can smartly enjoy the web on your Rokid Glasses. Enjoy searching for news and watching YouTube videos.</p>",
+    "ja": "<h3>Dew Browserの主な特徴</h3><p>Dew Browserは単なるモバイルブラウザではありません。Rokid Glasses環境に最適化されて設計されており、以下の特徴を備えています。</p><br><ul style='padding-left: 20px;'><li><b>AIページ要約:</b> ニュースやブログ記事をAI(Gemma)がスマートに要約。</li><li><b>スマホマウスモード:</b> スマホをタッチパッドにして精密なマウス＆キーボード操作が可能。</li><li><b>AR専用インターフェース:</b> 必要な情報をひと目で確認できるクリーンなUI。</li><li><b>ジェスチャーコントロール:</b> 頭の上下の傾きでWebページをスクロール可能。</li></ul><br><h3>注意事項</h3><ul style='padding-left: 20px;'><li><b>ネットワーク:</b> WebサーフィンとAI要約の利用にはWi-Fi接続が必要です。</li><li><b>対応端末:</b> Android OS搭載のスマートフォンが必要です。</li></ul><br><p>Dew BrowserでRokid Glassesでの快適なWeb体験をお楽しみください。</p>",
+    "zh": "<h3>Dew Browser 核心亮点</h3><p>Dew Browser绝非普通的移动浏览器，它是专为Rokid Glasses AR眼镜量身定制的高效浏览利器：</p><br><ul style='padding-left: 20px;'><li><b>AI智能页面摘要:</b> 内置本地AI(Gemma)一键提炼长篇新闻和博客核心要点。</li><li><b>手机触控板模式:</b> 手机化身灵敏触控板，实现精准的光标滑动与快捷文本输入。</li><li><b>AR专属视界:</b> 极简通透布局，关键信息一览无余。</li><li><b>头部体感滚动:</b> 通过头部上下微倾动作流畅滚动浏览网页。</li></ul><br><h3>使用须知</h3><ul style='padding-left: 20px;'><li><b>网络要求:</b> 浏览网页与AI摘要需在Wi-Fi网络下运行。</li><li><b>设备支持:</b> 需配合安卓(Android)智能手机使用。</li></ul><br><p>搭配Dew Browser，在Rokid Glasses上尽享前沿沉浸式上网与观影体验！</p>",
+    "es": "<h3>Características clave de Dew Browser</h3><p>Dew Browser no es un navegador móvil cualquiera; está optimizado para Rokid Glasses:</p><br><ul style='padding-left: 20px;'><li><b>Resumen de páginas por IA:</b> La IA (Gemma) sintetiza noticias y artículos.</li><li><b>Modo ratón con smartphone:</b> Usa tu teléfono como panel táctil de alta precisión.</li><li><b>Interfaz AR dedicada:</b> Visualiza la información clave con gran claridad.</li><li><b>Control gestual:</b> Desplaza páginas inclinando la cabeza verticalmente.</li></ul><br><h3>Notas</h3><ul style='padding-left: 20px;'><li><b>Red:</b> Requiere Wi-Fi para navegar y usar las funciones de IA.</li><li><b>Dispositivos:</b> Compatible con smartphones Android.</li></ul>",
+    "de": "<h3>Hauptmerkmale von Dew Browser</h3><p>Dew Browser ist für die Rokid Glasses optimiert und bietet innovative Funktionen:</p><br><ul style='padding-left: 20px;'><li><b>KI-Seiten-Zusammenfassung:</b> KI (Gemma) fasst Webseiten und Artikel zusammen.</li><li><b>Smartphone-Mausmodus:</b> Nutzt das Telefon als präzises Touchpad mit Tastatureingabe.</li><li><b>AR-Oberfläche:</b> Übersichtliches Design ohne störende Elemente.</li><li><b>Gestensteuerung:</b> Scrollen durch Neigen des Kopfes nach oben und unten.</li></ul><br><h3>Hinweise</h3><ul style='padding-left: 20px;'><li><b>Netzwerk:</b> WLAN-Verbindung erforderlich.</li><li><b>Geräte:</b> Erfordert ein Android-Smartphone.</li></ul>",
+    "fr": "<h3>Points forts de Dew Browser</h3><p>Dew Browser est optimisé pour les lunettes Rokid Glasses et offre une expérience web moderne :</p><br><ul style='padding-left: 20px;'><li><b>Résumé de page par IA:</b> L'IA (Gemma) résume instantanément les articles.</li><li><b>Mode souris smartphone:</b> Votre smartphone devient un pavé tactile ultra-précis.</li><li><b>Interface AR dédiée:</b> Interface nette et transparente pour une lisibilité parfaite.</li><li><b>Défilement gestuel:</b> Faites défiler les pages en inclinant la tête.</li></ul><br><h3>Remarques</h3><ul style='padding-left: 20px;'><li><b>Réseau:</b> Connexion Wi-Fi requise.</li><li><b>Appareils:</b> Nécessite un smartphone Android.</li></ul>",
+    "vi": "<h3>Tính năng chính của Dew Browser</h3><p>Dew Browser được tối ưu hóa cho kính Rokid Glasses với các tính năng vượt trội:</p><br><ul style='padding-left: 20px;'><li><b>Tóm tắt trang bằng AI:</b> AI (Gemma) tóm tắt các bài báo và bài viết nhanh chóng.</li><li><b>Chuột điện thoại:</b> Biến điện thoại thành bàn di chuột cảm ứng mượt mà.</li><li><b>Giao diện AR chuyên dụng:</b> Thiết kế rõ nét, dễ đọc trên không gian thực tế ảo.</li><li><b>Cuộn trang bằng cử chỉ:</b> Cuộn trang web bằng chuyển động đầu lên xuống.</li></ul><br><h3>Lưu ý</h3><ul style='padding-left: 20px;'><li><b>Mạng:</b> Cần có kết nối Wi-Fi để duyệt web và dùng AI.</li><li><b>Thiết bị hỗ trợ:</b> Yêu cầu điện thoại hệ điều hành Android.</li></ul>",
+    "th": "<h3>จุดเด่นสำคัญของ Dew Browser</h3><p>Dew Browser ได้รับการปรับแต่งให้เหมาะสมกับแว่นตา Rokid Glasses พร้อมฟังก์ชันที่ล้ำสมัย:</p><br><ul style='padding-left: 20px;'><li><b>สรุปหน้าเว็บด้วย AI:</b> AI (Gemma) ช่วยสรุปเนื้อหาข่าวและบทความให้สั้นกระชับ</li><li><b>โหมดเมาส์ผ่านสมาร์ทโฟน:</b> ใช้สมาร์ทโฟนเป็นทัชแพดเพื่อเลื่อนเคอร์เซอร์และพิมพ์ข้อความได้อย่างแม่นยำ</li><li><b>อินเทอร์เฟซเฉพาะสำหรับ AR:</b> ดีไซน์สะอาดตา มองเห็นข้อมูลสำคัญได้อย่างชัดเจน</li><li><b>เลื่อนหน้าจอด้วยท่าทาง:</b> เลื่อนหน้าเว็บได้ด้วยการผงกศีรษะขึ้นลง</li></ul><br><h3>หมายเหตุ</h3><ul style='padding-left: 20px;'><li><b>เครือข่าย:</b> จำเป็นต้องเชื่อมต่อ Wi-Fi เพื่อการท่องเว็บและใช้งาน AI</li><li><b>อุปกรณ์ที่รองรับ:</b> รองรับสมาร์ทโฟนระบบ Android</li></ul>",
+    "id": "<h3>Fitur Utama Dew Browser</h3><p>Dew Browser dioptimalkan untuk lingkungan kacamata Rokid Glasses:</p><br><ul style='padding-left: 20px;'><li><b>Ringkasan Halaman AI:</b> AI (Gemma) merangkum berita dan artikel untuk Anda.</li><li><b>Mode Mouse Ponsel:</b> Gunakan ponsel sebagai touchpad presisi dengan input keyboard.</li><li><b>Antarmuka Khusus AR:</b> Tampilan bersih yang nyaman dilihat.</li><li><b>Kontrol Gestur:</b> Gulir halaman web menggunakan gerakan kepala atas/bawah.</li></ul><br><h3>Catatan</h3><ul style='padding-left: 20px;'><li><b>Jaringan:</b> Diperlukan koneksi Wi-Fi.</li><li><b>Perangkat:</b> Memerlukan ponsel Android.</li></ul>",
+    "ru": "<h3>Главные особенности Dew Browser</h3><p>Dew Browser разработан специально для Rokid Glasses и предлагает уникальные возможности:</p><br><ul style='padding-left: 20px;'><li><b>ИИ-краткое содержание:</b> ИИ (Gemma) тезисно пересказывает статьи и новости.</li><li><b>Смартфон как тачпад:</b> Точное управление курсором и ввод текста с телефона.</li><li><b>AR-интерфейс:</b> Удобное и чистое отображение веб-страниц.</li><li><b>Управление жестами:</b> Прокрутка страниц наклонами головы вверх и вниз.</li></ul><br><h3>Примечания</h3><ul style='padding-left: 20px;'><li><b>Сеть:</b> Требуется Wi-Fi подключение.</li><li><b>Совместимость:</b> Необходим Android-смартфон.</li></ul>"
+  },
+  "control": {
+    "ko": "<h3>주요 버튼 및 기능 설명</h3><p><b>상단 툴바</b></p><ul style='padding-left: 20px;'><li><b>즐겨찾기 목록 (아이콘):</b> 내가 저장해둔 북마크 리스트를 한눈에 확인하고 바로 이동합니다.</li><li><b>페이지 요약 (연필 아이콘):</b> 현재 보고 있는 웹 페이지의 내용을 AI가 분석하여 팝업으로 요약해 줍니다.</li><li><b>주소창:</b> URL을 직접 입력하거나 검색어를 입력할 수 있습니다. 주소창을 클릭하면 최근 본 페이지 목록을 제공합니다.</li><li><b>즐겨찾기 추가 (별 아이콘):</b> 현재 페이지가 마음에 든다면 클릭 한 번으로 북마크에 추가하세요.</li><li><b>이동 (Go 버튼):</b> 입력한 주소로 빠르게 페이지를 로딩합니다.</li><li><b>메뉴 (더보기):</b> 브라우저의 상세 설정을 할 수 있는 사이드바를 엽니다.</li></ul><br><p><b>사이드 메뉴 (추가 기능)</b></p><ul style='padding-left: 20px;'><li><b>공유하기:</b> 현재 웹 url을 핸드폰의 클립보드로 전송합니다.</li><li><b>페이지 캡쳐:</b> 현재 웹 화면을 이미지로 저장하거나 전송합니다.</li><li><b>이미지 다운로더:</b> 페이지 내의 이미지들을 간편하게 추출하여 저장할 수 있습니다.</li><li><b>확대/축소 (+/-):</b> 화면 크기를 100%부터 내 시력에 맞게 조절할 수 있습니다.</li><li><b>제스처 스크롤 토글:</b> 고개를 위아래로 움직여 페이지를 스크롤하는 기능을 끄고 켤 수 있습니다.</li></ul><br><h3>설치 및 연결 방법</h3><p><b>설치 방법</b></p><ul style='padding-left: 20px;'><li>다운로드한 APK 파일을 안드로이드 스마트폰과 Rokid Glasses에 설치해 주세요. (iOS는 지원하지 않습니다.)</li></ul><p><b>연결 방법</b></p><ol style='padding-left: 20px;'><li><b>스마트폰과 글래스 연결:</b> Rokid Glasses에서 앱을 실행합니다. 스마트폰에서도 앱을 실행하고 연결 버튼을 클릭합니다. 스마트 폰에서 처음 앱을 실행하면 AI 엔진 모델을 다운로드 받습니다. 다운로드가 끝나면 Rokid Glasses와 연결됩니다.</li><li><b>블루투스 페어링:</b><ul style='padding-left: 20px;'><li>글래스에서는 브라우저 화면이 보이고, 스마트폰은 '폰 마우스' 화면으로 변합니다.</li></ul></li><li><b>조작하기:</b> 연결이 완료되면 스마트폰 화면이 터치패드가 됩니다. 손가락으로 밀어 커서를 움직이고, 탭하여 클릭하세요. 두 손가락을 함께 터치하면 화면을 스크롤합니다. 입력창에 포커스가 가면 폰에서 키보드가 자동으로 나타납니다. 키보드 입력을 통해 글래스 화면에 텍스트를 바로 전송합니다.</li></ol>",
+    "en": "<h3>Key Buttons and Functions</h3><p><b>Top Toolbar</b></p><ul style='padding-left: 20px;'><li><b>Bookmarks List (Icon):</b> Check your saved bookmark list at a glance and navigate instantly.</li><li><b>Page Summary (Pencil Icon):</b> AI analyzes the content of the current web page and summarizes it in a popup.</li><li><b>Address Bar:</b> You can directly enter URLs or search terms. Clicking the address bar provides a list of recently viewed pages.</li><li><b>Add to Bookmarks (Star Icon):</b> If you like the current page, add it to your bookmarks with a single click.</li><li><b>Go (Go Button):</b> Quickly loads the page at the entered address.</li><li><b>Menu (More):</b> Opens a sidebar where you can configure detailed browser settings.</li></ul><p><b>Side Menu (Additional Features)</b></p><ul style='padding-left: 20px;'><li><b>Share:</b> Sends the current web URL to your smartphone's clipboard.</li><li><b>Page Capture:</b> Saves or sends the current web screen as an image.</li><li><b>Image Downloader:</b> Easily extracts and saves images from the page.</li><li><b>Zoom (+/-):</b> Adjusts the screen size to match your vision, starting from 100%.</li><li><b>Gesture Scroll Toggle:</b> Turns the feature to scroll the page by moving your head up and down on or off.</li></ul><br><h3>Installation and Connection</h3><p><b>Installation</b></p><ul style='padding-left: 20px;'><li>Please install the downloaded APK file on both your Android smartphone and Rokid Glasses. (iOS is not supported.)</li></ul><p><b>Connection</b></p><ol style='padding-left: 20px;'><li><b>Connecting Smartphone and Glasses:</b> Launch the app on your Rokid Glasses. Launch the app on your smartphone as well and click the connect button. When you launch the app for the first time on your smartphone, it downloads the AI engine model. Once the download is complete, it will connect to your Rokid Glasses.</li><li><b>Bluetooth Pairing:</b><ul style='padding-left: 20px;'><li>The browser screen will be displayed on the glasses, and the smartphone will change to a 'Phone Mouse' screen.</li></ul></li><li><b>Controls:</b> Once connected, the smartphone screen becomes a touchpad. Slide your finger to move the cursor, and tap to click. Touching with two fingers together scrolls the screen. When focus goes to an input field, the keyboard automatically appears on the phone. You can send text directly to the glasses screen via keyboard input.</li></ol>",
+    "ja": "<h3>操作方法と接続手順</h3><p><b>上部ツールバー</b></p><ul style='padding-left: 20px;'><li><b>お気に入り一覧:</b> 保存したブックマークを確認。</li><li><b>ページ要約（鉛筆）:</b> AIが現在のページを解析して要約ポップアップを表示。</li><li><b>アドレスバー:</b> URL入力または検索。</li><li><b>メニュー:</b> 詳細設定サイドバーを表示。</li></ul><p><b>サイドメニュー</b></p><ul style='padding-left: 20px;'><li><b>共有:</b> URLをスマホのクリップボードへ送信。</li><li><b>画面キャプチャ:</b> 現在のWeb画面を画像保存。</li><li><b>画像ダウンローダー:</b> ページ内の画像を抽出・保存。</li><li><b>ズーム:</b> 画面倍率を調整。</li><li><b>ジェスチャースクロール:</b> 首の上下傾きによるスクロールのON/OFF。</li></ul><p><b>接続手順:</b> スマホとメガネの両方にアプリをインストールし、接続ボタンを押します。スマホがタッチパッドとして動作します。</p>",
+    "zh": "<h3>按键与交互说明</h3><p><b>顶部工具栏</b></p><ul style='padding-left: 20px;'><li><b>书签列表:</b> 快速浏览并跳转保存的书签。</li><li><b>AI页面摘要(铅笔图标):</b> 一键解析当前网页生成精炼摘要弹窗。</li><li><b>地址栏:</b> 键入网址或搜索关键词，点击展示历史记录。</li><li><b>菜单:</b> 展开侧边栏设置。</li></ul><p><b>侧边栏高级功能</b></p><ul style='padding-left: 20px;'><li><b>分享:</b> 将当前URL发送至手机剪贴板。</li><li><b>网页截图:</b> 截取并保存当前网页视图。</li><li><b>图片提取:</b> 批量嗅探并下载网页中的图片素材。</li><li><b>缩放(+/-):</b> 调节显示比例。</li><li><b>头部体感滚动:</b> 开启/关闭上下点头网页滚动。</li></ul><p><b>连接流程:</b> 手机与眼镜端同时安装运行并配对，手机屏幕将转变为无线触控板操作光标。</p>",
+    "es": "<h3>Botones y funciones principales</h3><p><b>Barra superior:</b> Marcadores, Resumen IA (icono de lápiz), Barra de direcciones, Añadir a marcadores, Menú lateral.</p><p><b>Menú lateral:</b> Compartir URL con el móvil, Captura de pantalla, Descargador de imágenes, Zoom, Desplazamiento por inclinación de cabeza.</p><p><b>Conexión:</b> Instala la app en móvil y gafas; conecta para usar el smartphone como ratón táctil.",
+    "de": "<h3>Bedienung und Funktionen</h3><p><b>Obere Leiste:</b> Lesezeichen, KI-Zusammenfassung (Stift-Symbol), Adressleiste, Menü.</p><p><b>Seitenmenü:</b> URL teilen, Screenshot erstellen, Bilder herunterladen, Zoom, Gesten-Scrollen per Kopfneigung.</p><p><b>Verbindung:</b> App auf beiden Geräten installieren und koppeln; Smartphone dient als Touchpad.",
+    "fr": "<h3>Fonctions et utilisation</h3><p><b>Barre supérieure:</b> Favoris, Résumé IA (crayon), Barre d'adresse, Menu latéral.</p><p><b>Menu latéral:</b> Partage d'URL, Capture d'écran, Téléchargement d'images, Zoom, Défilement par mouvement de tête.</p><p><b>Connexion:</b> Installez l'application sur le téléphone et les lunettes; le smartphone devient une souris tactile.",
+    "vi": "<h3>Các nút và tính năng chính</h3><p><b>Thanh công cụ trên:</b> Dấu trang, Tóm tắt AI (bút chì), Thanh địa chỉ, Menu bên.</p><p><b>Menu bên:</b> Chia sẻ URL, Chụp màn hình, Tải hình ảnh, Thu phóng, Cuộn trang bằng cử động đầu.</p><p><b>Kết nối:</b> Cài đặt ứng dụng trên cả điện thoại và kính; điện thoại trở thành bàn di chuột cảm ứng.",
+    "th": "<h3>ปุ่มและฟังก์ชันหลัก</h3><p><b>แถบเครื่องมือด้านบน:</b> บุ๊กมาร์ก, สรุปหน้าเว็บด้วย AI (ไอคอนดินสอ), แถบที่อยู่, เมนูด้านข้าง</p><p><b>เมนูด้านข้าง:</b> แชร์ URL, จับภาพหน้าจอ, ดาวน์โหลดรูปภาพ, ซูม, เลื่อนหน้าจอด้วยการผงกศีรษะ</p><p><b>การเชื่อมต่อ:</b> ติดตั้งแอปบนทั้งสมาร์ทโฟนและแว่นตา เชื่อมต่อเพื่อใช้โทรศัพท์เป็นทัชแพดควบคุม",
+    "id": "<h3>Fungsi dan Pengoperasian</h3><p><b>Bilah Atas:</b> Bookmark, Ringkasan AI (ikon pensil), Bilah alamat, Menu samping.</p><p><b>Menu Samping:</b> Bagikan URL, Tangkapan layar, Pengunduh gambar, Zoom, Gulir gestur kepala.</p><p><b>Koneksi:</b> Instal aplikasi di ponsel dan kacamata; gunakan ponsel sebagai touchpad nirkabel.",
+    "ru": "<h3>Управление и функции</h3><p><b>Верхняя панель:</b> Закладки, ИИ-сводка (значок карандаша), адресная строка, боковое меню.</p><p><b>Боковое меню:</b> Поделиться URL, скриншот страницы, загрузка картинок, зум, прокрутка наклонами головы.</p><p><b>Подключение:</b> Запустите приложение на телефоне и очках — телефон превратится в сенсорный тачпад."
+  },
+  "youtubeUrl": "https://www.youtube.com/embed/0_LjYPcndrU",
+  "youtubeType": "1",
+  "updated": [
+    {
+      "version": "1.1.1",
+      "releaseDate": "2026-06-01",
+      "ko": "폰마우스 연결 없이 사용할 수 있게 하였습니다. 폰마우스 연결시 취소를 누르고 설정에서 폰마우스 설정을 해제하면 블루투스 마우스 또는 키보드를 통해 사용이 가능합니다. <br> 참고로, 폰 연결을 안하면 AI 요약 기능, 이미지 다운로드, URL 전송 등의 기능은 사용할 수 없습니다.",
+      "en": "Now you can use the browser without connecting to the phone mouse. If you cancel the phone mouse connection and disable the phone mouse setting in the settings, you can use it via a Bluetooth mouse or keyboard. <br> By the way, if you don't connect your phone, you can't use features like AI summary, image download, and URL transfer.",
+      "ja": "スマホマウスの接続なしでも使用可能になりました。Bluetoothマウスやキーボードで操作できます（一部AI機能等はスマホ接続が必要）。",
+      "zh": "支持脱离手机独立运行，可通过蓝牙键鼠操控（注：AI摘要与投屏等功能仍需连接手机）。",
+      "es": "Permite usar el navegador sin conectar el ratón del móvil, mediante teclado o ratón Bluetooth.",
+      "de": "Browser jetzt auch ohne Smartphone-Maus nutzbar über Bluetooth-Maus oder Tastatur.",
+      "fr": "Utilisable sans souris smartphone grâce à une souris ou un clavier Bluetooth.",
+      "vi": "Có thể sử dụng trình duyệt mà không cần kết nối chuột điện thoại, hỗ trợ chuột và bàn phím Bluetooth.",
+      "th": "ใช้งานได้โดยไม่ต้องต่อเมาส์สมาร์ทโฟน รองรับการควบคุมผ่านเมาส์หรือคีย์บอร์ดบลูทูธ",
+      "id": "Dapat digunakan tanpa koneksi mouse ponsel, mendukung mouse atau keyboard Bluetooth.",
+      "ru": "Работает без мыши телефона — поддерживаются обычные Bluetooth-мыши и клавиатуры."
     },
-    "version": "1.1.1",
-    "releaseDate": "2026-04-27",
-    "shortDescription": {
-        "ko": "깔끔하고 직관적인 Rokid Glasses 전용 웹 브라우저",
-        "en": "Clean and intuitive web browser for Rokid Glasses."
-    },
-    "description": {
-        "ko": "<h3>Dew Browser의 주요 특징</h3><p>Dew Browser는 단순한 모바일 브라우저가 아닙니다. Rokid Glasses 환경에 최적화되어 설계되었으며, 다음과 같은 특징을 가지고 있습니다.</p><br><ul style='padding-left: 20px;'><li><b>AI 페이지 요약:</b> 뉴스나 블로그 포스트를 AI(Gemma)가 요약해 줍니다.</li><li><b>스마트폰 마우스 모드:</b> 스마트폰을 터치패드로 활용하여 정밀한 마우스와 키보드 입력 컨트롤이 가능합니다.</li><li><b>AR 전용 인터페이스:</b> 필요한 정보를 한눈에 볼 수 있는 깔끔한 UI를 제공합니다.</li><li><b>제스처 컨트롤:</b> 머리의 움직임(기울기)을 이용해 웹 페이지를 스크롤하는 편리한 기능을 지원합니다.</li></ul><br><h3>참고 사항</h3><ul style='padding-left: 20px;'><li><b>네트워크:</b> 원활한 웹 서핑과 AI 요약 기능을 위해 Wi-Fi 연결이 반드시 필요합니다.</li><li><b>지원 기기:</b> 안드로이드 OS를 사용하는 스마트폰이 필요합니다.</li></ul><br><p>Dew Browser와 함께라면 Rokid Glasses에서 스마트하게 웹을 즐길 수 있습니다. 뉴스 검색과 유튜브 영상을 즐기세요.</p>",
-        "en": "<h3>Key Features of Dew Browser</h3><p>Dew Browser is not just a simple mobile browser. It is optimized for the Rokid Glasses environment and offers the following features:</p><br><ul style='padding-left: 20px;'><li><b>AI Page Summary:</b> AI (Gemma) summarizes news or blog posts for you.</li><li><b>Smartphone Mouse Mode:</b> You can use your smartphone as a touchpad for precise mouse and keyboard control.</li><li><b>Dedicated AR Interface:</b> Provides a clean UI that lets you see necessary information at a glance.</li><li><b>Gesture Control:</b> Supports a convenient feature that scrolls web pages using your head movements (tilts).</li></ul><h3>Notes</h3><ul style='padding-left: 20px;'><li><b>Network:</b> A Wi-Fi connection is required for smooth web surfing and the AI summary feature.</li><li><b>Supported Devices:</b> Requires a smartphone running the Android OS.</li></ul><br><p>With Dew Browser, you can smartly enjoy the web on your Rokid Glasses. Enjoy searching for news and watching YouTube videos.</p>"
-    },
-    "control": {
-        "ko": "<h3>주요 버튼 및 기능 설명</h3><p><b>상단 툴바</b></p><ul style='padding-left: 20px;'><li><b>즐겨찾기 목록 (아이콘):</b> 내가 저장해둔 북마크 리스트를 한눈에 확인하고 바로 이동합니다.</li><li><b>페이지 요약 (연필 아이콘):</b> 현재 보고 있는 웹 페이지의 내용을 AI가 분석하여 팝업으로 요약해 줍니다.</li><li><b>주소창:</b> URL을 직접 입력하거나 검색어를 입력할 수 있습니다. 주소창을 클릭하면 최근 본 페이지 목록을 제공합니다.</li><li><b>즐겨찾기 추가 (별 아이콘):</b> 현재 페이지가 마음에 든다면 클릭 한 번으로 북마크에 추가하세요.</li><li><b>이동 (Go 버튼):</b> 입력한 주소로 빠르게 페이지를 로딩합니다.</li><li><b>메뉴 (더보기):</b> 브라우저의 상세 설정을 할 수 있는 사이드바를 엽니다.</li></ul><br><p><b>사이드 메뉴 (추가 기능)</b></p><ul style='padding-left: 20px;'><li><b>공유하기:</b> 현재 웹 url을 핸드폰의 클립보드로 전송합니다.</li><li><b>페이지 캡쳐:</b> 현재 웹 화면을 이미지로 저장하거나 전송합니다.</li><li><b>이미지 다운로더:</b> 페이지 내의 이미지들을 간편하게 추출하여 저장할 수 있습니다.</li><li><b>확대/축소 (+/-):</b> 화면 크기를 100%부터 내 시력에 맞게 조절할 수 있습니다.</li><li><b>제스처 스크롤 토글:</b> 고개를 위아래로 움직여 페이지를 스크롤하는 기능을 끄고 켤 수 있습니다.</li></ul><br><h3>설치 및 연결 방법</h3><p><b>설치 방법</b></p><ul style='padding-left: 20px;'><li>다운로드한 APK 파일을 안드로이드 스마트폰과 Rokid Glasses에 설치해 주세요. (iOS는 지원하지 않습니다.)</li></ul><p><b>연결 방법</b></p><ol style='padding-left: 20px;'><li><b>스마트폰과 글래스 연결:</b> Rokid Glasses에서 앱을 실행합니다. 스마트폰에서도 앱을 실행하고 연결 버튼을 클릭합니다. 스마트 폰에서 처음 앱을 실행하면 AI 엔진 모델을 다운로드 받습니다. 다운로드가 끝나면 Rokid Glasses와 연결됩니다.</li><li><b>블루투스 페어링:</b><ul style='padding-left: 20px;'><li>글래스에서는 브라우저 화면이 보이고, 스마트폰은 '폰 마우스' 화면으로 변합니다.</li></ul></li><li><b>조작하기:</b> 연결이 완료되면 스마트폰 화면이 터치패드가 됩니다. 손가락으로 밀어 커서를 움직이고, 탭하여 클릭하세요. 두 손가락을 함께 터치하면 화면을 스크롤합니다. 입력창에 포커스가 가면 폰에서 키보드가 자동으로 나타납니다. 키보드 입력을 통해 글래스 화면에 텍스트를 바로 전송합니다.</li></ol>",
-        "en": "<h3>Key Buttons and Functions</h3><p><b>Top Toolbar</b></p><ul style='padding-left: 20px;'><li><b>Bookmarks List (Icon):</b> Check your saved bookmark list at a glance and navigate instantly.</li><li><b>Page Summary (Pencil Icon):</b> AI analyzes the content of the current web page and summarizes it in a popup.</li><li><b>Address Bar:</b> You can directly enter URLs or search terms. Clicking the address bar provides a list of recently viewed pages.</li><li><b>Add to Bookmarks (Star Icon):</b> If you like the current page, add it to your bookmarks with a single click.</li><li><b>Go (Go Button):</b> Quickly loads the page at the entered address.</li><li><b>Menu (More):</b> Opens a sidebar where you can configure detailed browser settings.</li></ul><p><b>Side Menu (Additional Features)</b></p><ul style='padding-left: 20px;'><li><b>Share:</b> Sends the current web URL to your smartphone's clipboard.</li><li><b>Page Capture:</b> Saves or sends the current web screen as an image.</li><li><b>Image Downloader:</b> Easily extracts and saves images from the page.</li><li><b>Zoom (+/-):</b> Adjusts the screen size to match your vision, starting from 100%.</li><li><b>Gesture Scroll Toggle:</b> Turns the feature to scroll the page by moving your head up and down on or off.</li></ul><br><h3>Installation and Connection</h3><p><b>Installation</b></p><ul style='padding-left: 20px;'><li>Please install the downloaded APK file on both your Android smartphone and Rokid Glasses. (iOS is not supported.)</li></ul><p><b>Connection</b></p><ol style='padding-left: 20px;'><li><b>Connecting Smartphone and Glasses:</b> Launch the app on your Rokid Glasses. Launch the app on your smartphone as well and click the connect button. When you launch the app for the first time on your smartphone, it downloads the AI engine model. Once the download is complete, it will connect to your Rokid Glasses.</li><li><b>Bluetooth Pairing:</b><ul style='padding-left: 20px;'><li>The browser screen will be displayed on the glasses, and the smartphone will change to a 'Phone Mouse' screen.</li></ul></li><li><b>Controls:</b> Once connected, the smartphone screen becomes a touchpad. Slide your finger to move the cursor, and tap to click. Touching with two fingers together scrolls the screen. When focus goes to an input field, the keyboard automatically appears on the phone. You can send text directly to the glasses screen via keyboard input.</li></ol>"
-    },
-    "youtubeUrl": "https://www.youtube.com/embed/0_LjYPcndrU",
-    "youtubeType": "1",
-    "updated": [
-        {
-            "version": "1.1.1",
-            "releaseDate": "2026-06-01",
-            "ko": "폰마우스 연결 없이 사용할 수 있게 하였습니다. 폰마우스 연결시 취소를 누르고 설정에서 폰마우스 설정을 해제하면 블루투스 마우스 또는 키보드를 통해 사용이 가능합니다. <br> 참고로, 폰 연결을 안하면 AI 요약 기능, 이미지 다운로드, URL 전송 등의 기능은 사용할 수 없습니다.",
-            "en": "Now you can use the browser without connecting to the phone mouse. If you cancel the phone mouse connection and disable the phone mouse setting in the settings, you can use it via a Bluetooth mouse or keyboard. <br> By the way, if you don't connect your phone, you can't use features like AI summary, image download, and URL transfer."
-        },
-        {
-            "version": "1.0.1",
-            "releaseDate": "2026-05-11",
-            "ko": "버그 수정, webview rendering issue",
-            "en": "bug fix, webview rendering issue"
-        }
-    ],
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/DewBroswer_v1.1.1.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/DewBroswer_v1.0.1.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/DewBroswer_v1.0.0.apk"
-    ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKWeb/scr1.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKWeb/scr2.jpg"
-    ],
-    "tags": {
-        "ko": [
-            "브라우저",
-            "웹",
-            "AI"
-        ],
-        "en": [
-            "browser",
-            "web",
-            "AI"
-        ]
+    {
+      "version": "1.0.1",
+      "releaseDate": "2026-05-11",
+      "ko": "버그 수정, webview rendering issue",
+      "en": "bug fix, webview rendering issue",
+      "ja": "バグ修正、Webviewレンダリングの問題を改善。",
+      "zh": "修复已知Bug，优化WebView页面渲染稳定性。",
+      "es": "Corrección de errores y problemas de renderizado WebView.",
+      "de": "Fehlerbehebungen und Verbesserungen beim WebView-Rendering.",
+      "fr": "Corrections de bugs et amélioration du rendu WebView.",
+      "vi": "Sửa lỗi và khắc phục sự cố hiển thị WebView.",
+      "th": "แก้ไขข้อผิดพลาดและปรับปรุงการแสดงผล WebView",
+      "id": "Perbaikan bug dan masalah perenderan WebView.",
+      "ru": "Исправление ошибок и улучшение рендеринга WebView."
     }
+  ],
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/DewBroswer_v1.1.1.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/DewBroswer_v1.0.1.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/DewBroswer_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKWeb/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKWeb/scr2.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "브라우저",
+      "웹",
+      "AI"
+    ],
+    "en": [
+      "browser",
+      "web",
+      "AI"
+    ],
+    "ja": [
+      "ブラウザ",
+      "Web",
+      "AI"
+    ],
+    "zh": [
+      "浏览器",
+      "网页",
+      "AI"
+    ],
+    "es": [
+      "Navegador",
+      "Web",
+      "AI"
+    ],
+    "de": [
+      "Browser",
+      "Web",
+      "KI"
+    ],
+    "fr": [
+      "Navigateur",
+      "Web",
+      "IA"
+    ],
+    "vi": [
+      "TrìnhDuyệt",
+      "Web",
+      "AI"
+    ],
+    "th": [
+      "เบราว์เซอร์",
+      "เว็บ",
+      "AI"
+    ],
+    "id": [
+      "Browser",
+      "Web",
+      "AI"
+    ],
+    "ru": [
+      "Браузер",
+      "Веб",
+      "ИИ"
+    ]
+  }
 }

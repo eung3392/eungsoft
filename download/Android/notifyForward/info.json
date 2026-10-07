@@ -1,36 +1,108 @@
 {
-    "title": {
-        "ko": "알림 전달",
-        "en": "Notify Forward"
-    },
-    "version": "1.0.0",
-    "releaseDate": "2026-06-15",
-    "shortDescription": {
-        "ko": "전화, 문자, 카카오톡 알림 메시지를 문자로 전달",
-        "en": "Forward notification messages for phone calls, SMS, and KakaoTalk via text message."
-    },
-    "description": {
-        "ko": "<b>알림 전달</b>은 전화, 문자, 카카오톡과 같은 앱의 알림을 지정된 번호의 <b>문자 메시지</b>로 자동 전달해 주는 유용한 앱입니다. 중요한 알림을 놓치지 않고 실시간으로 받아보세요.<br><b>이 앱을 만든 이유는</b> 유심칩이 지원되는 LTE 스마트 워치를 구입하게 되었는데, 핸드폰이 멀리 떨어진 환경에서도 전화,문자,카카오톡의 알림을 받고 싶어서 개인적으로 사용하려고 만들었습니다. 문자로 내용을 전달하기 때문에 문자 어플에 기록이 남으며, 문자 메시지 요금이 발생합니다. (저는 문자 무제한 요금제라 부담없이 사용중입니다.)",
-        "en": "Notify Forward is a useful app that automatically forwards notification messages from apps such as phone calls, SMS, and KakaoTalk as text messages to a specified number. Never miss an important notification and receive it in real-time.<br><b>The reason I created this app is</b> because I purchased an LTE smartwatch that supports a SIM card, and I wanted to receive notifications for phone calls, SMS, and KakaoTalk even when my phone was far away. Because the content is delivered via text message, a record remains in the messaging app and SMS charges are incurred. (I am using it without any burden because I have an unlimited text messaging plan.)"
-    },
-    "control": {
-        "ko": "<ol style='padding-left: 20px;'><li><b>알림 접근 권한을 설정합니다.</li><li><b>전달 받을 전화번호를 입력합니다.</b></li></ol>",
-        "en": "<ol style='padding-left: 20px;'><li><b>Set Notification Access Permission.</li><li><b>Enter the phone number to receive notifications.</b></li></ol>"
-    },
-    "youtubeUrl": "",
-    "youtubeType": "1",
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/NotifyForward_v1.0.0.apk"
+  "title": {
+    "ko": "알림 전달",
+    "en": "Notify Forward",
+    "ja": "通知転送",
+    "zh": "通知转发",
+    "es": "Reenvío de Notificaciones",
+    "de": "Benachrichtigungsweiterleitung",
+    "fr": "Transfert de Notifications",
+    "vi": "Chuyển Tiếp Thông Báo",
+    "th": "ส่งต่อการแจ้งเตือน",
+    "id": "Penerus Notifikasi",
+    "ru": "Пересылка Уведомлений"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-06-15",
+  "shortDescription": {
+    "ko": "전화, 문자, 카카오톡 알림 메시지를 문자로 전달",
+    "en": "Forward notification messages for phone calls, SMS, and KakaoTalk via text message.",
+    "ja": "通話、SMS、カカオトークなどの通知メッセージをSMSで自動転送",
+    "zh": "通过短信转发电话、短信、KakaoTalk等通知消息",
+    "es": "Reenvía notificaciones de llamadas, SMS y mensajería a través de mensajes de texto",
+    "de": "Leitet Benachrichtigungen über Anrufe, SMS und Chats per SMS weiter",
+    "fr": "Transfère les notifications d'appels, de SMS et de messagerie par SMS",
+    "vi": "Chuyển tiếp thông báo cuộc gọi, tin nhắn, KakaoTalk qua tin nhắn SMS",
+    "th": "ส่งต่อการแจ้งเตือนสายโทรเข้า SMS และแอปแชทผ่านข้อความ SMS",
+    "id": "Meneruskan notifikasi panggilan, SMS, dan pesan melalui SMS ke nomor tujuan",
+    "ru": "Пересылка уведомлений о звонках, SMS и сообщениях через SMS"
+  },
+  "description": {
+    "ko": "<b>알림 전달</b>은 전화, 문자, 카카오톡과 같은 앱의 알림을 지정된 번호의 <b>문자 메시지</b>로 자동 전달해 주는 유용한 앱입니다. 중요한 알림을 놓치지 않고 실시간으로 받아보세요.<br><b>이 앱을 만든 이유는</b> 유심칩이 지원되는 LTE 스마트 워치를 구입하게 되었는데, 핸드폰이 멀리 떨어진 환경에서도 전화,문자,카카오톡의 알림을 받고 싶어서 개인적으로 사용하려고 만들었습니다. 문자로 내용을 전달하기 때문에 문자 어플에 기록이 남으며, 문자 메시지 요금이 발생합니다. (저는 문자 무제한 요금제라 부담없이 사용중입니다.)",
+    "en": "Notify Forward is a useful app that automatically forwards notification messages from apps such as phone calls, SMS, and KakaoTalk as text messages to a specified number. Never miss an important notification and receive it in real-time.<br><b>The reason I created this app is</b> because I purchased an LTE smartwatch that supports a SIM card, and I wanted to receive notifications for phone calls, SMS, and KakaoTalk even when my phone was far away. Because the content is delivered via text message, a record remains in the messaging app and SMS charges are incurred. (I am using it without any burden because I have an unlimited text messaging plan.)",
+    "ja": "<b>通知転送</b>は、電話、SMS、カカオトークなどのアプリ通知を指定した番号へ<b>SMSテキストメッセージ</b>として自動転送する便利なアプリです。スマホが手元にない時でも重要な通知を見逃しません。<br><b>開発のきっかけ:</b> SIM対応のLTEスマートウォッチを購入した際、スマートフォンから離れていても電話やSMS、メッセージ通知を受け取りたくて個人用途として開発しました。SMSで転送するため通信料にご注意ください。",
+    "zh": "<b>通知转发</b>是一款将电话、短信、KakaoTalk等应用的通知以<b>短信形式</b>自动转发至指定手机号的实用应用。即使手机不在身边，也不会遗漏重要通知。<br><b>开发背景：</b> 购买了支持独立SIM卡的LTE智能手表后，为了在远离手机时仍能接收到重要来电与消息通知而专门开发。由于通过短信传输，会有短信费用产生（建议使用短信不限量套餐）。",
+    "es": "<b>Notify Forward</b> es una práctica aplicación que reenvía automáticamente notificaciones de llamadas, SMS y aplicaciones de mensajería como <b>mensajes de texto (SMS)</b> a un número designado. Nunca te pierdas una alerta importante, incluso lejos de tu teléfono.<br><b>Motivo de desarrollo:</b> Creado para recibir avisos en un reloj inteligente LTE con SIM cuando el teléfono móvil principal no está cerca.",
+    "de": "<b>Notify Forward</b> ist eine nützliche App, die Benachrichtigungen von Anrufen, SMS und Messengern automatisch als <b>SMS-Nachricht</b> an eine bestimmte Nummer weiterleitet. Verpassen Sie keine wichtigen Benachrichtigungen, auch wenn das Smartphone nicht in der Nähe ist.<br><b>Hintergrund:</b> Entwickelt für den Empfang von Benachrichtigungen auf einer LTE-Smartwatch mit eigener SIM-Karte.",
+    "fr": "<b>Notify Forward</b> est une application utile qui transfère automatiquement les notifications d'appels, de SMS et d'applications de messagerie sous forme de <b>SMS</b> vers un numéro spécifié. Ne manquez plus aucune notification importante même loin de votre smartphone.<br><b>Origine:</b> Conçu pour recevoir des alertes sur une montre connectée LTE avec carte SIM indépendante lorsque le téléphone est éloigné.",
+    "vi": "<b>Notify Forward</b> là ứng dụng tiện ích giúp tự động chuyển tiếp thông báo cuộc gọi, SMS và ứng dụng nhắn tin dưới dạng <b>tin nhắn SMS</b> đến số điện thoại chỉ định. Không bao giờ bỏ lỡ thông báo quan trọng ngay cả khi ở xa điện thoại.<br><b>Lý do phát triển:</b> Được tạo ra để nhận thông báo trên đồng hồ thông minh LTE có SIM khi không mang theo điện thoại bên mình.",
+    "th": "<b>Notify Forward</b> เป็นแอปที่มีประโยชน์สำหรับการส่งต่อการแจ้งเตือนสายโทรเข้า SMS และข้อความแชทไปยังเบอร์ที่กำหนดผ่าน<b>ข้อความ SMS</b> โดยอัตโนมัติ ไม่พลาดทุกการติดต่อแม้สมาร์ทโฟนจะอยู่ไกลตัว<br><b>จุดเริ่มต้น:</b> พัฒนาขึ้นเพื่อรับการแจ้งเตือนบนสมาร์ทวอทช์ LTE ที่ใส่ซิมได้ เมื่อต้องอยู่ห่างจากโทรศัพท์มือถือ",
+    "id": "<b>Notify Forward</b> adalah aplikasi praktis yang secara otomatis meneruskan notifikasi dari panggilan, SMS, dan aplikasi pesan sebagai <b>pesan teks SMS</b> ke nomor yang ditentukan. Jangan pernah lewatkan pemberitahuan penting meski ponsel Anda berada jauh.<br><b>Alasan pembuatan:</b> Dibuat untuk menerima notifikasi pada smartwatch LTE ber-SIM card saat ponsel berada jauh.",
+    "ru": "<b>Notify Forward</b> — полезное приложение, которое автоматически пересылает уведомления о звонках, SMS и сообщениях мессенджеров на указанный номер в виде <b>обычных SMS</b>. Вы никогда не пропустите важное сообщение, даже если телефон находится далеко.<br><b>Причина создания:</b> Разработано для получения уведомлений на LTE-смарт-часах с SIM-картой при нахождении вдали от телефона."
+  },
+  "control": {
+    "ko": "<ol style='padding-left: 20px;'><li><b>알림 접근 권한을 설정합니다.</li><li><b>전달 받을 전화번호를 입력합니다.</b></li></ol>",
+    "en": "<ol style='padding-left: 20px;'><li><b>Set Notification Access Permission.</li><li><b>Enter the phone number to receive notifications.</b></li></ol>",
+    "ja": "<ol style='padding-left: 20px;'><li><b>通知へのアクセス権限を設定します。</b></li><li><b>転送先となる電話番号を入力します。</b></li></ol>",
+    "zh": "<ol style='padding-left: 20px;'><li><b>授予通知读取权限。</b></li><li><b>输入用于接收转发的电话号码。</b></li></ol>",
+    "es": "<ol style='padding-left: 20px;'><li><b>Conceder permiso de acceso a notificaciones.</b></li><li><b>Introducir el número de teléfono que recibirá las alertas.</b></li></ol>",
+    "de": "<ol style='padding-left: 20px;'><li><b>Benachrichtigungszugriff aktivieren.</b></li><li><b>Telefonnummer für den Empfang der Weiterleitung eingeben.</b></li></ol>",
+    "fr": "<ol style='padding-left: 20px;'><li><b>Autoriser l'accès aux notifications.</b></li><li><b>Saisir le numéro de téléphone destinataire.</b></li></ol>",
+    "vi": "<ol style='padding-left: 20px;'><li><b>Cấp quyền truy cập thông báo.</b></li><li><b>Nhập số điện thoại nhận thông báo chuyển tiếp.</b></li></ol>",
+    "th": "<ol style='padding-left: 20px;'><li><b>อนุญาตสิทธิ์การเข้าถึงการแจ้งเตือน</b></li><li><b>ระบุหมายเลขโทรศัพท์ที่จะใช้รับข้อความ</b></li></ol>",
+    "id": "<ol style='padding-left: 20px;'><li><b>Aktifkan izin akses notifikasi.</b></li><li><b>Masukkan nomor telepon penerima pesan.</b></li></ol>",
+    "ru": "<ol style='padding-left: 20px;'><li><b>Предоставьте разрешение на доступ к уведомлениям.</b></li><li><b>Введите номер телефона для пересылки.</b></li></ol>"
+  },
+  "youtubeUrl": "",
+  "youtubeType": "1",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/NotifyForward_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/notifyForward/scr1.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "알림"
     ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/notifyForward/scr1.jpg"
+    "en": [
+      "Notify"
     ],
-    "tags": {
-        "ko": [
-            "알림"
-        ],
-        "en": [
-            "Notify"
-        ]
-    }
+    "ja": [
+      "通知",
+      "転送"
+    ],
+    "zh": [
+      "通知",
+      "转发"
+    ],
+    "es": [
+      "Notificación",
+      "Reenvío"
+    ],
+    "de": [
+      "Benachrichtigung",
+      "Weiterleitung"
+    ],
+    "fr": [
+      "Notification",
+      "Transfert"
+    ],
+    "vi": [
+      "ThôngBáo",
+      "ChuyểnTiếp"
+    ],
+    "th": [
+      "การแจ้งเตือน",
+      "ส่งต่อ"
+    ],
+    "id": [
+      "Notifikasi",
+      "Penerus"
+    ],
+    "ru": [
+      "Уведомления",
+      "Пересылка"
+    ]
+  }
 }

@@ -1,21 +1,57 @@
 {
   "title": {
     "ko": "Matrix Vision",
-    "en": "Matrix Vision"
+    "en": "Matrix Vision",
+    "ja": "Matrix Vision",
+    "zh": "Matrix Vision 黑客帝国视界",
+    "es": "Matrix Vision",
+    "de": "Matrix Vision",
+    "fr": "Matrix Vision",
+    "vi": "Matrix Vision",
+    "th": "Matrix Vision",
+    "id": "Matrix Vision",
+    "ru": "Matrix Vision"
   },
   "version": "1.0.0",
   "releaseDate": "2026-02-24",
   "shortDescription": {
     "ko": "매트릭스로 세상을 보다.",
-    "en": "See the world through Matrix."
+    "en": "See the world through Matrix.",
+    "ja": "マトリックスの世界観で日常を見るカメラアプリ",
+    "zh": "通过黑客帝国代码视界观察现实世界",
+    "es": "Mira el mundo a través del estilo de Matrix",
+    "de": "Sehen Sie die Welt wie im Film Matrix",
+    "fr": "Voyez le monde à travers le style Matrix",
+    "vi": "Ngắm nhìn thế giới qua phong cách phim Ma Trận",
+    "th": "มองโลกผ่านสายตาเมทริกซ์",
+    "id": "Lihat dunia melalui gaya Matrix",
+    "ru": "Взгляните на мир через цифровую реальность «Матрицы»"
   },
   "description": {
     "ko": "<b>매트릭스(Matrix)</b> 영화 속 세상처럼 카메라 영상을 실시간으로 변환하여 보여주는 독특한 카메라 앱입니다.<br>사물의 실루엣만을 추출하여 디지털 데이터처럼 표현하며, 눈앞의 광경을 매트릭스 스타일의 영상으로 녹화하고 저장할 수 있습니다.",
-    "en": "A unique camera app that transforms your world into a scene from <b>The Matrix</b> in real time.<br>By extracting object silhouettes, it visualizes the world as digital code and allows you to record these stylized views."
+    "en": "A unique camera app that transforms your world into a scene from <b>The Matrix</b> in real time.<br>By extracting object silhouettes, it visualizes the world as digital code and allows you to record these stylized views.",
+    "ja": "映画<b>マトリックス(The Matrix)</b>の世界のように、カメラ映像をリアルタイムでデジタルデータ風に変換して表示するユニークなカメラアプリです。<br>物体の輪郭・シルエットを抽出してコードのように表現し、目の前の光景をマトリックススタイルの動画として録画・保存できます。",
+    "zh": "一款将现实摄像头画面实时转换为电影<b>《黑客帝国》(The Matrix)</b>代码风格的独创相机应用。<br>提取物体的轮廓剪影并以数字化数据流的形式呈现，可将眼前的一切录制并保存为黑客帝国风格的视频。",
+    "es": "Una aplicación de cámara única que transforma tu entorno en una escena de <b>The Matrix</b> en tiempo real.<br>Al extraer las siluetas de los objetos, visualiza el mundo como código digital y te permite grabar y guardar vídeos con este estilo cinematográfico.",
+    "de": "Eine einzigartige Kamera-App, die Ihre Umgebung in Echtzeit in eine Szene aus <b>Matrix</b> verwandelt.<br>Durch Extrahieren von Objektsilhouetten wird die Welt als digitaler Datenstrom dargestellt und als stilisierte Videodatei aufgezeichnet.",
+    "fr": "Une application photo/vidéo unique qui transforme votre environnement en une scène de <b>Matrix</b> en temps réel.<br>En extrayant les silhouettes des objets, elle modélise le monde sous forme de code numérique et permet d'enregistrer ces vues stylisées.",
+    "vi": "Ứng dụng máy ảnh độc đáo biến thế giới của bạn thành một khung cảnh trong phim <b>Ma Trận (The Matrix)</b> trong thời gian thực.<br>Bằng cách trích xuất hình bóng của đồ vật, thế giới được số hóa thành dòng mã số và bạn có thể quay lại những video ấn tượng này.",
+    "th": "แอปกล้องสุดพิเศษที่แปลงภาพจากกล้องให้เป็นโลกแห่งภาพยนตร์ <b>The Matrix</b> แบบเรียลไทม์<br>แยกโครงร่างของวัตถุและแสดงผลเป็นข้อมูลดิจิทัลโค้ดสีเขียว พร้อมบันทึกภาพตรงหน้าเป็นวิดีโอสไตล์เมทริกซ์ได้ทันที",
+    "id": "Aplikasi kamera unik yang mengubah dunia Anda menjadi adegan dari <b>The Matrix</b> secara real-time.<br>Mengekstrak siluet objek dan memvisualisasikan dunia sebagai aliran kode digital, serta merekam dan menyimpan video bergaya Matrix.",
+    "ru": "Уникальная камера, превращающая окружающий мир в сцену из фильма <b>«Матрица»</b> в реальном времени.<br>Выделяя силуэты объектов, она отображает реальность в виде цифрового зеленого кода и позволяет записывать такие футуристичные видео."
   },
   "control": {
     "ko": "<ul style='padding-left: 20px;'><li><b>촬영 시작:</b> 앱 실행 후 안경의 우측을 터치(또는 엔터)하면 녹화가 시작됩니다.</li><li><b>촬영 종료:</b> 다시 한번 터치하면 촬영이 종료되고 파일이 저장됩니다.</li><li><b>파일 확인:</b> 저장된 영상은 시스템 갤러리나 기본 앱 동기화를 통해 확인할 수 있습니다.</li></ul>",
-    "en": "<ul style='padding-left: 20px;'><li><b>Start Recording:</b> Touch the right side of the glasses (or press Enter) to begin capturing.</li><li><b>End Recording:</b> Touch again to stop and save the matrix-styled video file.</li><li><b>Check Files:</b> View your saved videos in the system gallery or via the default app sync.</li></ul>"
+    "en": "<ul style='padding-left: 20px;'><li><b>Start Recording:</b> Touch the right side of the glasses (or press Enter) to begin capturing.</li><li><b>End Recording:</b> Touch again to stop and save the matrix-styled video file.</li><li><b>Check Files:</b> View your saved videos in the system gallery or via the default app sync.</li></ul>",
+    "ja": "<ul style='padding-left: 20px;'><li><b>撮影開始:</b> アプリ起動後、メガネの右側をタップ（またはEnter）すると録画が始まります。</li><li><b>撮影終了:</b> もう一度タップすると録画が終了し、ファイルが保存されます。</li><li><b>ファイル確認:</b> 保存された映像はシステムギャラリーや基本アプリ同期で確認できます。</li></ul>",
+    "zh": "<ul style='padding-left: 20px;'><li><b>开始录制:</b> 打开应用后触碰眼镜右侧镜腿（或按Enter）即可开始录制。</li><li><b>结束录制:</b> 再次轻触即可停止录制并保存视频文件。</li><li><b>查看文件:</b> 可在系统图库或默认管理应用中查看已保存的视频。</li></ul>",
+    "es": "<ul style='padding-left: 20px;'><li><b>Iniciar grabación:</b> Toca el lateral derecho de las gafas (o pulsa Enter) para comenzar.</li><li><b>Finalizar grabación:</b> Toca de nuevo para detener y guardar el archivo de vídeo.</li><li><b>Ver archivos:</b> Revisa los vídeos guardados en la galería del sistema.</li></ul>",
+    "de": "<ul style='padding-left: 20px;'><li><b>Aufnahme starten:</b> Tippen Sie auf die rechte Seite der Brille (oder Enter drücken).</li><li><b>Aufnahme beenden:</b> Erneut tippen, um das Video zu stoppen und zu speichern.</li><li><b>Dateien ansehen:</b> Videos in der Systemgalerie oder über die Begleit-App betrachten.</li></ul>",
+    "fr": "<ul style='padding-left: 20px;'><li><b>Démarrer l'enregistrement:</b> Touchez la branche droite des lunettes (ou Entrée).</li><li><b>Arrêter l'enregistrement:</b> Touchez à nouveau pour sauvegarder le fichier vidéo.</li><li><b>Consulter les fichiers:</b> Visionnez vos vidéos dans la galerie du système.</li></ul>",
+    "vi": "<ul style='padding-left: 20px;'><li><b>Bắt đầu quay:</b> Chạm vào gọng kính bên phải (hoặc nhấn Enter) để ghi hình.</li><li><b>Kết thúc quay:</b> Chạm lại một lần nữa để dừng và lưu tệp video.</li><li><b>Xem tệp:</b> Kiểm tra các video đã lưu trong thư viện hệ thống hoặc ứng dụng đồng bộ.</li></ul>",
+    "th": "<ul style='padding-left: 20px;'><li><b>เริ่มบันทึก:</b> แตะที่ขาแว่นด้านขวา (หรือกด Enter) เพื่อเริ่มบันทึกวิดีโอ</li><li><b>หยุดบันทึก:</b> แตะอีกครั้งเพื่อหยุดและบันทึกไฟล์วิดีโอ</li><li><b>ตรวจสอบไฟล์:</b> ดูวิดีโอที่บันทึกไว้ได้ในแกลเลอรีของระบบ</li></ul>",
+    "id": "<ul style='padding-left: 20px;'><li><b>Mulai Merekam:</b> Sentuh sisi kanan kacamata (atau tekan Enter) untuk mulai merekam.</li><li><b>Selesai Merekam:</b> Sentuh lagi untuk menghentikan dan menyimpan file video.</li><li><b>Lihat File:</b> Periksa video yang tersimpan di galeri sistem.</li></ul>",
+    "ru": "<ul style='padding-left: 20px;'><li><b>Начало записи:</b> Коснитесь правой дужки очков (или Enter) для старта съемки.</li><li><b>Остановка записи:</b> Коснитесь повторно для сохранения видеофайла.</li><li><b>Просмотр видео:</b> Записи доступны в системной галерее или через синхронизацию.</li></ul>"
   },
   "youtubeUrl": "https://www.youtube.com/embed/K_v9EOyFYM8",
   "youtubeType": "1",
@@ -34,6 +70,42 @@
     "en": [
       "MatrixVision",
       "Camera"
+    ],
+    "ja": [
+      "マトリックスカメラ",
+      "カメラ"
+    ],
+    "zh": [
+      "黑客帝国相机",
+      "相机"
+    ],
+    "es": [
+      "CámaraMatrix",
+      "Cámara"
+    ],
+    "de": [
+      "MatrixKamera",
+      "Kamera"
+    ],
+    "fr": [
+      "CaméraMatrix",
+      "Caméra"
+    ],
+    "vi": [
+      "CameraMatrix",
+      "MáyẢnh"
+    ],
+    "th": [
+      "กล้องเมทริกซ์",
+      "กล้อง"
+    ],
+    "id": [
+      "KameraMatrix",
+      "Kamera"
+    ],
+    "ru": [
+      "МатрицаКамера",
+      "Камера"
     ]
   }
 }

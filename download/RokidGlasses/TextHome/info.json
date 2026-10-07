@@ -1,63 +1,162 @@
 {
-    "title": {
-        "ko": "TextHome",
-        "en": "TextHome"
+  "title": {
+    "ko": "TextHome",
+    "en": "TextHome",
+    "ja": "TextHome",
+    "zh": "TextHome 极简文字桌面",
+    "es": "TextHome",
+    "de": "TextHome",
+    "fr": "TextHome",
+    "vi": "TextHome",
+    "th": "TextHome",
+    "id": "TextHome",
+    "ru": "TextHome"
+  },
+  "version": "1.1.1",
+  "releaseDate": "2026-03-30",
+  "community_yn": "Y",
+  "community_title": {
+    "ko": "여러분이 만든 배경화면 이미지를 공유하세요.",
+    "en": "Share your background images.",
+    "ja": "自作の壁紙画像を共有しましょう。",
+    "zh": "分享你精心制作的桌面壁纸图片吧！",
+    "es": "Comparte tus imágenes de fondo de pantalla creadas.",
+    "de": "Teilen Sie Ihre erstellten Hintergrundbilder mit anderen.",
+    "fr": "Partagez vos créations de fonds d'écran avec la communauté.",
+    "vi": "Hãy chia sẻ những hình nền do chính bạn tạo ra.",
+    "th": "ร่วมแบ่งปันภาพวอลเปเปอร์ที่คุณสร้างสรรค์",
+    "id": "Bagikan gambar wallpaper buatan Anda sendiri.",
+    "ru": "Поделитесь созданными вами фоновыми изображениями."
+  },
+  "shortDescription": {
+    "ko": "Text 위주의 심플한 홈 런처 앱, 배경화면, 시계, 날씨, 배터리, 텍스트 위젯을 지원합니다.",
+    "en": "Text-based simple home launcher app, supports widgets, background images, clock, weather, battery, text widgets.",
+    "ja": "テキスト主体のシンプルなホームランチャー。壁紙、時計、天気、バッテリー、テキストウィジェット対応",
+    "zh": "文字风极简桌面，支持壁纸、时钟、天气、电池与文字小组件",
+    "es": "Lanzador simple basado en texto: fondos, reloj, clima, batería y widgets de texto",
+    "de": "Textbasierter Launcher mit Widgets für Hintergrund, Uhr, Wetter, Akku und Notizen",
+    "fr": "Lanceur minimaliste textuel avec widgets fond d'écran, horloge, météo et batterie",
+    "vi": "Trình khởi chạy tối giản dạng chữ, hỗ trợ hình nền, đồng hồ, thời tiết, pin và widget",
+    "th": "แอปหน้าจอหลักสไตล์ตัวอักษร รองรับวิดเจ็ต วอลเปเปอร์ นาฬิกา สภาพอากาศ แบตเตอรี่",
+    "id": "Peluncur beranda berbasis teks sederhana, mendukung widget, wallpaper, jam, cuaca, baterai",
+    "ru": "Текстовый минималистичный лаунчер: обои, часы, погода, батарея и текстовые виджеты"
+  },
+  "description": {
+    "ko": "로키드 글래스를 위한 <b>미니멀리즘 런처 앱</b>입니다.<br>기본 시스템 UI의 복잡함을 걷어내고, 최근 사용한 앱을 가장 쉽고 빠르게 실행할 수 있도록 설계되었습니다. 기본 터치를 통해 위젯을 바탕화면에 추가할수 있습니다.<b>\"사용은 터치로, 위젯의 상세 설정은 마우스로\"</b>라는 원칙 아래 최적의 사용자 경험을 제공합니다.",
+    "en": "A <b>minimalist launcher app</b> designed for Rokid Glasses.<br>Stripping away the complexity of the default system UI, it focuses on providing the fastest access to your most-used apps. You can add widgets to the home screen with basic touch. Built on the principle of <b>\"Use with touch, set with mouse.\"</b>",
+    "ja": "Rokid Glassesのための<b>ミニマリズムランチャーアプリ</b>です。<br>標準システムUIの複雑さを排除し、最近使ったアプリを最速で起動できるように設計されています。タッチ操作でウィジェットをホーム画面に追加可能。<b>「普段はタッチで操作し、ウィジェットの詳細はマウスで」</b>という理想的な体験を提供します。",
+    "zh": "专为Rokid Glasses打造的<b>文字极简桌面启动器</b>。<br>告别系统默认UI的复杂繁琐，以极速方式启动最近使用的应用。轻触即可添加各类桌面小组件。坚持<b>「日常操作靠触控，组件细节配鼠标」</b>的高效原则。",
+    "es": "Un <b>lanzador minimalista</b> diseñado para Rokid Glasses.<br>Elimina la complejidad para ofrecer el acceso más veloz a las aplicaciones recientes. Añade widgets a la pantalla de inicio con toques básicos. Basado en: <b>'Úsalo con toques, ajusta widgets con ratón'</b>.",
+    "de": "Ein <b>minimalistischer Launcher</b> für Rokid Glasses.<br>Befreit von der Komplexität des Systems für blitzschnellen Zugriff auf zuletzt genutzte Apps. Widgets lassen sich per Berührung hinzufügen. Prinzip: <b>'Bedienen per Touch, Widgets einrichten per Maus'</b>.",
+    "fr": "Un <b>lanceur minimaliste</b> conçu pour les lunettes Rokid Glasses.<br>Conçu pour lancer vos applications récentes à la vitesse de l'éclair. Ajoutez des widgets par simple toucher. Principe : <b>'Utilisation au toucher, réglages précis à la souris'</b>.",
+    "vi": "<b>Trình khởi chạy tối giản</b> dạng văn bản dành cho Rokid Glasses.<br>Loại bỏ sự phức tạp của hệ thống, giúp bạn mở các ứng dụng vừa dùng nhanh nhất. Thêm tiện ích vào màn hình bằng thao tác chạm cơ bản. Nguyên tắc: <b>'Thao tác bằng chạm, chỉnh widget bằng chuột'</b>.",
+    "th": "<b>แอปตัวเปิดสไตล์มินิมอลแบบข้อความ</b>สำหรับ Rokid Glasses<br>ลดความซับซ้อนของระบบ เพื่อเปิดแอปที่เพิ่งใช้งานได้อย่างรวดเร็ว เพิ่มวิดเจ็ตได้ด้วยการแตะพื้นฐาน บนหลักการ: <b>'ใช้งานด้วยการสัมผัส ตั้งค่าวิดเจ็ตด้วยเมาส์'</b>",
+    "id": "<b>Peluncur minimalis</b> berbasis teks untuk Rokid Glasses.<br>Menghilangkan kerumitan UI default untuk akses instan ke aplikasi terbaru. Tambahkan widget dengan sentuhan dasar. Prinsip: <b>'Gunakan dengan sentuhan, atur widget dengan mouse'</b>.",
+    "ru": "<b>Текстовый минималистичный лаунчер</b> для очков Rokid Glasses.<br>Устраняет визуальный шум для быстрого запуска последних приложений. Добавляйте виджеты простым касанием. Принцип: <b>«Управление касанием, точная настройка виджетов мышью»</b>."
+  },
+  "control": {
+    "ko": "<ul style='padding-left: 20px;'><li><b>즐겨찾기:</b> 최근 사용한 앱이 자동으로 즐겨찾기에 등록됩니다.</li><li><b>설정 모드:</b> 위젯을 보이거나 안보이게 하는 건 메뉴에서 설정이 가능합니다. 블루투스 마우스를 연결하여 위젯을 세부 편집할 수 있습니다.</li><li><b>위젯 관리:</b> 위젯을 드래그하여 위치를 조정하세요.</li></ul>",
+    "en": "<ul style='padding-left: 20px;'><li><b>Favorites:</b> Recently used apps are automatically added to favorites.</li><li><b>Setup Mode:</b> Connect a Bluetooth mouse to detailedly edit favorites and widgets.</li><li><b>Widget Management:</b> Drag widgets to adjust their positions.</li></ul>",
+    "ja": "<ul style='padding-left: 20px;'><li><b>お気に入り:</b> 最近使ったアプリが自動的にお気に入りに登録されます。</li><li><b>設定モード:</b> メニューからウィジェットの表示/非表示を切り替え可能。Bluetoothマウスで詳細設定できます。</li><li><b>ウィジェット管理:</b> ドラッグしてウィジェットの位置を調整します。</li></ul>",
+    "zh": "<ul style='padding-left: 20px;'><li><b>自动收藏:</b> 最近使用的应用将自动加入桌面快捷收藏。</li><li><b>设置模式:</b> 在菜单中可自由开启或隐藏小组件，连接蓝牙鼠标可进行精细化调整。</li><li><b>组件排版:</b> 拖拽小组件即可调整排列位置。</li></ul>",
+    "es": "<ul style='padding-left: 20px;'><li><b>Favoritos:</b> Las aplicaciones recientes se registran automáticamente en favoritos.</li><li><b>Configuración:</b> Muestra u oculta widgets desde el menú. Conecta un ratón Bluetooth para ajustes detallados.</li><li><b>Gestión de widgets:</b> Arrastra los widgets para ubicarlos en la posición que desees.</li></ul>",
+    "de": "<ul style='padding-left: 20px;'><li><b>Favoriten:</b> Zuletzt verwendete Apps werden automatisch zu den Favoriten hinzugefügt.</li><li><b>Einstellungen:</b> Widgets über das Menü ein-/ausblenden. Bluetooth-Maus für Feineinstellungen anschließen.</li><li><b>Widgets anordnen:</b> Ziehen Sie Widgets an die gewünschte Position.</li></ul>",
+    "fr": "<ul style='padding-left: 20px;'><li><b>Favoris:</b> Vos applications récentes s'ajoutent automatiquement aux favoris.</li><li><b>Mode réglages:</b> Affichez ou masquez les widgets dans le menu. Branchez une souris Bluetooth pour configurer en détail.</li><li><b>Disposition:</b> Faites glisser les widgets pour les réorganiser.</li></ul>",
+    "vi": "<ul style='padding-left: 20px;'><li><b>Yêu thích:</b> Ứng dụng vừa dùng sẽ tự động được thêm vào mục yêu thích.</li><li><b>Cài đặt:</b> Bật/tắt widget trong menu. Kết nối chuột Bluetooth để cấu hình chi tiết.</li><li><b>Sắp xếp:</b> Kéo thả widget để điều chỉnh vị trí theo ý muốn.</li></ul>",
+    "th": "<ul style='padding-left: 20px;'><li><b>รายการโปรด:</b> แอปที่เพิ่งใช้จะถูกเพิ่มเข้าในรายการโปรดโดยอัตโนมัติ</li><li><b>โหมดตั้งค่า:</b> เปิดหรือซ่อนวิดเจ็ตได้ในเมนู เชื่อมต่อเมาส์บลูทูธเพื่อปรับแต่งโดยละเอียด</li><li><b>จัดการวิดเจ็ต:</b> ลากวิดเจ็ตเพื่อปรับตำแหน่งตามต้องการ</li></ul>",
+    "id": "<ul style='padding-left: 20px;'><li><b>Favorit:</b> Aplikasi yang baru saja digunakan otomatis masuk ke daftar favorit.</li><li><b>Pengaturan:</b> Tampilkan atau sembunyikan widget dari menu. Hubungkan mouse Bluetooth untuk pengaturan rinci.</li><li><b>Kelola Widget:</b> Seret widget untuk menyesuaikan posisinya.</li></ul>",
+    "ru": "<ul style='padding-left: 20px;'><li><b>Избранное:</b> Недавние приложения автоматически добавляются в избранное.</li><li><b>Настройки:</b> Включение/выключение виджетов в меню. Подключите мышь Bluetooth для точной настройки.</li><li><b>Управление:</b> Перетаскивайте виджеты для смены их расположения.</li></ul>"
+  },
+  "youtubeUrl": "https://www.youtube.com/embed/Tj_MFsTgbjw",
+  "youtubeType": "1",
+  "updated": [
+    {
+      "version": "1.1.1",
+      "releaseDate": "2026-04-09",
+      "ko": "APPS 메뉴에 번역, 프롬프터, 네비게이션 메뉴가 빠져서 추가했습니다. ",
+      "en": "Added Translator, Prompter, and Navigation menus to the APPS menu.",
+      "ja": "APPSメニューに翻訳、プロンプター、ナビゲーションメニューを追加しました。",
+      "zh": "在APPS菜单中补充了翻译、提词器、导航等快捷入口。",
+      "es": "Añadidos accesos directos a Traductor, Teleprompter y Navegación en el menú APPS.",
+      "de": "Menüs für Übersetzer, Teleprompter und Navigation zum APPS-Menü hinzugefügt.",
+      "fr": "Ajout des raccourcis Traducteur, Prompteur et Navigation dans le menu APPS.",
+      "vi": "Đã thêm menu Dịch thuật, Máy nhắc chữ và Dẫn đường vào menu APPS.",
+      "th": "เพิ่มเมนูแปลภาษา เทเลพรอมพเตอร์ และการนำทางลงในเมนู APPS",
+      "id": "Menambahkan menu Penerjemah, Prompter, dan Navigasi ke menu APPS.",
+      "ru": "В меню APPS добавлены переводчик, суфлер и навигация."
     },
-    "version": "1.1.1",
-    "releaseDate": "2026-03-30",
-    "community_yn": "Y",
-    "community_title": {
-        "ko": "여러분이 만든 배경화면 이미지를 공유하세요.",
-        "en": "Share your background images."
-    },
-    "shortDescription": {
-        "ko": "Text 위주의 심플한 홈 런처 앱, 배경화면, 시계, 날씨, 배터리, 텍스트 위젯을 지원합니다.",
-        "en": "Text-based simple home launcher app, supports widgets, background images, clock, weather, battery, text widgets."
-    },
-    "description": {
-        "ko": "로키드 글래스를 위한 <b>미니멀리즘 런처 앱</b>입니다.<br>기본 시스템 UI의 복잡함을 걷어내고, 최근 사용한 앱을 가장 쉽고 빠르게 실행할 수 있도록 설계되었습니다. 기본 터치를 통해 위젯을 바탕화면에 추가할수 있습니다.<b>\"사용은 터치로, 위젯의 상세 설정은 마우스로\"</b>라는 원칙 아래 최적의 사용자 경험을 제공합니다.",
-        "en": "A <b>minimalist launcher app</b> designed for Rokid Glasses.<br>Stripping away the complexity of the default system UI, it focuses on providing the fastest access to your most-used apps. You can add widgets to the home screen with basic touch. Built on the principle of <b>\"Use with touch, set with mouse.\"</b>"
-    },
-    "control": {
-        "ko": "<ul style='padding-left: 20px;'><li><b>즐겨찾기:</b> 최근 사용한 앱이 자동으로 즐겨찾기에 등록됩니다.</li><li><b>설정 모드:</b> 위젯을 보이거나 안보이게 하는 건 메뉴에서 설정이 가능합니다. 블루투스 마우스를 연결하여 위젯을 세부 편집할 수 있습니다.</li><li><b>위젯 관리:</b> 위젯을 드래그하여 위치를 조정하세요.</li></ul>",
-        "en": "<ul style='padding-left: 20px;'><li><b>Favorites:</b> Recently used apps are automatically added to favorites.</li><li><b>Setup Mode:</b> Connect a Bluetooth mouse to detailedly edit favorites and widgets.</li><li><b>Widget Management:</b> Drag widgets to adjust their positions.</li></ul>"
-    },
-    "youtubeUrl": "https://www.youtube.com/embed/Tj_MFsTgbjw",
-    "youtubeType": "1",
-    "updated": [
-        {
-            "version": "1.1.1",
-            "releaseDate": "2026-04-09",
-            "ko": "APPS 메뉴에 번역, 프롬프터, 네비게이션 메뉴가 빠져서 추가했습니다. ",
-            "en": "Added Translator, Prompter, and Navigation menus to the APPS menu."
-        },
-        {
-            "version": "1.1.0",
-            "releaseDate": "2026-03-31",
-            "ko": "더블 터치시에 서브 메뉴 닫기 추가, 배경 이미지 설정 기능 추가 : 배경 이미지를 설정할 수 있습니다. web install 메뉴에서 로키드 글래스를 연결한 후에 TextHome 배경 이미지 업로드 버튼으로 이미지를 업로드 할 수 있습니다. 배경 이미지의 사이즈는 398 x 480 에 jpg 형식 입니다.",
-            "en": "Add double tap to close sub menu, add background image setting function: You can set the background image. After connecting the Rokid Glasses in the web install menu, you can upload the image with the TextHome background image upload button. The size of the background image is 398 x 480 in jpg format."
-        }
-    ],
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TextHome_v1.1.1.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TextHome_v1.1.0.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TextHome_v1.0.0.apk"
-    ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TextHome/scr1.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TextHome/scr2.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TextHome/scr3.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TextHome/scr4.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TextHome/scr5.jpg"
-    ],
-    "tags": {
-        "ko": [
-            "홈",
-            "런처"
-        ],
-        "en": [
-            "Home",
-            "Launcher"
-        ]
+    {
+      "version": "1.1.0",
+      "releaseDate": "2026-03-31",
+      "ko": "더블 터치시에 서브 메뉴 닫기 추가, 배경 이미지 설정 기능 추가 : 배경 이미지를 설정할 수 있습니다. web install 메뉴에서 로키드 글래스를 연결한 후에 TextHome 배경 이미지 업로드 버튼으로 이미지를 업로드 할 수 있습니다. 배경 이미지의 사이즈는 398 x 480 에 jpg 형식 입니다.",
+      "en": "Add double tap to close sub menu, add background image setting function: You can set the background image. After connecting the Rokid Glasses in the web install menu, you can upload the image with the TextHome background image upload button. The size of the background image is 398 x 480 in jpg format.",
+      "ja": "ダブルタップでサブメニューを閉じる機能を追加。背景画像の設定機能を追加（Web Installメニュー経由で398x480のjpg画像をアップロード可能）。",
+      "zh": "新增双击关闭子菜单功能；支持自定义壁纸（可在Web Install菜单中连接眼镜并上传398x480的jpg图片）。",
+      "es": "Doble toque para cerrar submenús. Carga de fondos de pantalla personalizada (jpg 398x480 mediante Web Install).",
+      "de": "Doppeltippen zum Schließen von Untermenüs hinzugefügt. Hintergrundbilder einstellbar (398x480 JPG über Web Install).",
+      "fr": "Double-toucher pour fermer les sous-menus. Possibilité de définir un fond d'écran personnalisé (398x480 jpg via Web Install).",
+      "vi": "Thêm chạm đúp để đóng menu con, tính năng cài hình nền (tải ảnh JPG 398x480 qua Web Install).",
+      "th": "เพิ่มการแตะสองครั้งเพื่อปิดเมนูย่อย และฟังก์ชันตั้งค่าวอลเปเปอร์ (อัปโหลดภาพ jpg 398x480 ผ่าน Web Install)",
+      "id": "Ketuk dua kali untuk menutup submenu, fitur wallpaper kustom (unggah jpg 398x480 lewat Web Install).",
+      "ru": "Двойное касание закрывает подменю. Добавлена смена обоев (загрузка JPG 398x480 через меню Web Install)."
     }
+  ],
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TextHome_v1.1.1.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TextHome_v1.1.0.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TextHome_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TextHome/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TextHome/scr2.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TextHome/scr3.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TextHome/scr4.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TextHome/scr5.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "홈",
+      "런처"
+    ],
+    "en": [
+      "Home",
+      "Launcher"
+    ],
+    "ja": [
+      "ホーム",
+      "ランチャー"
+    ],
+    "zh": [
+      "桌面",
+      "启动器"
+    ],
+    "es": [
+      "Inicio",
+      "Lanzador"
+    ],
+    "de": [
+      "Home",
+      "Launcher"
+    ],
+    "fr": [
+      "Accueil",
+      "Lanceur"
+    ],
+    "vi": [
+      "MànHìnhChính",
+      "KhởiChạy"
+    ],
+    "th": [
+      "หน้าจอหลัก",
+      "ลันเชอร์"
+    ],
+    "id": [
+      "Beranda",
+      "Peluncur"
+    ],
+    "ru": [
+      "ГлавныйЭкран",
+      "Лаунчер"
+    ]
+  }
 }

@@ -1,56 +1,146 @@
 {
-    "title": {
-        "ko": "EKHome",
-        "en": "EKHome"
+  "title": {
+    "ko": "EKHome",
+    "en": "EKHome",
+    "ja": "EKHome",
+    "zh": "EKHome 极简启动器",
+    "es": "EKHome",
+    "de": "EKHome",
+    "fr": "EKHome",
+    "vi": "EKHome",
+    "th": "EKHome",
+    "id": "EKHome",
+    "ru": "EKHome"
+  },
+  "version": "1.2.0",
+  "releaseDate": "2026-03-17",
+  "shortDescription": {
+    "ko": "나만의 홈 런처 앱을 사용하세요",
+    "en": "Use your own home launcher app.",
+    "ja": "あなた専用のカスタムホームランチャーアプリ",
+    "zh": "打造专属于你的极简主屏幕启动器",
+    "es": "Usa tu propio lanzador de pantalla de inicio personalizado",
+    "de": "Nutzen Sie Ihren eigenen personalisierten Home-Launcher",
+    "fr": "Utilisez votre propre lanceur d'écran d'accueil épuré",
+    "vi": "Sử dụng trình khởi chạy màn hình chính tùy chỉnh của riêng bạn",
+    "th": "ใช้งานแอปตัวเปิดหน้าจอหลักในแบบของคุณเอง",
+    "id": "Gunakan peluncur layar beranda kustom Anda sendiri",
+    "ru": "Минималистичный домашний лаунчер для Rokid Glasses"
+  },
+  "description": {
+    "ko": "로키드 글래스를 위한 <b>미니멀리즘 런처 앱</b>입니다.<br>기본 시스템 UI의 복잡함을 걷어내고, 자주 사용하는 앱 5~6개를 가장 쉽고 빠르게 실행할 수 있도록 설계되었습니다. <b>\"사용은 터치로, 설정은 마우스로\"</b>라는 원칙 아래 최적의 사용자 경험을 제공합니다.",
+    "en": "A <b>minimalist launcher app</b> designed for Rokid Glasses.<br>Stripping away the complexity of the default system UI, it focuses on providing the fastest access to your 5-6 most-used apps. Built on the principle of <b>\"Use with touch, set with mouse.\"</b>",
+    "ja": "Rokid Glassesのための<b>ミニマリズムランチャーアプリ</b>です。<br>標準システムUIの複雑さを排除し、よく使う5〜6個のアプリを最も素早く起動できるように設計されました。<b>「普段はタッチで操作し、設定はマウスで」</b>というコンセプトに基づいています。",
+    "zh": "专为Rokid Glasses打造的<b>极简桌面启动器</b>。<br>剔除系统默认UI的繁琐层级，旨在以最快速度开启最常用的5~6款核心应用。秉持<b>「日常操作靠触控，高级配置靠鼠标」</b>的设计哲学。",
+    "es": "Un <b>lanzador minimalista</b> diseñado especialmente para las gafas Rokid Glasses.<br>Elimina la complejidad de la interfaz estándar para ofrecer un acceso ultra rápido a tus 5 o 6 aplicaciones más utilizadas. Basado en el principio: <b>'Úsalo con toques, configúralo con ratón'</b>.",
+    "de": "Ein <b>minimalistischer Launcher</b> für Rokid Glasses.<br>Befreit von der Komplexität des Standard-Systems und bietet blitzschnellen Zugriff auf die 5-6 meistgenutzten Apps. Entwickelt nach dem Prinzip: <b>'Bedienen per Touch, Einstellen per Maus'</b>.",
+    "fr": "Un <b>lanceur minimaliste</b> conçu pour les lunettes Rokid Glasses.<br>Élimine la complexité de l'interface système par défaut pour offrir un accès ultra-rapide à vos 5-6 applications préférées. Conçu selon la règle : <b>'Utiliser au toucher, configurer à la souris'</b>.",
+    "vi": "<b>Trình khởi chạy tối giản</b> dành cho kính Rokid Glasses.<br>Loại bỏ sự phức tạp của giao diện mặc định, tập trung vào việc mở nhanh nhất 5-6 ứng dụng thường dùng. Xây dựng dựa trên nguyên tắc: <b>'Thao tác bằng chạm, cài đặt bằng chuột'</b>.",
+    "th": "<b>แอปตัวเปิดสไตล์มินิมอล</b>สำหรับ Rokid Glasses<br>ตัดความซับซ้อนของ UI ระบบเดิมออก และช่วยให้เข้าถึงแอปที่ใช้งานบ่อย 5-6 แอปได้อย่างรวดเร็วที่สุด ออกแบบบนหลักการ: <b>'ใช้งานด้วยการสัมผัส ตั้งค่าด้วยเมาส์'</b>",
+    "id": "<b>Peluncur minimalis</b> yang dirancang untuk kacamata Rokid Glasses.<br>Menghilangkan kerumitan antarmuka default untuk menyediakan akses tercepat ke 5-6 aplikasi yang sering digunakan. Dirancang dengan prinsip: <b>'Gunakan dengan sentuhan, atur dengan mouse'</b>.",
+    "ru": "<b>Минималистичный лаунчер</b> для очков Rokid Glasses.<br>Устраняет визуальный шум стандартного интерфейса и обеспечивает мгновенный доступ к 5–6 самым важным приложениям. Создан по принципу: <b>«Управление касанием, настройка мышью»</b>."
+  },
+  "control": {
+    "ko": "<ul style='padding-left: 20px;'><li><b>즐겨찾기:</b> 앱 서랍 아이콘을 터치하여 자주 쓰는 앱을 등록하세요.</li><li><b>설정 모드:</b> 블루투스 마우스를 연결하여 즐겨찾기와 위젯을 세부 편집할 수 있습니다.</li><li><b>위젯 관리:</b> 우측 상단 톱니바퀴 아이콘을 클릭해 원하는 위젯을 활성화하고 드래그하여 위치를 조정하세요.</li></ul>",
+    "en": "<ul style='padding-left: 20px;'><li><b>Favorites:</b> Touch the app drawer icon to add your frequently used apps.</li><li><b>Setup Mode:</b> Connect a Bluetooth mouse to detailedly edit favorites and widgets.</li><li><b>Widget Management:</b> Click the gear icon at the top right to activate widgets and drag them to your preferred positions.</li></ul>",
+    "ja": "<ul style='padding-left: 20px;'><li><b>お気に入り:</b> アプリドロワーアイコンをタッチしてよく使うアプリを登録します。</li><li><b>設定モード:</b> Bluetoothマウスを接続して、お気に入りやウィジェットを詳細に編集できます。</li><li><b>ウィジェット管理:</b> 右上の歯車アイコンをクリックしてウィジェットを有効化し、ドラッグで配置を調整します。</li></ul>",
+    "zh": "<ul style='padding-left: 20px;'><li><b>收藏夹:</b> 点击应用抽屉图标添加常用应用。</li><li><b>设置模式:</b> 连接蓝牙鼠标可深入编辑收藏夹与小组件。</li><li><b>小组件管理:</b> 点击右上角齿轮图标开启组件并拖拽调整位置。</li></ul>",
+    "es": "<ul style='padding-left: 20px;'><li><b>Favoritos:</b> Toca el icono de aplicaciones para añadir tus apps frecuentes.</li><li><b>Modo configuración:</b> Conecta un ratón Bluetooth para editar widgets y favoritos.</li><li><b>Gestión de widgets:</b> Pulsa el engranaje superior derecho para activar widgets y arrástralos.</li></ul>",
+    "de": "<ul style='padding-left: 20px;'><li><b>Favoriten:</b> App-Drawer antippen, um häufig genutzte Apps hinzuzufügen.</li><li><b>Einstellungsmodus:</b> Bluetooth-Maus verbinden für detaillierte Anpassungen von Widgets.</li><li><b>Widgets verwalten:</b> Zahnradsymbol oben rechts antippen, Widgets aktivieren und anordnen.</li></ul>",
+    "fr": "<ul style='padding-left: 20px;'><li><b>Favoris:</b> Touchez l'icône du tiroir d'applications pour épingler vos favoris.</li><li><b>Configuration:</b> Connectez une souris Bluetooth pour organiser widgets et raccourcis.</li><li><b>Gestion des widgets:</b> Cliquez sur la roue dentée en haut à droite pour activer et déplacer les widgets.</li></ul>",
+    "vi": "<ul style='padding-left: 20px;'><li><b>Yêu thích:</b> Chạm vào biểu tượng ngăn ứng dụng để thêm các ứng dụng hay dùng.</li><li><b>Cài đặt:</b> Kết nối chuột Bluetooth để chỉnh sửa chi tiết các tiện ích và ứng dụng.</li><li><b>Quản lý Widget:</b> Nhấn vào biểu tượng bánh răng góc trên bên phải để bật widget và kéo thả vị trí.</li></ul>",
+    "th": "<ul style='padding-left: 20px;'><li><b>รายการโปรด:</b> แตะไอคอนรวมแอปเพื่อเพิ่มแอปที่ใช้งานบ่อย</li><li><b>โหมดตั้งค่า:</b> เชื่อมต่อเมาส์บลูทูธเพื่อปรับแต่งรายการโปรดและวิดเจ็ตโดยละเอียด</li><li><b>จัดการวิดเจ็ต:</b> คลิกไอคอนฟันเฟืองที่มุมขวาบนเพื่อเปิดใช้งานวิดเจ็ตและลากปรับตำแหน่ง</li></ul>",
+    "id": "<ul style='padding-left: 20px;'><li><b>Favorit:</b> Ketuk ikon laci aplikasi untuk menambahkan aplikasi favorit.</li><li><b>Mode Pengaturan:</b> Hubungkan mouse Bluetooth untuk mengedit widget dan favorit secara detail.</li><li><b>Kelola Widget:</b> Klik ikon roda gigi di kanan atas untuk mengaktifkan dan menggeser widget.</li></ul>",
+    "ru": "<ul style='padding-left: 20px;'><li><b>Избранное:</b> Коснитесь иконки меню приложений для добавления любимых программ.</li><li><b>Режим настроек:</b> Подключите мышь Bluetooth для детальной настройки виджетов.</li><li><b>Управление виджетами:</b> Нажмите шестеренку в правом верхнем углу для включения и перемещения виджетов.</li></ul>"
+  },
+  "youtubeUrl": "https://www.youtube.com/embed/xMqShntBlKs",
+  "youtubeType": "1",
+  "updated": [
+    {
+      "version": "1.2.0",
+      "releaseDate": "2026-03-19",
+      "ko": "앱바에 와이파이 설정 버튼 추가, 나가기 버튼 삭제, 설정 버튼 열고 닫기 기능 추가",
+      "en": "Add wifi settings button to app bar, remove exit button, add function to open and close settings button.",
+      "ja": "アプリバーにWi-Fi設定ボタンを追加、終了ボタンを削除、設定ボタンの開閉機能を追加。",
+      "zh": "应用栏新增Wi-Fi快捷设置按钮，移除退出按钮，优化设置菜单展开/收起。",
+      "es": "Botón de ajustes Wi-Fi añadido a la barra de apps, eliminado el botón de salir, añadida apertura/cierre de ajustes.",
+      "de": "WLAN-Button zur App-Leiste hinzugefügt, Beenden-Button entfernt, Einstellungen auf-/zuklappen ergänzt.",
+      "fr": "Bouton Wi-Fi ajouté à la barre d'applications, suppression du bouton quitter, ouverture/fermeture des paramètres.",
+      "vi": "Thêm nút cài đặt Wi-Fi vào thanh ứng dụng, xóa nút thoát, thêm tính năng đóng/mở cài đặt.",
+      "th": "เพิ่มปุ่มตั้งค่า Wi-Fi ในแถบแอป ลบปุ่มออก และเพิ่มฟังก์ชันเปิด-ปิดปุ่มการตั้งค่า",
+      "id": "Menambahkan tombol pengaturan Wi-Fi ke bilah aplikasi, menghapus tombol keluar, menambah buka/tutup pengaturan.",
+      "ru": "Кнопка настроек Wi-Fi добавлена на панель, удалена кнопка выхода, добавлено сворачивание настроек."
     },
-    "version": "1.2.0",
-    "releaseDate": "2026-03-17",
-    "shortDescription": {
-        "ko": "나만의 홈 런처 앱을 사용하세요",
-        "en": "Use your own home launcher app."
-    },
-    "description": {
-        "ko": "로키드 글래스를 위한 <b>미니멀리즘 런처 앱</b>입니다.<br>기본 시스템 UI의 복잡함을 걷어내고, 자주 사용하는 앱 5~6개를 가장 쉽고 빠르게 실행할 수 있도록 설계되었습니다. <b>\"사용은 터치로, 설정은 마우스로\"</b>라는 원칙 아래 최적의 사용자 경험을 제공합니다.",
-        "en": "A <b>minimalist launcher app</b> designed for Rokid Glasses.<br>Stripping away the complexity of the default system UI, it focuses on providing the fastest access to your 5-6 most-used apps. Built on the principle of <b>\"Use with touch, set with mouse.\"</b>"
-    },
-    "control": {
-        "ko": "<ul style='padding-left: 20px;'><li><b>즐겨찾기:</b> 앱 서랍 아이콘을 터치하여 자주 쓰는 앱을 등록하세요.</li><li><b>설정 모드:</b> 블루투스 마우스를 연결하여 즐겨찾기와 위젯을 세부 편집할 수 있습니다.</li><li><b>위젯 관리:</b> 우측 상단 톱니바퀴 아이콘을 클릭해 원하는 위젯을 활성화하고 드래그하여 위치를 조정하세요.</li></ul>",
-        "en": "<ul style='padding-left: 20px;'><li><b>Favorites:</b> Touch the app drawer icon to add your frequently used apps.</li><li><b>Setup Mode:</b> Connect a Bluetooth mouse to detailedly edit favorites and widgets.</li><li><b>Widget Management:</b> Click the gear icon at the top right to activate widgets and drag them to your preferred positions.</li></ul>"
-    },
-    "youtubeUrl": "https://www.youtube.com/embed/xMqShntBlKs",
-    "youtubeType": "1",
-    "updated": [
-        {
-            "version": "1.2.0",
-            "releaseDate": "2026-03-19",
-            "ko": "앱바에 와이파이 설정 버튼 추가, 나가기 버튼 삭제, 설정 버튼 열고 닫기 기능 추가",
-            "en": "Add wifi settings button to app bar, remove exit button, add function to open and close settings button."
-        },
-        {
-            "version": "1.1.0",
-            "releaseDate": "2026-03-18",
-            "ko": "밝기조절, 음량조절, 번역, 프롬프트, 네비게이션과 같은 시스템 앱의 바로가기가 추가되었습니다. 음량 조절의 경우는 직접 구현하였습니다. 음량 조절 후 가만히 있으면 3초후 창이 닫힙니다. 다만 시스템 앱을 종료하면 시스템 홈으로 돌아가는 문제는 존재합니다.",
-            "en": "Shortcuts for system apps have been added. Brightness control, volume control, translation, prompt, navigation. The volume control is implemented directly. If you leave it alone after adjusting the volume, the window will close in 3 seconds. However, the issue of returning to the system home when the system app is closed still exists."
-        }
-    ],
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKHome_v1.2.0.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKHome_v1.1.0.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKHome_v1.0.0.apk"
-    ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKHome/scr1.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKHome/scr2.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKHome/scr3.jpg"
-    ],
-    "tags": {
-        "ko": [
-            "홈",
-            "런처"
-        ],
-        "en": [
-            "Home",
-            "Launcher"
-        ]
+    {
+      "version": "1.1.0",
+      "releaseDate": "2026-03-18",
+      "ko": "밝기조절, 음량조절, 번역, 프롬프트, 네비게이션과 같은 시스템 앱의 바로가기가 추가되었습니다. 음량 조절의 경우는 직접 구현하였습니다. 음량 조절 후 가만히 있으면 3초후 창이 닫힙니다. 다만 시스템 앱을 종료하면 시스템 홈으로 돌아가는 문제는 존재합니다.",
+      "en": "Shortcuts for system apps have been added. Brightness control, volume control, translation, prompt, navigation. The volume control is implemented directly. If you leave it alone after adjusting the volume, the window will close in 3 seconds. However, the issue of returning to the system home when the system app is closed still exists.",
+      "ja": "明るさ・音量調整、翻訳、プロンプト、ナビなどのシステムショートカットを追加。音量調整は独自実装（無操作3秒で自動クローズ）。",
+      "zh": "新增亮度调节、音量控制、翻译、提词器、导航等系统应用快捷方式。音量控制自主优化，无操作3秒后自动关闭。",
+      "es": "Añadidos accesos directos del sistema (brillo, volumen, traducción, teleprompter, navegación). Control de volumen personalizado.",
+      "de": "System-Verknüpfungen ergänzt (Helligkeit, Lautstärke, Übersetzung, Teleprompter, Navigation). Lautstärkeregelung schließt nach 3s automatisch.",
+      "fr": "Raccourcis système ajoutés (luminosité, volume, traduction, prompteur, navigation). Commande de volume avec fermeture auto après 3s.",
+      "vi": "Đã thêm các phím tắt hệ thống (độ sáng, âm lượng, dịch, máy nhắc chữ, dẫn đường). Tự đóng cửa sổ âm lượng sau 3 giây.",
+      "th": "เพิ่มทางลัดแอปของระบบ เช่น ปรับความสว่าง ควบคุมระดับเสียง แปลภาษา ปรับเสียงจะปิดอัตโนมัติใน 3 วินาที",
+      "id": "Menambahkan pintasan aplikasi sistem (kecerahan, volume, terjemahan, prompter, navigasi). Kontrol volume menutup otomatis dalam 3 detik.",
+      "ru": "Добавлены ярлыки системных функций: яркость, звук, перевод, суфлер, навигация. Окно громкости закрывается через 3 сек."
     }
+  ],
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKHome_v1.2.0.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKHome_v1.1.0.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKHome_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKHome/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKHome/scr2.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKHome/scr3.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "홈",
+      "런처"
+    ],
+    "en": [
+      "Home",
+      "Launcher"
+    ],
+    "ja": [
+      "ホーム",
+      "ランチャー"
+    ],
+    "zh": [
+      "桌面",
+      "启动器"
+    ],
+    "es": [
+      "Inicio",
+      "Lanzador"
+    ],
+    "de": [
+      "Home",
+      "Launcher"
+    ],
+    "fr": [
+      "Accueil",
+      "Lanceur"
+    ],
+    "vi": [
+      "MànHìnhChính",
+      "KhởiChạy"
+    ],
+    "th": [
+      "หน้าจอหลัก",
+      "ลันเชอร์"
+    ],
+    "id": [
+      "Beranda",
+      "Peluncur"
+    ],
+    "ru": [
+      "ГлавныйЭкран",
+      "Лаунчер"
+    ]
+  }
 }

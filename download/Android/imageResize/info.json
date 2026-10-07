@@ -1,39 +1,111 @@
 {
-    "title": {
-        "ko": "이미지 리사이즈",
-        "en": "Image Resize"
-    },
-    "version": "1.0.0",
-    "releaseDate": "2026-03-17",
-    "shortDescription": {
-        "ko": "이미지의 가로,세로를 원하는 픽셀 크기로 저장",
-        "en": "Resize image to desired pixel size"
-    },
-    "description": {
-        "ko": "한 번의 조작으로 이미지를 <b>원하는 가로/세로 픽셀 크기</b>로 간편하게 조절할 수 있는 리사이즈 도구입니다.",
-        "en": "A handy tool that allows you to <b>easily resize images to your desired pixel dimensions</b> with a single operation."
-    },
-    "control": {
-        "ko": "<ol style='padding-left: 20px;'><li><b>이미지 불러오기:</b> 리사이즈할 이미지를 선택합니다.</li><li><b>사이즈 입력:</b> 원하는 가로, 세로 픽셀 값을 입력합니다.</li><li><b>저장하기:</b> 리사이즈된 이미지를 기기에 저장합니다.</li></ol>",
-        "en": "<ol style='padding-left: 20px;'><li><b>Load Image:</b> Select the image to resize.</li><li><b>Set Dimensions:</b> Enter the desired width and height values in pixels.</li><li><b>Save:</b> Save the resized image to your device.</li></ol>"
-    },
-    "youtubeUrl": "",
-    "youtubeType": "1",
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/ImageResize-V1.0.0.apk"
+  "title": {
+    "ko": "이미지 리사이즈",
+    "en": "Image Resize",
+    "ja": "画像リサイズ",
+    "zh": "图片调整大小",
+    "es": "Redimensionar Imagen",
+    "de": "Bildgröße Ändern",
+    "fr": "Redimensionner Image",
+    "vi": "Đổi Kích Thước Ảnh",
+    "th": "ปรับขนาดรูปภาพ",
+    "id": "Ubah Ukuran Gambar",
+    "ru": "Изменение Размера Фото"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-03-17",
+  "shortDescription": {
+    "ko": "이미지의 가로,세로를 원하는 픽셀 크기로 저장",
+    "en": "Resize image to desired pixel size",
+    "ja": "画像の幅と高さを指定したピクセルサイズで保存",
+    "zh": "将图像的宽度和高度调整为指定像素并保存",
+    "es": "Guarda la imagen en el tamaño de píxeles deseado en ancho y alto",
+    "de": "Speichern Sie das Bild in der gewünschten Pixelgröße für Breite und Höhe",
+    "fr": "Enregistrez l'image aux dimensions en pixels souhaitées en largeur et hauteur",
+    "vi": "Lưu ảnh với kích thước chiều rộng và chiều cao tính bằng pixel tùy chọn",
+    "th": "บันทึกความกว้างและความสูงของภาพตามขนาดพิกเซลที่ต้องการ",
+    "id": "Simpan gambar dalam ukuran piksel lebar dan tinggi yang diinginkan",
+    "ru": "Сохранение изображения в желаемом разрешении в пикселях"
+  },
+  "description": {
+    "ko": "한 번의 조작으로 이미지를 <b>원하는 가로/세로 픽셀 크기</b>로 간편하게 조절할 수 있는 리사이즈 도구입니다.",
+    "en": "A handy tool that allows you to <b>easily resize images to your desired pixel dimensions</b> with a single operation.",
+    "ja": "1回の操作で画像を<b>希望の縦横ピクセルサイズ</b>に手軽に調整できるリサイズツールです。",
+    "zh": "一款只需一次操作即可轻松将图片调整为<b>所需宽高像素尺寸</b>的实用工具。",
+    "es": "Una práctica herramienta que te permite <b>redimensionar fácilmente imágenes a las dimensiones de píxeles deseadas</b> con una sola operación.",
+    "de": "Ein praktisches Tool, mit dem Sie Bilder mit einem einzigen Tastendruck <b>ganz einfach auf die gewünschte Pixelgröße skalieren</b> können.",
+    "fr": "Un outil pratique qui vous permet de <b>redimensionner facilement des images aux dimensions en pixels souhaitées</b> en une seule opération.",
+    "vi": "Công cụ tiện lợi cho phép bạn <b>dễ dàng thay đổi kích thước ảnh theo độ phân giải pixel mong muốn</b> chỉ với một thao tác.",
+    "th": "เครื่องมือแสนสะดวกที่ช่วยให้คุณ<b>ปรับขนาดภาพเป็นพิกเซลตามต้องการ</b>ได้อย่างง่ายดายด้วยขั้นตอนเดียว",
+    "id": "Alat praktis yang memungkinkan Anda <b>mengubah ukuran gambar ke dimensi piksel yang diinginkan</b> dengan mudah dalam satu langkah.",
+    "ru": "Удобный инструмент, позволяющий <b>легко изменить размер изображения до нужных пикселей</b> в одно действие."
+  },
+  "control": {
+    "ko": "<ol style='padding-left: 20px;'><li><b>이미지 불러오기:</b> 리사이즈할 이미지를 선택합니다.</li><li><b>사이즈 입력:</b> 원하는 가로, 세로 픽셀 값을 입력합니다.</li><li><b>저장하기:</b> 리사이즈된 이미지를 기기에 저장합니다.</li></ol>",
+    "en": "<ol style='padding-left: 20px;'><li><b>Load Image:</b> Select the image to resize.</li><li><b>Set Dimensions:</b> Enter the desired width and height values in pixels.</li><li><b>Save:</b> Save the resized image to your device.</li></ol>",
+    "ja": "<ol style='padding-left: 20px;'><li><b>画像の読み込み:</b> リサイズする画像を選択します。</li><li><b>サイズ入力:</b> 希望の幅、高さのピクセル値を入力します。</li><li><b>保存:</b> リサイズされた画像を端末に保存します。</li></ol>",
+    "zh": "<ol style='padding-left: 20px;'><li><b>导入图片:</b> 选择需要调整大小的图片。</li><li><b>输入尺寸:</b> 输入所需的宽度和高度像素值。</li><li><b>保存:</b> 将调整大小后的图片保存到设备。</li></ol>",
+    "es": "<ol style='padding-left: 20px;'><li><b>Cargar imagen:</b> Selecciona la imagen a redimensionar.</li><li><b>Ingresar tamaño:</b> Introduce los valores de ancho y alto en píxeles.</li><li><b>Guardar:</b> Guarda la imagen redimensionada en el dispositivo.</li></ol>",
+    "de": "<ol style='padding-left: 20px;'><li><b>Bild laden:</b> Wählen Sie das zu skalierende Bild aus.</li><li><b>Größe eingeben:</b> Geben Sie die gewünschten Pixelwerte für Breite und Höhe ein.</li><li><b>Speichern:</b> Speichern Sie das skalierte Bild auf Ihrem Gerät.</li></ol>",
+    "fr": "<ol style='padding-left: 20px;'><li><b>Charger une image:</b> Sélectionnez l'image à redimensionner.</li><li><b>Saisir les dimensions:</b> Entrez les valeurs de largeur et de hauteur en pixels.</li><li><b>Enregistrer:</b> Enregistrez l'image redimensionnée sur votre appareil.</li></ol>",
+    "vi": "<ol style='padding-left: 20px;'><li><b>Tải ảnh:</b> Chọn hình ảnh cần thay đổi kích thước.</li><li><b>Nhập kích thước:</b> Nhập giá trị chiều rộng và chiều cao mong muốn bằng pixel.</li><li><b>Lưu lại:</b> Lưu hình ảnh đã đổi kích thước vào thiết bị.</li></ol>",
+    "th": "<ol style='padding-left: 20px;'><li><b>โหลดรูปภาพ:</b> เลือกรูปภาพที่ต้องการปรับขนาด</li><li><b>ระบุขนาด:</b> ป้อนค่าพิกเซลความกว้างและความสูงที่ต้องการ</li><li><b>บันทึก:</b> บันทึกภาพที่ปรับขนาดแล้วลงในเครื่อง</li></ol>",
+    "id": "<ol style='padding-left: 20px;'><li><b>Muat Gambar:</b> Pilih gambar yang ingin diubah ukurannya.</li><li><b>Masukkan Ukuran:</b> Masukkan nilai lebar dan tinggi piksel yang diinginkan.</li><li><b>Simpan:</b> Simpan gambar yang telah diubah ukurannya ke perangkat.</li></ol>",
+    "ru": "<ol style='padding-left: 20px;'><li><b>Загрузка:</b> Выберите изображение для изменения размера.</li><li><b>Ввод размера:</b> Введите желаемые значения ширины и высоты в пикселях.</li><li><b>Сохранение:</b> Сохраните обработанное изображение на устройство.</li></ol>"
+  },
+  "youtubeUrl": "",
+  "youtubeType": "1",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/ImageResize-V1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/imageResize/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/imageResize/scr2.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "편집",
+      "리사이즈"
     ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/imageResize/scr1.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/imageResize/scr2.jpg"
+    "en": [
+      "Edit",
+      "Resize"
     ],
-    "tags": {
-        "ko": [
-            "편집",
-            "리사이즈"
-        ],
-        "en": [
-            "Edit",
-            "Resize"
-        ]
-    }
+    "ja": [
+      "編集",
+      "リサイズ"
+    ],
+    "zh": [
+      "编辑",
+      "调整大小"
+    ],
+    "es": [
+      "Edición",
+      "Redimensionar"
+    ],
+    "de": [
+      "Bearbeitung",
+      "Größenänderung"
+    ],
+    "fr": [
+      "Édition",
+      "Redimensionnement"
+    ],
+    "vi": [
+      "ChỉnhSửa",
+      "ĐổiKíchThước"
+    ],
+    "th": [
+      "แก้ไข",
+      "ปรับขนาด"
+    ],
+    "id": [
+      "Edit",
+      "UbahUkuran"
+    ],
+    "ru": [
+      "Редактирование",
+      "ИзменениеРазмера"
+    ]
+  }
 }

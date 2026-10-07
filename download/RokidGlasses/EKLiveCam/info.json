@@ -1,39 +1,111 @@
 {
-    "title": {
-        "ko": "EK Live Cam",
-        "en": "EK Live Cam"
-    },
-    "version": "1.0.0",
-    "releaseDate": "2026-03-19",
-    "shortDescription": {
-        "ko": "로키드 글래스의 카메라를 라이브 스트리밍하세요",
-        "en": "Stream the camera of Rokid Glasses in real time."
-    },
-    "description": {
-        "ko": "EK LiveCam은 복잡한 설정 없이 같은 Wi-Fi 네트워크에 있는 기기(PC, 스마트폰, 태블릿 등)에서 웹 브라우저만으로 카메라 화면을 실시간으로 볼 수 있게 해줍니다.<br><br><b>주요 기능</b><br>• <b>실시간 스트리밍:</b> MJPEG(Motion JPEG) 방식을 사용하여 지연 시간을 최소화한 영상 전송을 지원합니다.<br>• <b>고화질 최적화:</b> 1280x720(720p) 해상도로 최적화되어 선명한 화질을 제공합니다.<br>• <b>간편한 접속:</b> 별도의 뷰어 앱 설치 없이 웹 브라우저(Chrome, Safari 등)에서 URL 입력만으로 접속 가능합니다.<br>• <b>상태 표시:</b> 현재 스트리밍 상태, 접속자 수, 스트리밍 URL을 화면에 실시간으로 표시합니다.<br>• <b>하드웨어 연동:</b> 화면 터치뿐만 아니라 리모컨이나 스마트 글래스의 'Enter' 키를 통해서도 스트리밍을 시작/종료할 수 있습니다.",
-        "en": "EK LiveCam allows you to view the camera screen of Rokid Glasses in real time using only a web browser on a device (PC, smartphone, tablet, etc.) on the same Wi-Fi network, without complex settings.<br><br><b>Key Features</b><br>• <b>Real-time Streaming:</b> Supports video transmission with minimal delay using the MJPEG (Motion JPEG) method.<br>• <b>High-Definition Optimization:</b> Optimized for 1280x720 (720p) resolution to provide clear image quality.<br>• <b>Easy Access:</b> Connect by simply entering the URL in a web browser (Chrome, Safari, etc.) without installing a separate viewer app.<br>• <b>Status Display:</b> Displays the current streaming status, number of connected users, and streaming URL in real time on the screen.<br>• <b>Hardware Integration:</b> Streaming can be started/stopped not only by touching the screen but also by using the 'Enter' key on the remote control or Rokid Glasses."
-    },
-    "control": {
-        "ko": "<ul style='padding-left: 20px;'><li><b>1. 앱 실행:</b> 앱을 열면 카메라 미리보기 화면이 나타나며 하단에 Standby 상태가 표시됩니다.</li><li><b>2. 스트리밍 시작:</b><br>◦ 화면의 아무 곳이나 터치하거나, 연결된 컨트롤러의 Enter(확인) 키를 누릅니다.<br>◦ 상태가 Streaming으로 바뀌고 빨간색 LIVE 배지가 나타납니다.</li><li><b>3. 영상 시청 (뷰어):</b><br>◦ 앱 화면 중앙 하단에 표시된 URL(예: http://192.168.x.x:8080)을 확인합니다.<br>◦ 다른 기기의 웹 브라우저 주소창에 해당 URL을 입력하고 접속합니다.</li></ul>",
-        "en": "<ul style='padding-left: 20px;'><li><b>1. App Launch:</b> When you open the app, a camera preview screen appears and the Standby status is displayed at the bottom.</li><li><b>2. Start Streaming:</b><br>◦ Touch anywhere on the screen or press the Enter (Confirm) key on the connected controller.<br>◦ The status will change to Streaming and a red LIVE badge will appear.</li><li><b>3. View Video (Viewer):</b><br>◦ Check the URL displayed at the bottom center of the app screen (e.g., http://192.168.x.x:8080).<br>◦ Enter the URL in the address bar of a web browser on another device and connect.</li></ul>"
-    },
-    "youtubeUrl": "",
-    "youtubeType": "1",
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKLiveCam_v1.0.0.apk"
+  "title": {
+    "ko": "EK Live Cam",
+    "en": "EK Live Cam",
+    "ja": "EK Live Cam",
+    "zh": "EK 实时图传 (EK Live Cam)",
+    "es": "EK Live Cam",
+    "de": "EK Live Cam",
+    "fr": "EK Live Cam",
+    "vi": "EK Live Cam",
+    "th": "EK Live Cam",
+    "id": "EK Live Cam",
+    "ru": "EK Live Cam"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-03-19",
+  "shortDescription": {
+    "ko": "로키드 글래스의 카메라를 라이브 스트리밍하세요",
+    "en": "Stream the camera of Rokid Glasses in real time.",
+    "ja": "Rokid Glassesのカメラ映像をリアルタイムでライブストリーミング",
+    "zh": "将Rokid Glasses的摄像头画面实时图传推流至局域网浏览器",
+    "es": "Transmite la cámara de las Rokid Glasses en tiempo real a cualquier navegador",
+    "de": "Streamen Sie die Kamera der Rokid Glasses in Echtzeit auf Browser im selben WLAN",
+    "fr": "Diffusez la caméra des lunettes Rokid Glasses en direct dans un navigateur",
+    "vi": "Truyền trực tiếp hình ảnh từ camera kính Rokid Glasses qua trình duyệt web",
+    "th": "สตรีมภาพสดจากกล้องแว่นตา Rokid Glasses แบบเรียลไทม์",
+    "id": "Siarkan kamera Rokid Glasses secara real-time ke browser web",
+    "ru": "Транслируйте видео с камеры очков Rokid Glasses в реальном времени через веб-браузер"
+  },
+  "description": {
+    "ko": "EK LiveCam은 복잡한 설정 없이 같은 Wi-Fi 네트워크에 있는 기기(PC, 스마트폰, 태블릿 등)에서 웹 브라우저만으로 카메라 화면을 실시간으로 볼 수 있게 해줍니다.<br><br><b>주요 기능</b><br>• <b>실시간 스트리밍:</b> MJPEG(Motion JPEG) 방식을 사용하여 지연 시간을 최소화한 영상 전송을 지원합니다.<br>• <b>고화질 최적화:</b> 1280x720(720p) 해상도로 최적화되어 선명한 화질을 제공합니다.<br>• <b>간편한 접속:</b> 별도의 뷰어 앱 설치 없이 웹 브라우저(Chrome, Safari 등)에서 URL 입력만으로 접속 가능합니다.<br>• <b>상태 표시:</b> 현재 스트리밍 상태, 접속자 수, 스트리밍 URL을 화면에 실시간으로 표시합니다.<br>• <b>하드웨어 연동:</b> 화면 터치뿐만 아니라 리모컨이나 스마트 글래스의 'Enter' 키를 통해서도 스트리밍을 시작/종료할 수 있습니다.",
+    "en": "EK LiveCam allows you to view the camera screen of Rokid Glasses in real time using only a web browser on a device (PC, smartphone, tablet, etc.) on the same Wi-Fi network, without complex settings.<br><br><b>Key Features</b><br>• <b>Real-time Streaming:</b> Supports video transmission with minimal delay using the MJPEG (Motion JPEG) method.<br>• <b>High-Definition Optimization:</b> Optimized for 1280x720 (720p) resolution to provide clear image quality.<br>• <b>Easy Access:</b> Connect by simply entering the URL in a web browser (Chrome, Safari, etc.) without installing a separate viewer app.<br>• <b>Status Display:</b> Displays the current streaming status, number of connected users, and streaming URL in real time on the screen.<br>• <b>Hardware Integration:</b> Streaming can be started/stopped not only by touching the screen but also by using the 'Enter' key on the remote control or Rokid Glasses.",
+    "ja": "EK LiveCamは複雑な設定なしで、同一Wi-Fiネットワーク上にある端末（PC、スマホ、タブレットなど）のWebブラウザからカメラ画面をリアルタイムに視聴できるストリーミングアプリです。<br><br><b>主な機能</b><br>• <b>リアルタイム配信:</b> MJPEG方式を採用し遅延を最小限に抑制。<br>• <b>高画質最適化:</b> 1280x720 (720p)解像度で鮮明な映像を提供。<br>• <b>手軽なアクセス:</b> 専用アプリ不要、ChromeやSafari等のブラウザでURLを入力するだけ。<br>• <b>ステータス表示:</b> 接続状態、視聴者数、ストリーミングURLを画面に表示。<br>• <b>ハードウェア連動:</b> 画面タップやリモコン・メガネのEnterキーで開始/停止可能。",
+    "zh": "EK LiveCam让您无需繁琐配置，仅需同一Wi-Fi网络下的任意设备（电脑、手机、平板）的浏览器，即可实时查看眼镜端摄像头拍摄的画面。<br><br><b>核心功能</b><br>• <b>极低延迟实时图传:</b> 基于MJPEG(Motion JPEG)格式，带来超低延迟流畅体验。<br>• <b>高清画质优化:</b> 针对1280x720 (720p)分辨率优化，画面细腻清晰。<br>• <b>便捷免装端:</b> 接收端无需安装App，Chrome/Safari等浏览器直接输入URL即可观看。<br>• <b>实时状态面板:</b> 屏幕实时显示图传状态、连接人数及访问地址。<br>• <b>硬件按键联动:</b> 支持屏幕触控或眼镜/遥控器Enter键一键启停推流。",
+    "es": "EK LiveCam te permite ver la cámara de las Rokid Glasses en tiempo real usando solo un navegador web en cualquier dispositivo (PC, móvil, tableta) en la misma red Wi-Fi, sin configuraciones complejas.<br><br><b>Características principales</b><br>• <b>Transmisión en tiempo real:</b> Utiliza MJPEG para una latencia mínima.<br>• <b>Optimización en alta definición:</b> Optimizado a 1280x720 (720p) para una calidad nítida.<br>• <b>Fácil acceso:</b> Sin necesidad de apps adicionales; conecta ingresando la URL en Chrome, Safari, etc.<br>• <b>Panel de estado:</b> Muestra el estado del streaming, espectadores y la URL en pantalla.<br>• <b>Control por hardware:</b> Inicia o detén la transmisión tocando la pantalla o usando la tecla Enter.",
+    "de": "EK LiveCam ermöglicht es Ihnen, das Kamerabild der Rokid Glasses ohne komplizierte Einrichtung direkt im Webbrowser beliebiger Geräte (PC, Smartphone, Tablet) im selben WLAN anzusehen.<br><br><b>Hauptfunktionen</b><br>• <b>Echtzeit-Streaming:</b> Nutzt MJPEG für minimale Übertragungsverzögerung.<br>• <b>HD-Optimierung:</b> Auf 1280x720 (720p) optimiert für gestochen scharfe Bilder.<br>• <b>Einfacher Zugriff:</b> Keine Zusatz-App erforderlich, einfach URL in Chrome/Safari eingeben.<br>• <b>Statusanzeige:</b> Zeigt Verbindungsstatus, Zuschauerzahl und Streaming-URL an.<br>• <b>Hardware-Steuerung:</b> Starten und Stoppen per Touch oder Enter-Taste.",
+    "fr": "EK LiveCam vous permet de visualiser le flux caméra des Rokid Glasses en direct depuis un simple navigateur web sur PC, smartphone ou tablette sur le même réseau Wi-Fi.<br><br><b>Points forts</b><br>• <b>Diffusion en direct:</b> Transmission MJPEG à très faible latence.<br>• <b>Optimisation HD:</b> Résolution 1280x720 (720p) nette et fluide.<br>• <b>Accès immédiat:</b> Aucune application requise; ouvrez l'URL sur Chrome, Safari, etc.<br>• <b>Affichage du statut:</b> Suivi en temps réel de l'état, des spectateurs et de l'URL.<br>• <b>Intégration matérielle:</b> Contrôle par appui tactile ou touche Entrée des lunettes.",
+    "vi": "EK LiveCam cho phép bạn xem màn hình camera của kính Rokid Glasses theo thời gian thực chỉ bằng trình duyệt web trên các thiết bị cùng mạng Wi-Fi (máy tính, điện thoại, máy tính bảng) mà không cần cài đặt phức tạp.<br><br><b>Tính năng chính</b><br>• <b>Phát trực tiếp thời gian thực:</b> Sử dụng định dạng MJPEG giảm thiểu tối đa độ trễ.<br>• <b>Độ nét cao:</b> Tối ưu hóa ở độ phân giải 1280x720 (720p) cho chất lượng rõ nét.<br>• <b>Truy cập dễ dàng:</b> Không cần cài ứng dụng phụ, chỉ cần nhập URL vào Chrome hoặc Safari.<br>• <b>Hiển thị trạng thái:</b> Theo dõi trạng thái phát sóng, số lượng người xem và liên kết URL.<br>• <b>Điều khiển phần cứng:</b> Bắt đầu/dừng phát bằng cảm ứng hoặc phím Enter.",
+    "th": "EK LiveCam ช่วยให้คุณรับชมภาพสดจากกล้องของแว่นตา Rokid Glasses ได้แบบเรียลไทม์ผ่านเว็บเบราว์เซอร์บนอุปกรณ์ใดก็ได้ (พีซี สมาร์ทโฟน แท็บเล็ต) ในเครือข่าย Wi-Fi เดียวกันโดยไม่ต้องตั้งค่าให้ยุ่งยาก<br><br><b>คุณสมบัติหลัก</b><br>• <b>สตรีมมิ่งสด:</b> ใช้เทคโนโลยี MJPEG เพื่อลดการหน่วงของภาพให้เหลือน้อยที่สุด<br>• <b>ความคมชัดระดับ HD:</b> ปรับแต่งที่ความละเอียด 1280x720 (720p) คมชัดสบายตา<br>• <b>เข้าถึงง่าย:</b> ไม่ต้องติดตั้งแอปเพิ่มเติม เพียงพิมพ์ URL ลงในเบราว์เซอร์ Chrome หรือ Safari<br>• <b>แสดงสถานะ:</b> แสดงสถานะการสตรีม จำนวนผู้ชม และ URL ปลายทาง<br>• <b>ควบคุมด้วยฮาร์ดแวร์:</b> แตะหน้าจอหรือกดปุ่ม Enter บนแว่นตาเพื่อเริ่มหรือหยุดได้ทันที",
+    "id": "EK LiveCam memungkinkan Anda melihat layar kamera Rokid Glasses secara real-time hanya menggunakan browser web pada perangkat lain (PC, ponsel, tablet) di jaringan Wi-Fi yang sama tanpa pengaturan rumit.<br><br><b>Fitur Utama</b><br>• <b>Streaming Real-Time:</b> Menggunakan metode MJPEG untuk latensi minimal.<br>• <b>Optimalisasi HD:</b> Dioptimalkan pada resolusi 1280x720 (720p) untuk kejernihan gambar.<br>• <b>Akses Mudah:</b> Cukup masukkan URL di browser (Chrome, Safari) tanpa perlu memasang aplikasi viewer terpisah.<br>• <b>Tampilan Status:</b> Menampilkan status streaming, jumlah pemirsa, dan URL secara langsung.<br>• <b>Integrasi Perangkat Keras:</b> Mulai/hentikan streaming dengan sentuhan layar atau tombol Enter.",
+    "ru": "EK LiveCam позволяет транслировать изображение с камеры Rokid Glasses в реальном времени прямо в веб-браузер любого устройства (ПК, смартфон, планшет) в той же сети Wi-Fi.<br><br><b>Особенности</b><br>• <b>Потоковое вещание:</b> Минимальная задержка благодаря протоколу MJPEG.<br>• <b>HD-качество:</b> Оптимальное разрешение 1280x720 (720p) для отличной четкости.<br>• <b>Простой просмотр:</b> Без установки сторонних плееров — просто откройте URL в браузере.<br>• <b>Информационный экран:</b> Отображение статуса вещания, числа зрителей и ссылки для подключения.<br>• <b>Управление:</b> Запуск и остановка трансляции касанием или кнопкой Enter."
+  },
+  "control": {
+    "ko": "<ul style='padding-left: 20px;'><li><b>1. 앱 실행:</b> 앱을 열면 카메라 미리보기 화면이 나타나며 하단에 Standby 상태가 표시됩니다.</li><li><b>2. 스트리밍 시작:</b><br>◦ 화면의 아무 곳이나 터치하거나, 연결된 컨트롤러의 Enter(확인) 키를 누릅니다.<br>◦ 상태가 Streaming으로 바뀌고 빨간색 LIVE 배지가 나타납니다.</li><li><b>3. 영상 시청 (뷰어):</b><br>◦ 앱 화면 중앙 하단에 표시된 URL(예: http://192.168.x.x:8080)을 확인합니다.<br>◦ 다른 기기의 웹 브라우저 주소창에 해당 URL을 입력하고 접속합니다.</li></ul>",
+    "en": "<ul style='padding-left: 20px;'><li><b>1. App Launch:</b> When you open the app, a camera preview screen appears and the Standby status is displayed at the bottom.</li><li><b>2. Start Streaming:</b><br>◦ Touch anywhere on the screen or press the Enter (Confirm) key on the connected controller.<br>◦ The status will change to Streaming and a red LIVE badge will appear.</li><li><b>3. View Video (Viewer):</b><br>◦ Check the URL displayed at the bottom center of the app screen (e.g., http://192.168.x.x:8080).<br>◦ Enter the URL in the address bar of a web browser on another device and connect.</li></ul>",
+    "ja": "<ul style='padding-left: 20px;'><li><b>1. アプリ起動:</b> アプリを開くとプレビュー画面が表示され、下部にStandby状態が表示されます。</li><li><b>2. 配信開始:</b><br>◦ 画面の任意の場所をタッチ、またはコントローラーのEnterキーを押します。<br>◦ 状態がStreamingに変わり、赤いLIVEバッジが表示されます。</li><li><b>3. 映像視聴 (ビューア):</b><br>◦ 画面下部中央に表示されたURL（例: http://192.168.x.x:8080）を確認します。<br>◦ 別端末のブラウザのアドレスバーにURLを入力してアクセスします。</li></ul>",
+    "zh": "<ul style='padding-left: 20px;'><li><b>1. 启动应用:</b> 进入后显示实时预览画面，底部处于Standby就绪状态。</li><li><b>2. 开始推流:</b><br>◦ 轻触屏幕任意位置或按遥控器/镜腿Enter按键。<br>◦ 状态变为Streaming并点亮红色LIVE角标。</li><li><b>3. 观看画面 (接收端):</b><br>◦ 查看眼镜画面底部中央显示的访问网址（如 http://192.168.x.x:8080）。<br>◦ 在同一局域网下的电脑或手机浏览器地址栏输入该URL即可观看。</li></ul>",
+    "es": "<ul style='padding-left: 20px;'><li><b>1. Abrir app:</b> Aparece la vista previa y el estado Standby en la parte inferior.</li><li><b>2. Iniciar transmisión:</b><br>◦ Toca la pantalla o presiona Enter en el controlador.<br>◦ El estado cambiará a Streaming y aparecerá la insignia LIVE en rojo.</li><li><b>3. Ver vídeo:</b><br>◦ Comprueba la URL mostrada abajo (ej: http://192.168.x.x:8080).<br>◦ Introduce la URL en el navegador de tu otro dispositivo.</li></ul>",
+    "de": "<ul style='padding-left: 20px;'><li><b>1. App starten:</b> Vorschau wird angezeigt mit Standby-Status unten.</li><li><b>2. Stream starten:</b><br>◦ Display berühren oder Enter auf der Fernbedienung drücken.<br>◦ Status wechselt zu Streaming und ein roter LIVE-Badge erscheint.</li><li><b>3. Video ansehen:</b><br>◦ Die angezeigte URL am unteren Bildschirmrand prüfen (z.B. http://192.168.x.x:8080).<br>◦ URL im Browser des Zielgeräts aufrufen.</li></ul>",
+    "fr": "<ul style='padding-left: 20px;'><li><b>1. Lancement:</b> L'aperçu s'affiche avec le statut Standby au bas de l'écran.</li><li><b>2. Lancer la diffusion:</b><br>◦ Touchez l'écran ou appuyez sur la touche Entrée.<br>◦ Le statut passe à Streaming et le badge rouge LIVE s'allume.</li><li><b>3. Regarder la vidéo:</b><br>◦ Notez l'URL indiquée en bas (ex: http://192.168.x.x:8080).<br>◦ Ouvrez cette URL dans le navigateur de votre PC ou smartphone.</li></ul>",
+    "vi": "<ul style='padding-left: 20px;'><li><b>1. Mở ứng dụng:</b> Màn hình xem trước camera xuất hiện cùng trạng thái Standby ở bên dưới.</li><li><b>2. Bắt đầu phát:</b><br>◦ Chạm vào bất kỳ đâu trên màn hình hoặc nhấn phím Enter.<br>◦ Trạng thái đổi thành Streaming cùng biểu tượng LIVE màu đỏ.</li><li><b>3. Xem video:</b><br>◦ Ghi nhớ URL hiển thị ở phần dưới màn hình (ví dụ: http://192.168.x.x:8080).<br>◦ Nhập địa chỉ này vào trình duyệt trên thiết bị khác để xem.</li></ul>",
+    "th": "<ul style='padding-left: 20px;'><li><b>1. เปิดแอป:</b> หน้าจอพรีวิวกล้องจะปรากฏขึ้นพร้อมสถานะ Standby ด้านล่าง</li><li><b>2. เริ่มสตรีม:</b><br>◦ แตะที่ใดก็ได้บนหน้าจอหรือกดปุ่ม Enter<br>◦ สถานะจะเปลี่ยนเป็น Streaming พร้อมป้าย LIVE สีแดง</li><li><b>3. รับชมวิดีโอ:</b><br>◦ ดู URL ที่แสดงอยู่ตรงกลางด้านล่างของหน้าจอ (เช่น http://192.168.x.x:8080)<br>◦ พิมพ์ URL นั้นลงในเบราว์เซอร์ของอุปกรณ์อื่นเพื่อรับชม</li></ul>",
+    "id": "<ul style='padding-left: 20px;'><li><b>1. Buka Aplikasi:</b> Pratinjau kamera muncul dengan status Standby di bagian bawah.</li><li><b>2. Mulai Streaming:</b><br>◦ Sentuh layar atau tekan tombol Enter.<br>◦ Status berubah menjadi Streaming dan lencana LIVE merah akan muncul.</li><li><b>3. Tonton Video:</b><br>◦ Periksa URL di bagian bawah layar (misal: http://192.168.x.x:8080).<br>◦ Buka URL tersebut di browser perangkat lain.</li></ul>",
+    "ru": "<ul style='padding-left: 20px;'><li><b>1. Запуск:</b> Откроется превью камеры со статусом Standby внизу.</li><li><b>2. Старт стрима:</b><br>◦ Коснитесь экрана или нажмите клавишу Enter.<br>◦ Статус изменится на Streaming и появится красный значок LIVE.</li><li><b>3. Просмотр видео:</b><br>◦ Посмотрите адрес URL в нижней части экрана (например, http://192.168.x.x:8080).<br>◦ Введите этот адрес в браузере на другом устройстве.</li></ul>"
+  },
+  "youtubeUrl": "",
+  "youtubeType": "1",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKLiveCam_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKLiveCam/scr4.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKLiveCam/scr2.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKLiveCam/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKLiveCam/scr3.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "라이브캠"
     ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKLiveCam/scr4.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKLiveCam/scr2.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKLiveCam/scr1.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKLiveCam/scr3.jpg"
+    "en": [
+      "LiveCam"
     ],
-    "tags": {
-        "ko": [
-            "라이브캠"
-        ],
-        "en": [
-            "LiveCam"
-        ]
-    }
+    "ja": [
+      "ライブカメラ",
+      "配信"
+    ],
+    "zh": [
+      "实时图传",
+      "推流"
+    ],
+    "es": [
+      "CámaraEnVivo",
+      "Streaming"
+    ],
+    "de": [
+      "LiveKamera",
+      "Streaming"
+    ],
+    "fr": [
+      "CaméraEnDirect",
+      "Streaming"
+    ],
+    "vi": [
+      "CameraTrựcTiếp",
+      "PhátTrựcTiếp"
+    ],
+    "th": [
+      "กล้องสด",
+      "สตรีมมิ่ง"
+    ],
+    "id": [
+      "KameraLangsung",
+      "Streaming"
+    ],
+    "ru": [
+      "ПрямойЭфир",
+      "Стриминг"
+    ]
+  }
 }

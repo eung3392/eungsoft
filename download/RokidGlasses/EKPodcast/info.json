@@ -1,46 +1,127 @@
 {
-    "title": {
-        "ko": "EK PodCast",
-        "en": "EK PodCast"
-    },
-    "version": "1.1.0",
-    "releaseDate": "2026-08-29",
-    "shortDescription": {
-        "ko": "깔끔하고 직관적인 Rokid Glasses 전용 PodCast 플레이어",
-        "en": "Clean and intuitive PodCast player app for Rokid Glasses."
-    },
-    "description": {
-        "ko": "EK Podcast는 Rokid Glasses 전용 팟캐스트 플레이어 애플리케이션입니다.<br><br><b>주요 기능 및 특징</b><br>• <b>다양한 카테고리:</b> 뉴스, 코미디, 비즈니스, 기술, 교육, 건강 & 피트니스, 트루크라임, 키즈 & 가족 등 다양한 주제의 팟캐스트 채널을 손쉽게 탐색할 수 있습니다.<br>• <b>이어듣기 지원:</b> 최근 청취했던 에피소드와 재생 위치를 기억하여 앱 재실행 시 메인 상단 카드에서 즉시 이어서 청취할 수 있습니다.<br>• <b>직관적인 플레이어:</b> 앨범 커버, 에피소드 제목, 실시간 프로그레스 바, 10초 전/후 탐색 컨트롤을 제공합니다.<br>• <b>스마트글래스 최적화 UI:</b> Rokid Glasses 환경에 맞춘 직관적인 카드형 레이아웃과 높은 가독성의 시각 디자인을 적용하였습니다.",
-        "en": "EK Podcast is a podcast player application designed specifically for Rokid Glasses.<br><br><b>Key Features</b><br>• <b>Diverse Categories:</b> Easily browse podcasts across various topics including News, Comedy, Business, Technology, Education, Health & Fitness, True Crime, and Kids & Family.<br>• <b>Resume Playback:</b> Remembers your last listened episode and position so you can resume listening instantly from the top card on main screen.<br>• <b>Intuitive Player:</b> Displays album cover, episode title, real-time progress bar, 10-second seek buttons.<br>• <b>Smart Glasses UI Optimization:</b> Features a high-contrast, clean card UI tailored for Rokid Glasses."
-    },
-    "control": {
-        "ko": "<ul style='padding-left: 20px;'><li><b>목록 탐색 & 선택:</b> 안경 우측 다리를 스와이프하여 카테고리 및 에피소드 목록을 탐색하고, 터치하여 선택 및 재생합니다.</li><li><b>재생 / 일시정지:</b> 플레이어 화면 하단의 재생/일시정지 버튼을 터치하여 오디오 재생 상태를 전환합니다.</li><li><b>10초 전/후 이동:</b> 하단의 탐색 버튼(↺ / ↻)을 터치하거나 제스처를 통해 10초 단위로 구절을 건너뜁니다.</li><li><b>이어듣기:</b> 메인 화면 최상단의 '이어듣기' 영역을 터치하여 직전에 듣던 에피소드를 이어서 감상합니다.</li></ul>",
-        "en": "<ul style='padding-left: 20px;'><li><b>Browse & Select:</b> Swipe on the right temple of the glasses to navigate categories and episode lists, then touch to select and play.</li><li><b>Play / Pause:</b> Touch the central play/pause button on the player screen to control audio playback.</li><li><b>10s Seek (Forward/Backward):</b> Touch the rewind (↺) or fast-forward (↻) buttons to skip 10 seconds.</li><li><b>Resume Playback:</b> Touch the 'Resume Playback' card at the top of the main menu to immediately continue listening to your previous episode.</li></ul>"
-    },
-    "youtubeUrl": "https://www.youtube.com/embed/VTIzVZUVNaE",
-    "youtubeType": "1",
-    "updated": [
-        {
-            "version": "1.1.0",
-            "releaseDate": "2026-09-08",
-            "ko": "방송이 안되던 채널 문제 수정",
-            "en": "Fixed an issue where some channels were not broadcasting."
-        }
-    ],
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EK_Podcast_v1.1.0.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EK_Podcast_v1.0.0.apk"
-    ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKPodcast/scr1.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKPodcast/scr2.jpg"
-    ],
-    "tags": {
-        "ko": [
-            "팟캐스트"
-        ],
-        "en": [
-            "podcast"
-        ]
+  "title": {
+    "ko": "EK PodCast",
+    "en": "EK PodCast",
+    "ja": "EK PodCast",
+    "zh": "EK 播客 (EK PodCast)",
+    "es": "EK PodCast",
+    "de": "EK PodCast",
+    "fr": "EK PodCast",
+    "vi": "EK PodCast",
+    "th": "EK PodCast",
+    "id": "EK PodCast",
+    "ru": "EK PodCast"
+  },
+  "version": "1.1.0",
+  "releaseDate": "2026-08-29",
+  "shortDescription": {
+    "ko": "깔끔하고 직관적인 Rokid Glasses 전용 PodCast 플레이어",
+    "en": "Clean and intuitive PodCast player app for Rokid Glasses.",
+    "ja": "すっきりと直感的なRokid Glasses専用PodCastプレイヤー",
+    "zh": "专为Rokid Glasses打造的清爽直观播客(PodCast)播放器",
+    "es": "Reproductor de podcasts limpio e intuitivo para Rokid Glasses",
+    "de": "Kompakter und intuitiver Podcast-Player für Rokid Glasses",
+    "fr": "Lecteur de podcasts épuré et intuitif pour Rokid Glasses",
+    "vi": "Ứng dụng phát podcast trực quan và gọn gàng dành cho Rokid Glasses",
+    "th": "แอปเครื่องเล่นพอดแคสต์ที่เรียบง่ายสำหรับ Rokid Glasses",
+    "id": "Pemutar podcast yang bersih dan intuitif khusus untuk Rokid Glasses",
+    "ru": "Удобный и лаконичный плеер подкастов для очков Rokid Glasses"
+  },
+  "description": {
+    "ko": "EK Podcast는 Rokid Glasses 전용 팟캐스트 플레이어 애플리케이션입니다.<br><br><b>주요 기능 및 특징</b><br>• <b>다양한 카테고리:</b> 뉴스, 코미디, 비즈니스, 기술, 교육, 건강 & 피트니스, 트루크라임, 키즈 & 가족 등 다양한 주제의 팟캐스트 채널을 손쉽게 탐색할 수 있습니다.<br>• <b>이어듣기 지원:</b> 최근 청취했던 에피소드와 재생 위치를 기억하여 앱 재실행 시 메인 상단 카드에서 즉시 이어서 청취할 수 있습니다.<br>• <b>직관적인 플레이어:</b> 앨범 커버, 에피소드 제목, 실시간 프로그레스 바, 10초 전/후 탐색 컨트롤을 제공합니다.<br>• <b>스마트글래스 최적화 UI:</b> Rokid Glasses 환경에 맞춘 직관적인 카드형 레이아웃과 높은 가독성의 시각 디자인을 적용하였습니다.",
+    "en": "EK Podcast is a podcast player application designed specifically for Rokid Glasses.<br><br><b>Key Features</b><br>• <b>Diverse Categories:</b> Easily browse podcasts across various topics including News, Comedy, Business, Technology, Education, Health & Fitness, True Crime, and Kids & Family.<br>• <b>Resume Playback:</b> Remembers your last listened episode and position so you can resume listening instantly from the top card on main screen.<br>• <b>Intuitive Player:</b> Displays album cover, episode title, real-time progress bar, 10-second seek buttons.<br>• <b>Smart Glasses UI Optimization:</b> Features a high-contrast, clean card UI tailored for Rokid Glasses.",
+    "ja": "EK Podcastは、Rokid Glasses専用のポッドキャストプレイヤーアプリです。<br><br><b>主な機能と特徴</b><br>• <b>多彩なカテゴリ:</b> ニュース、コメディ、ビジネス、テクノロジー、教育、健康、キッズ＆ファミリーなど幅広いジャンルを快適に探せます。<br>• <b>続きから再生:</b> 前回聴いていたエピソードと再生位置を記憶し、メイン上部のカードからワンタップですぐに再開可能。<br>• <b>直感的なプレイヤー:</b> アルバムカバー、タイトル、リアルタイム進捗バー、10秒スキップ機能を搭載。<br>• <b>スマートグラス最適化UI:</b> 高いコントラストとカード型レイアウトで抜群の視認性を誇ります。",
+    "zh": "EK Podcast是一款专为Rokid Glasses智能眼镜倾心打造的高品质播客收听应用。<br><br><b>核心特色与功能</b><br>• <b>丰富分类:</b> 新闻、喜剧、商业、科技、教育、健康、亲子家庭等多领域频道轻松浏览。<br>• <b>断点续听:</b> 智能记忆上次收听的单集与精确进度，首页顶部一键秒速续听。<br>• <b>直观播放控制:</b> 封面展示、单集标题、实时进度条、快进/快退10秒快捷按键。<br>• <b>AR眼镜专属UI:</b> 针对眼镜视野优化的卡片式布局与高对比度易读排版。",
+    "es": "EK Podcast es un reproductor de podcasts diseñado especialmente para Rokid Glasses.<br><br><b>Características</b><br>• <b>Categorías variadas:</b> Noticias, Comedia, Negocios, Tecnología, Educación, Salud y Familia.<br>• <b>Reanudar reproducción:</b> Recuerda el último episodio y posición para continuar al instante.<br>• <b>Reproductor intuitivo:</b> Carátula, título, barra de progreso y botones de salto de 10 segundos.<br>• <b>Optimizado para AR Glasses:</b> Interfaz tipo tarjeta de alto contraste adaptada a Rokid.",
+    "de": "EK Podcast ist ein Podcast-Player speziell für Rokid Glasses.<br><br><b>Hauptfunktionen</b><br>• <b>Vielfältige Kategorien:</b> Nachrichten, Comedy, Wirtschaft, Technologie, Bildung, Gesundheit uvm.<br>• <b>Wiedergabe fortsetzen:</b> Merkt sich die letzte Episode und Position zum direkten Weiterhören.<br>• <b>Intuitiver Player:</b> Cover-Art, Titel, Live-Fortschrittsbalken und 10-Sekunden-Sprungtasten.<br>• <b>Für Datenbrillen optimiert:</b> Kontrastreiche Kartenansicht für beste Lesbarkeit.",
+    "fr": "EK Podcast est un lecteur de podcasts conçu spécialement pour les lunettes Rokid Glasses.<br><br><b>Fonctionnalités clés</b><br>• <b>Catégories variées:</b> Actualités, Humour, Business, Technologie, Éducation, Santé et Famille.<br>• <b>Reprise de lecture:</b> Mémorise l'épisode et la position pour reprendre immédiatement.<br>• <b>Lecteur intuitif:</b> Pochette, titre, barre de progression et saut de 10 secondes.<br>• <b>Interface optimisée pour lunettes:</b> Cartes à fort contraste très lisibles.",
+    "vi": "EK Podcast là ứng dụng phát podcast được thiết kế riêng cho kính Rokid Glasses.<br><br><b>Tính năng chính</b><br>• <b>Danh mục đa dạng:</b> Tin tức, Hài kịch, Kinh doanh, Công nghệ, Giáo dục, Sức khỏe và Gia đình.<br>• <b>Tiếp tục nghe:</b> Ghi nhớ tập và vị trí phát gần nhất để tiếp tục nghe ngay tức thì.<br>• <b>Trình phát trực quan:</b> Ảnh bìa, tiêu đề, thanh tiến trình thời gian thực và tua 10 giây.<br>• <b>Tối ưu cho kính AR:</b> Giao diện dạng thẻ có độ tương phản cao, dễ nhìn.",
+    "th": "EK Podcast เป็นแอปพลิเคชันเล่นพอดแคสต์ที่ออกแบบมาสำหรับ Rokid Glasses โดยเฉพาะ<br><br><b>คุณสมบัติเด่น</b><br>• <b>หลากหลายหมวดหมู่:</b> ข่าว ตลก ธุรกิจ เทคโนโลยี การศึกษา สุขภาพ และครอบครัว<br>• <b>ฟังต่อเนื่อง:</b> จดจำตอนล่าสุดและตำแหน่งเวลาเพื่อกลับมาฟังต่อได้ทันทีจากหน้าหลัก<br>• <b>เครื่องเล่นเข้าใจง่าย:</b> ภาพปก ชื่อตอน แถบความคืบหน้า และปุ่มข้าม 10 วินาที<br>• <b>ปรับให้เหมาะกับแว่นตา:</b> การจัดวางสไตล์การ์ดที่มีคอนทราสต์สูง มองเห็นชัดเจน",
+    "id": "EK Podcast adalah aplikasi pemutar podcast yang dirancang khusus untuk Rokid Glasses.<br><br><b>Fitur Utama</b><br>• <b>Kategori Beragam:</b> Berita, Komedi, Bisnis, Teknologi, Pendidikan, Kesehatan, dan Keluarga.<br>• <b>Lanjutkan Pemutaran:</b> Mengingat episode dan posisi terakhir untuk langsung melanjutkan.<br>• <b>Pemutar Intuitif:</b> Sampul album, judul, bilah progres, dan tombol lompat 10 detik.<br>• <b>UI Optimal untuk Kacamata AR:</b> Desain kartu dengan kontras tinggi yang nyaman dibaca.",
+    "ru": "EK Podcast — специализированный плеер подкастов для очков Rokid Glasses.<br><br><b>Основные функции</b><br>• <b>Разнообразные темы:</b> Новости, Юмор, Бизнес, Технологии, Образование, Здоровье и Семья.<br>• <b>Продолжение прослушивания:</b> Запоминает выпуск и позицию для мгновенного возобновления.<br>• <b>Удобный плеер:</b> Обложка, название, шкала прогресса и кнопки перемотки на 10 секунд.<br>• <b>Оптимизация под очки:</b> Контрастный карточный интерфейс для идеальной читаемости."
+  },
+  "control": {
+    "ko": "<ul style='padding-left: 20px;'><li><b>목록 탐색 & 선택:</b> 안경 우측 다리를 스와이프하여 카테고리 및 에피소드 목록을 탐색하고, 터치하여 선택 및 재생합니다.</li><li><b>재생 / 일시정지:</b> 플레이어 화면 하단의 재생/일시정지 버튼을 터치하여 오디오 재생 상태를 전환합니다.</li><li><b>10초 전/후 이동:</b> 하단의 탐색 버튼(↺ / ↻)을 터치하거나 제스처를 통해 10초 단위로 구절을 건너뜁니다.</li><li><b>이어듣기:</b> 메인 화면 최상단의 '이어듣기' 영역을 터치하여 직전에 듣던 에피소드를 이어서 감상합니다.</li></ul>",
+    "en": "<ul style='padding-left: 20px;'><li><b>Browse & Select:</b> Swipe on the right temple of the glasses to navigate categories and episode lists, then touch to select and play.</li><li><b>Play / Pause:</b> Touch the central play/pause button on the player screen to control audio playback.</li><li><b>10s Seek (Forward/Backward):</b> Touch the rewind (↺) or fast-forward (↻) buttons to skip 10 seconds.</li><li><b>Resume Playback:</b> Touch the 'Resume Playback' card at the top of the main menu to immediately continue listening to your previous episode.</li></ul>",
+    "ja": "<ul style='padding-left: 20px;'><li><b>一覧探索＆選択:</b> メガネの右テンプルをスワイプして一覧を探索し、タップして再生します。</li><li><b>再生/一時停止:</b> 画面下のボタンをタップして再生状態を切り替えます。</li><li><b>10秒送り/戻し:</b> ↺ / ↻ ボタンをタップして10秒スキップします。</li><li><b>続きから再生:</b> メイン画面上部の「続きから聴く」カードをタップして直前のエピソードを再開します。</li></ul>",
+    "zh": "<ul style='padding-left: 20px;'><li><b>浏览与选择:</b> 滑动镜腿浏览各分类与单集列表，轻触确认播放。</li><li><b>播放/暂停:</b> 轻触播放器下方的播放/暂停按键切换状态。</li><li><b>快进/快退10秒:</b> 点击 ↺ / ↻ 图标快速前后微调10秒。</li><li><b>断点续播:</b> 点击主界面顶部的「继续收听」卡片无缝回到上一节目。</li></ul>",
+    "es": "<ul style='padding-left: 20px;'><li><b>Navegar y seleccionar:</b> Desliza la patilla para explorar y toca para reproducir.</li><li><b>Reproducir/Pausar:</b> Toca el botón central en el reproductor.</li><li><b>Salto de 10s:</b> Toca ↺ o ↻ para retroceder o avanzar 10 segundos.</li><li><b>Reanudar:</b> Toca la tarjeta superior de 'Reanudar' en la pantalla principal.</li></ul>",
+    "de": "<ul style='padding-left: 20px;'><li><b>Navigieren & Auswählen:</b> Brillenbügel wischen und antippen zum Abspielen.</li><li><b>Play/Pause:</b> Taste unten antippen zum Umschalten der Wiedergabe.</li><li><b>10s Vor-/Zurück:</b> ↺ / ↻ antippen für 10-Sekunden-Sprünge.</li><li><b>Fortsetzen:</b> Obere Karte 'Fortsetzen' antippen, um direkt weiterzuhören.</li></ul>",
+    "fr": "<ul style='padding-left: 20px;'><li><b>Parcourir & Choisir:</b> Balayez la branche pour explorer et touchez pour lancer.</li><li><b>Lecture/Pause:</b> Touchez le bouton central pour contrôler l'audio.</li><li><b>Avance/Retour 10s:</b> Touchez ↺ ou ↻ pour sauter de 10 secondes.</li><li><b>Reprendre:</b> Touchez la carte 'Reprendre la lecture' en haut de l'écran d'accueil.</li></ul>",
+    "vi": "<ul style='padding-left: 20px;'><li><b>Duyệt & Chọn:</b> Vuốt gọng kính để duyệt danh mục và chạm để phát.</li><li><b>Phát/Tạm dừng:</b> Chạm vào nút phát/tạm dừng để điều khiển.</li><li><b>Tua 10 giây:</b> Chạm ↺ hoặc ↻ để tua lùi hoặc tua tiến 10 giây.</li><li><b>Nghe tiếp:</b> Chạm vào thẻ 'Tiếp tục nghe' ở trên cùng để nghe lại tập trước.</li></ul>",
+    "th": "<ul style='padding-left: 20px;'><li><b>เลื่อนดู & เลือก:</b> ปัดที่ขาแว่นเพื่อเลื่อนดูรายการ และแตะเพื่อเลือกเล่น</li><li><b>เล่น/หยุดชั่วคราว:</b> แตะปุ่มเล่น/หยุดชั่วคราวเพื่อควบคุมเสียง</li><li><b>ข้าม 10 วินาที:</b> แตะปุ่ม ↺ หรือ ↻ เพื่อข้ามเวลา 10 วินาที</li><li><b>ฟังต่อ:</b> แตะการ์ด 'ฟังต่อ' ที่ด้านบนสุดของหน้าหลักเพื่อฟังตอนก่อนหน้าทันที</li></ul>",
+    "id": "<ul style='padding-left: 20px;'><li><b>Jelajah & Pilih:</b> Usap gagang kacamata untuk menelusuri dan ketuk untuk memutar.</li><li><b>Putar/Jeda:</b> Ketuk tombol putar/jeda untuk beralih pemutaran.</li><li><b>Lompat 10 Detik:</b> Ketuk tombol ↺ atau ↻ untuk memutar mundur/maju 10 detik.</li><li><b>Lanjutkan:</b> Ketuk kartu 'Lanjutkan Pemutaran' di bagian atas layar utama.</li></ul>",
+    "ru": "<ul style='padding-left: 20px;'><li><b>Выбор выпуска:</b> Свайпайте по дужке очков для навигации и коснитесь для воспроизведения.</li><li><b>Плей/Пауза:</b> Касание кнопки плеера переключает воспроизведение.</li><li><b>Перемотка на 10 сек:</b> Кнопки ↺ и ↻ для перехода на 10 секунд назад или вперед.</li><li><b>Продолжить:</b> Нажмите карточку «Продолжить» на главном экране.</li></ul>"
+  },
+  "youtubeUrl": "https://www.youtube.com/embed/VTIzVZUVNaE",
+  "youtubeType": "1",
+  "updated": [
+    {
+      "version": "1.1.0",
+      "releaseDate": "2026-09-08",
+      "ko": "방송이 안되던 채널 문제 수정",
+      "en": "Fixed an issue where some channels were not broadcasting.",
+      "ja": "一部のチャンネルで放送が再生できなかった問題を修正。",
+      "zh": "修复了部分播客频道无法正常加载音频流的问题。",
+      "es": "Solucionado un problema por el que algunos canales no transmitían.",
+      "de": "Problem behoben, bei dem einige Kanäle nicht abgespielt wurden.",
+      "fr": "Correction d'un problème de diffusion sur certains canaux.",
+      "vi": "Đã khắc phục sự cố một số kênh không phát được sóng.",
+      "th": "แก้ไขปัญหาบางช่องที่ไม่สามารถออกอากาศได้",
+      "id": "Memperbaiki masalah di mana beberapa saluran tidak dapat disiarkan.",
+      "ru": "Исправлена ошибка воспроизведения на некоторых каналах."
     }
+  ],
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EK_Podcast_v1.1.0.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EK_Podcast_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKPodcast/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKPodcast/scr2.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "팟캐스트"
+    ],
+    "en": [
+      "podcast"
+    ],
+    "ja": [
+      "ポッドキャスト",
+      "音声"
+    ],
+    "zh": [
+      "播客",
+      "音频"
+    ],
+    "es": [
+      "Podcast",
+      "Audio"
+    ],
+    "de": [
+      "Podcast",
+      "Audio"
+    ],
+    "fr": [
+      "Podcast",
+      "Audio"
+    ],
+    "vi": [
+      "Podcast",
+      "ÂmThanh"
+    ],
+    "th": [
+      "พอดแคสต์",
+      "เสียง"
+    ],
+    "id": [
+      "Podcast",
+      "Audio"
+    ],
+    "ru": [
+      "Подкаст",
+      "Аудио"
+    ]
+  }
 }

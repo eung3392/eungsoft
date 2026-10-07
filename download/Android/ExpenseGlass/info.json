@@ -1,39 +1,111 @@
 {
-    "title": {
-        "ko": "지출 유리병",
-        "en": "Expense Glass"
-    },
-    "version": "1.0.0",
-    "releaseDate": "2026-09-15",
-    "shortDescription": {
-        "ko": "한눈에 파악하는 이달의 지출현황",
-        "en": "Income and Expense Status at a Glance"
-    },
-    "description": {
-        "ko": "<b>지출유리병(가계부 GLASS)</b>은 한 달 생활비(목표 예산)를 기준으로, 네모난 유리병 안에 지출 내역이 조약돌 모양의 블록으로 바닥부터 차곡차곡 쌓이는 시각적인 가계부 앱입니다.<br>단순한 텍스트나 원형 차트 대신, 예산 대비 지출 현황을 <b>'유리병이 채워지는 정도'</b>로 직관적이고 귀엽게 파악할 수 있습니다. Jetpack Compose Canvas로 구현된 부드럽고 둥글둥글한 UI와 카드사·은행 결제 알림을 백그라운드에서 감지해 자동으로 등록해 주는 스마트한 기능으로 일상 지출 관리를 더욱 편리하게 도와줍니다.",
-        "en": "<b>ExpenseGlass</b> is an intuitive visual expense tracker where spending stacks up like pebble blocks from the bottom of a glass jar based on your monthly budget.<br>Instead of plain text or typical pie charts, you can visually gauge your budget usage through the <b>filling level of the jar</b>. Featuring a cute, rounded UI crafted with Jetpack Compose Canvas and an automatic expense tracker that listens to card and bank notifications in the background, managing your expenses has never been easier."
-    },
-    "control": {
-        "ko": "[앱 초기 설정]<br>• ⚙️ 설정 열기: 메인 화면 우측 상단의 톱니바퀴 아이콘을 누릅니다.<br>• 💰 생활비 총액 설정: 한 달 목표 예산을 입력합니다 (기본값: 1,000,000원).<br>• 🔔 알림 접근 권한: 자동 가계부 기능을 사용하려면 '알림 접근 권한 설정 열기'를 눌러 시스템 설정에서 권한을 반드시 허용해 주세요.<br><br>[자동 가계부 (키워드 등록)]<br>• 🏷️ 규칙 추가: 주로 사용하는 카드사/은행명(예: 국민카드, 신한은행) 또는 결제 키워드를 등록합니다.<br>• 📂 카테고리 매핑: 해당 키워드가 감지될 때 분류할 카테고리(식비, 교통비, 쇼핑 등)를 지정하여 저장합니다.<br>• ✨ 자동 반영: 결제 푸시 알림이 수신되면 금액을 자동으로 파싱하여 유리병에 블록으로 쌓입니다.<br><br>[수동 입력 및 내역 관리]<br>• ➕ 지출 직접 추가: 메인 화면 우측 하단의 [+] 플로팅 버튼을 눌러 금액, 내역, 카테고리, 날짜를 직접 입력할 수 있습니다.<br>• 🔍 블록 상세/수정/삭제: 유리병 속 지출 블록을 터치하면 상세 다이얼로그가 열리며 내역 수정 및 삭제가 가능합니다.<br>• 📅 월별 조회: 상단 네비게이션 버튼을 통해 이전/다음 달 지출 내역을 간편하게 조회할 수 있습니다.<br><br>[참고 사항]<br>• 예산(100%)을 초과하는 지출은 유리병 높이를 벗어나 잘려 표시될 수 있습니다.<br>• 카드사별 특이한 알림 문구 포맷은 정규식 파싱 규칙에 따라 인식이 상이할 수 있습니다.",
-        "en": "[Initial App Setup]<br>• ⚙️ Open Settings: Tap the gear icon in the top right corner of the main screen.<br>• 💰 Set Budget: Enter your monthly target budget (Default: 1,000,000 KRW).<br>• 🔔 Notification Access: To use the automatic tracking feature, open 'Notification Access Settings' and grant permission in the system settings.<br><br>[Automatic Logging (Keyword Registration)]<br>• 🏷️ Add Rules: Register frequently used card companies/banks (e.g., KB Card, Shinhan Bank) or transaction keywords.<br>• 📂 Category Mapping: Map the keyword to a category (Food, Transport, Shopping, etc.) and save.<br>• ✨ Auto-Tracking: When payment notifications arrive, the amount is automatically parsed and added as a block in the jar.<br><br>[Manual Entry & Management]<br>• ➕ Manual Entry: Tap the [+] floating action button at the bottom right to enter amount, note, category, and date.<br>• 🔍 View/Edit/Delete: Tap any expense block inside the jar to open the detail dialog, edit information, or delete records.<br>• 📅 Monthly Navigation: Browse previous and next month's spending history using the top navigation.<br><br>[Notes]<br>• Spending that exceeds the budget (100%) may extend beyond the top of the glass jar.<br>• Notification format variations across financial institutions may affect parsing accuracy."
-    },
-    "youtubeUrl": "",
-    "youtubeType": "1",
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/ExpenseGlass_v1.0.0.apk"
+  "title": {
+    "ko": "지출 유리병",
+    "en": "Expense Glass",
+    "ja": "支出ガラス瓶",
+    "zh": "开支玻璃瓶 (Expense Glass)",
+    "es": "Expense Glass",
+    "de": "Expense Glass",
+    "fr": "Expense Glass",
+    "vi": "Bình Chi Tiêu (Expense Glass)",
+    "th": "ขวดแก้วบันทึกค่าใช้จ่าย",
+    "id": "Expense Glass",
+    "ru": "Стеклянная Банка Расходов"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-09-15",
+  "shortDescription": {
+    "ko": "한눈에 파악하는 이달의 지출현황",
+    "en": "Income and Expense Status at a Glance",
+    "ja": "月間予算に対する支出が小石ブロックのようにガラス瓶に積み重なる直感的な家計簿アプリ",
+    "zh": "以鹅卵石积木形式直观展示月度预算与开销进度的玻璃瓶记账软件",
+    "es": "Control de gastos visual donde los pagos se apilan como bloques en un frasco de vidrio según tu presupuesto",
+    "de": "Intuitiver Ausgaben-Tracker, bei dem sich Ausgaben wie Kieselsteine in einem Glasgefäß stapeln",
+    "fr": "Suivi des dépenses visuel où vos achats s'empilent comme des galets dans un bocal en verre",
+    "vi": "Sổ theo dõi chi tiêu trực quan, tích lũy các khoản chi như những khối đá cuội trong bình thủy tinh",
+    "th": "สมุดบันทึกค่าใช้จ่ายแบบเห็นภาพ ซึ่งค่าใช้จ่ายจะสะสมเป็นก้อนหินในขวดแก้วตามงบประมาณ",
+    "id": "Pelacak pengeluaran visual di mana belanjaan menumpuk seperti balok batu dalam toples kaca sesuai anggaran",
+    "ru": "Визуальный трекер расходов, где траты складываются как камешки в стеклянную банку в рамках бюджета"
+  },
+  "description": {
+    "ko": "<b>지출유리병(가계부 GLASS)</b>은 한 달 생활비(목표 예산)를 기준으로, 네모난 유리병 안에 지출 내역이 조약돌 모양의 블록으로 바닥부터 차곡차곡 쌓이는 시각적인 가계부 앱입니다.<br>단순한 텍스트나 원형 차트 대신, 예산 대비 지출 현황을 <b>'유리병이 채워지는 정도'</b>로 직관적이고 귀엽게 파악할 수 있습니다. Jetpack Compose Canvas로 구현된 부드럽고 둥글둥글한 UI와 카드사·은행 결제 알림을 백그라운드에서 감지해 자동으로 등록해 주는 스마트한 기능으로 일상 지출 관리를 더욱 편리하게 도와줍니다.",
+    "en": "<b>ExpenseGlass</b> is an intuitive visual expense tracker where spending stacks up like pebble blocks from the bottom of a glass jar based on your monthly budget.<br>Instead of plain text or typical pie charts, you can visually gauge your budget usage through the <b>filling level of the jar</b>. Featuring a cute, rounded UI crafted with Jetpack Compose Canvas and an automatic expense tracker that listens to card and bank notifications in the background, managing your expenses has never been easier.",
+    "ja": "<b>支出ガラス瓶(ExpenseGlass)</b>は、月間予算に基づいて支出がガラス瓶の底から小石ブロックのように積み重なる直感的なビジュアル家計簿アプリです。<br>数字だけのテキストや円グラフとは異なり、<b>ガラス瓶の満水度</b>を見るだけで予算の使用状況を一目で把握できます。Jetpack Compose Canvasによる可愛く丸みを帯びたUIと、カードや銀行の通知をバックグラウンドで自動解析する自動家計簿機能を備えています。",
+    "zh": "<b>开支玻璃瓶 (ExpenseGlass)</b> 是一款直观的可视化记账应用，根据您设定的月度预算，每笔开支都会像鹅卵石积木一样从玻璃瓶底部逐渐堆叠。<br>告别枯燥的数字或传统的饼图，通过<b>玻璃瓶的填充高度</b>即可一目了然地掌握预算使用进度。采用Jetpack Compose Canvas打造精致圆润的UI，配合后台自动捕获银行与信用卡支付通知的自动记账功能，让开支管理变得轻而易举。",
+    "es": "<b>ExpenseGlass</b> es un intuitivo gestor visual de gastos donde tus pagos se acumulan como bloques de piedras en el fondo de un frasco de vidrio según tu presupuesto mensual.<br>En lugar de texto plano o gráficos circulares estándar, evalúa visualmente el uso de tu presupuesto a través del <b>nivel de llenado del frasco</b>. Con una interfaz redondeada y amigable diseñada con Jetpack Compose y registro automático mediante notificaciones bancarias.",
+    "de": "<b>ExpenseGlass</b> ist ein intuitiver visueller Ausgaben-Tracker, bei dem sich Ihre Ausgaben basierend auf Ihrem Monatsbudget wie Kieselblöcke vom Boden eines Einmachglases aufstapeln.<br>Erkennen Sie Ihre Budgetauslastung direkt am <b>Füllstand des Glases</b> anstelle von reinem Text oder Tortendiagrammen. Mit liebevoll gestalteter Jetpack-Compose-Oberfläche und automatischer Erfassung per Benachrichtigungen.",
+    "fr": "<b>ExpenseGlass</b> est un gestionnaire visuel de dépenses intuitif où les paiements s'empilent comme des galets au fond d'un bocal en verre en fonction de votre budget mensuel.<br>Visualisez immédiatement votre consommation de budget grâce au <b>niveau de remplissage du bocal</b>. Dispose d'une interface élégante conçue avec Jetpack Compose et d'un suivi automatique via les notifications bancaires.",
+    "vi": "<b>ExpenseGlass</b> là ứng dụng quản lý chi tiêu trực quan, nơi các khoản chi của bạn xếp chồng lên nhau như những viên sỏi từ đáy bình thủy tinh dựa trên ngân sách hàng tháng.<br>Thay vì văn bản đơn thuần hay biểu đồ tròn thông thường, bạn có thể đánh giá mức chi tiêu thông qua <b>mức độ lấp đầy của chiếc bình</b>. Giao diện bo tròn đẹp mắt với Jetpack Compose và tự động ghi chép qua thông báo thanh toán.",
+    "th": "<b>ExpenseGlass</b> เป็นแอปบันทึกรายจ่ายที่แสดงผลอย่างเห็นภาพชัดเจน โดยการใช้จ่ายจะสะสมเป็นก้อนหินซ้อนกันขึ้นมาจากก้นขวดแก้วตามงบประมาณรายเดือน<br>ประเมินการใช้งบประมาณได้อย่างง่ายดายผ่าน<b>ระดับความเต็มของขวดแก้ว</b> แทนที่จะดูแค่ตัวเลขหรือแผนภูมิวงกลม พร้อม UI โค้งมนสวยงามและระบบบันทึกอัตโนมัติจากการแจ้งเตือนชำระเงิน",
+    "id": "<b>ExpenseGlass</b> adalah pelacak pengeluaran visual yang intuitif di mana pengeluaran menumpuk seperti balok batu dari dasar toples kaca berdasarkan anggaran bulanan Anda.<br>Pantau penggunaan anggaran secara visual melalui <b>tingkat kepenuhan toples</b> alih-alih teks biasa atau diagram lingkaran. Dilengkapi antarmuka menawan dan pencatatan otomatis dari notifikasi pembayaran.",
+    "ru": "<b>ExpenseGlass</b> — это наглядный трекер расходов, где траты накапливаются словно камешки на дне стеклянной банки относительно вашего месячного бюджета.<br>Оценивайте остаток средств по <b>уровню наполненности банки</b> вместо скучных цифр и диаграмм. Приложение создано на Jetpack Compose с уютным дизайном и поддерживает автоматический учет по банковским уведомлениям."
+  },
+  "control": {
+    "ko": "[앱 초기 설정]<br>• ⚙️ 설정 열기: 메인 화면 우측 상단의 톱니바퀴 아이콘을 누릅니다.<br>• 💰 생활비 총액 설정: 한 달 목표 예산을 입력합니다 (기본값: 1,000,000원).<br>• 🔔 알림 접근 권한: 자동 가계부 기능을 사용하려면 '알림 접근 권한 설정 열기'를 눌러 시스템 설정에서 권한을 반드시 허용해 주세요.<br><br>[자동 가계부 (키워드 등록)]<br>• 🏷️ 규칙 추가: 주로 사용하는 카드사/은행명(예: 국민카드, 신한은행) 또는 결제 키워드를 등록합니다.<br>• 📂 카테고리 매핑: 해당 키워드가 감지될 때 분류할 카테고리(식비, 교통비, 쇼핑 등)를 지정하여 저장합니다.<br>• ✨ 자동 반영: 결제 푸시 알림이 수신되면 금액을 자동으로 파싱하여 유리병에 블록으로 쌓입니다.<br><br>[수동 입력 및 내역 관리]<br>• ➕ 지출 직접 추가: 메인 화면 우측 하단의 [+] 플로팅 버튼을 눌러 금액, 내역, 카테고리, 날짜를 직접 입력할 수 있습니다.<br>• 🔍 블록 상세/수정/삭제: 유리병 속 지출 블록을 터치하면 상세 다이얼로그가 열리며 내역 수정 및 삭제가 가능합니다.<br>• 📅 월별 조회: 상단 네비게이션 버튼을 통해 이전/다음 달 지출 내역을 간편하게 조회할 수 있습니다.<br><br>[참고 사항]<br>• 예산(100%)을 초과하는 지출은 유리병 높이를 벗어나 잘려 표시될 수 있습니다.<br>• 카드사별 특이한 알림 문구 포맷은 정규식 파싱 규칙에 따라 인식이 상이할 수 있습니다.",
+    "en": "[Initial App Setup]<br>• ⚙️ Open Settings: Tap the gear icon in the top right corner of the main screen.<br>• 💰 Set Budget: Enter your monthly target budget (Default: 1,000,000 KRW).<br>• 🔔 Notification Access: To use the automatic tracking feature, open 'Notification Access Settings' and grant permission in the system settings.<br><br>[Automatic Logging (Keyword Registration)]<br>• 🏷️ Add Rules: Register frequently used card companies/banks (e.g., KB Card, Shinhan Bank) or transaction keywords.<br>• 📂 Category Mapping: Map the keyword to a category (Food, Transport, Shopping, etc.) and save.<br>• ✨ Auto-Tracking: When payment notifications arrive, the amount is automatically parsed and added as a block in the jar.<br><br>[Manual Entry & Management]<br>• ➕ Manual Entry: Tap the [+] floating action button at the bottom right to enter amount, note, category, and date.<br>• 🔍 View/Edit/Delete: Tap any expense block inside the jar to open the detail dialog, edit information, or delete records.<br>• 📅 Monthly Navigation: Browse previous and next month's spending history using the top navigation.<br><br>[Notes]<br>• Spending that exceeds the budget (100%) may extend beyond the top of the glass jar.<br>• Notification format variations across financial institutions may affect parsing accuracy.",
+    "ja": "[初期設定]<br>• ⚙️ 設定を開く: メイン画面右上の歯車アイコンをタップ。<br>• 💰 予算設定: 1か月の目標予算を入力。<br>• 🔔 通知アクセス権限: 自動記帳機能を使う場合、設定で通知アクセスを許可してください。<br><br>[自動記帳 (キーワード登録)]<br>• 🏷️ ルール追加: カード会社や銀行名、決済キーワードを登録。<br>• 📂 カテゴリ紐づけ: 食費、交通費、ショッピングなどに分類。<br>• ✨ 自動反映: 決済通知が届くと金額が自動で解析され、瓶にブロックが積まれます。<br><br>[手動入力と管理]<br>• ➕ 直接追加: 右下の[+]ボタンから金額、内容、カテゴリ、日付を入力。<br>• 🔍 詳細・修正・削除: 瓶の中のブロックをタップして修正や削除が可能。<br>• 📅 月別確認: 上部ナビゲーションで前月や次月の履歴を確認できます。",
+    "zh": "[初始设置]<br>• ⚙️ 打开设置: 点击主屏幕右上角齿轮图标。<br>• 💰 设定总预算: 输入每月目标预算额度。<br>• 🔔 通知读取权限: 若要使用自动记账功能，请在系统设置中允许通知使用权。<br><br>[自动记账 (关键词匹配)]<br>• 🏷️ 添加规则: 录入常用银行卡、支付平台名称或交易关键词。<br>• 📂 分类关联: 指定触发该关键词时的消费类别(餐饮、交通、购物等)。<br>• ✨ 自动记账: 收到支付通知后自动解析金额并在玻璃瓶中生成积木。<br><br>[手动记账与管理]<br>• ➕ 手动添加: 点击右下角[+]悬浮按钮输入金额、备注、分类及日期。<br>• 🔍 查看/编辑/删除: 点击玻璃瓶内的开支积木即可修改或删除。<br>• 📅 按月切换: 通过顶部导航轻松切换查看各月账单记录。",
+    "es": "[Configuración inicial]<br>• ⚙️ Abrir ajustes: Toca el icono de engranaje en la esquina superior derecha.<br>• 💰 Fijar presupuesto: Ingresa tu presupuesto objetivo mensual.<br>• 🔔 Acceso a notificaciones: Otorga permiso de lectura de notificaciones para el registro automático.<br><br>[Registro automático]<br>• 🏷️ Añadir reglas: Registra nombres de bancos/tarjetas o palabras clave.<br>• 📂 Mapeo de categorías: Asigna categorías (Comida, Transporte, etc.).<br>• ✨ Detección automática: Los pagos recibidos por notificación se apilan en el frasco.<br><br>[Entrada manual]<br>• ➕ Añadir gasto: Pulsa el botón [+] para ingresar detalles manualmente.<br>• 🔍 Ver/Editar/Eliminar: Toca cualquier bloque para editar o borrarlo.<br>• 📅 Navegación mensual: Consulta meses anteriores o siguientes.",
+    "de": "[Ersteinrichtung]<br>• ⚙️ Einstellungen: Zahnradsymbol oben rechts antippen.<br>• 💰 Budget festlegen: Monatliches Zielbudget eingeben.<br>• 🔔 Benachrichtigungszugriff: Zugriff gewähren für automatische Erfassung.<br><br>[Automatisches Tracking]<br>• 🏷️ Regeln hinzufügen: Kartenaussteller oder Schlüsselwörter hinterlegen.<br>• 📂 Kategorien zuordnen: Ausgabenarten festlegen (Essen, Transport etc.).<br>• ✨ Automatische Erfassung: Beträge aus Zahlungsbenachrichtigungen landen als Blöcke im Glas.<br><br>[Manuelle Erfassung]<br>• ➕ Ausgabe hinzufügen: Über [+] Betrag, Notiz und Kategorie eingeben.<br>• 🔍 Bearbeiten/Löschen: Block im Glas antippen zum Ändern oder Entfernen.<br>• 📅 Monatsübersicht: Zwischen Monaten navigieren.",
+    "fr": "[Configuration initiale]<br>• ⚙️ Ouvrir les paramètres: Appuyez sur l'icône d'engrenage en haut à droite.<br>• 💰 Définir le budget: Saisissez votre budget mensuel.<br>• 🔔 Accès aux notifications: Autorisez l'accès pour le suivi automatique.<br><br>[Suivi automatique]<br>• 🏷️ Règles: Ajoutez des mots-clés de banques ou de cartes.<br>• 📂 Catégorisation: Associez les dépenses à une catégorie.<br>• ✨ Ajout automatique: Les montants notifiés s'empilent dans le bocal.<br><br>[Saisie manuelle]<br>• ➕ Ajouter manuellement: Bouton [+] pour saisir montant, date et note.<br>• 🔍 Voir/Modifier: Touchez un bloc dans le bocal pour le modifier ou le supprimer.<br>• 📅 Navigation mensuelle: Parcourez l'historique mois par mois.",
+    "vi": "[Cài đặt ban đầu]<br>• ⚙️ Mở Cài đặt: Nhấn vào biểu tượng bánh răng ở góc trên bên phải.<br>• 💰 Đặt ngân sách: Nhập ngân sách mục tiêu hàng tháng của bạn.<br>• 🔔 Quyền thông báo: Cấp quyền truy cập thông báo để tự động ghi chép.<br><br>[Ghi chép tự động]<br>• 🏷️ Thêm quy tắc: Đăng ký tên ngân hàng/thẻ hoặc từ khóa thanh toán.<br>• 📂 Phân loại: Gán danh mục chi tiêu tương ứng.<br>• ✨ Tự động cập nhật: Tiền chi tiêu sẽ tự động biến thành khối đá trong bình.<br><br>[Nhập thủ công]<br>• ➕ Thêm chi tiêu: Nhấn nút [+] để nhập số tiền, ghi chú, danh mục.<br>• 🔍 Xem/Sửa/Xóa: Chạm vào khối đá trong bình để chỉnh sửa.<br>• 📅 Xem theo tháng: Dễ dàng chuyển đổi giữa các tháng.",
+    "th": "[การตั้งค่าเริ่มต้น]<br>• ⚙️ เปิดการตั้งค่า: แตะไอคอนฟันเฟืองที่มุมขวาบน<br>• 💰 ตั้งค่างบประมาณ: ใส่งบประมาณเป้าหมายรายเดือน<br>• 🔔 สิทธิ์การแจ้งเตือน: อนุญาตการเข้าถึงการแจ้งเตือนเพื่อใช้ระบบบันทึกอัตโนมัติ<br><br>[บันทึกอัตโนมัติ]<br>• 🏷️ เพิ่มกฎ: เพิ่มชื่อธนาคาร บัตร หรือคำสำคัญเกี่ยวกับการชำระเงิน<br>• 📂 กำหนดหมวดหมู่: เชื่อมโยงหมวดหมู่ค่าใช้จ่าย<br>• ✨ เพิ่มเข้าขวดแก้ว: ข้อความแจ้งเตือนชำระเงินจะถูกแปลงเป็นก้อนหินในขวดแก้ว<br><br>[บันทึกด้วยตนเอง]<br>• ➕ เพิ่มรายการ: กดปุ่ม [+] เพื่อกรอกข้อมูลค่าใช้จ่าย<br>• 🔍 ดู/แก้ไข/ลบ: แตะก้อนหินในขวดแก้วเพื่อจัดการรายการ<br>• 📅 สลับเดือน: ตรวจสอบประวัติของแต่ละเดือนได้อย่างสะดวก",
+    "id": "[Pengaturan Awal]<br>• ⚙️ Buka Pengaturan: Ketuk ikon roda gigi di kanan atas.<br>• 💰 Atur Anggaran: Masukkan target anggaran bulanan Anda.<br>• 🔔 Akses Notifikasi: Berikan izin akses notifikasi untuk pelacakan otomatis.<br><br>[Pencatatan Otomatis]<br>• 🏷️ Tambah Aturan: Daftarkan kata kunci bank/kartu pembayaran.<br>• 📂 Pemetaan Kategori: Tetapkan kategori pengeluaran.<br>• ✨ Terapkan Otomatis: Jumlah pembayaran langsung ditambahkan sebagai balok dalam toples.<br><br>[Pencatatan Manual]<br>• ➕ Tambah Pengeluaran: Ketuk tombol [+] untuk memasukkan detail transaksi.<br>• 🔍 Lihat/Edit/Hapus: Ketuk balok pengeluaran di dalam toples untuk mengedit.<br>• 📅 Navigasi Bulanan: Telusuri riwayat bulan sebelumnya dan berikutnya.",
+    "ru": "[Начальная настройка]<br>• ⚙️ Настройки: Нажмите шестеренку в правом верхнем углу.<br>• 💰 Бюджет: Введите целевой бюджет на месяц.<br>• 🔔 Доступ к уведомлениям: Разрешите доступ для автоматического считывания трат.<br><br>[Автоматический учет]<br>• 🏷️ Правила: Добавьте названия банков или ключевые слова платежей.<br>• 📂 Категории: Свяжите правила с категориями расходов.<br>• ✨ Автоначисление: Суммы из пуш-уведомлений превращаются в камешки в банке.<br><br>[Ручной ввод]<br>• ➕ Добавить расход: Кнопка [+] для ввода суммы, категории и даты.<br>• 🔍 Редактирование: Нажмите на камешек в банке для изменения или удаления.<br>• 📅 История: Просматривайте расходы по месяцам."
+  },
+  "youtubeUrl": "",
+  "youtubeType": "1",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/ExpenseGlass_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/ExpenseGlass/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/ExpenseGlass/scr2.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "가계부",
+      "지출관리"
     ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/ExpenseGlass/scr1.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/ExpenseGlass/scr2.jpg"
+    "en": [
+      "Expense",
+      "Management"
     ],
-    "tags": {
-        "ko": [
-            "가계부",
-            "지출관리"
-        ],
-        "en": [
-            "Expense",
-            "Management"
-        ]
-    }
+    "ja": [
+      "家計簿",
+      "支出管理"
+    ],
+    "zh": [
+      "记账",
+      "支出管理"
+    ],
+    "es": [
+      "Gastos",
+      "Gestión"
+    ],
+    "de": [
+      "Ausgaben",
+      "Haushaltsbuch"
+    ],
+    "fr": [
+      "Dépenses",
+      "Budget"
+    ],
+    "vi": [
+      "SổThuChi",
+      "QuảnLýChiTiêu"
+    ],
+    "th": [
+      "บันทึกรายจ่าย",
+      "จัดการการเงิน"
+    ],
+    "id": [
+      "Pengeluaran",
+      "ManajemenKeuangan"
+    ],
+    "ru": [
+      "Расходы",
+      "УчетБюджета"
+    ]
+  }
 }

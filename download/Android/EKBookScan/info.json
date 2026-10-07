@@ -1,40 +1,112 @@
 {
-    "title": {
-        "ko": "EK Book Scan",
-        "en": "EK Book Scan"
-    },
-    "version": "1.0.0",
-    "releaseDate": "2026-03-21",
-    "shortDescription": {
-        "ko": "EK북스캔(EKBookScan) 앱은 사용자가 책이나 문서를 빠르고 효율적으로 디지털 PDF 파일로 변환할 수 있도록 돕는 문서 스캔 도구입니다.",
-        "en": "EKBookScan is a document scanning tool that helps users quickly and efficiently convert books or documents into digital PDF files."
-    },
-    "description": {
-        "ko": "EK북스캔은 책이나 문서를 빠르고 효율적으로 디지털 PDF 파일로 변환할 수 있도록 돕는 문서 스캔 도구입니다. 기존의 스캔 프로그램들은 광고나 월 비용을 지출해야 하는 문제가 있어서, 제가 사용할 목적으로 만들었습니다. 스캔한 문서를 기술적으로 보정하는 기능은 약하지만, 한 장씩 스캔하거나, 일정 간격으로 자동 스캔할 수 있는 옵션을 두어서 어렵지 않게 많은 양을 스캔할 수 있습니다. 스캔한 결과는 pdf 문서로 저장이됩니다. 최대 150페이지까지 저장할 수 있습니다. <p style='color:#ff0000'> ※ 주의: 스캔한 PDF를 무단 복제, 배포 및 공유하는 행위는 저작권법에 의해 법적 처벌을 받을 수 있습니다. 본 앱은 개인 용도의 스캔만을 권장합니다.</p>",
-        "en": "EKBookScan is a document scanning tool that helps users quickly and efficiently convert books or documents into digital PDF files. Existing scanning programs have the problem of requiring ads or monthly fees, so I made it for my own use. The function to technically correct scanned documents is weak, but it is easy to scan large quantities by providing options to scan one page at a time or automatically scan at regular intervals. The scanned result is saved as a pdf document. Up to 150 pages can be saved. <p>※ Warning: Unauthorized copying, distribution, and sharing of scanned PDFs may result in legal penalties under copyright law. This app is recommended for personal scanning purposes only.</p>"
-    },
-    "control": {
-        "ko": "[메인 촬영 화면]<br>•📷 스캔 (수동 촬영): 버튼을 누를 때마다 현재 화면을 한 페이지씩 촬영합니다. <br>• ⏱ 오토 (자동 촬영): 버튼을 누르면 촬영 간격(3초, 6초, 9초)을 선택할 수 있습니다. 선택 후 카운트다운이 시작되며, 페이지를 넘길 때마다 자동으로 촬영됩니다. <br>• 상단 헤더: 현재까지 스캔된 총 페이지 수를 실시간으로 확인할 수 있습니다. <br><br>[촬영 결과 확인 화면] <br>촬영 직후 보정된 이미지가 화면에 표시됩니다. 이때는 구도를 잡는 가이드 선이 사라져 결과물을 더 명확히 볼 수 있습니다. <br>• 다음 페이지 ▶: 현재 촬영본을 저장하고 다시 카메라 화면으로 돌아가 다음 페이지를 촬영합니다. <br>• ↩ 재촬영: 마지막으로 촬영된 컷이 마음에 들지 않을 경우, 해당 컷을 삭제하고 다시 찍습니다. <br>• ▶ 계속 (오토 재개): 일시 정지된 자동 촬영을 다시 시작합니다. <br>• ⏹ 오토 중지: 자동 촬영 모드를 종료하고 수동 모드로 전환합니다. <br><br>[마무리 및 저장] <br>• 💾 PDF 저장: 모든 페이지 스캔이 완료된 후 이 버튼을 누르면 스캔된 이미지들을 하나의 PDF 파일로 생성합니다. <br>• 저장 경로: 생성된 PDF 파일은 기기의 [내장 메모리 > Downloads > bookscan] 폴더에 EKBookScan_날짜_시간.pdf 형식으로 저장됩니다.",
-        "en": "[Main Shooting Screen] •📷 Scan (Manual Shooting): Press the button each time to shoot the current screen one page at a time. • ⏱ Auto (Automatic Shooting): When you press the button, you can select the shooting interval (3 seconds, 6 seconds, 9 seconds). After selection, the countdown starts, and shooting is performed automatically every time the page is turned. • Top Header: You can check the total number of pages scanned so far in real time. [Shooting Result Confirmation Screen] The corrected image is displayed on the screen immediately after shooting. At this time, the guide line for capturing the composition disappears, allowing you to see the result more clearly. • Next Page ▶: Save the current shot and return to the camera screen to shoot the next page. • ↩ Retake: If you don't like the last shot, delete it and shoot again. • ▶ Continue (Auto Resume): Resume the paused auto shooting. • ⏹ Stop Auto: Stop the auto shooting mode and switch to manual mode. [Finalization and Saving] • 💾 Save PDF: After all pages are scanned, press this button to create a PDF file containing the scanned images. • Save Path: The generated PDF file is saved in the [Internal Memory > Downloads > bookscan] folder of the device in the format EKBookScan_Date_Time.pdf."
-    },
-    "youtubeUrl": "",
-    "youtubeType": "1",
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKBookScan_v1.0.0.apk"
+  "title": {
+    "ko": "EK Book Scan",
+    "en": "EK Book Scan",
+    "ja": "EK Book Scan",
+    "zh": "EK 图书扫描 (EK Book Scan)",
+    "es": "EK Book Scan",
+    "de": "EK Book Scan",
+    "fr": "EK Book Scan",
+    "vi": "EK Book Scan",
+    "th": "EK Book Scan",
+    "id": "EK Book Scan",
+    "ru": "EK Book Scan"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-03-21",
+  "shortDescription": {
+    "ko": "EK북스캔(EKBookScan) 앱은 사용자가 책이나 문서를 빠르고 효율적으로 디지털 PDF 파일로 변환할 수 있도록 돕는 문서 스캔 도구입니다.",
+    "en": "EKBookScan is a document scanning tool that helps users quickly and efficiently convert books or documents into digital PDF files.",
+    "ja": "書籍や文書を素早く効率的にデジタルPDFファイルに変換できるドキュメントスキャンツールです。",
+    "zh": "帮助用户快速高效地将书籍或文档转换为数字化PDF文件的扫描工具。",
+    "es": "Herramienta de escaneo de documentos para convertir libros o archivos en PDF digitales de forma rápida y eficiente.",
+    "de": "Ein Dokumenten-Scan-Tool, mit dem Bücher oder Dokumente schnell und effizient in digitale PDF-Dateien umgewandelt werden können.",
+    "fr": "Un outil de numérisation de documents qui aide à convertir rapidement et efficacement des livres ou des documents en fichiers PDF numériques.",
+    "vi": "Công cụ quét tài liệu giúp người dùng chuyển đổi sách hoặc tài liệu thành tệp PDF kỹ thuật số một cách nhanh chóng và hiệu quả.",
+    "th": "เครื่องมือสแกนเอกสารที่ช่วยให้คุณแปลงหนังสือหรือเอกสารเป็นไฟล์ PDF ดิจิทัลได้อย่างรวดเร็วและมีประสิทธิภาพ",
+    "id": "Alat pemindai dokumen yang membantu pengguna mengubah buku atau dokumen menjadi file PDF digital dengan cepat dan efisien.",
+    "ru": "Инструмент для быстрого и эффективного сканирования книг и документов в формат PDF."
+  },
+  "description": {
+    "ko": "EK북스캔은 책이나 문서를 빠르고 효율적으로 디지털 PDF 파일로 변환할 수 있도록 돕는 문서 스캔 도구입니다. 기존의 스캔 프로그램들은 광고나 월 비용을 지출해야 하는 문제가 있어서, 제가 사용할 목적으로 만들었습니다. 스캔한 문서를 기술적으로 보정하는 기능은 약하지만, 한 장씩 스캔하거나, 일정 간격으로 자동 스캔할 수 있는 옵션을 두어서 어렵지 않게 많은 양을 스캔할 수 있습니다. 스캔한 결과는 pdf 문서로 저장이됩니다. 최대 150페이지까지 저장할 수 있습니다. <p style='color:#ff0000'> ※ 주의: 스캔한 PDF를 무단 복제, 배포 및 공유하는 행위는 저작권법에 의해 법적 처벌을 받을 수 있습니다. 본 앱은 개인 용도의 스캔만을 권장합니다.</p>",
+    "en": "EKBookScan is a document scanning tool that helps users quickly and efficiently convert books or documents into digital PDF files. Existing scanning programs have the problem of requiring ads or monthly fees, so I made it for my own use. The function to technically correct scanned documents is weak, but it is easy to scan large quantities by providing options to scan one page at a time or automatically scan at regular intervals. The scanned result is saved as a pdf document. Up to 150 pages can be saved. <p>※ Warning: Unauthorized copying, distribution, and sharing of scanned PDFs may result in legal penalties under copyright law. This app is recommended for personal scanning purposes only.</p>",
+    "ja": "EKブックスキャンは本や書類を素早く効率的にデジタルPDFファイルに変換できる文書スキャンツールです。既存のスキャンアプリのような広告や月額課金がなく、手軽に利用できます。1枚ずつの手動スキャンや一定間隔の自動スキャンに対応し、最大150ページまでPDFとして保存できます。<p style='color:#ff0000'>※ 注意: スキャンしたPDFの無断複製、配布、共有は著作権法により処罰される場合があります。個人利用でのみご使用ください。</p>",
+    "zh": "EK图书扫描是一款帮助用户快速高效地将书籍或文档转换为电子PDF文件的扫描工具。没有传统扫描软件的广告与订阅费用，支持单页手动扫描或定时自动连拍，可轻松完成大量页码扫描，最多支持保存150页为单个PDF。<p style='color:#ff0000'>※ 注意：未经许可复制、分发和共享扫描PDF可能违反版权法，本应用仅建议用于个人用途。</p>",
+    "es": "EKBookScan es una herramienta de escaneo de documentos que te ayuda a convertir libros o documentos en archivos PDF digitales de forma rápida y eficiente. Sin publicidad ni molestas suscripciones mensuales. Ofrece opciones para escanear página por página o escaneo automático con temporizador, guardando hasta 150 páginas en un único PDF.<p style='color:#ff0000'>※ Advertencia: La copia, distribución y difusión no autorizada de archivos PDF escaneados puede ser sancionada por la ley de derechos de autor. Recomendado solo para uso personal.</p>",
+    "de": "EKBookScan ist ein Dokumentenscan-Tool, mit dem Bücher oder Dokumente schnell und effizient in digitale PDF-Dateien umgewandelt werden können. Ohne Werbung oder monatliche Abos. Bietet manuelles Scannen oder automatisches Intervall-Scannen für bis zu 150 Seiten in einem PDF.<p style='color:#ff0000'>※ Hinweis: Das unbefugte Vervielfältigen und Verbreiten gescannter PDFs kann urheberrechtlich verfolgt werden. Nur für den privaten Gebrauch bestimmt.</p>",
+    "fr": "EKBookScan est un outil de numérisation qui permet de convertir rapidement et efficacement des livres ou documents en fichiers PDF numériques. Sans publicités ni abonnements payants. Propose la numérisation page par page ou automatique par intervalles réguliers, jusqu'à 150 pages par fichier PDF.<p style='color:#ff0000'>※ Attention: La reproduction ou distribution non autorisée de PDF scannés est passible de sanctions légales. Réservé à un usage personnel.</p>",
+    "vi": "EKBookScan là công cụ quét tài liệu giúp chuyển đổi sách hoặc giấy tờ thành tệp PDF kỹ thuật số nhanh chóng và tiện lợi. Hoàn toàn không quảng cáo hay phí thuê bao. Hỗ trợ quét từng trang hoặc tự động chụp theo khoảng thời gian định sẵn, lưu tối đa 150 trang thành một tệp PDF.<p style='color:#ff0000'>※ Chú ý: Việc sao chép, phân phối và chia sẻ trái phép các bản quét PDF có thể vi phạm bản quyền. Chỉ khuyến khích sử dụng cho mục đích cá nhân.</p>",
+    "th": "EKBookScan เป็นเครื่องมือสแกนเอกสารที่ช่วยแปลงหนังสือหรือเอกสารให้เป็นไฟล์ PDF ดิจิทัลได้อย่างรวดเร็ว ไร้โฆษณาและไม่มีค่าบริการรายเดือน มีโหมดสแกนทีละหน้าหรือตั้งเวลาถ่ายอัตโนมัติ บันทึกได้สูงสุด 150 หน้าต่อหนึ่งไฟล์ PDF<p style='color:#ff0000'>※ คำเตือน: การคัดลอก เผยแพร่ หรือแชร์ PDF ที่สแกนโดยไม่ได้รับอนุญาตอาจมีความผิดตามกฎหมายลิขสิทธิ์ แนะนำให้ใช้สำหรับส่วนบุคคลเท่านั้น</p>",
+    "id": "EKBookScan adalah alat pemindai dokumen yang membantu pengguna mengubah buku atau dokumen menjadi file PDF digital dengan cepat dan efisien. Tanpa iklan atau biaya langganan bulanan. Mendukung pemindaian manual per halaman atau pemindaian otomatis berskala interval, menyimpan hingga 150 halaman dalam satu PDF.<p style='color:#ff0000'>※ Perhatian: Menyalin, menyebarkan, dan membagikan PDF hasil pemindaian tanpa izin dapat dikenai sanksi hukum hak cipta. Disarankan hanya untuk penggunaan pribadi.</p>",
+    "ru": "EKBookScan — это удобный сканер для быстрого перевода книг и документов в цифровой формат PDF. Без рекламы и платных подписок. Поддерживает ручное сканирование по одной странице и автоматическую съемку по таймеру, сохраняя до 150 страниц в единый PDF.<p style='color:#ff0000'>※ Внимание: Несанкционированное копирование и распространение отсканированных материалов может преследоваться по закону об авторском праве. Рекомендуется только для личного использования.</p>"
+  },
+  "control": {
+    "ko": "[메인 촬영 화면]<br>•📷 스캔 (수동 촬영): 버튼을 누를 때마다 현재 화면을 한 페이지씩 촬영합니다. <br>• ⏱ 오토 (자동 촬영): 버튼을 누르면 촬영 간격(3초, 6초, 9초)을 선택할 수 있습니다. 선택 후 카운트다운이 시작되며, 페이지를 넘길 때마다 자동으로 촬영됩니다. <br>• 상단 헤더: 현재까지 스캔된 총 페이지 수를 실시간으로 확인할 수 있습니다. <br><br>[촬영 결과 확인 화면] <br>촬영 직후 보정된 이미지가 화면에 표시됩니다. 이때는 구도를 잡는 가이드 선이 사라져 결과물을 더 명확히 볼 수 있습니다. <br>• 다음 페이지 ▶: 현재 촬영본을 저장하고 다시 카메라 화면으로 돌아가 다음 페이지를 촬영합니다. <br>• ↩ 재촬영: 마지막으로 촬영된 컷이 마음에 들지 않을 경우, 해당 컷을 삭제하고 다시 찍습니다. <br>• ▶ 계속 (오토 재개): 일시 정지된 자동 촬영을 다시 시작합니다. <br>• ⏹ 오토 중지: 자동 촬영 모드를 종료하고 수동 모드로 전환합니다. <br><br>[마무리 및 저장] <br>• 💾 PDF 저장: 모든 페이지 스캔이 완료된 후 이 버튼을 누르면 스캔된 이미지들을 하나의 PDF 파일로 생성합니다. <br>• 저장 경로: 생성된 PDF 파일은 기기의 [내장 메모리 > Downloads > bookscan] 폴더에 EKBookScan_날짜_시간.pdf 형식으로 저장됩니다.",
+    "en": "[Main Shooting Screen] •📷 Scan (Manual Shooting): Press the button each time to shoot the current screen one page at a time. • ⏱ Auto (Automatic Shooting): When you press the button, you can select the shooting interval (3 seconds, 6 seconds, 9 seconds). After selection, the countdown starts, and shooting is performed automatically every time the page is turned. • Top Header: You can check the total number of pages scanned so far in real time. [Shooting Result Confirmation Screen] The corrected image is displayed on the screen immediately after shooting. At this time, the guide line for capturing the composition disappears, allowing you to see the result more clearly. • Next Page ▶: Save the current shot and return to the camera screen to shoot the next page. • ↩ Retake: If you don't like the last shot, delete it and shoot again. • ▶ Continue (Auto Resume): Resume the paused auto shooting. • ⏹ Stop Auto: Stop the auto shooting mode and switch to manual mode. [Finalization and Saving] • 💾 Save PDF: After all pages are scanned, press this button to create a PDF file containing the scanned images. • Save Path: The generated PDF file is saved in the [Internal Memory > Downloads > bookscan] folder of the device in the format EKBookScan_Date_Time.pdf.",
+    "ja": "[メイン撮影画面]<br>•📷 スキャン (手動撮影): ボタンを押すごとに現在の画面を1ページずつ撮影します。<br>• ⏱ オート (自動撮影): 撮影間隔(3秒、6秒、9秒)を選択するとカウントダウンが始まり、ページをめくるだけで自動撮影されます。<br>• 上部ヘッダー: スキャンした総ページ数をリアルタイムで確認できます。<br><br>[撮影結果の確認]<br>撮影直後に補正された画像が表示されます。<br>• 次のページ ▶: 現在のカットを保存して次のページを撮影します。<br>• ↩ 再撮影: 直前のカットを削除して撮り直します。<br>• ▶ 継続 (オート再開): 一時停止した自動撮影を再開します。<br>• ⏹ オート停止: 自動撮影を終了し手動モードに戻ります。<br><br>[仕上げと保存]<br>• 💾 PDF保存: すべてのスキャン画像から1つのPDFファイルを生成します。<br>• 保存先: 端末の [内蔵ストレージ > Downloads > bookscan] フォルダに保存されます。",
+    "zh": "[主拍摄画面]<br>•📷 扫描 (手动拍摄): 每次按下按钮拍摄当前页面。<br>• ⏱ 自动 (定时拍摄): 可选择拍摄间隔(3秒、6秒、9秒)，倒计时开始后翻页即可自动连拍。<br>• 顶部状态栏: 实时查看当前已扫描的总页数。<br><br>[拍摄结果确认画面]<br>拍摄后立即显示矫正图片。<br>• 下一页 ▶: 保存当前页并返回拍摄下一页。<br>• ↩ 重拍: 删除当前照片并重新拍摄。<br>• ▶ 继续 (恢复自动): 恢复已暂停的自动拍摄。<br>• ⏹ 停止自动: 退出自动模式转为手动。<br><br>[完成与保存]<br>• 💾 保存PDF: 将所有扫描图片合并为一个PDF文件。<br>• 保存路径: 设备 [内部存储 > Downloads > bookscan] 文件夹。",
+    "es": "[Pantalla principal de captura]<br>•📷 Escaneo (Manual): Pulsa el botón para capturar la página actual una a una.<br>• ⏱ Auto (Automático): Selecciona el intervalo de disparo (3s, 6s, 9s) para disparar con temporizador continuo al pasar de página.<br>• Encabezado superior: Muestra en tiempo real el total de páginas escaneadas.<br><br>[Pantalla de revisión]<br>Muestra la imagen corregida tras la captura.<br>• Siguiente página ▶: Guarda la página actual y continúa escaneando.<br>• ↩ Repetir: Elimina la toma actual y vuelve a capturar.<br>• ▶ Continuar: Reanuda el escaneo automático pausado.<br>• ⏹ Detener Auto: Vuelve al modo manual.<br><br>[Finalización y Guardado]<br>• 💾 Guardar PDF: Genera un archivo PDF con todas las páginas escaneadas.<br>• Ruta de guardado: Carpeta [Almacenamiento interno > Downloads > bookscan].",
+    "de": "[Hauptaufnahmebildschirm]<br>•📷 Scannen (Manuell): Drücken Sie die Taste, um jeweils eine Seite aufzunehmen.<br>• ⏱ Auto (Automatisch): Wählen Sie das Aufnahmeintervall (3s, 6s, 9s), um beim Umblättern automatisch aufzunehmen.<br>• Oberer Header: Zeigt die Gesamtzahl der gescannten Seiten in Echtzeit an.<br><br>[Ergebnisprüfung]<br>Zeigt das korrigierte Bild direkt nach der Aufnahme an.<br>• Nächste Seite ▶: Aktuelle Aufnahme speichern und nächste Seite aufnehmen.<br>• ↩ Wiederholen: Letzte Aufnahme löschen und neu aufnehmen.<br>• ▶ Fortsetzen: Pausiertes automatisches Scannen fortsetzen.<br>• ⏹ Auto Stopp: Automatischen Modus beenden.<br><br>[Speichern]<br>• 💾 Als PDF speichern: Erstellt eine PDF-Datei aus allen gescannten Seiten.<br>• Speicherpfad: Ordner [Interner Speicher > Downloads > bookscan].",
+    "fr": "[Écran de prise de vue principal]<br>•📷 Scanner (Manuel): Appuyez sur le bouton pour capturer une page à la fois.<br>• ⏱ Auto (Automatique): Choisissez l'intervalle (3s, 6s, 9s) pour une prise de vue continue en tournant les pages.<br>• En-tête supérieur: Suivi en direct du nombre total de pages numérisées.<br><br>[Vérification des résultats]<br>L'image corrigée s'affiche immédiatement après la prise de vue.<br>• Page suivante ▶: Enregistre la page et passe à la suivante.<br>• ↩ Reprendre: Supprime la dernière prise et recommence.<br>• ▶ Reprendre Auto: Relance la prise de vue automatique.<br>• ⏹ Arrêter Auto: Passe en mode manuel.<br><br>[Finalisation et Sauvegarde]<br>• 💾 Enregistrer PDF: Crée un fichier PDF unique regroupant toutes les pages.<br>• Emplacement: Dossier [Stockage interne > Downloads > bookscan].",
+    "vi": "[Màn hình chụp chính]<br>•📷 Quét (Thủ công): Nhấn nút để chụp từng trang một.<br>• ⏱ Tự động: Chọn khoảng thời gian chụp (3s, 6s, 9s), đồng hồ đếm ngược sẽ tự động chụp khi bạn lật trang.<br>• Tiêu đề trên cùng: Theo dõi tổng số trang đã quét trong thời gian thực.<br><br>[Kiểm tra kết quả chụp]<br>Hình ảnh đã hiệu chỉnh sẽ hiển thị ngay sau khi chụp.<br>• Trang tiếp theo ▶: Lưu trang hiện tại và tiếp tục chụp trang kế.<br>• ↩ Chụp lại: Xóa trang vừa chụp và chụp lại.<br>• ▶ Tiếp tục tự động: Khôi phục chế độ chụp tự động.<br>• ⏹ Dừng tự động: Trở về chế độ chụp thủ công.<br><br>[Lưu tệp]<br>• 💾 Lưu PDF: Kết hợp toàn bộ các trang đã quét thành một tệp PDF.<br>• Vị trí lưu: Thư mục [Bộ nhớ trong > Downloads > bookscan].",
+    "th": "[หน้าจอถ่ายภาพหลัก]<br>•📷 สแกน (ถ่ายด้วยตนเอง): กดปุ่มเพื่อถ่ายภาพทีละหน้า<br>• ⏱ ออโต้ (ถ่ายอัตโนมัติ): เลือกระยะเวลาถ่าย (3 วิ, 6 วิ, 9 วิ) ระบบจะนับถอยหลังและถ่ายอัตโนมัติเมื่อเปิดหน้าหนังสือ<br>• แถบด้านบน: แสดงจำนวนหน้ารวมที่สแกนแบบเรียลไทม์<br><br>[ตรวจสอบผลลัพธ์]<br>แสดงภาพที่ปรับแต่งแล้วหลังจากการถ่ายทันที<br>• หน้าถัดไป ▶: บันทึกหน้านี้แล้วถ่ายหน้าต่อไป<br>• ↩ ถ่ายใหม่: ลบภาพล่าสุดแล้วถ่ายใหม่<br>• ▶ ดำเนินการต่อ: สแกนอัตโนมัติต่อไป<br>• ⏹ หยุดออโต้: สลับกลับสู่โหมดถ่ายด้วยตนเอง<br><br>[บันทึกไฟล์]<br>• 💾 บันทึก PDF: รวมทุกหน้าที่สแกนเป็นไฟล์ PDF เดียว<br>• เส้นทางบันทึก: โฟลเดอร์ [ความจำเครื่อง > Downloads > bookscan]",
+    "id": "[Layar Utama Pemotretan]<br>•📷 Pindai (Manual): Tekan tombol untuk mengambil foto per halaman.<br>• ⏱ Otomatis: Pilih interval waktu (3 detik, 6 detik, 9 detik), hitung mundur akan berjalan dan memotret otomatis setiap kali Anda membalik halaman.<br>• Header Atas: Menampilkan jumlah total halaman yang dipindai secara real-time.<br><br>[Konfirmasi Hasil]<br>Gambar yang telah dikoreksi langsung ditampilkan setelah pemotretan.<br>• Halaman Berikutnya ▶: Simpan halaman saat ini dan pindai halaman berikutnya.<br>• ↩ Ambil Ulang: Hapus hasil terakhir dan foto ulang.<br>• ▶ Lanjutkan: Lanjutkan pemotretan otomatis yang dijeda.<br>• ⏹ Hentikan Otomatis: Beralih kembali ke mode manual.<br><br>[Penyimpanan]<br>• 💾 Simpan PDF: Menggabungkan semua halaman yang dipindai ke dalam satu file PDF.<br>• Lokasi Penyimpanan: Folder [Penyimpanan Internal > Downloads > bookscan].",
+    "ru": "[Основной экран съемки]<br>•📷 Скан (Вручную): Нажимайте кнопку для съемки по одной странице.<br>• ⏱ Авто (Таймер): Выберите интервал (3 сек, 6 сек, 9 сек) для автоматической съемки при перелистывании страниц.<br>• Верхняя строка: Отображает общее число отсканированных страниц в реальном времени.<br><br>[Просмотр результата]<br>Сразу после съемки отображается скорректированное изображение.<br>• След. страница ▶: Сохранить текущую страницу и перейти к следующей.<br>• ↩ Переснять: Удалить последний кадр и снять заново.<br>• ▶ Продолжить авто: Возобновить автосъемку.<br>• ⏹ Стоп авто: Переключиться в ручной режим.<br><br>[Сохранение]<br>• 💾 Сохранить PDF: Объединяет все страницы в один документ PDF.<br>• Папка сохранения: [Внутренняя память > Downloads > bookscan]."
+  },
+  "youtubeUrl": "",
+  "youtubeType": "1",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKBookScan_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/EKBookScan/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/EKBookScan/scr2.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/EKBookScan/scr3.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "스캔",
+      "북스캔"
     ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/EKBookScan/scr1.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/EKBookScan/scr2.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/EKBookScan/scr3.jpg"
+    "en": [
+      "Scan",
+      "Book Scan"
     ],
-    "tags": {
-        "ko": [
-            "스캔",
-            "북스캔"
-        ],
-        "en": [
-            "Scan",
-            "Book Scan"
-        ]
-    }
+    "ja": [
+      "スキャン",
+      "ブックスキャン"
+    ],
+    "zh": [
+      "扫描",
+      "图书扫描"
+    ],
+    "es": [
+      "Escaneo",
+      "EscaneoDeLibros"
+    ],
+    "de": [
+      "Scannen",
+      "Buchscan"
+    ],
+    "fr": [
+      "Numérisation",
+      "ScanDeLivre"
+    ],
+    "vi": [
+      "Quét",
+      "QuétSách"
+    ],
+    "th": [
+      "สแกน",
+      "สแกนหนังสือ"
+    ],
+    "id": [
+      "Pindai",
+      "PindaiBuku"
+    ],
+    "ru": [
+      "Сканирование",
+      "КнижныйСканер"
+    ]
+  }
 }

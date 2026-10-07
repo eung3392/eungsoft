@@ -1,38 +1,103 @@
 {
-    "title": {
-        "ko": "테이프 계산기",
-        "en": "TapeCalc"
-    },
-    "version": "1.0.0",
-    "releaseDate": "2026-09-21",
-    "shortDescription": {
-        "ko": "계산과정을 기록하고 수정하는 계산기",
-        "en": "Calculation Process at a Glance"
-    },
-    "description": {
-        "ko": "<b>테이프 계산기(TapeCalc)</b>는 계산 과정이 마치 종이 테이프에 기록되듯 차례대로 나열되어 전체 계산 흐름을 한눈에 파악할 수 있는 스마트 계산기 앱입니다.<br><br><b>[주요 특징]</b><br>• 📜 <b>테이프 방식의 기록</b>: 모든 계산 과정이 종이 테이프처럼 순서대로 나열되어 전체 계산 흐름을 한눈에 쉽게 파악할 수 있습니다.<br>• 🔄 <b>실시간 수정 및 자동 재계산</b>: 이미 입력한 이전 줄의 숫자나 연산자를 직접 터치하여 수정하면, 이후 연산과 최종 합계가 즉시 자동으로 재계산됩니다.<br>• 🇰🇷 <b>한국어 단위 포맷 지원</b>: 큰 숫자도 한눈에 알아보기 쉽도록 숫자뿐만 아니라 한국어 단위(예: 만, 천 등)로 직관적인 포맷팅을 제공합니다.<br>• 💾 <b>기록 저장 및 관리</b>: 현재 작업 중인 시트뿐만 아니라 최근 10개의 계산 기록을 안전하게 저장하고 언제든 다시 불러올 수 있습니다.<br>• 🔊 <b>사운드 설정</b>: 사용자 취향에 맞춰 키패드 터치음 등 소리 설정을 자유롭게 켜고 끌 수 있습니다.",
-        "en": "<b>TapeCalc</b> is an intuitive tape-style calculator app that logs your calculation history sequentially like a paper tape roll, allowing you to review the entire flow at a glance.<br><br><b>[Key Features]</b><br>• 📜 <b>Tape-Style History</b>: Calculation steps are organized chronologically like a physical paper tape, making it easy to track your math history.<br>• 🔄 <b>Real-Time Editing & Recalculation</b>: Simply tap any previously entered number or operator to edit it, and the running total updates automatically in real time.<br>• 🇰🇷 <b>Korean Unit Formatting</b>: Displays numbers with Korean numerical units (e.g., Man, Eok) for effortless reading of large amounts.<br>• 💾 <b>History Saving & Management</b>: Keeps your active sheet and stores up to 10 recent calculation records to reload anytime.<br>• 🔊 <b>Sound Settings</b>: Customize tactile keypad sound effects to suit your preference."
-    },
-    "control": {
-        "ko": "[기본 조작법]<br>• 🔢 숫자 및 연산자 입력: 화면 하단의 키패드를 사용하여 일반 계산기처럼 숫자와 연산자를 입력합니다. 입력된 내용은 상단 테이프에 한 줄씩 차례대로 추가됩니다.<br>• ✏️ 이전 기록 수정: 테이프 리스트에 표시된 지난 줄의 숫자나 연산자를 직접 터치하여 수정 모드로 진입합니다. 값을 변경하면 전체 합계가 실시간으로 자동 갱신됩니다.<br>• 📊 합계 확인: 테이프 하단에 항상 현재까지의 총합계(Running Total)가 실시간으로 표시됩니다.<br><br>[기록 관리 및 설정]<br>• 📁 기록 관리: 별도의 기록 시트(History Sheet)를 통해 이전에 수행했던 계산 목록을 확인하거나 다시 불러와 관리할 수 있습니다.<br>• ⚙️ 설정: 소리 설정 등 앱의 동작 방식을 필요에 따라 조정할 수 있습니다.",
-        "en": "[Basic Operations]<br>• 🔢 Enter Numbers & Operators: Use the bottom keypad to input numbers and operators just like a regular calculator. Each entry is added line-by-line onto the tape above.<br>• ✏️ Edit Previous Records: Tap any previous number or operator in the tape list to enter edit mode. Modifying a value immediately recalculates the running total in real time.<br>• 📊 Check Totals: The running total up to the current line is always displayed at the bottom of the tape.<br><br>[History & Settings]<br>• 📁 History Management: Open the History Sheet to browse, restore, and manage previous calculation logs.<br>• ⚙️ Settings: Adjust app behavior such as keypad sounds to suit your preference."
-    },
-    "youtubeUrl": "",
-    "youtubeType": "1",
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TapeCalc.apk"
+  "title": {
+    "ko": "테이프 계산기",
+    "en": "TapeCalc",
+    "ja": "テープ計算機",
+    "zh": "纸带计算器 (TapeCalc)",
+    "es": "TapeCalc",
+    "de": "TapeCalc",
+    "fr": "TapeCalc",
+    "vi": "TapeCalc Máy Tính Băng",
+    "th": "เครื่องคิดเลขม้วนเทป",
+    "id": "TapeCalc",
+    "ru": "Ленточный Калькулятор"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-09-21",
+  "shortDescription": {
+    "ko": "계산과정을 기록하고 수정하는 계산기",
+    "en": "Calculation Process at a Glance",
+    "ja": "計算過程を記録・修正できるスマート電卓アプリ",
+    "zh": "记录并随时修改计算过程的纸带式计算器",
+    "es": "Calculadora inteligente que registra y permite editar todo el proceso de cálculo",
+    "de": "Intelligenter Rechner, der den Rechenverlauf aufzeichnet und bearbeiten lässt",
+    "fr": "Calculatrice intelligente qui enregistre et permet de modifier tout le processus de calcul",
+    "vi": "Máy tính thông minh ghi lại và cho phép chỉnh sửa toàn bộ quá trình tính toán",
+    "th": "เครื่องคิดเลขกระดาษม้วนที่บันทึกและแก้ไขขั้นตอนการคำนวณได้อย่างสะดวก",
+    "id": "Kalkulator pita pintar yang mencatat dan memungkinkan pengeditan seluruh alur perhitungan",
+    "ru": "Умный калькулятор с записью и редактированием всей цепочки вычислений"
+  },
+  "description": {
+    "ko": "<b>테이프 계산기(TapeCalc)</b>는 계산 과정이 마치 종이 테이프에 기록되듯 차례대로 나열되어 전체 계산 흐름을 한눈에 파악할 수 있는 스마트 계산기 앱입니다.<br><br><b>[주요 특징]</b><br>• 📜 <b>테이프 방식의 기록</b>: 모든 계산 과정이 종이 테이프처럼 순서대로 나열되어 전체 계산 흐름을 한눈에 쉽게 파악할 수 있습니다.<br>• 🔄 <b>실시간 수정 및 자동 재계산</b>: 이미 입력한 이전 줄의 숫자나 연산자를 직접 터치하여 수정하면, 이후 연산과 최종 합계가 즉시 자동으로 재계산됩니다.<br>• 🇰🇷 <b>한국어 단위 포맷 지원</b>: 큰 숫자도 한눈에 알아보기 쉽도록 숫자뿐만 아니라 한국어 단위(예: 만, 천 등)로 직관적인 포맷팅을 제공합니다.<br>• 💾 <b>기록 저장 및 관리</b>: 현재 작업 중인 시트뿐만 아니라 최근 10개의 계산 기록을 안전하게 저장하고 언제든 다시 불러올 수 있습니다.<br>• 🔊 <b>사운드 설정</b>: 사용자 취향에 맞춰 키패드 터치음 등 소리 설정을 자유롭게 켜고 끌 수 있습니다.",
+    "en": "<b>TapeCalc</b> is an intuitive tape-style calculator app that logs your calculation history sequentially like a paper tape roll, allowing you to review the entire flow at a glance.<br><br><b>[Key Features]</b><br>• 📜 <b>Tape-Style History</b>: Calculation steps are organized chronologically like a physical paper tape, making it easy to track your math history.<br>• 🔄 <b>Real-Time Editing & Recalculation</b>: Simply tap any previously entered number or operator to edit it, and the running total updates automatically in real time.<br>• 🇰🇷 <b>Korean Unit Formatting</b>: Displays numbers with Korean numerical units (e.g., Man, Eok) for effortless reading of large amounts.<br>• 💾 <b>History Saving & Management</b>: Keeps your active sheet and stores up to 10 recent calculation records to reload anytime.<br>• 🔊 <b>Sound Settings</b>: Customize tactile keypad sound effects to suit your preference.",
+    "ja": "<b>テープ計算機(TapeCalc)</b>は、計算の過程がまるで紙のテープに記録されるように順番に並び、計算全体の流れを一目で把握できるスマート計算機アプリです。<br><br><b>[主な特徴]</b><br>• 📜 <b>テープ方式の履歴記録</b>: すべての計算ステップが紙テープのように時系列で並び、過去の計算を簡単に確認できます。<br>• 🔄 <b>リアルタイム修正と自動再計算</b>: 過去の行の数値や演算子をタップして修正すると、以降の計算と合計値が即座に自動再計算されます。<br>• 🇰🇷 <b>単位フォーマット対応</b>: 大きな数字も読みやすい直感的なフォーマット表示をサポート。<br>• 💾 <b>履歴の保存と管理</b>: 現在のシートだけでなく、最近の計算記録を安全に保存し、いつでも呼び出せます。<br>• 🔊 <b>効果音設定</b>: キーパッドのタッチ音を好みに合わせてオン/オフできます。",
+    "zh": "<b>纸带计算器 (TapeCalc)</b> 是一款直观的纸带式智能计算器，它将计算步骤像纸带卷一样依次记录，让整体运算脉络一目了然。<br><br><b>[核心特色]</b><br>• 📜 <b>纸带式流水记录</b>: 所有计算步骤按顺序排列，方便随时回溯和核对。<br>• 🔄 <b>实时编辑与自动重算</b>: 直接点击已输入的某一行数字或运算符进行修改，后续运算和最终总和将实时自动重新计算。<br>• 🇰🇷 <b>数值格式化支持</b>: 提供直观的数字单位格式化，大额数字也能轻松辨认。<br>• 💾 <b>历史记录保存与管理</b>: 自动保存最近的计算记录，随时调取查看。<br>• 🔊 <b>音效设置</b>: 支持自由开启或关闭键盘触控声音。",
+    "es": "<b>TapeCalc</b> es una calculadora de estilo cinta de papel que registra tu historial de cálculo secuencialmente, permitiéndote revisar todo el flujo de un vistazo.<br><br><b>[Características principales]</b><br>• 📜 <b>Historial estilo cinta</b>: Los pasos de cálculo se ordenan cronológicamente como en una cinta de papel física.<br>• 🔄 <b>Edición en tiempo real y recálculo automático</b>: Toca cualquier número u operador anterior para editarlo y el total se actualizará al instante.<br>• 🇰🇷 <b>Formato de unidades</b>: Muestra números grandes de manera intuitiva y fácil de leer.<br>• 💾 <b>Guardado y gestión</b>: Almacena hasta 10 registros de cálculo recientes para volver a abrirlos en cualquier momento.<br>• 🔊 <b>Sonido táctil</b>: Activa o desactiva los efectos de sonido del teclado según tu preferencia.",
+    "de": "<b>TapeCalc</b> ist eine intuitive Streifenrechner-App, die Ihren Berechnungsverlauf chronologisch wie ein Papierband aufzeichnet.<br><br><b>[Hauptmerkmale]</b><br>• 📜 <b>Streifen-Verlauf</b>: Alle Rechenschritte werden übersichtlich nacheinander protokolliert.<br>• 🔄 <b>Echtzeit-Bearbeitung & automatische Neuberechnung</b>: Ältere Zahlen oder Operatoren antippen und ändern – die Gesamtsumme aktualisiert sich sofort.<br>• 🇰🇷 <b>Zahlenformatierung</b>: Unterstützt lesefreundliche Formatierung großer Zahlenbeträge.<br>• 💾 <b>Speichern & Verwalten</b>: Sichert die letzten Berechnungen, um sie jederzeit wieder aufzurufen.<br>• 🔊 <b>Soundeinstellungen</b>: Tastenanschlagstöne nach Wunsch anpassen.",
+    "fr": "<b>TapeCalc</b> est une calculatrice intuitive à ruban qui enregistre votre historique de calcul de manière séquentielle, comme un rouleau de bande papier.<br><br><b>[Points forts]</b><br>• 📜 <b>Historique façon ruban</b>: Les étapes s'enchaînent chronologiquement pour un suivi parfait de vos calculs.<br>• 🔄 <b>Modification en temps réel et recalcul automatique</b>: Touchez n'importe quel nombre ou opérateur précédent pour le modifier, le total se recalcule instantanément.<br>• 🇰🇷 <b>Formatage des grands nombres</b>: Présentation claire des chiffres volumineux.<br>• 💾 <b>Sauvegarde et gestion</b>: Conserve vos feuilles de calcul récentes pour les reprendre à tout moment.<br>• 🔊 <b>Effets sonores</b>: Personnalisez les sons du pavé numérique.",
+    "vi": "<b>TapeCalc</b> là ứng dụng máy tính băng giấy trực quan ghi lại toàn bộ lịch sử tính toán theo trình tự, giúp bạn nắm bắt tổng thể chỉ trong nháy mắt.<br><br><b>[Tính năng nổi bật]</b><br>• 📜 <b>Ghi chép dạng băng giấy</b>: Các bước tính toán được liệt kê theo thứ tự thời gian giúp dễ dàng theo dõi.<br>• 🔄 <b>Chỉnh sửa thời gian thực & tự tính lại</b>: Chạm vào bất kỳ số hoặc phép tính nào đã nhập để chỉnh sửa, kết quả tổng sẽ được tự động tính lại ngay lập tức.<br>• 🇰🇷 <b>Định dạng số lớn</b>: Hỗ trợ định dạng số trực quan giúp đọc các con số lớn dễ dàng.<br>• 💾 <b>Lưu và quản lý lịch sử</b>: Lưu trữ các bảng tính gần đây để xem lại bất cứ lúc nào.<br>• 🔊 <b>Cài đặt âm thanh</b>: Tùy chỉnh bật/tắt âm thanh bàn phím theo sở thích.",
+    "th": "<b>TapeCalc</b> เป็นแอปเครื่องคิดเลขแบบม้วนเทปกระดาษที่บันทึกประวัติการคำนวณอย่างต่อเนื่อง ช่วยให้ตรวจสอบขั้นตอนทั้งหมดได้ในพริบตา<br><br><b>[จุดเด่นสำคัญ]</b><br>• 📜 <b>บันทึกแบบม้วนกระดาษ</b>: จัดเรียงขั้นตอนการคำนวณตามลำดับเวลาเหมือนเทปกระดาษจริง<br>• 🔄 <b>แก้ไขแบบเรียลไทม์และคำนวณใหม่อัตโนมัติ</b>: แตะที่ตัวเลขหรือเครื่องหมายก่อนหน้าเพื่อแก้ไข ผลรวมจะอัปเดตใหม่ทันที<br>• 🇰🇷 <b>จัดรูปแบบตัวเลข</b>: แสดงผลตัวเลขจำนวนมากให้อ่านง่าย สบายตา<br>• 💾 <b>บันทึกและจัดการประวัติ</b>: บันทึกรายการคำนวณล่าสุดเพื่อเรียกดูได้ตลอดเวลา<br>• 🔊 <b>เสียงปุ่มกด</b>: เปิด/ปิดเสียงเอฟเฟกต์การกดแป้นพิมพ์ได้ตามต้องการ",
+    "id": "<b>TapeCalc</b> adalah aplikasi kalkulator bergaya pita kertas yang mencatat riwayat perhitungan Anda secara berurutan, memudahkan peninjauan seluruh alur kalkulasi.<br><br><b>[Fitur Utama]</b><br>• 📜 <b>Riwayat Gaya Pita</b>: Langkah-langkah perhitungan disusun secara kronologis seperti pita kertas fisik.<br>• 🔄 <b>Edit Real-Time & Hitung Ulang Otomatis</b>: Cukup ketuk angka atau operator sebelumnya untuk mengedit, total akhir langsung diperbarui otomatis.<br>• 🇰🇷 <b>Format Angka</b>: Menampilkan angka besar dengan format yang mudah dibaca.<br>• 💾 <b>Penyimpanan Riwayat</b>: Menyimpan lembar kerja dan riwayat perhitungan terbaru untuk dibuka kembali kapan saja.<br>• 🔊 <b>Pengaturan Suara</b>: Sesuaikan efek suara tombol sesuai keinginan Anda.",
+    "ru": "<b>TapeCalc</b> — это интуитивный калькулятор в стиле кассовой ленты, который фиксирует историю вычислений по порядку, позволяя видеть весь процесс перед глазами.<br><br><b>[Ключевые особенности]</b><br>• 📜 <b>История на ленте</b>: Все шаги вычислений выстраиваются последовательно, как на бумажном чеке.<br>• 🔄 <b>Правка на лету и автопересчет</b>: Нажмите на любое ранее введенное число или оператор, чтобы исправить его — итог пересчитается мгновенно.<br>• 🇰🇷 <b>Форматирование чисел</b>: Наглядное отображение больших чисел для быстрого чтения.<br>• 💾 <b>Сохранение истории</b>: Надежно сохраняет недавние вычисления для повторного открытия.<br>• 🔊 <b>Звуки клавиш</b>: Включение и выключение звуковых эффектов клавиатуры."
+  },
+  "control": {
+    "ko": "[기본 조작법]<br>• 🔢 숫자 및 연산자 입력: 화면 하단의 키패드를 사용하여 일반 계산기처럼 숫자와 연산자를 입력합니다. 입력된 내용은 상단 테이프에 한 줄씩 차례대로 추가됩니다.<br>• ✏️ 이전 기록 수정: 테이프 리스트에 표시된 지난 줄의 숫자나 연산자를 직접 터치하여 수정 모드로 진입합니다. 값을 변경하면 전체 합계가 실시간으로 자동 갱신됩니다.<br>• 📊 합계 확인: 테이프 하단에 항상 현재까지의 총합계(Running Total)가 실시간으로 표시됩니다.<br><br>[기록 관리 및 설정]<br>• 📁 기록 관리: 별도의 기록 시트(History Sheet)를 통해 이전에 수행했던 계산 목록을 확인하거나 다시 불러와 관리할 수 있습니다.<br>• ⚙️ 설정: 소리 설정 등 앱의 동작 방식을 필요에 따라 조정할 수 있습니다.",
+    "en": "[Basic Operations]<br>• 🔢 Enter Numbers & Operators: Use the bottom keypad to input numbers and operators just like a regular calculator. Each entry is added line-by-line onto the tape above.<br>• ✏️ Edit Previous Records: Tap any previous number or operator in the tape list to enter edit mode. Modifying a value immediately recalculates the running total in real time.<br>• 📊 Check Totals: The running total up to the current line is always displayed at the bottom of the tape.<br><br>[History & Settings]<br>• 📁 History Management: Open the History Sheet to browse, restore, and manage previous calculation logs.<br>• ⚙️ Settings: Adjust app behavior such as keypad sounds to suit your preference.",
+    "ja": "[基本操作]<br>• 🔢 数字と演算子の入力: 画面下のキーパッドで数字と演算子を入力します。入力内容は上のテープに1行ずつ追加されます。<br>• ✏️ 過去の記録の修正: テープリスト内の数字や演算子をタップして編集モードに入ります。値を変更すると合計がリアルタイムで自動更新されます。<br>• 📊 合計の確認: テープ下部に現在の行までの小計・合計がリアルタイム表示されます。<br><br>[履歴管理と設定]<br>• 📁 履歴管理: 履歴シートを通じて過去の計算記録を確認・復元できます。<br>• ⚙️ 設定: キータッチ音などの動作設定を変更できます。",
+    "zh": "[基本操作]<br>• 🔢 输入数字与运算符: 使用屏幕下方的按键输入，内容将逐行添加至上方纸带。<br>• ✏️ 修改历史行: 点击纸带列表中的任意历史数字或符号进入编辑，修改后总计实时刷新。<br>• 📊 查看总计: 纸带底部始终实时显示当前累计总和。<br><br>[历史记录与设置]<br>• 📁 记录管理: 通过历史记录界面随时查阅、加载以往的运算单。<br>• ⚙️ 设置: 可根据喜好自由调整按键音效等选项。",
+    "es": "[Operaciones básicas]<br>• 🔢 Entrada: Usa el teclado para ingresar números y operadores como en una calculadora normal.<br>• ✏️ Editar registros: Toca cualquier valor en la cinta para modificarlo; el total se recalculará automáticamente.<br>• 📊 Total actual: El total acumulado se muestra siempre al pie de la cinta.<br><br>[Gestión de historial]<br>• 📁 Historial: Consulta y restaura cálculos anteriores.<br>• ⚙️ Ajustes: Configura el sonido del teclado y otras preferencias.",
+    "de": "[Grundbedienung]<br>• 🔢 Eingabe: Ziffern und Operatoren über das Tastenfeld eingeben. Zeilen werden auf dem Streifen hinzugefügt.<br>• ✏️ Korrekturen: Tippen Sie auf einen vorherigen Eintrag, um ihn zu bearbeiten. Die Summe wird sofort neu berechnet.<br>• 📊 Zwischensumme: Die laufende Gesamtsumme wird stets unten angezeigt.<br><br>[Verlauf & Einstellungen]<br>• 📁 Verlauf: Frühere Berechnungen im Verlaufs-Sheet einsehen und wiederherstellen.<br>• ⚙️ Einstellungen: Tastentöne nach Bedarf anpassen.",
+    "fr": "[Opérations de base]<br>• 🔢 Saisie: Utilisez le pavé tactile pour entrer nombres et opérateurs.<br>• ✏️ Modifier une entrée: Touchez une ligne précédente pour l'éditer; le total se met à jour immédiatement.<br>• 📊 Total en direct: Le montant total cumulé s'affiche au bas du ruban.<br><br>[Historique et Paramètres]<br>• 📁 Gestion de l'historique: Consultez et rechargez vos sessions de calcul passées.<br>• ⚙️ Paramètres: Activez ou désactivez les sons du clavier.",
+    "vi": "[Thao tác cơ bản]<br>• 🔢 Nhập số & phép tính: Sử dụng bàn phím để nhập, từng dòng sẽ được thêm vào dải băng phía trên.<br>• ✏️ Sửa dòng cũ: Chạm vào số hoặc phép tính trên dải băng để sửa, tổng cộng sẽ tự động cập nhật ngay.<br>• 📊 Kiểm tra kết quả: Tổng tích lũy luôn hiển thị ở cuối dải băng.<br><br>[Lịch sử & Cài đặt]<br>• 📁 Quản lý lịch sử: Xem lại và mở lại các phép tính trước đó qua bảng lịch sử.<br>• ⚙️ Cài đặt: Tùy chỉnh âm thanh phím theo ý thích.",
+    "th": "[การใช้งานพื้นฐาน]<br>• 🔢 ป้อนตัวเลขและเครื่องหมาย: กดแป้นพิมพ์ด้านล่าง ข้อมูลจะเพิ่มลงบนม้วนเทปด้านบนทีละแถว<br>• ✏️ แก้ไขข้อมูลเดิม: แตะที่ตัวเลขหรือเครื่องหมายในม้วนเทปเพื่อแก้ไข ยอดรวมจะคำนวณใหม่แบบเรียลไทม์<br>• 📊 ตรวจสอบผลรวม: ยอดรวมสะสมจะแสดงอยู่ที่ด้านล่างของเทปเสมอ<br><br>[ประวัติและการตั้งค่า]<br>• 📁 จัดการประวัติ: ดูและเรียกคืนรายการคำนวณก่อนหน้าจากหน้าประวัติ<br>• ⚙️ การตั้งค่า: ปรับเสียงปุ่มกดได้ตามต้องการ",
+    "id": "[Operasi Dasar]<br>• 🔢 Masukkan Angka: Gunakan keypad untuk memasukkan angka dan operator.<br>• ✏️ Edit Entri Sebelumnya: Ketuk angka atau operator pada pita untuk mengedit; total akan langsung diperbarui.<br>• 📊 Cek Total: Total berjalan selalu ditampilkan di bagian bawah pita.<br><br>[Riwayat & Pengaturan]<br>• 📁 Manajemen Riwayat: Telusuri dan pulihkan catatan perhitungan sebelumnya.<br>• ⚙️ Pengaturan: Sesuaikan efek suara tombol sesuai kebutuhan.",
+    "ru": "[Базовое управление]<br>• 🔢 Ввод: Вводите числа и операции на клавиатуре, строки добавляются на ленту сверху.<br>• ✏️ Редактирование: Коснитесь любого числа на ленте для изменения; сумма обновится моментально.<br>• 📊 Итог: Текущая сумма всегда видна внизу ленты.<br><br>[История и настройки]<br>• 📁 История: Просматривайте и восстанавливайте предыдущие расчеты.<br>• ⚙️ Настройки: Настройте звуки клавиатуры по своему вкусу."
+  },
+  "youtubeUrl": "",
+  "youtubeType": "1",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TapeCalc.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/TapeCalc/scr2.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/TapeCalc/scr1.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/TapeCalc/scr3.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "계산기"
     ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/TapeCalc/scr2.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/TapeCalc/scr1.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/Android/TapeCalc/scr3.jpg"
+    "en": [
+      "Calculator"
     ],
-    "tags": {
-        "ko": [
-            "계산기"
-        ],
-        "en": [
-            "Calculator"
-        ]
-    }
+    "ja": [
+      "計算機",
+      "電卓"
+    ],
+    "zh": [
+      "计算器"
+    ],
+    "es": [
+      "Calculadora"
+    ],
+    "de": [
+      "Rechner",
+      "Taschenrechner"
+    ],
+    "fr": [
+      "Calculatrice"
+    ],
+    "vi": [
+      "MáyTính"
+    ],
+    "th": [
+      "เครื่องคิดเลข"
+    ],
+    "id": [
+      "Kalkulator"
+    ],
+    "ru": [
+      "Калькулятор"
+    ]
+  }
 }

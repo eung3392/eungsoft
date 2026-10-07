@@ -1,36 +1,108 @@
 {
-    "title": {
-        "ko": "Dcim Server",
-        "en": "Dcim Server"
-    },
-    "version": "1.0.0",
-    "releaseDate": "2026-04-14",
-    "shortDescription": {
-        "ko": "로키드 글래스에서 갤러리를 웹서버로 서비스합니다.",
-        "en": ""
-    },
-    "description": {
-        "ko": "<b>Dcim Server</b>는 <b>로키드 글래스(Rokid Glass)</b>에서 갤러리를 웹서버로 서비스합니다. 케이블을 연결하지 않고 로키드 글래스에서 찍은 사진이나 영상을 웹브라우저로 탐색하고 다운 받을 수 있습니다.",
-        "en": "<b>Dcim Server</b> is a <b>Rokid Glasses</b> app that serves the gallery as a web server. You can browse and download photos and videos taken with Rokid Glasses through a web browser without connecting a cable."
-    },
-    "control": {
-        "ko": "앱을 실행시킨 후 와이파이를 연결하세요. 동일한 와이파이에 있는 웹브라우져로 접속하세요.",
-        "en": "After running the app, connect to Wi-Fi. Access it with a web browser on the same Wi-Fi."
-    },
-    "youtubeUrl": "",
-    "youtubeType": "1",
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/DcimServer_v1.0.0.apk"
+  "title": {
+    "ko": "Dcim Server",
+    "en": "Dcim Server",
+    "ja": "Dcim Server",
+    "zh": "Dcim Server 相册无线服务",
+    "es": "Dcim Server",
+    "de": "Dcim Server",
+    "fr": "Dcim Server",
+    "vi": "Dcim Server",
+    "th": "Dcim Server",
+    "id": "Dcim Server",
+    "ru": "Dcim Server"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-04-14",
+  "shortDescription": {
+    "ko": "로키드 글래스에서 갤러리를 웹서버로 서비스합니다.",
+    "en": "",
+    "ja": "Rokid GlassesのギャラリーをWebサーバーとして配信し、ブラウザで写真を閲覧・取得",
+    "zh": "在Rokid Glasses上搭建相册Web服务，免线缆通过浏览器浏览下载照片视频",
+    "es": "Sirve la galería de las Rokid Glasses como servidor web para descargar fotos sin cables",
+    "de": "Stellt die Galerie der Rokid Glasses als Webserver bereit – Fotos ohne Kabel im Browser laden",
+    "fr": "Diffuse la galerie des lunettes Rokid Glasses sous forme de serveur web sans câble",
+    "vi": "Chia sẻ thư viện ảnh Rokid Glasses thành máy chủ web, xem và tải ảnh không cần dây cáp",
+    "th": "เปิดเซิร์ฟเวอร์เว็บแกลเลอรีบน Rokid Glasses เพื่อดาวน์โหลดภาพโดยไม่ต้องต่อสาย",
+    "id": "Menyediakan galeri Rokid Glasses sebagai server web untuk mengunduh foto tanpa kabel",
+    "ru": "Локальный веб-сервер галереи Rokid Glasses для скачивания фото и видео без проводов"
+  },
+  "description": {
+    "ko": "<b>Dcim Server</b>는 <b>로키드 글래스(Rokid Glass)</b>에서 갤러리를 웹서버로 서비스합니다. 케이블을 연결하지 않고 로키드 글래스에서 찍은 사진이나 영상을 웹브라우저로 탐색하고 다운 받을 수 있습니다.",
+    "en": "<b>Dcim Server</b> is a <b>Rokid Glasses</b> app that serves the gallery as a web server. You can browse and download photos and videos taken with Rokid Glasses through a web browser without connecting a cable.",
+    "ja": "<b>Dcim Server</b>は、<b>Rokid Glasses</b>内のギャラリーをWebサーバーとして稼働させるアプリです。ケーブルを繋ぐことなく、メガネで撮影した写真や動画を同じWi-Fi内のWebブラウザから快適に閲覧・ダウンロードできます。",
+    "zh": "<b>Dcim Server</b>可在<b>Rokid Glasses</b>智能眼镜上开启本地Web相册服务器。无需连接数据线，同一Wi-Fi下的电脑或手机浏览器即可直接浏览并高速下载眼镜中拍摄的照片与视频。",
+    "es": "<b>Dcim Server</b> es una app para <b>Rokid Glasses</b> que sirve la galería como un servidor web. Puedes explorar y descargar fotos y vídeos tomados con las gafas a través de un navegador web sin conectar ningún cable.",
+    "de": "<b>Dcim Server</b> ist eine <b>Rokid Glasses</b>-App, die Ihre Mediengalerie als Webserver bereitstellt. Betrachten und laden Sie mit der Brille aufgenommene Fotos und Videos kabellos über den Webbrowser herunter.",
+    "fr": "<b>Dcim Server</b> est une application pour <b>Rokid Glasses</b> transformant la galerie en serveur web. Parcourez et téléchargez sans fil vos photos et vidéos depuis un navigateur sur le même réseau Wi-Fi.",
+    "vi": "<b>Dcim Server</b> là ứng dụng dành cho <b>Rokid Glasses</b> biến thư viện ảnh thành một máy chủ web. Bạn có thể duyệt và tải về ảnh cũng như video chụp từ kính qua trình duyệt web mà không cần cắm cáp kết nối.",
+    "th": "<b>Dcim Server</b> เป็นแอปสำหรับ <b>Rokid Glasses</b> ที่ให้บริการแกลเลอรีรูปภาพในรูปแบบเว็บเซิร์ฟเวอร์ ให้คุณเรียกดูและดาวน์โหลดภาพถ่ายหรือวิดีโอจากแว่นตาผ่านเว็บเบราว์เซอร์ได้โดยไม่ต้องต่อสายเคเบิล",
+    "id": "<b>Dcim Server</b> adalah aplikasi untuk <b>Rokid Glasses</b> yang menyediakan galeri foto sebagai server web. Anda dapat menjelajahi dan mengunduh foto serta video dari kacamata melalui browser tanpa kabel.",
+    "ru": "<b>Dcim Server</b> превращает медиагалерею <b>Rokid Glasses</b> в локальный веб-сервер. Просматривайте и скачивайте фото и видео с очков в браузере любого устройства в одной сети Wi-Fi без подключения проводов."
+  },
+  "control": {
+    "ko": "앱을 실행시킨 후 와이파이를 연결하세요. 동일한 와이파이에 있는 웹브라우져로 접속하세요.",
+    "en": "After running the app, connect to Wi-Fi. Access it with a web browser on the same Wi-Fi.",
+    "ja": "アプリを起動後、Wi-Fiに接続してください。同一Wi-Fi環境にある端末のWebブラウザから画面に表示されたアドレスにアクセスします。",
+    "zh": "启动应用后连接Wi-Fi，并在处于同一Wi-Fi网络下的电脑或手机浏览器中输入屏幕所示网址进行访问。",
+    "es": "Inicia la app y conéctate a Wi-Fi. Accede a la dirección indicada desde un navegador en la misma red Wi-Fi.",
+    "de": "Nach dem Starten der App mit dem WLAN verbinden. Rufen Sie die angezeigte Adresse im Browser eines Geräts im selben WLAN auf.",
+    "fr": "Lancez l'application et connectez-vous au Wi-Fi. Ouvrez l'adresse indiquée dans un navigateur connecté au même réseau.",
+    "vi": "Sau khi mở ứng dụng, hãy kết nối Wi-Fi. Dùng trình duyệt web trên thiết bị cùng mạng Wi-Fi để truy cập.",
+    "th": "เปิดแอปแล้วเชื่อมต่อ Wi-Fi จากนั้นใช้เว็บเบราว์เซอร์บนอุปกรณ์ที่อยู่ใน Wi-Fi เดียวกันเข้าสู่ที่อยู่ที่แสดงขึ้นมา",
+    "id": "Setelah membuka aplikasi, sambungkan ke Wi-Fi. Buka alamat tersebut menggunakan browser di jaringan Wi-Fi yang sama.",
+    "ru": "Запустите приложение и подключитесь к Wi-Fi. Откройте отображаемый адрес в браузере любого устройства в той же сети."
+  },
+  "youtubeUrl": "",
+  "youtubeType": "1",
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/DcimServer_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/DcimWebServer/scr.png"
+  ],
+  "tags": {
+    "ko": [
+      "Server"
     ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/DcimWebServer/scr.png"
+    "en": [
+      "Server"
     ],
-    "tags": {
-        "ko": [
-            "Server"
-        ],
-        "en": [
-            "Server"
-        ]
-    }
+    "ja": [
+      "サーバー",
+      "写真共有"
+    ],
+    "zh": [
+      "服务器",
+      "相册传输"
+    ],
+    "es": [
+      "Servidor",
+      "Fotos"
+    ],
+    "de": [
+      "Server",
+      "Fototransfer"
+    ],
+    "fr": [
+      "Serveur",
+      "Transfert"
+    ],
+    "vi": [
+      "MáyChủ",
+      "ChiaSẻẢnh"
+    ],
+    "th": [
+      "เซิร์ฟเวอร์",
+      "ถ่ายโอนภาพ"
+    ],
+    "id": [
+      "Server",
+      "TransferFoto"
+    ],
+    "ru": [
+      "Сервер",
+      "Фотографии"
+    ]
+  }
 }

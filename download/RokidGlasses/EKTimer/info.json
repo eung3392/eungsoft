@@ -1,37 +1,109 @@
 {
-    "title": {
-        "ko": "EK Timer",
-        "en": "EK Timer"
-    },
-    "version": "1.0.0",
-    "releaseDate": "2026-05-26",
-    "shortDescription": {
-        "ko": "심플한 로키드 글래스용 타이머",
-        "en": "Simple timer for Rokid Glasses"
-    },
-    "description": {
-        "ko": "EK Timer는 간단하고 직관적인 타이머 앱입니다.",
-        "en": "EK Timer is a simple and intuitive timer app."
-    },
-    "control": {
-        "ko": "<h3>주요 기능 및 조작 방법</h3><p><b>1. 시간 설정</b></p><ul style='padding-left: 20px;'><li><b>분(Minutes) 추가:</b> 분 버튼을 누르면 시간이 1분씩 증가합니다 (최대 99분).</li><li><b>초(Seconds) 추가:</b> 초 버튼을 누르면 시간이 10초씩 증가합니다. (초과 시 분으로 자동 환산)</li><li><b>참고:</b> 타이머가 동작 중일 때는 시간을 변경할 수 없습니다.</li></ul><br><p><b>2. 타이머 제어</b></p><ul style='padding-left: 20px;'><li><b>시작/정지 (Start/Stop):</b> 설정된 시간 상태에서 시작 버튼을 누르면 카운트다운이 시작됩니다. 동작 중일 때 누르면 일시 정지됩니다.</li><li><b>리셋 (Reset):</b> 타이머를 초기화(00:00)하고 정지합니다.</li></ul><br><p><b>3. 종료 알림</b></p><ul style='padding-left: 20px;'><li>설정된 시간이 0이 되면 자동으로 카운트다운이 종료되며, <b>알림음(Beep)</b>과 함께 진동이 발생합니다.</li></ul><br><p><b>4. 조작 방식</b></p><ul style='padding-left: 20px;'><li><b>터치:</b> 화면상의 각 버튼을 직접 눌러 조작할 수 있습니다.</li><li><b>스와이프:</b> 각 버튼의 포커스를 이동합니다.</li></ul>",
-        "en": "<h3>Key Features and Operation</h3><p><b>1. Time Setting</b></p><ul style='padding-left: 20px;'><li><b>Add Minutes:</b> Press the Minute button to increase the time by 1 minute (up to 99 minutes).</li><li><b>Add Seconds:</b> Press the Second button to increase the time by 10 seconds. (Automatically converted to minutes if it exceeds 60 seconds)</li><li><b>Note:</b> You cannot change the time while the timer is running.</li></ul><br><p><b>2. Timer Control</b></p><ul style='padding-left: 20px;'><li><b>Start/Stop:</b> Press the Start button when time is set to begin the countdown. Press it while running to pause the timer.</li><li><b>Reset:</b> Resets the timer to 00:00 and stops it.</li></ul><br><p><b>3. End Alert</b></p><ul style='padding-left: 20px;'><li>When the set time reaches 0, the countdown ends automatically, accompanied by a <b>beep sound</b> and vibration.</li></ul><br><p><b>4. Control Methods</b></p><ul style='padding-left: 20px;'><li><b>Touch:</b> Tap each button on the screen directly to control the timer.</li><li><b>Swipe:</b> Swipe to move the focus between buttons.</li></ul>"
-    },
-    "youtubeUrl": "https://www.youtube.com/embed/TfvbHfA-2EE",
-    "youtubeType": "1",
-    "updated": [],
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKTimer_v1.0.0.apk"
+  "title": {
+    "ko": "EK Timer",
+    "en": "EK Timer",
+    "ja": "EK Timer",
+    "zh": "EK 倒计时器 (EK Timer)",
+    "es": "EK Timer",
+    "de": "EK Timer",
+    "fr": "EK Timer",
+    "vi": "EK Timer (Đồng Hồ Đếm Giờ)",
+    "th": "EK Timer (นาฬิกาจับเวลา)",
+    "id": "EK Timer",
+    "ru": "EK Timer (Таймер)"
+  },
+  "version": "1.0.0",
+  "releaseDate": "2026-05-26",
+  "shortDescription": {
+    "ko": "심플한 로키드 글래스용 타이머",
+    "en": "Simple timer for Rokid Glasses",
+    "ja": "シンプルなRokid Glasses専用タイマーアプリ",
+    "zh": "专为Rokid Glasses设计的极简倒计时工具",
+    "es": "Temporizador simple e intuitivo para Rokid Glasses",
+    "de": "Einfacher und intuitiver Timer für Rokid Glasses",
+    "fr": "Minuteur simple et intuitif pour Rokid Glasses",
+    "vi": "Đồng hồ hẹn giờ đơn giản và trực quan dành cho Rokid Glasses",
+    "th": "นาฬิกาจับเวลานับถอยหลังที่เรียบง่ายสำหรับ Rokid Glasses",
+    "id": "Timer sederhana dan intuitif untuk Rokid Glasses",
+    "ru": "Простой и интуитивный таймер для Rokid Glasses"
+  },
+  "description": {
+    "ko": "EK Timer는 간단하고 직관적인 타이머 앱입니다.",
+    "en": "EK Timer is a simple and intuitive timer app.",
+    "ja": "EK Timerは、シンプルで直感的なRokid Glasses用タイマーアプリです。作業や料理、プレゼンなど日々の時間管理をメガネの中でスマートに行えます。",
+    "zh": "EK Timer是一款清爽直观的Rokid Glasses专属倒计时秒表应用。无论是运动健身、烹饪计时还是演讲发言，都能在眼镜视野中从容掌控时间。",
+    "es": "EK Timer es una aplicación de temporizador simple e intuitiva para Rokid Glasses. Ideal para controlar el tiempo durante entrenamientos, cocina o presentaciones.",
+    "de": "EK Timer ist eine einfache und intuitive Timer-App für Rokid Glasses zur mühelosen Zeiterfassung bei Arbeit, Kochen oder Sport.",
+    "fr": "EK Timer est un minuteur simple et intuitif pour Rokid Glasses, idéal pour gérer votre temps en cuisine, au travail ou lors de présentations.",
+    "vi": "EK Timer là ứng dụng hẹn giờ đơn giản và trực quan dành cho Rokid Glasses, giúp bạn quản lý thời gian dễ dàng khi nấu ăn, tập luyện hay thuyết trình.",
+    "th": "EK Timer เป็นแอปนาฬิกาจับเวลาที่เรียบง่ายและใช้งานสะดวกสำหรับ Rokid Glasses ช่วยให้คุณจัดการเวลาได้อย่างชาญฉลาดผ่านมุมมองแว่นตา",
+    "id": "EK Timer adalah aplikasi pengatur waktu yang sederhana dan intuitif untuk Rokid Glasses, membantu mengelola waktu saat memasak, belajar, atau berolahraga.",
+    "ru": "EK Timer — это удобный и лаконичный таймер для очков Rokid Glasses. Идеален для контроля времени во время работы, спорта или кулинарии."
+  },
+  "control": {
+    "ko": "<h3>주요 기능 및 조작 방법</h3><p><b>1. 시간 설정</b></p><ul style='padding-left: 20px;'><li><b>분(Minutes) 추가:</b> 분 버튼을 누르면 시간이 1분씩 증가합니다 (최대 99분).</li><li><b>초(Seconds) 추가:</b> 초 버튼을 누르면 시간이 10초씩 증가합니다. (초과 시 분으로 자동 환산)</li><li><b>참고:</b> 타이머가 동작 중일 때는 시간을 변경할 수 없습니다.</li></ul><br><p><b>2. 타이머 제어</b></p><ul style='padding-left: 20px;'><li><b>시작/정지 (Start/Stop):</b> 설정된 시간 상태에서 시작 버튼을 누르면 카운트다운이 시작됩니다. 동작 중일 때 누르면 일시 정지됩니다.</li><li><b>리셋 (Reset):</b> 타이머를 초기화(00:00)하고 정지합니다.</li></ul><br><p><b>3. 종료 알림</b></p><ul style='padding-left: 20px;'><li>설정된 시간이 0이 되면 자동으로 카운트다운이 종료되며, <b>알림음(Beep)</b>과 함께 진동이 발생합니다.</li></ul><br><p><b>4. 조작 방식</b></p><ul style='padding-left: 20px;'><li><b>터치:</b> 화면상의 각 버튼을 직접 눌러 조작할 수 있습니다.</li><li><b>스와이프:</b> 각 버튼의 포커스를 이동합니다.</li></ul>",
+    "en": "<h3>Key Features and Operation</h3><p><b>1. Time Setting</b></p><ul style='padding-left: 20px;'><li><b>Add Minutes:</b> Press the Minute button to increase the time by 1 minute (up to 99 minutes).</li><li><b>Add Seconds:</b> Press the Second button to increase the time by 10 seconds. (Automatically converted to minutes if it exceeds 60 seconds)</li><li><b>Note:</b> You cannot change the time while the timer is running.</li></ul><br><p><b>2. Timer Control</b></p><ul style='padding-left: 20px;'><li><b>Start/Stop:</b> Press the Start button when time is set to begin the countdown. Press it while running to pause the timer.</li><li><b>Reset:</b> Resets the timer to 00:00 and stops it.</li></ul><br><p><b>3. End Alert</b></p><ul style='padding-left: 20px;'><li>When the set time reaches 0, the countdown ends automatically, accompanied by a <b>beep sound</b> and vibration.</li></ul><br><p><b>4. Control Methods</b></p><ul style='padding-left: 20px;'><li><b>Touch:</b> Tap each button on the screen directly to control the timer.</li><li><b>Swipe:</b> Swipe to move the focus between buttons.</li></ul>",
+    "ja": "<h3>主な機能と操作方法</h3><p><b>1. 時間設定</b></p><ul style='padding-left: 20px;'><li><b>分追加:</b> 1分ずつ増加（最大99分）。</li><li><b>秒追加:</b> 10秒ずつ増加。</li></ul><p><b>2. タイマー制御</b></p><ul style='padding-left: 20px;'><li><b>開始/停止:</b> カウントダウンを開始/一時停止。</li><li><b>リセット:</b> 00:00に初期化。</li></ul><p><b>3. 終了通知:</b> 時間到達時にビープ音と振動でお知らせ。</p><p><b>4. 操作:</b> 画面タップまたはスワイプでボタンを選択。</p>",
+    "zh": "<h3>功能说明与操作指南</h3><p><b>1. 时间设定</b></p><ul style='padding-left: 20px;'><li><b>加分:</b> 每次递增1分钟（最高99分）。</li><li><b>加秒:</b> 每次递增10秒（满60秒自动进位）。</li></ul><p><b>2. 启停控制</b></p><ul style='padding-left: 20px;'><li><b>开始/暂停 (Start/Stop):</b> 启动或暂停倒计时。</li><li><b>重置 (Reset):</b> 归零恢复为 00:00。</li></ul><p><b>3. 结束提示:</b> 计时归零自动播放蜂鸣提示音与震动。</p><p><b>4. 交互方式:</b> 镜腿轻触点击或滑动切换按键焦点。</p>",
+    "es": "<h3>Operación básica</h3><p><b>1. Ajuste:</b> Pulsa Minutos (+1 min, hasta 99) o Segundos (+10 s).</p><p><b>2. Control:</b> Iniciar/Pausar y Reiniciar (00:00).</p><p><b>3. Alarma:</b> Beep y vibración al terminar.</p><p><b>4. Control:</b> Toque para pulsar o deslizamiento para cambiar de botón.",
+    "de": "<h3>Bedienung</h3><p><b>1. Zeit einstellen:</b> Minuten (+1 min, max. 99) oder Sekunden (+10 s) hinzufügen.</p><p><b>2. Steuerung:</b> Start/Stopp und Reset (00:00).</p><p><b>3. Signal:</b> Akustisches Signal und Vibration bei Ablauf.</p><p><b>4. Steuerung:</b> Antippen oder Wischen zum Auswählen.",
+    "fr": "<h3>Fonctionnement</h3><p><b>1. Réglage:</b> Boutons Minutes (+1 min, max 99) et Secondes (+10 s).</p><p><b>2. Contrôle:</b> Démarrer/Arrêter et Réinitialiser (00:00).</p><p><b>3. Alerte:</b> Bip sonore et vibration à la fin du décompte.</p><p><b>4. Manipulation:</b> Appui direct ou balayage pour changer de bouton.",
+    "vi": "<h3>Hướng dẫn thao tác</h3><p><b>1. Đặt thời gian:</b> Nhấn Phút (+1 phút, tối đa 99) hoặc Giây (+10 giây).</p><p><b>2. Điều khiển:</b> Bắt đầu/Tạm dừng và Đặt lại (00:00).</p><p><b>3. Báo thức:</b> Tiếng bíp và rung khi hết giờ.</p><p><b>4. Thao tác:</b> Chạm trực tiếp hoặc vuốt để chọn nút.",
+    "th": "<h3>วิธีใช้งาน</h3><p><b>1. ตั้งเวลา:</b> เพิ่มนาที (+1 นาที, สูงสุด 99) หรือเพิ่มวินาที (+10 วินาที)</p><p><b>2. ควบคุม:</b> เริ่ม/หยุดชั่วคราว และรีเซ็ต (00:00)</p><p><b>3. การแจ้งเตือน:</b> ส่งเสียงบี๊บและการสั่นเมื่อหมดเวลา</p><p><b>4. การควบคุม:</b> แตะโดยตรงหรือปัดเพื่อสลับปุ่ม",
+    "id": "<h3>Pengoperasian</h3><p><b>1. Atur Waktu:</b> Tambah Menit (+1 mnt, maks 99) atau Detik (+10 dtk).</p><p><b>2. Kontrol:</b> Mulai/Jeda dan Reset (00:00).</p><p><b>3. Peringatan:</b> Bunyi bip dan getaran saat waktu habis.</p><p><b>4. Kontrol:</b> Sentuh tombol atau usap untuk memindahkan fokus.",
+    "ru": "<h3>Управление</h3><p><b>1. Настройка:</b> Добавление минут (+1 мин, до 99) и секунд (+10 сек).</p><p><b>2. Контроль:</b> Старт/Пауза и Сброс (00:00).</p><p><b>3. Сигнал:</b> Звуковой сигнал и вибрация по окончании.</p><p><b>4. Действия:</b> Касание для выбора или свайп для перемещения фокуса."
+  },
+  "youtubeUrl": "https://www.youtube.com/embed/TfvbHfA-2EE",
+  "youtubeType": "1",
+  "updated": [],
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKTimer_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKTimer/scr1.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "타이머"
     ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/EKTimer/scr1.jpg"
+    "en": [
+      "Timer"
     ],
-    "tags": {
-        "ko": [
-            "타이머"
-        ],
-        "en": [
-            "Timer"
-        ]
-    }
+    "ja": [
+      "タイマー",
+      "時計"
+    ],
+    "zh": [
+      "倒计时",
+      "计时器"
+    ],
+    "es": [
+      "Temporizador",
+      "Reloj"
+    ],
+    "de": [
+      "Timer",
+      "Stoppuhr"
+    ],
+    "fr": [
+      "Minuteur",
+      "Chronomètre"
+    ],
+    "vi": [
+      "HẹnGiờ",
+      "ĐồngHồ"
+    ],
+    "th": [
+      "จับเวลา",
+      "นาฬิกา"
+    ],
+    "id": [
+      "Timer",
+      "Jam"
+    ],
+    "ru": [
+      "Таймер",
+      "Секундомер"
+    ]
+  }
 }

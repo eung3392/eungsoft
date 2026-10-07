@@ -1,21 +1,57 @@
 {
   "title": {
     "ko": "로키드 커넥트 HUD 안경용",
-    "en": "Rokid Connect HUD for Glasses"
+    "en": "Rokid Connect HUD for Glasses",
+    "ja": "Rokid Connect HUD (メガネ用)",
+    "zh": "Rokid Connect HUD 眼镜端",
+    "es": "Rokid Connect HUD para Gafas",
+    "de": "Rokid Connect HUD für Datenbrille",
+    "fr": "Rokid Connect HUD pour Lunettes",
+    "vi": "Rokid Connect HUD Cho Kính",
+    "th": "Rokid Connect HUD สำหรับแว่นตา",
+    "id": "Rokid Connect HUD untuk Kacamata",
+    "ru": "Rokid Connect HUD для Очков"
   },
   "version": "1.2.0",
   "releaseDate": "2026-03-02",
   "shortDescription": {
     "ko": "네비게이션 HUD 안경용 App, 티맵, 네이버맵",
-    "en": "Navigation HUD App for Glasses"
+    "en": "Navigation HUD App for Glasses",
+    "ja": "ナビゲーションHUDメガネ専用アプリ",
+    "zh": "导航HUD眼镜端专属应用",
+    "es": "App de HUD de navegación para gafas",
+    "de": "Navigations-HUD-App für Rokid Glasses",
+    "fr": "Application HUD de navigation dédiée aux lunettes",
+    "vi": "Ứng dụng HUD dẫn đường chuyên dụng cho kính",
+    "th": "แอปนำทาง HUD สำหรับแว่นตาโดยเฉพาะ",
+    "id": "Aplikasi navigasi HUD untuk kacamata",
+    "ru": "Приложение HUD навигации для умных очков"
   },
   "description": {
     "ko": "스마트폰의 네비게이션(티맵, 네이버맵 등) 화면을 <b>로키드 글래스에 HUD 형태로 표시</b>해 주는 안경 전용 앱입니다.<br>이 앱은 <b>로키드 글래스 본체</b>에 설치하며, 원활한 사용을 위해 스마트폰 전용 보조 앱인 <b>HUD 폰용 앱</b>을 함께 설치해야 합니다.",
-    "en": "A dedicated app for Rokid Glasses that renders your smartphone's navigation (TMap, Naver Map) as a <b>HUD</b>.<br>Install this version on your <b>Rokid Glasses</b>. It must be paired with the <b>Phone-side HUD app</b> for full functionality."
+    "en": "A dedicated app for Rokid Glasses that renders your smartphone's navigation (TMap, Naver Map) as a <b>HUD</b>.<br>Install this version on your <b>Rokid Glasses</b>. It must be paired with the <b>Phone-side HUD app</b> for full functionality.",
+    "ja": "スマートフォンのナビゲーション画面を<b>Rokid GlassesにHUD形式で表示</b>するメガネ専用アプリです。<br>このアプリは<b>Rokid Glasses本体</b>にインストールし、スマホ用アプリと連携してHUDナビゲーションを実現します。",
+    "zh": "将手机导航应用画面以<b>HUD抬头显示形式呈现于眼镜镜片</b>的Rokid Glasses专属应用。<br>安装于<b>Rokid Glasses眼镜本体</b>，与手机端伴侣应用配合使用。",
+    "es": "Una aplicación dedicada para Rokid Glasses que muestra la navegación de tu smartphone como un <b>HUD</b> directo en tus ojos.<br>Instala esta versión en tus <b>gafas Rokid Glasses</b> para sincronizarla con la aplicación de teléfono.",
+    "de": "Eine dedizierte App für Rokid Glasses, die Navigationsdaten Ihres Smartphones als <b>Head-up-Display (HUD)</b> projiziert.<br>Installieren Sie diese Version auf Ihren <b>Rokid Glasses</b>.",
+    "fr": "Une application dédiée aux lunettes Rokid Glasses affichant la navigation de votre smartphone sous forme de <b>HUD</b> devant vos yeux.<br>À installer directement sur vos <b>lunettes Rokid Glasses</b>.",
+    "vi": "Ứng dụng chuyên dụng cho Rokid Glasses hiển thị chỉ đường từ điện thoại thành <b>màn hình HUD</b> trước mắt bạn.<br>Cài đặt phiên bản này trực tiếp trên <b>kính Rokid Glasses</b>.",
+    "th": "แอปสำหรับ Rokid Glasses โดยเฉพาะที่แสดงการนำทางจากสมาร์ทโฟนในรูปแบบ <b>HUD</b><br>ติดตั้งเวอร์ชันนี้บน<b>ตัวแว่นตา Rokid Glasses</b> และใช้งานร่วมกับแอปฝั่งสมาร์ทโฟน",
+    "id": "Aplikasi khusus untuk Rokid Glasses yang menampilkan navigasi ponsel Anda sebagai <b>HUD</b>.<br>Instal versi ini di <b>kacamata Rokid Glasses</b> Anda.",
+    "ru": "Специальное приложение для Rokid Glasses, отображающее навигацию со смартфона в виде <b>HUD прямо перед глазами</b>.<br>Устанавливается непосредственно на <b>очки Rokid Glasses</b>."
   },
   "control": {
     "ko": "<ol style='padding-left: 20px;'><li><b>블루투스 목록:</b> 안경 우측 다리를 터치하여 <b>블루투스 기기 목록</b>을 활성화합니다.</li><li><b>연결 확인:</b> 폰의 HUD 앱이 'Connect' 상태인 상태에서 해당 폰을 선택하여 연결합니다.</li><li><b>HUD 표시:</b> 연결 직후 폰의 네비게이션 화면이 HUD로 나타납니다.</li></ol>",
-    "en": "<ol style='padding-left: 20px;'><li><b>Bluetooth List:</b> Touch the right temple of the glasses to display the <b>BT device list</b>.</li><li><b>Connect:</b> Ensure the Phone HUD app is in 'Connect' mode, then select your phone to pair.</li><li><b>HUD View:</b> The navigation data will immediately appear as a HUD display.</li></ol>"
+    "en": "<ol style='padding-left: 20px;'><li><b>Bluetooth List:</b> Touch the right temple of the glasses to display the <b>BT device list</b>.</li><li><b>Connect:</b> Ensure the Phone HUD app is in 'Connect' mode, then select your phone to pair.</li><li><b>HUD View:</b> The navigation data will immediately appear as a HUD display.</li></ol>",
+    "ja": "<ol style='padding-left: 20px;'><li><b>Bluetooth機器一覧:</b> メガネ右テンプルをタッチして機器リストを表示します。</li><li><b>接続確認:</b> スマホ側HUDアプリが「Connect」待機状態の時に該当端末を選択します。</li><li><b>HUD表示:</b> 接続後、すぐにスマホのナビゲーション画面がHUDとして投射されます。</li></ol>",
+    "zh": "<ol style='padding-left: 20px;'><li><b>蓝牙设备列表:</b> 轻触眼镜右侧镜腿唤出<b>蓝牙设备列表</b>。</li><li><b>确认连接:</b> 确保手机端HUD处于“Connect”状态并选中手机进行配对。</li><li><b>HUD显示:</b> 连接成功后立即投射手机导航画面。</li></ol>",
+    "es": "<ol style='padding-left: 20px;'><li><b>Dispositivos Bluetooth:</b> Toca la patilla derecha para abrir la <b>lista Bluetooth</b>.</li><li><b>Conectar:</b> Con la app del móvil en modo 'Connect', selecciona tu teléfono.</li><li><b>Vista HUD:</b> La navegación aparecerá instantáneamente en la pantalla HUD.</li></ol>",
+    "de": "<ol style='padding-left: 20px;'><li><b>Bluetooth-Liste:</b> Rechte Brillenbügelseite berühren, um die Geräteliste zu öffnen.</li><li><b>Verbinden:</b> Smartphone auswählen, während die Smartphone-App auf 'Connect' steht.</li><li><b>HUD-Anzeige:</b> Die Navigationsdaten erscheinen sofort im Blickfeld.</li></ol>",
+    "fr": "<ol style='padding-left: 20px;'><li><b>Liste Bluetooth:</b> Touchez la branche droite des lunettes pour afficher la liste.</li><li><b>Connexion:</b> Sélectionnez votre smartphone lorsque son application est en attente.</li><li><b>Affichage HUD:</b> Les instructions de navigation s'affichent instantanément.</li></ol>",
+    "vi": "<ol style='padding-left: 20px;'><li><b>Danh sách Bluetooth:</b> Chạm vào gọng kính bên phải để mở <b>danh sách thiết bị</b>.</li><li><b>Kết nối:</b> Chọn điện thoại khi ứng dụng trên điện thoại đang ở chế độ 'Connect'.</li><li><b>Hiển thị HUD:</b> Dữ liệu bản đồ lập tức xuất hiện dưới dạng HUD.</li></ol>",
+    "th": "<ol style='padding-left: 20px;'><li><b>รายการบลูทูธ:</b> แตะที่ขาแว่นด้านขวาเพื่อเปิด<b>รายการอุปกรณ์ Bluetooth</b></li><li><b>เชื่อมต่อ:</b> ตรวจสอบว่าแอปในโทรศัพท์อยู่ในโหมด 'Connect' แล้วเลือกโทรศัพท์เพื่อจับคู่</li><li><b>แสดงผล HUD:</b> ภาพหน้าจอนำทางจะปรากฏขึ้นบน HUD ทันที</li></ol>",
+    "id": "<ol style='padding-left: 20px;'><li><b>Daftar Bluetooth:</b> Sentuh gagang kanan kacamata untuk melihat daftar perangkat.</li><li><b>Hubungkan:</b> Pilih ponsel saat aplikasi HUD ponsel dalam mode 'Connect'.</li><li><b>Tampilan HUD:</b> Layar navigasi akan langsung muncul sebagai HUD.</li></ol>",
+    "ru": "<ol style='padding-left: 20px;'><li><b>Список Bluetooth:</b> Коснитесь правой дужки для вызова списка устройств.</li><li><b>Сопряжение:</b> Выберите смартфон, пока на нем запущено ожидание 'Connect'.</li><li><b>Проекция HUD:</b> Экран навигатора сразу же появится перед глазами.</li></ol>"
   },
   "youtubeUrl": "https://www.youtube.com/embed/_2tB-Kn8ZxQ",
   "youtubeType": "1",
@@ -24,7 +60,16 @@
       "version": "1.2.0",
       "releaseDate": "2026-04-20",
       "ko": "화면 크기 설정에서 Full Size 가 추가되었습니다. 폰의 전체화면 미러링을 지원합니다.",
-      "en": "Full Size option added to screen size settings. Supports full-screen mirroring of the phone."
+      "en": "Full Size option added to screen size settings. Supports full-screen mirroring of the phone.",
+      "ja": "画面サイズ設定にFull Sizeが追加されました。スマートフォンの全画面ミラーリングに対応しました。",
+      "zh": "画面尺寸设置中新增Full Size选项，支持全屏镜像。",
+      "es": "Opción Full Size añadida a los ajustes de pantalla. Permite duplicar la pantalla completa del móvil.",
+      "de": "Vollbild-Option (Full Size) hinzugefügt. Unterstützt vollständiges Screen-Mirroring.",
+      "fr": "Option Plein écran (Full Size) ajoutée. Prend en charge le miroir plein écran du smartphone.",
+      "vi": "Đã thêm tùy chọn Full Size trong cài đặt kích thước màn hình. Hỗ trợ phản chiếu toàn màn hình.",
+      "th": "เพิ่มตัวเลือก Full Size ในการตั้งค่าขนาดหน้าจอ รองรับการสะท้อนหน้าจอแบบเต็มจอ",
+      "id": "Opsi Full Size ditambahkan ke pengaturan ukuran layar. Mendukung pencerminan layar penuh ponsel.",
+      "ru": "Добавлена опция Full Size в настройках размера экрана. Поддерживает полноэкранное зеркалирование смартфона."
     }
   ],
   "download": [
@@ -43,6 +88,42 @@
     "en": [
       "HUD",
       "Navigation"
+    ],
+    "ja": [
+      "HUD",
+      "ナビゲーション"
+    ],
+    "zh": [
+      "HUD",
+      "导航"
+    ],
+    "es": [
+      "HUD",
+      "Navegación"
+    ],
+    "de": [
+      "HUD",
+      "Navigation"
+    ],
+    "fr": [
+      "HUD",
+      "Navigation"
+    ],
+    "vi": [
+      "HUD",
+      "DẫnĐường"
+    ],
+    "th": [
+      "HUD",
+      "การนำทาง"
+    ],
+    "id": [
+      "HUD",
+      "Navigasi"
+    ],
+    "ru": [
+      "HUD",
+      "Навигация"
     ]
   }
 }

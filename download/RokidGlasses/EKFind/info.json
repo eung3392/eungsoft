@@ -1,21 +1,57 @@
 {
   "title": {
     "ko": "EK Find Price",
-    "en": "EK Find Price (korean)"
+    "en": "EK Find Price (korean)",
+    "ja": "EK Find Price (価格検索)",
+    "zh": "EK 比价助手 (EK Find Price)",
+    "es": "EK Find Price",
+    "de": "EK Find Price",
+    "fr": "EK Find Price",
+    "vi": "EK Find Price (Tra Giá)",
+    "th": "EK ค้นหาราคา (EK Find Price)",
+    "id": "EK Find Price (Cari Harga)",
+    "ru": "EK Find Price (Поиск Цен)"
   },
   "version": "1.1.0",
   "releaseDate": "2026-03-15",
   "shortDescription": {
     "ko": "카메라로 사진을 찍고, 네이버에서 가격을 검색합니다.",
-    "en": "Take a picture with the camera and search for the price on Naver."
+    "en": "Take a picture with the camera and search for the price on Naver.",
+    "ja": "カメラで写真を撮り、Naverで最安値を検索します。",
+    "zh": "通过相机拍摄商品，在Naver上搜索最低价格。",
+    "es": "Toma una foto con la cámara y busca el precio en Naver.",
+    "de": "Machen Sie ein Foto mit der Kamera und suchen Sie den Preis auf Naver.",
+    "fr": "Prenez une photo avec la caméra et cherchez le meilleur prix sur Naver.",
+    "vi": "Chụp ảnh bằng máy ảnh và tìm kiếm giá tốt nhất trên Naver.",
+    "th": "ถ่ายภาพด้วยกล้องและค้นหาราคาที่ถูกที่สุดบน Naver",
+    "id": "Ambil foto dengan kamera dan cari harga termurah di Naver.",
+    "ru": "Сфотографируйте товар на камеру и найдите лучшую цену на Naver."
   },
   "description": {
     "ko": "상품명을 카메라로 스캔하여 <b>네이버 쇼핑</b>에서 최저가를 검색해 주는 가격 비교 유틸리티입니다.<br>상품을 카메라 프레임에 맞추고 버튼을 누르면 인공지능(OCR)을 통해 텍스트를 인식하고, 인식된 상품명으로 쇼핑 검색 결과를 보여줍니다.",
-    "en": "A price comparison utility that scans product names with the camera and searches for the <b>lowest price on Naver Shopping</b>.<br>By aligning the product name within the camera frame, the app uses AI (OCR) to recognize text and displays search results from Naver Shopping."
+    "en": "A price comparison utility that scans product names with the camera and searches for the <b>lowest price on Naver Shopping</b>.<br>By aligning the product name within the camera frame, the app uses AI (OCR) to recognize text and displays search results from Naver Shopping.",
+    "ja": "商品名をカメラでスキャンして<b>Naverショッピング</b>で最安値を検索してくれる価格比較ユーティリティです。<br>商品をカメラフレームに合わせてボタンを押すと、AI(OCR)がテキストを認識し、認識された商品名でショッピング検索結果を表示します。",
+    "zh": "通过相机扫描商品名称，在<b>Naver购物</b>中快速查找最低价格的比价实用工具。<br>将商品名称对准相机边框并按下按键，AI(OCR)会自动识别文本并展示对应的搜索比价结果。",
+    "es": "Una utilidad de comparación de precios que escanea los nombres de los productos con la cámara y busca el <b>precio más bajo en Naver Shopping</b>.<br>Al enfocar el producto en el marco de la cámara, la aplicación utiliza IA (OCR) para reconocer el texto y mostrar los resultados.",
+    "de": "Ein Preisvergleichs-Dienstprogramm, das Produktnamen mit der Kamera scannt und den <b>niedrigsten Preis auf Naver Shopping</b> sucht.<br>Richten Sie das Produkt am Kamerarahmen aus, damit KI (OCR) den Text erkennt und die Shopping-Ergebnisse anzeigt.",
+    "fr": "Un utilitaire de comparaison de prix qui numérise les noms de produits avec la caméra et recherche le <b>prix le plus bas sur Naver Shopping</b>.<br>En cadrant le produit, l'application utilise l'IA (OCR) pour reconnaître le texte et afficher les résultats d'achat.",
+    "vi": "Tiện ích so sánh giá quét tên sản phẩm bằng máy ảnh và tìm kiếm <b>giá thấp nhất trên Naver Shopping</b>.<br>Căn chỉnh sản phẩm trong khung hình, ứng dụng dùng AI (OCR) để nhận diện văn bản và hiển thị kết quả mua sắm.",
+    "th": "ยูทิลิตี้เปรียบเทียบราคาที่สแกนชื่อสินค้าด้วยกล้องและค้นหา<b>ราคาที่ถูกที่สุดบน Naver Shopping</b><br>จัดวางสินค้าให้อยู่ในกรอบของกล้อง แอปจะใช้ AI (OCR) จดจำข้อความและแสดงผลการค้นหาราคาอย่างรวดเร็ว",
+    "id": "Utilitas perbandingan harga yang memindai nama produk dengan kamera dan mencari <b>harga terendah di Naver Shopping</b>.<br>Arahkan produk ke bingkai kamera, aplikasi menggunakan AI (OCR) untuk mengenali teks dan menampilkan hasil pencarian belanja.",
+    "ru": "Утилита сравнения цен, которая сканирует названия товаров камерой и ищет <b>самую низкую цену на Naver Shopping</b>.<br>Наведите камеру на товар — искусственный интеллект (OCR) распознает текст и покажет результаты поиска по магазинам."
   },
   "control": {
     "ko": "<ul style='padding-left: 20px;'><li><b>스캔:</b> 제품명을 사각형 프레임 안에 맞춥니다.</li><li><b>선택:</b> 인식된 텍스트 목록 중 원하는 상품명을 터치(또는 엔터)합니다.</li><li><b>확인:</b> 네이버 쇼핑 검색 결과에서 이미지와 가격을 확인하고 최저가를 찾습니다!</li></ul>",
-    "en": "<ul style='padding-left: 20px;'><li><b>Scan:</b> Align the product name within the rectangular frame of the app.</li><li><b>Select:</b> Touch or press Enter on the desired product name from the list of recognized text.</li><li><b>Confirm:</b> Browse the Naver Shopping search results to find the best deal!</li></ul>"
+    "en": "<ul style='padding-left: 20px;'><li><b>Scan:</b> Align the product name within the rectangular frame of the app.</li><li><b>Select:</b> Touch or press Enter on the desired product name from the list of recognized text.</li><li><b>Confirm:</b> Browse the Naver Shopping search results to find the best deal!</li></ul>",
+    "ja": "<ul style='padding-left: 20px;'><li><b>スキャン:</b> 商品名を四角いフレーム内に合わせます。</li><li><b>選択:</b> 認識されたテキスト一覧から希望の商品名をタップ（またはEnter）します。</li><li><b>確認:</b> 検索結果の画像と価格を確認し、最安値を見つけます！</li></ul>",
+    "zh": "<ul style='padding-left: 20px;'><li><b>扫描:</b> 将商品名置于方形取景框内。</li><li><b>选择:</b> 在识别出的文本列表中点击（或按Enter）选择目标商品。</li><li><b>确认:</b> 在搜索结果中查看图片与价格，轻松找到心仪低价！</li></ul>",
+    "es": "<ul style='padding-left: 20px;'><li><b>Escanear:</b> Alinea el nombre del producto en el marco rectangular.</li><li><b>Seleccionar:</b> Toca o pulsa Enter en el texto reconocido deseado.</li><li><b>Confirmar:</b> ¡Revisa las imágenes y precios en Naver Shopping para encontrar la mejor oferta!</li></ul>",
+    "de": "<ul style='padding-left: 20px;'><li><b>Scannen:</b> Produktnamen im rechteckigen Rahmen ausrichten.</li><li><b>Auswählen:</b> Erkannten Text antippen oder Enter drücken.</li><li><b>Prüfen:</b> Naver Shopping-Ergebnisse durchsuchen und das beste Angebot finden!</li></ul>",
+    "fr": "<ul style='padding-left: 20px;'><li><b>Scanner:</b> Alignez le nom du produit dans le cadre rectangulaire.</li><li><b>Sélectionner:</b> Touchez ou appuyez sur Entrée sur le nom du produit reconnu.</li><li><b>Confirmer:</b> Parcourez les résultats de Naver Shopping pour trouver la meilleure offre !</li></ul>",
+    "vi": "<ul style='padding-left: 20px;'><li><b>Quét:</b> Căn chỉnh tên sản phẩm trong khung hình chữ nhật.</li><li><b>Chọn:</b> Chạm hoặc nhấn Enter vào tên sản phẩm mong muốn từ danh sách văn bản nhận diện.</li><li><b>Xác nhận:</b> Xem kết quả tìm kiếm trên Naver Shopping để tìm giá hời nhất!</li></ul>",
+    "th": "<ul style='padding-left: 20px;'><li><b>สแกน:</b> จัดวางชื่อสินค้าให้อยู่ในกรอบสี่เหลี่ยม</li><li><b>เลือก:</b> แตะหรือกด Enter บนชื่อสินค้าที่ระบบตรวจพบ</li><li><b>ยืนยัน:</b> ตรวจสอบภาพและราคาในผลการค้นหา Naver Shopping เพื่อหาราคาที่ถูกที่สุด!</li></ul>",
+    "id": "<ul style='padding-left: 20px;'><li><b>Pindai:</b> Arahkan nama produk ke dalam bingkai persegi panjang.</li><li><b>Pilih:</b> Ketuk atau tekan Enter pada nama produk yang diinginkan dari daftar teks hasil pengenalan.</li><li><b>Konfirmasi:</b> Periksa hasil pencarian Naver Shopping untuk menemukan harga termurah!</li></ul>",
+    "ru": "<ul style='padding-left: 20px;'><li><b>Сканирование:</b> Наведите рамку на название товара.</li><li><b>Выбор:</b> Нажмите на нужную строчку распознанного текста.</li><li><b>Результат:</b> Сравните цены на Naver Shopping и найдите самую выгодную!</li></ul>"
   },
   "youtubeUrl": "https://www.youtube.com/embed/U1XVRwjkvPk",
   "youtubeType": "1",
@@ -24,7 +60,16 @@
       "version": "1.1.0",
       "releaseDate": "2026-04-06",
       "ko": "와이파이 연결이 되어야 앱이 동작합니다. 초기에 와이파이 연결이 안되어 있으면 연결을 시도합니다.",
-      "en": "The app works only when Wi-Fi is connected. If Wi-Fi is not connected initially, it will try to connect."
+      "en": "The app works only when Wi-Fi is connected. If Wi-Fi is not connected initially, it will try to connect.",
+      "ja": "Wi-Fi接続時にアプリが動作します。起動時に未接続の場合は接続を試みます。",
+      "zh": "应用需在Wi-Fi连接下运行。启动时如未连接，将自动尝试连接。",
+      "es": "La app funciona solo con conexión Wi-Fi. Si no está conectada al inicio, intentará conectarse.",
+      "de": "Die App funktioniert nur bei bestehender WLAN-Verbindung. Falls nicht verbunden, wird versucht, eine Verbindung aufzubauen.",
+      "fr": "L'application fonctionne uniquement avec une connexion Wi-Fi. En l'absence de réseau, elle tente de s'y connecter au démarrage.",
+      "vi": "Ứng dụng chỉ hoạt động khi có kết nối Wi-Fi. Nếu ban đầu chưa kết nối, ứng dụng sẽ cố gắng kết nối.",
+      "th": "แอปทำงานเมื่อเชื่อมต่อ Wi-Fi เท่านั้น หากเริ่มแรกยังไม่ได้เชื่อมต่อ จะพยายามทำการเชื่อมต่อให้อัตโนมัติ",
+      "id": "Aplikasi hanya berfungsi saat terhubung ke Wi-Fi. Jika belum terhubung pada awalnya, aplikasi akan mencoba menghubungkannya.",
+      "ru": "Приложение работает только при подключении к Wi-Fi. Если связь отсутствует, оно попытается подключиться при запуске."
     }
   ],
   "download": [
@@ -44,6 +89,42 @@
     "en": [
       "PriceSearch",
       "Shopping"
+    ],
+    "ja": [
+      "価格検索",
+      "ショッピング"
+    ],
+    "zh": [
+      "比价",
+      "购物"
+    ],
+    "es": [
+      "BuscarPrecio",
+      "Compras"
+    ],
+    "de": [
+      "Preissuche",
+      "Shopping"
+    ],
+    "fr": [
+      "RecherchePrix",
+      "Achats"
+    ],
+    "vi": [
+      "TìmGiá",
+      "MuaSắm"
+    ],
+    "th": [
+      "ค้นหาราคา",
+      "ช้อปปิ้ง"
+    ],
+    "id": [
+      "CariHarga",
+      "Belanja"
+    ],
+    "ru": [
+      "ПоискЦен",
+      "Покупки"
     ]
   }
 }

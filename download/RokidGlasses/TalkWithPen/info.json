@@ -1,47 +1,137 @@
 {
-    "title": {
-        "ko": "펜과의 대화",
-        "en": "Talk with Pen"
-    },
-    "version": "1.1.0",
-    "releaseDate": "2026-06-24",
-    "shortDescription": {
-        "ko": "펜으로 질문을 작성하고 Gemini 답변을 받으세요.",
-        "en": "Write a question with a pen and get an answer from Gemini."
-    },
-    "description": {
-        "ko": "<b>[앱 소개] 펜과의 대화: 글씨로 소통하는 Gemini AI 비서</b>\n<i>\"목소리가 아닌, 펜으로 적은 질문에 귀를 기울입니다\"</i>\n\n청각 장애나 발음 등의 문제로 AI 음성 비서 사용에 어려움을 겪는 분들을 위한 맞춤형 서비스입니다.\n종이에 펜으로 질문을 적고 Rokid Glasses의 카메라로 비추면, 강력한 Gemini AI가 필기를 인식하여 똑똑하게 답변해 줍니다.\n목소리가 닿지 않아도 펜과 안경만 있으면 언제 어디서든 AI와 자유롭게 대화할 수 있습니다.",
-        "en": "<b>[App Intro] Talk with Pen: Gemini AI Assistant Communicating via Handwriting</b>\n<i>\"Listening to questions written by pen, not spoken by voice\"</i>\n\nThis app is specially designed for those who face difficulties using voice-based AI assistants due to hearing or speech impairments.\nSimply write your question down on paper with a pen, look at it through the Rokid Glasses camera, and Gemini AI will recognize your handwriting and provide a smart answer.\nEven without using your voice, you can freely converse with AI anytime, anywhere, with just a pen and your smart glasses."
-    },
-    "control": {
-        "ko": "<b>[사용 가이드] 처음 시작하기 (QR 설정)</b>\n앱을 처음 사용하시거나 새로운 API 키를 설정해야 할 때, 아래 순서대로 따라 해 보세요.\n\n<b>1단계: API 키 준비하기 (두뇌 만들기)</b>\n앱이 답변 기능을 수행하려면 'Google AI'라는 똑똑한 AI 도구의 허락이 필요합니다.\n1. Google AI Studio에 접속하여 구글 계정으로 로그인합니다.\n2. 화면에서 'Get API key' 버튼을 찾아 누릅니다.\n3. <b>'Create API key'</b>를 눌러 키를 생성하고, 생성된 긴 영문/숫자 조합의 키를 <b>[복사]</b>합니다.\n\n<b>2단계: 나만의 QR 코드 만들기</b>\n복사한 API 키를 앱에 알려주기 위해 고유한 QR 코드를 만듭니다.\n1. 상단에 web app 메뉴의 QR 코드 생성기로 이동합니다.\n2. URL 입력란에 방금 복사한 API 키를 붙여넣기 합니다.\n3. 'QR 코드 생성' 버튼을 누르면 나만의 QR 코드가 화면에 나타납니다.\n\n<b>3단계: 앱에 등록하기</b>\n1. 안경에서 '펜과의 대화' 앱을 실행합니다.\n2. 앱의 QR 인식 화면이 나오면, 방금 만든 QR 코드를 카메라로 비춰줍니다.\n3. 인식이 완료되면 설정이 끝납니다!\n\n<b>4단계: 실전! 질문하고 답변 받기</b>\n1. 종이에 펜으로 작성한 질문을 안경 카메라 영역 안에 들어오게 비춥니다.\n2. 안경의 다리 부분을 살짝 <b>[터치]</b>하세요.\n3. 잠시 기다리면 안경 화면을 통해 Gemini AI가 분석한 똑똑한 답변을 확인할 수 있습니다.\n\n<b>💡 Tip: 만약 답변이 오지 않거나 인식이 안 된다면?</b>\n• 손글씨가 너무 흘려 쓰여 있거나, 텍스트가 너무 멀거나 흐릿하게 보이지 않는지 확인해 보세요.\n• 인터넷 연결 상태를 확인해 주세요.",
-        "en": "<b>[User Guide] Getting Started (QR Code Setup)</b>\nFollow the steps below when using the app for the first time or setting up a new API key.\n\n<b>Step 1: Prepare API Key (Setting up the Brain)</b>\nThe app requires permission from Google's intelligent AI tool, 'Google AI', to answer questions.\n1. Visit Google AI Studio and sign in with your Google account.\n2. Find and click the 'Get API key' button.\n3. Click <b>'Create API key'</b> to generate your key, then <b>[Copy]</b> the long alphanumeric key.\n\n<b>Step 2: Generate Your QR Code</b>\nCreate a unique QR code to share the copied API key with the app.\n1. Visit Web App Menu On top of Page and QR code generator\n2. Paste the copied API key into the URL input field.\n3. Click 'Generate QR Code' to display your custom QR code.\n\n<b>Step 3: Register in the App</b>\n1. Launch the 'Talk with Pen' app on your glasses.\n2. Point the camera at your newly created QR code when the QR scanner screen appears.\n3. Once scanned, the setup is complete!\n\n<b>Step 4: Ask Questions and Get Answers!</b>\n1. Position the question written on paper with a pen within the glasses' camera frame.\n2. Gently <b>[Touch]</b> the temple of the glasses.\n3. Wait a moment, and Gemini AI's smart answer will appear on the glasses display.\n\n<b>💡 Tip: If answering fails</b>\n• Make sure the handwriting is legible and the text is not too far or blurry.\n• Check your internet connection."
-    },
-    "youtubeUrl": "https://www.youtube.com/embed/auPHeD_o5wI",
-    "youtubeType": "1",
-    "updated": [
-        {
-            "version": "1.1.0",
-            "releaseDate": "2026-07-22",
-            "ko": "Gemini Model 최신 버전 업데이트, gemini-3.5-flash-lite (lite), gemini-3.6-flash (latest), gemini-3.1-pro (high-resolution/slow)",
-            "en": "Gemini Model latest version update, gemini-3.5-flash-lite (lite), gemini-3.6-flash (latest), gemini-3.1-pro (high-resolution/slow)"
-        }
-    ],
-    "download": [
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TalkWidhPen_v1.1.0.apk",
-        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TalkWidhPen_v1.0.0.apk"
-    ],
-    "images": [
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TalkWithPen/icon.png",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TalkWithPen/scr2.jpg",
-        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TalkWithPen/scr3.jpg"
-    ],
-    "tags": {
-        "ko": [
-            "Gemini"
-        ],
-        "en": [
-            "Gemini"
-        ]
+  "title": {
+    "ko": "펜과의 대화",
+    "en": "Talk with Pen",
+    "ja": "ペンとの対話 (Talk with Pen)",
+    "zh": "见字如面·笔尖问答 (Talk with Pen)",
+    "es": "Talk with Pen",
+    "de": "Talk with Pen",
+    "fr": "Talk with Pen",
+    "vi": "Trò Chuyện Cùng Bút (Talk with Pen)",
+    "th": "Talk with Pen (สนทนาผ่านปลายปากกา)",
+    "id": "Talk with Pen",
+    "ru": "Беседа с Пером (Talk with Pen)"
+  },
+  "version": "1.1.0",
+  "releaseDate": "2026-06-24",
+  "shortDescription": {
+    "ko": "펜으로 질문을 작성하고 Gemini 답변을 받으세요.",
+    "en": "Write a question with a pen and get an answer from Gemini.",
+    "ja": "ペンで書いた手書きの質問をGemini AIが認識して回答してくれるスマートアシスタント",
+    "zh": "手写提问纸上字，Gemini AI眼见即答的助听助语无障碍AI助手",
+    "es": "Escribe tu pregunta con un bolígrafo en papel y recibe respuestas inteligentes de Gemini AI",
+    "de": "Schreiben Sie Fragen mit Stift auf Papier – Gemini KI erkennt die Handschrift und antwortet",
+    "fr": "Posez vos questions par écrit avec un stylo et laissez l'IA Gemini vous répondre en direct",
+    "vi": "Viết câu hỏi bằng bút lên giấy và nhận câu trả lời thông minh từ Gemini AI",
+    "th": "เขียนคำถามด้วยปากกาลงบนกระดาษ แล้วรับคำตอบอันชาญฉลาดจาก Gemini AI",
+    "id": "Tulis pertanyaan dengan pena di kertas dan dapatkan jawaban cerdas dari Gemini AI",
+    "ru": "Напишите вопрос ручкой на бумаге и получите умный ответ от искусственного интеллекта Gemini"
+  },
+  "description": {
+    "ko": "<b>[앱 소개] 펜과의 대화: 글씨로 소통하는 Gemini AI 비서</b>\n<i>\"목소리가 아닌, 펜으로 적은 질문에 귀를 기울입니다\"</i>\n\n청각 장애나 발음 등의 문제로 AI 음성 비서 사용에 어려움을 겪는 분들을 위한 맞춤형 서비스입니다.\n종이에 펜으로 질문을 적고 Rokid Glasses의 카메라로 비추면, 강력한 Gemini AI가 필기를 인식하여 똑똑하게 답변해 줍니다.\n목소리가 닿지 않아도 펜과 안경만 있으면 언제 어디서든 AI와 자유롭게 대화할 수 있습니다.",
+    "en": "<b>[App Intro] Talk with Pen: Gemini AI Assistant Communicating via Handwriting</b>\n<i>\"Listening to questions written by pen, not spoken by voice\"</i>\n\nThis app is specially designed for those who face difficulties using voice-based AI assistants due to hearing or speech impairments.\nSimply write your question down on paper with a pen, look at it through the Rokid Glasses camera, and Gemini AI will recognize your handwriting and provide a smart answer.\nEven without using your voice, you can freely converse with AI anytime, anywhere, with just a pen and your smart glasses.",
+    "ja": "<b>[アプリ紹介] ペンとの対話: 手書きで心を通わせるGemini AIアシスタント</b><br><i>「声ではなく、ペンで書かれた質問に耳を傾けます」</i><br><br>聴覚障がいや発音などの問題で音声AIアシスタントの利用が困難な方のために企画されたアプリです。<br>紙にペンで質問を書き、Rokid Glassesのカメラにかざすだけで、Gemini AIが手書き文字を認識して賢い回答を目の前に返してくれます。<br>声を出すことなく、ペンとスマートグラスだけでいつでもAIと自由に対話できます。",
+    "zh": "<b>[应用简介] 见字如面·笔尖问答: 用文字与Gemini AI面对面沟通</b><br><i>“倾听落于纸端的每一个文字，而非拘泥于声波”</i><br><br>专为因听障或发音不便而难以使用常规语音AI助手的群体倾心设计。<br>只需用笔在纸上随手写下你的疑问，佩戴Rokid Glasses眼镜注视字迹，Gemini AI便会精准识别手写笔记并以图文形式给出详尽解答。<br>无需发声，只需笔墨与一副智能眼镜，随时随地与前沿AI深度畅聊。",
+    "es": "<b>[Presentación] Talk with Pen: Asistente Gemini AI mediante escritura a mano</b><br><i>'Escuchando preguntas escritas con bolígrafo, no con voz'</i><br><br>Diseñado para personas que enfrentan barreras para usar asistentes de voz.<br>Escribe tu consulta en papel, mírala a través de la cámara de Rokid Glasses y Gemini AI responderá directamente ante tus ojos.",
+    "de": "<b>[Vorstellung] Talk with Pen: Handschriftlicher Gemini KI-Assistent</b><br><i>'Hört auf mit dem Stift geschriebene Fragen statt auf die Stimme'</i><br><br>Speziell für Menschen entwickelt, die Schwierigkeiten mit herkömmlichen Sprachassistenten haben.<br>Frage einfach auf Papier notieren, mit der Datenbrille betrachten und Gemini antwortet sofort.",
+    "fr": "<b>[Présentation] Talk with Pen : Assistant Gemini par écriture manuscrite</b><br><i>'À l'écoute des questions écrites plutôt que parlées'</i><br><br>Idéal pour ceux qui rencontrent des difficultés avec les assistants vocaux classiques.<br>Écrivez votre question au stylo sur une feuille, regardez-la avec les lunettes et Gemini AI vous répond instantanément.",
+    "vi": "<b>[Giới thiệu] Trò Chuyện Cùng Bút: Trợ lý Gemini AI giao tiếp qua chữ viết tay</b><br><i>'Lắng nghe câu hỏi viết bằng bút thay vì giọng nói'</i><br><br>Được thiết kế đặc biệt cho những ai gặp khó khăn khi dùng trợ lý giọng nói do khiếm thính hoặc phát âm.<br>Chỉ cần viết câu hỏi ra giấy, nhìn qua camera của Rokid Glasses, Gemini AI sẽ nhận diện chữ viết tay và đưa ra câu trả lời thông minh.",
+    "th": "<b>[แนะนำแอป] Talk with Pen: ผู้ช่วย Gemini AI สื่อสารผ่านลายมือเขียน</b><br><i>'รับฟังคำถามที่เขียนด้วยปลายปากกา แทนการเปล่งเสียงพูด'</i><br><br>ออกแบบมาเพื่อผู้ที่มีปัญหาในการใช้ผู้ช่วยเสียงอันเนื่องมาจากความบกพร่องทางการได้ยินหรือการออกเสียง<br>เพียงเขียนคำถามลงบนกระดาษ แล้วมองผ่านกล้องของ Rokid Glasses ทาง Gemini AI จะรับรู้ลายมือและตอบคำถามอย่างชาญฉลาด",
+    "id": "<b>[Pengenalan] Talk with Pen: Asisten AI Gemini yang Berkomunikasi via Tulisan Tangan</b><br><i>'Mendengarkan pertanyaan yang tertulis di atas kertas'</i><br><br>Dibuat untuk membantu mereka yang kesulitan menggunakan asisten suara karena keterbatasan pendengaran atau bicara.<br>Cukup tulis pertanyaan di kertas, lihat melalui kamera Rokid Glasses, dan Gemini AI akan menjawabnya langsung.",
+    "ru": "<b>[О приложении] Беседа с Пером: Помощник Gemini AI через рукописный ввод</b><br><i>«Внимает вопросам, написанным на бумаге, а не сказанным вслух»</i><br><br>Создано для людей, испытывающих трудности с голосовыми ассистентами из-за нарушений слуха или речи.<br>Напишите вопрос ручкой на бумаге, посмотрите на него через очки Rokid Glasses — и Gemini AI распознает почерк и даст подробный ответ прямо перед глазами."
+  },
+  "control": {
+    "ko": "<b>[사용 가이드] 처음 시작하기 (QR 설정)</b>\n앱을 처음 사용하시거나 새로운 API 키를 설정해야 할 때, 아래 순서대로 따라 해 보세요.\n\n<b>1단계: API 키 준비하기 (두뇌 만들기)</b>\n앱이 답변 기능을 수행하려면 'Google AI'라는 똑똑한 AI 도구의 허락이 필요합니다.\n1. Google AI Studio에 접속하여 구글 계정으로 로그인합니다.\n2. 화면에서 'Get API key' 버튼을 찾아 누릅니다.\n3. <b>'Create API key'</b>를 눌러 키를 생성하고, 생성된 긴 영문/숫자 조합의 키를 <b>[복사]</b>합니다.\n\n<b>2단계: 나만의 QR 코드 만들기</b>\n복사한 API 키를 앱에 알려주기 위해 고유한 QR 코드를 만듭니다.\n1. 상단에 web app 메뉴의 QR 코드 생성기로 이동합니다.\n2. URL 입력란에 방금 복사한 API 키를 붙여넣기 합니다.\n3. 'QR 코드 생성' 버튼을 누르면 나만의 QR 코드가 화면에 나타납니다.\n\n<b>3단계: 앱에 등록하기</b>\n1. 안경에서 '펜과의 대화' 앱을 실행합니다.\n2. 앱의 QR 인식 화면이 나오면, 방금 만든 QR 코드를 카메라로 비춰줍니다.\n3. 인식이 완료되면 설정이 끝납니다!\n\n<b>4단계: 실전! 질문하고 답변 받기</b>\n1. 종이에 펜으로 작성한 질문을 안경 카메라 영역 안에 들어오게 비춥니다.\n2. 안경의 다리 부분을 살짝 <b>[터치]</b>하세요.\n3. 잠시 기다리면 안경 화면을 통해 Gemini AI가 분석한 똑똑한 답변을 확인할 수 있습니다.\n\n<b>💡 Tip: 만약 답변이 오지 않거나 인식이 안 된다면?</b>\n• 손글씨가 너무 흘려 쓰여 있거나, 텍스트가 너무 멀거나 흐릿하게 보이지 않는지 확인해 보세요.\n• 인터넷 연결 상태를 확인해 주세요.",
+    "en": "<b>[User Guide] Getting Started (QR Code Setup)</b>\nFollow the steps below when using the app for the first time or setting up a new API key.\n\n<b>Step 1: Prepare API Key (Setting up the Brain)</b>\nThe app requires permission from Google's intelligent AI tool, 'Google AI', to answer questions.\n1. Visit Google AI Studio and sign in with your Google account.\n2. Find and click the 'Get API key' button.\n3. Click <b>'Create API key'</b> to generate your key, then <b>[Copy]</b> the long alphanumeric key.\n\n<b>Step 2: Generate Your QR Code</b>\nCreate a unique QR code to share the copied API key with the app.\n1. Visit Web App Menu On top of Page and QR code generator\n2. Paste the copied API key into the URL input field.\n3. Click 'Generate QR Code' to display your custom QR code.\n\n<b>Step 3: Register in the App</b>\n1. Launch the 'Talk with Pen' app on your glasses.\n2. Point the camera at your newly created QR code when the QR scanner screen appears.\n3. Once scanned, the setup is complete!\n\n<b>Step 4: Ask Questions and Get Answers!</b>\n1. Position the question written on paper with a pen within the glasses' camera frame.\n2. Gently <b>[Touch]</b> the temple of the glasses.\n3. Wait a moment, and Gemini AI's smart answer will appear on the glasses display.\n\n<b>💡 Tip: If answering fails</b>\n• Make sure the handwriting is legible and the text is not too far or blurry.\n• Check your internet connection.",
+    "ja": "<b>[スタートガイド] QRコードで簡単API設定</b><br><br><b>1. APIキーの準備:</b> Google AI Studioで「Create API key」を作成してコピーします。<br><b>2. QRコード生成:</b> 上部WebアプリのQRコード生成器でAPIキーを入力しQRを作成します。<br><b>3. アプリに登録:</b> メガネでアプリを起動し、作成したQRコードをカメラで読み取ります。<br><b>4. 質問と回答:</b> 紙にペンで書いた質問をカメラに収め、メガネのテンプルをタップすると回答が表示されます。",
+    "zh": "<b>[操作指南] 极速配对与问答</b><br><br><b>第一步: 准备API Key:</b> 在 Google AI Studio 申请并复制专属 Gemini API Key。<br><b>第二步: 生成扫码QR:</b> 访问本站上方 Web App 的二维码生成器，粘贴密钥并一键生成二维码。<br><b>第三步: 眼镜扫码绑定:</b> 打开眼镜中的应用，用摄像头对准生成的二维码快速导入。<br><b>第四步: 提问解答:</b> 在纸上书写问题，将字迹置于取景框中并轻触镜腿，即可静候Gemini的精彩回答。",
+    "es": "<b>[Guía] Configuración y uso</b><br><br><b>1. Clave API:</b> Copia tu clave API de Google AI Studio.<br><b>2. Generar QR:</b> Crea el código QR desde la herramienta online de la web.<br><b>3. Registrar:</b> Escanea el QR con la cámara de las gafas.<br><b>4. Preguntar:</b> Enfoca tu pregunta escrita en papel y toca la patilla de las gafas.",
+    "de": "<b>[Anleitung] Schnellstart</b><br><br><b>1. API-Schlüssel:</b> Schlüssel im Google AI Studio erstellen und kopieren.<br><b>2. QR-Code:</b> QR-Code über den Online-Generator dieser Website erstellen.<br><b>3. Scannen:</b> QR-Code mit der Brille scannen zur Aktivierung.<br><b>4. Fragen stellen:</b> Handgeschriebene Frage anvisieren und Brillenbügel antippen.",
+    "fr": "<b>[Guide] Démarrage rapide</b><br><br><b>1. Clé API:</b> Créez votre clé sur Google AI Studio.<br><b>2. Créer le QR:</b> Utilisez le générateur de QR de notre site.<br><b>3. Enregistrement:</b> Scannez le code avec vos lunettes.<br><b>4. Posez vos questions:</b> Cadrez votre question écrite et touchez la branche.",
+    "vi": "<b>[Hướng dẫn] Bắt đầu nhanh</b><br><br><b>1. Khóa API:</b> Tạo và sao chép khóa API từ Google AI Studio.<br><b>2. Tạo mã QR:</b> Dán vào trình tạo mã QR trên thanh menu Web App.<br><b>3. Quét vào kính:</b> Mở ứng dụng và quét mã QR vừa tạo.<br><b>4. Đặt câu hỏi:</b> Hướng camera vào câu hỏi trên giấy và chạm vào gọng kính.",
+    "th": "<b>[คู่มือ] เริ่มต้นใช้งาน</b><br><br><b>1. เตรียม API Key:</b> คัดลอกคีย์จาก Google AI Studio<br><b>2. สร้าง QR Code:</b> ใช้ตัวสร้าง QR Code บนเมนู Web App<br><b>3. สแกนเข้าแว่นตา:</b> เปิดแอปแล้วสแกน QR Code เพื่อบันทึกการตั้งค่า<br><b>4. ถามคำถาม:</b> ส่องกล้องไปที่ข้อความบนกระดาษแล้วแตะขาแว่นเพื่อรับคำตอบ",
+    "id": "<b>[Panduan] Mulai Cepat</b><br><br><b>1. API Key:</b> Salin kunci API dari Google AI Studio.<br><b>2. Buat QR:</b> Gunakan generator QR di menu Web App.<br><b>3. Pindai:</b> Pindai kode QR dengan kamera kacamata.<br><b>4. Bertanya:</b> Arahkan ke pertanyaan di kertas dan sentuh gagang kacamata.",
+    "ru": "<b>[Инструкция] Быстрый старт</b><br><br><b>1. API-ключ:</b> Скопируйте ключ на Google AI Studio.<br><b>2. QR-код:</b> Создайте QR-код в генераторе в меню Web App.<br><b>3. Сканирование:</b> Отсканируйте код камерой очков.<br><b>4. Вопрос и ответ:</b> Наведите камеру на рукописный вопрос и коснитесь дужки очков."
+  },
+  "youtubeUrl": "https://www.youtube.com/embed/auPHeD_o5wI",
+  "youtubeType": "1",
+  "updated": [
+    {
+      "version": "1.1.0",
+      "releaseDate": "2026-07-22",
+      "ko": "Gemini Model 최신 버전 업데이트, gemini-3.5-flash-lite (lite), gemini-3.6-flash (latest), gemini-3.1-pro (high-resolution/slow)",
+      "en": "Gemini Model latest version update, gemini-3.5-flash-lite (lite), gemini-3.6-flash (latest), gemini-3.1-pro (high-resolution/slow)",
+      "ja": "Gemini Model最新バージョン更新: gemini-3.5-flash-lite, gemini-3.6-flash, gemini-3.1-pro",
+      "zh": "升级至Gemini最新模型: gemini-3.5-flash-lite, gemini-3.6-flash, gemini-3.1-pro",
+      "es": "Actualizado a los últimos modelos Gemini: gemini-3.5-flash-lite, gemini-3.6-flash y gemini-3.1-pro.",
+      "de": "Aktualisiert auf neueste Gemini-Modelle: gemini-3.5-flash-lite, gemini-3.6-flash und gemini-3.1-pro.",
+      "fr": "Mise à jour des modèles Gemini : gemini-3.5-flash-lite, gemini-3.6-flash et gemini-3.1-pro.",
+      "vi": "Cập nhật các mô hình Gemini mới nhất: gemini-3.5-flash-lite, gemini-3.6-flash, gemini-3.1-pro.",
+      "th": "อัปเดตโมเดล Gemini ล่าสุด: gemini-3.5-flash-lite, gemini-3.6-flash, gemini-3.1-pro",
+      "id": "Pembaruan model Gemini terbaru: gemini-3.5-flash-lite, gemini-3.6-flash, gemini-3.1-pro.",
+      "ru": "Обновлены модели Gemini: gemini-3.5-flash-lite, gemini-3.6-flash, gemini-3.1-pro."
     }
+  ],
+  "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TalkWidhPen_v1.1.0.apk",
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/TalkWidhPen_v1.0.0.apk"
+  ],
+  "images": [
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TalkWithPen/icon.png",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TalkWithPen/scr2.jpg",
+    "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/TalkWithPen/scr3.jpg"
+  ],
+  "tags": {
+    "ko": [
+      "Gemini"
+    ],
+    "en": [
+      "Gemini"
+    ],
+    "ja": [
+      "Gemini",
+      "AI",
+      "アクセシビリティ"
+    ],
+    "zh": [
+      "Gemini",
+      "AI",
+      "无障碍"
+    ],
+    "es": [
+      "Gemini",
+      "AI",
+      "Accesibilidad"
+    ],
+    "de": [
+      "Gemini",
+      "KI",
+      "Barrierefreiheit"
+    ],
+    "fr": [
+      "Gemini",
+      "IA",
+      "Accessibilité"
+    ],
+    "vi": [
+      "Gemini",
+      "AI",
+      "HỗTrợ"
+    ],
+    "th": [
+      "Gemini",
+      "AI",
+      "การเข้าถึง"
+    ],
+    "id": [
+      "Gemini",
+      "AI",
+      "Aksesibilitas"
+    ],
+    "ru": [
+      "Gemini",
+      "ИИ",
+      "Доступность"
+    ]
+  }
 }
