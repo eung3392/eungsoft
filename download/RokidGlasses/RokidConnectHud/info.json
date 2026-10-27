@@ -72,6 +72,7 @@
       "ru": "Добавлена опция Full Size в настройках размера экрана. Поддерживает полноэкранное зеркалирование смартфона."
     }
   ],
+  "store": "https://m.onestore.co.kr/v2/ko-kr/app/0001011392",
   "download": [
     "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/RokidConnect_F_v1.2.apk",
     "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/RokidConnect_v1.1.apk"
