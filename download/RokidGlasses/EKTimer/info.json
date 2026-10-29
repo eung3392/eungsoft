@@ -12,7 +12,7 @@
     "id": "EK Timer",
     "ru": "EK Timer (Таймер)"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "releaseDate": "2026-05-26",
   "shortDescription": {
     "ko": "심플한 로키드 글래스용 타이머",
@@ -55,8 +55,25 @@
   },
   "youtubeUrl": "https://www.youtube.com/embed/TfvbHfA-2EE",
   "youtubeType": "1",
-  "updated": [],
+  "updated": [
+    {
+      "version": "1.1.0",
+      "releaseDate": "2026-10-29",
+      "ko": "타이머가 종료된 후, 설정한 값으로 다시 세팅 하도록 수정",
+      "en": "Changed to reset to the configured time after the timer ends.",
+      "ja": "タイマー終了後、設定した時間に再設定されるように修正。",
+      "zh": "倒计时结束后自动重置为已设定的时间。",
+      "es": "Modificado para restablecer el tiempo configurado una vez finalizado el temporizador.",
+      "de": "Nach Ablauf des Timers wird automatisch auf die eingestellte Zeit zurückgesetzt.",
+      "fr": "Modifié pour réinitialiser le minuteur au temps défini après son expiration.",
+      "vi": "Đã sửa đổi để tự động đặt lại về thời gian đã cài đặt sau khi đồng hồ đếm ngược kết thúc.",
+      "th": "แก้ไขให้รีเซ็ตกลับเป็นเวลาที่ตั้งไว้โดยอัตโนมัติหลังจากหมดเวลาจับเวลา",
+      "id": "Diubah agar otomatis kembali ke waktu yang telah diatur setelah pengatur waktu berakhir.",
+      "ru": "После окончания таймера время автоматически сбрасывается на ранее установленное значение."
+    }
+  ],
   "download": [
+    "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKTimer_v1.1.0.apk",
     "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/EKTimer_v1.0.0.apk"
   ],
   "images": [
