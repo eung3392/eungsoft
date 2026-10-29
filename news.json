@@ -14,6 +14,21 @@
             "th": "อัปเดตเว็บไซต์เพื่อรองรับหลายภาษาแล้ว",
             "id": "Situs web telah diperbarui untuk mendukung berbagai bahasa.",
             "ru": "Сайт обновлен для поддержки нескольких языков."
+        },
+        {
+            "title": "EK Timer",
+            "url": "https://eung.pe.kr/app-detail.html?app=EKTimer&type=RokidGlasses",
+            "ko": "타이머가 종료된 후에도 초기 세팅값을 유지하도록 수정했습니다.",
+            "en": "Updated to retain the initial configured time even after the timer ends.",
+            "ja": "タイマー終了後も初期設定値を維持するように修正しました。",
+            "zh": "已修改为倒计时结束后仍保留初始设定值。",
+            "es": "Se ha modificado para mantener el valor inicial configurado incluso después de que finalice el temporizador.",
+            "de": "Wurde aktualisiert, sodass der ursprünglich eingestellte Wert auch nach Ablauf des Timers erhalten bleibt.",
+            "fr": "Modifié pour conserver la valeur initiale configurée même après la fin du minuteur.",
+            "vi": "Đã sửa đổi để giữ lại giá trị cài đặt ban đầu ngay cả sau khi hết giờ.",
+            "th": "ปรับปรุงให้คงค่าที่ตั้งไว้เริ่มต้นแม้จะหมดเวลาจับเวลาแล้ว",
+            "id": "Diperbarui agar nilai pengaturan awal tetap dipertahankan bahkan setelah pengatur waktu berakhir.",
+            "ru": "Обновлено, чтобы исходное установленное значение сохранялось даже после окончания таймера."
         }
     ]
 }
