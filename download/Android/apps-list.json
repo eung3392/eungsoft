@@ -1,5 +1,8 @@
 {
   "apps": [
+    "noon",
+    "TapeCalc",
+    "ExpenseGlass",
     "EKSimpleHome",
     "notifyForward",
     "EKBookScan",
