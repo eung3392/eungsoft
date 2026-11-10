@@ -1,0 +1,124 @@
+{
+    "title": {
+        "ko": "칼로리 달력",
+        "en": "Calorie Calendar",
+        "ja": "カロリーカレンダー",
+        "zh": "卡路里日历",
+        "es": "Calendario de Calorías",
+        "de": "Kalorien-Kalender",
+        "fr": "Calendrier des Calories",
+        "vi": "Lịch Calo",
+        "th": "ปฏิทินแคลอรี่",
+        "id": "Kalender Kalori",
+        "ru": "Календарь калорий"
+    },
+    "version": "1.0.0",
+    "releaseDate": "2026-11-10",
+    "shortDescription": {
+        "ko": "음식 사진을 찍고, 칼로리를 기록하세요.",
+        "en": "Take food photos and track your calories.",
+        "ja": "料理の写真を撮って、カロリーを記録しましょう。",
+        "zh": "拍摄食物照片，记录卡路里摄入。",
+        "es": "Toma fotos de tu comida y registra tus calorías.",
+        "de": "Fotografieren Sie Ihr Essen und erfassen Sie Ihre Kalorien.",
+        "fr": "Prenez en photo vos plats et enregistrez vos calories.",
+        "vi": "Chụp ảnh món ăn và ghi lại lượng calo của bạn.",
+        "th": "ถ่ายภาพอาหารและบันทึกแคลอรี่ของคุณ",
+        "id": "Ambil foto makanan dan catat kalori Anda.",
+        "ru": "Фотографируйте еду и записывайте потребленные калории."
+    },
+    "description": {
+        "ko": "사진을 찍어서 내가 섭취한 칼로리를 기록합니다.<br>Gemini API 를 이용하여 칼로리를 자동으로 측정합니다.",
+        "en": "Track the calories you consume by taking photos.<br>Automatically measures calories using the Gemini API.",
+        "ja": "写真を撮影して摂取したカロリーを記録します。<br>Gemini APIを利用してカロリーを自動で測定します。",
+        "zh": "通过拍照记录摄入的卡路里。<br>利用 Gemini API 自动测量估算卡路里。",
+        "es": "Registra las calorías que consumes tomando fotos.<br>Mide automáticamente las calorías usando la API de Gemini.",
+        "de": "Erfassen Sie Ihre aufgenommenen Kalorien durch Fotografieren.<br>Automatische Kalorienmessung mithilfe der Gemini-API.",
+        "fr": "Enregistrez les calories consommées en prenant des photos.<br>Mesurez automatiquement les calories à l'aide de l'API Gemini.",
+        "vi": "Ghi lại lượng calo bạn nạp vào bằng cách chụp ảnh.<br>Tự động đo lượng calo bằng Gemini API.",
+        "th": "บันทึกแคลอรี่ที่คุณบริโภคโดยการถ่ายภาพ<br>วัดปริมาณแคลอรี่อัตโนมัติด้วย Gemini API",
+        "id": "Catat kalori yang Anda konsumsi dengan mengambil foto.<br>Ukur kalori secara otomatis menggunakan Gemini API.",
+        "ru": "Записывайте потребленные калории, делая фотографии.<br>Автоматически измеряйте калории с помощью Gemini API."
+    },
+    "control": {
+        "ko": "Hi Rokid 앱의 터치패드 기능을 이용하세요.<br>우측 상단의 환경 설정을 클릭하면 Gemini API Key 를 등록하고 하루 목표 칼로리를 입력할 수 있습니다. Gemini API Key는 Google AI Studio 에서  발급받으세요. https://aistudio.google.com/api-keys , 터치패드의 마우스로 달력을 클릭하면 해당 날짜에 입력된 상세 내용을 확인합니다.<br>평상시에는 안경의 다리를 터치하면 바로 카메라가 실행이 되고, 음식 사진을 촬영합니다.<br>결과 내용은 터치 스와이프를 통해 화면 스크롤하며 확인할 수 있습니다.",
+        "en": "Use the touchpad feature in the Hi Rokid app.<br>Click Settings in the top right to register your Gemini API Key and set your daily calorie goal. Get your Gemini API Key from Google AI Studio: https://aistudio.google.com/api-keys<br>Click on the calendar using the touchpad mouse to view details for that date.<br>Normally, tapping the temple of the glasses launches the camera immediately to take a photo of your food.<br>You can scroll through the results by swiping on the touchpad.",
+        "ja": "Hi Rokidアプリのタッチパッド機能をご利用ください。<br>右上の設定をクリックするとGemini API Keyを登録し、1日の目標カロリーを入力できます。Gemini API KeyはGoogle AI Studioで取得してください: https://aistudio.google.com/api-keys<br>タッチパッドのマウスでカレンダーをクリックすると、該当の日付に登録された詳細内容を確認できます。<br>普段はメガネのテンプルをタッチするとすぐにカメラが起動し、料理の写真を撮影します。<br>結果はタッチスワイプで画面をスクロールして確認できます。",
+        "zh": "请使用 Hi Rokid 应用的触控板功能。<br>点击右上角的设置，即可注册 Gemini API Key 并输入每日目标卡路里。请在 Google AI Studio 获取 Gemini API Key：https://aistudio.google.com/api-keys<br>使用触控板鼠标点击日历，即可查看该日期的详细摄入记录。<br>平时轻触镜腿即可立即启动相机拍摄食物照片。<br>通过触控滑动即可上下滚动屏幕查看结果内容。",
+        "es": "Usa la función de panel táctil de la aplicación Hi Rokid.<br>Haz clic en Configuración en la esquina superior derecha para registrar tu Gemini API Key e ingresar tu objetivo diario de calorías. Obtén la clave en Google AI Studio: https://aistudio.google.com/api-keys<br>Haz clic en el calendario con el ratón del panel táctil para ver los detalles registrados en esa fecha.<br>Normalmente, al tocar la patilla de las gafas se abre la cámara al instante para fotografiar la comida.<br>Puedes revisar los resultados desplazándote con deslizamientos táctiles.",
+        "de": "Verwenden Sie die Touchpad-Funktion der Hi Rokid-App.<br>Klicken Sie oben rechts auf die Einstellungen, um Ihren Gemini-API-Schlüssel zu registrieren und Ihr tägliches Kalorienziel einzugeben. Beziehen Sie den Schlüssel über Google AI Studio: https://aistudio.google.com/api-keys<br>Klicken Sie mit der Touchpad-Maus auf den Kalender, um die Detaildaten des Datums anzuzeigen.<br>Tippen Sie im Normalbetrieb einfach auf den Brillenbügel, um sofort die Kamera zu starten und Ihr Essen zu fotografieren.<br>Durch Wischen auf dem Touchpad können Sie durch die Ergebnisse scrollen.",
+        "fr": "Utilisez la fonction pavé tactile de l'application Hi Rokid.<br>Cliquez sur les paramètres en haut à droite pour enregistrer votre clé API Gemini et saisir votre objectif calorique quotidien. Obtenez votre clé sur Google AI Studio : https://aistudio.google.com/api-keys<br>Cliquez sur le calendrier avec la souris du pavé tactile pour consulter les détails enregistrés à cette date.<br>En temps normal, touchez la branche des lunettes pour ouvrir immédiatement la caméra et prendre une photo du repas.<br>Faites glisser votre doigt sur le pavé tactile pour faire défiler et consulter les résultats.",
+        "vi": "Sử dụng tính năng bàn di chuột của ứng dụng Hi Rokid.<br>Nhấp vào Cài đặt ở góc trên bên phải để đăng ký Gemini API Key và nhập mục tiêu calo hàng ngày. Lấy Gemini API Key từ Google AI Studio: https://aistudio.google.com/api-keys<br>Nhấp chuột cảm ứng vào lịch để xem chi tiết các mục đã nhập vào ngày đó.<br>Bình thường, chỉ cần chạm vào gọng kính để mở máy ảnh ngay và chụp ảnh món ăn.<br>Có thể cuộn màn hình bằng cách vuốt cảm ứng để xem chi tiết kết quả.",
+        "th": "ใช้ฟังก์ชันทัชแพดของแอป Hi Rokid<br>คลิกการตั้งค่าที่มุมขวาบนเพื่อลงทะเบียน Gemini API Key และป้อนเป้าหมายแคลอรี่ประจำวัน รับ Gemini API Key ได้ที่ Google AI Studio: https://aistudio.google.com/api-keys<br>ใช้เมาส์ทัชแพดคลิกที่ปฏิทินเพื่อดูรายละเอียดที่บันทึกไว้ในวันนั้น<br>โดยปกติเมื่อแตะที่ขาแว่น กล้องจะเริ่มทำงานทันทีเพื่อถ่ายภาพอาหาร<br>คุณสามารถเลื่อนหน้าจอเพื่อตรวจสอบผลลัพธ์ได้ด้วยการปัดนิ้วบนทัชแพด",
+        "id": "Gunakan fitur touchpad pada aplikasi Hi Rokid.<br>Klik Pengaturan di kanan atas untuk mendaftarkan Gemini API Key dan memasukkan target kalori harian. Dapatkan Gemini API Key di Google AI Studio: https://aistudio.google.com/api-keys<br>Klik kalender menggunakan kursor touchpad untuk memeriksa detail yang tercatat pada tanggal tersebut.<br>Biasanya, cukup sentuh gagang kacamata untuk langsung meluncurkan kamera dan memotret makanan.<br>Hasilnya dapat diperiksa dengan menggeser touchpad untuk menggulir layar.",
+        "ru": "Используйте функцию тачпада в приложении Hi Rokid.<br>Нажмите на «Настройки» в правом верхнем углу, чтобы зарегистрировать Gemini API Key и ввести дневную цель по калориям. Получите Gemini API Key в Google AI Studio: https://aistudio.google.com/api-keys<br>Кликните по календарю мышью тачпада, чтобы просмотреть подробную информацию за выбранную дату.<br>В обычном режиме коснитесь дужки очков — сразу откроется камера для съемки блюда.<br>Результаты можно просматривать, прокручивая экран свайпом по тачпаду."
+    },
+    "youtubeUrl": "",
+    "youtubeType": "1",
+    "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/Calorie_Calendar_v1.0.0.apk"
+    ],
+    "images": [
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/calc/cal_001.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/calc/cal_002.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/calc/cal_003.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/calc/cal_004.jpg"
+    ],
+    "tags": {
+        "ko": [
+            "칼로리",
+            "Gemini",
+            "식단관리"
+        ],
+        "en": [
+            "Calories",
+            "Gemini",
+            "Diet"
+        ],
+        "ja": [
+            "カロリー",
+            "Gemini",
+            "食事管理"
+        ],
+        "zh": [
+            "卡路里",
+            "Gemini",
+            "健康饮食"
+        ],
+        "es": [
+            "Calorías",
+            "Gemini",
+            "Dieta"
+        ],
+        "de": [
+            "Kalorien",
+            "Gemini",
+            "Ernährung"
+        ],
+        "fr": [
+            "Calories",
+            "Gemini",
+            "Alimentation"
+        ],
+        "vi": [
+            "Calo",
+            "Gemini",
+            "DinhDưỡng"
+        ],
+        "th": [
+            "แคลอรี่",
+            "Gemini",
+            "สุขภาพ"
+        ],
+        "id": [
+            "Kalori",
+            "Gemini",
+            "Diet"
+        ],
+        "ru": [
+            "Калории",
+            "Gemini",
+            "Питание"
+        ]
+    }
+}
