@@ -1,0 +1,102 @@
+{
+    "title": {
+        "ko": "Sony Connect",
+        "en": "Sony Connect",
+        "ja": "Sony Connect",
+        "zh": "Sony Connect",
+        "es": "Sony Connect",
+        "de": "Sony Connect",
+        "fr": "Sony Connect",
+        "vi": "Sony Connect",
+        "th": "Sony Connect",
+        "id": "Sony Connect",
+        "ru": "Sony Connect"
+    },
+    "version": "1.0.0",
+    "releaseDate": "2026-11-13",
+    "shortDescription": {
+        "ko": "소니 A5000 및 미러리스 카메라 원격 리모트 뷰 및 촬영",
+        "en": "Remote viewfinder and shooting control for Sony A5000 & mirrorless cameras.",
+        "ja": "ソニーA5000およびミラーレスカメラの遠隔リモートビュー＆撮影。",
+        "zh": "索尼 A5000 及微单相机远程取景与拍摄。",
+        "es": "Visor remoto y control de disparo para Sony A5000 y cámaras mirrorless.",
+        "de": "Remote-Sucher und Fernauslöser für Sony A5000 & spiegellose Kameras.",
+        "fr": "Viseur à distance et contrôle de prise de vue pour Sony A5000 et hybrides.",
+        "vi": "Kính ngắm từ xa và điều khiển chụp ảnh cho Sony A5000 và máy ảnh mirrorless.",
+        "th": "ดูภาพพรีวิวระยะไกลและถ่ายภาพสำหรับ Sony A5000 และกล้องมิเรอร์เลส",
+        "id": "Viewfinder jarak jauh dan kontrol pemotretan untuk Sony A5000 & kamera mirrorless.",
+        "ru": "Удаленный видоискатель и управление съемкой для Sony A5000 и беззеркальных камер."
+    },
+    "description": {
+        "ko": "소니 A5000 및 Imaging Edge Mobile을 지원하는 미러리스 카메라의 리모트 뷰 앱입니다.<br>카메라와 무선으로 연결하여 안경 화면에서 실시간 프리뷰 영상을 확인하고 원격으로 사진을 촬영할 수 있습니다.<br>안경 우측 다리를 터치하여 간편하게 촬영하고, 스와이프 제스처로 줌 인/아웃(Zoom In/Out)을 직관적으로 제어할 수 있습니다.",
+        "en": "A remote viewfinder app for Sony A5000 and mirrorless cameras compatible with Imaging Edge Mobile.<br>Connect wirelessly to view real-time live preview on your glasses and capture photos remotely.<br>Simply tap the right temple of the glasses to take a photo, and swipe forward/backward to zoom in and out.",
+        "ja": "ソニーA5000およびImaging Edge Mobile対応ミラーレスカメラ用リモートビューアプリです。<br>カメラとワイヤレスで接続し、メガネの画面でリアルタイムプレビューを確認しながら遠隔撮影が可能です。<br>メガネの右テンプルをタップして写真を撮影し、スワイプ操作でズームイン／ズームアウトを直感的にコントロールできます。",
+        "zh": "适用于索尼 A5000 及支持 Imaging Edge Mobile 的微单相机远程取景应用。<br>通过无线连接在眼镜屏幕上实时查看取景画面并进行远程拍摄。<br>轻触眼镜右侧镜腿即可拍照，滑动镜腿即可轻松进行放大/缩小（Zoom In/Out）变焦操作。",
+        "es": "Aplicación de visor remoto para Sony A5000 y cámaras mirrorless compatibles con Imaging Edge Mobile.<br>Conéctate de forma inalámbrica para ver la vista previa en vivo en tus gafas y tomar fotos a distancia.<br>Toca la patilla derecha de las gafas para capturar y desliza el dedo para acercar o alejar el zoom (Zoom In/Out).",
+        "de": "Remote-Sucher-App für die Sony A5000 und spiegellose Kameras mit Imaging Edge Mobile-Unterstützung.<br>Verbinden Sie sich drahtlos, um das Live-Vorschaubild auf Ihrer Brille zu sehen und Fotos ferngesteuert aufzunehmen.<br>Tippen Sie auf den rechten Brillenbügel zum Fotografieren und wischen Sie, um heranzuzoomen oder herauszuzoomen.",
+        "fr": "Application de viseur à distance pour Sony A5000 et appareils hybrides compatibles avec Imaging Edge Mobile.<br>Connectez-vous sans fil pour afficher l'aperçu en direct sur vos lunettes et déclencher des photos à distance.<br>Touchez la branche droite des lunettes pour prendre une photo et faites glisser pour zoomer et dézoomer.",
+        "vi": "Ứng dụng kính ngắm từ xa cho Sony A5000 và các dòng máy ảnh mirrorless hỗ trợ Imaging Edge Mobile.<br>Kết nối không dây để xem trực tiếp khung hình trên kính và chụp ảnh từ xa.<br>Chạm vào gọng kính bên phải để chụp ảnh và vuốt để phóng to/thu nhỏ (Zoom In/Out) một cách trực quan.",
+        "th": "แอปช่องมองภาพระยะไกลสำหรับกล้อง Sony A5000 และกล้องมิเรอร์เลสที่รองรับ Imaging Edge Mobile<br>เชื่อมต่อแบบไร้สายเพื่อดูภาพพรีวิวสดแบบเรียลไทม์บนแว่นและสั่งถ่ายภาพจากระยะไกลได้<br>แตะที่ขาแว่นด้านขวาเพื่อถ่ายภาพ และปัดนิ้วเพื่อซูมเข้า/ซูมออกอย่างง่ายดาย",
+        "id": "Aplikasi viewfinder jarak jauh untuk Sony A5000 dan kamera mirrorless yang mendukung Imaging Edge Mobile.<br>Hubungkan secara nirkabel untuk melihat pratinjau langsung di kacamata dan mengambil foto dari jarak jauh.<br>Cukup sentuh gagang kanan kacamata untuk memotret, dan geser (swipe) untuk memperbesar/memperkecil (Zoom In/Out).",
+        "ru": "Приложение удаленного видоискателя для Sony A5000 и беззеркальных камер с поддержкой Imaging Edge Mobile.<br>Беспроводное подключение позволяет просматривать превью в реальном времени на очках и дистанционно делать снимки.<br>Коснитесь правой дужки очков, чтобы сделать снимок, и проведите пальцем (свайп) для приближения/отдаления зума."
+    },
+    "control": {
+        "ko": "[연결 방법]<br>1. 카메라 설정: 미러리스 카메라 메뉴에서 [애플리케이션 목록]으로 이동한 후 [스마트 리모컨] 관련 앱을 실행합니다. 화면에 표시되는 Wi-Fi 연결 정보를 확인합니다.<br>2. Wi-Fi 연결: 스마트폰의 Hi Rokid 앱에서 Wi-Fi 설정 메뉴로 이동하여 카메라 화면에 표시된 Wi-Fi 네트워크에 연결합니다.<br>3. 앱 실행: 안경에서 'Sony Connect' 앱을 실행합니다. 만약 바로 연결되지 않으면 재연결 안내 화면에서 안경 우측 다리를 터치합니다.<br>연결이 완료되면 실시간 프리뷰 영상이 화면에 표시됩니다.<br><br>[조작 방법]<br>- 촬영: 안경 우측 다리를 터치하여 사진을 촬영합니다.<br>- 줌(Zoom): 안경 다리를 앞뒤로 스와이프하여 줌 인(Zoom In) / 줌 아웃(Zoom Out)을 조절합니다.",
+        "en": "[Connection Guide]<br>1. Camera Setup: Go to [Application List] in your mirrorless camera menu and launch the [Smart Remote Control] app. Check the Wi-Fi credentials displayed on the camera screen.<br>2. Wi-Fi Connection: Open the Hi Rokid app on your phone, go to Wi-Fi settings, and connect to the camera's Wi-Fi network.<br>3. Launch App: Open 'Sony Connect' on your glasses. If it does not connect immediately, tap the right temple of the glasses on the reconnect screen.<br>Once connected, the live preview will appear.<br><br>[Controls]<br>- Shutter: Tap the right temple of the glasses to take a photo.<br>- Zoom: Swipe along the glasses temple forward or backward to Zoom In / Zoom Out.",
+        "ja": "【接続手順】<br>1. カメラの設定：ミラーレスカメラのメニューから［アプリケーション一覧］に移動し、［スマートリモコン］関連アプリを起動します。画面に表示されるWi-Fi情報を確認します。<br>2. Wi-Fi接続：スマートフォンのHi RokidアプリでWi-Fi設定を開き、カメラ画面に表示されているWi-Fiネットワークに接続します。<br>3. アプリ起動：メガネ側で「Sony Connect」を起動します。接続されない場合は、再接続画面でメガネの右テンプルをタップしてください。<br>接続が完了するとリアルタイムプレビューが表示されます。<br><br>【操作方法】<br>- 撮影：メガネの右テンプルをタップして写真を撮影します。<br>- ズーム：テンプルを前後にスワイプしてズームイン／ズームアウト（Zoom In/Out）を調整します。",
+        "zh": "【连接方法】<br>1. 相机设置：进入微单相机的菜单，选择【应用程序列表】，找到并运行【智能遥控】相关应用，确认屏幕上显示的 Wi-Fi 连接信息。<br>2. Wi-Fi 连接：打开手机上的 Hi Rokid 应用，进入 Wi-Fi 设置，连接到相机屏幕所显示的 Wi-Fi 网络。<br>3. 启动应用：在眼镜中打开“Sony Connect”应用。若未能成功连接，在重连提示画面轻触眼镜右侧镜腿重新尝试。<br>连接成功后，眼镜中将显示实时预览画面。<br><br>【操作说明】<br>- 拍照：轻触眼镜右侧镜腿即可拍摄照片。<br>- 变焦：前后滑动镜腿即可控制放大（Zoom In）与缩小（Zoom Out）。",
+        "es": "[Instrucciones de conexión]<br>1. Configuración de la cámara: Ve a [Lista de aplicaciones] en el menú de la cámara mirrorless e inicia la aplicación [Control remoto inteligente]. Verifica la información de Wi-Fi en pantalla.<br>2. Conexión Wi-Fi: Abre la app Hi Rokid en tu teléfono, entra en los ajustes de Wi-Fi y conéctate a la red mostrada en la cámara.<br>3. Iniciar aplicación: Abre 'Sony Connect' en tus gafas. Si no se conecta, toca la patilla derecha de las gafas en la pantalla de reconexión.<br>Una vez conectado, aparecerá la vista previa en vivo.<br><br>[Controles]<br>- Disparo: Toca la patilla derecha de las gafas para tomar una foto.<br>- Zoom: Desliza el dedo por la patilla hacia adelante o hacia atrás para acercar (Zoom In) o alejar (Zoom Out).",
+        "de": "[Verbindungsanleitung]<br>1. Kamera einrichten: Öffnen Sie im Menü der spiegellosen Kamera die [Applikationsliste] und starten Sie die [Smart-Fernbedienung]. Notieren Sie die angezeigten Wi-Fi-Daten.<br>2. Wi-Fi verbinden: Öffnen Sie die Hi Rokid-App auf Ihrem Smartphone, wechseln Sie zu den Wi-Fi-Einstellungen und verbinden Sie sich mit dem Netzwerk der Kamera.<br>3. App starten: Starten Sie 'Sony Connect' auf der Brille. Falls keine Verbindung hergestellt wird, tippen Sie auf dem Wiederverbindungsbildschirm auf den rechten Brillenbügel.<br>Nach erfolgreicher Verbindung wird die Live-Vorschau angezeigt.<br><br>[Bedienung]<br>- Foto aufnehmen: Tippen Sie auf den rechten Brillenbügel, um ein Foto aufzunehmen.<br>- Zoom: Wischen Sie auf dem Brillenbügel nach vorne oder hinten für Zoom In / Zoom Out.",
+        "fr": "[Guide de connexion]<br>1. Configuration de l'appareil : Dans le menu de votre appareil hybride, allez dans [Liste des applications] et lancez l'application liée à la [Télécommande intelligente]. Notez les identifiants Wi-Fi affichés.<br>2. Connexion Wi-Fi : Ouvrez l'application Hi Rokid sur votre téléphone, accédez aux paramètres Wi-Fi et connectez-vous au réseau Wi-Fi de l'appareil photo.<br>3. Lancement de l'application : Lancez 'Sony Connect' sur les lunettes. Si la connexion échoue, touchez la branche droite sur l'écran de reconnexion.<br>Une fois connecté, l'aperçu en direct s'affiche.<br><br>[Commandes]<br>- Déclenchement : Touchez la branche droite des lunettes pour prendre une photo.<br>- Zoom : Faites glisser votre doigt vers l'avant ou l'arrière sur la branche pour zoomer/dézoomer.",
+        "vi": "[Hướng dẫn kết nối]<br>1. Cài đặt máy ảnh: Truy cập [Danh sách ứng dụng] trong menu máy ảnh mirrorless và khởi chạy ứng dụng [Điều khiển từ xa thông minh]. Kiểm tra thông tin Wi-Fi hiển thị trên màn hình máy ảnh.<br>2. Kết nối Wi-Fi: Mở ứng dụng Hi Rokid trên điện thoại, vào phần cài đặt Wi-Fi và kết nối với mạng Wi-Fi hiển thị trên máy ảnh.<br>3. Khởi chạy ứng dụng: Mở 'Sony Connect' trên kính. Nếu chưa kết nối được, hãy chạm vào gọng kính bên phải tại màn hình kết nối lại.<br>Khi kết nối thành công, màn hình xem trước trực tiếp sẽ xuất hiện.<br><br>[Thao tác điều khiển]<br>- Chụp ảnh: Chạm vào gọng kính bên phải để chụp ảnh.<br>- Thu phóng (Zoom): Vuốt tới/lui trên gọng kính để phóng to (Zoom In) / thu nhỏ (Zoom Out).",
+        "th": "[วิธีเชื่อมต่อ]<br>1. ตั้งค่ากล้อง: ไปที่ [รายการแอปพลิเคชัน] ในเมนูของกล้องมิเรอร์เลส แล้วเปิดแอปที่เกี่ยวกับ [รีโมตคอนโทรลอัจฉริยะ (Smart Remote Control)] จากนั้นตรวจสอบข้อมูล Wi-Fi ที่แสดงบนหน้าจอกล้อง<br>2. เชื่อมต่อ Wi-Fi: เปิดแอป Hi Rokid บนสมาร์ทโฟน ไปที่การตั้งค่า Wi-Fi และเชื่อมต่อกับเครือข่าย Wi-Fi ที่แสดงบนกล้อง<br>3. เปิดแอป: เปิดแอป 'Sony Connect' บนแว่นตา หากยังไม่เชื่อมต่อ ให้แตะที่ขาแว่นด้านขวาในหน้าจอเชื่อมต่อใหม่<br>เมื่อเชื่อมต่อสำเร็จ หน้าจอจะแสดงภาพพรีวิวสดแบบเรียลไทม์<br><br>[การควบคุม]<br>- ถ่ายภาพ: แตะที่ขาแว่นด้านขวาเพื่อถ่ายภาพ<br>- ซูมภาพ: ปัดนิ้วไปข้างหน้าหรือข้างหลังบนขาแว่นเพื่อซูมเข้า (Zoom In) / ซูมออก (Zoom Out)",
+        "id": "[Panduan Koneksi]<br>1. Pengaturan Kamera: Masuk ke [Daftar Aplikasi] di menu kamera mirrorless dan jalankan aplikasi [Smart Remote Control]. Periksa informasi Wi-Fi yang ditampilkan di layar kamera.<br>2. Koneksi Wi-Fi: Buka aplikasi Hi Rokid di ponsel, buka pengaturan Wi-Fi, lalu sambungkan ke jaringan Wi-Fi kamera.<br>3. Buka Aplikasi: Jalankan 'Sony Connect' di kacamata. Jika belum terhubung, sentuh gagang kanan kacamata pada layar rekoneksi.<br>Setelah terhubung, pratinjau langsung akan ditampilkan.<br><br>[Kontrol]<br>- Memotret: Sentuh gagang kanan kacamata untuk mengambil foto.<br>- Zoom: Geser (swipe) ke depan atau belakang pada gagang kacamata untuk Zoom In / Zoom Out.",
+        "ru": "[Инструкция по подключению]<br>1. Настройка камеры: В меню беззеркальной камеры перейдите в [Список приложений] и запустите приложение [Интеллектуальное ДУ] (Smart Remote Control). Проверьте данные сети Wi-Fi на экране камеры.<br>2. Подключение к Wi-Fi: Откройте приложение Hi Rokid на смартфоне, перейдите в настройки Wi-Fi и подключитесь к сети Wi-Fi камеры.<br>3. Запуск приложения: Запустите 'Sony Connect' на очках. Если подключение не произошло, коснитесь правой дужки очков на экране повторного подключения.<br>После подключения отобразится видоискатель в реальном времени.<br><br>[Управление]<br>- Съемка: Коснитесь правой дужки очков, чтобы сделать снимок.<br>- Зум: Проведите пальцем (свайп) вперед или назад по дужке очков для приближения (Zoom In) или отдаления (Zoom Out)."
+    },
+    "youtubeUrl": "",
+    "youtubeType": "1",
+    "download": [
+        "https://github.com/eung3392/eungsoft/releases/download/RokidGlassesApp/sony_connect_v1.0.0.apk"
+    ],
+    "images": [
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/sony/sony_01.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/sony/sony_02.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/sony/sony_03.jpg",
+        "https://cdn.jsdelivr.net/gh/eung3392/eungsoft@main/download/RokidGlasses/sony/sony_04.jpg"
+    ],
+    "tags": {
+        "ko": [
+            "Sony미러리스카메라"
+        ],
+        "en": [
+            "Sony Camera"
+        ],
+        "ja": [
+            "Sony Camera"
+        ],
+        "zh": [
+            "Sony Camera"
+        ],
+        "es": [
+            "Sony Camera"
+        ],
+        "de": [
+            "Sony Camera"
+        ],
+        "fr": [
+            "Sony Camera"
+        ],
+        "vi": [
+            "Sony Camera"
+        ],
+        "th": [
+            "Sony Camera"
+        ],
+        "id": [
+            "Sony Camera"
+        ],
+        "ru": [
+            "Sony Camera"
+        ]
+    }
+}
