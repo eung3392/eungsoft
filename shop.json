@@ -1,12 +1,52 @@
 {
     "list": [
         {
-            "title": "상품명",
-            "normal_price": "700,000",
-            "price": "690,000",
-            "max_price": "600,000",
-            "thumb": "썸네일 이미지 경로",
-            "link": "상품 주소"
+            "title": "앤커 사운드코어 리버티 5 프로 ENC 무선 블루투스 이어폰 D1203",
+            "normal_price": "249,000",
+            "price": "201,900",
+            "max_price": "186,140",
+            "thumb": "https://shop-phinf.pstatic.net/20260701_120/1782903613400UtaUO_JPEG/117036589498919625_682218390.jpg?type=o1000",
+            "link": "https://naver.me/59l7WaNe"
+        },
+        {
+            "title": "티피링크 Tapo P100(1팩) 10A IoT 스마트 플러그 구글홈 타이머 콘센트 절전 Wi-Fi 멀티탭",
+            "normal_price": "",
+            "price": "13,400",
+            "max_price": "",
+            "thumb": "https://shop-phinf.pstatic.net/20211129_82/163815504922701Iis_JPEG/39290877047541865_1225400760.jpg?type=o1000",
+            "link": "https://naver.me/5IfZwF9x"
+        },
+        {
+            "title": "크로셀 풀배열 블루투스 접이식 키보드 멀티페어링 아이패드 휴대용 태블릿 애플 맥북 맥 노트북",
+            "normal_price": "52,800",
+            "price": "49,800",
+            "max_price": "",
+            "thumb": "https://shop-phinf.pstatic.net/20250714_13/1752505060031Mc1H7_JPEG/311807258629488_581332750.jpg?type=o1000",
+            "link": "https://naver.me/5g4SNM18"
+        },
+        {
+            "title": "맥세이프 그립톡 3.7mm 초슬림 스마트링 거치대 에이링 슬림",
+            "normal_price": "22,000",
+            "price": "17,900",
+            "max_price": "17,400",
+            "thumb": "https://shop-phinf.pstatic.net/20260521_151/1779344146531q6NEa_JPEG/54962179001725833_72560667.jpg?type=o1000",
+            "link": "https://naver.me/5jX8Vy2R"
+        },
+        {
+            "title": "브링 G1 스마트링 입문 스마트반지 수면 심박수 산소포화도 측정 웨어러블 애플 갤럭시 호환",
+            "normal_price": "74,000",
+            "price": "59,200",
+            "max_price": "53,200",
+            "thumb": "https://shop-phinf.pstatic.net/20261021_219/1792577548515UIAJy_JPEG/64898628656887414_110167332.jpg?type=o1000",
+            "link": "https://naver.me/5re17KQx"
+        },
+        {
+            "title": "Rokid glasses 충전 케이스",
+            "normal_price": "108,000",
+            "price": "105,000",
+            "max_price": "",
+            "thumb": "https://shop-phinf.pstatic.net/20260410_12/1775802447613W6M2B_PNG/25381603498077948_536937955.png?type=o1000",
+            "link": "https://naver.me/5kPT1GvU"
         }
     ]
 }
